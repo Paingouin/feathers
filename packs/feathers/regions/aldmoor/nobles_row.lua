@@ -34,6 +34,7 @@ space {
 
   exits = {
     { to = "market" },
+    { to = "castle_hill", description = "Uphill, where the street runs out of houses and turns into a queue." },
     { to = "noble_house",
       description = "A front door taller than your prospects, with a knocker shaped like a disapproving face.",
       requires = item "invitation",

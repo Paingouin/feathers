@@ -269,8 +269,50 @@ fn the_whole_world_can_be_walked() {
     walk.go("aldmoor_gate");
     assert!(walk.exit("old_mine").is_none(), "the rails are one-way");
 
-    assert_eq!(walk.tracker("Places"), (46, 46));
-    assert_eq!(walk.tracker("Secrets"), (13, 13));
+    // The castle: a swapped ticket passes the gate, the throne opens the treasury, the cook
+    // gives the King away, his warrant opens the dungeon, and the garderobe is the way out.
+    walk.go("market");
+    walk.go("nobles_row");
+    walk.go("castle_hill");
+    assert!(walk.exit("castle_bailey").unwrap().locked.is_some());
+    walk.act("Take a ticket");
+    walk.act("Offer to swap tickets");
+    walk.go("castle_bailey");
+    assert!(walk.exit("castle_dungeon").unwrap().locked.is_some());
+    walk.go("great_hall");
+    assert!(walk.exit("treasury").is_none(), "hidden until sat upon");
+    walk.act("Sit on it");
+    walk.go("treasury");
+    walk.go("great_hall");
+    walk.go("castle_bailey");
+    walk.go("castle_kitchens");
+    assert!(walk.exit("kings_garden").is_none(), "hidden until asked");
+    assert!(walk.exit("spoon_tunnel").is_none(), "hidden from this end");
+    walk.act("Ask about the marrows");
+    walk.go("kings_garden");
+    walk.act("Ask him to sign something");
+    walk.go("castle_kitchens");
+    walk.go("castle_bailey");
+    walk.go("castle_dungeon");
+    assert!(walk.exit("spoon_tunnel").is_none(), "hidden until shown");
+    walk.act("Admire the cell");
+    walk.go("oubliette");
+    walk.go("castle_dungeon");
+    walk.go("spoon_tunnel");
+    walk.go("castle_kitchens");
+    assert!(
+        walk.exit("spoon_tunnel").is_some(),
+        "the flagstone is known"
+    );
+    walk.go("castle_bailey");
+    walk.go("wall_walk");
+    walk.go("survey_tower");
+    walk.act("Report the Grumbles");
+    walk.go("wall_walk");
+    walk.go("great_drain");
+
+    assert_eq!(walk.tracker("Places"), (57, 57));
+    assert_eq!(walk.tracker("Secrets"), (16, 16));
     let (found, total) = walk.tracker("Wonders");
     assert_eq!(found, total, "every wonder lies on the route");
 }

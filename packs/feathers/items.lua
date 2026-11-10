@@ -133,3 +133,28 @@ item {
     { "Coil it again", say "Worse. Noticeably worse. Somewhere under a mountain, an outline on a wall is disappointed." },
   },
 }
+
+item {
+  id = "queue_ticket",
+  name = "ticket no. 4,112",
+  icon = "#",
+  description = "A square of grey paper off the spike on Petitioners' Hill. {b}4,112{/}. On the back, small: {i}Please retain. Tickets may be inherited.{/}",
+  variants = {
+    { when = flag "ticket_swapped",
+      name = "ticket no. 8",
+      description = "A square of paper gone soft and brown, held for eleven years in one warm hand. {b}8{/}. It is the most valuable thing you have ever owned, and you got it for a worse one." },
+  },
+  actions = {
+    { "Wave it", say "Down the hill, a great many people check their own." },
+  },
+}
+
+item {
+  id = "warrant",
+  name = "a royal warrant",
+  icon = "¶",
+  description = "A folded paper, signed {i}Humbert R.{/} above the Great Seal. The line saying what it authorises has been left blank. There is an earthy thumbprint beside the seal, which the right people take as proof.",
+  actions = {
+    { "Fill in the blank", say "You have no pen. It may be the only thing standing between you and the kingdom." },
+  },
+}

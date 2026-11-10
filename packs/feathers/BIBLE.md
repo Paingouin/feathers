@@ -58,6 +58,7 @@ are, where they lie and what they do is undecided.
 | The Mumblewood, a forest | the edge, The Path That Tries, the hermit's clearing, the Climbing Falls (wonder), the shore of Lake Perhaps, the Island of One Tree, the room under the lake (secret), inside the old oak (secret) |
 | Saltwick, a harbour and its coast | the Cliff Road, the harbour, the Tide Office, where the tide is kept (secret, wonder), the Saltwick Light, the Lamp Room (wonder), the Long Strand, inside the wreck (secret), the Cove of Second Thoughts, the smugglers' hole (secret) |
 | The Grumbles, mountains | the Goat Track, the hut at the snow line, the Pass of Reasonable Charges, the troll's front room (secret), the Col, the Gorge of Late Replies (wonder), the Monastery of the Held Tongue, the Shouting Room (secret), the Longshift Mine, the bottom level (secret, wonder), the top of Old Grumble (wonder) |
+| Castle Stillstanding, seat of the Crown | Petitioners' Hill, the Bailey, the Great Hall, the Royal Treasury (secret), the Kitchens, the Walled Garden (secret), the Dungeons, Pelham's Tunnel (secret), the Oubliette (wonder), the Wall Walk, the Survey Tower |
 
 Threads through it: a coin from the well pays the gate tax; breaking the tavern bed moves the
 barman off the trapdoor; the cellar crowbar opens the market grate; a pickpocketed invitation
@@ -72,20 +73,30 @@ Aldmoor and is known from both ends afterwards. In the Grumbles: the book proppi
 table holds the answer to the troll's one riddle; asking him about his bridge opens his front
 room; the echo in the gorge gives away the monks' Thursdays, and saying so opens the Shouting
 Room; the monks' lantern opens the dwarf mine; the mine's rope reaches the summit; the cage goes
-down to the bottom level; the ore cart runs one-way to the Aldmoor Gate.
+down to the bottom level; the ore cart runs one-way to the Aldmoor Gate. In the castle: a ticket
+from the post, swapped with the man at the front of the queue, passes the gate; sitting on the
+throne opens the treasury; asking the cook about the marrows opens the garden where King Humbert
+the Fourth is hiding from his court ("in a meeting"); his pre-signed warrant opens the dungeon;
+admiring Old Pelham's cell opens his tunnel, which comes up in the kitchen pantry and is known
+from both ends afterwards; the monks' lantern lights the Oubliette; the garderobe on the wall
+drops one-way into the Great Drain. Telling the Surveyor-General about Old Grumble (after the
+summit) makes the Survey strike out "settling" on the Great Map.
 
 The lake shows a different sky, and something large crosses it. That is as close as anything
 comes to the secret. The curved marks of the Great Drain turn up again in the smugglers' hole,
 at the height of the highest tide, and the oldest tide ledger opens with the sea already in.
 Under the Grumbles the dwarves dug through into the same sky the lake shows, and stopped. From
 the Col the land has a grain, as grass does after something has gone over it. Old Grumble is
-partway through a word, and nobody knows what it is.
+partway through a word, and nobody knows what it is. Under the castle, the first stone of the
+Oubliette carries the signet ring's single curved line and was there before the masons. The
+oldest panel of the hall tapestry shows a man on the bare hill looking up at a sky whose thread
+has gone. The Survey's one leaning tower is the true one.
 
 ## Backlog
 
 In no particular order.
 
-- A castle. Dungeons and deeper undergrounds. Sewers beyond the Great Drain.
+- Deeper undergrounds below the Oubliette. Sewers beyond the Great Drain. The king whose name was chiselled off. What happened on the repealed Thursday.
 - More mountains, more forest, a jungle, more lakes. Where the dwarves went. What Old Grumble is saying.
 - Fauna and plants, as things to look into everywhere.
 - More coast. Isles. Sky islands. Who signs the tide back in.
