@@ -171,6 +171,13 @@ defaults to the destination's. With `requires`, choose one of `locked = "hint"` 
 with the hint) or `hidden = true` (absent until the condition holds). Exits are one-way: write
 the return exit in the other space if there is one.
 
+An exit may carry effects, written like an action's: they run when the player takes that way,
+before they arrive. Use them when the passage itself changes something.
+
+```lua
+{ to = "cellar", label = "The shaft", set "wall_opened", say "The false wall swings out." },
+```
+
 `on_enter` on a space runs effects each time the player arrives:
 `on_enter = say "A goose regards you."`, a list of effects, or a function.
 

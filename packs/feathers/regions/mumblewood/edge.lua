@@ -14,7 +14,7 @@ space {
         { "Read the back", say "On the back: {whisper}BEWARE OF THE FRONT{/}." },
       } },
     { name = "the first tree",
-      description = "An ash, standing a little forward of the others, like the one who was pushed.",
+      description = "An ash, standing a little forward of the others. It was pushed.",
       things = {
         { name = "its bark", description = "Furrowed, in the way of a brow." },
       },

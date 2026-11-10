@@ -53,6 +53,7 @@ fn exit(to: &str) -> Exit {
         description: None,
         requires: Condition::Always,
         locked: Locked::Hidden,
+        effects: Vec::new(),
     }
 }
 

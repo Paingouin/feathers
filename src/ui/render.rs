@@ -7,7 +7,7 @@ use super::canvas::Canvas;
 use super::explore::{Explore, Focus, Row};
 use super::text::{self, Glyph};
 
-const WHITE: Rgb = Rgb::new(0xff, 0xf8, 0xe8);
+const WHITE: Rgb = Rgb::new(0xea, 0xf2, 0xff);
 /// Below this width the two panels are stacked instead of side by side.
 const STACK_BELOW: i32 = 80;
 /// Prose is wrapped no wider than this, however wide the panel: long lines are hard to read.

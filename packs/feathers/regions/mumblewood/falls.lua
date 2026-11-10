@@ -12,7 +12,7 @@ space {
 
   things = {
     { name = "the plunge pool",
-      description = "At the foot, where the water gathers itself before the climb. It is perfectly still, like someone taking a breath.",
+      description = "At the foot, where the water gathers itself before the climb. It is perfectly still. It is taking a breath.",
       actions = {
         { "Drop a pebble in", say "It sinks. A little later, some way up the falls, you see it go by." },
       } },

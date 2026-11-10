@@ -17,7 +17,8 @@ space {
         { name = "the oldest acorn", description = "On the top shelf, alone, on a bed of moss. It is the size of your fist, and warm." },
       },
       actions = {
-        { "Take an acorn", say "Your hand is on it when you notice the squirrel. Then the other squirrels. You make, instead, a small deposit: one button. It is entered." },
+        { "Take an acorn", once = true, say "Your hand is on it when you notice the squirrel. Then the other squirrels. You make, instead, a small deposit: one button. It is entered." },
+        { "Take an acorn", say "You have no more buttons you can spare. The squirrels know exactly how many you have." },
       } },
     { name = "the head teller",
       icon = "s",

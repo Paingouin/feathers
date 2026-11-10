@@ -164,11 +164,11 @@ pub struct Palette {
 impl Default for Palette {
     fn default() -> Self {
         Self {
-            bg: Rgb::new(0x0e, 0x0f, 0x14),
-            text: Rgb::new(0xc8, 0xc4, 0xb8),
-            dim: Rgb::new(0x6c, 0x6a, 0x66),
-            accent: Rgb::new(0xe0, 0xb0, 0x5a),
-            border: Rgb::new(0x3a, 0x3d, 0x4a),
+            bg: Rgb::new(0x0a, 0x0f, 0x1a),
+            text: Rgb::new(0xc4, 0xcf, 0xe0),
+            dim: Rgb::new(0x5c, 0x6b, 0x85),
+            accent: Rgb::new(0x5a, 0xa8, 0xf0),
+            border: Rgb::new(0x2a, 0x40, 0x66),
         }
     }
 }

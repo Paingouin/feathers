@@ -19,7 +19,7 @@ space {
         { name = "the other sky", description = "It has a star out already. Yours does not, and will not for hours." },
       },
       actions = {
-        { "Wave at your reflection", say "It waves back. Very slightly late, like someone being polite." },
+        { "Wave at your reflection", say "It waves back, very slightly late, out of politeness." },
         { "Skim a stone", say "Four skips. On the water's side of the surface, something small skips four times back.", fx "wash" },
       } },
     { name = "the angler",
@@ -63,7 +63,7 @@ space {
   id = "lake_island",
   region = "mumblewood",
   name = "The Island of One Tree",
-  description = "A hump of turf the size of a market stall, one willow, one heron, and water on every side showing the wrong sky. From here the shore looks like a place somebody is describing.",
+  description = "A hump of turf the size of a market stall, one willow, one heron, and water on every side showing the wrong sky. From here the shore looks a long way off, and not entirely convinced of itself.",
   palette = { bg = "#0a0f15", text = "#c4ccd6", dim = "#5f6c7c", accent = "#e0c46a", border = "#2c3f58" },
   ambience = {
     fog { color = "#1a2632", speed = 0.1 },

@@ -38,7 +38,11 @@ space {
   },
 
   exits = {
-    { to = "tipsy_griffon", description = "Back up into the smell of stew." },
+    { to = "tipsy_griffon",
+      description = function(ctx)
+        if ctx:flag("bed_broken") then return "Back up into the smell of stew." end
+        return "Up to the trapdoor, which has a boot on it. The boot will move: a man who says there is no cellar cannot be seen holding one shut."
+      end },
     { to = "smugglers_vault", label = "The crawl in the wall",
       description = "A crawl through brick and then older stone, slanting down towards the sound of water.",
       requires = flag "cellar_passage", hidden = true },

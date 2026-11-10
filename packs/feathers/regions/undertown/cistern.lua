@@ -16,7 +16,9 @@ space {
     "≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈",
   },
 
-  on_enter = { say "For once, you have nothing clever to think." },
+  on_enter = function(ctx)
+    if not ctx:visited("cistern") then ctx:say("For once, you have nothing clever to think.") end
+  end,
 
   things = {
     { name = "the columns",
@@ -36,10 +38,16 @@ space {
       description = "Tied to an iron ring by a rope gone grey. It is dry inside. There are no oars, and no sign that it has ever needed any.",
       actions = {
         { "Step in", say "It takes your weight without a ripple, and waits. You have the clear impression that it knows where it would go, and that today is not the day. You step out." },
+        { "Offer it your oar", when = item "oar", say "The boat does not so much as rock. You put the oar away, feeling you have offered a fish a ladder." },
       } },
     { name = "the bronze door",
       description = "Set in the hall's one solid wall: a door of green bronze, twice your height, without handle, hinge, or keyhole. At its centre is a shallow hollow, round, the size of a seal.",
       variants = {
+        { when = visited "buried_shrine",
+          description = "Shut again, green and blank, without handle, hinge, or keyhole. But you have been through it, and the hollow at its centre is faintly warm now, as a seat is when someone has just left it.",
+          actions = {
+            { "Knock", say "It seems only polite. Nothing answers. The hollow stays warm." },
+          } },
         { when = item "signet_ring",
           description = "Set in the hall's one solid wall: a door of green bronze, without handle, hinge, or keyhole. At its centre is a shallow hollow, round, the size of a seal. The ring in your pocket has gone colder, and heavier, and you would swear it is pointing." },
       },

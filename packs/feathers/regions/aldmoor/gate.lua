@@ -14,7 +14,7 @@ space {
     guard { name = "the gate sergeant",
             description = "He has a helmet, a ledger, and the calm of a man who has never once been in a hurry on someone else's behalf.",
             actions = {
-              { "Ask about the toll", say "\"Gate tax. One copper. Not to keep, mind. Council just likes to know you've got one.\"" },
+              { "Ask about the toll", say "\"Gate tax. One copper. Not to keep, mind. I bite it and you get it back. Council just likes to know you've got one.\"" },
               { "Explain that you are an adventurer", say "He writes something in the ledger. It is quite short. You suspect it is 'another one'." },
               { "Salute", say "He salutes back, then looks annoyed at having done it." },
             } },
@@ -23,7 +23,10 @@ space {
       description = "A farmer, a cart, a second farmer, and a man who has been here so long he has started selling pies to the others.",
       things = {
         { name = "the pie man", description = "He joined the queue in spring. He has a pitch now, and regulars.",
-          actions = { { "Buy a pie", say "\"One copper.\" You look at your one copper. You look at the gate. The pie man has seen this exact tragedy before." } } },
+          actions = {
+            { "Buy a pie", when = item "copper_coin", say "\"One copper.\" You look at your one copper. You look at the gate. The pie man has seen this exact tragedy before." },
+            { "Buy a pie", say "\"One copper.\" You pat the place where a copper would be. The pie man has seen this tragedy too, and it is shorter." },
+          } },
         { name = "the cart", description = "Turnips. All the way down." },
       },
       actions = {

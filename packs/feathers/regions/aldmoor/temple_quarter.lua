@@ -8,7 +8,7 @@ space {
   things = {
     { name = "the Temple of Saint Ledger",
       icon = "§",
-      description = "God of taxes, tallies, and things owed. The grandest temple on the street, since everyone gives, and it is not optional.",
+      description = "Patron of taxes, tallies, and things owed. The grandest temple on the street, since everyone gives, and it is not optional.",
       things = {
         { name = "the collection box", description = "It has a slot for coins and a second, larger slot for receipts." },
         { name = "a clerk-priest", description = "He blesses you, and then hands you an itemised account of the blessing.",

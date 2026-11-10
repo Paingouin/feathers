@@ -96,6 +96,9 @@ pub(super) fn validate(
         let before = walk.effects.len();
         walk.node(at, &space.node);
         walk.effects.extend(space.on_enter.iter().map(|e| (at, e)));
+        for exit in &space.exits {
+            walk.effects.extend(exit.effects.iter().map(|e| (at, e)));
+        }
         let links = go_targets.entry(&space.id).or_default();
         for (_, effect) in &walk.effects[before..] {
             if let Effect::Go(to) = effect {

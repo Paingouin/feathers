@@ -501,8 +501,11 @@ impl Builder {
             b.known(
                 &table,
                 &[&["to", "label", "description", "requires", "locked", "hidden"]],
-                false,
+                true,
             );
+            let effects = (1..=table.raw_len())
+                .filter_map(|i| b.effect(table.raw_get(i).unwrap_or(Value::Nil)))
+                .collect();
             let hint = b.text(&table, "locked");
             let hidden = b.boolean(&table, "hidden");
             if hint.is_some() && hidden {
@@ -514,6 +517,7 @@ impl Builder {
                 description: b.text(&table, "description"),
                 requires: b.condition(field(&table, "requires")),
                 locked: hint.map_or(Locked::Hidden, Locked::Shown),
+                effects,
             })
         })
     }

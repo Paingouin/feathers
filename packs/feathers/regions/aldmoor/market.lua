@@ -6,7 +6,7 @@ space {
 
   on_enter = function(ctx)
     if not ctx:visited("market") then
-      ctx:say("The sergeant takes your coin, bites it, nods, and hands it back. \"Just checking you had one.\"")
+      ctx:say("Noise, awnings, elbows. Within ten paces you have been offered a potion, a relic, and a fight.")
     end
   end,
 
@@ -30,7 +30,7 @@ space {
         { name = "a red potion", description = "Label: {danger}HEALING{/}. Smaller label: {whisper}or similar{/}." },
         { name = "a blue potion", description = "Label: {magic}MANA{/}. It is blueberry cordial. It is very good blueberry cordial." },
         { name = "a green potion", description = "Label: {whisper}do not{/}. Just that." },
-        { name = "Gribbert", description = "An alchemist in the sense that he owns bottles.",
+        { name = "Gribbert", description = "An alchemist, on the grounds that he owns bottles.",
           actions = {
             { "Ask what's in them", say "\"Trade secrets,\" he says, with the confidence of a man who also doesn't know." },
             { "Ask for a free sample", say "He gives you a look instead. It is surprisingly restorative." },
@@ -72,7 +72,7 @@ space {
     { to = "nobles_row" },
     { to = "temple_quarter" },
     { to = "great_drain", label = "The grate",
-      description = "Down through the grate, by rungs that someone has kept suspiciously free of rust.",
+      description = "Down through the grate, by iron rungs that nobody has trusted in years.",
       requires = item "crowbar",
       locked = "the grate is rusted shut" },
   },

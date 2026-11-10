@@ -36,7 +36,7 @@ space {
       description = "It goes up through a hole in the ceiling. A sign says {whisper}DO NOT{/}, and the rest has been worn away by people who did.",
       variants = {
         { when = flag "rope_pulled",
-          description = "Beside it hangs a rope ladder that was not there before. The sign now reads, in its entirety, {whisper}DO NOT{/}. You did." },
+          description = "Beside it hangs a rope ladder that was not there before. The sign still says {whisper}DO NOT{/}. You did." },
       },
       actions = {
         { "Pull it", when = no(flag "rope_pulled"), set "rope_pulled", fx "shake",

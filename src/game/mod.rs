@@ -157,6 +157,7 @@ impl<S: Scripts> Game<S> {
         match self.find(world, key) {
             Some(Target::Exit(exit)) => {
                 if action == 0 && self.test(&exit.requires) {
+                    self.run(world, &exit.effects, events, 0);
                     self.travel(world, &exit.to, events, 0);
                 }
             }

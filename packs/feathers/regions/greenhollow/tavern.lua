@@ -40,7 +40,7 @@ space {
       description = "Up four stairs and a moral compromise. One bed, one candle, one window painted shut.",
       things = {
         { name = "the guest bed",
-          description = "A bed in the loosest legal sense. Four planks, one of them load-bearing, none of them yours.",
+          description = "A bed in the loosest legal sense. Four planks, one of them doing all the work, none of them yours.",
           variants = {
             { when = flag "bed_broken",
               name = "a pile of planks",

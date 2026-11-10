@@ -40,7 +40,7 @@ space {
       },
       actions = {
         { "Make a wish", say "You wish for glory. The well gives you an echo, slightly sarcastic." },
-        { "Drop a stone in", say "You count. You give up counting. You never do hear it land." },
+        { "Drop a stone in", say "You count to nine. The splash, when it comes, sounds offended." },
       } },
 
     { name = "the notice board",

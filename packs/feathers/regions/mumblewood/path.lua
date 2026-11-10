@@ -2,7 +2,7 @@ space {
   id = "forest_path",
   region = "mumblewood",
   name = "The Path That Tries",
-  description = "A path, in the sense of an intention. It goes around every tree it meets, apologises to the big ones, and somehow continues to exist.",
+  description = "A path, or the intention of one. It goes around every tree it meets, apologises to the big ones, and somehow continues to exist.",
 
   things = {
     { name = "a ring of mushrooms",

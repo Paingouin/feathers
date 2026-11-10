@@ -99,6 +99,8 @@ pub struct Exit {
     pub description: Option<Text>,
     pub requires: Condition,
     pub locked: Locked,
+    /// What happens when the player takes this way, before they arrive.
+    pub effects: Vec<Effect>,
 }
 
 #[derive(Clone, Debug, PartialEq)]

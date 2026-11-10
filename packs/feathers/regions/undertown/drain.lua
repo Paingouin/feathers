@@ -7,9 +7,9 @@ space {
   things = {
     rat(),
     rat { name = "a second rat", description = "It is watching the first rat in the manner of a deputy." },
-    rat { name = "a rat with a tiny ledger",
-          description = "It appears to be taking a census. When it reaches you it hesitates, then makes a small mark in a different column.",
-          actions = { { "Ask to see the ledger", say "It closes the ledger. You have never been refused by anything so small." } } },
+    rat { name = "a rat taking a census",
+          description = "It works its way along the tunnel, scratching one mark on the brick for each rat it passes. When it reaches you it hesitates, then makes a mark lower down, well apart from the others.",
+          actions = { { "Ask what your mark means", say "It looks you up and down and adds a second, smaller mark beside the first. You decide not to ask about that one." } } },
     { name = "the arches",
       description = "Side passages open off the drain, each under a low brick arch. Most are silted shut.",
       variants = {
@@ -39,7 +39,7 @@ space {
   },
 
   exits = {
-    { to = "market", description = "Up the rungs, towards daylight and the price of things." },
+    { to = "market", description = "Up the rungs. From underneath, the grate lifts on a hinge the rust has not found, and drops shut behind you." },
     { to = "cistern", description = "Downstream, where the tunnel opens out and the sound of the water goes strange and large." },
     { to = "smugglers_vault", label = "The dry stone",
       description = "Past the third arch, where a dry stone gives under the hand.",

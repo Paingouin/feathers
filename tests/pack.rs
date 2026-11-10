@@ -485,3 +485,27 @@ fn packs_are_discovered_by_their_manifest() {
     assert_eq!(found[1].meta.description, "Last.");
     assert!(pack::discover(Path::new("/nonexistent")).is_empty());
 }
+
+#[test]
+fn an_exit_runs_its_effects_on_the_way_through() {
+    let content = [
+        space(
+            "a",
+            r#"exits = { { to = "b", set "wall_open", say "The wall swings out." } }"#,
+        ),
+        space(
+            "b",
+            r#"things = { { name = "the wall", description = "d", visible_if = flag "wall_open" } }"#,
+        ),
+    ]
+    .join("\n");
+    let fixture = pack_with(&content);
+    let (mut game, _) = play(&fixture);
+    let way = game.view().exits[0].clone();
+    let events = game.apply(Command::Act {
+        key: way.key,
+        action: way.actions[0].id,
+    });
+    assert_eq!(said(&events), ["The wall swings out."]);
+    thing(&game.view(), "the wall");
+}
