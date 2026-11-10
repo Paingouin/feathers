@@ -51,14 +51,34 @@ pub fn layout(width: u16, height: u16) -> Layout {
     let (tree, detail) = if w >= STACK_BELOW {
         let left = (w * 2 / 5).clamp(30, 48);
         (
-            Rect { x: 0, y: 0, w: left, h: body },
-            Rect { x: left, y: 0, w: w - left, h: body },
+            Rect {
+                x: 0,
+                y: 0,
+                w: left,
+                h: body,
+            },
+            Rect {
+                x: left,
+                y: 0,
+                w: w - left,
+                h: body,
+            },
         )
     } else {
         let top = (body * 45 / 100).max(6).min(body);
         (
-            Rect { x: 0, y: 0, w, h: top },
-            Rect { x: 0, y: top, w, h: body - top },
+            Rect {
+                x: 0,
+                y: 0,
+                w,
+                h: top,
+            },
+            Rect {
+                x: 0,
+                y: top,
+                w,
+                h: body - top,
+            },
         )
     };
     Layout {
@@ -88,26 +108,46 @@ impl Pen<'_> {
             Some(TextFx::Shimmer) => {
                 let sweep = (t * 9.0).rem_euclid(34.0) - 4.0;
                 let near = (1.0 - (sweep - i.rem_euclid(30.0)).abs() / 3.5).max(0.0);
-                style.fg.unwrap_or(self.palette.accent).lerp(WHITE, near * 0.75)
+                style
+                    .fg
+                    .unwrap_or(self.palette.accent)
+                    .lerp(WHITE, near * 0.75)
             }
             Some(TextFx::Wave) => {
                 let k = 0.5 + 0.5 * (t * 3.0 - i * 0.6).sin();
-                style.fg.unwrap_or(self.palette.accent).lerp(self.palette.dim, k * 0.6)
+                style
+                    .fg
+                    .unwrap_or(self.palette.accent)
+                    .lerp(self.palette.dim, k * 0.6)
             }
             Some(TextFx::Flicker) => {
-                let k = (0.5 + 0.3 * (t * 11.0 + i * 1.7).sin() + 0.2 * (t * 23.0 + i * 0.9).sin()).clamp(0.0, 1.0);
-                style.fg.unwrap_or(Rgb::new(0xff, 0xa8, 0x4a)).lerp(self.palette.dim, k * 0.55)
+                let k = (0.5 + 0.3 * (t * 11.0 + i * 1.7).sin() + 0.2 * (t * 23.0 + i * 0.9).sin())
+                    .clamp(0.0, 1.0);
+                style
+                    .fg
+                    .unwrap_or(Rgb::new(0xff, 0xa8, 0x4a))
+                    .lerp(self.palette.dim, k * 0.55)
             }
             Some(TextFx::Glow) => {
                 let k = 0.5 + 0.5 * (t * 1.8).sin();
-                style.fg.unwrap_or(self.palette.accent).lerp(WHITE, k * 0.45)
+                style
+                    .fg
+                    .unwrap_or(self.palette.accent)
+                    .lerp(WHITE, k * 0.45)
             }
         }
     }
 
     fn put(&mut self, x: i32, y: i32, ch: char, color: Rgb, style: Style) -> i32 {
         let bg = self.canvas.cell(x, y).map_or(self.palette.bg, |c| c.bg);
-        self.canvas.put(x, y, ch, bg.lerp(color, self.fade), style.bold, style.italic)
+        self.canvas.put(
+            x,
+            y,
+            ch,
+            bg.lerp(color, self.fade),
+            style.bold,
+            style.italic,
+        )
     }
 
     /// Draws styled glyphs on one row, clipped at `max_x`. The spaces inside a line wipe what
@@ -166,7 +206,12 @@ impl Pen<'_> {
             self.put(left, y, '│', color, plain);
             self.put(right, y, '│', color, plain);
         }
-        for (x, y, corner) in [(left, top, '╭'), (right, top, '╮'), (left, bottom, '╰'), (right, bottom, '╯')] {
+        for (x, y, corner) in [
+            (left, top, '╭'),
+            (right, top, '╮'),
+            (left, bottom, '╰'),
+            (right, bottom, '╯'),
+        ] {
             self.put(x, y, corner, color, plain);
         }
         self.title(rect, top, title);
@@ -203,7 +248,10 @@ impl Pen<'_> {
     fn highlight(&mut self, rect: Rect, y: i32, strong: bool) {
         let breath = 0.5 + 0.5 * (self.time * 2.6).sin();
         let amount = if strong { 0.20 + 0.07 * breath } else { 0.09 };
-        let bg = self.palette.bg.lerp(self.palette.accent, amount * self.fade);
+        let bg = self
+            .palette
+            .bg
+            .lerp(self.palette.accent, amount * self.fade);
         self.blank(rect.x + 1, rect.right() - 1, y, Some(bg));
     }
 }
@@ -231,14 +279,32 @@ fn tree_line(node: &ViewNode, open: bool, palette: &Palette) -> (Vec<Glyph>, Rgb
         ..plain
     };
     let (marker, marker_style) = match node.kind {
-        NodeKind::Exit => ('→', Style { fg: Some(palette.accent), ..plain }),
+        NodeKind::Exit => (
+            '→',
+            Style {
+                fg: Some(palette.accent),
+                ..plain
+            },
+        ),
         _ if !node.children.is_empty() => (if open { '▾' } else { '▸' }, dim),
-        NodeKind::Item => ('✦', Style { fg: Some(palette.accent), ..plain }),
+        NodeKind::Item => (
+            '✦',
+            Style {
+                fg: Some(palette.accent),
+                ..plain
+            },
+        ),
         _ => ('·', dim),
     };
     let mut line = vec![(marker, marker_style), (' ', plain)];
     if let Some(icon) = &node.icon {
-        line.extend(text::plain(icon, Style { fg: Some(palette.accent), ..plain }));
+        line.extend(text::plain(
+            icon,
+            Style {
+                fg: Some(palette.accent),
+                ..plain
+            },
+        ));
         line.push((' ', plain));
     }
     line.extend(text::glyphs(&node.name));
@@ -251,12 +317,19 @@ fn tree_line(node: &ViewNode, open: bool, palette: &Palette) -> (Vec<Glyph>, Rgb
         line.extend(text::plain(" ✶", glow));
     }
     if let Some(hint) = &node.locked {
-        let aside = Style { italic: true, ..dim };
+        let aside = Style {
+            italic: true,
+            ..dim
+        };
         line.extend(text::plain("  (", aside));
         line.extend(text::glyphs(hint).into_iter().map(|(c, _)| (c, aside)));
         line.push((')', aside));
     }
-    let base = if node.locked.is_some() { palette.dim } else { palette.text };
+    let base = if node.locked.is_some() {
+        palette.dim
+    } else {
+        palette.text
+    };
     (line, base)
 }
 
@@ -276,10 +349,19 @@ fn tree_panel(pen: &mut Pen, rect: Rect, explore: &mut Explore) {
         .position(|row| matches!(row, Row::Node { node, .. } if node.key == explore.cursor))
         .unwrap_or(0);
     let visible = usize::try_from(inner.h).unwrap_or(0).max(1);
-    let scroll = explore.tree_scroll.min(cursor).max((cursor + 1).saturating_sub(visible));
+    let scroll = explore
+        .tree_scroll
+        .min(cursor)
+        .max((cursor + 1).saturating_sub(visible));
     explore.tree_scroll = scroll;
 
-    for (line, (index, row)) in rows.iter().enumerate().skip(scroll).take(visible).enumerate() {
+    for (line, (index, row)) in rows
+        .iter()
+        .enumerate()
+        .skip(scroll)
+        .take(visible)
+        .enumerate()
+    {
         let y = inner.y + line as i32;
         match row {
             Row::Header(title) => {
@@ -288,9 +370,17 @@ fn tree_panel(pen: &mut Pen, rect: Rect, explore: &mut Explore) {
                     bold: true,
                     ..Style::default()
                 };
-                pen.line(inner.x, y, &text::plain(title, style), palette.dim, inner.right());
+                pen.line(
+                    inner.x,
+                    y,
+                    &text::plain(title, style),
+                    palette.dim,
+                    inner.right(),
+                );
             }
-            Row::Node { node, depth, open, .. } => {
+            Row::Node {
+                node, depth, open, ..
+            } => {
                 if index == cursor {
                     pen.highlight(rect, y, explore.focus == Focus::Tree);
                 }
@@ -304,10 +394,22 @@ fn tree_panel(pen: &mut Pen, rect: Rect, explore: &mut Explore) {
         }
     }
     if scroll > 0 {
-        pen.put(rect.right() - 1, inner.y, '↑', palette.dim, Style::default());
+        pen.put(
+            rect.right() - 1,
+            inner.y,
+            '↑',
+            palette.dim,
+            Style::default(),
+        );
     }
     if scroll + visible < rows.len() {
-        pen.put(rect.right() - 1, inner.y + inner.h - 1, '↓', palette.dim, Style::default());
+        pen.put(
+            rect.right() - 1,
+            inner.y + inner.h - 1,
+            '↓',
+            palette.dim,
+            Style::default(),
+        );
     }
 }
 
@@ -342,29 +444,72 @@ fn detail_panel(pen: &mut Pen, rect: Rect, explore: &mut Explore) {
 
     let max_scroll = description.len().saturating_sub(description_rows as usize);
     let scroll = explore.detail_scroll.min(max_scroll);
-    let mut budget = explore.motion.reveal.map_or(usize::MAX, |shown| shown as usize);
-    for (row, line) in description.iter().skip(scroll).take(description_rows as usize).enumerate() {
+    let mut budget = explore
+        .motion
+        .reveal
+        .map_or(usize::MAX, |shown| shown as usize);
+    for (row, line) in description
+        .iter()
+        .skip(scroll)
+        .take(description_rows as usize)
+        .enumerate()
+    {
         let shown = line.len().min(budget);
         budget -= shown;
-        pen.line(inner.x, inner.y + row as i32, &line[..shown], palette.text, inner.right());
+        pen.line(
+            inner.x,
+            inner.y + row as i32,
+            &line[..shown],
+            palette.text,
+            inner.right(),
+        );
     }
     if scroll > 0 {
-        pen.put(rect.right() - 1, inner.y, '↑', palette.dim, Style::default());
+        pen.put(
+            rect.right() - 1,
+            inner.y,
+            '↑',
+            palette.dim,
+            Style::default(),
+        );
     }
     if scroll < max_scroll {
-        pen.put(rect.right() - 1, actions_rule - 1, '↓', palette.dim, Style::default());
+        pen.put(
+            rect.right() - 1,
+            actions_rule - 1,
+            '↓',
+            palette.dim,
+            Style::default(),
+        );
     }
 
     pen.divider(rect, actions_rule, &explore.labels.actions);
     let first = explore.action.saturating_sub(action_rows as usize - 1);
-    for (row, (index, action)) in node.actions.iter().enumerate().skip(first).take(action_rows as usize).enumerate() {
+    for (row, (index, action)) in node
+        .actions
+        .iter()
+        .enumerate()
+        .skip(first)
+        .take(action_rows as usize)
+        .enumerate()
+    {
         let y = actions_rule + 1 + row as i32;
         let chosen = index == explore.action;
         if chosen {
             pen.highlight(rect, y, focused);
         }
-        let color = if chosen && focused { palette.accent } else { palette.text };
-        pen.text(inner.x, y, if chosen { "▶" } else { " " }, palette.accent, inner.right());
+        let color = if chosen && focused {
+            palette.accent
+        } else {
+            palette.text
+        };
+        pen.text(
+            inner.x,
+            y,
+            if chosen { "▶" } else { " " },
+            palette.accent,
+            inner.right(),
+        );
         pen.text(inner.x + 2, y, &action.label, color, inner.right());
     }
     if node.actions.is_empty() {
@@ -381,13 +526,25 @@ fn detail_panel(pen: &mut Pen, rect: Rect, explore: &mut Explore) {
             }
             None => text::plain(&explore.labels.nothing_to_do, aside),
         };
-        pen.line(inner.x, actions_rule + 1, &text::truncate(line, width), palette.dim, inner.right());
+        pen.line(
+            inner.x,
+            actions_rule + 1,
+            &text::truncate(line, width),
+            palette.dim,
+            inner.right(),
+        );
     }
 
     pen.divider(rect, result_rule, "");
     let skip = result.len().saturating_sub(result_rows as usize);
     for (row, line) in result.iter().skip(skip).enumerate() {
-        pen.line(inner.x, result_rule + 1 + row as i32, line, palette.text, inner.right());
+        pen.line(
+            inner.x,
+            result_rule + 1 + row as i32,
+            line,
+            palette.text,
+            inner.right(),
+        );
     }
 
     explore.detail_scroll = scroll;
@@ -404,7 +561,10 @@ fn trackers_line(trackers: &[TrackerCount], palette: &Palette) -> Vec<Glyph> {
             line.extend(text::plain("  ", dim));
         }
         line.extend(text::plain(&format!("{} ", tracker.name), dim));
-        line.extend(accent_glyphs(&format!("{}/{}", tracker.found, tracker.total), palette));
+        line.extend(accent_glyphs(
+            &format!("{}/{}", tracker.found, tracker.total),
+            palette,
+        ));
     }
     line
 }
@@ -429,12 +589,21 @@ fn footer(pen: &mut Pen, y: i32, explore: &Explore) {
 }
 
 fn bar(found: usize, total: usize, cells: usize) -> String {
-    let filled = if total == 0 { 0 } else { (found * cells).div_ceil(total).min(cells) };
+    let filled = if total == 0 {
+        0
+    } else {
+        (found * cells).div_ceil(total).min(cells)
+    };
     format!("{}{}", "█".repeat(filled), "░".repeat(cells - filled))
 }
 
 /// The journal as lines of text: overall progress, then each region and its visited places.
-pub fn journal_lines(journal: &Journal, seen_label: &str, palette: &Palette, width: usize) -> Vec<Vec<Glyph>> {
+pub fn journal_lines(
+    journal: &Journal,
+    seen_label: &str,
+    palette: &Palette,
+    width: usize,
+) -> Vec<Vec<Glyph>> {
     let plain = Style::default();
     let dim = Style {
         fg: Some(palette.dim),
@@ -469,26 +638,54 @@ pub fn journal_lines(journal: &Journal, seen_label: &str, palette: &Palette, wid
         let total: usize = region.spaces.iter().map(|s| s.total).sum();
         let mut heading: Vec<Glyph> = text::glyphs(&region.name)
             .into_iter()
-            .map(|(c, s)| (c, Style { bold: true, fg: s.fg.or(accent.fg), ..s }))
+            .map(|(c, s)| {
+                (
+                    c,
+                    Style {
+                        bold: true,
+                        fg: s.fg.or(accent.fg),
+                        ..s
+                    },
+                )
+            })
             .collect();
         heading.extend(text::plain(&format!("  {seen}/{total}"), dim));
         lines.push(heading);
         let describe = |spans: &[Span], indent: &str, lines: &mut Vec<Vec<Glyph>>| {
             for wrapped in text::wrap(spans, width.saturating_sub(indent.len()).max(10)) {
                 let mut line = text::plain(indent, dim);
-                line.extend(wrapped.into_iter().map(|(c, s)| (c, Style { fg: s.fg.or(dim.fg), ..s })));
+                line.extend(wrapped.into_iter().map(|(c, s)| {
+                    (
+                        c,
+                        Style {
+                            fg: s.fg.or(dim.fg),
+                            ..s
+                        },
+                    )
+                }));
                 lines.push(line);
             }
         };
         describe(&region.description, "", &mut lines);
         for space in &region.spaces {
             let complete = space.seen == space.total;
-            let mark = if complete { ("✓ ", dim) } else { ("◐ ", accent) };
+            let mark = if complete {
+                ("✓ ", dim)
+            } else {
+                ("◐ ", accent)
+            };
             let mut line = text::plain("  ", plain);
             line.extend(text::plain(mark.0, mark.1));
             line.extend(text::glyphs(&space.name));
-            line.extend(text::plain(&format!("  {}/{}", space.seen, space.total), dim));
-            for (flagged, sign) in [(space.secret, "  ⚿"), (space.wonder, "  ✶"), (space.here, "  ◆")] {
+            line.extend(text::plain(
+                &format!("  {}/{}", space.seen, space.total),
+                dim,
+            ));
+            for (flagged, sign) in [
+                (space.secret, "  ⚿"),
+                (space.wonder, "  ✶"),
+                (space.here, "  ◆"),
+            ] {
                 if flagged {
                     line.extend(text::plain(sign, accent));
                 }
@@ -502,7 +699,10 @@ pub fn journal_lines(journal: &Journal, seen_label: &str, palette: &Palette, wid
 
 fn journal_overlay(pen: &mut Pen, explore: &mut Explore) {
     let palette = pen.palette;
-    let (width, height) = (i32::from(pen.canvas.width()), i32::from(pen.canvas.height()));
+    let (width, height) = (
+        i32::from(pen.canvas.width()),
+        i32::from(pen.canvas.height()),
+    );
     let rect = Rect {
         x: (width / 10).min(8),
         y: 1,
@@ -511,21 +711,43 @@ fn journal_overlay(pen: &mut Pen, explore: &mut Explore) {
     };
     let inner = rect.inner();
     for y in rect.y..rect.y + rect.h {
-        pen.blank(rect.x, rect.right(), y, Some(palette.bg.lerp(palette.border, 0.25)));
+        pen.blank(
+            rect.x,
+            rect.right(),
+            y,
+            Some(palette.bg.lerp(palette.border, 0.25)),
+        );
     }
     let title = accent_glyphs(&explore.labels.journal, &palette);
     pen.frame(rect, &title, true);
     let Some((journal, scroll)) = &mut explore.journal else {
         return;
     };
-    let lines = journal_lines(journal, &explore.labels.seen, &palette, usize::try_from(inner.w).unwrap_or(0));
+    let lines = journal_lines(
+        journal,
+        &explore.labels.seen,
+        &palette,
+        usize::try_from(inner.w).unwrap_or(0),
+    );
     let visible = usize::try_from(inner.h).unwrap_or(0);
     *scroll = (*scroll).min(lines.len().saturating_sub(visible));
     for (row, line) in lines.iter().skip(*scroll).take(visible).enumerate() {
-        pen.line(inner.x, inner.y + row as i32, line, palette.text, inner.right());
+        pen.line(
+            inner.x,
+            inner.y + row as i32,
+            line,
+            palette.text,
+            inner.right(),
+        );
     }
     if *scroll + visible < lines.len() {
-        pen.put(rect.right() - 1, inner.y + inner.h - 1, '↓', palette.dim, Style::default());
+        pen.put(
+            rect.right() - 1,
+            inner.y + inner.h - 1,
+            '↓',
+            palette.dim,
+            Style::default(),
+        );
     }
 }
 
@@ -559,18 +781,28 @@ pub fn explore(canvas: &mut Canvas, explore: &mut Explore) {
         if let Some(color) = explore.motion.sparks.take() {
             let from = layout.detail;
             let (x, y) = (from.x + from.w / 2, from.y + from.h * 2 / 3);
-            explore.motion.ambience.sparks(x as f32, y as f32, color, 18);
+            explore
+                .motion
+                .ambience
+                .sparks(x as f32, y as f32, color, 18);
         }
         explore.motion.ambience.particles(canvas);
     }
 
     let shake = explore.motion.shots.shake();
-    let shifted = |rect: Rect| Rect { x: rect.x + shake, ..rect };
+    let shifted = |rect: Rect| Rect {
+        x: rect.x + shake,
+        ..rect
+    };
     let mut pen = Pen {
         canvas,
         palette,
         time: explore.motion.time,
-        fade: if animated { 0.15 + 0.85 * explore.motion.fade } else { 1.0 },
+        fade: if animated {
+            0.15 + 0.85 * explore.motion.fade
+        } else {
+            1.0
+        },
     };
     tree_panel(&mut pen, shifted(layout.tree), explore);
     detail_panel(&mut pen, shifted(layout.detail), explore);
@@ -587,13 +819,24 @@ pub fn explore(canvas: &mut Canvas, explore: &mut Explore) {
 }
 
 /// Draws a centred menu: a title, a line under it, and a list with one entry highlighted.
-pub fn menu(pen: &mut Pen, title: &str, subtitle: &str, entries: &[(String, String)], chosen: usize) {
+pub fn menu(
+    pen: &mut Pen,
+    title: &str,
+    subtitle: &str,
+    entries: &[(String, String)],
+    chosen: usize,
+) {
     let palette = pen.palette;
-    let (width, height) = (i32::from(pen.canvas.width()), i32::from(pen.canvas.height()));
+    let (width, height) = (
+        i32::from(pen.canvas.width()),
+        i32::from(pen.canvas.height()),
+    );
     let w = (width - 4).clamp(10, 72);
     let text_width = usize::try_from(w - 4).unwrap_or(1);
     let intro = text::wrap(&[Span::plain(subtitle)], text_width);
-    let h = (intro.len() as i32 + entries.len() as i32 * 2 + 4).min(height - 1).max(3);
+    let h = (intro.len() as i32 + entries.len() as i32 * 2 + 4)
+        .min(height - 1)
+        .max(3);
     let rect = Rect {
         x: (width - w) / 2,
         y: ((height - h) / 2).max(0),
@@ -615,14 +858,33 @@ pub fn menu(pen: &mut Pen, title: &str, subtitle: &str, entries: &[(String, Stri
         if index == chosen {
             pen.highlight(rect, y, true);
         }
-        pen.text(inner.x, y, if index == chosen { "▶" } else { " " }, palette.accent, inner.right());
-        let color = if index == chosen { palette.accent } else { palette.text };
+        pen.text(
+            inner.x,
+            y,
+            if index == chosen { "▶" } else { " " },
+            palette.accent,
+            inner.right(),
+        );
+        let color = if index == chosen {
+            palette.accent
+        } else {
+            palette.text
+        };
         pen.text(inner.x + 2, y, name, color, inner.right());
-        let about = text::truncate(text::plain(about, Style::default()), text_width.saturating_sub(2));
+        let about = text::truncate(
+            text::plain(about, Style::default()),
+            text_width.saturating_sub(2),
+        );
         pen.line(inner.x + 2, y + 1, &about, palette.dim, inner.right());
         y += 2;
     }
-    pen.text(1, height - 1, "↑↓ choose   ⏎ select   q quit", palette.dim, width);
+    pen.text(
+        1,
+        height - 1,
+        "↑↓ choose   ⏎ select   q quit",
+        palette.dim,
+        width,
+    );
 }
 
 #[cfg(test)]
@@ -636,7 +898,11 @@ mod tests {
         assert_eq!(l.detail.x, l.tree.w);
         assert_eq!(l.tree.w + l.detail.w, 120);
         assert_eq!(l.footer, 39);
-        assert_eq!(layout(200, 40).tree.w, 48, "the tree never grows past its cap");
+        assert_eq!(
+            layout(200, 40).tree.w,
+            48,
+            "the tree never grows past its cap"
+        );
     }
 
     #[test]

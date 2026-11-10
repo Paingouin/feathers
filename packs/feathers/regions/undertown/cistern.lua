@@ -51,7 +51,7 @@ space {
 
   exits = {
     { to = "great_drain", description = "Back up the tunnel, towards brick and rats and ordinary dark." },
-    { to = "buried_shrine",
+    { to = "buried_shrine", label = "The bronze door",
       description = "Through the bronze door, where the hollow at its centre is the size of a seal.",
       requires = item "signet_ring",
       locked = "a bronze door with a seal-shaped hollow" },

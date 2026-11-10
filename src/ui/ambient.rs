@@ -168,10 +168,7 @@ impl Ambience {
                 (rng.range(-0.5, 0.5), -rng.range(0.8, 1.8)),
             ),
             AmbientKind::Fireflies => (anywhere(rng), (0.0, 0.0)),
-            AmbientKind::Dust => (
-                anywhere(rng),
-                (rng.range(0.3, 1.2), rng.range(-0.15, 0.25)),
-            ),
+            AmbientKind::Dust => (anywhere(rng), (rng.range(0.3, 1.2), rng.range(-0.15, 0.25))),
             _ => (anywhere(rng), (0.0, 0.0)),
         };
         self.particles.push(Particle {
@@ -257,7 +254,11 @@ impl Ambience {
                     let n = (x * 0.35 + t * 1.3 + (y * 1.1 + t * 0.7).sin() * 1.5).sin();
                     strength * 0.3 * depth * n.max(0.0).powi(2)
                 };
-                let color = spec.colors.first().copied().unwrap_or(Rgb::new(0x30, 0x40, 0x48));
+                let color = spec
+                    .colors
+                    .first()
+                    .copied()
+                    .unwrap_or(Rgb::new(0x30, 0x40, 0x48));
                 cell.bg = cell.bg.lerp(color, amount);
             }
         }
@@ -275,7 +276,9 @@ impl Ambience {
             let envelope = (progress * 6.0).min(1.0) * ((1.0 - progress) * 3.0).min(1.0);
             let pulse = match p.kind {
                 AmbientKind::Fireflies => 0.5 + 0.5 * (p.age * 2.4 + p.seed * TAU).sin(),
-                AmbientKind::Stars if p.spec.is_some() => 0.6 + 0.4 * (p.age * 3.0 + p.seed * TAU).sin(),
+                AmbientKind::Stars if p.spec.is_some() => {
+                    0.6 + 0.4 * (p.age * 3.0 + p.seed * TAU).sin()
+                }
                 _ => 1.0,
             };
             let (glyphs, colors): (Vec<char>, &[Rgb]) = match p.spec {
@@ -283,7 +286,9 @@ impl Ambience {
                 Some(index) => {
                     let spec = &self.specs[index];
                     let glyphs = if spec.glyphs.is_empty() {
-                        defaults(p.kind).map(|d| d.glyphs.chars().collect()).unwrap_or_default()
+                        defaults(p.kind)
+                            .map(|d| d.glyphs.chars().collect())
+                            .unwrap_or_default()
                     } else {
                         spec.glyphs.clone()
                     };
@@ -309,8 +314,19 @@ impl Ambience {
                 }
                 _ => p.color,
             };
-            let opacity = if p.spec.is_some() { PARTICLE_OPACITY } else { 1.0 };
-            canvas.put(x, y, glyph, bg.lerp(color, envelope * pulse * opacity), false, false);
+            let opacity = if p.spec.is_some() {
+                PARTICLE_OPACITY
+            } else {
+                1.0
+            };
+            canvas.put(
+                x,
+                y,
+                glyph,
+                bg.lerp(color, envelope * pulse * opacity),
+                false,
+                false,
+            );
         }
     }
 
@@ -318,9 +334,16 @@ impl Ambience {
     pub fn flicker(&self, canvas: &mut Canvas) {
         for spec in self.specs.iter().filter(|s| s.kind == AmbientKind::Flicker) {
             let t = self.time * spec.speed.unwrap_or(1.0);
-            let unsteady = 0.6 + 0.25 * (t * 7.3).sin() + 0.15 * (t * 13.1 + 1.3).sin() + 0.1 * (t * 23.7).sin();
+            let unsteady = 0.6
+                + 0.25 * (t * 7.3).sin()
+                + 0.15 * (t * 13.1 + 1.3).sin()
+                + 0.1 * (t * 23.7).sin();
             let amount = spec.strength.unwrap_or(0.3).clamp(0.0, 1.0) * unsteady.max(0.0);
-            let color = spec.colors.first().copied().unwrap_or(Rgb::new(0xff, 0xa0, 0x40));
+            let color = spec
+                .colors
+                .first()
+                .copied()
+                .unwrap_or(Rgb::new(0xff, 0xa0, 0x40));
             for cell in canvas.cells_mut() {
                 cell.fg = cell.fg.lerp(color, amount * 0.18);
                 cell.bg = cell.bg.lerp(color, amount * 0.05);
@@ -353,7 +376,8 @@ impl OneShots {
         for (_, age) in &mut self.running {
             *age += dt;
         }
-        self.running.retain(|(shot, age)| *age < duration(shot.kind));
+        self.running
+            .retain(|(shot, age)| *age < duration(shot.kind));
     }
 
     #[cfg(test)]
@@ -468,7 +492,10 @@ mod tests {
             ambience.step(1.0 / 30.0, 80, 24);
         }
         ambience.set(&[spec(AmbientKind::Rain)]);
-        assert!(ambience.particle_count() > 0, "setting the same effects keeps them");
+        assert!(
+            ambience.particle_count() > 0,
+            "setting the same effects keeps them"
+        );
         ambience.set(&[]);
         assert_eq!(ambience.particle_count(), 0);
     }

@@ -44,9 +44,9 @@ pub fn parse(source: &str, theme: &Theme) -> Result<Vec<Span>, String> {
             rest = after;
             continue;
         }
-        let close = rest
-            .find('}')
-            .ok_or_else(|| format!("unclosed '{{' in \"{source}\" (write '{{{{' for a literal brace)"))?;
+        let close = rest.find('}').ok_or_else(|| {
+            format!("unclosed '{{' in \"{source}\" (write '{{{{' for a literal brace)")
+        })?;
         let tag = rest[..close].trim();
         rest = &rest[close + 1..];
 
@@ -58,9 +58,10 @@ pub fn parse(source: &str, theme: &Theme) -> Result<Vec<Span>, String> {
             }
             stack.pop();
         } else {
-            stack.push(apply(tag, top, theme).ok_or_else(|| {
-                format!("unknown markup tag '{{{tag}}}' in \"{source}\"")
-            })?);
+            stack.push(
+                apply(tag, top, theme)
+                    .ok_or_else(|| format!("unknown markup tag '{{{tag}}}' in \"{source}\""))?,
+            );
         }
     }
     current.push_str(rest);
@@ -128,8 +129,16 @@ mod tests {
 
     #[test]
     fn rejects_mistakes() {
-        assert!(parse("{nope}x{/}", &theme()).unwrap_err().contains("unknown markup tag"));
-        assert!(parse("x{/}", &theme()).unwrap_err().contains("closes nothing"));
+        assert!(
+            parse("{nope}x{/}", &theme())
+                .unwrap_err()
+                .contains("unknown markup tag")
+        );
+        assert!(
+            parse("x{/}", &theme())
+                .unwrap_err()
+                .contains("closes nothing")
+        );
         assert!(parse("x{gold", &theme()).unwrap_err().contains("unclosed"));
     }
 }

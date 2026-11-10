@@ -8,14 +8,21 @@ use mlua::{Function, Table, Value};
 
 use crate::world::{
     Action, AmbientKind, AmbientSpec, Condition, Effect, Exit, HookId, Item, ItemId, Labels,
-    Locked, Look, Meta, Node, OneShot, OneShotKind, Palette, Region, RegionId, Rgb, Space,
-    SpaceId, Text, Thing, Tracker, TrackerKind, Variant, plain_text,
+    Locked, Look, Meta, Node, OneShot, OneShotKind, Palette, Region, RegionId, Rgb, Space, SpaceId,
+    Text, Thing, Tracker, TrackerKind, Variant, plain_text,
 };
 
 use super::API_VERSION;
 use super::markup::{self, Theme};
 
-const NODE_FIELDS: [&str; 6] = ["name", "description", "icon", "actions", "things", "variants"];
+const NODE_FIELDS: [&str; 6] = [
+    "name",
+    "description",
+    "icon",
+    "actions",
+    "things",
+    "variants",
+];
 const LOOK_FIELDS: [&str; 3] = ["palette", "ambience", "backdrop"];
 
 pub(super) struct Builder {
@@ -80,9 +87,8 @@ pub(super) fn plain_effect(table: &Table, theme: &Theme) -> Result<Effect, Strin
         )?)),
         "fx" => {
             let name = required(table, "kind")?;
-            let kind = OneShotKind::parse(&name).ok_or_else(|| {
-                format!("unknown fx '{name}' (shake, flash, sparkle or wash)")
-            })?;
+            let kind = OneShotKind::parse(&name)
+                .ok_or_else(|| format!("unknown fx '{name}' (shake, flash, sparkle or wash)"))?;
             let color = match field(table, "color") {
                 Value::Nil => None,
                 value => Some(color(&string_of(&value).unwrap_or_default(), theme)?),
@@ -136,7 +142,8 @@ impl Builder {
             match &key {
                 Value::String(s) => {
                     let name = s.to_string_lossy();
-                    let ok = name.starts_with("__") || allowed.iter().any(|set| set.contains(&name.as_str()));
+                    let ok = name.starts_with("__")
+                        || allowed.iter().any(|set| set.contains(&name.as_str()));
                     if !ok {
                         unknown.push(format!("unknown field '{name}'"));
                     }
@@ -144,7 +151,11 @@ impl Builder {
                 Value::Integer(_) if positional => {}
                 other => unknown.push(format!(
                     "unexpected {} entry (a missing 'name =' or a stray comma?)",
-                    if matches!(other, Value::Integer(_)) { "positional" } else { type_name(other) }
+                    if matches!(other, Value::Integer(_)) {
+                        "positional"
+                    } else {
+                        type_name(other)
+                    }
                 )),
             }
             Ok(())
@@ -162,7 +173,10 @@ impl Builder {
             value => {
                 let text = string_of(&value);
                 if text.is_none() {
-                    self.problem(format!("'{name}' must be a string, not {}", type_name(&value)));
+                    self.problem(format!(
+                        "'{name}' must be a string, not {}",
+                        type_name(&value)
+                    ));
                 }
                 text
             }
@@ -182,7 +196,10 @@ impl Builder {
             Value::Nil => false,
             Value::Boolean(b) => b,
             value => {
-                self.problem(format!("'{name}' must be true or false, not {}", type_name(&value)));
+                self.problem(format!(
+                    "'{name}' must be true or false, not {}",
+                    type_name(&value)
+                ));
                 false
             }
         }
@@ -194,7 +211,10 @@ impl Builder {
             Value::Integer(i) => Some(i as f32),
             Value::Number(n) => Some(n as f32),
             value => {
-                self.problem(format!("'{name}' must be a number, not {}", type_name(&value)));
+                self.problem(format!(
+                    "'{name}' must be a number, not {}",
+                    type_name(&value)
+                ));
                 None
             }
         }
@@ -205,7 +225,10 @@ impl Builder {
             Value::Nil => None,
             Value::Table(list) => Some(list.sequence_values::<Value>().flatten().collect()),
             value => {
-                self.problem(format!("'{name}' must be a list, not {}", type_name(&value)));
+                self.problem(format!(
+                    "'{name}' must be a list, not {}",
+                    type_name(&value)
+                ));
                 None
             }
         }
@@ -284,7 +307,9 @@ impl Builder {
                 }
             }
             _ => {
-                self.problem("expected a condition such as flag \"name\", item \"id\" or a function");
+                self.problem(
+                    "expected a condition such as flag \"name\", item \"id\" or a function",
+                );
                 Condition::Always
             }
         }
@@ -374,16 +399,21 @@ impl Builder {
         siblings: &mut HashMap<String, usize>,
     ) -> Option<Thing> {
         let Value::Table(table) = value else {
-            self.problem(format!("a thing must be a table, not {}", type_name(&value)));
+            self.problem(format!(
+                "a thing must be a table, not {}",
+                type_name(&value)
+            ));
             return None;
         };
         // A thing's identity comes from its place in the tree: its explicit key, else its name.
         let segment = match (self.string(&table, "key"), field(&table, "name")) {
             (Some(key), _) => key,
-            (None, Value::String(name)) => match markup::parse(&name.to_string_lossy(), &self.theme) {
-                Ok(spans) => plain_text(&spans),
-                Err(_) => name.to_string_lossy(),
-            },
+            (None, Value::String(name)) => {
+                match markup::parse(&name.to_string_lossy(), &self.theme) {
+                    Ok(spans) => plain_text(&spans),
+                    Err(_) => name.to_string_lossy(),
+                }
+            }
             (None, Value::Function(_)) => {
                 self.problem("a thing whose name is a function needs a 'key'");
                 return None;
@@ -400,7 +430,11 @@ impl Builder {
             key = format!("{key}#{count}");
         }
         self.within(format!("thing '{segment}'"), |b| {
-            b.known(&table, &[&NODE_FIELDS, &["key", "visible_if", "wonder"]], false);
+            b.known(
+                &table,
+                &[&NODE_FIELDS, &["key", "visible_if", "wonder"]],
+                false,
+            );
             Some(Thing {
                 node: b.node(&table, &key),
                 visible_if: b.condition(field(&table, "visible_if")),
@@ -441,7 +475,9 @@ impl Builder {
                         false,
                     );
                     if field(&variant, "when") == Value::Nil {
-                        b.problem("missing 'when' (a variant without a condition would always apply)");
+                        b.problem(
+                            "missing 'when' (a variant without a condition would always apply)",
+                        );
                     }
                     Some(Variant {
                         when: b.condition(field(&variant, "when")),
@@ -486,7 +522,11 @@ impl Builder {
         let palette = match field(table, "palette") {
             Value::Nil => None,
             Value::Table(colors) => self.within("palette".into(), |b| {
-                b.known(&colors, &[&["bg", "text", "dim", "accent", "border"]], false);
+                b.known(
+                    &colors,
+                    &[&["bg", "text", "dim", "accent", "border"]],
+                    false,
+                );
                 let base = Palette::default();
                 Some(Palette {
                     bg: b.color(&colors, "bg").unwrap_or(base.bg),
@@ -506,9 +546,9 @@ impl Builder {
                 .filter_map(|value| self.ambient(value))
                 .collect()
         });
-        let backdrop = self.list(table, "backdrop").map(|rows| {
-            rows.iter().filter_map(string_of).collect()
-        });
+        let backdrop = self
+            .list(table, "backdrop")
+            .map(|rows| rows.iter().filter_map(string_of).collect());
         Look {
             palette,
             ambience,
@@ -556,7 +596,11 @@ impl Builder {
         self.at(string_of(&field(table, "__src")).unwrap_or_default());
         let id = self.id(table, "id")?;
         self.within(format!("region '{id}'"), |b| {
-            b.known(table, &[&["id", "name", "description"], &LOOK_FIELDS], false);
+            b.known(
+                table,
+                &[&["id", "name", "description"], &LOOK_FIELDS],
+                false,
+            );
             Some(Region {
                 name: b.text(table, "name").unwrap_or_else(|| {
                     b.problem("missing 'name'");
@@ -620,18 +664,33 @@ impl Builder {
         self.known(
             table,
             &[&[
-                "id", "name", "version", "author", "description", "api", "start", "theme",
-                "trackers", "labels",
+                "id",
+                "name",
+                "version",
+                "author",
+                "description",
+                "api",
+                "start",
+                "theme",
+                "trackers",
+                "labels",
             ]],
             false,
         );
         let id = self.id(table, "id").unwrap_or_default();
-        if !id.chars().all(|c| c.is_ascii_alphanumeric() || c == '_' || c == '-') {
-            self.problem("'id' may only contain letters, digits, '_' and '-' (it names the save file)");
+        if !id
+            .chars()
+            .all(|c| c.is_ascii_alphanumeric() || c == '_' || c == '-')
+        {
+            self.problem(
+                "'id' may only contain letters, digits, '_' and '-' (it names the save file)",
+            );
         }
         match field(table, "api") {
             Value::Integer(API_VERSION) => {}
-            Value::Nil => self.problem(format!("missing 'api' (this engine speaks api = {API_VERSION})")),
+            Value::Nil => self.problem(format!(
+                "missing 'api' (this engine speaks api = {API_VERSION})"
+            )),
             other => self.problem(format!(
                 "pack wants api {}, this engine speaks api {API_VERSION}",
                 string_of(&other).unwrap_or_else(|| type_name(&other).to_owned())

@@ -47,7 +47,7 @@ space {
 
   exits = {
     { to = "village_square" },
-    { to = "bell_loft", description = "Up through the hole in the ceiling, into the dark and the smell of pigeons.",
+    { to = "bell_loft", label = "The hole in the ceiling", description = "Up through the hole in the ceiling, into the dark and the smell of pigeons.",
       requires = flag "rope_pulled", hidden = true },
   },
 }

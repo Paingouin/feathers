@@ -29,6 +29,6 @@ space {
 
   exits = {
     { to = "great_drain" },
-    { to = "griffon_cellar", description = "Up the shaft and through the false wall, into a smell of stew. The smugglers drink at the Griffon. Of course they do." },
+    { to = "griffon_cellar", label = "The shaft", description = "Up the shaft and through the false wall, into a smell of stew. The smugglers drink at the Griffon. Of course they do." },
   },
 }

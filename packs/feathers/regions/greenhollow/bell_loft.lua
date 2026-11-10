@@ -37,6 +37,6 @@ space {
   },
 
   exits = {
-    { to = "chapel", description = "Down, rung by rung, into candle smoke." },
+    { to = "chapel", label = "The ladder down", description = "Down, rung by rung, into candle smoke." },
   },
 }

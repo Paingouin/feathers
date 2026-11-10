@@ -4,9 +4,7 @@ use std::collections::{BTreeMap, BTreeSet, VecDeque};
 
 use unicode_width::UnicodeWidthChar;
 
-use crate::world::{
-    Condition, Effect, ItemId, Look, Node, SpaceId, Text, TrackerKind, World,
-};
+use crate::world::{Condition, Effect, ItemId, Look, Node, SpaceId, Text, TrackerKind, World};
 
 /// Size of a pack, for `feathers check`.
 #[derive(Clone, Debug, Default, PartialEq, Eq)]
@@ -135,10 +133,14 @@ pub(super) fn validate(
                     tested_flags.entry(flag).or_insert(at);
                 }
                 Condition::Item(item) if !known_item(item) => {
-                    problems.push(format!("{at}: condition needs item '{item}', which does not exist"));
+                    problems.push(format!(
+                        "{at}: condition needs item '{item}', which does not exist"
+                    ));
                 }
                 Condition::Visited(space) if !known_space(space) => {
-                    problems.push(format!("{at}: condition mentions space '{space}', which does not exist"));
+                    problems.push(format!(
+                        "{at}: condition mentions space '{space}', which does not exist"
+                    ));
                 }
                 _ => {}
             }
@@ -153,10 +155,14 @@ pub(super) fn validate(
                 set_flags.insert(flag);
             }
             Effect::GiveItem(item) | Effect::TakeItem(item) if !known_item(item) => {
-                problems.push(format!("{at}: effect uses item '{item}', which does not exist"));
+                problems.push(format!(
+                    "{at}: effect uses item '{item}', which does not exist"
+                ));
             }
             Effect::Go(space) if !known_space(space) => {
-                problems.push(format!("{at}: effect goes to '{space}', which does not exist"));
+                problems.push(format!(
+                    "{at}: effect goes to '{space}', which does not exist"
+                ));
             }
             Effect::Script(_) => scripted_effects = true,
             _ => {}
@@ -186,7 +192,11 @@ pub(super) fn validate(
         if !set_flags.contains(flag) {
             warnings.push(format!(
                 "{at}: flag '{flag}' is tested but never set{}",
-                if scripted_effects { " by a declared effect (a script may set it)" } else { "" }
+                if scripted_effects {
+                    " by a declared effect (a script may set it)"
+                } else {
+                    ""
+                }
             ));
         }
     }
@@ -202,7 +212,11 @@ pub(super) fn validate(
     for id in world.spaces.keys().filter(|id| !reached.contains(id)) {
         warnings.push(format!(
             "space '{id}' cannot be reached from the start{}",
-            if scripted_effects { " by exits or declared effects" } else { "" }
+            if scripted_effects {
+                " by exits or declared effects"
+            } else {
+                ""
+            }
         ));
     }
 
@@ -252,7 +266,10 @@ pub(super) fn validate(
             .iter()
             .map(|region| {
                 let spaces = world.spaces.values().filter(|s| s.region == region.id);
-                (region_name(&region.name, region.id.as_str()), spaces.count())
+                (
+                    region_name(&region.name, region.id.as_str()),
+                    spaces.count(),
+                )
             })
             .collect(),
     }

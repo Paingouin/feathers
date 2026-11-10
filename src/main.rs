@@ -72,13 +72,22 @@ fn parse(args: impl Iterator<Item = String>) -> Result<Invocation> {
 fn check(dir: &Path) -> Result<()> {
     let Pack { world, report, .. } = pack::load(dir)?;
     let stats = &report.stats;
-    println!("{} {} ({})", world.meta.name, world.meta.version, world.meta.id);
+    println!(
+        "{} {} ({})",
+        world.meta.name, world.meta.version, world.meta.id
+    );
     for (region, spaces) in &stats.regions {
         println!("  {region}: {spaces} spaces");
     }
     println!(
         "  total: {} spaces ({} secret), {} things, {} actions, {} items, {} wonders, {} script hooks",
-        stats.spaces, stats.secrets, stats.things, stats.actions, stats.items, stats.wonders, stats.hooks
+        stats.spaces,
+        stats.secrets,
+        stats.things,
+        stats.actions,
+        stats.items,
+        stats.wonders,
+        stats.hooks
     );
     for warning in &report.warnings {
         println!("  warning: {warning}");

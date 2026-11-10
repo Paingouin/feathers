@@ -66,7 +66,9 @@ fn inside(root: &Path, name: &str) -> mlua::Result<PathBuf> {
     let safe = !name.is_empty()
         && !name.starts_with('/')
         && !name.contains(['\\', ':'])
-        && name.split('/').all(|part| !part.is_empty() && part != "." && part != "..");
+        && name
+            .split('/')
+            .all(|part| !part.is_empty() && part != "." && part != "..");
     if !safe {
         return Err(mlua::Error::runtime(format!(
             "include \"{name}\": paths must be relative and stay inside the pack"
@@ -74,7 +76,10 @@ fn inside(root: &Path, name: &str) -> mlua::Result<PathBuf> {
     }
     let path = root.join(format!("{name}.lua"));
     // A symlink could still point outside: compare the real locations.
-    let real = |p: &Path| p.canonicalize().map_err(|e| mlua::Error::runtime(format!("{}: {e}", p.display())));
+    let real = |p: &Path| {
+        p.canonicalize()
+            .map_err(|e| mlua::Error::runtime(format!("{}: {e}", p.display())))
+    };
     if !real(&path)?.starts_with(real(root)?) {
         return Err(mlua::Error::runtime(format!(
             "include \"{name}\": resolves outside the pack"
@@ -90,7 +95,14 @@ fn sandbox(root: &Path) -> mlua::Result<Lua> {
         LuaOptions::default(),
     )?;
     let globals = lua.globals();
-    for name in ["dofile", "loadfile", "load", "loadstring", "require", "collectgarbage"] {
+    for name in [
+        "dofile",
+        "loadfile",
+        "load",
+        "loadstring",
+        "require",
+        "collectgarbage",
+    ] {
         globals.raw_set(name, Value::Nil)?;
     }
     // Worlds are hand-made and identical for everyone: no dice.
@@ -100,7 +112,10 @@ fn sandbox(root: &Path) -> mlua::Result<Lua> {
     let string: Table = globals.raw_get("string")?;
     string.raw_set("dump", Value::Nil)?;
     // Printing would scribble over the interface.
-    globals.raw_set("print", lua.create_function(|_, _: mlua::MultiValue| Ok(()))?)?;
+    globals.raw_set(
+        "print",
+        lua.create_function(|_, _: mlua::MultiValue| Ok(()))?,
+    )?;
 
     globals.raw_set(
         "__where",
@@ -134,7 +149,11 @@ fn sandbox(root: &Path) -> mlua::Result<Lua> {
             let code = fs::read_to_string(&path)
                 .map_err(|e| mlua::Error::runtime(format!("include \"{name}\": {e}")))?;
             let value: Value = lua.load(code).set_name(format!("@{name}.lua")).eval()?;
-            let remembered = if value == Value::Nil { Value::Boolean(true) } else { value };
+            let remembered = if value == Value::Nil {
+                Value::Boolean(true)
+            } else {
+                value
+            };
             included.raw_set(name, remembered.clone())?;
             Ok(remembered)
         })?,
@@ -145,9 +164,15 @@ fn sandbox(root: &Path) -> mlua::Result<Lua> {
 fn manifest(lua: &Lua, dir: &Path) -> std::result::Result<Table, String> {
     let path = dir.join(MANIFEST);
     let code = fs::read_to_string(&path).map_err(|e| format!("{MANIFEST}: {e}"))?;
-    match lua.load(code).set_name(format!("@{MANIFEST}")).eval::<Value>() {
+    match lua
+        .load(code)
+        .set_name(format!("@{MANIFEST}"))
+        .eval::<Value>()
+    {
         Ok(Value::Table(table)) => Ok(table),
-        Ok(_) => Err(format!("{MANIFEST}: must return a table: return {{ id = \"...\", ... }}")),
+        Ok(_) => Err(format!(
+            "{MANIFEST}: must return a table: return {{ id = \"...\", ... }}"
+        )),
         Err(error) => Err(lua_message(&error)),
     }
 }
@@ -217,14 +242,14 @@ pub fn load(dir: &Path) -> Result<Pack> {
 
     let mut regions = Vec::new();
     let mut seen: BTreeMap<String, String> = BTreeMap::new();
-    let mut duplicate = |kind: &str, id: &str, src: String, builder: &mut Builder| {
-        match seen.insert(format!("{kind} '{id}'"), src) {
-            Some(first) => {
-                builder.problem(format!("{kind} '{id}' is already declared at {first}"));
-                true
-            }
-            None => false,
+    let mut duplicate = |kind: &str, id: &str, src: String, builder: &mut Builder| match seen
+        .insert(format!("{kind} '{id}'"), src)
+    {
+        Some(first) => {
+            builder.problem(format!("{kind} '{id}' is already declared at {first}"));
+            true
         }
+        None => false,
     };
     let src_of = |table: &Table| table.raw_get::<String>("__src").unwrap_or_default();
 

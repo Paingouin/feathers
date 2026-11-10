@@ -70,13 +70,8 @@ impl Stage {
         canvas.flush(self.shown.as_ref(), self.depth, self.terminal.out())?;
         self.shown = Some(canvas);
 
-        let input = if !self.motion {
-            Some(event::read()?)
-        } else if event::poll(FRAME.saturating_sub(started.elapsed()))? {
-            Some(event::read()?)
-        } else {
-            None
-        };
+        let ready = !self.motion || event::poll(FRAME.saturating_sub(started.elapsed()))?;
+        let input = if ready { Some(event::read()?) } else { None };
         if matches!(input, Some(Event::Resize(..))) {
             // The terminal's contents are unknown after a resize: repaint everything.
             self.shown = None;
@@ -93,7 +88,12 @@ fn cosmetic_seed() -> u64 {
 }
 
 /// Shows a list and returns the chosen index, or `None` if the player backed out.
-fn menu(stage: &mut Stage, title: &str, subtitle: &str, entries: &[(String, String)]) -> io::Result<Option<usize>> {
+fn menu(
+    stage: &mut Stage,
+    title: &str,
+    subtitle: &str,
+    entries: &[(String, String)],
+) -> io::Result<Option<usize>> {
     let palette = Palette::default();
     let mut ambience = Ambience::new(cosmetic_seed());
     ambience.set(&[AmbientSpec {
@@ -192,10 +192,15 @@ pub fn run(options: Options) -> Result<()> {
     if let Some(space) = &options.at
         && pack.world.space(space).is_none()
     {
-        return Err(Error::Usage(format!("--at: this pack has no space '{space}'")));
+        return Err(Error::Usage(format!(
+            "--at: this pack has no space '{space}'"
+        )));
     }
     // A journey started with --at is a throwaway: it neither reads nor writes the save.
-    let save_path = options.at.is_none().then(|| save::path(&options.saves_dir, &pack.world));
+    let save_path = options
+        .at
+        .is_none()
+        .then(|| save::path(&options.saves_dir, &pack.world));
     let saved = match &save_path {
         Some(path) => save::read(path, &pack.world)?,
         None => None,

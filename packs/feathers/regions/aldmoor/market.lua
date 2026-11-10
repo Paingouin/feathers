@@ -71,7 +71,7 @@ space {
     { to = "aldmoor_gate" },
     { to = "nobles_row" },
     { to = "temple_quarter" },
-    { to = "great_drain",
+    { to = "great_drain", label = "The grate",
       description = "Down through the grate, by rungs that someone has kept suspiciously free of rust.",
       requires = item "crowbar",
       locked = "the grate is rusted shut" },

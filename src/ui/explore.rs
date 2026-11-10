@@ -5,9 +5,11 @@ use std::path::PathBuf;
 
 use crossterm::event::{KeyCode, KeyEvent, KeyModifiers};
 
-use crate::game::{Command, Discovery, Event, Game, Journal, NodeKind, State, View, ViewNode, save};
+use crate::game::{
+    Command, Discovery, Event, Game, Journal, NodeKind, State, View, ViewNode, save,
+};
 use crate::pack::{LuaScripts, Pack};
-use crate::world::{Labels, OneShot, OneShotKind, Palette, Rgb, Span, SpaceId, Style, TextFx};
+use crate::world::{Labels, OneShot, OneShotKind, Palette, Rgb, SpaceId, Span, Style, TextFx};
 
 use super::ambient::{Ambience, OneShots};
 
@@ -80,7 +82,9 @@ pub fn rows<'a>(view: &'a View, labels: &'a Labels, open: &HashSet<String>) -> V
     ] {
         if !nodes.is_empty() {
             out.push(Row::Header(title));
-            nodes.iter().for_each(|node| push(node, 1, None, open, &mut out));
+            nodes
+                .iter()
+                .for_each(|node| push(node, 1, None, open, &mut out));
         }
     }
     out
@@ -137,7 +141,13 @@ fn lerp_palette(from: Palette, to: Palette, t: f32) -> Palette {
 }
 
 impl Explore {
-    pub fn new(pack: Pack, start: Start, save_path: Option<PathBuf>, motion: bool, seed: u64) -> Self {
+    pub fn new(
+        pack: Pack,
+        start: Start,
+        save_path: Option<PathBuf>,
+        motion: bool,
+        seed: u64,
+    ) -> Self {
         let world = std::rc::Rc::new(pack.world);
         let labels = world.labels.clone();
         let (mut game, fresh) = match start {
@@ -304,9 +314,9 @@ impl Explore {
     fn settle(&mut self) {
         let rows = self.rows();
         let is_node = |row: &Row| matches!(row, Row::Node { .. });
-        let found = rows.iter().position(
-            |row| matches!(row, Row::Node { node, .. } if node.key == self.cursor),
-        );
+        let found = rows
+            .iter()
+            .position(|row| matches!(row, Row::Node { node, .. } if node.key == self.cursor));
         let index = found.unwrap_or_else(|| {
             let last = rows.len().saturating_sub(1);
             let near = self.cursor_row.min(last);

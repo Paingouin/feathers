@@ -4,7 +4,9 @@ use std::io::{self, Write};
 
 use crossterm::cursor::MoveTo;
 use crossterm::queue;
-use crossterm::style::{Attribute, Color, Print, SetAttribute, SetBackgroundColor, SetForegroundColor};
+use crossterm::style::{
+    Attribute, Color, Print, SetAttribute, SetBackgroundColor, SetForegroundColor,
+};
 use unicode_width::UnicodeWidthChar;
 
 use crate::world::Rgb;
@@ -188,7 +190,8 @@ impl Canvas {
                 if cursor != Some((x, y)) {
                     queue!(out, MoveTo(x, y))?;
                 }
-                let (fg, bg, bold, italic) = pen.unwrap_or((cell.bg, cell.fg, !cell.bold, !cell.italic));
+                let (fg, bg, bold, italic) =
+                    pen.unwrap_or((cell.bg, cell.fg, !cell.bold, !cell.italic));
                 if pen.is_none() || fg != cell.fg {
                     queue!(out, SetForegroundColor(depth.color(cell.fg)))?;
                 }
@@ -196,11 +199,19 @@ impl Canvas {
                     queue!(out, SetBackgroundColor(depth.color(cell.bg)))?;
                 }
                 if pen.is_none() || bold != cell.bold {
-                    let attribute = if cell.bold { Attribute::Bold } else { Attribute::NormalIntensity };
+                    let attribute = if cell.bold {
+                        Attribute::Bold
+                    } else {
+                        Attribute::NormalIntensity
+                    };
                     queue!(out, SetAttribute(attribute))?;
                 }
                 if pen.is_none() || italic != cell.italic {
-                    let attribute = if cell.italic { Attribute::Italic } else { Attribute::NoItalic };
+                    let attribute = if cell.italic {
+                        Attribute::Italic
+                    } else {
+                        Attribute::NoItalic
+                    };
                     queue!(out, SetAttribute(attribute))?;
                 }
                 pen = Some((cell.fg, cell.bg, cell.bold, cell.italic));
@@ -225,7 +236,9 @@ mod tests {
 
     fn flushed(canvas: &Canvas, previous: Option<&Canvas>) -> String {
         let mut out = Vec::new();
-        canvas.flush(previous, ColorDepth::TrueColor, &mut out).unwrap();
+        canvas
+            .flush(previous, ColorDepth::TrueColor, &mut out)
+            .unwrap();
         String::from_utf8(out).unwrap()
     }
 
@@ -246,7 +259,11 @@ mod tests {
         let out = flushed(&after, Some(&before));
         assert!(out.ends_with('a'), "{out:?}");
         assert!(!out.contains('h') || out.contains("\u{1b}["), "{out:?}");
-        assert_eq!(out.matches(|c: char| c.is_ascii_lowercase() && c != 'm').count(), 1);
+        assert_eq!(
+            out.matches(|c: char| c.is_ascii_lowercase() && c != 'm')
+                .count(),
+            1
+        );
     }
 
     #[test]

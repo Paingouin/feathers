@@ -52,7 +52,7 @@ space {
 
   exits = {
     { to = "nobles_row" },
-    { to = "secret_study",
+    { to = "secret_study", label = "The gap behind the bookcase",
       description = "The gap behind the bookcase: a narrow door, a narrow stair, and lamplight.",
       requires = flag "book_pulled", hidden = true },
   },

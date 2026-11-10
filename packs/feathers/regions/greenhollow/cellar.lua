@@ -39,7 +39,7 @@ space {
 
   exits = {
     { to = "tipsy_griffon", description = "Back up into the smell of stew." },
-    { to = "smugglers_vault",
+    { to = "smugglers_vault", label = "The crawl in the wall",
       description = "A crawl through brick and then older stone, slanting down towards the sound of water.",
       requires = flag "cellar_passage", hidden = true },
   },

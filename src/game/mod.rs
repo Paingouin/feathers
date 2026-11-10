@@ -286,9 +286,7 @@ impl<S: Scripts> Game<S> {
     fn face<'a>(&self, node: &'a Node) -> Face<'a> {
         let variant = node.variants.iter().find(|v| self.test(&v.when));
         Face {
-            name: variant
-                .and_then(|v| v.name.as_ref())
-                .unwrap_or(&node.name),
+            name: variant.and_then(|v| v.name.as_ref()).unwrap_or(&node.name),
             description: variant
                 .and_then(|v| v.description.as_ref())
                 .unwrap_or(&node.description),
@@ -303,7 +301,11 @@ impl<S: Scripts> Game<S> {
 
     fn available(&self, node_key: &str, action: &Action) -> bool {
         self.test(&action.when)
-            && !(action.once && self.state.spent.contains(&once_key(node_key, &action.label)))
+            && !(action.once
+                && self
+                    .state
+                    .spent
+                    .contains(&once_key(node_key, &action.label)))
     }
 
     fn here<'a>(&self, world: &'a World) -> &'a Space {
@@ -421,7 +423,12 @@ impl<S: Scripts> Game<S> {
             .filter(|thing| self.test(&thing.visible_if))
             .map(|thing| {
                 let known_wonder = thing.wonder && self.state.seen.contains_key(&thing.key);
-                self.view_node(thing.key.clone(), NodeKind::Thing, &thing.node, known_wonder)
+                self.view_node(
+                    thing.key.clone(),
+                    NodeKind::Thing,
+                    &thing.node,
+                    known_wonder,
+                )
             })
             .collect();
         let mut shown = ViewNode {
@@ -438,7 +445,11 @@ impl<S: Scripts> Game<S> {
         };
         if self.state.seen.get(&shown.key) == Some(&fingerprint(&shown)) {
             let inside = shown.children.iter().all(|c| c.seen == Seen::Complete);
-            shown.seen = if inside { Seen::Complete } else { Seen::Partial };
+            shown.seen = if inside {
+                Seen::Complete
+            } else {
+                Seen::Partial
+            };
         }
         shown
     }

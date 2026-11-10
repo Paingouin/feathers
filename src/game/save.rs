@@ -56,10 +56,7 @@ pub fn read(path: &Path, world: &World) -> Result<Option<State>> {
     if file.pack != world.meta.id {
         return Err(Error::Save {
             path: path.to_path_buf(),
-            reason: format!(
-                "belongs to pack '{}', not '{}'",
-                file.pack, world.meta.id
-            ),
+            reason: format!("belongs to pack '{}', not '{}'", file.pack, world.meta.id),
         });
     }
     let mut state = file.state;

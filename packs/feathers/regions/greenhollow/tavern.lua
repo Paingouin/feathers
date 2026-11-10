@@ -94,7 +94,7 @@ space {
 
   exits = {
     { to = "village_square" },
-    { to = "griffon_cellar",
+    { to = "griffon_cellar", label = "The trapdoor",
       description = "A trapdoor with a brass ring, worn smooth by a boot that is usually standing on it.",
       requires = flag "bed_broken",
       locked = "the barman is standing on it" },

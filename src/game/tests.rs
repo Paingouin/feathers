@@ -2,9 +2,7 @@ use std::collections::BTreeMap;
 use std::rc::Rc;
 
 use super::*;
-use crate::world::{
-    HookId, Item, Labels, Look, Meta, Region, RegionId, Variant, plain_text,
-};
+use crate::world::{HookId, Item, Labels, Look, Meta, Region, RegionId, Variant, plain_text};
 
 fn node(name: &str, description: &str) -> Node {
     Node {
@@ -107,11 +105,17 @@ fn world() -> World {
     barman.things.push(Thing {
         visible_if: flag("bed_broken"),
         wonder: true,
-        ..thing("tavern/the barman/his glare", node("his glare", "Legendary."))
+        ..thing(
+            "tavern/the barman/his glare",
+            node("his glare", "Legendary."),
+        )
     });
 
     let mut tavern = node("The Tavern", "It smells of soup.");
-    tavern.things = vec![thing("tavern/the bed", bed), thing("tavern/the barman", barman)];
+    tavern.things = vec![
+        thing("tavern/the bed", bed),
+        thing("tavern/the barman", barman),
+    ];
 
     let mut vault = space("vault", node("The Vault", "Hidden."), vec![exit("tavern")]);
     vault.secret = true;
@@ -250,7 +254,10 @@ fn exits_are_named_after_their_destination_and_respect_locks() {
     let view = game().view();
     assert_eq!(names(&view.exits), ["The Square", "The Cellar"]);
     let cellar = &view.exits[1];
-    assert_eq!(plain_text(cellar.locked.as_ref().unwrap()), "it wants a coin");
+    assert_eq!(
+        plain_text(cellar.locked.as_ref().unwrap()),
+        "it wants a coin"
+    );
     assert!(cellar.actions.is_empty());
     assert_eq!(view.exits[0].actions[0].label, "Go there");
     assert_eq!(plain_text(&view.exits[0].description), "Mud.");
@@ -260,9 +267,21 @@ fn exits_are_named_after_their_destination_and_respect_locks() {
 fn a_locked_exit_cannot_be_taken_and_a_hidden_one_cannot_be_addressed() {
     let mut game = game();
     let cellar = game.view().exits[1].key.clone();
-    assert!(game.apply(Command::Act { key: cellar, action: 0 }).is_empty());
+    assert!(
+        game.apply(Command::Act {
+            key: cellar,
+            action: 0
+        })
+        .is_empty()
+    );
     let hidden = "tavern>vault#2".to_owned();
-    assert!(game.apply(Command::Act { key: hidden, action: 0 }).is_empty());
+    assert!(
+        game.apply(Command::Act {
+            key: hidden,
+            action: 0
+        })
+        .is_empty()
+    );
     assert_eq!(game.state().location, SpaceId::new("tavern"));
 }
 
@@ -319,7 +338,11 @@ fn an_action_on_one_thing_changes_another() {
     let barman = child(&after, "the barman");
     assert_eq!(plain_text(&barman.description), "He polishes a mug at you.");
     assert_eq!(names(&barman.children), ["his glare"]);
-    assert_eq!(barman.actions.len(), 1, "same-label actions collapse to one");
+    assert_eq!(
+        barman.actions.len(),
+        1,
+        "same-label actions collapse to one"
+    );
     assert_eq!(
         said(&act(&mut game, barman, "Talk")),
         ["That was my grandmother's bed."]
@@ -344,7 +367,10 @@ fn a_flag_reveals_a_hidden_exit_and_entering_a_secret_is_a_discovery() {
     let bed = child(&game.view(), "the bed").clone();
     act(&mut game, &bed, "Break it");
     let view = game.view();
-    assert_eq!(names(&view.exits), ["The Square", "The Cellar", "The Vault"]);
+    assert_eq!(
+        names(&view.exits),
+        ["The Square", "The Cellar", "The Vault"]
+    );
     let events = act(&mut game, &view.exits[2], "Go there");
     assert!(events.contains(&Event::Discovered {
         what: Discovery::Secret,
@@ -448,7 +474,11 @@ fn saves_round_trip_and_survive_a_changed_pack() {
     let mut other = world();
     other.meta.id = "other".into();
     assert!(save::read(&path, &other).is_err());
-    assert!(save::read(&dir.join("missing.json"), &smaller).unwrap().is_none());
+    assert!(
+        save::read(&dir.join("missing.json"), &smaller)
+            .unwrap()
+            .is_none()
+    );
     std::fs::remove_dir_all(dir).unwrap();
 }
 
@@ -462,7 +492,11 @@ fn seen_marks_follow_what_the_player_has_looked_at() {
     assert_eq!(game.view().space.seen, Seen::New);
 
     look(&mut game, "tavern");
-    assert_eq!(game.view().space.seen, Seen::Partial, "the things inside are still new");
+    assert_eq!(
+        game.view().space.seen,
+        Seen::Partial,
+        "the things inside are still new"
+    );
 
     look(&mut game, "tavern/the bed");
     look(&mut game, "tavern/the barman");
@@ -489,7 +523,11 @@ fn changed_content_counts_as_new_again() {
     assert_eq!(view.space.seen, Seen::Partial);
 
     look(&mut game, "tavern/the barman");
-    assert_eq!(child(&game.view(), "the barman").seen, Seen::Partial, "his glare is new");
+    assert_eq!(
+        child(&game.view(), "the barman").seen,
+        Seen::Partial,
+        "his glare is new"
+    );
     look(&mut game, "tavern/the barman/his glare");
     assert_eq!(child(&game.view(), "the barman").seen, Seen::Complete);
 }
@@ -501,7 +539,11 @@ fn an_exit_is_marked_by_how_much_of_its_destination_is_seen() {
     assert_eq!(to_square.seen, Seen::New);
     act(&mut game, &to_square, "Go there");
     let back = game.view().exits[0].clone();
-    assert_eq!(back.seen, Seen::Partial, "the tavern was visited but not looked over");
+    assert_eq!(
+        back.seen,
+        Seen::Partial,
+        "the tavern was visited but not looked over"
+    );
     look(&mut game, "square");
     act(&mut game, &back, "Go there");
     assert_eq!(game.view().exits[0].seen, Seen::Complete);

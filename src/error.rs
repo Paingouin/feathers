@@ -9,7 +9,10 @@ pub enum Error {
     /// A file or the terminal could not be read or written.
     Io { path: PathBuf, source: io::Error },
     /// A pack failed to load. Each problem names the file (and line when known) it came from.
-    Pack { pack: PathBuf, problems: Vec<String> },
+    Pack {
+        pack: PathBuf,
+        problems: Vec<String>,
+    },
     /// A save file exists but cannot be used.
     Save { path: PathBuf, reason: String },
     /// The command line was not understood.

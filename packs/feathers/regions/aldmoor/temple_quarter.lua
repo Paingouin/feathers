@@ -52,7 +52,7 @@ space {
 
   exits = {
     { to = "market" },
-    { to = "cistern",
+    { to = "cistern", label = "The chute",
       description = "Down the chute. It looks very much like a way in. It does not look at all like a way back.",
       requires = flag "knows_undertown",
       locked = "a long slide into the dark: you would want to know where it goes first" },

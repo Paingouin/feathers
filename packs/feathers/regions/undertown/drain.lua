@@ -41,7 +41,7 @@ space {
   exits = {
     { to = "market", description = "Up the rungs, towards daylight and the price of things." },
     { to = "cistern", description = "Downstream, where the tunnel opens out and the sound of the water goes strange and large." },
-    { to = "smugglers_vault",
+    { to = "smugglers_vault", label = "The dry stone",
       description = "Past the third arch, where a dry stone gives under the hand.",
       requires = flag "knows_undertown", hidden = true },
   },
