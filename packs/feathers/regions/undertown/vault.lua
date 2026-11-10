@@ -34,6 +34,12 @@ space {
       things = {
         { name = "the last entry", description = "{i}One ring, bronze, origin unknown, from the dredging of the Cistern. Not for sale. Not for anything, until I understand it.{/}" },
       } },
+    { name = "the back of the vault",
+      description = "The oldest crates, stacked three deep against the far wall. Their corners are white with salt. Turnips do not usually arrive by sea.",
+      variants = {
+        { when = flag "sea_tunnel",
+          description = "The oldest crates, white with salt at the corners, and the gap between them you came out of. Cart ruts run into it and downhill, towards the sea." },
+      } },
     { name = "a ladder",
       description = "Leading up a brick shaft to a patch of wall that, from this side, is obviously a door.",
     },
@@ -41,6 +47,9 @@ space {
 
   exits = {
     { to = "great_drain" },
+    { to = "sea_cave", label = "The low tunnel",
+      description = "Between the salt-stained crates and down the cart ruts, a long dark mile to the cave in the cove.",
+      requires = flag "sea_tunnel", hidden = true },
     { to = "griffon_cellar", label = "The shaft", set "cellar_passage",
       description = "Up the shaft to the false wall, which opens from this side at a push, into a smell of stew. The smugglers drink at the Griffon. Of course they do." },
   },

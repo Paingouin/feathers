@@ -45,6 +45,7 @@ space {
 
   exits = {
     { to = "barley_road" },
+    { to = "cliff_road", description = "Along the outside of the walls and uphill, towards where the wind is coming from. No tax on leaving." },
     { to = "market",
       description = "Through the gate: noise, awnings, and the smell of things for sale.",
       requires = item "copper_coin",

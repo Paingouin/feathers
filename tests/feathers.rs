@@ -174,9 +174,45 @@ fn the_whole_world_can_be_walked() {
     walk.go("chapel");
     walk.act("Pull it");
     walk.go("bell_loft");
+    walk.go("chapel");
+    walk.go("village_square");
+    walk.go("barley_road");
+    walk.go("aldmoor_gate");
 
-    assert_eq!(walk.tracker("Places"), (25, 25));
-    assert_eq!(walk.tracker("Secrets"), (7, 7));
+    // Saltwick: a bottle opens the light, the gull's stamp sends the tide out, and the bare
+    // shore leads round to the smugglers' other door.
+    walk.go("cliff_road");
+    walk.go("long_strand");
+    assert!(walk.exit("second_cove").unwrap().locked.is_some());
+    assert!(walk.exit("wreck_hold").is_none(), "under water for now");
+    walk.act("Pick it up");
+    walk.go("saltwick_harbour");
+    walk.go("saltwick_light");
+    assert!(walk.exit("lamp_room").unwrap().locked.is_some());
+    walk.act("Give him the bottle");
+    walk.go("lamp_room");
+    walk.act("Take the stamp");
+    walk.go("saltwick_light");
+    walk.go("saltwick_harbour");
+    walk.go("tide_office");
+    walk.act("Hand over the stamp");
+    assert!(walk.exit("tide_room").is_none(), "hidden until asked about");
+    walk.act("Ask where the tide goes");
+    walk.go("tide_room");
+    walk.go("tide_office");
+    walk.go("saltwick_harbour");
+    walk.go("long_strand");
+    walk.go("wreck_hold");
+    walk.go("long_strand");
+    walk.go("second_cove");
+    assert!(walk.exit("sea_cave").is_none(), "hidden behind the weed");
+    walk.act("Part the weed");
+    walk.go("sea_cave");
+    walk.go("smugglers_vault");
+    assert!(walk.exit("sea_cave").is_some(), "the tunnel is known now");
+
+    assert_eq!(walk.tracker("Places"), (35, 35));
+    assert_eq!(walk.tracker("Secrets"), (10, 10));
     let (found, total) = walk.tracker("Wonders");
     assert_eq!(found, total, "every wonder lies on the route");
 }

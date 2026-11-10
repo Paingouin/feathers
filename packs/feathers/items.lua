@@ -93,3 +93,23 @@ item {
     { "Row the air", say "You take a few strokes at nothing. You move, if anything, slightly backwards." },
   },
 }
+
+item {
+  id = "bottle",
+  name = "a bottle with a letter in it",
+  icon = "δ",
+  description = "Green glass, corked and waxed, scoured dull by sand. There is a roll of paper inside, and scratched in the wax with a pin: {i}W., the Light, Saltwick{/}. It has come the long way.",
+  actions = {
+    { "Shake it", say "The paper shifts. It is not yours to read, and you find, annoyingly, that this stops you." },
+  },
+}
+
+item {
+  id = "tide_stamp",
+  name = "the outward stamp",
+  icon = "⊥",
+  description = "Brass handle, rubber face, violet with old ink. It says {b}TUO{/}, which is how a stamp says {b}OUT{/}. A gull has been sitting on it, conscientiously, for a month.",
+  actions = {
+    { "Stamp your hand", say "{b}OUT{/}, in violet, on your palm. Nothing happens to you. You check the nearest puddle. It stays." },
+  },
+}

@@ -56,16 +56,22 @@ are, where they lie and what they do is undecided.
 | Aldmoor, a town | the gate, the market, Nobles' Row, a noble house, a study behind a bookcase (secret), the Temple Quarter |
 | The Undertown | the Great Drain, the cistern, the smugglers' vault (secret), the buried shrine (secret) |
 | The Mumblewood, a forest | the edge, The Path That Tries, the hermit's clearing, the Climbing Falls (wonder), the shore of Lake Perhaps, the Island of One Tree, the room under the lake (secret), inside the old oak (secret) |
+| Saltwick, a harbour and its coast | the Cliff Road, the harbour, the Tide Office, where the tide is kept (secret, wonder), the Saltwick Light, the Lamp Room (wonder), the Long Strand, inside the wreck (secret), the Cove of Second Thoughts, the smugglers' hole (secret) |
 
 Threads through it: a coin from the well pays the gate tax; breaking the tavern bed moves the
 barman off the trapdoor; the cellar crowbar opens the market grate; a pickpocketed invitation
 opens the noble house; the map in the study reveals the Undertown's routes; the signet ring
 opens the bronze door. In the Mumblewood: a moon-cap from the mushroom ring buys the hermit's oar;
 the oar takes the boat to the island; the stone under the willow opens the room under the lake;
-following the fox opens the oak, whose burrow drops one-way into the Barley Road.
+following the fox opens the oak, whose burrow drops one-way into the Barley Road. In Saltwick:
+the bottle on the strand is the keeper's letter and opens the lamp room; the stamp in the gull's
+nest lets the clerk sign the tide out, for good; the bare shore shows the wreck and opens the
+cove; the weed in the cove hides the smugglers' hole, whose tunnel climbs to the vault under
+Aldmoor and is known from both ends afterwards.
 
 The lake shows a different sky, and something large crosses it. That is as close as anything
-comes to the secret.
+comes to the secret. The curved marks of the Great Drain turn up again in the smugglers' hole,
+at the height of the highest tide, and the oldest tide ledger opens with the sea already in.
 
 ## Backlog
 
@@ -74,7 +80,7 @@ In no particular order.
 - A castle. Dungeons and deeper undergrounds. Sewers beyond the Great Drain.
 - Mountains, more forest, a jungle, more lakes.
 - Fauna and plants, as things to look into everywhere.
-- Coast: beach, coves, a harbour. Isles. Sky islands.
+- More coast. Isles. Sky islands. Who signs the tide back in.
 - A steampunk city, and a flying steam airship whose destinations are the docks already found.
 - An invisible mage tower.
 - A vampire castle. Evil places and devils: bureaucratic, dreadful hosts.
