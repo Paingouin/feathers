@@ -48,6 +48,63 @@ space {
       actions = {
         { "Drop a pebble", say "A rattle, a long quiet, then a deep and distant {i}plunk{/}, with an echo that goes on far too long for a drain." },
       } },
+    { name = "the Oratory of the God of Small Change",
+      description = "A booth with a counter. He is prayed to for the right coins at the right time. The priest breaks large prayers into smaller ones.",
+      things = {
+        { name = "the offering dish", description = "Full of farthings. You may take change from it for a larger coin. The god keeps a small percentage and nobody has ever caught him at it." },
+      } },
+    { name = "the Temple of the Unknown God",
+      description = "A handsome portico with nothing inside. It was built in case. The Council felt that with so many gods about, one had probably been missed, and it would be awkward.",
+      things = {
+        { name = "the empty altar", description = "Swept daily. There is a visitors' book on it, for the god to sign when he arrives. It has one entry, a paw print, and the priests are divided." },
+        { name = "the priest of the Unknown God", description = "He conducts a service every evening, to whom it may concern.",
+          actions = { { "Ask what the god is god of", say "\"We'll ask,\" he says. \"When he comes. I've a list.\" He shows you the list. The first question is {i}Were we close?{/}" } } },
+      } },
+    { name = "the Shrine of the Wall",
+      description = "A branch of the one on the ramparts, for worshippers who do not like stairs. A brick, on a cushion. You are invited to lean on the building next door." },
+    { name = "the Goose Chapel",
+      description = "Small, white, and kept very clean by people who look over their shoulders. Nobody worships here. They come to stay on the right side of it.",
+      things = {
+        { name = "the image", description = "A goose, in white marble, life size. The sculptor has given it an expression of such calm ill will that offerings are left at arm's length, on a pole." },
+        { name = "the offerings", description = "Bread, mostly. Good bread. Nobody leaves it crusts." },
+      },
+      actions = {
+        { "Make an offering", when = flag "goose_respects_you", say "You have nothing to give. You stand before the marble goose anyway, as one who has met the original and been allowed to leave. The verger, watching, takes off his hat." },
+        { "Make an offering", say "You have nothing to give. The marble goose looks at you. You find a crumb in your pocket after all, and leave it, on the pole." },
+      } },
+    { name = "a street of candle sellers",
+      description = "A stall for every temple, each selling the candle that its god prefers.",
+      things = {
+        candle { name = "a candle for Saint Ledger", description = "Numbered, and with a receipt." },
+        candle { name = "a candle for the Lady of Lost Socks", description = "Sold singly. You cannot buy two." },
+        candle { name = "a candle for the Unknown God", description = "No wick. \"We don't like to presume,\" says the seller." },
+      } },
+    { name = "a theological argument",
+      description = "Two priests, nose to nose, in the middle of the street. One serves the God of Mornings and one the Goddess of Evenings, and they are settling, as they do every day, who has noon.",
+      actions = {
+        { "Suggest they share it", say "They turn on you together. It is the first thing they have agreed on in forty years. You leave them to it, closer than they were." },
+      } },
+    { name = "the oldest temple",
+      description = "At the end of the street, the smallest building in it: one room of dark stone without a door, a window or a name. Every other temple here has a founding date. This one has a founding date for the street, which was built up to it.",
+      things = {
+        { name = "the lintel", description = "Where a name would be carved there is one curved line, cut deep, worn shallow. The priests of the other gods nod to it as they pass, the way you would to a neighbour who was there before you and has never said what he does." },
+        { name = "a saucer of milk", description = "Left on the step each morning by a child from the lane, who was told by her grandmother, who was told by hers. Nobody remembers who it is for. Something drinks it." },
+      } },
+    { name = "the holy well",
+      description = "A stone basin fed by a pipe from the fountain's overflow. The water goes up the pipe, so the well is filled from the bottom and blessed on the way.",
+      things = {
+        { name = "the cup on a chain", description = "Tin, dented. The water tastes of stone and, very slightly, of having changed its mind." },
+      },
+      actions = {
+        { "Drink", say "Cold, clean, and going the wrong way: you feel it in your chest before your throat. You are blessed, or at least rinsed." },
+      } },
+    { name = "a beggar with a bowl",
+      description = "He sits between the two richest temples and collects from the worshippers of both, who each give to spite the other. He owns three houses on Elbow Lane.",
+      actions = {
+        { "Turn out your pockets", say "You show him: one copper, spoken for. He looks at it, and at you, and puts a farthing in {i}your{/} hand. \"Don't spend it at Ledger's,\" he says." },
+      } },
+    { name = "the incense",
+      description = "Forty kinds, from forty doors, meeting in the middle of the street. The result is the smell of Aldmoor's religion: sandalwood, beeswax, fish, and something from the Goose Chapel that is mostly fear." },
   },
 
   exits = {

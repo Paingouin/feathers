@@ -48,6 +48,48 @@ space {
         { name = "regulation 848", wonder = true,
           description = "It is blank. It is, nevertheless, {magic}very clearly a regulation{/}: you find you have straightened your collar." },
       } },
+    { name = "the portcullis",
+      description = "Oak and iron, hanging in its slot over the roadway with its teeth showing. It was last lowered for a drill, and came down on the mayor's hat, with the mayor one pace behind it.",
+      things = {
+        { name = "the winch", description = "In the left tower. Two men to turn it. One of them has been at lunch since the drill." },
+        { name = "a flattened hat", description = "Nailed to the gate post as a caution. It was a very tall hat. It is now a very wide one." },
+      } },
+    { name = "the left tower",
+      description = "Round, four floors, with an arrow slit on each. A line of washing goes from the top slit to the right tower.",
+      things = {
+        { name = "the guardroom", description = "A table, a brazier, a pack of cards with fifty-three in it. The extra one is the Sergeant, drawn in ink, and beats everything.",
+          things = {
+            { name = "the brazier", description = "Charcoal, a kettle, and a toasting fork made out of a decommissioned pike." },
+            { name = "a rota", description = "Chalked on the wall. Every shift is marked {i}GATE{/}. Somebody has added, beside the night shifts, {i}(wall){/} and a small mug." },
+          } },
+        { name = "the murder hole", description = "A slot in the ceiling of the gateway, for pouring things on invaders. It is used for lowering the Sergeant's lunch." },
+      } },
+    { name = "the right tower",
+      description = "The same as the left, except that it has been let. A family lives in it. There are geraniums in the arrow slits.",
+      things = {
+        { name = "a child at an arrow slit", description = "She is defending the town with a pea shooter. She has hit the pie man twice. He thinks it is flies." },
+      } },
+    { name = "the tax table",
+      description = "A trestle by the gate, with a cloth, a ledger and a scale.",
+      things = {
+        { name = "the biting ledger", description = "Every coin shown at the gate is entered, with the name of the bearer and a small drawing of the tooth marks. Yours would make a short entry." },
+        { name = "the scale", description = "For weighing goods. One pan is lower than the other with nothing on it. The Council built the difference into the tariff." },
+        { name = "a turnip tariff", description = "{i}Turnips: one in forty, to the Gate.{/} There is a heap of turnips behind the table as high as the Sergeant. Nobody knows what the Gate wants them for." },
+      } },
+    { name = "the ditch",
+      description = "Dry, grassed over, with a goat in it. The goat belongs to nobody and is paid for out of the defence budget.",
+      things = {
+        { name = "the goat", description = "It keeps the grass down and has opinions on visitors. It is chewing something with writing on it.",
+          actions = { { "Look at what it is eating", say "Regulation 849 to 900. You will never know. From the goat's expression, they were dry." } } },
+        { name = "a drawbridge chain", description = "Rusted solid. The bridge has been down so long that there is a market stall bolted to it." },
+      } },
+    { name = "a pedlar",
+      description = "On a blanket in the lee of the wall, outside the tax line. Ribbons, pins, laces, and a tray of charms against being taxed. He does good business in those and has never paid any.",
+      actions = {
+        { "Ask what he has for an adventurer", say "He looks you over. \"Bootlaces,\" he says. \"You'll be glad of them. And a map.\" He shows you the map. It is of the queue." },
+      } },
+    { name = "swallows",
+      description = "Nesting in the gate arch, a dozen mud cups in a row. They go in and out over the heads of the queue all day and have never once paid the tax." },
   },
 
   exits = {

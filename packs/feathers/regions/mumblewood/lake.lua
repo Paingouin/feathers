@@ -48,10 +48,76 @@ space {
       } },
     { name = "the pines",
       description = "Dark, straight, and silent. The mumbling stops at the shore. Whatever the trees say about the lake, they do not say it here." },
+    { name = "the shingle",
+      description = "A crescent of grey and white pebbles, sorted by the lake into sizes, largest at the top. Somebody has gone along the waterline picking out the flat ones.",
+      things = {
+        { name = "a heap of skimming stones", description = "Flat, round, palm-sized, in a tidy pile by the angler's stool. He collects them. He has never thrown one. \"Saving them,\" he says, \"for a day I feel lucky.\"" },
+        { name = "a freshwater mussel", description = "Open, empty, and lined with a blue-white shine that moves when you tilt it. A crow had the inside. You get the better half." },
+        { name = "a line of bird tracks", description = "Three toes, going down to the water and stopping. They do not come back. In the wet sand at the very edge is one more print, upside down." },
+      } },
+    { name = "a short jetty",
+      description = "Six planks out over the water on four posts, built by somebody who wanted to stand a little way out and then thought better of standing any further.",
+      things = {
+        { name = "the end of the jetty", description = "A rail, a worn place for two elbows, and a view straight down. People come here to think. Nobody stays long." },
+        { name = "a mooring post",
+          description = "Green to the waterline, with a painter's knot still tied round it and nothing on the end of the rope.",
+          things = {
+            { name = "the frayed rope", description = "It goes down into the water at a slant and keeps going. You pull a yard of it in. It comes up dry." },
+          } },
+      },
+      actions = {
+        { "Walk to the end", say "The planks give a little. You stand over the wrong sky with nothing under you but six boards, and a cloud goes by beneath your boots. You walk back at a pace that you would describe as unhurried." },
+      } },
+    { name = "the swan",
+      icon = "S",
+      description = "White, vast, and coming towards you across the water without appearing to move anything. {danger}It can break a man's arm.{/} Everybody says so. The swan has heard it said, and carries itself accordingly.",
+      things = {
+        { name = "its reflection", description = "Black. A black swan, down there, keeping perfect station under the white one. Neither of them looks at the other. It is clearly an old arrangement." },
+      },
+      actions = {
+        { "Stand your ground", say "It stops a yard off, raises its wings, and hisses like a kettle. You stand your ground. It lowers its wings, turns, and sails away with the air of one who has decided to let you off. You find a pebble in your hand that you do not remember picking up." },
+      } },
+    { name = "the water lilies",
+      description = "A raft of them in the shallows, flat green plates and white cups. In the reflection they are closed, and it is plainly night.",
+      things = {
+        { name = "a frog on a lily pad", icon = "f",
+          description = "Green, gold-eyed, throat going. It is sitting on a leaf looking down between its own front feet at a frog looking up.",
+          actions = {
+            { "Say good day", say "It jumps. There is no splash. You look for the ripple and find only the lily pad, rocking, and under it a frog going down into a sky." },
+          } },
+        { name = "a dragonfly", description = "Blue, glassy, parked on a lily bud with its wings out flat. It patrols a square of water exactly as a guard patrols a wall, and sees off a second dragonfly that is doing the same from underneath." },
+      } },
+    { name = "the angler's things",
+      description = "Beside the stool: a basket, a flask, a folded oilskin. Thirty years of sitting in one place have worn a hollow for each of them.",
+      things = {
+        { name = "the basket",
+          description = "Wicker, with a leather strap. For the catch.",
+          things = {
+            { name = "a cheese sandwich", description = "It is what is in the basket, and what has been in the basket, in one form or another, every day for thirty years." },
+            { name = "a tin of hooks", description = "A hundred, bright, in oiled paper, with the maker's seal unbroken. He bought them the first week. \"Never know,\" he says. He does know." },
+          } },
+        { name = "the flask", description = "Tea, stewed black. He pours a little on the ground before he drinks. \"For the lake,\" he says. He does not pour it in the lake. \"Wouldn't want to disturb it.\"" },
+      } },
+    { name = "a Survey board",
+      description = "A painted board on two legs, put up by the Royal Survey: {b}LAKE{/}, and after that a name has been painted, scraped off, painted and scraped off so many times that the wood is thin there. The latest attempt reads {b}PERHAPS{/}.",
+      things = {
+        { name = "the depth gauge", description = "A pole in the shallows marked in feet. The lake reads four feet at the pole. The reflection of the pole goes down a good deal further than four feet, and the marks on it are in a different hand." },
+      } },
+    { name = "a ring of blackened stones",
+      description = "An old campfire above the shingle. Adventurers, by the look of it: one burnt sausage, one bent tent peg, and an argument scratched in the dirt about whose turn it was.",
+      things = {
+        { name = "the scratched argument", description = "{i}YOUR watch.{/} {i}No, YOURS.{/} A long gap. Then, in a third hand, shakily: {i}Did either of you see what was in the lake.{/}" },
+      } },
+    { name = "the mist",
+      description = "It lies on the far half of the lake like a lid. Now and then it thins, and you see the island: a hump, a tree, a grey bird. Then the lake thinks better of having shown you.",
+      actions = {
+        { "Wait for it to clear", say "It does not clear. It does, after a while, come a little closer, and you decide you have waited enough." },
+      } },
   },
 
   exits = {
     { to = "forest_path" },
+    { to = "reed_beds", description = "Along the shore to the left, where the shingle gives way to mud and the reeds stand higher than your head." },
     { to = "upward_falls", description = "Down the wet steps, with the water going the other way beside you." },
     { to = "goat_track", description = "Up behind the pines, where the ground stops being forest and starts being scenery." },
     { to = "lake_island", label = "The rowing boat",
@@ -105,6 +171,46 @@ space {
       } },
     { name = "the boat",
       description = "{i}Eventually{/}, nosed into the turf. It got you here in a spiral, which it seemed to consider the scenic route." },
+    { name = "the willow's crown",
+      description = "The branches hang to the turf all round, so that standing under the tree is like standing inside a green bell.",
+      things = {
+        { name = "a moorhen's nest", description = "Built on a branch that trails in the water: a raft of reed with five buff eggs. The moorhen sits on it and looks at you sideways. In the reflection the nest is empty and the eggs have hatched." },
+        { name = "the catkins", description = "Yellow, soft, humming with bees that have flown half a mile over water for them. Each bee leaves by a different way than it came, to be on the safe side." },
+        { name = "a carved name",
+          description = "Cut into the trunk at the height of a seated man: {i}ALDER{/}. Not the tree. A person. Under it, one cut for each year, and the bark has grown round the oldest until they are only dimples.",
+          things = {
+            { name = "the newest cut", description = "Thirty years old, by the grey of it. About when the angler rowed out once, and took up fishing after." },
+          } },
+      } },
+    { name = "the turf",
+      description = "Short, springy, and starred with daisies. An island this size has no business having a lawn, and no one to keep it, and it is kept.",
+      things = {
+        { name = "a molehill", description = "Fresh earth, in the middle of the grass, on an island in a lake. You look at it for some time. The mole is not available for comment." },
+        { name = "the daisies", description = "They are open, though the cloud is thick. They are facing a sun. You turn to see which one, and it is not the one overhead." },
+        { name = "a ring of pale grass", description = "A circle a pace across where the grass is lighter. Something round stood here for a very long time. A tub, or a drum, or the foot of something tall." },
+      } },
+    { name = "the water round the island",
+      description = "Clear to a depth you would rather not judge. The island does not shelve into it. It simply stops, like a table.",
+      things = {
+        { name = "the edge", description = "You kneel and look under. There is no under. The turf goes down a hand's breadth and then there is sky, with the roots of the willow hanging in it like a chandelier." },
+        { name = "a drifted fishing float", description = "Red and white, bobbing against the turf. It has no line. The angler's line has never had a float. It belongs to somebody who fishes here from the other side." },
+      },
+      actions = {
+        { "Trail your fingers in it", say "Cold, and then, an inch down, not cold. You take your hand out. The first inch of your fingers is wet. The rest is only cool, as if it had been held out of a window on a spring night." },
+      } },
+    { name = "a stone seat",
+      description = "A slab on two stubs, facing the willow, furred with moss. Somebody liked to sit and look at a tree that was two seasons at once.",
+      things = {
+        { name = "under the seat", description = "A clay pipe, a tinderbox gone to rust, and eleven plum stones in a row. Whoever sat here was in no hurry, and brought fruit." },
+      },
+      actions = {
+        { "Sit", say "You sit. A green leaf turns in the air above you and a gold one turns in the water, and for a moment you cannot have said which of them you were under." },
+      } },
+    { name = "the far shore",
+      description = "The pines, the shingle, a small man on a stool. He has not looked up. He has seen what happens to people who row out here: they come back and take up something quiet.",
+      actions = {
+        { "Wave to the angler", say "He raises one hand, slowly, without turning his head. In the water, somebody on a stool raises the other." },
+      } },
   },
 
   exits = {
@@ -151,6 +257,39 @@ space {
       } },
     { name = "the tally marks",
       description = "Scratched in the wall by the chair, in fives, thousands of them. Nights, perhaps. The last group stops at four." },
+    { name = "the floor",
+      description = "Round, of fitted stone, with a pattern set in it in pale and dark pebbles: fish, going round in a ring, nose to tail. There are forty. One is set in facing the other way.",
+      things = {
+        { name = "the contrary fish", description = "Darker than the rest, and worn smoother, as if every visitor had stopped to stand on it. You are standing on it. You did not decide to." },
+        { name = "a single puddle", description = "The only wet in the room: a coin of water under the place where somebody once reached up. It has not dried. It ripples when the lake does." },
+      } },
+    { name = "a shelf of candle ends",
+      description = "Cut into the wall: hundreds of stubs, burnt to the last finger, set in their own wax in rows. Whoever came here came at night, and often, and did not like to throw things away.",
+      things = {
+        { name = "the last candle", description = "Whole, never lit, standing at the end of the last row with its wick still white. He brought it down, and then did not need the light, or did not come back for it." },
+        { name = "a tinderbox", description = "Brass, dry, and it still works. You know because you tried it, and the spark showed in the ceiling a moment before it showed in your hand." },
+      } },
+    { name = "a pair of slippers",
+      description = "Felt, grey, side by side at the foot of the steps where somebody took off his boots so as not to be loud in here. They are worn through at the heel. Nobody takes that kind of care in a place unless he loves it.",
+      actions = {
+        { "Take your boots off too", say "You stand them on the bottom step and go about in your stockings. The room is better for it. You can hear the lake now: a very large, very slow sound, like something asleep and comfortable." },
+      } },
+    { name = "the wall of carved fish",
+      description = "Round the whole room, at the height of the chair's arm, a frieze of every fish in the lake, life size, each with its name cut under it in a small square hand.",
+      things = {
+        { name = "the pike, carved", description = "{i}Old Gentleman. Here before me. Do not feed.{/} Overhead, something long turns to look." },
+        { name = "a blank place", description = "A smoothed panel with a name and no fish: {i}the one I have not seen properly{/}. Under that, a row of attempts in charcoal, all rubbed out. He was a careful man, and would not carve a guess." },
+      } },
+    { name = "a brass tripod",
+      description = "Three legs and a cradle, set beside the chair and aimed straight up. Whatever it held is gone. The Baroness in Aldmoor keeps a telescope pointed at her floor, and you wonder, now, who she had it from.",
+      things = {
+        { name = "the empty cradle", description = "Lined with green felt, with the shape of a tube pressed into it. The felt is clean where the tube lay and dusty elsewhere." },
+      } },
+    { name = "a green snail",
+      description = "On the wall beside the steps, the size of a plum, with a shell that is clear as glass. You can see it thinking. It lives down here on the light alone, and leaves no trail at all.",
+      actions = {
+        { "Watch it", say "It goes half the width of your hand while you watch. In that time a fish crosses the ceiling from one side to the other. You could not say which of them had the better use of the afternoon." },
+      } },
   },
 
   exits = {

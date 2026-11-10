@@ -55,6 +55,47 @@ space {
         { "Push it", say "You might as well push the town." },
         { "Knock", say "The bronze drinks the sound. Nothing answers. Something, perhaps, listens." },
       } },
+
+    { name = "the landing stage",
+      description = "A stone quay with three steps going down into the water. The bottom step is worn hollow, by a great many feet, all going one way." },
+    { name = "the roof",
+      description = "Vault after vault, lost in the dark. Here and there a pale root has come through from the gardens of the town and hangs straight down.",
+      things = {
+        { name = "a hanging root",
+          description = "It has grown a hundred feet to drink, and touches the water with one white thread. Now and then a ring goes out from it, when somebody up above waters the beans." },
+        { name = "a column with rungs",
+          description = "Iron staples go up its side into the dark. At the top, by the Baroness's map, is a cellar on Nobles' Row that believes itself to be the lowest thing in the house." },
+      } },
+    { name = "the pale fish",
+      description = "White, finger-long, eyeless, in shoals under the quay. They turn all together when you breathe out.",
+      actions = {
+        { "Hold your breath", say "They hold still. So does the water. So, it seems, does the hall. You let it go, and everything resumes, politely, as though you had asked." },
+      } },
+    { name = "the tide marks",
+      description = "Bands on every column, like the rings in a tree: this high in the wet year, this high in the dry. They go up well past your head.",
+      things = {
+        { name = "the highest mark",
+          description = "Not a stain. A line cut with a chisel, right round the column, with a small hand carved beside it, pointing down at the line. {i}To here.{/} Whoever built this did not hope for that much water. They expected it." },
+      } },
+    { name = "the wishing ledge",
+      description = "A ledge by the quay with coins on it. So people do come. Coppers, mostly. One of them is gold, and nobody has taken it.",
+      actions = {
+        { "Leave the gold where it is", say "You do. It is harder than it sounds, and nobody is watching. You have the feeling that it has been noted all the same, in a long ledger, by a kind hand." },
+      } },
+    { name = "a dredgers' raft",
+      description = "Planks lashed to barrels, with a rake, a sieve and a lantern hook. The Baroness's people. This is where the ring came up.",
+      things = {
+        { name = "the sieve",
+          description = "Silt, a buckle, a tooth. Caught under the mesh is a bronze nail, green, square-cut, as long as your hand. Whatever it held was large." },
+        { name = "the rake", description = "Forty feet of jointed pole. It does not reach the bottom. They have added a joint every year." },
+      } },
+    { name = "your reflection",
+      description = "It stands on the water under your boots, sole to sole. It looks less worried than you do. It has the easier job." },
+    { name = "the drip",
+      description = "One drop, from one place in the roof, into one place in the water, about as often as a slow heart.",
+      actions = {
+        { "Count the drips", say "You get to forty and find that you have slowed your breathing to match. So this is what calm is. You had wondered." },
+      } },
   },
 
   exits = {

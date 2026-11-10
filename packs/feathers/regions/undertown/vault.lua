@@ -43,6 +43,55 @@ space {
     { name = "a ladder",
       description = "Leading up a brick shaft to a patch of wall that, from this side, is obviously a door.",
     },
+
+    { name = "a smuggler, asleep",
+      description = "On a bale, with his hat over his face and one hand on a cudgel. The night shift.",
+      actions = {
+        { "Tiptoe round him", say "From under the hat: \"If you're Customs, I'm a turnip merchant. If you're not, mind the breathing crate.\" He has not moved." },
+        { "Ask what is in the crate", say "\"Don't know. Came with the vault. We put the label on. Seemed wise.\"" },
+      } },
+    { name = "the contraband shelves",
+      description = "Everything Aldmoor taxes, and Aldmoor taxes everything.",
+      things = {
+        { name = "sacks of salt", description = "From Saltwick, each one stamped {i}SAND{/}." },
+        { name = "unstamped playing cards",
+          description = "The ace of spades in every pack is blank, where the duty stamp would go. The smugglers play with them and argue about what the ace is worth." },
+        { name = "a case of blue cordial", description = "Gribbert's supplier. The label says {i}MANA (bulk){/}." },
+        { name = "bolts of foreign lace", description = "Fine as frost. It is wrapped round a ham, in case of inspection, and the ham is wrapped round a bottle, in case of a thorough one." },
+      } },
+    { name = "a rack of disguises",
+      description = "Farmers' smocks, straw hats, and one very fine false beard on a wig stand.",
+      things = {
+        { name = "the false beard",
+          description = "Chestnut, curled, the kind of beard a man grows who has never had to hurry.",
+          actions = {
+            { "Try it on", say "You look like somebody who has just bought a beard. The smuggler, from under his hat, says \"No.\"" },
+          } },
+      } },
+    { name = "the strongbox",
+      description = "Iron, bolted to the floor, with a slot in the top.",
+      things = {
+        { name = "the lock", description = "Aldmoor work, seven levers. Your crowbar, if you have one about you, has remembered an appointment." },
+      },
+      actions = {
+        { "Listen at the slot", say "Coins, settling. It is the sound the Council thinks it can hear in its own treasury." },
+      } },
+    { name = "a shrine to Saint Ledger, facing the wall",
+      description = "The smugglers are devout. They turn him round before they do the books, and turn him back after, and leave a tenth, less expenses." },
+    { name = "a tide table",
+      description = "Pinned to a crate, for Saltwick, with notes in pencil: {i}high, low, and when the Office isn't looking{/}.",
+      variants = {
+        { when = flag "tide_out",
+          description = "Pinned to a crate, for Saltwick, with notes in pencil. Across the whole of it, new and angry: {i}WHO SIGNED IT OUT.{/}" },
+      } },
+    { name = "a handcart",
+      description = "Iron tyres bound in sacking, for quiet. The axle is greased with butter. Untaxed." },
+    { name = "the vault cat",
+      icon = "c",
+      description = "Grey, enormous, and paid in fish. She keeps the rats out of the vol-au-vent cases and takes one case a month as commission.",
+      actions = {
+        { "Stroke her", say "She rolls over. It is a trap, and you know it is a trap, and you have four scratches before you have finished knowing it." },
+      } },
   },
 
   exits = {

@@ -30,6 +30,52 @@ space {
       actions = {
         { "Sit in it", say "For a moment you are important. Then a passing duchess looks at you, and you are not." },
       } },
+    { name = "the great houses",
+      description = "Nine of them, one for each founding family, each trying to be an inch taller than its neighbours without being seen to try.",
+      things = {
+        { name = "House Fenwick-Thrum",
+          description = "Shuttered. The family is abroad, and has been for eleven years. The knocker is tied up in a stocking. Sir Aubrey is believed to be at the Collegium, or in a spa, or was it the navy.",
+          things = {
+            { name = "the brass plate", description = "{i}FENWICK-THRUM{/}. You look at the name for some time, in a spirit of rehearsal." },
+            { name = "a heap of post", description = "Eleven years of invitations, visible through the letter slot. He is the most invited man in Aldmoor. He has never refused anything, by never answering." },
+          } },
+        { name = "House Mere", description = "The Duke's. Its front door is exactly one inch taller than the Baroness's. The inch was added by night." },
+        { name = "a house with scaffolding", description = "It is being made an inch taller." },
+      } },
+    { name = "a duchess walking a very small dog",
+      description = "The dog is the size of a muff and is carried over puddles by a footman employed for the purpose.",
+      things = {
+        { name = "the dog", description = "It has a pedigree longer than yours. It looks at you and yawns, with all of its tiny teeth." },
+        { name = "the puddle footman", description = "He has one duty and he lives for rain." },
+      },
+      actions = {
+        { "Bow", say "You bow. The duchess does not see you. The dog does, and is carried past you at eye level, and you get the impression that it has taken your name." },
+      } },
+    { name = "the street sweeper",
+      description = "An old man with a broom, who washes the cobbles every dawn. He knows what every house has thrown out. He could bring down the nobility and has decided that it is not worth the bending.",
+      actions = {
+        { "Ask what he has found", say "\"Love letters. False teeth. A crown, once, paste.\" He leans on the broom. \"And every year, from the Pimbletons, a great heap of hedge clippings that goes on wriggling.\"" },
+      } },
+    { name = "the cobbles",
+      description = "Washed, dried and, on feast days, polished. Between two of them, outside House Mere, a dandelion has come up. It has been reported.",
+      things = {
+        { name = "the dandelion", description = "Yellow, cheerful, and entirely alone on the Row. A committee is to meet about it. You find that you are on its side." },
+      } },
+    { name = "a carriage, waiting",
+      description = "Black, with a crest on the door and four greys. The coachman has been told to wait and has not been told for what. That was on Tuesday.",
+      things = {
+        { name = "the coachman", description = "Asleep, upright, with the reins in his hands. The horses are asleep too. It is a very well matched turnout." },
+        { name = "the crest", description = "A swan, with the usual number of necks. Painted before the hedge began to give the family ideas." },
+      } },
+    { name = "the railings",
+      description = "Iron, black, with gilded spikes. Each house has its own pattern of spike. The patterns are registered.",
+      things = {
+        { name = "a kite", description = "Caught on a spike outside House Vaux-Pimbleton. A child's, home-made, from Elbow Lane. No servant has been told to remove it, so it stays, and flutters, and lowers the tone." },
+      } },
+    { name = "a lamp post with a ribbon",
+      description = "Tied in a bow, in the Mere colours. It marks a duel that was to be fought here at dawn. Both parties sent their apologies and a servant." },
+    { name = "the view up the hill",
+      description = "At the top of the Row the houses stop, and there is the castle: three towers upright, one not, and a thin dark line coming down from the gate that you take for a wall until part of it sits down." },
   },
 
   exits = {

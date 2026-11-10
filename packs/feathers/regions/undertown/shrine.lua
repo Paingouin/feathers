@@ -39,6 +39,14 @@ space {
       actions = {
         { "Sit beside it", say "You sit. Nothing happens, and goes on happening, gently, for some time. When you stand, your boots feel like the boots of someone who has been somewhere." },
       } },
+    { name = "the stone bench",
+      description = "It runs round the wall and would seat forty. The stone is worn in one place only." },
+    { name = "the floor",
+      description = "One stone, dished by feet. The dish runs round the plinth and never to it. People walked round." },
+    { name = "the dome",
+      description = "Unpainted and smooth. Sound goes up into it and does not come down. Your breathing and your boots are taken, and kept." },
+    { name = "a moth",
+      description = "Pale, on the lamp shelf, with its wings open. It does not go to the light. It sits beside it, as you would sit beside a friend." },
   },
 
   exits = {

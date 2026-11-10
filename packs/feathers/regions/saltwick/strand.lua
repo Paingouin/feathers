@@ -49,6 +49,116 @@ space {
       } },
     { name = "the cliffs",
       description = "Grey, tall, and full of holes that are either caves or the homes of very large birds." },
+    { name = "the beachcomber",
+      icon = "☺",
+      description = "A long thin woman in a sack coat, walking the tide-line with a barrow and a stick with a nail in it. Her name is Sib Wrack. She has walked this mile twice a day for fifty years and picked up everything the sea put down. She sells none of it. She says she is keeping it for the sea, in case it wants it back.",
+      variants = {
+        { when = flag "tide_out",
+          description = "A long thin woman in a sack coat, standing at the old tide-line with her barrow, looking at a mile of new sand she has never walked. Her name is Sib Wrack. Fifty years of the same strand, and today it has doubled. She has not moved. She is, you think, saving it." },
+      },
+      things = {
+        { name = "her barrow",
+          description = "A fish box on a pram wheel, full to the rails.",
+          things = {
+            { name = "a ship's nameboard", description = "A plank with carved letters, sea-worn: {i}...KABLE{/}. She has had it for years. She knows perfectly well where the rest of it is." },
+            { name = "a doll's head", description = "China, bald, one eye shut. The sea has kept it a hundred years and given it back smiling. You would rather it were not in the barrow facing you." },
+            { name = "a bundle of driftwood spoons", description = "Not carved. Found. The sea makes a spoon about once a winter, she says, if you leave it to get on with it. She has forty, and a ladle." },
+          } },
+        { name = "her stick", description = "A broom handle with a bent nail. She can turn over a stone, hook a rope and see off a gull with it, in one movement, without breaking step." },
+      },
+      actions = {
+        { "Ask what the best thing was", say "\"A piano. Came in whole, on a Tuesday, on a spring tide. Stood right there.\" And? \"I played it. One tune. Then the tide come back and took it.\" She walks on. \"It only wanted hearing,\" she says over her shoulder." },
+        { "Offer to help", say "She gives you the stick. You turn over a piece of weed. There is a crab under it, which looks at you, and more weed. \"There,\" she says, taking the stick back. \"You've the idea. You've not the eye.\"" },
+      } },
+    { name = "the sand",
+      description = "Grey, fine, packed hard where the sea has been and soft above it. It takes a print perfectly and keeps it for exactly one tide.",
+      variants = {
+        { when = flag "tide_out",
+          description = "Grey, fine, and, below the old tide-line, rippled into ridges that go on for a mile. Nobody has ever walked on those. They hold a print as if they had been waiting to." },
+      },
+      things = {
+        { name = "the worm casts", description = "Thousands of small coils of sand, each beside a small pit. Under every one a worm is eating the beach at one end and putting it back at the other. The whole Strand has been through a worm, many times. It does not seem to have done it any harm." },
+        { name = "a message in the sand", description = "Scratched with a stick, above the tide: {i}WIM, COME DOWN.{/} The letters are fresh. The fishwives take it in turns to write it, every morning. He has never come, and it has never once been left unwritten." },
+        { name = "razor shells", description = "Long, narrow, brown and white, scattered like the leavings of a barber. You step on one. It is well named." },
+      },
+      actions = {
+        { "Write your name", say "You write it large, with your heel. It looks well. A wave that has been watching comes up exactly as far as the last letter and takes that one only, to show that it could." },
+      } },
+    { name = "the dunes",
+      description = "At the back of the beach, under the cliff: hills of blown sand held together with grass, and a great silence between them.",
+      things = {
+        { name = "the marram grass", description = "Grey-green, sharp as paper, each blade bent over so that its tip has drawn a perfect circle in the sand around it. A thousand small compasses, all agreeing about the wind." },
+        { name = "a natterjack toad", icon = "t",
+          description = "Small, warty, with a yellow stripe down its back, sitting at the mouth of a burrow. It does not hop. It runs, like a clockwork mouse, a foot at a time, and then stops and pretends it did not.",
+          actions = {
+            { "Watch it run", say "It makes four dashes across the open sand, each ending in a freeze, and reaches a tuft. From inside the tuft comes a noise like a ratchet, very loud, out of all proportion. It has been saving that." },
+          } },
+        { name = "a driftwood shelter", description = "Three spars and a hatch cover, built against a dune by somebody who waited out a night here. Inside: a ring of burnt sticks, a mussel shell used as a spoon, and a name cut in the spar. {i}Wilf{/}. He gets about." },
+      } },
+    { name = "the shore birds",
+      description = "Along the wet edge, working.",
+      things = {
+        { name = "the sanderlings", description = "A dozen small pale birds running down the beach after each wave and running back up ahead of the next, legs a blur, never once getting their feet wet. They have been doing it since dawn. The sea has not caught one yet and has not stopped trying." },
+        { name = "an oystercatcher", description = "Black and white with a bill like a stick of red sealing wax. It finds a mussel, hammers it twice in exactly the right place, and eats it. Then it shouts about it, piercingly, the whole length of the Strand." },
+        { name = "a gull dropping a whelk", description = "It flies up thirty feet with a shell and lets go over the rocks. The shell bounces. The gull lands, looks, picks it up, and goes up again. This is the nineteenth time. One of them is going to give in, and you would not bet on which." },
+      } },
+    { name = "a seal on a rock",
+      icon = "s",
+      description = "Just off the point: a grey seal hauled out on a flat rock, curved like a banana, head and tail both in the air. It is watching you with the frank interest of somebody at a window.",
+      variants = {
+        { when = flag "tide_out",
+          description = "The rock stands in sand now, a long way from any water. The seal is still on it, curved like a banana, looking toward the distant sea with the expression of a man whose cab has not come." },
+      },
+      actions = {
+        { "Sing to it", say "They say seals like singing. You give it a verse of the one about the miller's daughter. It listens to the end. Then it scratches its chin with a flipper and looks out to sea, and you gather that it has heard it done better." },
+      } },
+    { name = "the kelp",
+      description = "Torn up in a gale and heaped at the tide-line: brown straps as long as a cart rope, each ending in a root like a fist holding a stone.",
+      things = {
+        { name = "the sandhoppers", description = "Lift the weed and the sand underneath jumps: a thousand grey commas, all springing in different directions, none getting anywhere, like a parliament surprised." },
+        { name = "a kelp root with a stone", description = "The weed never let go of its stone. The storm took both. There is something to be said for it, though the stone might say it differently." },
+      },
+      actions = {
+        { "Pop a bladder", say "{i}Tk.{/} It is as good as you remembered. You do nine more. Nobody is watching. You are allowed a moment off." },
+      } },
+    { name = "a fossil in the cliff",
+      wonder = true,
+      icon = "@",
+      description = "At the foot of the cliff, where a fall has left the rock clean: a coiled shell of stone, ribbed, as wide as a cartwheel, set in the grey like a seal on a letter. {magic}It lived in a sea, and the sea was here, at the height of your head, before there was a cliff to stand under.{/} You put your hand flat on it. It is cold, and it is the oldest thing you have ever touched, and it is the same shape as a snail in your mother's garden.",
+      things = {
+        { name = "the centre of the coil", description = "The ribs get finer and closer until you cannot follow them. It started very small. Everything here did." },
+        { name = "smaller shells around it", description = "Dozens, the size of coins, the same coil. A whole shoal, turned to stone together, still all facing the same way." },
+      },
+      actions = {
+        { "Trace the spiral", say "Your finger goes round, and inward, and round. By the middle you have slowed without meaning to. A wave breaks behind you and you turn, half expecting it to be up at your shoulder." },
+      } },
+    { name = "the cockle beds",
+      visible_if = flag "tide_out",
+      description = "Out on the new sand: a darker stretch, pocked all over with small holes, each spitting a little jet of water as you walk by. The beach is taking exception to you, one squirt at a time.",
+      things = {
+        { name = "a cockle woman's rake", description = "Stuck upright in the sand with a basket hung on it. Its owner has gone back for a second basket. Nobody on this coast has ever needed a second basket before." },
+      } },
+    { name = "a serious child",
+      icon = "☺",
+      description = "A girl of about seven, with a wooden spade, building a sandcastle at the very edge of the tide. It has four towers, a keep, a gate and a moat. It is better built than Castle Stillstanding. She does not look up.",
+      variants = {
+        { when = flag "tide_out",
+          description = "A girl of about seven, with a wooden spade, standing beside a sandcastle with four towers, a keep, a gate and a dry moat. The tide she built it against has gone and not come back. She has won. She does not seem to know what to do next." },
+      },
+      things = {
+        { name = "the sandcastle", description = "The walls are faced with limpet shells, overlapped like slates. There is a flag: a strip of red weed on a razor shell. In the courtyard, a crab has been installed as garrison and has accepted the post." },
+        { name = "her spade", description = "Wood, bleached, with a split in the blade bound with twine. Her mother's, and her mother's. A long line of women have stood on this beach and told the sea no." },
+      },
+      actions = {
+        { "Ask if the sea will get it", when = no(flag "tide_out"), say "\"Yes,\" she says. \"At about four.\" She pats a tower. \"I'll make it again tomorrow. It's not about it lasting.\" She looks at you as at somebody who has to have things explained." },
+        { "Ask if the sea will get it", when = flag "tide_out", say "\"It was meant to,\" she says. She looks at the far white line of the water, and for the first time she looks seven. \"I hope it's all right.\"" },
+      } },
+    { name = "an old boat's bones",
+      description = "High up the beach, long past any tide: the keel and six ribs of a rowing boat, silver with age, with sea holly growing through them. Somebody pulled her up for the winter and did not come back in the spring.",
+      things = {
+        { name = "the sea holly", description = "Blue-grey, spiked, with flowers like small thistles. It has come up exactly along the line of the keel, as if the boat had been planted." },
+        { name = "a rowlock", description = "Bronze, still in its socket, bright where your thumb rubs it. The last thing on her that would still do its work." },
+      } },
   },
 
   exits = {
@@ -103,9 +213,169 @@ space {
         { "Ring it", fx "shake",
           say "One note, sideways. Far out on the wet sand, the white line of the sea stops for a moment, as a dog does when it hears its name." },
       } },
+    { name = "the heap in the low corner",
+      description = "Everything loose aboard, slid to the bottom of the tilt a century ago and settled: a drift of crockery, boots, hammocks and brass, cemented together with sand and small shells.",
+      things = {
+        { name = "the spare anchors", description = "Forty, as the manifest said, in a rusted tangle. She carried forty anchors and went aground with every one of them still below. Nobody thought to drop one. They were for emergencies." },
+        { name = "a harmonium", description = "On its back, keys up, with barnacles on the black notes. You press one. It gives a long wet wheeze in a minor key, and something that was living in the bellows leaves by the back." },
+        { name = "the crew's boots", description = "Thirty pairs, sea boots, in a heap. They took them off to swim. They need not have. The mate was right: it was sand, and they walked ashore, and then stood on the beach in their socks looking at her." },
+        { name = "a crate of signal rockets", description = "{i}DISTRESS, RED, 100.{/} Unopened. The captain would not have it said that the {i}Unsinkable{/} was in distress. He had the mate write {i}mild inconvenience{/} in the log and went down to dinner." },
+      },
+      actions = {
+        { "Dig in it", say "You shift a plate, a ladle and a boot. Under them: another plate, another ladle, and the other boot. A hermit crab comes out of a teapot, carrying the teapot, and moves it somewhere you are not." },
+      } },
+    { name = "the galley",
+      description = "A cupboard of a kitchen, forward, lying on its side with the stove on the wall. The pans have hung on their hooks through everything and point, like the bell, at an angle of their own.",
+      things = {
+        { name = "the stove", description = "Iron, cold, with its door hanging open and a conger eel's head in the firebox, looking out. {danger}It has a great many teeth, and they all slope backward.{/} It has lived in the stove since it was small. It watches you with the calm of a cook in his own kitchen.",
+          actions = {
+            { "Shut the stove door", say "You push it to, gently, with your foot. From inside comes a single thump, not angry, more in the nature of a cough. You open it again. Everyone is happier." },
+          } },
+        { name = "a soup tureen", description = "Silver plate, lid on, wedged in a rack built for it. The last dinner. You lift the lid. A century of sea has been in and out and left it full of clear water, one winkle and a soup spoon." },
+        { name = "the bill of fare", description = "Chalked on a slate that has never been wiped, the tide notwithstanding: {i}Soup. Fish (if any). Duff. No second helpings pending outcome.{/}" },
+      } },
+    { name = "the hammocks",
+      description = "A row of canvas hammocks slung from the beams, hanging now in long drooping loops like washing. Each has a number, and a small private thing left in it.",
+      things = {
+        { name = "hammock nine", description = "A wooden whistle on a string, a pack of cards swollen to a brick, and a letter that is now only a soft grey rectangle with {i}Dear{/} on it." },
+        { name = "hammock thirty", description = "Nothing in it but a cork lifebelt, worn, tied on with a careful knot. One man aboard did not altogether trust the name. He was the ship's carpenter. He knew what she was made of." },
+      } },
+    { name = "the mast",
+      description = "It comes down through the deck, which is a wall, and crosses the hold level, like a beam: a tree trunk bound in iron hoops, green with weed.",
+      things = {
+        { name = "the mast step", description = "Where its foot sits in the keel there is a coin, set under it when she was built, for luck. You can see the edge. It is gold. The owner did not stint on luck. He simply bought the wrong kind." },
+        { name = "a carved tally", description = "Cut in the mast with a knife: seven upright strokes. Her days at sea. The seventh has a wave drawn through it." },
+      } },
+    { name = "the barnacles",
+      description = "On everything, edge to edge, like a pavement: small white volcanoes, shut tight in the air.",
+      things = {
+        { name = "one barnacle", description = "You watch it. After a long time the lid opens a hair and a tiny hand comes out, combs the air once for a sea that is not there, and goes back in. It will try again in a minute. It has been trying since the tide went." },
+      } },
+    { name = "the crated lifeboats",
+      description = "Four, in the stern, each in a pine case stencilled {i}LIFEBOAT. DO NOT OPEN UNTIL NEEDED.{/} The cases are nailed shut. The nails have never been drawn. One case has been broken open from the outside, by the sea, in irritation.",
+      things = {
+        { name = "the broken case", description = "Inside is a lifeboat, perfect, white, with her oars lashed in and a tin of biscuit under the thwart. She has never touched water except by being sunk in it. On her bow, in gold: {i}UNSINKABLE No. 3{/}." },
+      } },
+    { name = "a brass-bound door",
+      key = "stateroom door",
+      description = "Aft, beyond the captain's table, in what is now the floor: a door of teak with brass corners and a brass plate reading {b}OWNER{/}. It is shut, and has swollen in its frame, and there is weed growing out of the keyhole.",
+      variants = {
+        { when = flag "sw_stateroom",
+          name = "a hole where a door was",
+          description = "The owner's door has gone down into the room below it, hinges and all, and there is a square of dry dark in the floor with a smell of cedar coming up. You could lower yourself through by the frame." },
+      },
+      things = {
+        { name = "the brass plate", description = "{b}OWNER{/}. Not a name. He had the plate made before he had decided what to call the ship, and never saw a reason to be more specific." },
+      },
+      actions = {
+        { "Jump on it", when = no(flag "sw_stateroom"), set "sw_stateroom", fx "shake",
+          say "You stand on the owner's door and jump. Nothing. You jump again. The captain, at his table on the wall, seems to be watching, and you feel he would not have sanctioned it. On the third jump the frame lets go and the whole door drops away under you. You catch the sill by your elbows, which is not in the ballads either." },
+      } },
   },
 
   exits = {
     { to = "long_strand", label = "The hatch", description = "Out through the hatch and down the ribs to the sand." },
+    { to = "owners_cabin", label = "The hole in the floor",
+      description = "Down through the door frame into the stateroom underneath, which the sea never got into.",
+      requires = flag "sw_stateroom", hidden = true },
+  },
+}
+
+space {
+  id = "owners_cabin",
+  region = "saltwick",
+  secret = true,
+  name = "The Owner's Stateroom",
+  description = "The door was so well made that for a hundred years it kept the sea out. The room is dry. It lies on its side with the rest of the ship, so you are standing on a wall of buttoned green leather, with a carpet rising beside you like a cliff and a bed overhead. Everything is of the best. It smells of cedar and cigars, and a little of pride.",
+  palette = { bg = "#0c0f0c", text = "#d0ccb4", dim = "#6c6a54", accent = "#e0c060", border = "#40422c" },
+  ambience = {
+    dust { glyphs = "·˙", color = "#6a643c", rate = 0.3, speed = 0.2 },
+    shimmer { color = "#e0c060", strength = 0.1 },
+  },
+
+  things = {
+    { name = "the portrait",
+      description = "Bolted to what was the wall and is now the ceiling, so that he looks straight down on you: a stout man in a fur collar, with one hand on a globe and the other pointing out of the frame. Sir Barnaby Stoat, shipowner. The painter has caught him in the act of being certain.",
+      things = {
+        { name = "the globe in the portrait", description = "Painted with the kingdom on it and nothing else. The rest is plain blue. He has his hand over most of the blue, as if it were already spoken for." },
+        { name = "the little brass label", description = "{i}\"She cannot sink. I have paid for her not to.\"{/}" },
+      },
+      actions = {
+        { "Look him in the eye", say "He looks back down his nose, which from this angle is most of him. You have been in this room for one minute and already feel that you owe him money." },
+      } },
+    { name = "the bed",
+      description = "A four-poster in mahogany, screwed to the deck, which puts it flat against the wall above your head with its curtains hanging sideways. The sheets are still tucked in. Nothing has ever been slept in so little.",
+      things = {
+        { name = "a nightcap on the pillow", description = "Silk, with a tassel, held to the pillow by a hatpin. He was not aboard. He never sailed in her. He sent the nightcap, to show confidence." },
+      } },
+    { name = "the wardrobe",
+      description = "Built in, with louvred doors, now underfoot. You open one like a cellar flap.",
+      things = {
+        { name = "twelve identical coats", description = "Black broadcloth, fur collar, laid flat in a row like sleepers. He had one for each month. They have never been worn, and the moth has never got in. Nothing got into this room. That was the point of it." },
+        { name = "a cork waistcoat", description = "At the very back, under the coats, wrapped in brown paper: a lifebelt, tailored, with silk lining and his initials. So he did have one made. He simply had it hidden." },
+      } },
+    { name = "the writing desk",
+      description = "A roll-top, bolted down, hanging off the carpet-cliff with its drawers fallen open like tongues.",
+      things = {
+        { name = "the insurance policy",
+          description = "Forty pages on vellum, with nine seals. {i}The vessel Unsinkable is hereby insured against fire, piracy, lightning, whale and act of gods.{/} You read to the end. She is insured against everything in the world.",
+          things = {
+            { name = "the excluded risks", description = "One line, on the last page, in the smallest hand the clerk could manage: {i}Not covered: sinking. (Not applicable.){/}" },
+          } },
+        { name = "a letter to the captain", description = "Never sent, since the ship left first: {i}Sir. Should you at any time believe that the vessel is sinking, you are mistaken, and are to continue as normal. Yrs, Stoat.{/} The captain, you reflect, did not need telling." },
+        { name = "a box of cigars", description = "Cedar, sealed, the band still on. A hundred years in a dry room at the bottom of the sea. They are, you suspect, the best cigars in the kingdom, and you do not smoke." },
+      } },
+    { name = "the chandelier",
+      description = "Crystal, forty candles, hanging from the true ceiling, which is a wall. So it sticks straight out into the room, sideways, level, every drop of glass pointing at the opposite wall. It and the ship's bell are of one mind.",
+      actions = {
+        { "Flick a crystal", say "It rings, a high clear note, and swings out and back along a line that has nothing to do with down. The others take it up. For a moment the room is full of small bright sounds, all agreed about a direction that is not the one you are standing in." },
+      } },
+    { name = "the porthole",
+      description = "Brass, a foot across, in the floor by your boots. It looks out on packed sand, an inch from the glass.",
+      things = {
+        { name = "the view", description = "Sand, and in it, pressed against the pane, the pale underside of a flatfish that settled here long ago and found the glass warm. It has been looking into this room for most of its life. You are the first thing in it that has ever moved." },
+      },
+      actions = {
+        { "Tap on the glass", say "The flatfish shifts, a fin's width, and resettles. You have been its whole entertainment for a century and it does not want you to stop on its account." },
+      } },
+    { name = "the strongbox",
+      key = "strongbox",
+      description = "An iron safe the size of a tea chest, bolted to the deck beside the desk, with a wheel on the door and a brass dial. The dial has four rings of letters. Above it, engraved, in case he forgot: {i}THE WORD IS THE SHIP'S OWN.{/}",
+      variants = {
+        { when = flag "sw_safe_open",
+          description = "An iron safe the size of a tea chest, standing open. The dial reads {b}SINK{/}. He did not trust himself to remember anything he did not say twenty times a day, and he would never, ever say that." },
+      },
+      things = {
+        { name = "the dial", description = "Four rings, each with the alphabet. At present they read {b}NEVR{/}. It was his first guess too, by the wear on those letters, the day he forgot." },
+        { name = "the compass in its case",
+          visible_if = all { flag "sw_safe_open", no(item "compass_second_opinions") },
+          description = "On the one shelf, alone, in a nest of blue velvet: a sea compass in a case of gold and whalebone. The needle is swinging. It has been swinging in the dark for a hundred years, pointing at the door, and the hatch, and the shore.",
+          actions = {
+            { "Take the compass", once = true, give "compass_second_opinions", fx "sparkle",
+              say "It is warm from the velvet and heavier than gold alone. The moment it is in your hand the needle leaves the door and points, with great firmness, at the safe you have just taken it out of. {gold}The Compass of Second Opinions.{/} It saved three fleets. It could have saved this ship, had anybody aboard been willing to look at it." },
+          } },
+        { name = "a bag of sovereigns",
+          visible_if = flag "sw_safe_open",
+          description = "Canvas, tied, the size of a cabbage, and stamped {i}SALVAGE FUND{/}. Money set aside to raise her if she sank. It has never been touched, since by the owner's reckoning she has not. You heft it. It is the most gold you have ever lifted. You set it back; the captain is just overhead, and he is the kind who would know." },
+      },
+      actions = {
+        { "Try UNSINKABLE", when = no(flag "sw_safe_open"), say "Four rings. The word has ten letters. You get as far as {b}UNSI{/} and the wheel does not move. You suspect a great many men have got as far as {b}UNSI{/}." },
+        { "Try SINK", when = no(flag "sw_safe_open"), set "sw_safe_open", fx "shake",
+          say "{b}S. I. N. K.{/} It is right there in the middle of her name, where he never once looked. The wheel turns as if it had been oiled yesterday, and the door swings out along the wall. Somewhere overhead a skeleton in a good coat is proved right, at last, about something." },
+      } },
+    { name = "a decanter",
+      description = "Cut glass, stoppered, in a rack on the wall, a third full of something the colour of old gold. Because of the tilt the liquid lies along the side of the bottle. There is a bubble in it, and the bubble is level.",
+      actions = {
+        { "Unstopper it", say "The smell that comes out is a hundred years of brandy improving in the dark with nobody to interrupt it. You stopper it again, carefully. There are smugglers along this coast who would weep." },
+      } },
+    { name = "the carpet",
+      description = "Turkey red, wall to wall, nailed down, and therefore now a wall. Things have slid down it over the years and left tracks in the pile: a chair, a footstool, a spittoon.",
+      things = {
+        { name = "the spittoon", description = "Brass, at the bottom of its track, on its side. Clean. Nobody ever used this room for anything. It is a hundred years old and it is still new." },
+      } },
+  },
+
+  exits = {
+    { to = "wreck_hold", label = "The door frame", description = "Up through the hole, by the brass corners, into the green stripes of the hold." },
   },
 }

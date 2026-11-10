@@ -35,6 +35,88 @@ space {
       actions = {
         { "Pick a blackberry", say "Sweet, warm, and paid for in full by your sleeve." },
       } },
+    { name = "the millstream",
+      icon = "≈",
+      description = "It comes down from the village and goes up into the wood, and at this point on its journey nobody has yet explained to it which of those is unusual.",
+      things = {
+        { name = "a stickleback", description = "An inch of fish with three spines and a temper, holding its place against the current by swimming downhill as hard as it can." },
+        { name = "a paper boat",
+          description = "Folded from a page of sums and launched by some child in Greenhollow. It is sailing steadily uphill into the trees. The sums on it were wrong, which may be why.",
+          actions = {
+            { "Blow on it", say "You give it a breath of wind. It does not need it. It goes on up the stream at its own pace and round a root, out of sight, on business." },
+          } },
+        { name = "the stepping stones", description = "Five, flat, and each a little further apart than the last. Whoever laid them was losing patience." },
+      },
+      actions = {
+        { "Drink from it", say "Cold, sweet, and faintly floury. It turned a mill wheel on the way here and has not got over it." },
+      } },
+    { name = "the second tree",
+      description = "A beech, a pace behind the ash, keeping well out of it.",
+      things = {
+        { name = "a hole at the foot",
+          description = "Round, dry, and lined with moss.",
+          things = {
+            { name = "a hedgehog", icon = "h",
+              description = "Asleep in a ball, breathing slowly. One eye opens, takes you in, and shuts. It has seen adventurers before. They go in. Some of them come out.",
+              actions = {
+                { "Apologise for waking it", say "It was not awake. It is now. It says nothing, in a way that carries." },
+              } },
+          } },
+        { name = "beech mast", description = "Last year's husks, ankle deep, each one opened in four like a small wooden flower. Something has been through them all and found them wanting." },
+      } },
+    { name = "a returning adventurer",
+      icon = "☺",
+      description = "A man of about your age sits on a log, picking burrs out of his hose one at a time and laying them in a row. He went in yesterday, with a sword and a plan. He has come out with neither, and seems lighter for it.",
+      things = {
+        { name = "the row of burrs", description = "Forty-one so far. He is treating it as a count of the wood's opinions of him." },
+        { name = "his empty scabbard", description = "\"I lent it to a hermit,\" he says. \"To cut bread. He talked for three hours and I left without it. I would do the same again.\"" },
+        { name = "his plan",
+          description = "A sheet of paper, much folded. {i}1. Enter wood. 2. Find treasure. 3. Leave wood.{/} He has crossed out the second line and written {i}be found by it{/}, and then crossed that out too." },
+      },
+      actions = {
+        { "Ask what is in there", say "\"Trees,\" he says. \"A great many. They talk about you. It is not unkind, mostly.\" He pulls a burr. \"There is a lake. Do not look in the lake if you are happy with how things are.\"" },
+        { "Ask for advice", say "\"Take the stile,\" he says. \"I walked round it, going in. I think that is where it started to go wrong.\"" },
+      } },
+    { name = "a patch of nettles",
+      description = "Waist high and in excellent health, on both sides of the path, leaning in.",
+      things = {
+        { name = "a dock leaf", description = "Growing right beside the nettles, as dock always does. It is the one arrangement in the Mumblewood that is entirely on your side." },
+        { name = "a red admiral", description = "A butterfly, basking on the worst of the nettles with its wings open, unstung. It knows something you do not." },
+      },
+      actions = {
+        { "Brush past carefully", say "You are very careful. It makes no difference at all. You take the dock leaf, and the dock leaf, to its credit, helps." },
+      } },
+    { name = "a boundary stone",
+      description = "Knee high, mossed over, with a letter cut on each face. On the field side: {b}G{/}, for Greenhollow. On the wood side the mason started a letter, stopped, and went home.",
+      things = {
+        { name = "the unfinished letter", description = "One upright stroke and the start of a curve. He was going to carve whose wood this was. It occurred to him partway through that he did not know, and that something might." },
+        { name = "a snail", description = "Halfway up the stone, on the field side, heading for the top. At its present speed it will change parishes on Thursday." },
+      } },
+    { name = "the foxgloves",
+      description = "A stand of them along the fence that isn't there: tall purple spires, every bell spotted inside like a throat.",
+      things = {
+        { name = "a bumblebee", description = "It backs out of a bell, dusted yellow, and goes straight into the next one up. It is working the spire floor by floor, like a rent collector." },
+      },
+      actions = {
+        { "Put a bell on your finger", say "It fits. You have a small purple hat on one finger. You make it bow to the bee. The bee does not acknowledge it, and you take it off again, having had the best minute of your day." },
+      } },
+    { name = "a cuckoo",
+      icon = "v",
+      description = "Somewhere in the first trees, saying its own name, over and over, in the voice of somebody who has forgotten what they came into the room for.",
+      actions = {
+        { "Answer it", say "\"Cuckoo,\" you say. A silence. Then, from further in, a second cuckoo, and a third. You have started something, and you walk on before you find out what." },
+      } },
+    { name = "a woodcutter's notice",
+      description = "A board on a post, in the Council's lettering: {b}NO FELLING, BY ORDER.{/} Below it, in chalk, in a countryman's hand: {i}They heard you the first time.{/}",
+      things = {
+        { name = "an old stump beside the post", description = "The only stump at the edge of the wood, grey and soft with age. Whoever cut it did not cut a second." },
+      } },
+    { name = "a rabbit warren",
+      description = "A bank full of holes under the hawthorn, and the sense of a great many ears just out of sight.",
+      things = {
+        { name = "a sentry rabbit", description = "Upright at the highest hole. It thumps once when you look at it. Somewhere below, a hundred and forty rabbits stop what they are doing." },
+        { name = "the hawthorn", description = "Bent double by the wind off the fields, with a thrush's nest in the crook, and one white blossom out of season that nobody has told." },
+      } },
   },
 
   exits = {

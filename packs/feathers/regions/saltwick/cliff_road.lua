@@ -39,6 +39,82 @@ space {
       actions = {
         { "Sit", say "You sit. The wind goes through your coat, has a look round, and leaves." },
       } },
+    { name = "the wind",
+      description = "It comes off the sea in one piece and goes inland to trouble Aldmoor. Everything on the cliff top has made its arrangements: the thorn trees grow sideways, the sheep graze facing it, and the signpost has been re-set four times.",
+      things = {
+        { name = "a thorn tree", description = "It grew upward for a foot, met the wind, and has gone inland ever since, level with the ground, for five yards. There is a nest in it, also sideways, with a linnet sitting in it at an angle." },
+        { name = "somebody's hat", description = "Going past, at head height, in the direction of Aldmoor. It is the third today. There is a hedge a mile inland where they all fetch up, and a man who sells them back." },
+      },
+      actions = {
+        { "Spit into it", say "You are a quick learner. It only takes the once." },
+      } },
+    { name = "the gorse",
+      description = "Banks of it along the landward side: green spikes and yellow flowers that smell, improbably, of coconut. It is in bloom. It is always in bloom. The saying here is that when the gorse is out of flower, kissing is out of season.",
+      things = {
+        { name = "a stonechat", description = "A small bird with a black head on the topmost spike, making a noise like two pebbles knocked together. It is telling you that this is its bush. It told the last sheep the same." },
+        { name = "a tuft of wool on the thorns", description = "The gorse takes a little off every sheep that passes. By midsummer there is nearly a whole one in here, in instalments." },
+      } },
+    { name = "the cliff edge",
+      description = "Turf, then a lip of crumbling earth, then nothing for two hundred feet. A row of white stones marks where the edge is. A second row, further out and lower down, marks where it used to be.",
+      things = {
+        { name = "the sea pinks", description = "Thrift, in round cushions, growing right on the lip with their roots in air. They nod over the drop like people looking for something they dropped." },
+        { name = "the ledges below",
+          description = "A city of sea birds, storey upon storey, every ledge let. The noise comes up like a market.",
+          things = {
+            { name = "the guillemots", description = "Hundreds, upright, shoulder to shoulder in black and white, each with one egg on bare rock between its feet. The egg is pointed, so that it rolls in a circle. It is the only precaution on the whole cliff." },
+            { name = "a puffin", description = "It stands at the mouth of a burrow with nine small fish laid crosswise in its beak, all facing alternate ways, and looks at you as a man looks who is carrying too many plates." },
+          } },
+      },
+      actions = {
+        { "Look over", say "You lie down first, which is the only sensible thing you have done today, and put your chin over. Birds. Rock. A long way down, the sea, working at the foot of it. A sheep looks up at you from its ledge without interest." },
+      } },
+    { name = "the Preventive man",
+      icon = "♜",
+      description = "An officer of the Crown's Revenue in a blue coat, sitting on a shooting stick with a telescope to his eye. He is here to watch for smugglers. The telescope is trained, with great steadiness, on Aldmoor.",
+      things = {
+        { name = "his telescope", description = "Brass, three draws, the property of the Revenue. \"They never come from the sea,\" he says. \"That is what they want you to think. I have been watching that town gate for six years.\" Behind him, below the cliff, a lantern shows once and is covered." },
+        { name = "his notebook", description = "{i}Day 2,190. Nothing. They are clever.{/} Every page is the same. On the cover he has written {i}EVIDENCE{/}." },
+        { name = "his sandwiches", description = "Wrapped in a cloth and, you notice, smelling very strongly of good brandy. \"A fisherman gives them to me,\" he says. \"Out of respect for the service.\"" },
+      },
+      actions = {
+        { "Ask about smugglers", say "\"None,\" he says, with satisfaction. \"Not one, in six years. I think they know I'm here.\" He takes a bite of his sandwich. His eyes water slightly." },
+        { "Point at the sea", say "He turns the telescope round, looks at the sea for the length of a breath, and turns it back. \"Water,\" he says. \"You'll get nothing in by water. It's all wet.\"" },
+      } },
+    { name = "an iron beacon",
+      description = "A fire basket on a pole at the highest point of the road, rusted through in the bottom. It was lit to warn ships off the rocks, before the Light. Some years it was lit to bring them on.",
+      things = {
+        { name = "the basket", description = "A rook has built in it. Sticks, wool, and one strand of red silk ribbon that never came from a sheep." },
+        { name = "a brass plate on the pole", description = "{i}This beacon was kept by the Pell family for nine generations. They are sorry about the eighth.{/}" },
+      } },
+    { name = "a milestone",
+      description = "Square, lichened, sunk to its shoulders in the turf. One face says {place}ALDMOOR 1{/}. The other says {place}SALTWICK ½{/}, and under that, added by a mason with a conscience: {i}(down){/}.",
+      things = {
+        { name = "the lichen", description = "Orange and grey in rings, spreading a hair a year. It has got as far as the top of the {b}A{/}. By the time it reaches the {b}R{/} the road will have fallen into the sea, and the stone will be accurate about nothing." },
+      } },
+    { name = "a kestrel",
+      icon = "v",
+      description = "Hanging on the wind just beyond the edge, at the level of your eyes, tail spread, wings shivering, head as still as if it were nailed to the sky. It is looking at one square foot of turf beside your boot.",
+      actions = {
+        { "Look where it is looking", say "A vole, flat in the grass, an inch from your toe, eyes shut. You move your boot so that your shadow covers it. The kestrel slides away down the wind. You have made an enemy and a friend, and neither will remember." },
+      } },
+    { name = "a seaweed cart",
+      description = "A two-wheeled cart loaded with wet brown wrack, stopped halfway up from the harbour while the pony gets its breath. The carter is asleep on the shafts. The pony is eating the load.",
+      things = {
+        { name = "the pony", description = "Shaggy, sea-coloured, and in no doubt about who is in charge of this cart. It gives you a long look over a mouthful of kelp. You do not wake the carter." },
+        { name = "something in the weed", description = "A glint among the wrack: the neck of a small flat bottle, corked. Then another. Then you see that under a thin layer of seaweed the cart is carrying a great deal of something else, and that the carter has one eye open." },
+      },
+      actions = {
+        { "Ask what the seaweed is for", say "\"Fields,\" says the carter, without moving. \"Very good for fields.\" The cart clinks. \"Glass is good for fields too,\" he says. \"Drainage.\"" },
+      } },
+    { name = "a turf maze",
+      wonder = true,
+      description = "Cut into the grass on the landward side: a ring of narrow paths, coil within coil, no wider than a foot. The fishermen's wives walk it when a boat is late. {magic}You cannot get lost in it.{/} There is one path and no choices, and however you walk it you come out facing the sea. They say it has never failed to bring a boat home, and they say it quietly, and they keep the turf cut.",
+      things = {
+        { name = "the centre", description = "A flat stone with a hollow worn in it, and in the hollow a few small things left for luck: a net needle, a baby's shoe, a herring scale as bright as a coin." },
+      },
+      actions = {
+        { "Walk it", say "It takes longer than it looks. Round, back, round the other way, nearly to the middle and then all the way out to the rim again. Then the stone. You stand on it and look up, and you are facing the sea, and far out there is one sail that you would swear was not there before." },
+      } },
   },
 
   exits = {

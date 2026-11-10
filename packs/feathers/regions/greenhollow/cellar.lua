@@ -35,6 +35,50 @@ space {
           } },
       } },
     rat { description = "It lives here. You are visiting. It would like that understood." },
+
+    barrel { name = "the ale tun",
+             description = "The big one, on its side, with a lead pipe going up through the ceiling to the tap. So this is where Ale comes from. You had hoped not to know." },
+    { name = "the wine rack",
+      description = "Forty bottles, laid down by the founder against a great occasion. Greenhollow has not had one.",
+      things = {
+        { name = "a dusty bottle", description = "The label has a year on it, and the word {i}SOON{/}." },
+        { name = "an empty slot", description = "One bottle is gone and the dust print is fresh. A great occasion has been had by somebody, privately." },
+      } },
+    { name = "the smugglers' table",
+      description = "A crate with a candle stub, three stools, and a hand of cards put down in a hurry.",
+      things = {
+        { name = "the cards",
+          description = "Three of the hands are terrible. The fourth is five aces. They drink at the Griffon, and it seems they do not trust each other there either." },
+        { name = "a tally stick",
+          description = "Notched. Forty candles, twelve cases, and one of something marked only with a cross." },
+        candle { name = "a candle stub", description = "Untaxed. It burns with a low, guilty flame." },
+      } },
+    { name = "the trapdoor, from below",
+      description = "Planks, a brass ring, and a slot of light. Through the slot you can see the sole of a boot.",
+      variants = {
+        { when = flag "bed_broken",
+          description = "Planks, a brass ring, and a slot of light. No boot. He is upstairs, polishing a mug at the memory of you." },
+      } },
+    { name = "the cobwebs",
+      description = "Curtains of them, grey with dust, looped from beam to beam.",
+      things = {
+        { name = "a cellar spider",
+          description = "All leg. It trembles its web when you breathe, so as to be thought bigger." },
+      } },
+    { name = "a mushroom patch",
+      description = "In the damp corner, pale and domed, growing on a fallen stave. There are fresh cuts on the stalks. The cook comes down for them. So the cook knows there is a cellar, and so, you begin to see, does everyone." },
+    { name = "a toad",
+      description = "Under the tun, enormous, the colour of the floor. It has been here longer than the smugglers and considers them a fad.",
+      actions = {
+        { "Pick it up", say "It lets itself be lifted and looks at you. You put it back exactly where it was. It adjusts, to be sure." },
+      } },
+    { name = "a chalk mark on the old stone",
+      description = "An arrow pointing at the newer wall, and the word {i}FRIDAYS{/}." },
+    { name = "the floor",
+      description = "Flagstones, swept in one track only: from the trapdoor to the newer wall, the width of a handcart.",
+      things = {
+        { name = "a dropped glove", description = "Lady's, kid leather, embroidered with a small coronet. Whoever comes through that wall on Fridays does not always send servants." },
+      } },
   },
 
   exits = {

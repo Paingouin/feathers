@@ -90,10 +90,104 @@ space {
       actions = {
         { "Ask to join", say "They look at your boots. They look at each other. \"We'll let you know,\" says the dwarf, who will not." },
       } },
+
+    { name = "the bar",
+      description = "Oak, ringed with the ghosts of ten thousand mugs.",
+      things = {
+        { name = "the mugs on their hooks",
+          description = "Forty pewter mugs, one to a regular, each dented in its own way.",
+          things = {
+            { name = "Jeb's mug",
+              description = "It has a dent the shape of Old Jeb's forehead. It was an accident. There is a second dent." },
+            { name = "the mug of a man who left",
+              description = "Hung at the end, dusty. He went adventuring twenty years ago. It is washed every spring, in case." },
+            { name = "a mug with a glass bottom",
+              description = "So that you can see who is coming at you while you finish. Nobody in Greenhollow has ever come at anybody. It is the look of the thing." },
+          } },
+        { name = "the ale tap",
+          description = "One ale. It is called Ale.",
+          actions = {
+            { "Order a pint", say "It is brown, flat, and tastes faintly of a cellar that is not there. By the second mouthful you are fond of it." },
+          } },
+        { name = "the slate",
+          description = "Tabs, in chalk. The party of adventurers owe for eleven nights. Beside the figure somebody has drawn four small coins and a question mark." },
+        { name = "a jar of pickled eggs",
+          description = "They have been here since the founder. One is eaten each year, by lot.",
+          actions = {
+            { "Take one", say "The room goes silent. The barman shakes his head, slowly. You put the lid back on. The room resumes." },
+          } },
+      } },
+
+    { name = "the regulars",
+      description = "Six men and a dog at the long table, who have been having the same conversation since they were boys.",
+      things = {
+        { name = "a man explaining the weather",
+          description = "He predicted rain for today. It is fine. He says it is raining somewhere, and that he never said where." },
+        { name = "a card game",
+          description = "Played with a deck of forty-nine. Everyone knows which three are missing and plays round them.",
+          actions = {
+            { "Ask to be dealt in", say "They deal you in. You lose a button, your second-best bootlace, and a promise. They are very nice about it." },
+          } },
+        { name = "the dog under the table",
+          description = "Grey at the muzzle, asleep across eleven feet." },
+        { name = "an empty stool",
+          description = "Old Tom's. He died on a Tuesday. Nobody sits there, and nobody has ever had to say so." },
+      } },
+
+    { name = "the dartboard",
+      description = "Elm, soaked nightly. The wall round it has more holes in it than the board.",
+      things = {
+        { name = "a dart in the ceiling",
+          description = "It has been there nine years. The thrower maintains it was a good throw, at the time." },
+      },
+      actions = {
+        { "Throw a dart", say "It lands in the wall, among friends." },
+      } },
+
+    { name = "the tavern cat",
+      icon = "c",
+      description = "Black, one-eyed, called Bailiff. He sleeps on the bar in the one place a mug needs to go.",
+      actions = {
+        { "Move him", say "You lift him. He stays the same shape. You put him down a foot along, and he is back in the place before your hands are clear." },
+      } },
+
+    { name = "a minstrel",
+      icon = "♪",
+      description = "In the corner, tuning a lute. He knows one song, about a hero who slew a dragon, and has been asked not to sing it while the party is in.",
+      things = {
+        { name = "his lute", description = "Five strings and a bootlace. The bootlace is the one in tune." },
+        { name = "his hat, for coins", description = "It holds a button and a boot. He is hoping for the other boot." },
+      },
+      actions = {
+        { "Request the song", say "He gets four words in. The dwarf, without looking round, throws a boot. The minstrel catches it and puts it in the hat." },
+      } },
+
+    { name = "the stairs",
+      description = "Four up to the guest room, then twelve more to the landing, each with a note of its own.",
+      actions = {
+        { "Creep up them", say "You could not wake more people with a trumpet." },
+      } },
+
+    { name = "the tavern sign, from behind",
+      description = "You can see the back of it through the fanlight: a griffon holding a tankard, falling over. The front, you recall, is the same picture, but the griffon looks pleased." },
+
+    { name = "the kitchen door",
+      description = "Behind the bar, swinging. Each swing lets out heat, steam, and half a sentence in a woman's voice. The halves do not go together and you would not want them to." },
+
+    { name = "the beams",
+      description = "Black oak, low enough to have opinions about tall customers.",
+      things = {
+        { name = "the notches",
+          description = "One for every adventurer who has hit their head on the way to the bar. They are in groups of five. There are a great many groups." },
+        { name = "a horse brass",
+          description = "Nailed up for luck, a sun with a face. The face has seen the stew." },
+      } },
   },
 
   exits = {
     { to = "village_square" },
+    { to = "griffon_kitchen", description = "Through the swinging door behind the bar, into the heat." },
+    { to = "griffon_landing", description = "Up all sixteen stairs, announcing yourself on each." },
     { to = "griffon_cellar", label = "The trapdoor",
       description = "A trapdoor with a brass ring, worn smooth by a boot that is usually standing on it.",
       requires = flag "bed_broken",

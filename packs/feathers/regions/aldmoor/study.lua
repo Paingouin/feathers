@@ -44,6 +44,48 @@ space {
       actions = {
         { "Look through it", say "Floorboards. Then your eye adjusts, and for one dizzy moment there is depth, and arches, and a glimmer on black water a long way down. Then floorboards.", fx "wash" },
       } },
+    { name = "the chart rack",
+      description = "Pigeonholes to the ceiling, a rolled chart in each, tagged in the Baroness's hand.",
+      things = {
+        { name = "a chart of the Cistern", description = "Sounded, with depths marked in fathoms. In the middle the soundings stop and she has written: {i}line ran out. Twice.{/}" },
+        { name = "a chart of the castle drains", description = "With one shaft marked {i}garderobe (unguarded, see why){/}." },
+        { name = "a chart of something under the moor", description = "Unfinished. A long shape, drawn in dots, north of the town. She has written {i}ribs?{/} beside it and then crossed out the question mark." },
+        { name = "a chart of the tide", description = "A graph, years long, going up and down as tides do. Near the end she has pencilled in where it will go next, and the pencil goes off the bottom of the paper.",
+          variants = {
+            { when = flag "tide_out",
+              description = "A graph, years long, going up and down as tides do. Near the end her pencil goes off the bottom of the paper. She predicted it. She will be insufferable, if she can find anyone to tell." },
+          } },
+      } },
+    { name = "the lamp",
+      description = "One oil lamp with a green shade. It has been trimmed so often that the shelf under it is a drift of wick ends. She is down here a great deal, not studying." },
+    { name = "a bookshelf",
+      description = "Short, and every book on it has been read to pieces.",
+      things = {
+        { name = "A Complete History of Drains, the real one", description = "The copy upstairs is a lever. This is the book. Every margin is full, and at the end she has added forty pages of her own." },
+        { name = "a mason's handbook", description = "Open at the chapter on arches. She has ringed a sentence: {i}no arch of this span can stand without centring{/}, and written beside it: {i}the Drain does{/}." },
+        { name = "a book of old seals", description = "Every device ever used in the kingdom. Crowns, beasts, ships. She has marked the page for a single curved line, which has no family, no date, and under {i}origin{/} the word {i}prior{/}." },
+      } },
+    { name = "a pair of waders",
+      description = "Hanging on a nail, wet to the thigh. The Baroness Vaux-Pimbleton, in pearls, has been in the Great Drain this week. You find that you think rather better of her." },
+    { name = "a tray",
+      description = "A plate with a crust on it, a cold pot, a cup. Brought down by somebody and never collected. So one person in the house does know.",
+      things = {
+        { name = "a note under the cup", description = "{i}My lady. The cistern rope is mended and I have put new nails in your boots. Burn this. S.{/} The butler writes a very clear hand." },
+      } },
+    { name = "the speaking tube",
+      description = "A brass mouthpiece in the wall. It goes up to the drawing room, behind the bookcase, so that she can hear when her guests have gone.",
+      actions = {
+        { "Listen", say "The harpsichord. A general saying \"from the left\". And the footman, close to the tube, very quietly: \"He's still in there, my lady. The one who isn't Sir Aubrey.\"" },
+      } },
+    { name = "a collection of things from below",
+      description = "A glass case of what she has brought up: each with a ticket and a place.",
+      things = {
+        { name = "a bronze nail", description = "{i}Cistern, north wall.{/} Green, square-headed, and as long as your hand. No smith in Aldmoor makes them." },
+        { name = "a tile", description = "{i}Great Drain, third arch.{/} Glazed blue, with half of a curved line on it. She has left room beside it for the other half." },
+        { name = "a paper boat", description = "{i}Great Drain, at the weir.{/} Folded from a page of regulations. She kept it. There is a whole fleet in the drawer underneath." },
+      } },
+    { name = "the round wall",
+      description = "The room has no corners. If you put a hand on the plaster it is cold and slightly damp, and you understand that you are standing in a well shaft with a floor put in. The house was built round it, to hide it, by the first Pimbleton who went down." },
   },
 
   exits = {

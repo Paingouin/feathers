@@ -48,6 +48,58 @@ space {
       actions = {
         { "Eat one", say "It tastes expensive, which is not the same as good, but you have a second one in case it becomes the same." },
       } },
+    { name = "the guests",
+      description = "Forty of the best people in Aldmoor, standing in groups, each group waiting for another group to say something first.",
+      things = {
+        { name = "a general", description = "Retired, with a chest of medals. He won them all in the same battle, which was against the weather.",
+          actions = { { "Ask about the battle", say "\"Rain,\" he says. \"From the left. We held.\" His eyes fill. Someone leads him to the vol-au-vents." } } },
+        { name = "a poet in residence", description = "Kept by the Baroness, like a parrot, to say something clever at dinner. He has been here six years and is saving it." },
+        { name = "two dowagers on a sofa", description = "They have not spoken to each other since a wedding. They sit together at every party so that each can be sure the other is not enjoying it." },
+        { name = "a young man from the Collegium", description = "In a braided gown, showing a lady a card trick. It is a real card trick. He is very good at it. It is the only magic he has." },
+      } },
+    { name = "the chandelier",
+      description = "Four hundred crystal drops and ninety candles. It was hung for the Baroness's wedding and has not been lowered since, so it is dusted by a boy on a rope.",
+      things = {
+        { name = "the boy on the rope", description = "Up among the crystals with a feather duster, entirely unnoticed. He hears everything. He waves at you. You are the first guest who has ever looked up." },
+      } },
+    { name = "the fireplace",
+      description = "Marble, with a fire laid and not lit. Lighting it would suggest that somebody was cold.",
+      things = {
+        { name = "the mantel clock", description = "Gilt, under a dome, with a little golden shepherdess who comes out on the hour. She comes out, looks at the party, and goes back in." },
+        { name = "a row of invitations", description = "Propped along the mantel, from every house on the Row. On each the Baroness has written, in pencil, the reason she will give for not going." },
+      } },
+    { name = "the dining room",
+      description = "Through an arch: a table laid for thirty with a centrepiece of sugar.",
+      things = {
+        { name = "the sugar swan", description = "Three feet high, spun by a confectioner from Saltwick. It has one neck. The Baroness had the others removed." },
+        { name = "the place cards", description = "{i}Sir Aubrey Fenwick-Thrum{/} is between a bishop and a deaf aunt. Whoever arranged the table did not like him either." },
+        { name = "the silver", description = "Each fork is engraved with the swan. Each spoon has the swan and a small extra neck, added by the engraver before he was let go. Nobody has counted." },
+      } },
+    { name = "the butler",
+      description = "Mr Sallow, who stands by the door and misses nothing, and says nothing, and has been writing it all down for thirty years in a slim plain volume that he sells, a chapter at a time, to a bookkeeper in Elbow Lane.",
+      actions = {
+        { "Ask for a drink", say "A glass is in your hand. You did not see it arrive. \"Sir Aubrey,\" he says, with a very small pause before it, the pause of a man deciding how much a chapter is worth." },
+      } },
+    { name = "below stairs",
+      description = "A green baize door, and behind it stone steps going down to where the house is actually run.",
+      things = {
+        { name = "the kitchen", description = "Twelve people, four fires, and a cook with a face like a siege. Every vol-au-vent upstairs took three of them an hour.",
+          things = {
+            { name = "the cook", description = "Mrs Grice. She has cooked for the Baroness for twenty years and has never been told that anything was nice. She has stopped tasting it herself, in protest." },
+            { name = "a tray of vol-au-vents, rejected", description = "For being the wrong height. The kitchen is eating them. They taste, down here, of something." },
+          } },
+        { name = "the servants' hall", description = "A long table, a kettle, and the real party. Somebody has a concertina. The footman from the door is doing an impression of you, and it is unfairly good." },
+        { name = "the bell board", description = "Thirty bells on springs, one for each room upstairs. One is labelled {i}STUDY{/}. Somebody has tied a rag round its clapper." },
+      } },
+    { name = "the ancestral armour",
+      description = "A suit of plate on a stand by the stairs, worn by the first Pimbleton at the Three Fords. It is very clean. There is not a dent on it. He was a long way back.",
+      actions = {
+        { "Lift the visor", say "Inside the helmet there is a folded note: {i}If found, please return to the baggage train.{/}" },
+      } },
+    { name = "a potted palm",
+      description = "In a brass tub, by the harpsichord. You are not the first to hide behind it. There is a glass down there, and a half-eaten vol-au-vent, and a dance card with every dance crossed out." },
+    { name = "the carpet",
+      description = "Woven with the family tree, root to branch. Guests walk on the early generations to get to the drinks. Near the fireplace one name has been cut out and a rug put over the hole." },
   },
 
   exits = {
