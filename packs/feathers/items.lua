@@ -70,3 +70,26 @@ item {
     { "Try it on", say "It fits every finger equally badly, as though it was sized for a different sort of hand." },
   },
 }
+
+item {
+  id = "moon_cap",
+  name = "a moon-cap",
+  icon = "τ",
+  description = "A mushroom with a cap the blue of a clear midnight. It glows a little, apologetically. Every book says not to eat the blue ones. Every book was written by someone who was never offered soup.",
+  actions = {
+    { "Sniff it", say "Rain, cellar, and a hint of Tuesday." },
+  },
+}
+
+item {
+  id = "oar",
+  name = "an oar",
+  icon = "╿",
+  description = "Ash wood, grey with weather, smooth at the grip. For years it has held up a hermit's washing. It has a great deal of rowing saved up.",
+  things = {
+    { name = "the blade", description = "Faint letters, burned in: {i}EVENTU{/}. The rest was on the other oar." },
+  },
+  actions = {
+    { "Row the air", say "You take a few strokes at nothing. You move, if anything, slightly backwards." },
+  },
+}

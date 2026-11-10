@@ -35,6 +35,9 @@ space {
       actions = {
         { "Walk into it", say "Three steps in, you can no longer see the road. Four steps in, you come out on the road again, facing the other way. Barley is like that here." },
       } },
+    { name = "a hole among the barley",
+      visible_if = visited "hollow_oak",
+      description = "Where you came out, on your elbows. From this side it is plainly a fox's front door, and it slopes the wrong way for anyone without four legs and a low opinion of you." },
   },
 
   exits = {

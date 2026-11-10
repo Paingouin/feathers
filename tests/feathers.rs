@@ -147,13 +147,36 @@ fn the_whole_world_can_be_walked() {
     walk.go("aldmoor_gate");
     walk.go("barley_road");
     walk.go("mill_lane");
+
+    // The Mumblewood: a mushroom buys an oar, the oar reaches the island, the fox shows the oak.
+    walk.go("wood_edge");
+    walk.go("forest_path");
+    assert!(walk.exit("hollow_oak").is_none(), "hidden until the fox");
+    walk.act("Pick one");
+    walk.act("Follow it");
+    walk.go("hermit_clearing");
+    walk.act("Offer the moon-cap");
+    walk.go("forest_path");
+    walk.go("upward_falls");
+    walk.go("lake_shore");
+    walk.go("lake_island");
+    assert!(walk.exit("under_lake").is_none(), "hidden under the stone");
+    walk.act("Lift it");
+    walk.go("under_lake");
+    walk.go("lake_island");
+    walk.go("lake_shore");
+    walk.go("forest_path");
+    walk.go("hollow_oak");
+    walk.go("barley_road");
+    assert!(walk.exit("hollow_oak").is_none(), "the burrow is one-way");
+    walk.go("mill_lane");
     walk.go("village_square");
     walk.go("chapel");
     walk.act("Pull it");
     walk.go("bell_loft");
 
-    assert_eq!(walk.tracker("Places"), (17, 17));
-    assert_eq!(walk.tracker("Secrets"), (5, 5));
+    assert_eq!(walk.tracker("Places"), (25, 25));
+    assert_eq!(walk.tracker("Secrets"), (7, 7));
     let (found, total) = walk.tracker("Wonders");
     assert_eq!(found, total, "every wonder lies on the route");
 }

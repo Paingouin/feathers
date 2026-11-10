@@ -1,7 +1,7 @@
 return {
   id = "feathers",
   name = "Feathers",
-  version = "0.1.0",
+  version = "0.2.0",
   author = "Paingouin",
   api = 1,
   description = "A small kingdom with large opinions, and a great deal underneath it.",

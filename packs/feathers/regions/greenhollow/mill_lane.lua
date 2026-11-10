@@ -44,5 +44,6 @@ space {
   exits = {
     { to = "village_square" },
     { to = "barley_road", description = "A footpath along the stream, joining the road beyond the last hedge." },
+    { to = "wood_edge", description = "Upstream, which here means uphill, to where the trees begin and the muttering starts." },
   },
 }
