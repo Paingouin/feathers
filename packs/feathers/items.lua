@@ -113,3 +113,23 @@ item {
     { "Stamp your hand", say "{b}OUT{/}, in violet, on your palm. Nothing happens to you. You check the nearest puddle. It stays." },
   },
 }
+
+item {
+  id = "lantern",
+  name = "a borrowed lantern",
+  icon = "¤",
+  description = "Brass, storm-proof, stamped on the base {i}PROPERTY OF THE HELD TONGUE{/}. It burns without a sound. You had not known that lanterns made one until this one did not.",
+  actions = {
+    { "Hold it up", say "A circle of light with you in the middle. Adventurers in pictures are always holding up a lantern. They look less cold." },
+  },
+}
+
+item {
+  id = "rope",
+  name = "a dwarf rope",
+  icon = "§",
+  description = "Tarred hemp, forty fathoms, coiled so well that it seems a shame to use it. There is a tag in runes. It is probably the dwarf for {i}return to peg{/}.",
+  actions = {
+    { "Coil it again", say "Worse. Noticeably worse. Somewhere under a mountain, an outline on a wall is disappointed." },
+  },
+}

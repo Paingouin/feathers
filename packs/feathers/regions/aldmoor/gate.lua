@@ -32,6 +32,13 @@ space {
       actions = {
         { "Join it", say "You join the queue. Some time later you are older, and in the same place, and you leave the queue." },
       } },
+    { name = "a buffer stop",
+      key = "buffer stop",
+      description = "Two iron posts and a beam in the long grass under the wall, at the end of a pair of rusted rails that come out of the hillside. The queue has always taken it for a sculpture.",
+      variants = {
+        { when = flag "cart_ridden",
+          description = "Two iron posts and a beam in the long grass under the wall. There is now an ore cart against it, and a dent in the beam, and a turnip that was not involved until recently. You would rather not discuss any of them." },
+      } },
     { name = "the list of regulations",
       description = "Nailed to the gate, forty feet long, trailing into a puddle.",
       things = {

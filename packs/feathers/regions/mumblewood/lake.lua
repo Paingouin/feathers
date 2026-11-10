@@ -53,6 +53,7 @@ space {
   exits = {
     { to = "forest_path" },
     { to = "upward_falls", description = "Down the wet steps, with the water going the other way beside you." },
+    { to = "goat_track", description = "Up behind the pines, where the ground stops being forest and starts being scenery." },
     { to = "lake_island", label = "The rowing boat",
       description = "Out across the wrong sky, to a hump of turf with one tree on it.",
       requires = item "oar", locked = "a boat without an oar is a very small jetty" },

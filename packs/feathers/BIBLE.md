@@ -57,6 +57,7 @@ are, where they lie and what they do is undecided.
 | The Undertown | the Great Drain, the cistern, the smugglers' vault (secret), the buried shrine (secret) |
 | The Mumblewood, a forest | the edge, The Path That Tries, the hermit's clearing, the Climbing Falls (wonder), the shore of Lake Perhaps, the Island of One Tree, the room under the lake (secret), inside the old oak (secret) |
 | Saltwick, a harbour and its coast | the Cliff Road, the harbour, the Tide Office, where the tide is kept (secret, wonder), the Saltwick Light, the Lamp Room (wonder), the Long Strand, inside the wreck (secret), the Cove of Second Thoughts, the smugglers' hole (secret) |
+| The Grumbles, mountains | the Goat Track, the hut at the snow line, the Pass of Reasonable Charges, the troll's front room (secret), the Col, the Gorge of Late Replies (wonder), the Monastery of the Held Tongue, the Shouting Room (secret), the Longshift Mine, the bottom level (secret, wonder), the top of Old Grumble (wonder) |
 
 Threads through it: a coin from the well pays the gate tax; breaking the tavern bed moves the
 barman off the trapdoor; the cellar crowbar opens the market grate; a pickpocketed invitation
@@ -67,18 +68,25 @@ following the fox opens the oak, whose burrow drops one-way into the Barley Road
 the bottle on the strand is the keeper's letter and opens the lamp room; the stamp in the gull's
 nest lets the clerk sign the tide out, for good; the bare shore shows the wreck and opens the
 cove; the weed in the cove hides the smugglers' hole, whose tunnel climbs to the vault under
-Aldmoor and is known from both ends afterwards.
+Aldmoor and is known from both ends afterwards. In the Grumbles: the book propping Ma Scree's
+table holds the answer to the troll's one riddle; asking him about his bridge opens his front
+room; the echo in the gorge gives away the monks' Thursdays, and saying so opens the Shouting
+Room; the monks' lantern opens the dwarf mine; the mine's rope reaches the summit; the cage goes
+down to the bottom level; the ore cart runs one-way to the Aldmoor Gate.
 
 The lake shows a different sky, and something large crosses it. That is as close as anything
 comes to the secret. The curved marks of the Great Drain turn up again in the smugglers' hole,
 at the height of the highest tide, and the oldest tide ledger opens with the sea already in.
+Under the Grumbles the dwarves dug through into the same sky the lake shows, and stopped. From
+the Col the land has a grain, as grass does after something has gone over it. Old Grumble is
+partway through a word, and nobody knows what it is.
 
 ## Backlog
 
 In no particular order.
 
 - A castle. Dungeons and deeper undergrounds. Sewers beyond the Great Drain.
-- Mountains, more forest, a jungle, more lakes.
+- More mountains, more forest, a jungle, more lakes. Where the dwarves went. What Old Grumble is saying.
 - Fauna and plants, as things to look into everywhere.
 - More coast. Isles. Sky islands. Who signs the tide back in.
 - A steampunk city, and a flying steam airship whose destinations are the docks already found.

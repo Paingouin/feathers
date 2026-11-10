@@ -211,8 +211,66 @@ fn the_whole_world_can_be_walked() {
     walk.go("smugglers_vault");
     assert!(walk.exit("sea_cave").is_some(), "the tunnel is known now");
 
-    assert_eq!(walk.tracker("Places"), (35, 35));
-    assert_eq!(walk.tracker("Secrets"), (10, 10));
+    walk.go("great_drain");
+    walk.go("market");
+    walk.go("aldmoor_gate");
+    walk.go("barley_road");
+    walk.go("mill_lane");
+    walk.go("wood_edge");
+    walk.go("forest_path");
+    walk.go("lake_shore");
+
+    // The Grumbles: a book under a table answers the troll, the echo gives the monks away,
+    // their lantern opens the mine, the mine's rope reaches the summit, and the ore cart
+    // goes home the fast way.
+    walk.go("goat_track");
+    walk.go("toll_pass");
+    assert!(walk.exit("high_col").unwrap().locked.is_some());
+    walk.go("goat_track");
+    walk.go("goatherd_hut");
+    walk.act("Read it");
+    walk.go("goat_track");
+    walk.go("toll_pass");
+    walk.act("Answer: a road");
+    assert!(walk.exit("troll_den").is_none(), "hidden until invited");
+    walk.act("Ask about the bridge");
+    walk.go("troll_den");
+    walk.go("toll_pass");
+    walk.go("high_col");
+    assert!(walk.exit("old_mine").unwrap().locked.is_some());
+    assert!(walk.exit("summit").unwrap().locked.is_some());
+    walk.go("echo_gorge");
+    walk.act("Shout hello");
+    walk.act("Shout again");
+    walk.go("high_col");
+    walk.go("quiet_monastery");
+    assert!(
+        walk.exit("shouting_room").is_none(),
+        "hidden until owned up to"
+    );
+    walk.act("Mention the gorge");
+    walk.act("Borrow a lantern");
+    walk.go("shouting_room");
+    walk.go("quiet_monastery");
+    walk.go("high_col");
+    walk.go("old_mine");
+    walk.act("Take the rope");
+    assert!(
+        walk.exit("sky_seam").is_none(),
+        "hidden until the cage comes up"
+    );
+    walk.act("Pull the lever");
+    walk.go("sky_seam");
+    walk.go("old_mine");
+    walk.go("high_col");
+    walk.go("summit");
+    walk.go("high_col");
+    walk.go("old_mine");
+    walk.go("aldmoor_gate");
+    assert!(walk.exit("old_mine").is_none(), "the rails are one-way");
+
+    assert_eq!(walk.tracker("Places"), (46, 46));
+    assert_eq!(walk.tracker("Secrets"), (13, 13));
     let (found, total) = walk.tracker("Wonders");
     assert_eq!(found, total, "every wonder lies on the route");
 }
