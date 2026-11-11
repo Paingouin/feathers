@@ -153,6 +153,16 @@ space {
       } },
     { name = "a hole in the hedge",
       description = "Child high, worn smooth, between the row and the lane to the mill. It is the real road of Greenhollow. Everything under four feet tall goes by it, including, at dusk, a line of ducks." },
+    { name = "the cabbage order",
+      description = "On the wall of the general shop, a slate with a standing order in chalk, renewed so often that it has worn a pale patch. {i}Weds. For the Wet: 1 doz. cabbage, good hearts. 1 doz. apples, wrapped. Will be fetched. Paid in eel.{/}",
+      things = {
+        { name = "a crate, waiting", description = "Twelve cabbages, the best in the Row, each one chosen and argued over, packed in straw like eggs. Every garden gives one. Nobody in Greenhollow has seen where they go. They are told they are received with honour, and they grow them accordingly." },
+        { name = "the payment", description = "A bundle of smoked eels hanging in the shop window, gold as candlesticks. Mrs Pottle sells them by the inch. The village has eaten fen eel every Friday for two hundred years and still says there is nothing out that way." },
+      },
+      actions = { { "Ask who fetches it", say "\"A tall thin one with a barrow, or a short brown one with a barrow,\" says Mrs Pottle. \"They don't say much. They stand in the road and look at the ground as if it were a miracle. Then they pay over the odds and go.\" She straightens a cabbage. \"I put in a thirteenth. I don't know why. They look as though they could do with it.\"" } } },
+    { name = "a starling on a chimney",
+      description = "Speckled, oily, on the smithy chimney pot, doing impressions. It does the anvil. It does the pump handle. It does Mrs Pottle's shop bell, and she comes out, and it does her saying {i}well I never{/}.",
+      actions = { { "Listen for a while", say "Anvil. Pump. Bell. A goose. A cart with a loose wheel. And then, quite clearly, a sound that is none of the village's: a low hollow boom, like blowing across a jug. It has been west of the wood, this bird, and brought something back." } } },
   },
 
   exits = {

@@ -167,6 +167,16 @@ space {
         { name = "a deer's bed", description = "An oval of flattened grass, still warm. You missed her by a minute. There is a single slot in the mud beside it, cleft, pointing away." },
         { name = "a butterfly", icon = "ʚ", description = "A wood white, going from foxglove to foxglove with no plan. It lands on your sleeve and opens and closes twice, as if fanning you, and goes on." },
       } },
+    { name = "a treecreeper",
+      description = "A small brown bird like a mouse with a curved beak, going up the trunk beside the path in a spiral, picking at the bark. At the top it drops to the foot of the next tree and starts again. It has never once gone down a tree. It has organised its life so as not to need to.",
+      actions = { { "Follow it from tree to tree", say "Up, drop, up, drop, along the path for nine trees. At the tenth it goes up and round the back and does not appear. You go round. So does it. You try the other way. You are being avoided, at walking pace, by something that weighs less than a letter." } } },
+    { name = "a stile in the middle of nowhere",
+      description = "Two posts, two rails and a step, standing across the path with no fence on either side. You could walk round it in one pace. The step is worn to a hollow. Everybody climbs it.",
+      things = {
+        { name = "the top rail", description = "Polished by hands. Cut into it, a row of initials and one sentence: {i}It minds if you don't.{/} You look at the path, which goes round every tree and apologises to the big ones. You climb the stile." },
+        { name = "a tuft of grey wool on a splinter", description = "From a stocking. A long one, knitted in the round, of a kind they wear two pairs of where the ground is wet. Somebody from the west came this way in a hurry and left a little behind." },
+      },
+      actions = { { "Walk round it instead", say "You take the one pace round. Nothing happens. Twenty yards on, the path goes very deliberately through a holly bush, and you with it. You go back and climb the stile. The second time the path keeps to the open." } } },
   },
 
   exits = {

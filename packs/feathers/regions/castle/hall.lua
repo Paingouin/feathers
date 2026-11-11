@@ -198,6 +198,20 @@ space {
       actions = {
         { "Say something for later", say "\"The adventurer was here,\" you tell the roof. Nothing. You wait. Nothing. It will come back to somebody, some evening years on, in an empty hall, and they will wonder who." },
       } },
+    { name = "a kitchen table against the wall",
+      description = "Under the long tapestry, where nobody looks: a deal table with a drawer, scrubbed pale, among the gilt furniture of state. The Lord Chamberlain has been trying to have it removed for thirty years. It is on the inventory as {i}regalia{/}.",
+      things = {
+        { name = "a ring from a mug", description = "Burned into the top, pale, permanent. Polishing does not shift it. The footmen say that it is the only mark in the Great Hall made by somebody enjoying himself." },
+        { name = "the drawer", description = "It sticks. Inside: a stub of a reed pen, split, and a drift of fine black dust that was ink. There is a label on the drawer front in a clerk's hand: {i}Came on cart 14. Nobody will say whose.{/}",
+          actions = {
+            { "Shut the drawer", say "It will not go quite home. Something at the back is holding it a finger's width open. You feel for it. A hazel shell, a child's marble, and a single liver-coloured dog hair, which you put back." },
+          } },
+      } },
+    { name = "the number board",
+      description = "By the throne, a small frame with a slot for a card. It shows the number of the petitioner now being heard. It says {b}7{/}, in lichen-coloured paint. Under the frame is a second, older slot, empty, with a brass label.",
+      things = {
+        { name = "the brass label", description = "{i}Total heard this day.{/} There is a card pushed down behind the frame, where it fell. You fish it out. It has four figures on it, in chalk, and the first one is a four." },
+      } },
   },
 
   exits = {
@@ -315,6 +329,17 @@ space {
       } },
     { name = "a mousehole",
       description = "In the skirting, with a tiny heap beside it: three crumbs, a bead and a bent pin, put outside the door. Even the mouse, it seems, has looked round the Treasury and decided to make a contribution." },
+    { name = "the shelf where the coin sits",
+      description = "You look again at the one coin in the Royal Treasury, and at where it is. It is not in the strongbox. It is on a little bracket of its own, at eye level, with a card.",
+      things = {
+        { name = "the card", description = "{i}The Reserve. Left by order of the Lord Chancellor, for the look of it.{/} The ink is brown with age. It is a different Chancellor, and a different order, from the ones the clerks know. They have always supposed that the card was a joke." },
+        { name = "the bracket", description = "Oak, carved with a small rose. Somebody made it specially. You do not build a shelf for one coin unless you are either very proud of that coin or very ashamed of the room." },
+      } },
+    { name = "a column in the old ledger",
+      description = "The Treasury ledger runs back four hundred years. You turn to the old volumes. For three centuries the balance climbs. Then there is a page with one entry on it, in red, running from the top line to the bottom line in a single bracket.",
+      actions = {
+        { "Read the red entry", say "{i}Paid out: all. To: sundry persons, 4,009. By whose order: {/}and the rest of the line is a hole, cut out with a knife. Under it the next clerk has opened a fresh page and written, large, as a man does who is starting again from nothing: {i}One.{/}" },
+      } },
   },
 
   exits = {

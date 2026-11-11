@@ -211,6 +211,20 @@ space {
       actions = {
         { "Listen at the grid", say "Water, going down. A long way down, a bell the size of a pea. You straighten up. A groom is watching you. \"Lost something?\" he says. \"You never get it back. But I'll tell you a queer thing. You never feel it was wasted.\"" },
       } },
+    { name = "a row of old carts",
+      description = "Against the north wall, under a lean-to: eleven wagons with their shafts in the air, grey with age, kept because nobody was ever told to break them up. Each has a number and the word {i}REMOVAL{/} stencilled on the tailboard.",
+      things = {
+        { name = "cart 206", description = "The last. Its bed is gouged right down the middle by something very heavy that was dragged on and dragged off, and there is marble dust in the cracks still. The carter who drove it would never afterwards say what the load was, only that it had a kind face." },
+        { name = "a gilded wheel boss", description = "Nailed up over the lean-to for luck: a lion's face, off a state coach. It is one of four. They only ever had three. The fourth wheel, they say, is in a bed of nettles on the old road." },
+      },
+      actions = {
+        { "Climb on a cart", say "The boards hold. From the seat you can see over the wall to the east, where a green road goes round the hill and away. You pick up reins that are not there. For a moment you know exactly how it felt to be told, at four in the morning, to drive away from a city and not look round." },
+      } },
+    { name = "the garrison's notice board",
+      description = "By the barracks door. Orders of the day, a lost glove, a cricket fixture against the queue. And at the bottom, yellow, under a nail that has rusted to it, a standing order nobody has countermanded.",
+      things = {
+        { name = "the standing order", description = "{i}One man of the Gate Company to be sent each Thursday to relieve the sentry at Erstwhile.{/} A later hand has written across it: {i}There is no such day. Order cannot be carried out. Order cannot be cancelled.{/}" },
+      } },
   },
 
   exits = {

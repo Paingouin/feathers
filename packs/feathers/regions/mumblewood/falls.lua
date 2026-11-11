@@ -130,6 +130,15 @@ space {
 
     { name = "a dipper", icon = "v",
       description = "A round brown bird with a white bib, on a rock in the pool, bobbing. It walks into the water and along the bottom, then up the falls with the current, under the surface, and out at the top. It is the only creature here that finds the arrangement convenient." },
+    { name = "a grey wagtail",
+      description = "A slim bird with a lemon breast and a tail that will not keep still, running along the wet rock at the foot of the falls after flies. Where the water goes up, the spray goes up with it, and the flies in the spray, and the wagtail has learnt to hunt on a wall, sideways, with its tail going for balance.",
+      actions = { { "Watch it", say "It runs straight up the cliff beside the climbing water for six feet, takes a fly, and flutters down again as if that were what cliffs were for. It does this a dozen times. It has had to learn a whole trade that no other wagtail needs, and you would say it is rather pleased." } } },
+    { name = "a millwright's bench mark",
+      description = "A broad arrow cut in a boulder at the pool's edge, with a line over it and a date long gone soft. Below it, cut later and deeper: a second arrow, upside down, pointing up the cliff.",
+      things = {
+        { name = "the first arrow", description = "The Survey's. They came to measure the fall of the stream, to site a mill. They measured it three times. The figures are still in a drawer at the Castle, with a note: {i}instrument faulty{/}." },
+        { name = "the second arrow", description = "Not the Survey's. The cut is rougher, and under it somebody has added, with a nail: {i}No it isn't.{/}" },
+      } },
   },
 
   exits = {
@@ -226,6 +235,17 @@ space {
 
     { name = "the green light",
       description = "It comes through the falls and moves on the roof like a hand passing over a page. When a cloud crosses the sun outside, the whole cave dims and brightens, slow as a breath." },
+    { name = "a row of pilgrim badges",
+      description = "Pressed into a seam of clay in the cave wall, a hand apart: small lead tokens the size of a thumbnail, each stamped with a wavy line going up. One for every pilgrim who reached the cave. There are thousands, in rows, grey and dull, like the scales of a very old fish.",
+      things = {
+        { name = "the newest", description = "Bright still, at the end of the bottom row. It is forty years old. After it there is clean clay, smoothed ready with a thumb, and nothing." },
+        { name = "a badge of gold", description = "One, in the middle of the wall, among the lead. No bigger than the rest. Somebody rich came here once and was content to be one in a row. You look for a name. There is none. That was the point of the walk." },
+        { name = "a shell among them", description = "A cockle shell, pressed in like a badge. From the coast, or from somewhere flat and wet to the west. They did not have the lead, perhaps, where that one came from. The clay has taken it as kindly as the gold." },
+      },
+      actions = { { "Press your thumb in the clean clay", say "It takes the print, cool and exact. It is not a badge. But the row is one longer than it was, and the cave seems to you a shade less like a place that has been left." } } },
+    { name = "a drip that goes the right way",
+      description = "In the back of the cave, far from the falls, water seeps from the roof and falls, plainly, downward, into a little basin it has worn. After the window of climbing water it looks like a conjuring trick. The pilgrims used to finish here. They would look at it for a while before going home, to get used to things again.",
+      actions = { { "Let it fall on your hand", say "Tap. Tap. Cold, ordinary, on the back of your hand, and running off toward the floor. You had not known you were braced until it lets you stop." } } },
   },
 
   exits = {

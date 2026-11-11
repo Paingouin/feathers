@@ -89,6 +89,23 @@ space {
         { name = "a very long pair of combinations", description = "Red flannel, with a patch. They belong to the town crier. Everybody knows it, and it lends his announcements something." },
         { name = "a sheet with a scorch on it", description = "The shape of a flat iron, exactly. It has hung out every Monday for nine years. She will not throw it away, and he has never been allowed to forget it." },
       } },
+    { name = "a wall shrine",
+      description = "On the corner where the lane bends: a tin box with a glass front, nailed to the brickwork, with a night light in it and a very small plaster saint. It is to Saint Wobble. The lane leans, and feels that he would understand.",
+      things = {
+        { name = "the plaster saint", description = "Leaning. He was made upright. The whole shrine has gone over with the house, a degree a generation, and he has gone with it and kept his feet." },
+        candle { name = "the night light", description = "Lit each dusk by whoever is passing. It has never been the same person twice and it has never been missed." },
+      },
+      actions = {
+        { "Straighten the shrine", say "You push it level. It stays, for a breath. Then the nail turns in the brick and it settles back to its own angle, exactly, with the patience of something that knows which way this lane is going." },
+      } },
+    { name = "a knocker-up",
+      description = "An old woman with a long pole and a wire on the end of it, going home. She taps the bedroom windows of the lane at five to wake the bakers. She has not slept past four in fifty years and regards the dawn as a personal acquaintance.",
+      things = {
+        { name = "the pole", description = "Bamboo, twelve feet, from a ship. It has woken four generations. There is a notch for each house that has asked her to stop, and they are all crossed out again." },
+      },
+      actions = {
+        { "Ask who wakes her", say "\"Nobody.\" She leans on the pole. \"I'm woke. Always have been, a minute before I need to be. I used to think it was a knack.\" She looks up at the strip of sky between the roofs. \"Now I think it's the bread. It wants making, and it lets me know. Never been late.\"" },
+      } },
   },
 
   exits = {
@@ -191,6 +208,21 @@ space {
       description = "A thin clerk in the history corner, reading a book from the shelf, standing up, very fast. He is on page two hundred. He comes in each lunch hour and reads forty pages, and in this way has had most of the shop.",
       actions = {
         { "Ask if it is any good", say "He jumps, and shuts it on his thumb. \"I'm deciding,\" he whispers. Mr Pell, at the till, does not look up. \"He has been deciding on that one since March,\" says Mr Pell. \"I move the marker for him.\"" },
+      } },
+    { name = "a shelf of hymnals",
+      description = "By the door, where the damp is: forty hymn books, one for each temple on the Street, bought in by Mr Pell as the congregations failed or the gods fell out of fashion. He keeps them. Somebody may want to sing to them again.",
+      things = {
+        { name = "a hymnal to Thrum", description = "Black, heavy, the gilt gone. Every hymn in it is in the largest possible key. The flyleaf says {i}Property of the Great Temple. Not to be taken away.{/} There has been no Great Temple for nine hundred years, and Mr Pell still feels that he has it on loan." },
+        { name = "a very thin one", description = "The hymns of the God of Thursdays. There is one. It has one verse. It goes: {i}Well, here we are.{/}" },
+        { name = "a blank one", description = "Bound, ruled, lettered on the spine {i}Unknown God: Hymns{/}. All the pages are empty. The priest ordered it, in hope. He comes in on Fridays to see if anything has appeared." },
+      },
+      actions = {
+        { "Hum the one to Thrum", say "You pick out the first line. It is a tune for ten thousand people and an organ the size of a barn. Hummed by one adventurer in a bookshop it sounds like a bee in a jug. Mr Pell looks up. \"Nobody's sung that in here before,\" he says. \"It's a good tune. It only wants company.\"" },
+      } },
+    { name = "the ledger he keeps for himself",
+      description = "Under the counter, behind the till: a plain account book with a ribbon. It is not the shop's. It is the one he does on Sundays, for pleasure. He adds up things that do not need adding. The steps to the market. The cat's birthdays.",
+      things = {
+        { name = "the last page", description = "A single column, forty years long, a line a night, in a hand that starts as a boy's. It is headed {i}Agreed{/}. Every night he has made the day's figures agree, he has put a tick. There are no gaps. He does not know that a stool is being kept for him somewhere on the strength of it." },
       } },
   },
 
@@ -303,6 +335,21 @@ space {
       actions = {
         { "Open the door from inside", say "You reach for the handle. The bell rings. You have not touched it yet. You take your hand away. The bell looks, if a bell can, a little foolish, and so do you." },
       } },
+    { name = "a tray of charms",
+      description = "By the till, a penny each: tin gods on pins, to be worn in the hat. Socks, Ledger, Soup, the Wall. She gets them from a man in the Quarter and blesses them herself, over the kettle, which she says is as good as most.",
+      things = {
+        { name = "a tin goat", description = "On a pin. It has eaten the card it was sewn to." },
+        { name = "a blank charm", description = "A plain tin disc on a pin. For the Unknown God. \"Sells steady,\" she says. \"People like to have one in hand. You fill it in later.\"" },
+        { name = "a charm that will not stay on the tray", description = "It is on the floor each morning by the door. A little tin door, in fact, in a little tin frame. She has stopped picking it up. \"Jamb's,\" she says. \"Wants out. They've all got their ways.\"" },
+      },
+      actions = {
+        { "Ask which one works", say "\"All of them,\" says Madam Spindle. \"A little. Same as everything in the shop.\" She picks up the tin sock. \"This one I'd swear to. I've not lost a stocking since I pinned her over the door, and I was a martyr to it.\" She puts it back. \"It's not magic. It's being remembered. Cheaper, and it lasts.\"" },
+      } },
+    { name = "a prayer wheel, second hand",
+      description = "On the counter: a brass drum on a spindle, with a handle. You turn it and it says a prayer for you. The last owner turned it for forty years. It has, the label says, {i}some prayers left in it{/}.",
+      actions = {
+        { "Give it a turn", say "It goes round with a whirr and a tick, and something leaves it, you could swear, and goes up through the ceiling like a moth. You do not know what was asked for. Neither, presumably, will whoever gets it. Madam Spindle says that is half her post." },
+      } },
   },
 
   exits = {
@@ -398,6 +445,24 @@ space {
       things = {
         { name = "the last letter", description = "{i}Dear Gran. I am well. I have seen a fish that flies. Nobody here believes in snow. I told them and they laughed. I carved my name on something, I will not say what. Love, Wilf.{/}" },
       } },
+    { name = "a corner shelf",
+      description = "Over the settle, with a paper edging cut in points: Gran Tuttle's gods. She does not go to the Street. She says they know where she lives.",
+      things = {
+        { name = "a wooden spoon", description = "Upright in a jar, for Auntie Stock. It has a ribbon. The ribbon is changed at harvest and the old one goes in the pot." },
+        { name = "a darning mushroom", description = "For the Lady. Gran Tuttle has never lost a sock in her life, and says so, and then touches the mushroom, quickly." },
+        { name = "a pebble with a hole in it", description = "From a beach. Wilf sent it in his first letter. It is for whatever god looks after boys at sea, and she has never found out which, and so it is for all of them." },
+      },
+      actions = {
+        { "Ask whether they answer", say "\"I don't ask them things,\" she says, knitting. \"I {i}tell{/} them. I tell them he's a good boy and he's to have a dry bunk. Then I get on.\" She turns the heel. \"He's had a dry bunk nine years. I don't call that an answer. I call that them knowing what's good for them.\"" },
+      } },
+    { name = "the back step",
+      description = "Through the scullery: one stone, hollowed, down to a yard with a line and a privy. She sits on it of an evening with the door open behind her and the cats coming and going over her feet.",
+      things = {
+        { name = "a row of pea pods", description = "On the step, empty, in a line. She shells there. She says it is the best place in the house to think and she has never been able to say why, being neither in nor out." },
+      },
+      actions = {
+        { "Sit on the step", say "You sit. Kitchen behind, yard in front. A cat goes over your knee one way and a different cat the other. For as long as you sit there nobody could say whether you were a guest or a passer-by, and nobody asks, and it is a rest." },
+      } },
   },
 
   exits = {
@@ -474,6 +539,20 @@ space {
       } },
     { name = "the gutters",
       description = "Lead, wide enough to walk in, running the length of the row. Things collect: a ball, a shoe, a wig, and a small grove of sycamores an inch high, which have a view and mean to keep it." },
+    { name = "the temple roofs",
+      description = "Away east the roofs change: domes, a spire, a thing like a pepper pot, forty small weathervanes all pointing different ways. That is the Street of Small Gods, from above. Each temple has put up the tallest thing it could afford so as to be nearer.",
+      things = {
+        { name = "the incense", description = "Forty threads of smoke, each a different grey, going straight up side by side. A little way above the roofs they stop. They do not thin out. They stop, at the same height, like threads cut with scissors." },
+        { name = "eight broken columns", description = "Standing up out of the roofs in the middle of the Street, white, with washing between them. From here you can see what you cannot from below: they are the corner of something. The rest of the plan would cover the market." },
+      },
+      actions = {
+        { "Watch the smoke", say "You follow one thread up, from a very small chimney at the poor end. It climbs past the spire. It stops where the others stop. For an instant, at the place where it ends, the air has an edge to it, like the underside of a floor." },
+      } },
+    { name = "a sock on a chimney",
+      description = "Grey wool, hung on the lip of a pot to dry and forgotten. It has been there a winter. It is stiff as a board.",
+      actions = {
+        { "Leave it where it is", say "You were going to take it down. Something tells you not to. It is not lost, yet. It is only forgotten, which is a different department, and somebody is plainly waiting for the paperwork to come through." },
+      } },
   },
 
   exits = {

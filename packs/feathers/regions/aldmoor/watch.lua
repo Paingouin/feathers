@@ -101,6 +101,20 @@ space {
         { name = "the mugs", description = "Each with a number. Number four has no handle and is for prisoners. It is said to make the best cup, and two constables have been caught using it." },
         { name = "the caddy", description = "Seized off a handcart with sacking on the wheels. The man with the cart was let go with a caution, a sandwich, and an order to come back when the caddy was empty." },
       } },
+    { name = "a niche over the door",
+      description = "Inside, above the lintel: the Watch's own god, such as he is. A tin helmet on a nail. Nobody knows which watchman it belonged to. They touch it going out on nights and they do not touch it coming in, since by then it has either worked or it is too late.",
+      things = {
+        { name = "the helmet", description = "Dented in the crown, from the inside. Whoever wore it stood up under something. The Watch regards that as the most professional injury a man can have." },
+        { name = "a tally under it", description = "Pencil strokes on the plaster, in fives. Nights on which nothing happened. It goes round the door frame and off behind the halberd rack. It is the proudest record the Watch owns." },
+      },
+      actions = {
+        { "Touch the helmet", say "It rings, faintly, like a cup. Captain Brisket looks up. \"You're not on nights,\" he says. Then, after a moment: \"Can't hurt. Go on.\"" },
+      } },
+    { name = "a prisoner's bundle",
+      description = "On the bench by the stove, tagged: one red handkerchief, knotted, the property of whoever is in cell three. The Watch looks after it. It has been looked after for six years, since he likes it here and keeps confessing.",
+      things = {
+        { name = "what is in it", description = "A clasp knife, a clay pipe, a heel of cheese replaced weekly by the Captain's wife, and a single grey sock, darned at the toe with a small neat daisy inside the cuff." },
+      } },
   },
 
   exits = {
@@ -193,6 +207,17 @@ space {
       } },
     { name = "the gaol cat",
       description = "Grey, thin, and able to pass between the bars of any cell in the building. It sleeps with whoever has the longest sentence. It is a sound judge, the gaoler says, and has never yet been wrong about who is staying." },
+    { name = "scratches by the stair",
+      description = "At the foot of the steps, low on the wall, where a man sitting on the bottom step could reach: a row of very small temples, scratched with a nail. Forty of them. Somebody did the whole Street from memory.",
+      things = {
+        { name = "the Stockpot", description = "Between two of them, a pot on three legs, with steam done as a row of commas. He has gone over this one so often that it is the deepest thing on the wall. He was hungry, and then one evening he was not." },
+        { name = "a goose", description = "Larger than any of the temples. He was thorough about the eye." },
+      } },
+    { name = "the gaoler's supper",
+      description = "On a stool by his chair: a can of soup with a cloth over it, brought down by a child from the Stockpot every evening. He has never ordered it and nobody has ever sent a bill.",
+      actions = {
+        { "Lift the cloth", say "Barley, a bone, something green. Still hot, after the whole length of the market and the stairs. The gaoler says it is always hot. He says he once left it till morning to see, and it was hot then, and after that he stopped testing it and started saying thank you." },
+      } },
   },
 
   exits = {
@@ -269,6 +294,23 @@ space {
       description = "One, iron, on a wooden carriage, pointing out over the Barley Road. It was last fired at a coronation. There is a nest in the muzzle and a notice: {i}NOT TO BE DISCHARGED WHILE OCCUPIED{/}.",
       things = {
         { name = "the nest", description = "Sparrows. This is the ninth brood raised in ordnance. The watchman says they come out deaf to thunder and afraid of nothing." },
+      } },
+    { name = "a row of pegs in the parapet",
+      description = "Oak pegs driven into the mortar, one for each watchman who has walked this wall, back to the first. On Wall Night the Watch hangs a lantern on every one. The newest pegs are by the stair. The oldest are round the far side, where the stone is dark.",
+      things = {
+        { name = "the newest peg", description = "White wood, a year old. The watchman's. He does not look at it. A man does not like to see his own peg." },
+        { name = "the oldest pegs", description = "Black, hard as horn. And beyond the last of them the row goes on, in empty holes, evenly spaced, round the curve of the wall. The masons say the Wall likes to plan ahead. There are enough holes for another nine hundred years of watchmen, and then, the watchman notes, they stop." },
+      },
+      actions = {
+        { "Count the pegs", say "You get to three hundred and stop, at a peg with a small brass tag. {i}Tuttle.{/} Not Wilf: his grandfather. Under it somebody has cut, much later and with a clasp knife, {i}Wilf woz ere{/}. He was. He hung the lantern on it at nine years old." },
+      } },
+    { name = "a kite string",
+      description = "Tied to a merlon and going up, at a slant, into the low cloud. It hums. There is nobody on the end of it down here. The watchman says it was tied on in his father's day and that every so often something comes down it.",
+      things = {
+        { name = "what has come down", description = "In the sentry box, in a biscuit tin: three clothes pegs, a child's drawing of a town seen from above, and a note. {i}Is it true you have ground all the way down? M.L., Tether.{/}" },
+      },
+      actions = {
+        { "Pluck the string", say "It gives one note, low, and the note goes up the string out of hearing. You wait. After a long while the string twitches twice in your hand, politely, like an answer in a language of very few words." },
       } },
   },
 
@@ -355,6 +397,20 @@ space {
       description = "Pickled onions, Marta's, from Greenhollow. They are the size of a fist and they make grown watchmen weep. There is a slate beside the jar with the record: {i}three, without water{/}.",
       actions = {
         { "Try one", say "You bite. For a moment, nothing. Then the whole of Greenhollow comes up the back of your nose. Through the tears you see the night shift nodding. \"One,\" says Widow Hask, and chalks it. \"With water. Sit down, love.\"" },
+      } },
+    { name = "a brick on a cushion",
+      description = "On a shelf behind the bar, under a glass dome: the first brick. The Wall has a god, and the god has a shrine on the ramparts and a branch on the Street, but this is where he is actually kept. Widow Hask dusts the dome on Sundays.",
+      things = {
+        { name = "the brick", description = "Red, hand made, with a thumbprint in one end. It was never laid. The mason held it back, on the first day, for luck, and so the Wall has been one brick short ever since and has never fallen." },
+        { name = "the cushion", description = "Velvet, worn through at the corners. It is the fourth cushion. The brick is the first brick." },
+      },
+      actions = {
+        { "Ask to hold it", say "\"You can look,\" says Widow Hask. She lifts the dome an inch, so that you can smell it: clay, and a kiln, and somebody's lunch from a very long time ago. \"That's as near as the King gets,\" she says, and puts the dome back." },
+      } },
+    { name = "a slate of the dead",
+      description = "By the fire, small, in a frame: the names of the night shift who did not come in. It is a short list for two hundred years. Under each name, a drink, in chalk. They are stood one, on the house, every Wall Night, and the mugs are found empty.",
+      things = {
+        { name = "the last name", description = "{i}Corporal Daw. Mild.{/} He went off the east parapet in a fog in the old king's time, looking for a cat. The cat came in by itself. It is on the list too, a line lower. {i}Milk.{/}" },
       } },
   },
 

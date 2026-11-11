@@ -156,6 +156,15 @@ space {
       actions = {
         { "Wish them joy", say "They turn to you together, slowly, and incline their heads. \"It has put out a bud for the door,\" says one, and the other says, \"We do not like to hurry it.\" They go back to watching. You have seen people look at a cradle that way." },
       } },
+    { name = "a swing",
+      description = "Two ropes of silver-grey fibre, coming down out of the leaves from a bough too high to see, to a plank of pale wood. It hangs out over the drop between two houses, where no one could reach it without stepping off a bridge with no rail. It is moving.",
+      things = {
+        { name = "the plank", description = "Worn in two places, close together. Small. The elf child's, then. There are four other pairs of worn places beside those, each a little larger and much older, and the oldest is nearly gone. There have not been many children here. But there have been some, and every one was given a turn." },
+      },
+      actions = { { "Give it a push", say "You lean out from the bridge further than you like and set it going. It swings away into green shade, and back into gold, and away. It keeps swinging long after it should stop. Up here, you gather, nobody has ever told it that it ought to." } } },
+    { name = "a spider's web between two bridges",
+      description = "An orb the width of a cartwheel, hung in the gap where the morning comes through, with a fat striped spider at the hub. The elves duck under it. They have ducked under a web in that gap for so long that there is a dip worn in the rope of the bridge where everybody bends.",
+      actions = { { "Duck under it", say "You bend where the rope is worn and come up on the other side. The elf with the tray, behind you, does the same without slowing, tray level, not a cup ringing. Nine hundred years of practice, to avoid troubling a spider. It is the kindest thing you have seen them do, and none of them would know what you meant." } } },
   },
 
   exits = {
@@ -327,6 +336,16 @@ space {
       actions = {
         { "Throw one", say "You hit the door. A scullery elf takes the dart out, turns, and puts it between the hart's eyes from across the room without looking. \"We like him really,\" she says. \"It's the attitude.\"" },
       } },
+    { name = "a sack from outside",
+      description = "By the back stair, half hidden behind the flour: a sack of coarse grey cloth, tied with rush, damp at the bottom. It is very much not elvish. The cook kicks it further behind the flour whenever anyone comes down from above.",
+      things = {
+        { name = "what is in it", description = "Leeks. Fat, blue-green, with good black earth on them. \"From the witches,\" says the cook. \"Don't look like that, they are perfectly nice women, they read. Upstairs it is always early autumn. Do you know what you cannot get in a place where it is always early autumn? Spring vegetables.\"" },
+        { name = "a slate of what is owed", description = "{i}Leeks: 4 sacks. Paid: 1 pair shoes, cobbled. 1 silver lamp, slightly dented. 1 afternoon, kept.{/} You read the last line twice. The cook takes the slate out of your hand." },
+      },
+      actions = { { "Ask how it gets here", say "\"A basket is left at the line. The sentinel does not see it. Then it is on this side, and nobody brought it.\" The cook shrugs. \"It is how everything real arrives here. We have a word for it. It means, more or less, by the back door.\"" } } },
+    { name = "a mouse in the flour",
+      description = "Grey, plump, sitting on the lip of an open sack with a white nose. In the Everwood above there are no mice. There is a small silver creature that is seen at dusk and has a poem. Down here there is a mouse, and it is in the flour, and the forty elves who can see it have all decided to be looking somewhere else.",
+      actions = { { "Point it out", say "\"Where?\" says the cook, looking straight at it. \"I see no mouse.\" The mouse washes its face. \"If there were a mouse,\" says the cook, \"it would have to be reported, and a form of words found for it, and somebody would have to make it beautiful. We have enough to do.\" A crumb of cheese falls from his apron, quite by accident, near the sack." } } },
   },
 
   exits = {

@@ -267,6 +267,18 @@ space {
       description = "A board swinging over a door at the landward end of the quay: a painted sea, perfectly flat, with a boat sitting on it doing nothing. {b}THE SLACK WATER{/}. There is light in the windows and a noise of mugs." },
     { name = "the chandler's window",
       description = "Small panes, salt-fogged, crammed with rope, lamps, brass and one stuffed puffin. Over the door: {b}BRINE & DAUGHTER, SHIP CHANDLERS. EVERYTHING FOR THE SEA EXCEPT THE SEA.{/}" },
+    { name = "the north berth",
+      description = "The last ring on the mole, on the outside, where nobody else will lie because of the swell. It is kept for one boat, which comes down from the Afterthoughts twice a year for coal and iron.",
+      things = {
+        { name = "a chalk mark on the stone", description = "{i}REGARDLESS. Back when back.{/} The harbour master has rubbed it out eleven times as not being a proper notice of intention. It is chalked up again by morning. He suspects the gulls." },
+        { name = "a stack of stockfish", description = "Left on the berth under a net, as payment for the coal: split cod, dried until you could tile a roof with it. A cat is sitting on top with the air of a creature that has found the one thing in the harbour it cannot eat and intends to outlast it." },
+        { name = "a dented iron plate", description = "Leaning on the wall: a piece of bow sheathing, taken off for mending, with a dent in it the shape of a cauldron. A boy has written {i}ICE DID THIS{/} on it in tar, and under that, smaller, {i}honest{/}." },
+      },
+      actions = {
+        { "Knock on a stockfish", say "It sounds like a door. The cat looks at you with fellow feeling. You both regard the fish. It regards nobody. It has been dead for a year and is the most composed thing on the mole." },
+      } },
+    { name = "a sailor with white eyebrows",
+      description = "Sitting on a bollard in the sun with his coat off and his sleeves rolled, steaming slightly, like a kettle taken off the hob. He is off the northern mail. He says Saltwick is too hot to think in. It is an ordinary grey morning, and the gulls are hunched up on the bollards against the cold." },
   },
 
   exits = {

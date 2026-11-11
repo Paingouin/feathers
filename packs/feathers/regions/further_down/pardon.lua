@@ -112,6 +112,17 @@ space {
       actions = {
         { "Stand on one leg", say "You halve the problem. A small cheer goes up. A boy is sent out with a chalk to mark where the other one may be put down, and draws the outline of a boot in an empty yard, and writes in it {i}HERE, PARDON{/}." },
       } },
+    { name = "the charter stone",
+      description = "In the square, under the statue, set flat in the paving: a slab the size of a tea tray, cut with small neat letters and worn by small feet. It is why the city is called what it is called.",
+      things = {
+        { name = "the text", description = "{i}To the people under the ground, who did not ask, having not known that they might: pardon, for whatever it was, and the freedom of the dark. Granted.{/} There is no name. There was a line for one. It has been worn away, and not by a chisel: by ninety years of the Murmurs touching it for luck on the way to work." },
+        { name = "a groove beside it", description = "A finger wide, polished. The children of Pardon run one finger along it going to school and the other coming back. Their grandparents did. There are two schools of thought about which hand, and a street named for each." },
+      },
+      actions = {
+        { "Ask a Murmur who granted it", say "She stops, very politely, and thinks, and lowers her voice even further, which you had not thought possible. \"A big one,\" she says. \"From above. One of us went up with the rats, on the day the door was open, and stood in the line. We do not know what he asked. We think he did not ask anything. We think he was only seen.\" She touches the stone with her foot. \"It was enough to start a town on.\"" },
+      } },
+    { name = "a lamp that is never lit",
+      description = "On the corner of the town hall, among the dim blue lamps of the city, one bracket holds a lantern of a different make: brass, full size, with a lion on the door. It has never been lit. It would blind half the street. The Murmurs polish it weekly and call it the Visitor's, and say that it is being kept for when he comes down to see how they got on." },
   },
 
   exits = {
@@ -224,6 +235,17 @@ space {
       } },
     { name = "a bell pull",
       description = "A red thread hanging by the bar, for calling the boot boy. It is connected to nothing. He wakes for nothing. It gives the guests something to do." },
+    { name = "a pint that was paid for",
+      description = "On a shelf behind the bar, under a glass dome: a full-sized pewter mug, quite out of scale with the house, with an inch of something dark and long dried in the bottom. A card leans on it.",
+      things = {
+        { name = "the card", description = "{i}Stood by a gentleman from above, for the house, on a Thursday. He would not come in, being too large for the door. He drank his own on the step and said that it was the best beer under the kingdom.{/} Mr Hem's grandfather wrote it. Mr Hem says that it is the only review they have ever had." },
+        { name = "the mug", description = "It has a lion on it, and a twin somewhere. The Hems fill thimbles from a cask all evening and have never once thought of putting anything in this. It is not for drinking from. It is a kind of licence." },
+      },
+      actions = {
+        { "Ask if he came back", say "Mr Hem polishes a thimble for some time. \"The step is swept every night,\" he says. \"And some mornings there is a walnut on it.\" Mrs Hem, from the kitchen, says that he is not to go telling people that. \"I am only saying there is a walnut,\" says Mr Hem. \"I am not saying who.\"" },
+      } },
+    { name = "a slate of the house's debts",
+      description = "By the cellar hatch, a slate the size of a playing card: what the Closed Eye owes. It has one entry. {i}To a gentleman: one round, his. Not yet returned.{/} The Hems are an honest house and it has been on their conscience for three generations." },
   },
 
   exits = {

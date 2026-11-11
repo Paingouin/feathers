@@ -141,6 +141,17 @@ space {
       description = "Screwed to the stern post, in a box with a glass lid. The glass is painted over, black, on the inside. \"Put me off,\" says Dod." },
     { name = "the anchor",
       description = "A stone with a hole in it, on a rope of heather. His grandfather found the stone. It has held this boat in every blow for a hundred years, and before that it was part of a wall." },
+    { name = "a mailbag for the north",
+      description = "Tarred canvas, with a brass label: {i}DRIFT, via Muckle and the Regardless{/}. Dod carries it out on the first run of the month and hands it over at the Landing to a skipper he has known forty years and has never once agreed with.",
+      things = {
+        { name = "the brass label", description = "Worn smooth on one side by the thumb of every postman who ever checked it. Under {i}DRIFT{/} somebody has scratched {i}wherever it has got to{/}." },
+        { name = "a bundle of newspapers", description = "A whole year of the {i}Aldmoor Intelligencer{/}, tied with string. Up there, Dod says, they read one a day, in order, so as to have news every morning. \"They're a year behind,\" he says. \"I can't see it's done them harm.\"" },
+      },
+      actions = {
+        { "Ask about the north", say "\"Cold,\" says Dod. You wait. \"There's folk like it,\" he adds, with the air of a man reporting a crime. \"Agnes Thole takes the mail up. Goes whatever the weather. I've told her it's not sense. She says it's not meant to be, it's the post.\"" },
+      } },
+    { name = "a scarf on the tiller",
+      description = "Knitted, grey, and long enough to go round the helmsman four times. It came down with the last mail as a present from a widow in Drift, with a note pinned to it: {i}For the ferry man, who brings our letters the first mile.{/} Dod has not worn it. He has not taken it off the tiller either." },
   },
 
   exits = {
@@ -299,11 +310,26 @@ space {
       actions = {
         { "Walk past it", say "It gets up, goes round behind you, and brings you back to the middle of the path. You had been straying." },
       } },
+    { name = "the northern mail",
+      icon = "§",
+      description = "At the far end of the slip, where the water is deepest, lies a tubby black ketch with a tan sail and an iron bow: the {i}Regardless{/}, which takes the post north of the Stack once a month to places the charts have not got round to. She is loading coal, onions and a goat. Her skipper is on the slip in a sealskin coat, looking at the sky as one looks at a debtor.",
+      things = {
+        { name = "the iron bow", description = "Plated like a flat iron and dented all over. Each dent, an islander tells you, is a piece of ice she did not go round." },
+        { name = "the goat on the slip", description = "In a knitted coat, with a label round its neck: {i}Mother Skerry, Drift. Paid.{/} It is eating the label." },
+        { name = "a chalk board on the mast", description = "{i}SAILS: first of the month. RETURNS: when back.{/} The islanders consider this the only honest timetable in the kingdom." },
+      },
+      actions = {
+        { "Ask if she takes passengers", say "\"I take the post,\" says the skipper, round an upside-down pipe. \"If you happen to be standing on the deck when I cast off, that's between you and the deck.\" She looks at your coat. \"You'll want another of those. And then one more.\"" },
+      } },
+    { name = "a bollard with frost on it",
+      description = "The seaward bollard, where the {i}Regardless{/} ties up. It is white with rime on the north side on a mild day, as though the boat had brought a little of where she goes back with her, and it had not yet worn off." },
   },
 
   exits = {
     { to = "is_ferry", label = "The ferry",
       description = "Down the slip to the {i}Presently{/}, which will go when Dod has finished telling the winch something." },
+    { to = "cs_mail_boat", label = "North, by the mail boat",
+      description = "Aboard the {i}Regardless{/}, which is going north of the Stack whether you come or not." },
     { to = "is_inn", description = "The longest house on the landing, with a lamp over the door and a board that takes a moment to read." },
     { to = "is_net_loft", description = "Up an outside stair to the long room over the boat shed, where the nets are." },
     { to = "is_smokehouse", description = "Along the shore to the black shed that the smoke comes from." },

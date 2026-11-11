@@ -119,6 +119,25 @@ space {
         { name = "a carter's horse", description = "Enormous, grey, shaggy at the heel, eating. It has done the road to Saltwick four hundred times and could do it without the carters, who are arguing inside. It has its own view about which way is longer." },
         { name = "the pump", description = "The handle shrieks. It is not oiled, on purpose. It is how Mistress Tolly knows who is watering the beer." },
       } },
+    { name = "a niche behind the bar",
+      description = "Between the pumps and the slate: a shelf the size of a brick with three things on it. It is the house's religion and Mistress Tolly sees to it herself, at closing, with the cloth she does the glasses with.",
+      things = {
+        { name = "a farthing under a glass", description = "Upturned tumbler, one coin. It is the first one taken across this bar. It is for the God of Small Change. The till has never been a farthing out, in her time or her mother's, and she says that is no accident and no credit to the staff." },
+        { name = "a ladle", description = "Old Bess's first, worn to a spoon. Stock's. Nobody in the inn has ever been turned away hungry. Drunk, yes." },
+        { name = "a key on a hook", description = "For Jamb. It is the key to the cellar flap, which sticks. \"Every inn has one door that sticks,\" says Mistress Tolly. \"If you plane it, the luck goes. My grandmother planed one, in the Goat and Compasses. Look at it now. A hat shop.\"" },
+      },
+      actions = {
+        { "Ask what she prays for", say "\"Closing time,\" she says. Then, wiping a glass: \"I say one for the cracked mug. Whoever gets it. I've said one for you, since you ask. It's not much. It only says you're to come to no harm, the great daft thing.\" She holds the glass to the light. \"Don't let it go to your head.\"" },
+      } },
+    { name = "a pilgrim at the corner table",
+      description = "Dusty, with a staff and a scallop of tin on his hat, eating the stew with the concentration of a man who has walked from the coast. He has come to see the Street of Small Gods. He has a list, and is ticking.",
+      things = {
+        { name = "his list", description = "Forty names, in a round hand, thirty one ticked. Against {i}Goose{/} there is a tick and an exclamation mark. Against {i}Almost{/} there is half a tick. Against {i}Doors That Stick{/} he has written {i}shut. Ask again next year,{/} as his father did, and his." },
+        { name = "his staff", description = "Ash, shod with iron, notched at each shrine. It has more notches than the list has names. He says the list is only this year's." },
+      },
+      actions = {
+        { "Ask why he does it", say "\"My father did. And his.\" He mops the bowl. \"You go round, you say good day to each. It's not that you want anything.\" He thinks. \"It's that they're all so small. Somebody ought to call.\"" },
+      } },
   },
 
   exits = {

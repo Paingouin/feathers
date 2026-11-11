@@ -225,6 +225,15 @@ space {
       actions = {
         { "Ask where you are on it", say "He finds the spot with a finger: off the bottom of the page, past the border, on the back. \"You're in the appendix,\" he says. \"That's still on the map. Some aren't.\"" },
       } },
+    { name = "a turning nobody takes",
+      description = "Behind the tea stall a second road leaves the hill, wide, green and empty, going round the back of the castle and away east. The queue has its back to it. Four thousand people stand within a stone's throw of an open road, and not one of them is looking.",
+      things = {
+        { name = "an old fingerpost", description = "{i}ERSTWHILE{/}, and under it, added: {i}(formerly){/}. The arm has dropped until it points at the ground." },
+        { name = "the tea stall's back wall", description = "Number 212 put the stall here so that the urn would face the queue. Her granddaughter says that it was also so that nobody would have to look down that road while they drank." },
+      },
+      actions = {
+        { "Ask the queue where it goes", say "\"Nowhere,\" says number 31, quickly. \"The old town,\" says number 32, to annoy him. \"Where the court was. Before.\" Before what? They both look at their feet. \"Before the queue,\" says 31 at last. \"My great-grandfather used to say that there was a time you could just walk in. On a Thursday.\" Number 32 tells him to hush, there is no such day, and they are friends again for a minute." },
+      } },
     { name = "a shrine by the road",
       description = "A niche in a boundary stone with a candle stub, kept up by the queue. It is to the Patron of Those Who Wait. Nobody knows the saint's name. They were told it would be announced.",
       actions = {
@@ -234,6 +243,8 @@ space {
 
   exits = {
     { to = "nobles_row", description = "Downhill, to hedges and washed cobbles." },
+    { to = "er_old_road", label = "The old road",
+      description = "Round the back of the hill, where the queue does not go: a green road with thorn trees down the middle." },
     { to = "castle_bailey",
       description = "Under the portcullis, stooping, into the castle.",
       requires = flag "ticket_swapped",

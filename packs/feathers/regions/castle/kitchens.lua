@@ -172,6 +172,19 @@ space {
       actions = {
         { "Ask how he tells", say "\"The good ones look sure of themselves,\" he says, and holds one up. You look. It does, rather. He puts it in the good basket and it settles in among the others like a man taking his seat at a club." },
       } },
+    { name = "a crock of pickled walnuts",
+      description = "On the high shelf of the pantry, sealed with wax, with a paper cover gone brown. Mistress Dobbin's predecessor's predecessor brought it from the old palace on her lap. It has never been opened. There is a rule.",
+      things = {
+        { name = "the paper cover", description = "{i}His own receipt. Not till he is back.{/} Mistress Dobbin dusts it every Lady Day. She does not know who he is. She says that a kitchen is the one place in a castle where an instruction is still an instruction." },
+      },
+      actions = {
+        { "Ask to try one", say "The whole kitchen stops. A ladle is put down. \"Those,\" says Mistress Dobbin, \"are spoken for.\" You ask by whom. \"If I knew that,\" she says, \"I should know when to open them, should I not?\" The kitchen starts again, a little louder than before." },
+      } },
+    { name = "the old bill of fare",
+      description = "Nailed inside the larder door, where the cooks see it and visitors do not: a slate, cracked across, in a frame. {i}Thursday. Carp. A raised pie of venison. A subtlety in sugar.{/} It was the last dinner ordered at the old palace and it was never served.",
+      things = {
+        { name = "a line at the bottom", description = "{i}Make enough for the people in the yard also. How many is that? NOBODY KNOWS.{/} Every head cook since has kept it up as a warning. It is why the castle kitchen will not start anything without a number." },
+      } },
   },
 
   exits = {
@@ -312,6 +325,16 @@ space {
       } },
     { name = "a hedgehog",
       description = "Under the bean rows, going about its business with a snuffle. It has a name, and a pension, and is the only member of the household the King consults about slugs." },
+    { name = "a seedling in a pot",
+      description = "On the potting shed sill, in a cracked pot: a walnut, a foot high, with four leaves. The King did not plant it. He found the nut on the wall and put it in earth because he cannot see a thing wanting to grow and leave it.",
+      actions = {
+        { "Ask where it will go", say "\"By the wall, where the cook can reach,\" says the King at once. Then he frowns. \"I do not know why I said that. We have never had one.\" He turns the pot a quarter, to give the other side the light. \"My grandfather would not have them in the place. He said that they got above themselves.\"" },
+      } },
+    { name = "a pair of old shears",
+      description = "Hung in the shed with the King's own, but longer in the blade and worn hollow at the grip. They came from the old gardens. He does not use them. Once a year they are gone from the nail for a day, and come back clean, with a drop of oil on the pivot.",
+      things = {
+        { name = "a shred of yew", description = "Caught in the pivot, dark green, fresh. There is no yew in the walled garden. The nearest yew of any size is a morning's walk east, and it is forty feet high and nobody is supposed to be clipping it." },
+      } },
   },
 
   exits = {

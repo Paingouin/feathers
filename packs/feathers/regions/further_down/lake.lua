@@ -91,6 +91,17 @@ space {
         { "Sit a while", fx("wash", "#90a8e0"),
           say "You sit. The lake does nothing, perfectly. After a time you become aware that the stone beside you is not as cold as the stone under you, and you do not look round, because it would be rude, and because there would be nobody there. You say good evening anyway. It seems the least one can do." },
       } },
+    { name = "a pipe that ends in the dark",
+      description = "A little way along the shore, a stone conduit comes out of the cavern wall at head height and stops, broken off, over the water. It is dry. It is lined with the same pale stone as the oldest sewers.",
+      things = {
+        { name = "the broken end", description = "It did not fall. It was never finished. The last block has its lifting holes still in it, and a mason's rule scratched for the next cut. Whoever was bringing water here, or taking it away, put down his tools between one stone and the next." },
+        { name = "what has come down it", description = "On the shingle underneath, a small fan of things, over a great many years: a silver fork, a hazel shell, a paper boat gone to pulp, and a red sugar jewel, the size of a pea, with one side licked flat." },
+      },
+      actions = {
+        { "Shout up the pipe", say "You shout. The lake takes most of it. A little goes up the conduit, and you wait, and nothing comes back. Mr Tench says that nothing would. \"That one goes to the old town. They would not shout back. They would not think it polite.\"" },
+      } },
+    { name = "a line of pegs in the shingle",
+      description = "Driven in at the water's edge, a yard apart, running off along the shore out of your lantern light: surveyors' pegs, each with a rag of red. Somebody set out to measure the lake. The pegs go on. You do not find the last one." },
   },
 
   exits = {
@@ -201,6 +212,16 @@ space {
       actions = {
         { "Put a toe in", say "The water is warm on this side. You take your toe out. Some slipways are not yours, and you have learned, in the course of this trip, to tell." },
       } },
+    { name = "a shoe on the sand",
+      description = "Above the waterline, on its side: one court shoe, with a red heel and a buckle gone green. It is very large. It did not come by boat. There is no drag mark, and the sand round it has been smooth for a long time.",
+      things = {
+        { name = "the inside", description = "The maker's paper is still in the toe, soft as cloth. {i}A ten.{/} There is sand in it, and under the sand a single dry leaf, long and pointed, off a kind of tree that does not grow under the ground." },
+      },
+      actions = {
+        { "Look for the other", say "You walk the whole edge of the island. There is no other. There is the white tree, and the oar, and the footprints that were here when you came. You hold the shoe against one. It is the wrong foot, and it is the right size. You set it down where it was, pointing the way it was pointing, which is at the tree." },
+      } },
+    { name = "a mug of lake water",
+      description = "A horn cup, set upright in the sand at the foot of the white tree, full to the brim. It has a lion on it. The water in it is perfectly still and has one star in it, and the star is not reflected from anywhere." },
   },
 
   exits = {

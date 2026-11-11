@@ -112,6 +112,17 @@ space {
         { name = "an order, sent down",
           description = "A card in the box, in a lady's hand. {i}The usual. And the Baroness says the last lot was NOT turnips and could she have more of it.{/}" },
       } },
+    { name = "a crate marked 'OLD TOWN'",
+      description = "Small, nailed shut, well back on the contraband shelves, with a tally of marks on the lid. It is the only cargo in the vault that the smugglers bring in and do not sell on.",
+      things = {
+        { name = "the tally", description = "One stroke a year, eleven strokes. And in chalk beside them: {i}Barley out, by the fifth stone. Walnuts back. No questions. He pays in real money and says thank you.{/}" },
+        { name = "a jar in the straw", description = "Through a gap in the slats: pickled walnuts, black, in a stone jar with a paper label. {i}A. Lull. Year eleven.{/} The smugglers eat one jar a year, at midwinter, standing up, with their hats off. They could not tell you why hats." },
+      },
+      actions = {
+        { "Ask the sleeping smuggler", say "He does not open his eyes. \"Not contraband,\" he says. \"No law against walnuts.\" A pause. \"No law against selling barley to a town that is not there, neither. We looked. It is the only honest run we have, and it is the only one we would hang for if we talked about it.\" He turns over. \"So we don't.\"" },
+      } },
+    { name = "a banner used as a dust sheet",
+      description = "Over a stack of crates: red silk, rotted along the folds, with a lion's back leg and the word {i}STAY{/}. It came out of a cart that lost a wheel on a hill, ninety years ago, and has been keeping the damp off brandy ever since." },
   },
 
   exits = {

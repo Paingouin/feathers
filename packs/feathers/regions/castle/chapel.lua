@@ -127,6 +127,16 @@ space {
       } },
     { name = "a tablet in the wall",
       description = "Small, grey, low down by the door, where a memorial costs least. {i}TO ONE WHO WAITED. HE WAS NEXT.{/} No name. No date. There are always fresh flowers on the floor beneath it, and the queue takes it in turns." },
+    { name = "a prayer book with a page pasted down",
+      description = "In the royal pew, the King's own book. The prayers for the royal family are on a page that has been pasted to the next one, all round the edge, very neatly.",
+      actions = {
+        { "Hold it to the window", say "With the light behind it you can see the print of the hidden side, backwards. A list of names to be prayed for: the Queen, the princes, and at the head a longer gap where one was cut from the type before printing. They did not pray for him. They pasted the page down so that nobody would notice that they did not." },
+      } },
+    { name = "a kneeler worked with a walnut tree",
+      description = "Among the hassocks, older than the rest, in faded wool: a tree with a spreading crown and a small dog under it. Every other kneeler in the chapel has a lion. The chaplain says that it came from the old place and that the mice will not touch it.",
+      things = {
+        { name = "the stitching", description = "Fine, close, and done by somebody who did not sew for a living. On the underside, in red thread: {i}for a Thursday{/}. The chaplain has never turned it over. He kneels on it himself, when nobody is in." },
+      } },
   },
 
   exits = {
@@ -241,6 +251,16 @@ space {
       actions = {
         { "Add your name", say "You write it, small, under the old prisoner's. You put {i}adventurer{/} after it. Then you look round at four hundred years of kings, lying quite still, and add {i}(visiting){/}." },
       } },
+    { name = "a mason's estimate",
+      description = "Folded small and pushed into a joint of the wall beside the plinth with nothing on it. {i}To one tomb, with figure, as the others. Name to be supplied.{/} It has been agreed, signed for the Council, and never called in.",
+      things = {
+        { name = "a line at the foot", description = "In the mason's hand, with his mark, a small rose: {i}Told there will be no body. Asked, then what is the tomb for? Told, for the look of the row.{/}" },
+      } },
+    { name = "a green walnut on the bare plinth",
+      description = "One, in its husk, set down in the exact middle of the smooth marble. The sexton sweeps it off every autumn. Every autumn there is another. He has stopped mentioning it to the chaplain.",
+      actions = {
+        { "Ask the sexton", say "\"Rooks,\" he says. You look at the roof of the vault, which is forty feet of solid stone under a chapel. \"Persistent rooks,\" he says." },
+      } },
   },
 
   exits = {
@@ -342,6 +362,16 @@ space {
       description = "On the lip of the iron chest, by itself, on a square of cloth: one copper penny, worn smooth. It has not been put with the rest, and it is the only coin in the room that has been handled lately." },
     { name = "a blocked air shaft",
       description = "A square hole in the wall, bricked at the far end. Godric had it closed in case the gold could be smelled. A thread of cold comes through it all the same, from below rather than above, and the dust on that side of the room has been combed all one way." },
+    { name = "an empty peg in the wall",
+      description = "A row of iron pegs holds the keys to Godric's chests, each tagged. One peg has a tag and no key: {i}Erstwhile Mint, strong room{/}.",
+      things = {
+        { name = "the tag", description = "On the back, in Godric's careful hand: {i}Never to leave this room.{/} And under that, three reigns later, in another: {i}It did not. The Mint was not locked. Nobody thought to try the door.{/}" },
+      } },
+    { name = "a bag marked 'returned'",
+      description = "A small leather bag sitting by itself on the lip of a chest, with a label. Inside is one silver penny with a hole punched in it for a string.",
+      actions = {
+        { "Read the label", say "{i}Found on a windowsill at the old Mint. A moneyer's luck piece. Sent on in case he asks.{/} It was sent on ninety years ago. Godric would have approved of the bag and been horrified by the sentiment." },
+      } },
   },
 
   exits = {

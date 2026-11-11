@@ -112,6 +112,24 @@ space {
       actions = {
         { "Scrape your boots", say "Half of the Barley Road comes off. The hedgehog bears it. A guard nods, and makes a tick on a slate that has not had one since Tuesday." },
       } },
+    { name = "a wayside niche",
+      description = "Cut into the left tower at knee height: a small stone god with a traveller's hat, worn featureless by hands. Everybody who comes into Aldmoor touches it. Nobody who leaves does. The god has formed a view of the town on that basis.",
+      things = {
+        { name = "the worn place", description = "On the crown of the hat, a dip like a thumbprint in butter. Carters reach down for it without looking, in mid sentence." },
+        { name = "a farthing on the ledge", description = "Left by somebody who had exactly the gate tax and one over. It has been there a week. In Aldmoor that is a miracle, and the sergeant has started to say so." },
+      },
+      actions = {
+        { "Touch the hat", say "Cold stone, smooth as a sucked sweet. You have the brief plain sense of being counted in. Behind you the queue moves up one." },
+      } },
+    { name = "a carter asleep in the queue",
+      description = "On his box, reins slack, hat over his face. The horse moves up when the queue does. It has been doing this run for eleven years and has the gate copper ready in a little bag on the collar.",
+      things = {
+        { name = "the horse", description = "Brown, patient, with the expression of the only competent member of a firm. It looks at your boots, and then at you, and breathes out." },
+        { name = "the load", description = "Tea chests, each stencilled with a small tree, and one crate of nightcaps going the other way that has somehow got on the wrong cart." },
+      },
+      actions = {
+        { "Wake him", say "You cough. He does not wake. The horse moves up a place, turns its head, and gives you a look that says the firm is being run perfectly well, thank you, and would you mind." },
+      } },
   },
 
   exits = {

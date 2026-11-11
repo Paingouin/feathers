@@ -235,6 +235,22 @@ space {
       things = {
         { name = "the rings", description = "Thirty or so, brass, each stamped. The inspector down in the square has a cross in his book for every one. It is, in its way, the only other ledger in the tower that is kept up." },
       } },
+    { name = "the oil cupboard",
+      description = "A tall press of japanned tin, on the landing, with a hundred little cans on its shelves. Each has a spout as fine as a needle and a label.",
+      things = {
+        { name = "the labels", description = "{i}Going train, top pivot. Going train, second. Strike, hammer arbor.{/} Every bearing in the Clock has its own can and its own oil. They are not to be mixed. The Winders speak of a man who once used the wrong can as other people speak of a murderer." },
+        { name = "a can with a black ribbon", description = "On the top shelf, by itself. {i}For the wheel that does not need it.{/} It is full. It has never been used. It is refilled each year, in case the wheel should change its mind." },
+        { name = "a rag", description = "Folded square. It has wiped the same brass for two hundred years and is by now more brass than rag. It would ring if you dropped it." },
+      },
+      actions = {
+        { "Sniff the oil", say "Neat's-foot, and something sharp, and a little clove. It is the smell of the whole of Tickover, at its source. You realise that you have been smelling it faintly since the Gate, on everyone's hands, and had taken it for honesty." },
+      } },
+    { name = "a slate of faults",
+      description = "Hung by the door of the works, with a slate pencil on a string. Any fault observed in the Clock is to be chalked here, by whoever sees it, with the hour.",
+      things = {
+        { name = "the entries", description = "There are two. The first: {i}Late. 4 min.{/} It is so old that the slate has been framed round it. The second, lower down, in a child's hand: {i}It looked at me.{/} Nobody has rubbed that out either." },
+        { name = "the slate pencil", description = "Unworn. In Tickover, having nothing to write on the slate of faults is a matter of civic pride, and having the slate anyway is a matter of civic honesty." },
+      } },
   },
 
   exits = {

@@ -134,6 +134,17 @@ space {
         { name = "the bottom margin",
           description = "Where the lines go off the sheet, somebody has drawn a neat row of arrows pointing down and written {i}&c.{/}" },
       } },
+    { name = "the sixth tunnel",
+      description = "There are five tunnels on the Inspector's plan and five on the brass plate. Behind the hut, half bricked, there is a sixth: low, round, lined in pale dressed stone a good deal better than the rest. It is dry. A draught comes down it that smells of hawthorn.",
+      things = {
+        { name = "the brickwork across it", description = "Waist high and no further. The bricklayers were told to close the Erstwhile conduit, started, and were then told that there was no such place as Erstwhile and therefore no conduit, and went to their dinner." },
+        { name = "a tide of nutshells", description = "Along the foot of the half wall, a drift of black husks, years deep. The Inspector has reported them. The report came back marked {i}No tree is known on this line.{/}" },
+      },
+      actions = {
+        { "Ask the Inspector about it", say "\"Not on my plan,\" he says. \"What is not on my plan I do not inspect.\" He looks at the pale stone, despite himself. \"It is very good work. It has not leaked in four hundred years. If I did inspect it, I should have to pass it, and then I should have nothing to complain of, and where would be the sense in that?\"" },
+      } },
+    { name = "a complaint, forwarded",
+      description = "In the pending tray, near the bottom, on old soft paper. {i}That the water from the King's spring is now going to a fishpond.{/} It has been forwarded eleven times. The last endorsement reads: {i}Passed to Mr Tench. He will know what to do with it.{/}" },
   },
 
   exits = {

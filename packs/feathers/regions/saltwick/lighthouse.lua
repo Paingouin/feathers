@@ -128,6 +128,18 @@ space {
       } },
     { name = "a string of dried fish",
       description = "Across the chimney breast, thirty herring split and hung by the tail, gone the colour of old leather. The cat sits under the end one. It has sat under it for six years. One of them is going to give way first, and Wim has a small bet on, with himself, in the back of the log." },
+    { name = "a packet of letters from the north",
+      description = "Tied with tarred twine, in a pigeonhole of the keeper's desk marked {i}COLD{/}. They are from the keeper of a light beyond the Stack, and the argument in them has been going on, by monthly boat, for nine years.",
+      things = {
+        { name = "the first letter", description = "{i}Sir, you say a light cannot be made of ice. I enclose a piece of mine.{/} There is a water stain on the paper the size of a hand, and Wim's note in the margin: {i}Arrived as a puddle. Proves nothing.{/}" },
+        { name = "the latest letter", description = "{i}Mr Wim: I rebuilt on the ninth. Forty courses. She stands. How is your stair? Mine is new, of course. M.F.{/} He has written his answer on the back and not sent it: {i}My stair is two hundred years old and I know every step. I should not care to have to meet a new one each autumn. I take off my hat, all the same.{/}" },
+        { name = "a drawing", description = "In pencil, careful, by a hand that has never drawn anything but plans: a tower in courses, with the light shown coming down through the walls. He has pinned it over his bunk. He would not have you know that." },
+      },
+      actions = {
+        { "Ask who M.F. is", say "\"A woman who builds a lighthouse every year and watches it fall down,\" says Wim. \"I thought she was a liar. Then I thought she was a fool.\" He looks out at his own stone tower, solid in the wind. \"Now I think it's me that's had it easy,\" he says. \"Don't put that about.\"" },
+      } },
+    { name = "a jar of seal oil",
+      description = "On the window sill, clear and pale as white wine, with a label in a square hand: {i}Try it. It does not smoke.{/} It is three parts gone. The Saltwick Light has been burning a little cleaner this year, and the Board has written to commend the keeper, and the keeper has not written back to say why." },
   },
 
   exits = {
@@ -243,6 +255,17 @@ space {
       things = {
         { name = "what is in the drawer", description = "Nothing. A felt hollow, the shape of nothing in particular, and a card in the first keeper's hand: {i}There is no spare. See that it does not go out.{/}" },
       } },
+    { name = "a green flicker in the north",
+      description = "On the clearest nights, the keeper says, if you stand with your back to the lamp and shade your eyes, there is sometimes a paleness low in the north that is not dawn and not a ship. A greenish stain on the edge of the dark, there and gone.",
+      things = {
+        { name = "a pencil mark on the glass", description = "On the north pane, a short stroke at eye level, and a date, and another, and another. Eleven in nine years. He marks each night he has seen it. He has told the Board nothing. A keeper who reports lights that are not ships is a keeper who gets a visit from a doctor." },
+        { name = "a folded note in the frame", description = "Tucked into the leading. {i}M.F. says: that is ours. It hangs like washing. You are seeing the hem of it over the top of the world. Look on a night with no moon and think of me cold.{/}" },
+      },
+      actions = {
+        { "Shade your eyes and look north", say "You turn your back on the great lamp and cup your hands. Dark sea. Dark sky. The beam goes round behind you, once, twice. And then, low, where the two darks meet, for the space of a breath: a thread of green, thin as a scratch, that wavers and is gone. You stay there a long while after. It does not come again. You find you do not mind. You have seen that it is there." },
+      } },
+    { name = "a brass plate of other lights",
+      description = "Screwed to the lamp pedestal: the bearings of every light visible from here, engraved, with their characters. {i}Afterthought (green, occulting). Stack Buoy (bell).{/} At the bottom somebody has scratched an extra line with a nail, not straight: {i}The Cold Light. N. Not visible. There all the same.{/}" },
   },
 
   exits = {

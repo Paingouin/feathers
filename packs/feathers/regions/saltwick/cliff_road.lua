@@ -140,6 +140,18 @@ space {
         { name = "a crook by the door", description = "Hazel, with a ram's horn handle, polished by one hand. Notched down the shaft: lambs, by year. One year has a notch on the wrong side. That was the puffin she raised by mistake." },
         { name = "the stove pipe", description = "The wind has bent the smoke over at a right angle an inch above the tin. It goes inland with the hats." },
       } },
+    { name = "a house with violet curtains",
+      description = "Set back from the road on the seaward side, alone, white, with a slate roof and a little glazed lookout on top that faces north. The curtains are violet and are drawn back. There is a brass telescope in the lookout, on a stand, and somebody sitting beside it.",
+      things = {
+        { name = "the lookout", description = "A box of glass no bigger than a pulpit. An old lady in a lace cap sits in it every forenoon with her hands in her lap. She does not use the telescope. She says that when there is something to see she will not need it." },
+        { name = "the garden gate", description = "Painted every spring, white, and oiled, and never latched. A gate that has been left on the latch for sixty-two years, the carrier says, so that a gentleman coming home from sea should not have to fumble with it." },
+        { name = "the letter box", description = "Brass, polished thin. The postman calls on the first of the month, both ways: one in, one out. He has done the round thirty years and says it is the only house on it where he wipes his feet to deliver." },
+      },
+      actions = {
+        { "Raise your hat to the window", say "The lace cap inclines. A hand, very small, lifts from the lap and comes down again. You walk on up the road feeling that you have been received, and that it was done properly, by someone who has kept in practice." },
+      } },
+    { name = "a milestone with a later hand",
+      description = "The old stone says {i}SALTWICK 1{/}. On the back, facing the sea, someone has cut with a chisel, much more recently and with some humour: {i}DRIFT 400. MIND THE ICE.{/}" },
   },
 
   exits = {

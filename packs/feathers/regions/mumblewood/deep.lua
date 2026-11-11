@@ -144,6 +144,20 @@ space {
       actions = {
         { "Stand still until your eyes adjust", say "It takes a long while. Then the dusk comes apart into things: a fern, a stone, the white scut of something sitting quite still that has been watching you the entire time. It was never dark. It was only private." },
       } },
+    { name = "a charm of goldfinches in a thistle clearing",
+      description = "Where an oak came down years ago the light gets in, and thistles have taken the gap. A dozen small birds are working the heads, red-faced and gold-barred, tinkling like a dropped purse. They are the only bright thing for a mile and seem to know it.",
+      things = {
+        { name = "the thistledown", description = "It goes up in the one shaft of sun and hangs there, turning. Each seed has a parachute and no plan. Most of this wood was planted in exactly that way." },
+        { name = "the fallen oak's root plate", description = "A wall of earth and root twelve feet high, tipped on edge. In the pit it left there is a pool, and in the pool a single yellow iris that cannot have got here by itself. Somebody walks in from the fen with wet boots, now and then." },
+      },
+      actions = { { "Stand in the sun", say "It is the first warmth on your face since the wood's edge. You shut your eyes. The mumbling goes on all round, low and slow, and for a moment it has the sound of people in the next room who are glad you have sat down." } } },
+    { name = "a hollow way",
+      description = "An old track sunk between banks higher than your head, roofed with holly, leading west. The floor is deep in leaves that nobody has disturbed. It was a road once, wide enough for a cart. The trees on its banks are four hundred years old, and they grew after it was given up.",
+      things = {
+        { name = "a cart rut, under the leaves", description = "You kick down to it: a groove in the clay as hard as pot. One wheel. Whatever made it went west heavy and did not come back light, or the other rut would be as deep." },
+        { name = "a horseshoe on a holly", description = "Nailed to the trunk and half swallowed by the bark, so that only the two heels show. For luck, on the way out. The tree has kept it. Whether it kept the luck is the tree's business." },
+      },
+      actions = { { "Follow it a little", say "It runs straight for a furlong and then the banks sink, the holly thins, and it simply goes down into wet ground, and reeds begin. The road did not stop. The country it went to did. You come back with mud to the ankle and a new respect for staying put." } } },
   },
 
   exits = {
@@ -241,6 +255,18 @@ space {
 
     { name = "roots through the roof",
       description = "Between the slabs the Old King's roots come down, fine as hair, hundreds of them. None touches the bier. They have grown round it on every side and stopped an inch short, and hang there in a ring, like people standing back." },
+    { name = "a niche with a clay lamp",
+      description = "Cut in the wall by the steps, at the height of a hand. A lamp of grey clay sits in it, shaped like a shoe, with a black thumbprint of soot on the wall above. The soot is thick. It was lit a great many times before it was lit the last time.",
+      things = {
+        { name = "the wick", description = "A twist of moss, burnt to a curl. You touch it and it goes to powder. You are sorry at once. It had held that shape for five hundred years and you were the draught it was waiting for." },
+        { name = "a thumbprint in the clay", description = "Under the handle, where the potter pinched it. A small thumb. A woman's or a boy's. It is the only signature in the barrow, and it is on the cheapest thing." },
+      },
+      actions = { { "Cup your hands round it", say "No light, no warmth. But for a moment you have the stance of everyone who ever carried it down these steps, bent a little, shielding nothing from a wind that is not blowing. It is a way of standing that the body seems to know." } } },
+    { name = "the woodcutter's dog",
+      description = "At the foot of the bier, under the sand, the shape of something curled: a low mound a yard long, with a flat stone at one end. Nobody would see it who was not looking down. He did not come in here alone.",
+      things = {
+        { name = "the flat stone", description = "Scratched with one line and a row of dots. It could be a spear and a count of game. It could be a tail and the number of years. Either way it was somebody's whole account of a friend." },
+      } },
   },
 
   exits = {

@@ -108,6 +108,17 @@ space {
       description = "A slate on a post, put up by Miss Arbuthnot and the school. {b}PUFFINS:{/} and then a number, rubbed out, and another, rubbed out, and at the bottom, in a child's capitals, {i}THEY WILL NOT STAND STILL{/}." },
     { name = "the view north",
       description = "Nothing. Sea, and then the place where sea becomes sky, and no line between. There is no land on that side until you have gone farther than anyone has come back from. The puffins come from there each spring, and go back there each autumn, and have never been asked." },
+    { name = "the north stone",
+      description = "On the seaward rim, a slab set on edge, with a notch cut in the top. If you put your chin in the notch you are looking due north along the path the mail boat takes. Islanders come up here on the first of the month to watch her go.",
+      things = {
+        { name = "the notch", description = "Worn smooth by chins. A good many of them, you gather, belonged to girls, since the mail boat has always had a young mate, and the present one has been young for thirty years." },
+        { name = "a white edge on the sea", description = "Right on the line of the horizon, when the air is clear, there is a brightness like the rim of a plate. Tam Groat says that is the ice, a day's sail off, throwing the light up. He has never been. He says a man who lives on a rock with eleven thousand puffins has all the far north he can use." },
+      },
+      actions = {
+        { "Put your chin in the notch", say "The stone is cold and fits. You look north. Sea, and the bright rim, and above the rim a low grey bank that might be cloud. A puffin lands beside your ear, looks where you are looking, sees nothing in it, and looks at you instead." },
+      } },
+    { name = "a puffin with an odd fish",
+      description = "It has eleven sand eels in its beak like all the rest, and a twelfth thing: a fish as long as a finger and as clear as glass, with a row of blue specks down the side that are, for a moment, lit. The puffin seems as surprised as you are. It came from the north with that one and has not liked to put it down." },
   },
 
   exits = {
@@ -220,6 +231,16 @@ space {
       description = "A cleft in the rock with three steps cut in it and an iron ring. Painted on the rock face in tar: {b}PRIVATE LIGHT. NO LANDING. NO HAWKERS. NO INSPECTORS.{/} And lower down, where you only see it when you are tying up: {i}mind the weed, it's slippy{/}." },
     { name = "the rain tank",
       description = "A ship's water tank, riveted iron, catching the run off the tower roof. He drinks from it, and washes in it, and keeps in it one large eel, to eat the midges. The eel is called the Inspector." },
+    { name = "a letter about an ice light",
+      description = "Propped on the mantel, much thumbed. {i}Mr Crake: there is a lighthouse north of the Stack that is built of ice and falls down every summer. The keeper is a woman and builds it again. I thought you would wish to know that you are not, as you have always said, the most contrary light on the coast. A. Thole, master, Regardless.{/}",
+      things = {
+        { name = "Crake's reply, unsent", description = "Three drafts, on the back of tide tables. The first is a page of scorn. The second is half a page. The third says: {i}Madam, what do you burn, and how do you keep the wall from sweating? Yrs, A. Crake.{/} It has a stamp on it. He has not yet walked it to the box." },
+      },
+      actions = {
+        { "Ask him about it", say "\"Ice,\" says Crake. \"A light made of ice. It's against nature. It's against sense.\" He glares at his own green lamp. \"A hundred and four times she's built it, the Thole woman says. A hundred and four.\" He is silent for a while. \"I've only ever had to build mine the once,\" he says, and it does not sound like boasting." },
+      } },
+    { name = "a seal oil lamp",
+      description = "A stone bowl with a moss wick, on the window sill, unlit. It came down on the mail boat with no note. Crake has tried it, once, at night, with the door locked. It gave a small clear yellow flame that did not smoke. He has told nobody, and has kept it filled." },
   },
 
   exits = {
@@ -317,6 +338,17 @@ space {
       description = "At the back of the inner ledge, where the big one was lying: an opening no higher than your waist, with green light in it and a breath of air coming out that is warmer than the cave. The rock round it is rubbed as smooth as a door handle." },
     { name = "a wedding garland",
       description = "Thrift and sea campion, plaited into a ring and hung on a spike of rock by the Wide Mouth. It is this week's. There are the stalks of older ones under it, a brown rope of them as thick as your arm, going back farther than you can untwist." },
+    { name = "a floe in the cave mouth",
+      description = "A plate of ice the size of a table has drifted down from the north and wedged itself in the entrance of the lowest pipe, where it rises and falls with the swell and knocks, softly, like someone too polite to come in.",
+      things = {
+        { name = "the blue inside it", description = "Where it has cracked, the ice is blue, the blue of a bottle held to a window. Seals have hauled out on it and left a warm oval, slowly filling with water." },
+        { name = "a handprint", description = "On the flat top, melted in a finger deep, as if somebody leaning over a ship's rail had touched it going by. It has carried that south for a hundred miles. By Tuesday it will have nothing to carry it in." },
+      },
+      actions = {
+        { "Put your hand in the print", say "It is a little bigger than yours, and still sharp at the edges. The ice is rough as sugar. You lift your hand away and the floe swings off on the swell, knocks once against the rock, and settles. It will be gone in a week. You find that you mind." },
+      } },
+    { name = "a cold current",
+      description = "In the third pipe the water is a different colour: a tongue of grey-green, sliding in under the rest, so cold that the air over it smokes. The seals lie in it as people lie in a draught on a hot day. It comes from the north, along the bottom, and where it goes after the caves nobody on the island can tell you." },
   },
 
   exits = {
@@ -427,6 +459,17 @@ space {
       } },
     { name = "the walls",
       description = "Rubbed smooth to the height of a seal's back, all the way round, by ten thousand years of going about their business. Above that the rock is rough, and wet, and glitters." },
+    { name = "a visitor from the north",
+      description = "Among the grey seals on the shelf there is one that is not of the island: twice the size, pale as cream, with whiskers as long as knitting needles that curl at the ends. A bearded seal, down from the ice. It has the best place by the pool and the others have left a clear yard round it, as round a bishop.",
+      things = {
+        { name = "its whiskers", description = "They move by themselves, each one, feeling the air. When you step nearer, the whole moustache turns towards you like a hand opening." },
+        { name = "a scar on its flank", description = "Four lines, parallel, long healed. It lies with that side to the room. The young seals come and look at it, and go away quiet." },
+      },
+      actions = {
+        { "Bow to it", say "You do not know why you do. It seems the thing. The great pale head lowers, an inch, and comes up again. On every side of the pool the island seals turn and look at you with new interest. You have been acknowledged by the visitor, and they are wondering whose family you can be." },
+      } },
+    { name = "a heap of clear fish bones",
+      description = "Beside the pale seal, swept into a neat pile with a flipper: small skeletons as fine as fern, each with a row of dots down the spine where there were lights. It brought its own provisions. Nothing that swims round Muckle has bones like these." },
   },
 
   exits = {

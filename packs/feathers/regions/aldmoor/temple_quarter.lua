@@ -12,7 +12,13 @@ space {
       things = {
         { name = "the collection box", description = "It has a slot for coins and a second, larger slot for receipts." },
         { name = "a clerk-priest", description = "He blesses you, and then hands you an itemised account of the blessing.",
-          actions = { { "Dispute the account", say "He produces a form for disputing accounts. There is a fee for the form." } } },
+          actions = {
+            { "Dispute the account", say "He produces a form for disputing accounts. There is a fee for the form." },
+            { "Ask to see the books", when = no(flag "sh_books_open"), set "sh_books_open",
+              say "He stops writing. Nobody asks. People ask to be let off, or for more time. \"The books,\" he says, and something happens to his face that in another man would be joy. He unhooks a cord behind the altar. There is a stair, in grey stone, going up through the roof and on. \"Public gallery. Mind the queue. Do not, I beg you, touch the pen.\"", fx "sparkle" },
+          } },
+        { name = "the stair behind the altar", key = "sh_ledger_stair", visible_if = flag "sh_books_open",
+          description = "Grey stone, narrow, with a brass rail worn bright on the way up and dull on the way down. It goes through the temple roof without troubling the slates. From the top comes a sound like steady rain, which is pens." },
       } },
     { name = "the Shrine of Our Lady of Lost Socks",
       description = "A single alcove with a basket. Leave one sock; she is said to know where the other went, and to be keeping it.",
@@ -21,11 +27,18 @@ space {
       },
       actions = {
         { "Pray for a sock", say "You feel a draught round one ankle. You look down. You do not want to talk about it." },
+        { "Leave a sock", when = no(flag "sh_sock_given"), set "sh_sock_given",
+          say "You sit on the step, take off your left boot, and put the sock in the basket with the others. It is not much of a sock. It is the first one anybody has given her that was not already lost. The basket creaks. The wicker at the bottom parts, like a mouth about to say something kind, and warm air comes up out of it smelling of clean wool.", fx "sparkle" },
       } },
     { name = "the Chapel of the God of Doors That Stick",
       description = "Nobody has been inside in forty years. They assume it is very nice.",
       actions = {
         { "Try the door", say "It sticks. Somewhere within, something is pleased." },
+        { "Lift it and push", when = no(flag "sh_door_unstuck"), set "sh_door_unstuck",
+          say "You stop pulling. Everybody pulls: it says to, on the plate. You take the handle, lift the whole door a finger's width on its hinges, wait while it thinks about you, and push. It opens like a sigh. On the other side a very large person, who had his shoulder to it, falls past you into the street, gets up, and wrings your hand until your teeth meet.", fx "shake" },
+      },
+      things = {
+        { name = "the brass plate", key = "sh_pull_plate", description = "{i}PULL.{/} It has been polished by forty years of hands doing as they were told. The hinge side of the door, you notice, has dropped. A door that has dropped wants lifting. Nobody has tried it, since nobody reads hinges." },
       } },
     { name = "the Altar of Almost",
       wonder = true,
@@ -36,6 +49,8 @@ space {
       },
       actions = {
         { "Leave an offering", say "You have nothing to leave. You are an adventurer who has, so far, almost had an adventure. You stand there a while. That seems to count." },
+        { "Nearly touch the statue", when = no(flag "sh_almost_reached"), set "sh_almost_reached",
+          say "You put out your hand to the air above the plinth, where the statue is not. You do not touch it. You very nearly do. There is a hair between your fingers and a stone cheek that was never set there, and in that hair, for the length of a held breath, there is a garden gate standing an inch open.", fx "wash" },
       } },
     { name = "a queue of pilgrims",
       description = "They are queueing for the wrong god, and have been told, and are staying on principle.",
@@ -84,6 +99,77 @@ space {
       actions = {
         { "Suggest they share it", say "They turn on you together. It is the first thing they have agreed on in forty years. You leave them to it, closer than they were." },
       } },
+    { name = "the Doorstep of Mother Mind-the-Step",
+      key = "sh_doorstep_shrine",
+      description = "A single worn stone step in the middle of the pavement, leading up to nothing. It is the shrine of the goddess of thresholds. Aldmoor people cross it without breaking stride, touching two fingers to the air where a lintel would be. Strangers trip.",
+      things = {
+        { name = "the hollow in the step", description = "Worn by nine hundred years of feet that were on their way somewhere else. There is rain in it, and a pea pod." },
+        { name = "a boot scraper", description = "Iron, set in the stone. It is the offering box. You leave her the mud of where you have been." },
+      },
+      actions = {
+        { "Mind the step", when = no(flag "sh_step_minded"), set "sh_step_minded",
+          say "You stop on it. Both feet. You scrape Greenhollow off your boots on to the iron, and you stand a moment, between the part of the street you have walked and the part you have not. Nothing happens. It is the kind of nothing that has somebody's hand under your elbow." },
+        { "Mind the step", say "You stop on it again, both feet. It is a habit you could keep." },
+      } },
+    { name = "the Porch of Old Looks-Like-Rain",
+      key = "sh_porch_shrine",
+      description = "Two posts and a shingle roof, built out from a blank wall, with a bench under it. There is no temple behind. The porch is the whole of it. Old men sit here and look at the sky over the Temple of Saint Ledger and pass remarks, and that is the service.",
+      things = {
+        { name = "the old men", description = "Three, with sticks. They are the clergy. Between them they have a hundred and ninety years of being right about the weather, afterwards." },
+        { name = "a strand of seaweed", description = "Nailed to the post. It is limp. It is always limp. \"Told you,\" says one of the old men, to nobody." },
+      },
+      actions = {
+        { "Say it looks like rain", when = no(flag "sh_rain_remarked"), set "sh_rain_remarked",
+          say "You look up, and you say it. The three old men turn their heads, slowly, all together. One of them moves along the bench. \"It does,\" he says. You sit. A drop falls on the shingles. You have been received into a faith and it has taken eight seconds." },
+        { "Say it looks like rain", say "\"It does,\" they say, together. It always does. That is the beauty of the creed." },
+      } },
+    { name = "the Thursday Stall",
+      key = "sh_thursday_shrine",
+      description = "A trestle under an awning, with nothing on it but a tear-off calendar and a saucer. It is the shrine of the God of Thursdays, open one day a week. Today, by a coincidence that the stallholder does not find remarkable, is that day.",
+      things = {
+        { name = "the stallholder", description = "A mild man in a cardigan, doing a puzzle. He is the priest. He says the god asks nothing of anybody except that they get through it, and that most people manage." },
+        { name = "the saucer", description = "For offerings. People leave what they were going to do today and have decided will keep until Friday. It is full of string, lists, and a tax form." },
+      },
+      actions = {
+        { "Promise him next Thursday", when = no(flag "sh_thursday_kept"), set "sh_thursday_kept",
+          say "\"That you'll keep it?\" says the stallholder. \"You don't have to do anything with it. You only have to notice it was one.\" You promise. He tears a leaf off the calendar and gives it to you. It says {b}THURSDAY{/}. When you look again it is in your pocket and the afternoon has gone a shade more gold." },
+      } },
+    { name = "the Stockpot",
+      key = "sh_stockpot_shrine",
+      description = "An iron pot on a tripod over a street fire, in a gap between two temples, with a ladle on a chain. It is the shrine of Auntie Stock. There is no priest. Whoever is passing gives it a stir and puts in what they have, and whoever is hungry takes a bowl, and it has not been empty or off the fire since the Street was laid.",
+      things = {
+        { name = "the ladle on a chain", description = "Iron, worn thin at the lip. The chain is to stop Saint Ledger's clerks from taking it away to be assessed." },
+        { name = "a row of bowls", description = "Wooden, on the kerb, rinsed in the holy well. The beggar with three houses eats here daily, on principle." },
+      },
+      actions = {
+        { "Stir the pot", when = no(flag "sh_pot_stirred"), set "sh_pot_stirred",
+          say "You take the ladle and go round three times, the way your mother did, scraping the bottom. You have nothing to put in. You find a crust in your pocket you had been saving and put that in. It sinks. A child with a bowl is served from the place where it went down, and something a long way above you says, quite distinctly, {i}good lad{/}.", fx "sparkle" },
+        { "Stir the pot", say "Three times round. It is thicker than it was. It is always thicker than it was." },
+      } },
+    { name = "the Goat Stone",
+      key = "sh_goat_shrine",
+      description = "A rough grey boulder at the kerb, taller than a man, with no steps cut in it. It is the shrine of Old Clamber, god of goats. There is usually a goat on top. Nobody has seen one get up there.",
+      things = {
+        { name = "the goat on top", description = "Brown, with a beard, all four feet on a space the size of a saucer. It is chewing a candle from the stall next door. It has a receipt." },
+        { name = "the offerings", description = "At the foot: a boot, half a hymn book, washing. Nothing is left for long." },
+      },
+      actions = {
+        { "Offer it your hat brim", when = no(flag "sh_goat_fed"), set "sh_goat_fed",
+          say "You hold up your hat. The goat leans down, a long way, without moving a foot, and takes a neat half moon out of the brim. It chews. It regards you sideways with an eye like a slot. Then it moves over, an inch, on the top of the stone. You are aware that you have been made room for, and that it is the highest compliment the faith affords." },
+      } },
+    { name = "the Great Portico",
+      key = "sh_thrum_shrine",
+      description = "Halfway down the Street the small temples stop, for fifty paces, round the stump of something enormous: eight white columns as thick as mill chimneys, broken off at the height of the roofs, with washing strung between them and a cobbler's booth in the porch. Nobody knows whose it was. It is the largest ruin in Aldmoor and it is used to dry sheets.",
+      things = {
+        { name = "the pediment", description = "Fallen, in three pieces, face up in the weeds. Letters a yard high, worn nearly flat. You get down and trace them with a finger: T, H, R, and two more." },
+        { name = "the cobbler in the porch", description = "He has had the pitch for thirty years. He says it is a good dry spot and that at night you can sometimes hear somebody walking about upstairs, which is odd, he grants, there being no upstairs." },
+        { name = "a carved fist", description = "On the one capital still in place: a hand, holding a forked thing, among ears of wheat. The pigeons leave that capital alone." },
+      },
+      actions = {
+        { "Say the name aloud", when = no(flag "sh_thrum_named"), set "sh_thrum_named",
+          say "You spell it out from the fallen stone, and you say it. \"Thrum.\" Only that, in an ordinary voice, in a street. The washing lifts on the lines, all of it at once, though there is no wind. The cobbler looks up from his last. And you have the plain strong feeling that somewhere a very long way off, in a very large room, somebody who was walking has stopped.", fx "shake" },
+        { "Say the name aloud", say "\"Thrum.\" The sheets stir. It is a good name to say. It has a floor to it." },
+      } },
     { name = "the oldest temple",
       description = "At the end of the street, the smallest building in it: one room of dark stone without a door, a window or a name. Every other temple here has a founding date. This one has a founding date for the street, which was built up to it.",
       things = {
@@ -127,6 +213,14 @@ space {
 
   exits = {
     { to = "market" },
+    { to = "sh_sock_cupboard", label = "Down through the basket", description = "Into the Shrine of Our Lady of Lost Socks, the way the socks go.",
+      requires = flag "sh_sock_given", hidden = true },
+    { to = "sh_door_corridor", label = "The chapel door", description = "The Chapel of the God of Doors That Stick. Lift, then push.",
+      requires = flag "sh_door_unstuck", hidden = true },
+    { to = "sh_ledger_hall", label = "The stair behind Saint Ledger's altar", description = "Up through the roof to the public gallery.",
+      requires = flag "sh_books_open", hidden = true },
+    { to = "sh_almost", label = "The garden gate", description = "A hair short of the Altar of Almost, standing an inch open.",
+      requires = flag "sh_almost_reached", hidden = true },
     { to = "cistern", label = "The chute",
       description = "Down the chute. It looks very much like a way in. It does not look at all like a way back.",
       requires = flag "knows_undertown",

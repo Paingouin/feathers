@@ -110,6 +110,27 @@ space {
       things = {
         { name = "the ring of clean glass", description = "You can see straight up the outside of the stack to the sky, and the white thread going up, puff by puff. Between puffs, for a moment, the thread is drawn a little way back down." },
       } },
+    { name = "the gauge wall",
+      description = "A bank of round glass dials, floor to gantry, each with a needle and a brass plate. There is a man on a tall stool in front of it whose whole work is to watch them.",
+      things = {
+        { name = "the gauge watcher", description = "Mr Dial, in a white coat. He has not looked away from the wall in his working life. He greets you without turning his head, and tells you what you are wearing, from your reflection in ninety-six glasses." },
+        { name = "the big gauge", description = "As wide as a cartwheel. The needle stands just short of a red line, and trembles there. It has stood just short of that red line since the red line was painted. They painted it where the needle was." },
+        { name = "a small gauge in the corner", description = "Unlabelled, with a needle that moves slowly up, and slowly down, about four times a minute. Mr Dial says it is connected to nothing. He has traced the pipe. It goes into the floor." },
+      },
+      actions = {
+        { "Tap a gauge", say "You tap the nearest glass with a fingernail. The needle does not move. Mr Dial does: he flinches so hard that the stool rocks. \"We don't tap,\" he says. \"If you tap, it tells you what you want. That's how the Fair Enough was lost.\"" },
+      } },
+    { name = "the stokers' mess",
+      description = "A lean-to of corrugated iron against the warm side of the hall, with a long table, a row of pegs and a stove that is, in this building, a kind of joke.",
+      things = {
+        { name = "the pegs", description = "Forty caps, forty jackets. The peg at the end has a very small jacket on it, and a slate, and a school satchel. Big Sal's youngest does her letters here after school, in the warm." },
+        { name = "the table", description = "Scrubbed, with a groove down the middle. The groove is for rolling a hot rivet from one end to the other, which is how the mess decides who makes the tea." },
+        { name = "a shelf of mugs", description = "Tin, a quart each. One has a brass plate riveted to it: {i}Presented to the Boiler, from the men. To be filled first.{/} It is full. They pour it into the firebox at the end of the shift, with a word." },
+        { name = "a delivery book", description = "Coal in, by the wagon. And at the back, a second column, in pencil: {i}coke out, 40 ton, to Below, per Far Enough.{/} Sal says it is a customer the dwarves pass on. \"They pay on the nail and they never come up. I don't ask what they heat.\"" },
+      },
+      actions = {
+        { "Roll the rivet", say "They hand you the tongs. You roll it. It goes down the groove like a little sun, slows, and stops in front of you. There is a general cheer. You make tea for forty, in a bucket, and it is said by several that it is not the worst." },
+      } },
   },
 
   exits = {
@@ -201,6 +222,23 @@ space {
       description = "Forty iron staples in the shaft, warm to the hand at the bottom and cool by the top.",
       things = {
         { name = "the twentieth rung", description = "Halfway. Here the heat from below and the heat from the firedoors above are exactly equal, and for one step you cannot feel either. The stokers call it the Sill, and step over it without stopping." },
+      } },
+    { name = "a row of boots",
+      description = "By the foot of the rungs, set neatly side by side: nine pairs of stokers' boots, some of them very old. Everyone who comes down here takes theirs off.",
+      things = {
+        { name = "the oldest pair", description = "Hobnailed, cracked, the leather gone like bark. They have been here a hundred years. Their owner went up barefoot one evening, saying he would not want them again, and took a pension, and lived to ninety growing roses." },
+        { name = "the newest pair", description = "Small. A girl's. With a school slate tucked into one of them." },
+      },
+      actions = {
+        { "Take off your boots", say "You unlace them and set them at the end of the row. The stone is warm through your stockings, the even warmth of a loaf that came out a while ago. The old stoker nods at your feet. \"There,\" he says. \"Now you're not shouting at it.\"" },
+      } },
+    { name = "the water jug",
+      description = "An earthenware jug on the floor, with a cloth over it and a tin cup. The stokers bring it down full each morning.",
+      things = {
+        { name = "the cloth", description = "Embroidered in red cotton at one corner: a small boiler, with steam, and under it {i}PATIENCE{/}." },
+      },
+      actions = {
+        { "Pour a little on the stone", say "You ask first. The old stoker shrugs: go on. You tip out a cupful. It does not hiss. It spreads, and lies there shining for a breath, and is gone, taken in as bread takes gravy. \"We all do that once,\" he says. \"I couldn't tell you why. It seems rude to come empty-handed.\"" },
       } },
   },
 

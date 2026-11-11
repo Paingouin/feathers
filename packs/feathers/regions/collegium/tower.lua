@@ -85,6 +85,21 @@ space {
       } },
     { name = "the night porter's chair",
       description = "By the stair head: a wooden chair with a blanket, where old Joss sits up with her in case she falls off the ladder. He has learned forty constellations without meaning to, and has his own names for them. The Plough he calls the Barrow." },
+    { name = "a shelf of rejected constellations",
+      description = "Over the door, a row of cardboard tubes, each with a chart. Every noble house has petitioned at some time to have a constellation named after it. Dr Vane draws each one up, with care, and files it here.",
+      things = {
+        { name = "the Vaux-Pimbleton", description = "Eleven stars in the shape of nothing. The petition says {i}a lady, seated{/}. Dr Vane has annotated: {i}a chair, at most.{/}" },
+        { name = "the Sock", description = "Not a petition. Her own. Five faint stars in the south that she noticed one winter and could not help seeing. She has never submitted it. She looks at it on bad nights." },
+        { name = "the Ladle", description = "Seven stars, a bowl and a handle. Every kitchen in the kingdom already calls it that. The Collegium's official name for it is the Sceptre of Thrum, and nobody has ever once used it." },
+      },
+      actions = {
+        { "Ask her which names are true", say "\"None of them. They are only where we happen to be standing.\" She does not take her eye from the glass. \"Move a little and the Ladle is a line. But people need to say good evening to something.\" She adjusts a screw. \"I say it to the Sock. One does not tell the Faculty.\"" },
+      } },
+    { name = "a bucket under a drip",
+      description = "The dome leaks at the slot. A wooden bucket stands under it, with a float in it made of a cork and a pin. She uses it as a rain gauge and sends the readings, quarterly, to an address in the sky.",
+      things = {
+        { name = "the reply, pinned up", description = "A printed card. {i}The Weather Office thanks you for your communication, which has been placed before Mr Mild. The rain you describe was not one of ours.{/}" },
+      } },
   },
 
   exits = {
@@ -162,6 +177,24 @@ space {
       description = "On the window sill, in jam jars: cuttings sent back by the Expedition, for the gentlemen to practise growth charms on. The gentlemen have not attended. The cuttings have grown anyway, a foot a week, and one has got out through the casement and is halfway to the roof.",
       actions = {
         { "Measure the creeper", say "You put your thumb at the tip, against the frame, and look away to count to twenty. When you look back the tip is at your knuckle. Tib says that she talks to it. She says that it does not need encouraging and she is trying the opposite." },
+      } },
+    { name = "a shelf by the stove",
+      description = "A plank on two bricks, where Tib keeps her own things. Not college property. A mug, a needle case, a row of small objects that anybody else would call rubbish.",
+      things = {
+        { name = "a tin sock on a pin", description = "A penny charm from Spindle's. It is pinned to the plank, not to her. \"She doesn't want it worn,\" Tib says. \"She wants it somewhere she can find it.\"" },
+        { name = "a bowl", description = "Tin, with her name scratched on. There is soup in it. It is hot. Tib says she did not put it there and she has stopped being surprised by that and started rinsing the bowl." },
+        { name = "a row of teaspoons", description = "Eleven. Each one did something once, for her, when asked nicely. She has kept them all. She says you do not use a thing like that twice and you do not throw it out either." },
+      },
+      actions = {
+        { "Ask if it is magic or gods", say "Tib thinks about it properly, which nobody in this building has done for a question in years. \"I don't know there's a join,\" she says. \"Magic's asking a thing to do what it nearly would anyway. Praying's asking somebody. Half the time I couldn't tell you which I've done.\" She rinses the bowl. \"It works better when you say thank you. Either sort.\"" },
+      } },
+    { name = "a door that sticks",
+      description = "The store cupboard at the back. It has stuck since the room was built. The Founder left a note about it in the register, in her own hand, and Tib has read the note.",
+      things = {
+        { name = "the Founder's note", description = "{i}Do not plane this door. It is the only thing in the College that takes its work seriously. Lift, wait, and push. M.P.{/}" },
+      },
+      actions = {
+        { "Lift, wait, and push", say "It opens, on brooms and a smell of chalk. Tib grins at you. \"Took the Professor of Applied Force a term,\" she says. \"He was pulling. It says pull. He's got a chair in it.\"" },
       } },
   },
 
@@ -242,6 +275,22 @@ space {
       } },
     { name = "a row of jam jars",
       description = "On the sill, with cuttings in water: mint, a geranium, something from a hedge. They have roots. The water is clear. Nobody comes here, and nothing in this room has been let go dry." },
+    { name = "a shelf of small gods",
+      description = "On the mantel, where another Chancellor would have her honours: a row of the things a hedge-witch keeps. A spoon in a jar, a darning egg, a horseshoe, a door knob with no door.",
+      things = {
+        { name = "the door knob", description = "Brass, plain, on a square of oak. A label on a string: {i}Jamb's, with thanks. Got me in.{/} The Collegium's great gate stuck, the day she came with her forged patent. She lifted, and waited, and it thought about her, and opened." },
+        { name = "the darning egg", description = "Boxwood. It is the fellow of one you have seen in a cupboard a long way above the Street. She has cut two initials in it, and they are not hers." },
+        { name = "a horseshoe", description = "Nailed points up. A label: {i}Mind-the-Step's. Doesn't work. Shows willing.{/} She had it from the doorstep of the cottage in Greenhollow and it is the only thing she brought away." },
+      },
+      actions = {
+        { "Dust the shelf", say "You run your sleeve along it. Spoon, egg, shoe, knob. You put each one back a little straighter than you found it. The room seems to approve. The kettle shifts on the range." },
+      } },
+    { name = "a letter under the jam jars",
+      description = "Folded in four, weighted with a jar of damson. It is in her round hand and was never sent. It begins {i}Dear Stock{/}.",
+      things = {
+        { name = "the letter", description = "{i}They have made me a Chancellor and I have forty noblemen who cannot boil an egg. I am teaching the real lessons to the kitchen, after dark, on the wall. If that is a sin it is one of yours. Send up a ladle. Yrs, Mag.{/}" },
+        { name = "the reply", description = "On the back, in a different hand, large, greasy at the thumb: {i}It isn't. Have sent two. Eat something.{/} There was no post between the two of them that anybody at the lodge ever handled." },
+      } },
   },
 
   exits = {

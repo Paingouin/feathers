@@ -109,6 +109,16 @@ space {
       actions = {
         { "Breathe with it", say "In on the gap, out on the puff. Six breaths and you are in step with forty thousand people and a boiler. It is hard to stop. You have to hold your nose to get your own time back." },
       } },
+    { name = "the bay platform",
+      description = "Round the side of the right pier, where a single siding leaves the tram rails and points east: twenty feet of planks, a lamp, a bench, and a board reading {i}DESERT EXPRESS. DEPARTS AT FOUR MINUTES PAST EVERY HOUR WITH A SEVEN IN IT.{/} It is the least used platform in Tickover and the best swept.",
+      things = {
+        { name = "the Express, standing", description = "A small green tank engine named {i}Sufficient{/}, one third class carriage, and a guard's van with a stove pipe. A conductor in white gloves is standing by the door with a watch in each hand, looking from one to the other like a man between two bad witnesses." },
+        { name = "the destination board", description = "Slats on a frame, to be changed by hand. There is one slat. It says {i}THE END OF THE LINE{/}. Hooks have been provided for three more." },
+        { name = "a crate on the bench", description = "Clock springs, from Coil's, addressed to {i}Wick, Lamps, Great Shade, The Parch{/}. It has been waiting for the seven o'clock, and ticks to itself." },
+      },
+      actions = {
+        { "Ask a porter where it goes", say "\"East,\" says the porter. You ask how far. \"Till it stops.\" He scratches his head with the punch. \"There was to be more. Phase Two. My dad laid the first mile of Phase One and he always said the money would give out before the sand did. He was not a clever man but he was right about that.\"" },
+      } },
     { name = "a notice to visitors",
       description = "Enamel, screwed to the pier. {i}VISITORS ARE REMINDED THAT TICKOVER IS FOUR MINUTES BEHIND THE REST OF THE WORLD. PLEASE DO NOT BRING YOUR OWN TIME IN WITH YOU. A BIN IS PROVIDED.{/}",
       things = {
@@ -118,6 +128,10 @@ space {
 
   exits = {
     { to = "cliff_road", description = "Back along the rails to the buffer, the field, and the wind." },
+    { to = "pa_train", label = "The Desert Express",
+      description = "One green engine and one carriage at the bay platform, facing east, with steam up.",
+      requires = item "tk_ticket",
+      locked = "Mr Punch, the conductor, bars the carriage door with one white glove. No ticket, no departing. Miss Dollop punches them at the window." },
     { to = "tk_escapement_street", description = "Under the arch and up the main street, between the trams." },
   },
 }

@@ -104,6 +104,17 @@ space {
       description = "Four, of ship's anchor chain, going over the ridge and down to rings in the rock at either side. In the great gale of his grandfather's time, Erchie says, the kirk lifted the length of a link and sat down again. You can see the link. It is brighter than the rest." },
     { name = "a lamp in the east window",
       description = "A small oil lamp with a red glass, lit at dusk every night by the last person to leave. It cannot be seen from the sea. It is not for the sea. It is so that the fleet in the roof will know which end of the kirk is home." },
+    { name = "a votive ship with three masts",
+      description = "Hung from the roof beam on a wire, among the fishing boats: a model of a King's ship, black hulled, fully rigged, beautifully made. Every other model in the kirk is of a boat that was lost. This one has a card: {i}H.M.S. PERSEVERANCE. Not lost. Late.{/}",
+      things = {
+        { name = "the card", description = "In faded ink, and under it eleven later lines in different hands, one for each minister since: {i}Still late.{/} Mr Gilfillan's is the newest. He was told it was the custom before he was told where the vestry was." },
+        { name = "the rigging", description = "Every rope is there, in grey thread. She was made by a man who had sailed in her as far as the Stack and been put ashore with a broken leg. He watched her go north from this headland. He made the model to have something to do while waiting." },
+      },
+      actions = {
+        { "Ask about her", say "\"She went up forty-one years ago to find a way round the top,\" says Mr Gilfillan. \"She is prayed for on the first Sunday of the month. The mail captain says she is perfectly well and dines at three.\" He looks up at the little ship. \"I find it a comfort, you know. A thing can be a very long time coming and still be coming.\"" },
+      } },
+    { name = "a kneeler worked in white wool",
+      description = "At the end of the back pew: a hassock embroidered with a white bear, sitting up, with its paws on its knees. It was sent down from the north as a gift to the kirk. The congregation was doubtful. It was pointed out that the bear is sitting very reverently, and facing the right way." },
   },
 
   exits = {
@@ -206,6 +217,17 @@ space {
       description = "By the door: {b}H.M. CUSTOMS. HOURS OF BUSINESS: SUNRISE TO SUNSET.{/} Screwed on beneath, smaller: {i}Please knock. Please.{/}" },
     { name = "a gull on the flagstaff",
       description = "Great black-backed, the size of a goose. It sits on the truck of the mast with its feet over the ensign. Mr Lamb has written to head office about it. Head office replied that gulls are not dutiable." },
+    { name = "a declaration from the north",
+      description = "On the spike, the only form on it: the manifest of the mail boat, inward, in the skipper's hand. {i}Goods: none. Passengers: none to speak of. Remarks: cold.{/} Mr Lamb has stamped it. It is the fullest declaration he has had all year.",
+      things = {
+        { name = "a second sheet", description = "Pinned behind it. {i}Query from the Board: is ice dutiable? If carried as ballast and afterwards sold to a smokehouse, at what point does it become goods?{/} Mr Lamb has been composing his reply for three years. The ice in question has long since settled the matter itself." },
+        { name = "the stamp", description = "A crown and an anchor. He inks it with care, squares it, and brings it down as a man might who has waited a long while to be asked to dance." },
+      },
+      actions = {
+        { "Ask what comes down from the north", say "\"Officially?\" says Mr Lamb. \"Stockfish, eider down and empty kegs.\" He lowers his voice, though there is nobody for a mile. \"The kegs go up full. I have never been able to prove what of. I have smelled the skipper's breath on the return leg, and I should describe it as evidence, if I were not, on those occasions, so very glad of the company.\"" },
+      } },
+    { name = "a fur hat on the stand",
+      description = "White fox, with flaps, on the peg beside his uniform cap. A present from the mail skipper. Regulations forbid an officer to accept gifts. He has entered it in the seizures book as {i}one hat, detained pending enquiries{/}, and wears it from October to April while the enquiries proceed." },
   },
 
   exits = {
@@ -286,6 +308,17 @@ space {
       description = "On the inside of the door: one for the officer, one for the Collector at Saltwick, and one for the King. The Collector's key and the King's were never sent. Mr Lamb opened those two with a bent kale stake and a great deal of apology." },
     { name = "the walls",
       description = "Dressed stone, two feet thick, built to keep a kingdom's revenue in. They are sweating slightly. On the north-east side the mortar has been scoured out of the joints to the depth of a finger, from within." },
+    { name = "a crate marked BLOWHARD",
+      description = "Long, narrow, nailed shut, under a hundred and ten years of dust. The docket says: {i}Whaling Irons, 1 gross, for the Blowhard Station. Duty unpaid. Consignee writes that they will not after all be wanted.{/}",
+      things = {
+        { name = "the consignee's letter", description = "Pasted to the lid, brown with age. {i}Sir, we find on trial that we cannot use them. Pray keep them in your store, where they will do no harm, and oblige yrs, J. Flense, Harpooner.{/}" },
+        { name = "a gap between the boards", description = "You put your eye to it. Rows of black iron heads, barbed, bright with grease, as new as the day they were packed. A hundred and forty-four harpoons that never left the box. There are worse things to find in a warehouse." },
+      },
+      actions = {
+        { "Try the lid", say "Nailed, and the nails have rusted in. You are oddly relieved. Whatever is in the crate has been doing no harm for a hundred and ten years and it would be a pity to interrupt it." },
+      } },
+    { name = "a pair of snowshoes in bond",
+      description = "Hung on a nail with a ticket: {i}Seized from a clerk, travelling north, undeclared. Released on his explaining that he had not yet bought them and that these were another man's. Other man not found.{/} Mr Lamb has never understood the entry. It is in his own hand." },
   },
 
   exits = {

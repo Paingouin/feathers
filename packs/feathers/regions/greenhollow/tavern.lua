@@ -215,6 +215,16 @@ space {
       actions = {
         { "Bowl a cheese", say "It leaves your hand well. It goes down the trough, up the side, over the edge and through the hedge. There is a pause. A hen comes back through the hedge, at speed. Eight pins fall over from sympathy. The Bailiff stands." },
       } },
+    { name = "a lidded pot on the top shelf",
+      description = "Pewter, with a hinged lid and a cork float soldered to the handle. It is the only drinking vessel in the Griffon that would not sink. It hangs above the bar with a label round its neck.",
+      things = {
+        { name = "the label", description = "{i}Property of the Loose Mooring. Borrowed in the year of the wet summer. To be returned when the inn can be found.{/} The barman's grandfather walked out to the fen with it three times. Each time the inn had been there the night before." },
+        { name = "the mark on the lid", description = "A rope, scratched, with one end loose. And a tally of small strokes round the rim, hundreds, in two hands: one firm, one shaky. Somebody drank from this pot most nights of a long life." },
+      },
+      actions = { { "Ask the barman about it", say "\"That? Belongs to a pub that floats.\" He wipes a mug. \"Don't look at me like that. Out in the Wet. It lets go of a night and wakes up somewhere else.\" He glances at the trapdoor under his feet, the beams, the walls, with a kind of envy. \"Imagine,\" he says. \"A pub that can leave.\"" } } },
+    { name = "a moth at the lamp",
+      description = "Brown, furred, large as a child's hand, going round the lamp over the bar in circles that get smaller. The regulars have a book on it. It comes every night at nine. It has never yet touched the glass.",
+      actions = { { "Put a hand between it and the lamp", say "The moth lands on your knuckles. It weighs nothing. Its feet are faintly sticky and its eyes are two red sparks. It sits for a moment, as if getting its bearings from you instead, and then goes out through the door, into the dark, in a straight line. Somebody at the bar pays somebody else a copper." } } },
   },
 
   exits = {

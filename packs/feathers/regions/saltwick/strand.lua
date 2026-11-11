@@ -186,6 +186,17 @@ space {
       actions = {
         { "Enter the place and date, and throw it back", say "You write {i}Saltwick{/}, and the day, as near as you know it. You cork it and throw it as far as you can, which is as far as the second wave. It bobs there, thinking it over. The current that the Tide Office is measuring appears to be a small one." },
       } },
+    { name = "an old woman at the tideline",
+      description = "In a black shawl, with a stick, walking slowly along the wrack and turning things over with the ferrule. She has done it every morning since she was a girl. She is not gathering anything.",
+      things = {
+        { name = "her stick", description = "Blackthorn, with a brass tip worn to a point. She can roll a bottle over with it from six feet and read whether there is paper inside without bending." },
+        { name = "a cork in her pocket", description = "She shows it to you: an ordinary cork, gone grey. \"I kept the spare,\" she says. \"I'd two, and one bottle.\"" },
+      },
+      actions = {
+        { "Ask what she is looking for", say "\"An answer,\" she says. \"I put a letter in a bottle when I was seven. Off the end of the mole. I said where I lived and would they write.\" She turns over a clump of weed. \"I've had a husband and four children and buried two of them since. But I did ask, you see. It seems rude to stop looking.\" You think of a beach of grey shingle under a black cliff, four hundred miles north, and a bottle frozen into it. You open your mouth. You do not know yet whether to tell her is kinder, or to bring it." },
+      } },
+    { name = "a tree with its roots on",
+      description = "Stranded at the high water mark: a whole birch, stripped white, on its way somewhere. The current runs north along this shore. A tree that goes in at the Mumblewood's river mouth passes here in a month, and after that the fishermen do not know. It is lying with its roots towards the sea, like something that has only stopped to rest." },
   },
 
   exits = {
@@ -318,6 +329,17 @@ space {
       actions = {
         { "Try a right one", say "It fits. It fits better than your own. You stand in the hold of a wreck with one good boot on, working out what a single boot is worth to a man who came with two bad ones. A hermit crab watches from the matching left with its claws folded. You put the boot back." },
       } },
+    { name = "a crate stencilled BLOWHARD",
+      description = "Wedged under the fallen deck beam, burst at one corner. {i}BLOWHARD WHALING CO. TRY POT FURNITURE. THIS SIDE UP.{/} The {i}Unsinkable{/} was carrying stores for a whaling station that was going to make her owner's second fortune.",
+      things = {
+        { name = "an iron ladle", description = "Three feet long, with a bowl like a bucket, for skimming boiling oil. Never used. It is the same pattern, you would bet, as one that is at this moment serving soup, a long way north of here, to people who thought better of it." },
+        { name = "a packing note", description = "Still legible under the tar. {i}Sirs: herewith the remainder of the pots' gear. The Station writes that the ground is promising. I confess I do not altogether like the tone of the letter. Yrs, the Agent.{/}" },
+      },
+      actions = {
+        { "Lift the ladle", say "It is as heavy as an oar. You hold it over an imaginary pot and skim. It occurs to you that if this ship had not gone down, and that crate had arrived, the men at the other end would have had one more piece of gear to find a blameless use for. They would have managed. You put it back." },
+      } },
+    { name = "a child's sledge",
+      description = "Painted red, with iron runners, lashed to a rib of the hold as deck cargo and still there. Nobody in Saltwick has ever needed a sledge. It was going north, to somebody small, from somebody who had been told there was snow. The rope has rotted. The paint, under the weed, is as bright as a berry." },
   },
 
   exits = {
@@ -433,6 +455,17 @@ space {
       actions = {
         { "Pull it", say "Far off in the wreck a bell goes, small and wet. Nothing comes. You wait a little, out of manners, and because in that portrait he has the look of a man who expects to be waited for." },
       } },
+    { name = "a share certificate",
+      description = "In the desk's second drawer, engraved, with a border of ropes and spouting whales: {i}THE BLOWHARD WHALING COMPANY. One Thousand Shares.{/} He owned the lot. It was to pay for the ship, and the ship was to carry the oil, and neither of them did.",
+      things = {
+        { name = "the dividend column", description = "Ruled for forty years. Every space is empty but the first, where a clerk has written, in a hopeful hand, {i}nil (first season){/}. After that even the clerk gave up." },
+        { name = "a letter clipped to it", description = "{i}Sir: I have the honour to report a full season and no fish. The men are well. The whales are very fine. We do not find, on acquaintance, that we can. I enclose the accounts, which are short. Yr obedt servt, J. Flense.{/} Across it, in the owner's furious scrawl: {i}ON ACQUAINTANCE?{/}" },
+      },
+      actions = {
+        { "Read the owner's reply", say "There is a draft under the letter, in the same scrawl, blotted. {i}Flense: you are dismissed. The Station is closed. You will return the Company's property forthwith.{/} It was never sent. The ship that would have carried it is the one you are standing in. So the Station was never told, and went on, and is there yet. You fold the draft back. Some letters do most good at the bottom of the sea." },
+      } },
+    { name = "a fur-lined boot, left foot",
+      description = "In the wardrobe, on the floor, by itself: sealskin, lined with white fur, a size too large for the man in the portrait. He had them made for a visit of inspection to his Station. He did not go. There is no right boot. The left has a mouse in it, in great comfort." },
   },
 
   exits = {

@@ -146,6 +146,18 @@ space {
       actions = {
         { "Walk a lap", say "It takes two minutes. You pass the woodpile, the hive, the goat, the washing, the signs. By the time you are round you have seen everything he owns and everyone he knows, and you are surprised to find that it felt like quite far." },
       } },
+    { name = "a row of marrows",
+      description = "Along the south side of the hut, on a bed of straw, six striped marrows the size of piglets. Each has a slate beside it with a name. They are the hermit's one vanity. He came out here to renounce the world, and has, except for the Greenhollow show.",
+      things = {
+        { name = "the largest", description = "The slate says {i}HUMBERT{/}. It has been turned every day so as to ripen evenly and has a cushion. He says the name is a coincidence. He says a certain person has been sending gardeners to look over the hedge, and that there is no hedge, which shows how far they will go." },
+        { name = "a slug trap", description = "A saucer of the hermit's own nettle beer, sunk to the rim. There are no slugs in it. There are several slugs round it, at a distance, with the look of having tried it once." },
+      },
+      actions = { { "Admire the marrows", say "You say they are very fine. The hut door opens a crack. \"Which is finest?\" You say Humbert. The door opens the rest of the way. For a man who has given up company he has a great deal to tell you about potash." } } },
+    { name = "a magpie on the roof",
+      description = "Black, white and a blue you only see when it turns. It is watching the washing line. Hermits are meant to be befriended by birds. This one has come to an arrangement instead: it takes one peg a day, and in return does not take anything else.",
+      things = {
+        { name = "its hoard, in the thatch", description = "A row of clothes pegs, a thimble, a bent spoon and one silver button with an anchor on it. The hermit knows. He says a man who owns nothing ought to be robbed regularly, to keep him honest." },
+      } },
   },
 
   exits = {
@@ -272,6 +284,16 @@ space {
       things = {
         { name = "the bucket", description = "The drip falls a note at a time. He says it is the only clock he can stand, because it stops when the weather is good." },
       } },
+    { name = "a chess board, mid game",
+      description = "On an upturned crate by the hearth. The white men are carved from bone and the black from something darker and harder than any wood you know, with a shine on it. The game is far advanced. Black is winning. There is one chair.",
+      things = {
+        { name = "the black king", description = "Heavy as iron, cold, and black right through. Bog oak, from the fen west of the reed beds. A turf cutter's boy carves them of an evening and the hermit has the set a piece at a time, for soup. He is two pawns short and uses acorns." },
+        { name = "a slip of paper under the board", description = "Moves, in two hands. The second hand is small and upright. {i}Bishop takes. Your soup wants salt. D.W.{/} Somebody walks in from the west to play him, then, and has been winning for years." },
+      },
+      actions = { { "Move a pawn", say "You push a white pawn one square. It seems harmless. From the bed, without opening his eyes, the hermit says, \"She'll have your rook for that.\" You put it back." } } },
+    { name = "a string of dried eels",
+      description = "Hung from a rafter over the hearth, gold and stiff as walking sticks, in the smoke. They are not from the lake. The angler would sooner eat his rod. They come in by the plank walk twice a year on the back of a tall man in thigh boots, who takes away honey and says about nine words.",
+      actions = { { "Smell them", say "Smoke, salt, and something rich under it. Your mouth waters before you have decided anything. The owl on the rafter opens one eye and moves six inches nearer the string, to make its position clear." } } },
   },
 
   exits = {

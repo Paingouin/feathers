@@ -133,6 +133,16 @@ space {
       things = {
         { name = "the last duck", description = "It stops, looks at the windmill, and puts its head on one side. Then it runs to catch up. It does this every day. It is the only creature in the lane that still finds the mill odd." },
       } },
+    { name = "a sack that is not flour",
+      description = "On the loading stage, apart from the rest: a sack of coarse grey cloth, damp at the bottom, tied with rush. It was left this morning by a man with a wide-wheeled barrow who took two sacks of flour and did not wait for change.",
+      things = {
+        { name = "what is in it", description = "Black bricks, a foot long, light as loaves, that smell of earth and autumn. Peat. The miller burns it in his parlour. He says it is the only fire that does not go at you. His wife says it is the only fire that gets on with him." },
+        { name = "the tally on the door post", description = "Chalk. {i}The Wet: owes 0. Is owed 0.{/} It has said so for thirty years. Flour goes west and turf comes east, and neither side has ever counted, and it has always been right." },
+      },
+      actions = { { "Lift a brick", say "You expect a stone and get a sponge cake. It is as light as that. There is a leaf in it, whole, pressed flat, of a tree you do not know. The miller's boy says there is often something. He found a tooth once, the size of his hand, and was not allowed to keep it." } } },
+    { name = "a moorhen on the mill pond",
+      description = "Black, with a red and yellow beak like a sweet, jerking its head as it swims as if pulling itself along by the neck. It has a nest in the rushes built up a foot high, in case of floods. The mill pond has not risen an inch in living memory. The moorhen is from a family that remembers otherwise.",
+      actions = { { "Throw it a crumb", say "It takes the crumb, swims to the nest, and adds the crumb to the wall. You throw another. It adds that too. You have not fed a bird. You have contributed to a public work." } } },
   },
 
   exits = {

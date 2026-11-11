@@ -67,6 +67,21 @@ space {
       } },
     { name = "the porter's cat",
       description = "A tortoiseshell, in the key cupboard, on the keys. Any key that is wanted is under her. The Collegium has two hundred doors and she has slept on the means to all of them." },
+    { name = "the chapel door",
+      description = "A side door in the arch, with a pointed top and a notice. The Collegium has a chapel. Attendance is compulsory and is taken by proxy: each student sends his servant.",
+      things = {
+        { name = "the notice", description = "{i}Divine Service, daily, 7 a.m. Gentlemen are reminded that their man must be sober and must know the responses.{/}" },
+        { name = "a rack of hassocks", description = "Each embroidered with a family's arms. They have never been knelt on by a member of the family. The knees that have worn them hollow belonged to four generations of valets." },
+      },
+      actions = {
+        { "Listen at the door", say "Sixty servants, singing. It is the best choir in the kingdom, since they have been at it every morning of their lives, and nobody who matters has ever heard it. The porter has. He stops his ears with wool at seven and takes it out again at eight with a face like a man coming up for air." },
+      } },
+    { name = "a boot boy at the scraper",
+      description = "Ten years old, with a brush, doing forty pairs of other people's boots in a row along the wall. He does them in order of rank. He has put one pair at the front which is not on any list, cracked across the toe and patched: Tib's.",
+      things = {
+        { name = "the forty pairs", description = "Top boots, dress pumps, a pair with silver spurs that have never met a horse." },
+        { name = "the patched pair", description = "He does these twice. \"She showed me a thing with a teaspoon,\" he says, and will say no more, and blacks the heel as if it were a relic." },
+      } },
   },
 
   exits = {
@@ -161,6 +176,23 @@ space {
       actions = {
         { "Watch a stroke", say "One of them points his mallet, says a long word, and strikes. The ball rolls four feet and stops against a daisy. \"Wind,\" he says. There is none. The gardener, on his knees at the border, moves the daisy an inch with his trowel, and the ball rolls on through." },
       } },
+    { name = "the chapel wall",
+      description = "The north side of the quadrangle is the flank of the chapel: buttresses, a row of pointed windows, and a line of worn stone heads under the eaves.",
+      things = {
+        { name = "the stone heads", description = "Founders and benefactors, with their noses gone. And at the west end one that is plainly a cook, in a cap, with a spoon over her shoulder. Nobody gave leave for it. The mason was courting in the kitchens." },
+        { name = "a window with plain glass", description = "The others are coloured, each given by a noble house. This one is clear. It is the Founder's. She said she would rather they could see out." },
+      },
+      actions = {
+        { "Look in through the plain window", say "Pews, an altar, a great brass lectern. And along the back wall, under a row of the grandest coats of arms in the kingdom, forty pegs with forty aprons on them, each with a name on a tape." },
+      } },
+    { name = "a tortoise",
+      description = "On the lawn, crossing it. It has a number painted on its shell and the college crest. It is the only living thing permitted to walk on the grass, under a statute of the Founder's which nobody has ever been able to find.",
+      things = {
+        { name = "the number", description = "{i}1{/}. There has never been a 2. It is the same tortoise. It was a present to her from a hedge-witch's familiar, and it has outlived fourteen Chancellors, of whom it thought very little." },
+      },
+      actions = {
+        { "Walk beside it", say "You keep off the grass and it keeps on, and you go along together for the length of the cloister. It takes most of an hour. At the corner it stops, turns its head, and looks for some time at the statue of the Founder. Then it goes on. You have the feeling of having been present at a visit." },
+      } },
   },
 
   exits = {
@@ -243,6 +275,21 @@ space {
       things = {
         { name = "the Chancellor's Cup for Applied Magic", description = "Silver, enormous, and engraved with the names of the winners. There are none. It has been awarded to nobody, annually, with a dinner." },
         { name = "a jar with a label", description = "{i}Brandish's Invisible Lizard. Presented by the Expedition.{/} An empty jar. A scullery maid dusts it each morning and gives it a fly, she says, which is always gone by evening." },
+      } },
+    { name = "the chaplain's chair",
+      description = "At the end of the high table, a little apart: a plain chair with a hassock. The chaplain of the Collegium says the grace, in the Old Tongue, which takes six minutes and which no one living understands. He is paid in dinners.",
+      things = {
+        { name = "the chaplain", description = "Very old, very deaf, with gravy on his bands. He has said the same grace eleven thousand times. A scullery maid once told him what it meant, and he laughed so much that he had to be helped out, and he has said it with real feeling ever since." },
+        { name = "the grace, on a card", description = "Propped against the salt. Somebody has pencilled a translation between the lines in a round hand: {i}For what we are about to receive, somebody else did the work. Let us at least say so.{/}" },
+      },
+      actions = {
+        { "Ask him whom the grace is to", say "He cups his ear. You ask again. \"To?\" he shouts. \"Nobody's ever asked. It doesn't say. It's the Founder's.\" He considers, chewing. \"I've always supposed it was to the cook!\" The high table pretends not to have heard. The servants along the wall do not move a muscle, in a way that takes practice." },
+      } },
+    { name = "the stockpot door",
+      description = "Low, at the kitchen end, with steam round the edges. It is where the leavings of nine courses go, and where the servants' dinner comes from. The two facts are connected and the result is the best thing cooked in the building.",
+      things = {
+        { name = "a row of tin bowls", description = "On a shelf by the door, sixty, each with a name scratched on. They are filled after the hall is cleared. The students do not know there is a second dinner. It has singing." },
+        { name = "a ladle on a nail", description = "Iron, worn at the lip, with a ribbon on the handle. The cooks touch it going by, the way the watchmen touch their helmet." },
       } },
   },
 

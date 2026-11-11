@@ -150,6 +150,23 @@ space {
       actions = {
         { "Ask him to sharpen your sword", say "You have no sword. You offer him your pocket knife. He looks at it with pity, does it in four strokes, and tests it on a hair from his own arm. \"There,\" he says. \"Now it's dangerous. Mostly to you.\"" },
       } },
+    { name = "a button seller",
+      description = "A tray on a strap, with every button there is: horn, bone, pearl, brass. She does a brisk trade and none of it is in coin. People bring her odd ones and take away matches, and somehow at the end of the day the tray is fuller.",
+      things = {
+        { name = "a card of pearl buttons", description = "Six, sewn to a card. \"Southern trade,\" she says. \"They can't get enough. Don't ask me what they do with them.\" You have a fair idea what they do with them." },
+        { name = "an odd one", description = "Black glass, cut like a jewel. It came off the coat of a tall gentleman who was passing through at dusk and bowed to her. She has not sold it. She says it looks at her." },
+      },
+      actions = {
+        { "Check your own buttons", say "Two missing and one hanging. She looks you over, takes the hanging one off with a snip, and sews on three that nearly match, standing up, in the time it takes a carter to swear. \"No charge,\" she says. \"I've a god to think of.\"" },
+      } },
+    { name = "a lost child",
+      description = "About six, by the fountain, holding one shoe, not crying. She says she is not lost. She says her mother is lost, and she is waiting here for her to be found, since this is where found things go.",
+      things = {
+        { name = "the shoe", description = "The left. The sock that should be in it is not. She says the Lady has it and is minding it and it will be back by Tuesday." },
+      },
+      actions = {
+        { "Wait with her", say "You stand by the fountain. The water goes up. In a while a woman comes through the crowd at a run, with her cap off, and the child says, \"There you are,\" in a tone of great forbearance. Nobody thanks you. The child looks back, once, and holds up the shoe." },
+      } },
   },
 
   exits = {

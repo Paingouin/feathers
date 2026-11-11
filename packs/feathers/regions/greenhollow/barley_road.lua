@@ -110,6 +110,19 @@ space {
       actions = {
         { "Wait for them to pass", say "It takes a quarter of an hour. Each ewe looks at you as she goes by, and each says the same thing. At the end the shepherd nods. \"Adventurer?\" Yes. \"Ah.\" He looks at his sheep, and at you, and you understand that you have been counted in with something." },
       } },
+    { name = "a harvest mouse's nest",
+      description = "A ball of woven barley leaf, the size of an apple, slung between three stalks a foot off the ground. It sways when the field sways. There is no door. She goes in through the wall and it closes after her.",
+      actions = { { "Look closely", say "The leaves have been shredded lengthways while still growing, and plaited, so the nest is alive and green and part of the field. Inside, something the weight of a halfpenny turns over. You withdraw, on tiptoe, from a house." } } },
+    { name = "an eel man with a barrow",
+      icon = "☺",
+      description = "A short brown man in thigh boots, wheeling a flat barrow with a wet sack over it, coming the other way. He is from the fen beyond the wood and has walked two days to sell smoked eel in Aldmoor market. He walks as if the road might give under him, testing each step, though it has been dry since Easter.",
+      things = {
+        { name = "the barrow", description = "No sides, and one wide wheel like a drum. It is built not to sink. On a hard road it is the most ridiculous thing you have seen. He says where he comes from it is the roads that are ridiculous." },
+        { name = "under the sack", description = "Gold eels, packed in rushes, a hundred or so. And at the front, wrapped separately in a dock leaf, one cabbage. That is not for sale. That is going home." },
+      },
+      actions = {
+        { "Ask where he is from", say "\"Much Wavering.\" You say you have not heard of it. \"No,\" he says, \"it's moved.\" He looks at the barley on both sides, standing in dry ground as far as he can see, and shakes his head slowly. \"All this,\" he says. \"And none of it floats.\"" },
+      } },
   },
 
   exits = {

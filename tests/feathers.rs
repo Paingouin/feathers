@@ -173,6 +173,69 @@ fn the_whole_world_can_be_walked() {
     walk.go("market");
 
     walk.go("temple_quarter");
+    // The Small Heavens: a devotion at each shrine on the Street, then every plane behind it.
+    // Starts and ends at temple_quarter.
+    assert_eq!(walk.here(), "temple_quarter");
+    assert!(walk.exit("sh_sock_cupboard").is_none(), "no way up yet");
+    walk.act("Leave a sock");
+    walk.act("Lift it and push");
+    walk.act("Ask to see the books");
+    walk.act("Nearly touch the statue");
+    walk.act("Mind the step");
+    walk.act("Say it looks like rain");
+    walk.act("Promise him next Thursday");
+    walk.act("Stir the pot");
+    walk.act("Offer it your hat brim");
+    walk.act("Say the name aloud");
+    walk.go("sh_almost");
+    walk.act("Thank her for the adventure you nearly had");
+    walk.act("Take the crown");
+    walk.go("temple_quarter");
+    walk.go("sh_ledger_hall");
+    assert!(walk.exit("sh_small_change").is_none(), "under the cushions");
+    walk.act("Feel down the back of the bench");
+    walk.go("sh_small_change");
+    walk.act("Ask about the coin on the nail");
+    walk.go("sh_ledger_hall");
+    walk.go("temple_quarter");
+    walk.go("sh_door_corridor");
+    walk.go("sh_thursday");
+    walk.go("sh_door_corridor");
+    walk.go("sh_threshold");
+    walk.go("sh_porch");
+    walk.go("sh_goat_hill");
+    walk.go("sh_porch");
+    walk.go("sh_threshold");
+    walk.go("sh_door_corridor");
+    walk.go("temple_quarter");
+    walk.go("sh_sock_cupboard");
+    assert!(
+        walk.exit("sh_staff_corridor").is_none(),
+        "behind the shelves"
+    );
+    walk.act("Feel along the back wall");
+    walk.go("sh_staff_corridor");
+    walk.act("Take the key");
+    walk.go("sh_soup_kitchen");
+    walk.go("sh_staff_corridor");
+    walk.go("sh_marble_heaven");
+    walk.act("Help him dust");
+    walk.act("Ask about the poker");
+    walk.go("sh_staff_corridor");
+    walk.go("sh_sorting_office");
+    assert!(
+        walk.exit("sh_dead_letters").is_none(),
+        "nobody is shown the green door"
+    );
+    walk.act("Sort a tray");
+    walk.go("sh_dead_letters");
+    walk.go("sh_sorting_office");
+    walk.act("Ask about the ones with no god");
+    walk.go("sh_staff_corridor");
+    walk.go("sh_anteroom");
+    walk.go("sh_staff_corridor");
+    walk.go("sh_door_corridor");
+    walk.go("temple_quarter");
     walk.go("cistern");
     assert!(
         walk.exit("temple_quarter").is_none(),
@@ -293,6 +356,73 @@ fn the_whole_world_can_be_walked() {
     walk.go("tk_winders_row");
     walk.go("tk_escapement_street");
     walk.go("tk_gate");
+    // The Parch: east by the Desert Express, round the whole desert, and back.
+    // Starts and ends at tk_gate, with the platform ticket in hand.
+    assert_eq!(walk.here(), "tk_gate");
+    walk.go("pa_train");
+    walk.go("pa_railhead");
+    walk.go("pa_caravanserai");
+    assert!(
+        walk.exit("pa_caravan").unwrap().locked.is_some(),
+        "the Duchess is not getting up"
+    );
+    walk.act("Ask for dates");
+    walk.act("Offer her the best date");
+    walk.go("pa_caravan");
+    walk.go("pa_bazaar");
+    assert!(walk.exit("pa_court").unwrap().locked.is_some(), "dusty");
+    walk.go("pa_bath_house");
+    walk.act("Be washed");
+    walk.go("pa_bazaar");
+    walk.go("pa_lamp_shop");
+    assert!(walk.exit("pa_inside_lamp").is_none(), "on his break");
+    walk.act("Knock, like a civilised person");
+    walk.go("pa_inside_lamp");
+    walk.act("Ask about the jar");
+    walk.act("Offer to carry it");
+    walk.go("pa_lamp_shop");
+    walk.go("pa_bazaar");
+    walk.go("pa_court");
+    walk.act("Ask about the pyramid");
+    walk.go("pa_bazaar");
+    walk.go("pa_pyramid");
+    assert!(walk.exit("pa_audit_chamber").is_none(), "it all adds up");
+    walk.act("Lean on the wrong sum");
+    walk.go("pa_audit_chamber");
+    walk.act("Take the abacus");
+    walk.go("pa_pyramid");
+    walk.go("pa_bazaar");
+    walk.go("pa_caravan");
+    walk.go("pa_salt_flat");
+    assert!(walk.exit("pa_oasis").is_none(), "it is not there");
+    walk.act("Mark where it is");
+    walk.go("pa_oasis");
+    assert!(walk.exit("pa_mirage").is_none());
+    walk.act("Look at it the long way");
+    walk.go("pa_mirage");
+    walk.act("Ask about the flask");
+    walk.act("Reach up and take it");
+    walk.go("pa_oasis");
+    walk.go("pa_salt_flat");
+    walk.go("pa_caravan");
+    walk.go("pa_dunes");
+    assert!(walk.exit("pa_pillar_top").is_none(), "nobody is pulled up");
+    walk.act("Sing the dune's note up to him");
+    walk.go("pa_pillar_top");
+    walk.go("pa_dunes");
+    walk.go("pa_buried_city");
+    assert!(walk.exit("pa_sand_library").is_none());
+    walk.act("Ask about the dry channel");
+    walk.go("pa_sand_library");
+    walk.act("Ask if anything has ever stayed");
+    walk.act("Pick it up");
+    walk.go("pa_buried_city");
+    walk.go("pa_dunes");
+    walk.go("pa_caravan");
+    walk.go("pa_caravanserai");
+    walk.go("pa_railhead");
+    walk.go("pa_train");
+    walk.go("tk_gate");
     walk.go("cliff_road");
     walk.go("long_strand");
     assert!(walk.exit("second_cove").unwrap().locked.is_some());
@@ -332,6 +462,70 @@ fn the_whole_world_can_be_walked() {
     assert_eq!(walk.here(), "saltwick_harbour");
     walk.go("is_ferry");
     walk.act("Agree with him");
+    walk.go("is_landing");
+    // The Cold Shoulder: north by the mail boat from Muckle, round the ice, and back.
+    // Starts and ends at `is_landing`.
+    assert_eq!(walk.here(), "is_landing");
+    walk.go("cs_mail_boat");
+    assert!(
+        walk.exit("cs_station").unwrap().locked.is_some(),
+        "strangers do not land"
+    );
+    walk.act("Help with the mailbag");
+    walk.go("cs_station");
+    walk.act("Listen to the whales");
+    walk.go("cs_town");
+    walk.go("cs_house");
+    walk.go("cs_town");
+    walk.go("cs_chandler");
+    walk.go("cs_town");
+    walk.go("cs_inn");
+    walk.act("Ask about the harpoon");
+    walk.go("cs_town");
+    walk.go("cs_bath_house");
+    assert!(walk.exit("cs_hot_spring").is_none(), "behind the cold room");
+    walk.act("Ask where the hot water comes from");
+    walk.go("cs_hot_spring");
+    walk.go("cs_bath_house");
+    walk.go("cs_town");
+    walk.go("cs_fishing_camp");
+    assert!(walk.exit("cs_bear_moot").is_none(), "not yet introduced");
+    walk.act("Share your fish with the bear");
+    walk.go("cs_bear_moot");
+    walk.act("Stand in the middle");
+    walk.act("Ask to see the Writ");
+    walk.go("cs_fishing_camp");
+    walk.go("cs_frozen_ship");
+    assert!(
+        walk.exit("cs_great_cabin").is_none(),
+        "not yet asked to dinner"
+    );
+    walk.act("Accept the invitation to dinner");
+    walk.go("cs_great_cabin");
+    walk.go("cs_frozen_ship");
+    walk.go("cs_fishing_camp");
+    walk.go("cs_town");
+    walk.go("cs_frozen_falls");
+    walk.go("cs_ice_light");
+    assert!(
+        walk.exit("cs_lights_hill").is_none(),
+        "behind the wood store"
+    );
+    walk.act("Ask when to look up");
+    walk.go("cs_lights_hill");
+    walk.act("Pick up what fell");
+    walk.go("cs_ice_light");
+    walk.go("cs_frozen_falls");
+    walk.go("cs_town");
+    walk.go("cs_last_hut");
+    assert!(walk.exit("cs_the_white").is_none(), "nobody goes out alone");
+    walk.act("Offer to carry the chain");
+    walk.go("cs_the_white");
+    walk.act("Take the last sheet");
+    walk.go("cs_last_hut");
+    walk.go("cs_town");
+    walk.go("cs_station");
+    walk.go("cs_mail_boat");
     walk.go("is_landing");
     walk.go("is_inn");
     walk.go("is_landing");
@@ -489,6 +683,61 @@ fn the_whole_world_can_be_walked() {
     walk.act("Take the cup");
     walk.go("upward_falls");
     walk.go("lake_shore");
+    walk.go("reed_beds");
+    // The Dithers: over the causeway from the reed beds, round the fen by punt, and back.
+    // Starts and ends at reed_beds.
+    assert_eq!(walk.here(), "reed_beds");
+    walk.go("di_causeway");
+    assert!(
+        walk.exit("di_staithe").unwrap().locked.is_some(),
+        "the middle is under"
+    );
+    walk.act("Ask where the middle went");
+    walk.go("di_staithe");
+    assert!(walk.exit("di_heronry").unwrap().locked.is_some());
+    walk.act("Wake him");
+    walk.go("di_stilts");
+    assert!(walk.exit("di_inn").is_none(), "the inn has to be found");
+    walk.act("Follow it");
+    walk.go("di_house");
+    walk.act("Ask about the book");
+    walk.go("di_stilts");
+    walk.go("di_withy_row");
+    walk.go("di_stilts");
+    walk.go("di_inn");
+    assert!(walk.exit("di_wisp_hollow").is_none());
+    walk.act("Ask who lights the lamp");
+    walk.act("Wait on the bow till closing");
+    walk.go("di_wisp_hollow");
+    walk.act("Ask about the lantern");
+    walk.go("di_inn");
+    walk.go("di_stilts");
+    walk.go("di_staithe");
+    walk.go("di_heronry");
+    walk.go("di_coven");
+    walk.act("Give an opinion of the book");
+    walk.act("Ask about the broom");
+    walk.go("di_heronry");
+    walk.go("di_staithe");
+    walk.go("di_peat");
+    assert!(walk.exit("di_keeping").is_none());
+    walk.act("Ask what they will not cut");
+    walk.go("di_keeping");
+    walk.act("Ask about the ring");
+    walk.go("di_peat");
+    walk.go("di_staithe");
+    walk.go("di_fog_lake");
+    walk.act("Step out of the punt");
+    walk.go("di_fog_bottom");
+    walk.go("di_fog_lake");
+    walk.go("di_spire");
+    assert!(walk.exit("di_frogs").is_none());
+    walk.act("Follow the frog");
+    walk.go("di_frogs");
+    walk.act("Ask about the mace");
+    walk.go("di_spire");
+    walk.go("di_staithe");
+    walk.go("di_causeway");
     walk.go("reed_beds");
     walk.go("lake_shore");
     walk.go("forest_path");
@@ -762,6 +1011,74 @@ fn the_whole_world_can_be_walked() {
     walk.go("market");
     walk.go("nobles_row");
     walk.go("castle_hill");
+    // Erstwhile, the old capital: the gate, the town, the play, the palace, the Thursday.
+    // Starts and ends at castle_hill.
+    assert_eq!(walk.here(), "castle_hill");
+    walk.go("er_old_road");
+    walk.go("er_gate");
+    assert!(walk.exit("er_high_street").unwrap().locked.is_some());
+    walk.act("Say you do not know it");
+    walk.go("er_high_street");
+    walk.go("er_market");
+    walk.go("er_high_street");
+    walk.go("er_baths");
+    walk.go("er_high_street");
+    walk.go("er_inn");
+    walk.go("er_high_street");
+    walk.go("er_theatre");
+    assert!(
+        walk.exit("er_under_stage").is_none(),
+        "the prompter's foot is on it"
+    );
+    walk.act("Give him the line");
+    walk.go("er_under_stage");
+    walk.act("Take the pasteboard crown");
+    walk.go("er_theatre");
+    walk.go("er_high_street");
+    walk.go("er_mint");
+    assert!(walk.exit("er_mint_vault").is_none(), "not on the list");
+    walk.act("Ask to see the last coin struck");
+    walk.go("er_mint_vault");
+    walk.act("Take the die");
+    walk.go("er_mint");
+    walk.go("er_high_street");
+    walk.go("er_palace");
+    walk.go("er_statues");
+    walk.go("er_palace");
+    walk.go("er_throne_room");
+    assert!(walk.exit("er_thursday").is_none(), "sealed by the Council");
+    walk.go("er_palace");
+    walk.go("er_library");
+    assert!(
+        walk.exit("er_struck_shelf").is_none(),
+        "the shelf they do not have"
+    );
+    walk.act("Ask for the Thursday volume");
+    walk.go("er_struck_shelf");
+    walk.act("Take the ledger");
+    walk.act("Read the minute");
+    walk.go("er_library");
+    walk.go("er_palace");
+    walk.go("er_throne_room");
+    walk.act("Break the seal");
+    walk.go("er_thursday");
+    walk.act("Join the line");
+    walk.act("Step up to the table");
+    walk.go("er_throne_room");
+    walk.go("er_palace");
+    walk.go("er_gardens");
+    assert!(
+        walk.exit("er_garden_heart").is_none(),
+        "the maze has grown shut"
+    );
+    walk.act("Follow the bare path");
+    walk.go("er_garden_heart");
+    walk.go("er_gardens");
+    walk.go("er_palace");
+    walk.go("er_high_street");
+    walk.go("er_gate");
+    walk.go("er_old_road");
+    walk.go("castle_hill");
     assert!(walk.exit("castle_bailey").unwrap().locked.is_some());
     walk.act("Take a ticket");
     walk.act("Offer to swap tickets");
@@ -1006,6 +1323,62 @@ fn the_whole_world_can_be_walked() {
     );
     walk.act("Show the Count's ticket");
     walk.go("gl_lower_office");
+    // Head Office: down the tube from the Lower Office, every floor the lift stops at, the five
+    // hidden rooms and the four artifacts. Starts and ends at gl_lower_office.
+    assert_eq!(walk.here(), "gl_lower_office");
+    walk.go("ho_reception");
+    assert!(
+        walk.exit("ho_lift").unwrap().locked.is_some(),
+        "the lift wants a pass"
+    );
+    walk.act("Sign the visitors' book");
+    walk.go("ho_lift");
+    walk.go("ho_temptation");
+    walk.go("ho_lift");
+    walk.go("ho_contracts");
+    assert!(walk.exit("ho_small_print").is_none(), "nobody asks");
+    walk.act("Ask to read the small print");
+    walk.go("ho_small_print");
+    walk.act("Ask what is at the end");
+    walk.go("ho_contracts");
+    walk.go("ho_lift");
+    walk.go("ho_personnel");
+    walk.act("Look up Mr Brimley");
+    walk.act("Take the confirmation down for signing");
+    walk.go("ho_lift");
+    walk.go("ho_canteen");
+    walk.go("ho_lift");
+    walk.go("ho_archive");
+    assert!(walk.exit("ho_refusals").is_none(), "behind the stack");
+    walk.act("Ask for the ones that got away");
+    walk.go("ho_refusals");
+    walk.act("Take the No");
+    walk.go("ho_archive");
+    walk.go("ho_lift");
+    walk.go("ho_customer_experience");
+    walk.go("ho_lift");
+    walk.go("ho_furnaces");
+    assert!(walk.exit("ho_garden").is_none(), "a clinker store");
+    walk.act("Ask where the ash goes");
+    walk.go("ho_garden");
+    walk.act("Ask about the fork");
+    walk.go("ho_furnaces");
+    walk.go("ho_lift");
+    walk.go("ho_executive");
+    assert!(walk.exit("ho_big_office").is_none(), "he is out");
+    walk.act("Ask to wait");
+    walk.go("ho_big_office");
+    walk.act("Take the pen");
+    walk.act("Stamp Mr Brimley's confirmation");
+    walk.go("ho_executive");
+    walk.go("ho_lift");
+    assert!(walk.exit("ho_foundations").is_none(), "no such floor");
+    walk.act("Press the button with no number");
+    walk.go("ho_foundations");
+    walk.go("ho_lift");
+    walk.go("ho_reception");
+    walk.go("gl_lower_office");
+    walk.act("Congratulate him");
     assert!(
         walk.exit("gl_lost_property").is_none(),
         "hidden until the form is stamped"
@@ -1083,9 +1456,9 @@ fn the_whole_world_can_be_walked() {
     walk.act("Show her the splinter");
     walk.go("academy_quad");
 
-    assert_eq!(walk.tracker("Places"), (239, 239));
-    assert_eq!(walk.tracker("Secrets"), (69, 69));
-    assert_eq!(walk.tracker("Artifacts"), (56, 56));
+    assert_eq!(walk.tracker("Places"), (337, 337));
+    assert_eq!(walk.tracker("Secrets"), (99, 99));
+    assert_eq!(walk.tracker("Artifacts"), (80, 80));
     let (found, total) = walk.tracker("Wonders");
     assert_eq!(found, total, "every wonder lies on the route");
 }

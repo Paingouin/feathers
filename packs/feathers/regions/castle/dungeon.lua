@@ -176,6 +176,19 @@ space {
       } },
     { name = "a row of shirts, drying",
       description = "On a line across the torture chamber, between the rack and the maiden. Grist takes in washing for the garrison. The rack, he points out, is the best mangle in the castle." },
+    { name = "a cell door used as a table",
+      description = "In the guardroom, across two barrels: a door of black oak with a grille. It did not come from any cell down here. It is too good. It has a brass plate, {i}Knock and Wait{/}.",
+      things = {
+        { name = "the brass plate", description = "Somebody has scratched under it with a pin, a little at a time: {i}and Wait, and Wait{/}. Grist says that the door came on the carts from the old capital, off a Chancellor's office, and that it is the only thing in the dungeon that has ever really frightened anybody." },
+      },
+      actions = {
+        { "Knock on it", say "You rap on the table. Grist, without thinking, says \"Come back Tuesday.\" Then he looks at his own mouth as if it had been borrowed." },
+      } },
+    { name = "a prisoner's petition, framed",
+      description = "On the guardroom wall, behind glass: a square of sacking written on in soot. {i}That I may be told what I am in for.{/} It is endorsed across the corner, in ink, in a broad loose hand: {i}Granted. Nothing. Let him out.{/}",
+      things = {
+        { name = "a note under the frame", description = "{i}Kept as a curiosity. The only petition ever answered the same day. Prisoner was released in error on a date that does not exist and could not afterwards be found to be put back.{/}" },
+      } },
   },
 
   exits = {
@@ -243,6 +256,17 @@ space {
       } },
     { name = "a worm",
       description = "It comes out of the roof, considers the tunnel, and goes back in. It was here first, and regards the whole undertaking as an amateur piece of work." },
+    { name = "a seam of dressed stone",
+      description = "Partway along, Pelham's spoon met something it could not scrape: the corner of a cut block, pale, with a moulding. He went round it. It took him a year.",
+      things = {
+        { name = "the moulding", description = "The same profile as the plinths in the Royal Vault. This is the foundation of the chapel, then, and he dug past the dead kings with a spoon, six feet from their heads, and never knew." },
+        { name = "a scratch on the block", description = "{i}Good morning.{/} Pelham wrote it, the day he broke through to the corner, on the principle that it costs nothing to be civil to a wall." },
+      } },
+    { name = "a bent spoon in a crack",
+      description = "Pushed into the roof as a hook, with a lantern ring worn into the bowl. It is silver. It has the royal cipher on the handle, and it is not from this castle's kitchen: the cipher is an older one.",
+      actions = {
+        { "Look at the cipher", say "A crowned letter, and you tilt the spoon to read which. The letter has been rubbed flat with a stone. The crown has been left. Pelham says that he found a whole canteen of them in the dungeon stores when he came, marked like that, and that he took them for seconds." },
+      } },
   },
 
   exits = {
@@ -383,6 +407,19 @@ space {
       things = {
         { name = "one to a village", description = "{i}NETHER WALLOP 2.{/} It was abolished for tax reasons. The people still live there. They have been asked to keep it to themselves." },
         { name = "one pointing down", description = "Somebody has propped one of the posts upright in the dust with its finger to the floor. The board has been planed blank and nothing painted on it. It leans, a very little, toward the far wall." },
+      } },
+    { name = "a wagon rope, coiled",
+      description = "Under the statue's shoulder, flattened where he came down on it: forty feet of tarred rope with a hook. They did not drop him. They lowered him as far as it would go, and then somebody cut it.",
+      things = {
+        { name = "the cut end", description = "Clean, at a slant, one stroke. On the hook end a rag of sacking is still tied, where they padded it so as not to chip him. Nobody pads a thing that they hate." },
+      },
+      actions = {
+        { "Follow the drag marks", say "They come from under the hole, where he landed, to where he lies. Somebody down here has since moved him: two tons of marble, rolled over so that he is on his side and not on his face. There are spoon marks in the floor where a lever was set." },
+      } },
+    { name = "a box of brass letters",
+      description = "A deal box that fell from above and split. Brass capitals, the kind that are screwed to the base of a monument, a few dozen, loose. They have been sorted by some earlier visitor into piles by letter.",
+      things = {
+        { name = "the piles", description = "You try them, as the earlier visitor must have. You can make {i}THE{/}. You can make {i}WHO{/}. Whatever name they came off is in there, and there are too many letters for one short name and not enough for two, and whoever boxed them took out a handful first, at random, and dropped those down some other hole." },
       } },
   },
 

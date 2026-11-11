@@ -110,6 +110,16 @@ space {
       actions = {
         { "Listen at the crack", say "A hum, deep and even, like a word being held. They go quiet for a moment when your shadow falls on the stone. Then, having decided that you have not come to tell them anything, they go on." },
       } },
+    { name = "a stone with a boat on it",
+      description = "In the corner by the wall, apart from the rest, and tilted less. The carving is not the village mason's work: a flat boat, a pole, and reeds. {i}ELI MALLOW, FOWLER, OF THE WET. Came east to see the doctor. Is thought to be surprised to be buried dry.{/}",
+      things = {
+        { name = "a jar at the foot", description = "A pickle jar, clean, with the lid off, set upright in the grass. There is nothing in it. It is replaced when it cracks. The sexton says a woman in three shawls comes once a year by the wood road and stands the jar straight and goes home without a word." },
+        { name = "the moss on it", description = "It grows greener on this stone than on any other in the yard, and wetter, even in August. The sexton has stopped scraping it. He says some people bring their weather with them." },
+      },
+      actions = { { "Look in the jar at dusk", say "You come back when the light is going. The jar is empty. Then, for the space of a breath, it is not: there is a small blue glow at the bottom, pale and steady, like something that has dropped in to see that all is well. You blink and it is glass and grass. You tell nobody. The sexton, when you pass him, nods as if you had." } } },
+    { name = "a slow-worm on a warm slab",
+      description = "A foot of polished bronze, coiled once on a table tomb in the sun. It is not a snake, though it has been killed for one. It is a lizard that gave up legs as not worth the trouble. It blinks at you. Snakes cannot.",
+      actions = { { "Let it be", say "You stand off and let it keep the sun. After a minute it pours itself over the edge of the slab and into the long grass with no more sound than a thought. The sexton says there has been one on that tomb for forty years and that it is always, in his opinion, the same one." } } },
   },
 
   exits = {
@@ -189,6 +199,13 @@ space {
       description = "Spun from the saint's raised elbow to the wall, and hung with drops from the roots. It has been made new every night for as long as there has been a spider, and broken by nobody, which is more than can be said for most things put up in her honour." },
     { name = "the worn place on the floor",
       description = "In front of the saint, two hollows in the flagstone, side by side, a knee's width apart. And, a little to the left of them, a third, smaller, by itself: the mark of everyone who knelt here on one knee, to see what it was like." },
+    { name = "a rush mat on the floor",
+      description = "Round, a yard across, plaited from green rushes that have dried to straw colour. It lies before the stone table where a person would kneel. It is much newer than anything else in the vault and it has been made by somebody who plaits for a living.",
+      things = {
+        { name = "the pattern", description = "Rings of plain weave, and then one ring where every strand goes over two and under one, so that the ring leans. And then it recovers, in the next. The whole mat is a thing that nearly went wrong, once, half way out, and did not." },
+        { name = "a tag on the edge", description = "A sliver of willow with a mark burnt in: a small basket. No name. Whoever keeps the lamp filled did not make the mat. It came by other hands, from further off, and was simply found here one morning, laid straight." },
+      },
+      actions = { { "Kneel on the mat", say "It is springy, and dry, and it smells of a riverbank in June. You had not meant to kneel. It is only that the mat is so plainly for that. The saint, or the carving, or both, lies level above you, and the crutches lean in their corner, and nothing falls over." } } },
   },
 
   exits = {

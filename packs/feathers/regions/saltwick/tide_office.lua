@@ -160,6 +160,17 @@ space {
         { name = "the umbrella marked SQUALL", description = "Ribbed with whalebone and reinforced at the tip. It has been turned inside out so often that it now opens that way first, to save time." },
         { name = "the umbrella marked FINE", description = "Never opened. Still in its sleeve. The clerk carries it on fine days, furled, as the regulations require, and gets wet on the others, when he has forgotten to change it." },
       } },
+    { name = "a postage-due notice",
+      description = "Pinned to the corner of the counter with a brass pin: a printed slip from the Post. {i}A letter is held for you at DRIFT (N.) for want of one penny. Sender: not stated. Kindly remit.{/} It has been there some months. Nobody in the office is quite sure whose business it is to send a penny four hundred miles.",
+      things = {
+        { name = "the pencil note on it", description = "In the junior clerk's hand: {i}Is this Mr P.? Query. If so, he will have had a penny. If he had a penny he would have stamped it. Therefore either not Mr P. or Mr P. without a penny. Refer upward.{/} And under that, in another hand: {i}Upward is on leave.{/}" },
+        { name = "a penny", description = "Laid on top of the notice by somebody, and then, by the look of the dust, never sent. It has made a clean round place on the paper." },
+      },
+      actions = {
+        { "Ask why nobody sends the penny", say "The clerk looks at the slip as at a relation's portrait. \"There is no form for it,\" he says. \"Outward, we have forms. Inward, Mr Pargeter had forms. A penny going north to fetch a letter coming south is both.\" He straightens the pin. \"It would want two signatures. We have the one.\"" },
+      } },
+    { name = "a coat peg with a label",
+      description = "By the door, the third peg: {i}H. PARGETER{/}, on a card in a brass holder. An umbrella hangs from it, rolled as tight as a walking cane. No coat. He took the coat, the stool and the Inward stamp, and he left the umbrella, as a man does who is going somewhere it will not be raining." },
   },
 
   exits = {
@@ -261,6 +272,17 @@ space {
         { name = "the sand", description = "It runs through with a faint steady note, like a wet finger on a glass. A different note from the one it would make under your heel. This is the note it makes for the sea." },
         { name = "a brass plate on the frame", description = "{i}NOT to be sent to Tickover for regulating. It is right. It is the only thing in the kingdom that is.{/}" },
       } },
+    { name = "a line of frost on the north wall",
+      description = "Low down, a hand above the floor, a thread of white runs the length of the north wall, level as a ruled line. It does not melt. If you hold a candle to it the flame leans away.",
+      things = {
+        { name = "the draught", description = "It comes in along the line, cold and even, with no smell of the sea in it at all. You follow it with a wet finger. It does not come through a crack. It comes through the stone, as if the wall on that side were only a manner of speaking." },
+        { name = "three small dents in the floor", description = "In a triangle, in front of the frost, pressed into the damp flags. A stool stood here, for a long time, facing the north wall, with somebody on it who was not looking at the tide." },
+      },
+      actions = {
+        { "Stand where the stool stood", say "You put your feet between the three dents and face the wall. The cold comes against your shins like a hand. Behind you is the whole business of the tide. In front of you is a blank wall and a white line. You begin to see how a careful man, with a ledger that would not balance, might have sat here every evening and at last gone to ask." },
+      } },
+    { name = "a tin trunk under the bench",
+      description = "Japanned black, with {i}H.P.{/} in white. It is not locked. In it are a spare pair of sleeve guards, a tide table for a place called Blowhard with every column left blank, and a bill from a Saltwick outfitter for {i}1 pr. woollen combinations, heavy; 1 muffler; 1 folding stool, the legs shod for ice{/}." },
   },
 
   exits = {

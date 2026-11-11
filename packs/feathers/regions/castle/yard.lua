@@ -113,6 +113,16 @@ space {
       } },
     { name = "a siege ladder",
       description = "Hung along the wall on brackets: forty feet, oak, with iron hooks. It was made for storming the walls of an enemy. The kingdom has never found an enemy with walls shorter than forty-five." },
+    { name = "a halberd with a ribbon",
+      description = "On the end of the pike rack, set apart: a halberd of the old Gate Company pattern, with a black ribbon on the shaft. It is brought out once a year and stood by the gate for a night.",
+      things = {
+        { name = "the ribbon", description = "Renewed every year. The tag reads {i}Garrick. On detached duty.{/} The armourer says that the company never struck him off, since he never came back to be struck, and that his pay has been accruing for ninety years and would now buy the armoury." },
+      },
+      actions = {
+        { "Ask where he is posted", say "\"East gate of the old town,\" says the armourer. \"Nobody relieved him. Nobody could, see, the order came down for a Thursday.\" He runs a thumb along the blade. \"The lads say that if you go and look, he is still there. I say, then somebody ought to take him his pay. Nobody volunteers.\"" },
+      } },
+    { name = "a crate of gate hinges",
+      description = "Three iron pins as long as your arm, greased, wrapped in oilcloth, in a crate stencilled {i}KINGS' GATE: TO BE REHUNG{/}. They are duplicates. The originals, the armourer has heard, are on a windowsill somewhere, also greased. Everybody concerned meant to go back." },
   },
 
   exits = {
@@ -207,6 +217,17 @@ space {
       } },
     { name = "a mousehole with a rope across it",
       description = "In the skirting under the sixth case. Somebody has put up a length of red thread on two pins in front of it, to match the visitors' rope. The Yeoman denies everything, with the look of one who has also made a tiny sign." },
+    { name = "a seventh case, curtained",
+      description = "At the end of the row, past the sixth, is a case with a green baize curtain drawn across the glass. The Yeoman does not include it in the tour. The visitors' rope stops a yard short of it.",
+      things = {
+        { name = "behind the curtain", description = "A velvet pad with a dent in it the shape of a crown, and a card. {i}The crown of the reign of{/}, and the rest has been cut away with scissors. It is not that the crown was stolen. It is at the mender's. It has been at the mender's for three coronations and one very long afternoon." },
+        { name = "a second card", description = "Tucked under the pad, in a property master's scrawl: {i}Lent, one pasteboard ditto, the Rose and Remainder. They have not sent it back. Nor have we sent the bill.{/}" },
+      },
+      actions = {
+        { "Ask the Yeoman about it", say "\"That case is resting,\" he says. He draws the curtain the last inch. \"Between ourselves, there have been three kings crowned in this country with something out of a theatre basket, and I am the only man alive who is paid to know it.\" He looks at you sharply. \"You have not seen a paper crown about, I suppose. No. Nobody has.\"" },
+      } },
+    { name = "a tray of unset stones",
+      description = "In the cleaning cupboard, in a drawer: glass rubies, a sugar emerald gone cloudy, and a real diamond the size of a pea that nobody has ever been able to match to a setting. The inventory lists the tray as {i}Sundries, theatrical and otherwise{/}." },
   },
 
   exits = {

@@ -139,9 +139,19 @@ space {
 
     { name = "a dragonfly", icon = "ʚ",
       description = "As long as your hand, blue-green, on a reed. It has eyes like two helmets and sees every direction at once. It takes off, hangs, darts, hangs: a creature that goes about the air in straight lines and makes all its turnings square." },
+    { name = "a line of stones going west",
+      description = "Past the angler's shed the plank walk gives out, and something else takes over: flat grey stones, two by two, a hand above the mud, heading west through the last of the reeds. Beyond them there are no trees at all. There is only level green and level silver, to the bottom of the sky.",
+      things = {
+        { name = "the first stone", description = "Cut with a small fish. Somebody is proud of this road. It is wet on top, though it has not rained, as if the water had been over it this morning and gone again." },
+        { name = "a board on a stick", description = "{b}THE DITHERS.{/} {i}Causeway open, mostly. Enquire of J. Slodge, if visible.{/}" },
+      },
+      actions = {
+        { "Look where they go", say "West, straight, for as far as you can make them out. Then there is a stretch where you cannot make them out, and then you can again. A long thin man is doing something to the near end with a mallet. He raises a hand without looking round." },
+      } },
   },
 
   exits = {
     { to = "lake_shore", description = "Back along the boards to the shingle, the stool, and solid ground." },
+    { to = "di_causeway", label = "The stones going west", description = "Off the end of the plank walk and out along the causeway, into the fen." },
   },
 }

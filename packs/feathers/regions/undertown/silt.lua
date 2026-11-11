@@ -106,6 +106,17 @@ space {
       } },
     { name = "the sound of the spill",
       description = "Where the settling pool goes over its lip the water drops out of the lantern light into a shaft, and you never hear it land. The mudlark dropped a plumb line down once. She will tell you how much line, and that it came up with a knot tied in the end which she had not put there." },
+    { name = "a tray of forks",
+      description = "On the sorting table, set apart from the buttons and teeth: forty silver forks, black with river, all of one pattern, with a crowned cipher on the handle. The mudlark has been finding them for thirty years, a few each spring.",
+      things = {
+        { name = "the cipher", description = "A crown over a flat place. The letter has been rubbed down on every one. \"Done before they was lost,\" she says. \"Somebody sat and did forty forks with a stone, and then lost the lot down a drain. That is a bad week.\"" },
+        { name = "the price ticket", description = "{i}Not for sale. Waiting for the spoons.{/} She has principles about breaking a set." },
+      },
+      actions = {
+        { "Ask where they come from", say "\"East pipe,\" she says, and jerks her head at a low arch. \"The dry one. Comes in from the old town. It sends down forks, and nutshells, and of an afternoon, if you stand by it, a noise.\" What noise? \"People,\" she says. \"Glad about something. I don't stand by it. It is not for the likes of me to be listening to.\"" },
+      } },
+    { name = "a walnut husk in the sieve",
+      description = "Green, split, fresh, in among the grey. It has come down the dark from somewhere with a tree. The mudlark throws them back. She says that they stain the takings." },
   },
 
   exits = {
@@ -226,6 +237,17 @@ space {
         { name = "the great rind", description = "A whole heel of red cheese, wax on, dated by tooth marks to the reign before last. It is never eaten. It is brought out on feast days and looked at." },
         { name = "a silver thimble", description = "The King's cup, when he is being formal. It went missing from Nobles' Row forty years ago and a maid was dismissed for it." },
       } },
+    { name = "a petition in the Rat King's paw",
+      description = "A scrap of paper, chewed at the edges, which he consults and tucks away again. The court falls silent whenever it comes out. It is the oldest document in the rats' archive and they did not write it.",
+      things = {
+        { name = "what is on it", description = "A man's broad hand, in faded ink: {i}To the rats of the Great Drain: the freedom of it, for ever. Granted.{/} There is a blot, and a paw print in the blot, as of a witness." },
+        { name = "the recorder's gloss", description = "Scratched on the wall beside the throne, in the court's small script, and translated for you by nobody: forty generations of rats have held this drain by charter from a king that the people upstairs say they never had." },
+      },
+      actions = {
+        { "Ask who asked for it", say "The Rat King draws himself up. A rat asked. A rat went up, by the east pipe, seven miles, into a hall full of boots, and waited its turn in the line between a midwife and a goose. Nobody trod on it. And the man at the table looked down and said, \"And you?\" The court has told this story every night since. They do not embroider it. They have never needed to." },
+      } },
+    { name = "a silver thimble, as a font",
+      description = "By the envoy's stool, on a pebble, filled with clean water. New kits are brought to it. The court does not say what for. The thimble has a crowned cipher, rubbed flat, and a dent where it was carried seven miles in somebody's teeth." },
   },
 
   exits = {

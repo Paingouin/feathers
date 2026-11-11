@@ -101,6 +101,21 @@ space {
       things = {
         { name = "the second dial", description = "The hand points nearer {i}low{/} than the scale was made for. A pencil mark on the brass shows where low used to be." },
       } },
+    { name = "a box of offerings",
+      description = "A cigar box on the lower shelf, labelled {i}Found below. Devotional?{/} in her quick hand. Small things from the Great Drain: a lead goose, a clay foot, a ring of plaited straw, coins with holes.",
+      things = {
+        { name = "the clay foot", description = "The size of a thumb, with a hole in the heel for a string. People left these for a cure. There are hundreds in the silt under the Street of Small Gods, she notes, and the oldest are under everything else, and those are not feet." },
+        { name = "a note in the lid", description = "{i}The Street drains into the Drain. Query: where do the prayers drain to? Ask P. at the Collegium. Do not ask the clergy, they will only want a subscription.{/}" },
+      },
+      actions = {
+        { "Sort through the box", say "A lead goose, flat, with a pin. A tin eye. A sock, in knitted copper wire, exquisite, the size of your little finger. Somebody down there, long ago, lost one and had the money to say so properly." },
+      } },
+    { name = "a plan of the Street of Small Gods",
+      description = "Pinned over the desk, drawn by her, to scale. Each temple is numbered. She has measured them, at night, with a tape, in a veil.",
+      things = {
+        { name = "her sums in the margin", description = "The frontages add up to four hundred and twelve feet. The Street, paced, is four hundred and twelve feet. And then there is the Great Portico, fifty paces of ruin, which she has measured three times and which the Street somehow has room for besides." },
+        { name = "a pencilled ring", description = "Round the eight broken columns. She has written {i}whose?{/} and then, on a later day, {i}T-H-R-something. Nobody will say it. Try saying it.{/} There is no note of whether she did." },
+      } },
   },
 
   exits = {

@@ -132,6 +132,17 @@ space {
       actions = {
         { "Duck under it", say "You go under with care. A single thread touches your hat, stretches, and holds. You have not broken the one treaty in the place. From the bough comes the smallest sound of breath let out." },
       } },
+    { name = "a goldcrest in the holly",
+      description = "The smallest bird in the kingdom, olive, with a stripe of yellow on its head like a spill of paint, hanging upside down from a holly twig on your side of the stones. It crosses the line and back a dozen times a minute. Nobody looks at it. Nobody gives it a name. It weighs as much as a coin and is the only thing here with free passage.",
+      actions = { { "Envy it", say "It lands on a white stone, flicks its wings, and looks at you with an eye like a bead. Then it goes over to the combed side, finds a spider, and comes back to the brambles to eat it. Even the birds, you notice, take their meals where nobody minds the crumbs." } } },
+    { name = "a basket left at the line",
+      description = "On your side of the white stones, set down square in the path: a round lidded basket of peeled willow, very finely made. The sentinel has not touched it. It has been there three days. Elves do not fetch.",
+      things = {
+        { name = "the weave", description = "So close it would hold water. The elves grow their houses and are proud of it. This was made by hands, quickly, by someone who never looked down, and it is as good as anything on the far side. The sentinel has noticed. That is why she has not touched it." },
+        { name = "a tag", description = "{i}To the Lady. Leeks, from sea bottom. With the compliments of the Circle. A reply is not expected, having regard to last time.{/}" },
+        { name = "under the lid", description = "A dozen leeks, fat, blue-green, with the earth still on. The Everwood has had four o'clock in early autumn for longer than anyone can say. It has not had a fresh leek in all that time. You begin to see why they are being left to sit." },
+      },
+      actions = { { "Offer to carry it over", say "\"It is not addressed to you,\" says the sentinel. She looks at the basket, and at the sky, and at her bow. \"If it were to be found on this side of the stones in the morning,\" she says, to nobody, \"I could hardly be said to have brought it.\" She looks away. You move it one pace west. Neither of you mentions it again." } } },
   },
 
   exits = {

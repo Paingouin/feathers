@@ -129,6 +129,16 @@ space {
       actions = {
         { "Stroke the dog", say "Cold, and smooth as a coin. Its ears are nearly rubbed away. Four hundred years of good children, and it has not once got up." },
       } },
+    { name = "a kneeler from somewhere else",
+      description = "Among the hassocks in the back pew, all embroidered with wheat and bells, there is one that does not match. It is stuffed with something that crackles, and worked in grey and green wool with a pattern of reeds and one small boat. The stitches are tiny. It smells very faintly of smoke.",
+      things = {
+        { name = "the underside", description = "Tarred canvas. Father Dunstable has never been able to find out why. A label is sewn on: {i}For St Wobble's, from her daughter church at Little Wavering, which did not fall over either.{/}" },
+        { name = "the boat", description = "Flat, with a figure standing in the stern holding a pole, and at the bow a little yellow stitch for a lantern. You have the feeling it is a portrait." },
+      },
+      actions = { { "Kneel on it", say "It gives, and holds, like a good mattress. Reed mace, you think, not straw. For a moment you smell peat smoke and hear, or imagine, a bell with water in its voice. Then it is the back pew again, and Father Dunstable is looking at you with hope, in case you have come about the roof." } } },
+    { name = "a robin in the porch",
+      description = "It comes in at the south door every morning and sits on the hymn board. It has been through three priests. During the sermon it sings, and the village says, with complete loyalty to both parties, that it is hard to say which of them is the more improving.",
+      actions = { { "Hold still", say "It flies down to the pew end beside you and looks at you with one eye and then the other, like a churchwarden with a new face in the congregation. It decides you will do, and goes back to the board, and covers the number of the second hymn." } } },
   },
 
   exits = {

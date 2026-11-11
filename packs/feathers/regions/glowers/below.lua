@@ -218,6 +218,10 @@ space {
       key = "gl_brimley",
       icon = "☻",
       description = "Mr Brimley, Sub-Assistant Tempter (Acting). Three feet tall, brick red, with small neat horns, sleeve garters, and an eyeshade. A tail, which he keeps tucked in his waistcoat pocket like a watch chain. He has been Acting for three hundred years, because the Assistant Tempter went upstairs to tempt the Count and came back down with a recipe.",
+      variants = {
+        { when = flag "ho_brimley_confirmed",
+          description = "Mr Brimley, Sub-Assistant Tempter. Three feet tall, brick red, with small neat horns, sleeve garters, and an eyeshade. A tail, which today he has let out of his waistcoat pocket, and which will not keep still. On his desk, under a glass paperweight, lies a sheet with a crooked red stamp. He was Acting for three hundred years. He has been confirmed for about an hour, and he has already straightened the stamp twice with his eyes." },
+      },
       things = {
         { name = "his horns", description = "Filed, and capped with little brass ferrules, to protect the files." },
         { name = "his eyeshade", description = "Green celluloid. Under it his eyes are yellow, slotted, and tired. He has the look of all clerks everywhere who have been left in charge." },
@@ -226,6 +230,7 @@ space {
       actions = {
         { "Ask for the Count's soul back", say "\"Two-one-two.\" He runs a claw down a ledger. \"Regret, R. One soul. Received in good condition. Consideration...\" He stops. He reads it again. \"Consideration: 'that she should live'.\" He closes the ledger very gently. \"We don't get many of those. It can be had back. There's a form. He has to come himself, mind, and sign for it at the counter. Tell him it's been kept nicely. Tell him...\" He takes off the eyeshade and rubs his eyes. \"Tell him we never did know where to put it. It wouldn't go on the shelf with the rest.\"" },
         { "Ask how business is", say "\"Business.\" He gestures at the desks. \"The landlord won't let us touch the village. That was the lease. So we've a catchment of one alderman, who is still reading, and whoever comes up the low road. Nobody comes up the low road. Head Office wants to know why our figures are flat.\" He lowers his voice. \"I've been sending them the same quarterly return since the wet summer. I just change the date.\"" },
+        { "Congratulate him", when = flag "ho_brimley_confirmed", say "He stands up. He sits down. He stands up again and shakes your hand in both claws. \"It came up the tube,\" he says. \"Signed. Well, stamped. It's the same in law, I looked it up, I have looked it up nine times.\" Sixty devils are pretending to write. \"They've had a signwriter to my door. He scraped the word off. Three hundred years it took to dry and it came off like a stamp off a letter.\" He blows his nose. \"I shall send them the same return on Friday. But I shall send it as of right.\"" },
         { "Ask about lost property", when = no(flag "gl_form_filed"), say "\"Form nine.\" He points with his pen at a rack of forms without looking. \"In triplicate. Nature of item, date of loss, colour of regret. Then I stamp it, then you may go through.\" Through where? \"Through the door I shall then admit exists.\"" },
         { "Ask about lost property", when = flag "gl_form_filed", say "\"You're stamped,\" he says. \"Door at the end. Don't touch the jars. Don't take anything that calls you by name.\"" },
       } },
@@ -258,6 +263,7 @@ space {
       things = {
         { name = "a cylinder arriving", description = "It drops into a wire basket. The devil at that desk unscrews it, takes out a slip, reads it, initials it, puts it in a fresh cylinder and sends it on. You follow the pipe with your eye. It goes round the room and comes back to the same desk." },
         { name = "the tube marked DOWN", description = "Thicker than the others, black, and cold to the touch where everything else is warm. It goes through the floor to Head Office. Nothing has come up it in living memory except a calendar, once a year, and a reminder about the figures." },
+        { name = "the staff hatch", description = "A brass flap in the side of the black tube, as wide as a barrel, lettered {i}PERSONNEL{/}. Inside is a seat of red leather and a strap. It is how the Firm travels when it must. The leather has never been sat on from this end." },
       },
       actions = {
         { "Send a message", say "You write {i}hello{/} on a slip, find an empty cylinder, and post it in a flap. It goes off with a thump. Sixty heads follow it round the ceiling. It arrives at the desk of the devil with the pencils, who reads it, and turns quite pale, for a devil, and files it under {i}Unprecedented{/}." },
@@ -308,10 +314,21 @@ space {
 
     { name = "the time clock",
       description = "A machine with a slot and a lever. Each devil has a card. You look at the nearest one. {i}IN{/} is stamped once, at the top, three hundred years ago. The column for {i}OUT{/} is clean down the whole card, and down all the cards behind it." },
+    { name = "the office cat",
+      description = "A thing like a cat, the colour of a cinder, asleep in the wire basket marked {i}PENDING{/}. It has an extra toe on each foot and a small pair of horns that it is plainly embarrassed about.",
+      things = {
+        { name = "the PENDING basket", description = "Under the cat there are three hundred years of slips, pressed flat and very warm. Nothing in that basket will ever be dealt with, and everything in it is perfectly safe." },
+        { name = "a saucer", description = "Beetroot juice. It will not touch milk. It came down the back stair one Tuesday behind the imp, and has been on the strength ever since as {i}1 mouser, temporary{/}." },
+      },
+      actions = {
+        { "Scratch behind its horns", say "It pushes its whole head into your hand and makes a noise like a kettle coming to the boil. Sixty devils stop writing. \"It never lets us do that,\" says Mr Brimley, wistfully. \"We have cold hearts and warm hands. It says it's the wrong way round.\"" },
+      } },
   },
 
   exits = {
     { to = "gl_waiting_room", description = "Back along the pigeonholes and under the flap." },
+    { to = "ho_reception", label = "The tube marked DOWN",
+      description = "Beside the black tube there is a brass hatch for staff, with a padded seat and a strap. It goes through the floor to Head Office. Mr Brimley says a guest may ride it, and that he would not, and that the seat is very comfortable." },
     { to = "gl_lost_property", description = "Through the frosted door.",
       requires = flag "gl_form_filed", hidden = true },
   },

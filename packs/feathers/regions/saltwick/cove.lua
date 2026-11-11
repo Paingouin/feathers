@@ -115,6 +115,17 @@ space {
       actions = {
         { "Tug the chain", say "Two knocks, from inside the rock. Then a pause. Then, a good deal fainter, a man's voice saying, \"Not now, Kev.\"" },
       } },
+    { name = "a block of ice in straw",
+      description = "Under an upturned dinghy at the top of the shingle, packed in a tea chest: a slab of clear blue ice with straw round it and a sack on top. It has come four hundred miles by sea in the bilge of the northern mail and it is going, by night, to the kitchen of a Baroness.",
+      things = {
+        { name = "the label", description = "{i}Glass, best. Fragile.{/} Dob's hand. It is, he says, the only cargo he has ever run that the Customs could have had for the asking, if they had only waited." },
+        { name = "the straw", description = "Wet through, and wetter by the minute. The whole trade is a race. They lose a third of every block between the Stack and the back door, and still it pays, since a noble house will give silver for a thing to put in a drink that the house next door has not got." },
+      },
+      actions = {
+        { "Ask Dob about the ice trade", say "\"Kev's notion,\" says Dob. \"Sell them winter in July. They put it in a bowl and stand round it.\" He shifts the sack. \"Thing is, there's no duty on it. Board's never ruled. So it's not smuggling. We just bring it in at night out of habit.\" He looks faintly ashamed. \"Don't tell the lads. They think it's diamonds.\"" },
+      } },
+    { name = "a stiff coat on a rock",
+      description = "A sealskin coat, spread on a boulder above the tide line to air, so thick it stands up by itself with its arms out. It belongs to a hand off the northern mail who is ashore to see a girl. Every gull in the cove is giving it a wide berth. From the cliff path it looks exactly like a small bear, sitting, waiting for someone to bring it a fish." },
   },
 
   exits = {
@@ -237,6 +248,17 @@ space {
       things = {
         { name = "the kite", description = "Red paper on a split-cane frame, with a long tail of knotted rag. Dob flies it off the headland on fine evenings. It is not a signal. People assume it is a signal, and he has stopped correcting them, since the truth sounded worse." },
       } },
+    { name = "a bale of eider down",
+      description = "On the driest ledge, sewn into sealskin, as big as a sheep and so light that you can lift it with one finger. Down from the north, gathered a pinch at a time from empty nests on the ice edge. A bale is a year of one family's summer and will fill one quilt for one duchess.",
+      things = {
+        { name = "the stitching", description = "Sinew, drawn tight, every hole waxed. Whoever sewed this did not expect to be the one to open it, and wanted it to be a pleasure for somebody." },
+        { name = "a token under the cord", description = "A slip of whalebone with notches. It is the bill. The smugglers pay it in needles, which they say is like paying for gold with pins, and which the north considers the other way about." },
+      },
+      actions = {
+        { "Press a hand into the bale", say "Your hand goes in to the wrist and meets nothing. It is like leaning on warm air. When you take it out the dent stays for a moment, and then fills, slowly, from underneath, as if the bale had breathed in." },
+      } },
+    { name = "a chalk tally of north runs",
+      description = "On the cave wall, apart from the others, in blue chalk: a column of strokes, and against each a small drawing. A fish. A fish. A keg. A fish. A bear, crossed out, with {i}NOT A WORD{/} under it. Then fish again, in a slightly shaky line." },
   },
 
   exits = {

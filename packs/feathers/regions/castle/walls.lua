@@ -110,6 +110,17 @@ space {
       things = {
         { name = "a bee", description = "It has come up from the kitchen garden, sixty feet, for these. It goes back down loaded and very slowly, like a carter on a hill." },
       } },
+    { name = "the east embrasure",
+      description = "Every sentry on the wall walks the west side, over the queue. The east side has grass in the joints. One embrasure there has a seat worn into the stone and a rest cut for a telescope.",
+      things = {
+        { name = "the view east", description = "The back of the hill, a green road with thorn trees in a line down the middle of it, and seven miles off, in a bowl of low hills, something pale that might be a town. No smoke rises from it. On a cold morning, the sentry says, a column of steam does." },
+        { name = "a tally in the stone", description = "Scratches, in fives, hundreds of them: one for every dusk that some earlier watcher sat here, looking at a city that the court had left, to see whether a certain window was still lit." },
+      },
+      actions = {
+        { "Sit and look east", say "You sit in the worn place. The light goes. Seven miles away, in the pale town, one yellow square comes out, low down, where an inn would be. And higher, in the middle, another, which is gold, and does not look like a lamp at all." },
+      } },
+    { name = "a signal gun, spiked",
+      description = "A small brass cannon pointing east, with a nail driven into the touch hole. It was to be fired if anybody came up the old road from Erstwhile. The Council had it spiked the same week it was mounted, having thought about who might." },
   },
 
   exits = {
@@ -258,6 +269,16 @@ space {
       } },
     { name = "a drawer of returned maps",
       description = "Maps sent back by the public, with comments. {i}My house is not on this. My house is on this and I would rather it were not. This river is going the wrong way and so, I may say, is the country.{/}" },
+    { name = "a paper patch on the Great Map",
+      description = "East of the castle, where the old road runs, a square of newer paper has been pasted over the original and painted to match: hills, a wood. It is nicely done. It is the only place on the Map where the Survey has drawn something that it knows is not there.",
+      things = {
+        { name = "the edge of the patch", description = "It has lifted at one corner. Under it, in the old bright colours, you can see the top of a tower, a wall, and three letters in red capitals: {i}ERS{/}. Dame Ysolde presses the corner down with her thumb whenever she passes, and it comes up again by evening." },
+      },
+      actions = {
+        { "Ask Dame Ysolde about it", say "\"An instruction,\" she says shortly. \"Ninety years old. {i}The former capital is not to be shown, it being no longer the case.{/}\" She glares at the patch. \"I have surveyed it myself. It is entirely the case. It has streets. I am required to show a wood.\" She lowers her voice. \"I put the wood in the right place for the palace garden. They cannot touch me for that.\"" },
+      } },
+    { name = "a milestone rubbing",
+      description = "Pinned to the errata desk: a sheet of paper rubbed with heelball over a stone. {i}ERSTWHILE, 5.{/} A clerk has written under it: {i}Taken this spring. Last spring it was 4. The stone has not moved. Query: has the town?{/} And under that, Dame Ysolde: {i}Query refused. Do not go back.{/}" },
   },
 
   exits = {

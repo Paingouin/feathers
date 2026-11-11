@@ -143,6 +143,18 @@ space {
       things = {
         { name = "the sill", description = "A row of things the sea has brought: a glass float, a doll's arm, a brick with a word on it in no language Erchie knows, and a coconut. Nobody here is sure what the coconut is. They keep it in case it hatches." },
       } },
+    { name = "the northern corner",
+      description = "The settle by the door, where it is coldest, is kept by custom for the crew of the mail boat, who find the rest of the room too hot and say so.",
+      things = {
+        { name = "a horn mug on a peg", description = "Musk ox horn, with a thong through the rim. It belongs to Young Ib, the mate, who is fifty. He says a pewter mug freezes to your lip and he has got out of the habit of trusting them." },
+        { name = "a jar of cloudberries", description = "On the shelf above: gold, in their own juice, brought down as a present each autumn. Mistress Mowat serves one spoonful at a time, to the sick and to people she has decided to forgive." },
+        { name = "a tally stick", description = "Whalebone, notched. It is how the north pays its slate: a notch is a day's work owed, to anyone, anywhere. Erchie has a drawerful and has never called one in, and another thing, he would not know where to send the bill." },
+      },
+      actions = {
+        { "Sit in the cold corner", say "A draught comes under the door and finds your ankles at once. A man in the next seat, without looking round, hooks a dog out from under the table with his boot and slides it over your feet. That is how they do it up there, he says. You have no idea whose dog it is, and neither has he." },
+      } },
+    { name = "a framed pawprint",
+      description = "On the chimney breast, under glass, in lamp black on a square of sailcloth: a print the size of a dinner plate, with five claws. Below it, in copperplate: {i}A customer of the Thin Ice, Drift. Paid in cod.{/} Erchie's father brought it home and nobody on the island has ever quite believed him or quite liked to say so." },
   },
 
   exits = {

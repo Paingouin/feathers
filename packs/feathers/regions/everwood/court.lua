@@ -138,6 +138,16 @@ space {
       actions = {
         { "Wave a hand in front of him", say "Nothing. A small, even breath. The lady on his right looks at you, once, and you put your hand down. It was the look of someone guarding a child's nap, and you would not care to see it twice." },
       } },
+    { name = "a wren in the vault",
+      description = "High in the meeting branches, small and brown and round, with its tail cocked. It sings. For a creature that size the noise is absurd: a whole trill, with ornaments, rattling down through the silence of the court like a tray of spoons. Not one elf looks up. The Lady's mouth moves, very slightly, at one corner.",
+      actions = { { "Look up at it", say "You are the only one who does. The wren finishes, bobs, and begins again from the top, directly at you. The court's silence closes over the song each time like water. You realise the silence is not broken by it. The silence has been built, over a very long time, to have exactly that in it." } } },
+    { name = "a guest gift, unopened",
+      description = "On a low table of root beside the petition bowl: gifts brought to the court, each set down with ceremony and never afterwards touched. A silver ewer. A bolt of sea-green cloth. A brown crock with a cloth tied over the top with rush.",
+      things = {
+        { name = "the brown crock", description = "It is the only one that is not beautiful. A card, in a hand like a ruled line: {i}Soup. It was hot. A.M.{/} There is dust on the ewer and the cloth. There is none on the crock. Someone has lifted the lid, and put it back, and more than once." },
+        { name = "the herald's note", description = "Tucked under the crock. {i}Presented by three persons from the western fen, in tall hats, who did not wait to be looked at. They walked across the line reading. The sentinel wishes it recorded that she did look at them, and that they did not look up.{/}" },
+      },
+      actions = { { "Lift the lid", say "Leek and potato. Cold, set, and a spoon's width has gone from one side, cut clean with something silver. You put the lid back exactly. Across the court, the Lady is studying a leaf. It is the most carefully studied leaf in the Everwood." } } },
   },
 
   exits = {
@@ -249,6 +259,14 @@ space {
       description = "On the top step, grey, laid down neatly. The Lady's. She leaves it here when she comes, so as to go down to the water as nobody in particular. It is still a little warm.",
       things = {
         { name = "something in the fold", description = "A crust of Greenhollow bread, wrapped in a leaf. Half eaten. She brings her supper. She eats it down here, in the dark, sitting on a root, where forty courtiers cannot attend." },
+      } },
+    { name = "a frog on the second rim",
+      description = "One, brown, on the stone. It is the only thing in the hollow that does not look into the pool. It sits with its back to the stars and its eyes on the steps. It has the air of having been posted there.",
+      actions = { { "Sit beside it", say "It does not move away. After a while it gives one low note, not loud, and waits. Nothing answers, down here. It does not seem to expect an answer. It is, you would say, reporting. Then it settles, and the two of you keep watch on the stairs together while the stars turn behind you." } } },
+    { name = "a dropped hairpin",
+      description = "On the lowest step, where the moss is worn: a pin of pale wood, as long as a finger, with a seed pearl at the head. It is not lost. Nothing is lost in the Everwood. It has been left exactly where it fell so that the falling can be remembered correctly.",
+      things = {
+        { name = "the pearl", description = "It holds one star. You move your head and the star stays in the pearl. You look up through the leaves to find which one it is and there are only leaves." },
       } },
   },
 

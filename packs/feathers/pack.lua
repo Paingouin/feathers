@@ -1,7 +1,7 @@
 return {
   id = "feathers",
   name = "Feathers",
-  version = "0.7.0",
+  version = "0.8.0",
   author = "Paingouin",
   api = 1,
   description = "A small kingdom with large opinions, and a great deal underneath it.",
@@ -36,6 +36,12 @@ return {
         "le_wind_kite", "le_kept_day", "le_upward_plumb", "le_star_pin",
         "fd_kept_noon", "fd_finding_needle", "fd_aegis", "fd_first_oar",
         "jg_north_wind", "jg_pathmaker", "jg_unseen_cloak", "jg_patient_idol",
+        "ho_full_stop", "ho_plain_no", "ho_binding_pen", "ho_first_fork",
+        "sh_latchkey", "sh_first_farthing", "sh_thunderbolt", "sh_almost_crown",
+        "cs_unthrown_harpoon", "cs_bear_writ", "cs_fallen_ribbon", "cs_last_sheet",
+        "di_jack_lantern", "di_sea_broom", "di_fen_torc", "di_frog_mace",
+        "pa_last_sum", "pa_unspent_wish", "pa_mirage_flask", "pa_windproof_page",
+        "er_pasteboard_crown", "er_unstruck_die", "er_book_of_grants", "er_granting_pen",
     } },
   },
 }

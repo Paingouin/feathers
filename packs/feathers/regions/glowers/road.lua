@@ -225,6 +225,26 @@ space {
       actions = {
         { "Squeeze past", say "You turn sideways and edge between the wheel and the wall. A shutter opens a finger's width behind you. \"He's going up,\" somebody says. \"He's never.\" \"He is. Fetch your father.\" By the time you are through, every heart in every shutter has an eye in it." },
       } },
+    { name = "the well",
+      description = "In the middle of the green, under a little slate roof, with a windlass and a bucket on a chain. A bunch of garlic has been tied to the windlass, and another to the bucket, and one, to be sure, has been dropped down the well.",
+      things = {
+        { name = "the bucket", description = "Oak, bound in iron. On the inside of the rim somebody has carved a row of small crosses, one for each time it has come up with nothing in it but water. There are a great many, and that is the point of them." },
+        { name = "the water", description = "Cold, clean, and tasting very slightly of garlic. The village is proud of this and has not noticed it for generations." },
+        { name = "a bun on the well coping", description = "On a clean cloth, under an upturned basin. A card in spidery pencil: {i}For the young man with the case, if he comes by before Thursday. He is too thin.{/}" },
+      },
+      actions = {
+        { "Draw a bucket", say "The windlass shrieks. Three shutters open a crack and close again. You get your water. Behind one of the shutters you hear, clearly: \"It's only him. The one with the sword. Put the kettle back on.\"" },
+      } },
+    { name = "a cottage with its shutters open",
+      description = "One, at the end of the row, has every shutter fastened back and geraniums on the sill. It is as shocking, in Lower Wince, as a man walking about without his trousers.",
+      things = {
+        { name = "the old lady in the window", description = "Mrs Amity Voss, ninety, knitting. She has never bolted a shutter in her life. She says that anything wanting to come in will find her at home, and that it had better have wiped its feet." },
+        { name = "her knitting", description = "A small tube in red wool, with a hole at the end, and a second one started. They are too narrow for fingers. \"Horn cosies,\" she says. \"He feels the wind in them, poor lamb. Nobody ever thought to ask.\"" },
+        { name = "a black case under her table", description = "A traveller's sample case, with brass corners, left behind. It is open. A purse, a hand mirror, a small bottle. She has put the purse to use as a pincushion." },
+      },
+      actions = {
+        { "Ask about her visitor", say "\"Such a polite boy.\" She counts stitches. \"Came to the door with a case. Wanted to know had I ever wished. I said I'd wished he'd come in out of the wet.\" She bites off the wool. \"He's from some firm, down below somewhere. They don't feed him. He's coming Thursday and I'm doing a seed cake.\"" },
+      } },
   },
 
   exits = {
@@ -349,6 +369,24 @@ space {
       },
       actions = {
         { "Knock", say "Iron, cold, thick. From a long way down and a long way in, faint as a thing remembered, a bell goes {i}ting{/}, once, like the bell on a counter." },
+      } },
+    { name = "a row of small stones",
+      description = "Along the south wall, in the sun, such as it is: seven little headstones, no higher than your knee, each with one word.",
+      things = {
+        { name = "the words", description = "{i}Rex. Bess. Rex. Old Rex. Tibby. Rex. The Other Rex.{/} The Dobbles of the inn have kept a dog for seven generations and have had, between them, one idea for a name." },
+        { name = "a bone on the last grave", description = "A fresh marrow bone, laid square. It is renewed every Sunday. The sexton says it is always gone by Monday and that he has stopped wondering which of several explanations he would like least." },
+      },
+      actions = {
+        { "Read the smallest stone", say "{i}Tibby.{/} And underneath, in letters a child cut with a nail: {i}she was a cat but she came when you said Rex{/}." },
+      } },
+    { name = "the choir, practising",
+      description = "Through the church wall comes the sound of six voices and a harmonium, going over the same four bars. Five of the voices are what you would expect of Lower Wince. The sixth is a bass of such depth and blackness that the yew shivers.",
+      things = {
+        { name = "the harmonium", description = "Wheezing. It was got second-hand from Aldmoor and has a stop marked {i}Vox Humana{/} which nobody has dared to pull." },
+        { name = "the sixth voice", description = "It comes up through the others like a cellar door opening. It is perfectly in tune. Nobody in the village will tell you whose it is. \"Mr Ashby,\" says the sexton, at last. \"From away. Took the end cottage. Very regular. Keeps his hat on.\"" },
+      },
+      actions = {
+        { "Listen at the wall", say "They get to the end of the four bars. A pause. \"Lovely, Mr Ashby,\" says the vicar's voice, faintly. \"Perhaps a touch less on 'everlasting'.\" The bass says something low and apologetic. They go again. On 'everlasting' the church windows hum." },
       } },
   },
 

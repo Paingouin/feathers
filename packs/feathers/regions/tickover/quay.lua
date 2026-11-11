@@ -110,6 +110,26 @@ space {
       } },
     { name = "a coil of mooring rope",
       description = "Hemp as thick as your leg, in a flat coil eight feet across. A cat has had kittens in the middle of it. The mast hands have chalked a line round the coil and written {i}DO NOT CAST OFF{/}, and have been making do with the other rope for a fortnight." },
+    { name = "the waiting shelter",
+      description = "A glass and iron hut on the roof, with a bench round three sides and a stove. It is where passengers wait for the airship, which sails when the weather permits, and the weather takes its time.",
+      things = {
+        { name = "a commercial traveller", description = "In buttons. He has his sample case on his knees and a ticket for Aldmoor in his hatband. He missed her last spring by four minutes and has been here since, on principle. He has a room at an inn there, he says, and they are keeping his boot." },
+        { name = "an old lady with a basket", description = "Going to see her sister in the Loose Ends, she says, and when you ask where that is she points straight up with her knitting needle and goes on counting." },
+        { name = "the stove", description = "It burns the stubs of old tickets. There is a scuttle of them beside it, and a shovel. The warmth has a faint smell of printing ink and of people not getting where they were going." },
+      },
+      actions = {
+        { "Wait with them", say "You sit. Nobody speaks. The stove ticks. Overhead the great shape of her swings a little on the mast and the whole hut moves through her shadow and out again. After a quarter of an hour the traveller offers you a button. It is a good one, horn, four holes. It seems to be how he says good morning." },
+      } },
+    { name = "the lost luggage",
+      description = "Stacked against the parapet under a tarpaulin: trunks, hat boxes and a cello, all chalked with the names of moorings.",
+      things = {
+        { name = "a trunk chalked ALDMOOR", description = "Strapped and sealed. It was put off in error and has been waiting to be put on again. It ticks. Everything in Tickover ticks, so nobody has looked into it." },
+        { name = "a hat box chalked THE HIGH PLACE", description = "Very light. Captain Ballast will not have it aboard and will not have it thrown away. It has gone round the tarpaulin for six years, a little nearer the edge each time the wind gets under." },
+        { name = "a cello", description = "In a canvas case, with a label: {i}To follow.{/} Its owner flew to Saltwick to play at a wedding. That was two harvests ago. You tap the case, and all four strings answer, in tune." },
+      },
+      actions = {
+        { "Lift the hat box", say "It weighs nothing. Less than nothing: it wants to go up. You have to hold it down against your chest, like a hen. You put it back under the tarpaulin and set a brick on the lid, and see that there are already four bricks beside it that have been tried." },
+      } },
   },
 
   exits = {
@@ -215,6 +235,26 @@ space {
       actions = {
         { "Cross it again, for practice", say "You go out to the middle and stand there. The ship breathes and the plank breathes with it. Below you, pigeons. Below them, a tram. You come back with your arms out. The lookout, without lowering his telescope, says, \"Other,\" and then, \"No. Passenger.\"" },
       } },
+    { name = "the galley",
+      description = "A cupboard aft of the engine, with a spirit stove on gimbals, a kettle wired to its ring, and a shelf with a rail.",
+      things = {
+        { name = "the kettle", description = "It boils sooner the higher she goes. Over the Grumbles it boils almost before it is lit, and the tea is weak and tastes of altitude. The crew call that brew {i}summit{/} and will drink nothing else on the way down." },
+        { name = "the biscuit tin", description = "Screwed to the shelf. Ship's biscuit, and under it, where the Captain is not supposed to know, ginger nuts." },
+        { name = "the cook", description = "The rigger's boy, aged eleven, in an apron down to his boots. He is tied to the stove by a line round his middle, so that if he goes over he will at least take the tea with him." },
+      },
+      actions = {
+        { "Ask for a mug of summit", say "\"We're not up,\" says the boy, scandalised. \"You can't have summit on the mast. It'd be just tea.\" He gives you just tea. It is very good. He watches you drink it with the pity of a sailor for anybody who has only ever been at one height." },
+      } },
+    { name = "the figurehead",
+      description = "Forward, under the nose of the gondola, where the old fishing boat had hers: a wooden woman, painted, leaning out into the air with one hand shading her eyes.",
+      things = {
+        { name = "her face", description = "Weathered silver on the windward cheek. The paint has been renewed on her eyes alone, every season, a clear grey. She is looking for the weather. She has the expression of a person who was promised some." },
+        { name = "her name", description = "Carved on the scroll under her: {i}MARY PERMITTING{/}. The boat was the {i}Mary{/}. The Captain would not change a name, and added to it." },
+        { name = "a lucky sixpence", description = "Nailed to her shoulder. And a second. And about forty more, down her arm, one from every hand who ever signed on. She glitters, on that side, like a fish." },
+      },
+      actions = {
+        { "Lean out to see her", say "You hang over the rail with Mr Flange holding your belt. There she is, below you, and below her, two hundred feet of nothing and a great many chimney pots. She does not look down. You take the hint, and look where she is looking, and that is better." },
+      } },
   },
 
   exits = {
@@ -243,6 +283,12 @@ space {
     { to = "jg_clearing", label = "Mooring: the Sweltering, the Tall Tree",
       description = "South until the air goes thick and green, to a bare bough above the canopy with an old rope end on it. It is a long way down the ladder, and warm all the way. She does not wait.",
       requires = visited "jg_clearing", hidden = true },
+    { to = "cs_station", label = "Mooring: the Cold Shoulder, Blowhard Station",
+      description = "North until the rigging grows a white beard, to a flagpole with an iron ring that has waited a long time for this. She does not wait.",
+      requires = visited "cs_station", hidden = true },
+    { to = "pa_salt_flat", label = "Mooring: the Parch, Post No. 9",
+      description = "East over the railway, which she beats by a day, to a post of salt on a white floor with no edges. The ladder does not reach. You are lowered. She does not wait.",
+      requires = visited "pa_salt_flat", hidden = true },
   },
 }
 
@@ -340,6 +386,25 @@ space {
       } },
     { name = "a lantern, unlit",
       description = "A safety lamp on a hook at the foot of the ladder, with the wick trimmed and never used. Nobody brings a flame up here. Not because of the air: because of the light. It would be rude." },
+    { name = "the sailmaker's marks",
+      description = "Along the keel plank, at each rib, somebody has pencilled a height on the cloth and a date, like the marks a family makes on a door frame for a child.",
+      things = {
+        { name = "the lowest mark", description = "{i}First filled. She stood up.{/} The pencil has gone silver." },
+        { name = "the marks in between", description = "A new one each spring, an inch or so above the last. Cloth stretches. She has grown, over the years, by about the height of a man, and nobody had the heart to take her in." },
+        { name = "the top mark", description = "This year's. {i}Still rising.{/} The sailmaker has had to stand on a box to write it." },
+      },
+      actions = {
+        { "Stand against the marks", say "You put your back to the cloth and lay a hand flat on your head, as you were made to do at home. You come up to about the fourth spring. The envelope gives a little behind your shoulders, warm, and then gently pushes you upright again." },
+      } },
+    { name = "a hammock",
+      description = "Slung between two ribs, high up, out of the way: a plain canvas hammock with a blanket in it. It is the warmest berth on the ship and the quietest.",
+      things = {
+        { name = "the blanket", description = "Grey, ship's issue, with a name stitched in the corner in blue wool: {i}H. BALLAST{/}. So this is where the Captain goes when she says she is checking the valve." },
+        { name = "a book in the hammock", description = "{i}Weather: A Beginner's Guide.{/} It is much thumbed. On the flyleaf, in a girl's hand: {i}Hester, aged 9. I shall have a ship.{/}" },
+      },
+      actions = {
+        { "Climb into the hammock", say "It takes three goes. Then you are in, and the whole ship swings under you, slowly, like a cradle with somebody's foot on the rocker. The light comes brown and gold through the cloth. You could sleep here until the mooring after next. You get out, with difficulty, before you do." },
+      } },
   },
 
   exits = {

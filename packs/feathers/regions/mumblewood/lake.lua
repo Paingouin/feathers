@@ -135,6 +135,18 @@ space {
       things = {
         { name = "the biggest perch", description = "At the trunk end, striped, as long as your forearm. The angler has a name for it. He will not tell you the name. He says it would be taking a liberty." },
       } },
+    { name = "a sandpiper",
+      description = "A small brown-and-white bird at the water's edge, bobbing. It runs, stops, bobs its whole back end, runs. It cannot stand still without doing it. It looks like somebody keeping time to music that only it has been given.",
+      things = {
+        { name = "its footprints", description = "A line of tiny arrows along the wet sand, all pointing backward to where it has been. A tracker would follow them the wrong way. This has probably saved a good many sandpipers." },
+      } },
+    { name = "a washed-up hurdle",
+      description = "A panel of woven hazel, six feet by three, grey and waterlogged, lying half on the shingle. It did not come from the wood. It has come down the lake from the west, from the reed end, and it has a rope still tied to one corner.",
+      things = {
+        { name = "the rope", description = "Plaited rush, three strand, with an eye splice a sailor would be proud of. It was a mooring. Whatever was moored to a hurdle is somewhere back in the reeds, drifting, and has perhaps not noticed." },
+        { name = "a tin bell on the hurdle", description = "No bigger than a thimble, wired to the top rail, green. You flick it. It still rings. It was meant to tell somebody that somebody was coming. It has told the lake, faithfully, every time a wave lifted it." },
+      },
+      actions = { { "Turn it over", say "Underneath, the hazel is tarred, in the fen way. And there is a line of small wet marks across the tar, in a row, drying as you look, as if something no bigger than a frog had been using it for a raft and stepped off when you came." } } },
   },
 
   exits = {
@@ -251,6 +263,14 @@ space {
       actions = {
         { "Drop a leaf", say "A willow leaf, from your finger. It turns as it goes down and something small and green turns as it comes up, and when they meet on the surface there is only one leaf, and you cannot have said which." },
       } },
+    { name = "a reed bunting",
+      description = "On the tip of the willow's lowest branch: a sparrow in a black hood and a white collar, like a small clergyman. It sings three notes and stops, as though it had lost its place, and begins again. It has been losing its place at the same note since April.",
+      actions = { { "Whistle the fourth note", say "You supply it. The bunting stops dead and looks at you. Then it sings the three notes again, and stops, more pointedly. It did not lose its place. That is the song. You have been correcting a hymn." } } },
+    { name = "a snail on the stone seat",
+      description = "Yellow, banded brown, the size of a hazelnut, half way across the seat with a silver line behind it. There is no way onto this island but by boat. The snail did not come by boat. It has the look of a creature that set out before the lake was here and has not been told.",
+      things = {
+        { name = "its trail", description = "It comes up over the edge of the seat from the turf, and before that from the water's edge, and before that it is under the water, on the stones, still shining." },
+      } },
   },
 
   exits = {
@@ -345,6 +365,18 @@ space {
 
     { name = "the sound",
       description = "The lake is heavy and it moves. Down here that comes through as a long slow creak, the sound of a great door thinking about opening, with a minute between one creak and the next." },
+    { name = "a puddle on the floor",
+      description = "In all this dry room, under all that water, one small puddle, the size of a plate, by the foot of the stone chair. It is not a leak. Nothing drips. It is shaped like a foot.",
+      things = {
+        { name = "the other one", description = "A stride away, fainter, drying. And a third, by the steps, hardly a mark. Somebody came down here not long before you with wet feet, sat in the chair, and left. They were barefoot. The angler wears boots. The slippers on the floor are dry." },
+      },
+      actions = { { "Put your foot beside it", say "The print is smaller than your boot, and broader, and the toes are spread. You keep your foot there for a moment, as you might stand beside a stranger at a wall to see which of you is taller. Then you step away and let it dry in peace." } } },
+    { name = "a stone bowl of pebbles",
+      description = "On the floor by the wall of carved fish: a shallow bowl, and in it a few dozen pebbles, every one white, round and the size of a pigeon's egg. They have been chosen. You could search the lake shore all day and find three.",
+      things = {
+        { name = "a pebble", description = "Smooth, cool, heavier than it looks. You have the impression that it was put here as a coin is put in a plate, for something received." },
+        { name = "a gap in the ring", description = "They are laid in a spiral, from the middle out. The spiral ends at the rim with room for one more. You have no white pebble. You look at the gap for a while, as at a question you have not been asked yet." },
+      } },
   },
 
   exits = {

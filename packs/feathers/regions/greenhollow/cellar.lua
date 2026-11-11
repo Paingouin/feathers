@@ -90,6 +90,16 @@ space {
       } },
     { name = "a damp patch shaped like a map",
       description = "On the old stone of the east wall: a stain with a coastline, two rivers and something like mountains. The smugglers used to plan by it, for a joke. Then one of them said that it was a fair likeness of the road to Saltwick, and after that they stopped joking and started using it." },
+    { name = "a crate of stone bottles",
+      description = "Under the smugglers' table, with a sack over it. A dozen bottles of brown glazed ware, corked and tied down with rush. They are not wine and not from the coast. Each has a mark pressed in the clay: a rope with one end loose.",
+      things = {
+        { name = "a bottle", description = "Heavy. You shake it. It is thick, whatever it is, and something in it goes round on its own for a moment after you stop. The label is a strip of reed: {i}BROWN. The Loose Mooring. Brewed afloat.{/}" },
+        { name = "a note under the sack", description = "{i}Barnaby says this is the last till the inn comes round east again. He does not know when. He says ask the fen.{/} The smugglers, it seems, can get anything through the customs but cannot get a delivery date out of a landlord whose inn drifts." },
+      },
+      actions = { { "Sniff a cork", say "Malt, smoke and something like a hedge in summer. You put it down with regret. The barman, overhead, shifts his weight on the trapdoor at that exact moment, and the dust comes down on you like a judgment." } } },
+    { name = "a newt in the drain",
+      description = "In the gully that runs along the foot of the old wall: a small brown newt with an orange belly, walking against the trickle with enormous deliberation. It came in under the wall. It is going somewhere under the other wall. A cellar is only a stretch of its road.",
+      actions = { { "Watch where it goes", say "It reaches the newer wall, the one that should not be there, and goes into a crack at the bottom that you had taken for a shadow. A draught comes out of the crack. It smells of water, a long way off, going somewhere on purpose." } } },
   },
 
   exits = {

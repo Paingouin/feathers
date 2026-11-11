@@ -117,6 +117,17 @@ space {
       } },
     { name = "a moth",
       description = "White, furred, as big as your two hands, asleep on a trunk with its wings open. There is a brand on one wing, a small neat {i}H{/}. The farmers keep them for the wool." },
+    { name = "a row of a different crop",
+      description = "At the end of the farmers' rows, by itself, behind a little fence of mushroom stalks, something is growing that is not a mushroom: a stick, a foot high, with two pale leaves at the top that have never seen the sun and are trying anyway.",
+      things = {
+        { name = "the seedling", description = "A walnut. It came down the river in half a shell and Farmer Hush planted it out of curiosity. It ought to have died in a week. It has put on a leaf a year for eleven years, in the dark, leaning east." },
+        { name = "the little fence", description = "To keep the beetle from ploughing it under. There is a label, in Murmur script, very small. A farmer translates it for you: {i}Not ours. Looked after.{/}" },
+      },
+      actions = {
+        { "Ask why they keep it", say "Farmer Hush thinks for some time, as his people do. \"Our town was started on a kindness from above,\" he says, almost too quietly to hear. \"We have never been able to send one back. Nothing of ours will grow up there.\" He looks at the two pale leaves. \"So we thought, we could at least mind something of theirs down here.\"" },
+      } },
+    { name = "a scarecrow in a crown",
+      description = "Among the rows, to keep the moths off: a cross of two mushroom stalks in a ragged coat, and on its head a ring of tin cut from a biscuit box. The farmers say that it fell down a well in a theatre. {i}BEST ASSORTED{/}, it says, on the inside." },
   },
 
   exits = {
@@ -212,6 +223,17 @@ space {
       description = "High up on a rib, wings shut, the colour of the wall. It does not carry the farmers' brand. This one is the Cap's own." },
     { name = "the seam",
       description = "The way you came in, a narrow slit of the wood's cooler light. It has not closed behind you. You have the impression that it is being held, the way one holds a door for a guest who is slow with their coat." },
+    { name = "a full-sized footprint in the floor",
+      description = "In the soft floor of the cap, near the stair in the rib, a single print of a bare human foot, long healed over and grown in, like a letter cut in a beech. The cap has kept it. It keeps everything that was ever pressed into it.",
+      things = {
+        { name = "the size of it", description = "Large. Broad at the ball. You have a ten in mind without measuring. He would have had to come in on his hands and knees, and stood up once, here, where the roof is highest, and gone out the same way." },
+        { name = "what grows in the print", description = "A ring of the small pale mushrooms, exactly following the outline, heel to toe. They come up every year in that shape and no other. The farmers gather everything else in the cap and have never gathered those." },
+      },
+      actions = {
+        { "Set your foot beside it", say "The floor gives a little under your boot, warm, like bread. When you lift it there is a print. By next year it will have healed to a scar, and by the year after there may be a ring of small pale mushrooms in the shape of an adventurer's left boot, with one lace done up in string. You find that you rather hope so." },
+      } },
+    { name = "an entry in the guest book, crossed",
+      description = "You turn back through the guest book. Eleven pages from the front, one line has been ruled through by a later and official hand, with a note: {i}No such day.{/} Under the ruling you can still read the entry: {i}Very comfortable. Like being inside a good idea. I shall not stay, I have a garden to see to.{/}" },
   },
 
   exits = {

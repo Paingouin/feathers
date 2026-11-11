@@ -139,6 +139,17 @@ space {
               say "A section of wall beside the gift shop grinds back and sideways, with a noise like a giant clearing his throat, and stops halfway. Nigel gives it a kick. It finishes. Behind it, a short passage, and at the end of that a glow of gold. \"You're meant to do the maze first,\" he says. \"But there's no Minotaur, so you'd only be walking.\"" },
           } },
       } },
+    { name = "a royal licence, framed",
+      description = "Behind the ticket booth, in a gilt frame, hangs the paper that allowed all this. {i}To the proprietor: leave to dig, fit out and operate one Dungeon, for the Peril and Improvement of Adventurers.{/} It is endorsed in one word, in a broad loose hand, and signed. The signature has been cut out with scissors, leaving a neat window on to the wall.",
+      things = {
+        { name = "the date", description = "A Thursday. The clerk at the booth says that the proprietor stood in a line all day for that word, got it at dusk, and came down here the same night to start digging. By Saturday he had been told that the licence was void, the day being void. He had already bought the skeletons." },
+        { name = "the window where the name was", description = "Through it you can see the rock. Somebody has drawn a small smiling face there, on the stone, in the hole, so that the licence still appears to be signed by a person." },
+      },
+      actions = {
+        { "Ask why it never opened", say "\"Could not get it stamped,\" says the booth. \"No licence, no opening. We applied again. The new arrangement is one petition a year, in order. We are number three thousand and six.\" A dust sheet stirs. \"Mr Clatter says that he will still be here. That is rather the point of Mr Clatter.\"" },
+      } },
+    { name = "a turnstile counter",
+      description = "A brass dial on the inner gate that clicks up one for every adventurer admitted. It reads {b}0000{/}. It has been oiled monthly for ninety years. The oil can sits beside it with a label: {i}In case.{/}" },
   },
 
   exits = {
@@ -233,6 +244,16 @@ space {
       description = "Sand, and a notice: {i}IN CASE OF DRAGON.{/} The sand has a cigar end in it, thirty years old. Somebody on the Committee came down the night before the opening, and sat in the dragon's chair, and looked at what they had made." },
     { name = "a torch that will not light",
       description = "One bracket in the ring stays dark. Nigel says it never has lit. He says it is the one on the east side, as near as he can judge, and that the painter asked for it to be left." },
+    { name = "a visitors' book for victors",
+      description = "On a lectern by the dais, bound in red, with a gold pen on a chain. {i}Those who have Prevailed will kindly sign.{/} Every page is blank. The ribbon is at page one.",
+      things = {
+        { name = "the first line", description = "Ruled, numbered 1, and waiting. Somebody has pencilled in the margin, very faintly, so that it can be rubbed out when the real one comes: {i}the Mimic, on a quiet night, for practice.{/}" },
+      },
+      actions = {
+        { "Sign it", say "You take up the gold pen. You have not prevailed. You came in by the staff door and nobody tried to stop you. You hold the pen over line one for some time. Then you put it down. From under the dust sheets comes a small dry sound, which is the noise that a skeleton makes when it approves." },
+      } },
+    { name = "a plinth for the victor's statue",
+      description = "At the back of the chamber: a marble block, ready, with dowel holes drilled in the top for a pair of feet. The proprietor ordered it in advance, from a mason who signs with a rose. The mason's note is still tied to it: {i}Second bare plinth I have cut this year. I should like, once, to be asked for the man.{/}" },
   },
 
   exits = {

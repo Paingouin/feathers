@@ -78,6 +78,17 @@ space {
       description = "A long way down: a drip, a hush, and now and then something so faint and many-voiced that you take it for your ears. It is like standing outside a hall where a crowd is talking. You cannot make out a word." },
     { name = "the last landing",
       description = "The stair ends in an arch with no door in it. Past the arch there is a floor of old paving, a great width of dark, and far off, low down, a scatter of lights like a town seen from the top of a pass at night." },
+    { name = "a niche with a pair of boots",
+      description = "On the second landing, in a recess cut for a lamp, stands a pair of large boots, side by side, very old. They are not carved. They are leather, gone hard as wood. Somebody coming up this stair, a long time ago, sat down here and took them off, and went on up without.",
+      things = {
+        { name = "the soles", description = "Worn through at the ball of each foot. He had walked a long way in them, underneath, before he got here. There is pale sand in the welts, of the kind that is on the island in the lake." },
+        { name = "a scratch in the niche", description = "One short line, cut with a knife point, where a person would rest a hand. It may be a tally of one. It may be the first stroke of a letter that he then thought better of." },
+      },
+      actions = {
+        { "Try one on", say "You could get both feet in it. You do not try the other. There are people in this kingdom who take boots off when they have decided something, and you have now found three places where one of them did it. You put it back beside its fellow, toes to the stair." },
+      } },
+    { name = "a string of red rags",
+      description = "Tied to the handrail at intervals all the way up, faded to pink: a surveyor's line. A tag on the lowest knot says {i}Survey of the Realm. Stair, uncounted. Abandoned at step 900 by order.{/} Under it, in pencil: {i}Dame Y. says go back up and do not write it down.{/}" },
   },
 
   exits = {
@@ -195,6 +206,17 @@ space {
         { name = "a library slip",
           description = "Tucked in the notebook. {i}Collegium Library. Due back.{/} The date is three hundred years gone. The borrower's name is given as {i}M. Pargeter{/}, and under Purpose of Loan she has written: {i}mine{/}." },
       } },
+    { name = "a course of newer stone",
+      description = "Low in the wall by the gate, between two of the ancient blocks, there is one stone that does not belong: pale, sharp-edged, with tool marks you could cut a finger on. It was let in to replace one that had gone. It is a repair.",
+      things = {
+        { name = "the repair", description = "Beautifully done. It carries the mason's mark of a small rose, and under it, for once, a date. Ninety years ago, in the spring, a Thursday. Somebody came down here on that day of all days and got leave, or a grant, to mend one stone in a wall that nobody had mended in ten thousand years." },
+        { name = "the old stone", description = "The one it replaced lies at the foot of the wall, split. The Warden will not have it moved. \"He asked to mend it,\" she says. \"He did not ask to throw the old one out. I go by what was asked.\"" },
+      },
+      actions = {
+        { "Ask the Warden who came", say "\"A mason,\" she says. \"My grandmother let him through. He had a paper, very grand, with one word on it. He said, {i}I have carved four kings and I have never been let mend a wall.{/} He was here three days. He cried when it was done, she said, and then went up to carve another king, and they made him take the name off that one within the week.\" She looks at the pale stone. \"So this is the only thing he ever signed that has stayed signed.\"" },
+      } },
+    { name = "a plumb bob on a nail",
+      description = "Brass, on a cord, hung by the repair where he left it. It is not the one that hangs off true toward the gate. This one hangs straight. The Warden's family have never been able to decide which of the two is wrong." },
   },
 
   exits = {
@@ -303,6 +325,17 @@ space {
       description = "The hall goes up inside the wall further than the wall can be tall. You do the sum twice. Either the roof of the cavern is not where you thought, or the Warden's family is right about where the wall goes." },
     { name = "the draught of voices",
       description = "Stand in the postern and you feel it on your face, coming in: every noise the kingdom is making at this moment, on its way to be kept. It does not feel sad. It is like standing in the door of a barn at harvest." },
+    { name = "a roost of one word",
+      description = "High on the long wall, a ledge is crowded from end to end with echoes of a single kind, pressed shoulder to shoulder like swallows on a wire. There are thousands. They are all the same word, in the same man's voice, and each is followed, a breath later, by a small roar.",
+      things = {
+        { name = "the word", description = "{i}Granted.{/} Said kindly, quickly, four thousand and nine times, with a little more hoarseness in each. The roars come after. They have never faded. An echo wears out by being repeated, and nobody has repeated these since, so that they are as fresh as on the afternoon they were made." },
+        { name = "a gap in the row", description = "One place on the ledge is empty, between two of them, about two thirds along. An echo flew, and has not come back. Somewhere in the kingdom one of the four thousand and nine is still going about, being said." },
+      },
+      actions = {
+        { "Say it yourself", say "\"Granted,\" you say, to nobody, for nothing. It goes up, small and unconvincing, and lands at the end of the row. The whole ledge shuffles along to make room. Yours is a poor thin one beside the others. But it sits there with them, and after a moment, very faintly, it gets a roar of its own." },
+      } },
+    { name = "a silence with a seal on it",
+      description = "Among the silences, lower down, there is one that is not natural: square at the corners and edged with red, like a thing cut out. It is the silence of a day that was not allowed to be spoken of. It is about the size of a door. It hums, slightly, as a jar does when there is a wasp in it." },
   },
 
   exits = {

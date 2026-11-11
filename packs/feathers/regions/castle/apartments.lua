@@ -115,6 +115,20 @@ space {
       things = {
         { name = "a toy boat", description = "Wooden, with a paper sail, in the soap dish. So it is not always unused." },
       } },
+    { name = "a row of bell boards",
+      description = "By the door, a board of little brass bells on springs, each labelled with a room. Most are for rooms in this castle. The bottom row is older, on darker wood, and was brought from somewhere else.",
+      things = {
+        { name = "the bottom row", description = "{i}Audience Court. Orangery. Baths. Maze.{/} The castle has none of these. The bells were moved here with the furniture, wired to nothing, and nobody has had the heart to take them down." },
+        { name = "the bell marked Maze", description = "It is the only one on the board without a spring of dust on it. As you look, it moves. Not a ring: a tremble, as a cup does on a table when a cart goes by. The Groom of the Bedchamber says that it does that of an afternoon and that the house has settled." },
+      },
+      actions = {
+        { "Flick the Audience Court bell", say "It gives a small flat tink. Down the corridor a very old footman comes to attention out of a doze, takes two steps towards a room forty years and a morning's walk away, and stops, and looks at his hands." },
+      } },
+    { name = "a pair of red-heeled shoes",
+      description = "In the bottom of the great wardrobe, behind the boots, in a bag: court shoes of a cut three reigns old, never worn, with the shoemaker's paper still in the toes. They are a ten. The present King takes an eight.",
+      things = {
+        { name = "the shoemaker's paper", description = "{i}To replace the pair His Majesty left behind. With respect, he will want them when he returns.{/} There is no date. The bill underneath is marked {i}Granted{/} in pencil, and has not been paid." },
+      } },
   },
 
   exits = {
@@ -231,6 +245,16 @@ space {
       things = {
         { name = "the top letter", description = "{i}To the Council. Gentlemen, I have been thinking, and I wonder whether we might simply{/} and there it stops. All of them stop about there." },
         { name = "the oldest bundle", description = "The ribbon has rotted. The top sheet has one line, in a hand you cannot date: {i}To whoever was here before us. Thank you for the hill.{/} It was never sent. Nobody knew where to." },
+      } },
+    { name = "a walnut on the shelf",
+      description = "Among the humbugs and the letters, a single walnut in its green husk, quite fresh. The King says that one turns up on the garden wall every autumn, on the same brick, and that he has never caught who leaves it.",
+      actions = {
+        { "Smell it", say "Sharp, green and bitter, and it leaves a brown mark on your thumb that will be there for a week. It did not grow in this garden. There is no walnut tree on the castle hill." },
+      } },
+    { name = "a page in a different hand",
+      description = "Loose in the drawer of letters not sent: half a sheet, old, soft at the folds. It was not written by any Humbert. The hand is broad and loose.",
+      things = {
+        { name = "what it says", description = "{i}To whoever has this room after me. They will tell you that you cannot say yes. You can. It costs everything, that is all, and you will not miss it.{/} It is unsigned. Where the signature would be the paper has been scraped thin with a knife, and is very nearly a hole." },
       } },
   },
 
@@ -366,6 +390,17 @@ space {
         { name = "the present King's", description = "A lion. If you look closely the lion is holding something. It was meant to be a sceptre. The engraver had met the King, and it is a carrot." },
         { name = "the first one on the board", description = "Not wax. A disc of baked clay, with no lion at all: a single curved line, pressed in with something that was not a tool. The Keeper has it labelled {i}prior{/}." },
       } },
+    { name = "a week's journal with a narrow spine",
+      description = "On the shelf of Court Journals, bound by the week, one volume in the old series stands a little back from its neighbours. It is a seventh thinner than the rest.",
+      things = {
+        { name = "the binding", description = "Rebound, in a hurry, with the old boards cut down. The binder has left his knife marks on the inside of the spine and a note on the pastedown: {i}as instructed. I kept nothing.{/}" },
+        { name = "a pressed flower", description = "Hawthorn, between Wednesday and Friday, gone to brown lace. It has stained the two pages it lies between, each with half of the same blossom, so that when the book is shut the day is still there, in the shape of a flower." },
+      },
+      actions = {
+        { "Ask the Keeper about it", say "\"Erstwhile series,\" says the Keeper of the Rolls, not looking up. \"They came on the carts. We do not consult them.\" You ask why not. \"Because the last man who did asked a question at dinner,\" he says, \"and was made ambassador to the Sweltering. He writes that it is very warm.\"" },
+      } },
+    { name = "an inventory of things left behind",
+      description = "Nine sheets, headed {i}Erstwhile: not removed{/}. A throne, too big for the door. A library, too heavy. A fountain. A walnut tree. At the bottom of the last sheet a clerk has added, and another has struck through, and a third has written in again: {i}one porter{/}." },
   },
 
   exits = {

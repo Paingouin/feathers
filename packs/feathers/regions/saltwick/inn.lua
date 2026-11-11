@@ -153,6 +153,17 @@ space {
       actions = {
         { "Throw one", say "You allow for the slope. You allow too much. The dart goes into a beam, a hand's breadth from a very old dart with a tag on it that says {i}the baron, 2 pints{/}. You are in good company." },
       } },
+    { name = "a man from Blowhard",
+      description = "In the corner farthest from the fire, with his chair turned to the window, drinking small beer very slowly: a broad, quiet man in a jersey with a white whale knitted on the front. He is down for his sister's wedding. He has been a whaler for thirty years.",
+      things = {
+        { name = "his jersey", description = "Every Station has its pattern. This one is a whale, blowing, and round the hem a row of small figures in a boat, sitting down." },
+        { name = "his hands", description = "Rope scarred, enormous, and at this moment folding a paper napkin into the shape of a calf with a tail. He leaves one on every table he sits at. The potboy has a collection." },
+      },
+      actions = {
+        { "Ask how many he has caught", say "The room goes a little quiet. Every sailor in Saltwick has asked him that, and they want to see your face. \"None,\" he says, comfortably. You say, in thirty years? \"A hundred and ten, counting my father's and his,\" he says. \"We've a clean sheet.\" He sets the paper whale in front of you. \"You'd need to come up and hear them. Then you'd not ask.\"" },
+      } },
+    { name = "a horn mug with a thong",
+      description = "On a nail behind the bar, apart from the pewter. It is kept for the mate of the northern mail, who will not drink from metal. The landlord thinks it an affectation. He has, all the same, been seen warming it for him on a cold night, before he gets in." },
   },
 
   exits = {
@@ -274,6 +285,19 @@ space {
       actions = {
         { "Thread the needle", say "You try for some time. Mistress Brine takes it from you, threads it behind her back while looking at the ceiling, and hands it over. \"There,\" she says. \"Now you've threaded a needle.\"" },
       } },
+    { name = "the northern shelf",
+      description = "At the back, above the tar, a shelf of goods that nobody in Saltwick buys and one boat a year depends on.",
+      things = {
+        { name = "snow goggles", description = "A strip of driftwood, carved to fit the face, with two slits to see through no wider than a coin's edge. The chandler put a pair on once to see. He says the whole world became a letter box." },
+        { name = "an ice saw", description = "Six feet long, with teeth like a shark's and a handle at one end only. The other end has a ring for a weight. It is priced in fish." },
+        { name = "a tin of red paint", description = "{i}Signal Red, Best.{/} One tin a year, for the houses of a town that needs to be found in the snow. Next to it, one tin of yellow. They are particular, up there, about not being the same colour as the weather." },
+        { name = "a sack of beach stones", description = "Round, grey, the size of loaves, picked off the Long Strand by the chandler's boy at a penny the dozen. They are for a bath house. You ask what a bath house wants with stones and are told that they heat them. You ask why they do not use their own. The chandler says there are not any. You think about a country with no stones in it, all the way home." },
+      },
+      actions = {
+        { "Try on the snow goggles", say "The shop goes away. What is left is one bright slot, with a lamp in it and half the chandler. You turn your head and get the other half. \"That's all you want to see, up there,\" he says. \"The rest of it'd blind you.\"" },
+      } },
+    { name = "a coil of rope with a red thread",
+      description = "Every strand has one red yarn laid into it, the whole length. It is made for a town that strings rope from post to post down its street, to be followed home by hand in a white blow. The chandler says the red is so you know it is the right rope. You wonder what the wrong rope would be, out there, and where it would take you." },
   },
 
   exits = {
@@ -397,6 +421,17 @@ space {
       actions = {
         { "Pull on the stone rope", say "It does not give. You did not think it would. But far out past the mole, where the water has gone to, something knocks once against the floor of the sea, the way a boat knocks on a quay when you take hold of her painter." },
       } },
+    { name = "a whale's rib in the mud",
+      description = "Bedded in the silt, curved, grey, as long as a boat: one great rib, with barnacles on it. No whale was ever brought into Saltwick. It came in by itself, a long time ago, and lay down here, and the harbour was built round where it lay.",
+      things = {
+        { name = "the barnacles", description = "Shut tight, waiting for the water. You tap one. Nothing. They have the look of a row of small closed shops." },
+        { name = "a mooring ring", description = "Somebody has driven an iron staple into the end of the rib and used it to tie up a dinghy, for a hundred years or so. The rib has grown no opinions about it." },
+      },
+      actions = {
+        { "Sit on the rib", say "It is smooth and dry on top and exactly the height of a bench. You sit in the middle of the empty harbour, on a whale, with the weed steaming. You feel that you ought to apologise to it for something, and you cannot think what, never having met one." },
+      } },
+    { name = "a lump of clear glass",
+      description = "Half buried by the mole footings: a slab as big as a paving stone, bluish, with bubbles in it. You take it for glass until you touch it. It is ice, as hard as rock, lying in the mud of a harbour in a mild season, not melting. It has slid off the deck of the northern mail at some time and sat under the water ever since, keeping its own counsel. The tide being out seems to be a matter of indifference to it." },
   },
 
   exits = {
@@ -491,6 +526,17 @@ space {
         { name = "the newest strokes", description = "Wim's, with a cold chisel, neat. He comes down each morning and cuts last night." },
         { name = "the oldest strokes", description = "Under the damp line, worn nearly smooth, and not cut with a chisel. Something scored them with a single point, deep, each one as long as your arm. There are a great many. They were counting nights here before there was a Light to count them for." },
       } },
+    { name = "a horn lantern from the north",
+      description = "On a shelf of its own, wrapped in a bit of sealskin: a little lantern with windows of scraped horn and a candle end in it. A card is tied to the ring.",
+      things = {
+        { name = "the card", description = "{i}Mr Wim: you will not believe my tower, so here is my flame. It was lit from the one before, and that from the one before. It has not been out in a hundred and four years. Light your lamp from it once, if you care to, and then yours and mine are the same fire. M. Frost, the Cold Light.{/}" },
+        { name = "the candle end", description = "Burned down an inch and pinched out. So he did light it. And somewhere up in the lamp room, since that night, the Saltwick Light has been burning a flame that began on a pole on the ice. He has told nobody. He keeps the lantern where he keeps the things he would save first." },
+      },
+      actions = {
+        { "Hold the lantern", say "It weighs nothing. The horn is the colour of weak tea and warm from your hand in a moment. You think of two old keepers, four hundred miles apart, who have never met and never will, each climbing a stair at dusk to tend the same fire." },
+      } },
+    { name = "a puddle with a skin of ice",
+      description = "In the lowest corner, where the floor dips, a pool no bigger than a plate has frozen over, though the cellar is only cool. It is directly under the shelf with the lantern. Wim puts it down to a draught." },
   },
 
   exits = {

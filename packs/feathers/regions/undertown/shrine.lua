@@ -64,6 +64,17 @@ space {
       description = "No latch, no hinge that you can find, no keyhole. The stone of the jamb is worn at shoulder height on both sides, at a great many different heights of shoulder." },
     { name = "the warmth",
       description = "It is not cold in here. It ought to be: you are under a cistern, under a drain, under a town. The stone gives back a little heat to the hand, the way a wall does in the evening after a fine day." },
+    { name = "a row of worn hollows",
+      description = "In front of the stone bench the floor is dished in a line, as a doorstep is, by knees. Somebody knelt here, or a great many somebodies, for a very long time, facing the empty plinth. The hollows are different sizes.",
+      things = {
+        { name = "the smallest hollow", description = "A child's. It is nearest the lamp. Whoever made it came often and did not grow, or came often and was replaced." },
+        { name = "the newest hollow", description = "Hardly a dip, at the end of the row, in stone that is otherwise unworn. Somebody began coming lately. Lately, down here, might be a hundred years." },
+      },
+      actions = {
+        { "Kneel in one", say "You pick the one that fits, and it does fit, rather better than a bought boot. The stone is warm. You do not know what was asked for here. You find that you have asked for something yourself, without deciding to, and it was small." },
+      } },
+    { name = "a dwarf's lamp hook",
+      description = "An iron hook in the wall at the height of your belt, with a square shank. Dwarf work. They came, they hung up a lamp, and they looked, and by the grease on the hook they stayed some hours. Then they took the lamp away and left the hook, as a person leaves a chair for the next." },
   },
 
   exits = {

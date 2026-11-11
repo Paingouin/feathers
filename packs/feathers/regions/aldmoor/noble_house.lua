@@ -120,6 +120,21 @@ space {
       things = {
         { name = "the Baron's hand", description = "Face down, with a wine glass on it so that it cannot be looked at. You look at the glass instead. The cards are reflected in the base. So that is how the Baroness does it." },
       } },
+    { name = "the family chaplain",
+      description = "A plump clergyman by the fire with a glass of madeira, attached to the house for the look of the thing. He says grace at dinner and is otherwise not called on. He was appointed to Saint Ledger and has, over twenty years of the Baroness's table, drifted towards Soup.",
+      things = {
+        { name = "his glass", description = "Never empty and never seen to be filled. He ascribes this to providence. The butler ascribes it to the butler." },
+        { name = "his prayer book", description = "On his knee, closed, with a vol-au-vent on it. The marker is at the grace before meat. The pages after it have never been cut." },
+      },
+      actions = {
+        { "Ask him about the small gods", say "\"Oh, they are all quite real,\" he says comfortably. \"One would not like to say so in a sermon. One calls on them as one calls on neighbours. Ledger is punctual. Socks is a dear. The Goose one leaves a card and goes away.\" He looks into the madeira. \"Soup, one calls on rather often. She does not seem to mind which door.\"" },
+      } },
+    { name = "a tapestry screen",
+      description = "Folding, three leaves, in front of a draught. It shows a hunt: lords, hounds, a stag going over a hill. It has been in the family three hundred years and nobody has looked at it since the day it was hung.",
+      things = {
+        { name = "the third leaf", description = "The stag has got away. The weavers have put the lords and the hounds all on the first two leaves, looking the wrong way. On the third there is only the hill, and the stag on top of it, taking its ease." },
+        { name = "a darn", description = "Low down, in wool of nearly the right green. A footman put his boot through it in the old Baron's time. The darn is better work than the tapestry." },
+      } },
   },
 
   exits = {

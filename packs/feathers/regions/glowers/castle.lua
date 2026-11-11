@@ -89,6 +89,26 @@ space {
         { "Step over it", say "You lift one leg across. A growl starts, somewhere under the stone, low enough to feel in your teeth. You stop. The growl goes on, and then you see the tail. You have been standing on it." },
         { "Offer your hand", say "It sniffs. It considers the garlic about you with a connoisseur's distaste. Then it leans its whole head into your palm, heavily, with a sigh, like a dog that is hardly ever visited." },
       } },
+    { name = "the letter box",
+      description = "Set in the gate tower at the height of a tall man's hand: a slot of black iron with a flap, and under it a brass plate rubbed nearly smooth.",
+      things = {
+        { name = "the brass plate", description = "{i}LETTERS.{/} And smaller: {i}No circulars. No hawkers. Stakes to the tradesmen's entrance.{/}" },
+        { name = "the flap", description = "It lifts without a sound. Oiled. Inside there is a wire basket, and in the basket nothing at all, and round the basket no dust. Somebody looks in it every day." },
+        { name = "a spider's web across one corner", description = "Left on purpose, you think. Everything else has been cleaned to within an inch of its life, and the web has been cleaned round." },
+      },
+      actions = {
+        { "Look through the slot", say "A stone passage. A small table. On the table, a salver, silver, polished, and a paperknife laid ready beside it at a neat angle. They have both been waiting for the post since before your country had its present shape." },
+      } },
+    { name = "the tradesmen's entrance",
+      description = "A plain door round the side of the gatehouse, with a bell pull and a slate.",
+      things = {
+        { name = "the slate", description = "The week's orders, in Grist's small upright hand. {i}Beetroot, 2 cwt. Candles, black, 1 gross. Candles, ordinary, 1 gross (he will not say which he prefers). Sugar. Caraway.{/}" },
+        { name = "a crate of empties", description = "Wine bottles, dark green, rinsed, with the labels soaked off. They all smell, very faintly, of beetroot. You could take one down to the village and end three centuries of gossip. Nobody would thank you." },
+        { name = "a row of casks", description = "Small ones, bunged and chalked: {i}To the Firm, Below. Contracts Dept. RED.{/} A carrier's docket is nailed to the first. The carrier has signed for them with a thumbprint of soot." },
+      },
+      actions = {
+        { "Pull the bell", say "A long way off, something jangles. After a decent interval a hatch opens in the door at chest height and a silver tray comes out with a card on it. {i}Tradesmen are thanked. Guests are requested to use the knocker, which has been looking forward to it.{/}" },
+      } },
   },
 
   exits = {
@@ -301,6 +321,25 @@ space {
 
     { name = "the carpet",
       description = "Red, worn through to the backing in a single line: from the head of the table to the window, and back." },
+    { name = "the dumb waiter",
+      description = "A hatch in the panelling with a rope. Dinner comes up in it from the kitchen, course by course, for one diner and a guest who has not come.",
+      things = {
+        { name = "the rope", description = "Worn smooth and dark where one hand has hauled it, twice a night, for an age." },
+        { name = "the dish that is coming up", description = "Under a silver cover. You lift it. A beetroot, whole, roasted, on a bed of salt. Beside it, on a smaller plate, under a smaller cover, the same again: the guest's." },
+        { name = "a note from the kitchen", description = "Tucked under the plate, in pencil. {i}Sir. It is the beetroot again. It is always the beetroot. I could do a chop. Nobody would know. Yr. obt., Cook.{/} Under it, in the fine black hand: {i}I should know. Thank you, Cook.{/}" },
+      },
+      actions = {
+        { "Haul the rope", say "It comes up easily. Whoever is at the bottom is helping. A third plate arrives, uncovered: a slice of seed cake and a glass of milk, and a scrap of paper. {i}For the young person. You'll not want what he has.{/}" },
+      } },
+    { name = "the wine cooler",
+      description = "A tub of silver on lion feet, by the Count's chair, packed with ice. One bottle, dark, with its neck in a napkin.",
+      things = {
+        { name = "the bottle", description = "No label. Thick, red, and opaque when you tilt it to the candles. The Count sees you looking. \"It is exactly what you fear it is not,\" he says. \"I have it from my own kitchen garden.\"" },
+        { name = "the ice", description = "Cut from the moat each winter and kept in a pit under the north tower. There is a frog in one of the blocks, quite well, looking out." },
+      },
+      actions = {
+        { "Accept a glass", say "He pours it himself, a thumb's depth. It is beetroot. It has been pressed, strained, mulled with clove and let go cold, and it is still beetroot. You get it down. \"You are the first guest to finish one,\" says the Count, with real emotion. \"The others were too polite to drink it, and far too polite to say why.\"" },
+      } },
   },
 
   exits = {

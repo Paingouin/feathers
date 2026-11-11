@@ -240,6 +240,23 @@ space {
         candle { description = "The chairman's. Thicker than the rest. He provides his own." },
         { name = "the thirteenth socket", description = "Never filled. The founding rules provide a seat and a light for {i}such one as shall at last go up{/}. There is wax in it now, a single cold drop. It was not there, you think, when you came in." },
       } },
+    { name = "the attendance board",
+      description = "A slab of varnished oak with gilt lettering: every member of the Vigilant Society who ever went up to the castle, with a column for the date and a column headed {i}OUTCOME{/}.",
+      things = {
+        { name = "the first entry", description = "{i}Sir Bors Halloran. Went up armed. Outcome: was asked to stay to dinner. Declined. Regretted it. (The dinner.){/}" },
+        { name = "the middle entries", description = "{i}Went up. Was shown the roses. Went up. Was lent a book. Went up; he was out; left card.{/} Forty names. Not one stake." },
+        { name = "the last entry", description = "{i}H. Dobble, Chairman. Got as far as the gate. It was raining. Came back for a hat.{/} The date is eleven years old. The hat is on a peg under the board." },
+      },
+      actions = {
+        { "Add your name", say "There is a pot of gold paint and a brush gone hard. You scratch it in with the wrong end. {i}Went up.{/} You leave the outcome blank. It seems to be the custom." },
+      } },
+    { name = "the Society's library",
+      description = "A single shelf, chained, of works on the undead and their destruction.",
+      things = {
+        { name = "the oldest book", description = "{i}A Certain Method.{/} Hand-written. The certain method turns out to need a virgin, a white horse, and a week of dry weather, and the Society has never had all three in the same month." },
+        { name = "a book with a rose pressed in it", description = "Lent from the castle library, a hundred and forty years overdue. {i}On the Care of Old Climbers.{/} The fine is noted on a slip in an elegant hand: {i}Pray do not trouble. Keep it. R.{/}" },
+        { name = "a pamphlet", description = "{i}Is Your Neighbour One? Twelve Signs.{/} Somebody has gone through it ticking the signs against Ham Dobble's mother-in-law. She scores nine." },
+      } },
   },
 
   exits = {

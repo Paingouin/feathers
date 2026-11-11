@@ -96,6 +96,17 @@ space {
       actions = {
         { "Listen", say "It goes round. You catch one word, again and again, where the needle pulls tight. You ask what it means. \"Hold,\" says Isa. \"It only means hold.\"" },
       } },
+    { name = "an ice net",
+      description = "Hung by itself at the gable end: a small close net with a wooden hoop, like a landing net for something that lives down a well. It is on order for the Lines, north of the Stack, where they fish through a hole in the sea.",
+      things = {
+        { name = "the hoop", description = "A foot across. The net is as fine as lace and forty fathoms long. Old Kirsty says it is like knitting a stocking for a giant with one very thin leg." },
+        { name = "the order", description = "A slip of whalebone with nine notches and a picture of a fish, scratched with a nail. Nobody up there wrote it. They do not waste paper on a thing a picture will say." },
+      },
+      actions = {
+        { "Ask how you fish through ice", say "\"You sit,\" says Kirsty. \"On a box. In a hut the size of a privy. With a string.\" Isa says she would go mad. Bel says she would take her knitting. Kirsty says that is the whole of the difference between the south and the north, and that Bel should have been born up there." },
+      } },
+    { name = "a bolt of red flannel",
+      description = "On the cutting bench, with the shears on it. A length is cut off every third year and sent north with a man from the Survey. The net wives have never been told what it is for. They have decided between them that it is for his chest, and put in a little extra." },
   },
 
   exits = {
@@ -206,6 +217,17 @@ space {
         { name = "the view from the door", description = "Straight along the shore to the point, and the white hut, and the flagstaff. From here you could see a man in a badged hat set out, and you would have a quarter of an hour." },
         { name = "a cord with a net cork on it", description = "It goes up from the door post, along the eaves and in at the top of the back wall. If you pulled it, something would jingle a long way off. It is within easy reach of the splitting table." },
       } },
+    { name = "a crate for the north",
+      description = "Packed with split cod, dried on the racks until they are as hard as planks, and nailed down under a lid stencilled {i}DRIFT{/}. The north sends its fish south to be smoked and takes them home again. Rab says it is daft. Wull, on the other side of the shed, says nothing, with emphasis.",
+      things = {
+        { name = "a stockfish", description = "A yard long and as stiff as a shingle. You could build with it. They say that up there, in a bad year, somebody did." },
+        { name = "a wolf fish", description = "Blue-grey, with the face of an old boxer, smoked whole with its mouth open. Rab keeps it over the door for luck. It came down frozen solid and still looking for somebody to bite." },
+      },
+      actions = {
+        { "Knock on a stockfish", say "It rings like a board. Rab watches you. \"Soak it a week,\" he says. \"Then beat it with a mallet. Then it's the best thing you ever ate.\" From the far end of the shed comes one syllable, the first you have heard Wull utter, and it is \"Fortnight.\"" },
+      } },
+    { name = "a block of ice in sawdust",
+      description = "In a tub by the brine tank, half melted: clear, bluish, and older than anybody's grandmother. The mail boat brings one down each trip, as ballast. The brothers use it to keep the brine cold. Wull once saw something small and silver frozen in the middle of one and would not let it be chipped. It was let melt in a bucket, on his side of the shed, and what it was he has not told Rab." },
   },
 
   exits = {
@@ -319,6 +341,17 @@ space {
       description = "Square, green, unlabelled, in straw. Beside them a stack of printed labels from a Saltwick wine merchant, very genteel, and a pot of paste. The merchant has never heard of the islands. His labels are admired here." },
     { name = "the peat stack",
       description = "Indoors, dry, built to the roof. It is the best peat on Muckle, cut from the bank behind the chapel. The minister knows. He has prayed about it and been told, he says, to mind his own." },
+    { name = "three kegs chalked with an N",
+      description = "Small, iron bound, set apart on a rack by the door. The north run. It goes up on the mail boat labelled {i}Lamp Oil, Second Quality{/}, and the Customs officer knows, and the mail skipper knows, and the kegs come back empty with a string of dried cod tied to each bung by way of thanks.",
+      things = {
+        { name = "the strings of cod", description = "Hard as kindling and nearly as dry. Peg hangs them from the rafters. She says it is the only payment she has ever had that got better with keeping." },
+        { name = "a note in a keg hoop", description = "Tucked under the iron: {i}Peg. It did not freeze. Nothing else up here can say as much. More. Halvard.{/}" },
+      },
+      actions = {
+        { "Ask why the north gets the best", say "\"They don't water it,\" says Peg. \"Can't. It'd set.\" She taps a keg with her knuckle. \"And they drink it out of doors, standing up, the day the sun comes back. A drop of mine, for that. I'd send it for nothing if they'd not be offended.\"" },
+      } },
+    { name = "a spirit thermometer",
+      description = "On the wall by the worm tub, with a scale that stops at freezing. Peg has no use for anything lower. A cousin in Drift once sent her one with three more marks inked in at the bottom, and she sent it back with a note that said she had read it and felt cold all day." },
   },
 
   exits = {

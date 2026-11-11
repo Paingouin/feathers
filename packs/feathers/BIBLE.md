@@ -29,10 +29,11 @@ are, where they lie and what they do is undecided.
   look into.
 - Nothing is random. Every place and thing is hand-written, and the same for everyone.
 - Everything has a description. Most things have something inside them.
-- **Dense.** A space carries about 10 to 16 things at the top level, most of them nested two to
-  four deep, most with something to do. A tavern has its mugs, tables, regulars, kitchen, cellar
-  and rooms. A city has streets, shops, houses, a watch, a gaol and walls. When in doubt, open it
-  and put something inside. Old places are enriched in every batch.
+- **Sized to the place.** A small place with a few things is fine; a big place with a great many
+  is fine too. Things nest two to four deep where it suits, most with something to do. A tavern
+  has its mugs, tables, regulars, kitchen, cellar and rooms. A city has streets, shops, houses, a
+  watch, a gaol and walls. Never pad a small place to reach a count. Old places are enriched only
+  when they feel empty for what they are.
 - Items are keys and curiosities. They are obtained through actions and open routes.
 - **Artifacts** are mighty, legendary items that can be collected and not used. They are hidden
   deep or kept in secret places, and counted by the Artifacts tracker. Exploring pays off.
@@ -56,7 +57,7 @@ are, where they lie and what they do is undecided.
 
 ## What exists
 
-239 spaces (69 secret), 56 artifacts. `(s)` secret, `(w)` wonder.
+337 spaces (99 secret), 80 artifacts. `(s)` secret, `(w)` wonder.
 
 | Region | Spaces |
 |---|---|
@@ -77,6 +78,12 @@ are, where they lie and what they do is undecided.
 | The Loose Ends, sky islands | the Path That Kept Going (w), Landfall, Tether, Lightly & Daughter, the Keel (s), Spar's kites, Where Things Go (s, w), The Slow Spill (inn), the Cloud Pasture, Wrong Way Up (w), the Weather Office, the Returns (s, w), the Fall That Never Lands (w), the Other Observatory, the Chart Room (s) |
 | The Further Down, under everything | Past the Last Grating, the Slow River, the Pale Wood, inside the Great Cap (s), Pardon (w), The Closed Eye (inn), the Lost Property Market, the Unclaimed Shelf (s, w), the Dungeon of Dire Peril, the Final Chamber (s), the Lake With No Far Side (w), the Island in the Middle (s), the Stair Nobody Counted, the Wall Underneath, Where the Echoes Go (s, w) |
 | The Sweltering, a jungle | Mango Landing, Pomfret's Northern Curiosities, the Antiquities Department (s), aboard the Perhaps, the Falls of Standing Rain (w), Stilts, the Hammock House, Camp Brandish, the High Walk, the Hostess's Dell (s), the Ring of Giants, the Tower of Magister Null (s, w), the Red Temple, the Waiting Room under it (s), Mount Maybe, Where It Considers (s, w) |
+| Head Office, where the devils work | Reception, the Lift, Under the Bottom (s, w), the Department of Temptation, Contracts, the Small Print (s, w), Personnel, the Staff Canteen, the Archive, the Refusals (s, w), Customer Experience, the Works, the Stokers' Garden (s, w), the Executive Floor, the Chairman's Office (s) |
+| The Small Heavens, planes of the small gods | the Airing Cupboard, Behind the Heavens (s), the Passage of Jamb, the Doorstep, the Porch, Clamber's Hill, About Four on a Thursday, the Prayer Office, Not Known at This Address (s, w), the Anteroom of the Not Yet (s), the Kitchen of Auntie Stock, the Halls of Thrum (w), the Celestial Counting House, Down the Back of the Bench (s), Very Nearly (s, w) |
+| The Cold Shoulder, the frozen north | the Regardless (mail boat), Blowhard Station, Drift, Number 14 Patience Row, Gudrun Tallow the chandler, The Thin Ice (inn), the Bath House, the Kettle (s), the Lines, the Moot (s), H.M.S. Perseverance, the Great Cabin (s), the Hanging Water, the Cold Light, the Look (s, w), the Last Hut, Peg Sixty-Two (s, w) |
+| The Dithers, a fen | the Mostly Causeway, the Staithe, Much Wavering, Withy Row, No. 3 the Boards, The Loose Mooring (floating inn), the Lodgings (s), the Heronry, the Holt (s), the Turbary, the Keeping (s, w), Fogmere (w), Under Fogmere (s, w), the Spire of Little Wavering (w), the Lower House (s) |
+| The Parch, a desert | the Desert Express, Budget's End, The Long Wait (caravanserai), the Caravan, the Thousand Awnings, Wick's Lamps, Inside the Lamp (s, w), the Baths of Great Shade, the Court of the Reasonable Sultana, the Itemised Pyramid, the King's Own Account (s), the White Nothing, the Oasis As Advertised, the Mirage From Inside (s, w), the Singers, the Top of the Pillar (s), the City Half Out, the Library of Sand (s, w) |
+| Erstwhile, the old capital | the Old Road, the Kings' Gate, the Processional Way, the Wednesday Market, the Royal Baths, The Quiet Pint (inn), the Rose and Remainder (theatre), Under the Stage (s), the Royal Mint, the Strong Room (s), the Old Palace, the Throne Room, the Hall of Kings, the Old Royal Library, the Struck Shelf (s), the Thursday (s, w), the King's Gardens, the Middle of the Maze (s, w) |
 
 **Artifacts** (collected, never used): Griffonsbane, the Unfalling Staff, the rat crown, the muster
 horn; the Right Hand of Saint Wobble, the Staff of Orrin Skybreaker, the Left Hand of Maud
@@ -91,7 +98,13 @@ Wind in Bond, the Selkie Chart, the Tongue of the Drowned Bell; the Stake of Sai
 Patient Mirror, the Cape of Entrances, the Fair Contract; the Kite That Flies the Wind, the Day
 Kept Back, the Plumb Line That Points Up, the Pin of the Fixed Star; the Lamp of the Kept Noon,
 the Finding Needle, the Aegis Provisional, the Oar of the First Crossing; the North Wind bottled,
-Pathmaker, the Cloak of Unseeing, the Idol of Considerable Patience.
+Pathmaker, the Cloak of Unseeing, the Idol of Considerable Patience; the Last Full Stop, the Plain
+No, the Pen That Binds, the Original Pitchfork; the Latchkey of Heaven, the First Farthing, the
+Thunderbolt of Thrum, the Crown You Nearly Had; the Unthrown Harpoon, the Writ of Standing, the
+Fallen Ribbon, the Last Sheet; the Broom That Swept the Sea Back, Jack's Own Lantern, the Torc of
+the King in the Peat, the Old Mace of the Lower House; the Abacus of the Last Sum, the Unspent
+Wish, the Windproof Page, the Flask of As Advertised; the Pasteboard Crown, the Unstruck Die, the
+Book of Grants, the Pen of the Last Thursday.
 
 **People who recur:** Mag Pargeter, hedge-witch of Greenhollow, forged her own patent of nobility
 to found the Collegium, wrote the real lessons on a wall for servants, and signed the dwarves'
@@ -202,6 +215,56 @@ Office below; what holds the Loose Ends up and the word scraped off the First Ch
 the Wall Underneath, the seventh rower on the island, the gaol key for the end cell; the second
 door under the Red Temple.
 
+Added in 0.8.0. The tube marked DOWN in the Lower Office reaches Head Office; signing the
+visitors' book works the lift; Mr Brimley's confirmation can be carried up and stamped, after
+which he is no longer Acting. Each shrine on the Street of Small Gods takes a small devotion and
+opens its god's plane; the staff corridor behind the Airing Cupboard joins them. The mail boat
+runs north from Muckle Afterthought to the Cold Shoulder once you help with the bag. A line of
+stones west of the reed beds is the Mostly Causeway into the Dithers; waking the punter opens the
+fen, and the floating inn is found by following the marsh light. The platform ticket also boards
+the Desert Express at the Punctual Gate; a date buys the lead camel's consent, a bath admits to
+the Sultana's court. A turning nobody takes on Petitioners' Hill is the Old Road to Erstwhile;
+admitting you do not know the password passes the gate. The airship also moors at Blowhard
+Station and at Post No. 9 on the salt.
+
+Settled in 0.8.0. The repealed Thursday: ninety years ago, in Erstwhile, the King heard all 4,009
+petitioners in one afternoon and granted every request, giving away more than the Crown owned.
+The Council could neither honour nor refuse a king's word, so it struck the day from the calendar
+and his name from every stone, coin and book, moved the court to Stillstanding, and founded the
+one-petition-a-year queue. The Treasury's single coin dates from this. His statue is the one in
+the Oubliette. He walked barefoot into the maze and no prints come out; a ninety-year-old walnut
+stands one stride past the last one (implied, never stated). His name is never given. The gods
+are younger than the world and none of them made it; nor did the devils, whose First Claim came
+back stamped PRIOR. Thrum, Lord of All, has been forgotten nine hundred years.
+
+People since 0.8.0: Miss Cinder, Old Scuttle, Mrs Scorch, Mr Quire, Mr Wrack and the Chairman (who
+is out) at Head Office. The gods: Our Lady of Lost Socks, Jamb, Mother Mind-the-Step, Old
+Looks-Like-Rain, Old Clamber, the God of Thursdays, Auntie Stock, Saint Ledger, Tuppence, Almost;
+Vesper the caretaker; Mrs Collect, Postmistress of Heaven. North: Captain Agnes Thole of the
+Regardless, Josiah Flense, Mother Skerry, Captain Sir Edmund Fallow of the Perseverance, Marit
+Frost of the Cold Light, Mr Aubrey Level of the Survey. In the fen: Seth Quant the punter, Thirza
+Pym the Reeve, the Tuesday Circle (Agnes Mould, Dorcas Withy, Petronella Fogg), the King in the
+Peat. In the Parch: Mr Punch and Mrs Cinder of the Express, Ezra Halt, Ama Shool, the Duchess (a
+camel), Sultana Emmerat the Reasonable, Bartlemy the genie, King Tot the Exact, Steadfast Ibb. In
+Erstwhile: Garrick the ghost sentry, Mr Ambrose Lull the living landlord, Master Quire the
+librarian, Master Bezant of the Mint, Rose the mason.
+
+Hints added in 0.8.0, to keep or veto (two per region). Head Office stands on a seamless pale
+floor it did not lay, with one curved line in it; the Chairman's pencil note on the First Claim,
+"Quite right." The prayers addressed to no god go in a pigeonhole marked with a curved line and
+are gone by morning; "the light was already on when the first of us got here." The oldest ice is
+perfectly clear, as if there had been nothing yet to make dust; the surveyor's chain comes out a
+little long, lately. The Old Track in the peat was laid ready before there was anyone to walk it;
+the frogs' first Act found that "things were already going on". The pyramid's first line: "The
+ground: received. Not invoiced. Query."; every lintel of the buried city has the curved line. The
+first king "came up the hill", with a second line ruled and never cut; the Chronicle "from the
+Beginning" opens in the second year.
+
+Left open in 0.8.0: where the Chairman is; who empties the pigeonhole, and whether the cat is the
+Unknown God; where Mr Pargeter went (his prints go north past Peg Sixty-Two) and what is past it;
+where the Old Track leads; Phase Two of the railway and the Far Coast; whether the walnut is the
+King; a large barefoot visitor underground.
+
 Left open on purpose: what the Ribs were, and the passage going further into the head; what the
 Gap is; who is fed in the bricked-up cell of the gaol; who signs the tide back in.
 
@@ -209,12 +272,10 @@ Gap is; who is fed in the bricked-up cell of the gaol; who signs the tide back i
 
 In no particular order.
 
-- The king whose name was chiselled off. What happened on the repealed Thursday.
 - More mountains, more forest, more lakes. What Old Grumble is saying.
-- Fauna and plants, as things to look into everywhere.
-- Where the charts stop, north of the Stack. Where Mr Pargeter went.
-- The high mooring "where the stars leave off". Head Office, below the Lower Office.
-- Return moorings for the airship (it only drops, for now).
-- Gods and their divine planes.
+- The Far Coast, beyond the end of the railway. What is past Peg Sixty-Two.
+- The high mooring "where the stars leave off".
+- A way to board the airship elsewhere than Tickover (it only drops, for now).
+- Carry-a-letter errands between the lighthouse keepers.
 - Wonders, by the thousand.
 - The seven feathers, once their role is decided.

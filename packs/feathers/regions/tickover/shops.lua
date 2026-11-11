@@ -102,6 +102,26 @@ space {
       things = {
         { name = "the glint", description = "A spring, small as a caraway seed, caught on a bar. There are more, when you look: the cobbles of the Row are seeded with a hundred years of springs that got away. In hot weather, they say, the street creaks." },
       } },
+    { name = "a watch hospital",
+      description = "A narrow shop front with a red cross on the glass and a row of pocket watches in the window, each in a small bed with a blanket.",
+      things = {
+        { name = "the patients", description = "Seven watches, backs off, under their blankets. Each has a chart at the foot of the bed. {i}Admitted: Tuesday. Complaint: runs fast when owner is late. Treatment: rest.{/}" },
+        { name = "the matron", description = "Mrs Arbor, in a starched cap, with a loupe on her forehead. She does her rounds with a tiny oil can and will not have raised voices in the shop." },
+        { name = "a watch in a cot", description = "Very small, a lady's, silver. It is not broken. It is new. It is being kept in for observation until it has been heard to tick a full day without being told." },
+      },
+      actions = {
+        { "Ask after a patient", say "You point at the nearest. Mrs Arbor lowers her voice. \"Mainspring,\" she says. \"He's comfortable. The family have been told.\" Outside on the bench, you now see, sits an anxious man with his hat in his hands and a chain hanging empty from his waistcoat." },
+      } },
+    { name = "the row's clock",
+      description = "Every shop in Winders' Row has a clock over the door. Each is set by its owner, to the owner's own best opinion. No two agree, and the spread is exactly four minutes from the top of the street to the bottom.",
+      things = {
+        { name = "the clock at the top of the row", description = "Coil's. The earliest. Mr Coil holds that the Great Clock is four minutes slow and that somebody has to say so." },
+        { name = "the clock at the bottom", description = "The key cutter's. The latest. He holds that it is everybody else who is fast, and that the Great Clock merely declines to be rushed." },
+        { name = "the clock in the middle", description = "Over the tea stall. It has no hands. The tea woman says she will put them on when the street has made up its mind, and that meanwhile it is always time for a cup." },
+      },
+      actions = {
+        { "Walk the row by the clocks", say "You start at the top at noon precisely. You stroll. At each door it is a little later. You arrive at the bottom at four minutes past, having taken, by your own count, about two. You have either lost two minutes or been given them. A row of apprentices watch you working it out and take bets." },
+      } },
   },
 
   exits = {
@@ -206,6 +226,26 @@ space {
         { name = "an hourglass that runs up", description = "The sand goes from the bottom bulb to the top. From the Collegium, with a note asking her to make it stop. She wrote back that it was not broken, only stubborn, and that she knew several professors in the same case." },
         { name = "a dwarf water clock", description = "A stone cup with a hole, dripping into another stone cup. It loses a day in a year. The dwarves, she says, consider that this serves the year right." },
       } },
+    { name = "the repairs drawer",
+      description = "A long shallow drawer under the counter, lined with green baize, where things wait to be collected. Each sits in its own compartment with a ticket.",
+      things = {
+        { name = "a watch with a note", description = "{i}Mended. No charge. It was only lonely. Wear it.{/}" },
+        { name = "a musical box", description = "The size of a matchbox. The ticket says {i}Plays one tune, wrongly. Owner asks that it be left wrong, as her husband whistled it that way.{/} Miss Fusee cleaned it and touched nothing else." },
+        { name = "a thing that is not a clock", description = "Brass, with a dial marked in beetroot red and a single hand. The ticket: {i}Sun lamp, part of. For a gentleman in the Glowers. Tenth attempt. Returned with regret; the spring is sound but daylight will not be wound up. L.F.{/}" },
+        { name = "a ticket with no object", description = "The compartment is empty. The ticket reads: {i}Four minutes. Called for.{/} It is dated before she was born." },
+      },
+      actions = {
+        { "Wind the musical box", say "It plays eight bars of something you nearly know, and at the fifth it goes up where any sensible tune would have gone down. Miss Fusee does not look up from her bench. \"Yes,\" she says. \"I know. I've had it a month. I catch myself whistling it wrong now, and I never met the man.\"" },
+      } },
+    { name = "the shop cat",
+      description = "A tabby, asleep in the window among the carriage clocks, in the one square of sun. She has a collar with a very small brass tag.",
+      things = {
+        { name = "the tag", description = "{i}Fusee. 10th of the name, if nobody else turns up.{/}" },
+        { name = "her tail", description = "It hangs over the edge of the shelf and swings, slowly, side to side. You watch it against the pendulum of the regulator behind. They are in time. They are exactly in time." },
+      },
+      actions = {
+        { "Stroke the cat", say "She begins to purr, and three of the clocks in the window stop, and start again with her. Miss Fusee sighs. \"She does that,\" she says. \"I have to reset the French ones every time somebody is kind to her. Go on. They can wait.\"" },
+      } },
   },
 
   exits = {
@@ -303,6 +343,27 @@ space {
       description = "A brass slot in the wall marked {i}SUGGESTIONS FOR THINGS THAT OUGHT TO EXIST{/}. It is for the public. It is emptied once a year into the Boiler.",
       actions = {
         { "Post a suggestion", say "You borrow a pencil and write, after some thought: {i}a boot that does not let in water{/}. You post it. Somewhere behind the wall a small bell rings and a voice says, quite distinctly, \"Oh, not again.\"" },
+      } },
+    { name = "the wall of granted patents",
+      description = "One wall, and not a large one, holds the framed certificates of every device the Office has ever approved. There are eleven.",
+      things = {
+        { name = "patent number one", description = "{i}The Wheel (Improved).{/} The improvement is a second wheel. The Examiner of the day wrote on the back: {i}Obvious. But nobody had.{/}" },
+        { name = "patent number seven", description = "{i}A Device for Knowing When the Kettle Has Boiled.{/} It is a whistle. The inventor was made a Freeman of the City and has a tram named after her." },
+        { name = "patent number eleven", description = "{i}The Form on Which Patents Are Applied For.{/} Granted to the Office itself, on its own application, after forty years of consideration and one appeal." },
+        { name = "a nail with nothing on it", description = "Number twelve. The nail has been in the wall for ninety years. It is dusted. The Examiner looks at it, sometimes, the way a man looks at a spare place at table." },
+      },
+      actions = {
+        { "Ask what it takes", say "Mr Thrupp takes off his spectacles. \"It must be new, it must work, and it must not make anything worse.\" He counts them on his fingers. \"We get a great deal that is new. We get some that works. It is the third one, sir. It is always the third one. You would be astonished what people can make worse with a spring.\"" },
+      } },
+    { name = "the model on the counter",
+      description = "Today's application, set out for examination: a contraption of brass rods and a small bellows, with a paper flag on a pin.",
+      things = {
+        { name = "the paper flag", description = "{i}A Machine for Apologising. I. Brass. Forty-second submission.{/}" },
+        { name = "the bellows", description = "When worked, it says {i}sorry{/}, in a small wheezing voice, and then it says it again, and it does not seem to be able to stop." },
+        { name = "the Examiner's note", description = "In red, already written and blotted. {i}Refused. It does not mean it.{/} And under that, in pencil, not yet inked: {i}Though I confess neither do most of us.{/}" },
+      },
+      actions = {
+        { "Work the bellows", say "\"Sorry,\" says the machine. \"Sorry. Sorry.\" The queue behind you shuffles. A woman at the back says \"That's all right, love,\" before she can stop herself, and the machine falls silent, and everyone looks at it, and Mr Thrupp very slowly crosses out his pencil note." },
       } },
   },
 
@@ -416,6 +477,25 @@ space {
       } },
     { name = "a rat",
       description = "A real one, grey, sitting on the armoured suit and washing. It has a mechanical friend: a tin mouse that follows it everywhere on three wheels. The Keeper says the tin mouse was refused as {i}without purpose{/}, and that the rat has taken that up with the Office in its own way, mostly by night, mostly on the biscuits." },
+    { name = "the shelf of kind refusals",
+      description = "A short shelf near the Keeper's corner, apart from the racks. Agnes Thrupp keeps here the things that were turned down for no fault of their own.",
+      things = {
+        { name = "a mechanical nightingale", description = "Refused, as {i}already supplied by nature{/}. It sings better than the real one. The inventor's wife was deaf to all but the one pitch, and this was built to that pitch, and the Office was never told." },
+        { name = "a clock that runs backwards", description = "{i}Refused: of no use.{/} The applicant was a widower. It was set going at the hour she died and it has got back, by now, to the spring before they met." },
+        { name = "a wooden leg with a spring in it", description = "{i}Refused: not novel.{/} It was novel. The clerk that day had a headache. Agnes has written to the applicant every year since to say so, and has never had an address to send it to." },
+      },
+      actions = {
+        { "Ask why she keeps them", say "\"Somebody ought to.\" She dusts the nightingale with her sleeve. \"My brother refuses them upstairs, and he's right to, by the rules, nine times in ten. I keep the tenth. When I've enough, I shall take the lot up in a barrow and make him look at them one at a time.\" She has been saying so, by the dust, for thirty years." },
+      } },
+    { name = "the dumb waiter",
+      description = "A hatch in the vault wall with a rope and a bell. Refused devices come down in it from the counter above, one at a time, each with its slip.",
+      things = {
+        { name = "the bell", description = "It rings once for an ordinary refusal and twice for a dangerous one. It has only ever rung three times for one thing, and Agnes will not tell you which rack that is in." },
+        { name = "something just arrived", description = "On the shelf of the hatch, still rocking slightly: a contraption of rods and a small bellows. As you look at it, it says, quite quietly, \"Sorry.\"" },
+      },
+      actions = {
+        { "Send something up", say "You have nothing to send. You put your rejection slip in the hatch, for the look of the thing, and pull the rope. It goes up. After a minute it comes down again, with a second slip pinned to the first. {i}A rejection slip may not itself be submitted. See form.{/} There is no form attached." },
+      } },
   },
 
   exits = {

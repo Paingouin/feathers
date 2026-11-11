@@ -113,6 +113,17 @@ space {
         { "Reach through and pull the red thread", when = no(flag "fd_grating_open"), set "fd_grating_open",
           say "You get two fingers through and tug. A bell the size of a pea rings on the far side. There is a pattering. Something you do not quite see, no higher than your knee, lifts the latch with both hands, says \"pardon, mind the draught,\" and is gone down the slope before the bars have finished swinging." },
       } },
+    { name = "a brick with a crown on it",
+      description = "In the wall by the iron rungs, one brick among ten thousand is stamped in the clay with a small crown and a letter. It is a royal brick, from the royal kiln. The drain was a king's gift.",
+      things = {
+        { name = "the letter", description = "Somebody has gone at it with the point of a nail until it is a round pit. It must have taken an evening. In a sewer. The Council was thorough, and employed people who did not mind where they stood." },
+        { name = "a second brick", description = "Lower down, under the slime, where the man with the nail did not look. You scrape it with your thumbnail. The crown comes up, and the edge of a letter, and then your nail breaks, and you decide that the drain can keep it." },
+      } },
+    { name = "a child's paper boat, aground",
+      description = "On the dry patch under the arch: a boat folded from a sheet of fair writing, grey with travel. It has come a long way down the dark. You unfold one corner. {i}...humbly prays that Your Majesty...{/}",
+      actions = {
+        { "Set it afloat again", say "You put it back on the grey water and give it a push. It turns twice, finds the current and goes off downstream towards the last grating, sitting up well. Somewhere a long way above and east of here, a boy made that, in a gutter, from a petition that a stationer had spoiled on purpose." },
+      } },
   },
 
   exits = {

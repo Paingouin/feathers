@@ -123,6 +123,18 @@ space {
         { when = flag "fd_shelf_open",
           description = "Grey baize, from roof to floor. One corner of it has been pinned back for you, as high as the pin would go. You will have to crawl." },
       } },
+    { name = "the stall of days",
+      description = "Between the keys and the things said, a narrow stall with a calendar for an awning. It sells lost time: a forgotten birthday, an hour somebody cannot account for, the last day of a holiday. Most of the stock is in small paper twists. One item is too big for the counter and leans against the back in a crate.",
+      things = {
+        { name = "the crate", description = "Flat, the size of a door, nailed shut. {i}One day, entire. Fell from the castle, by way of the Oubliette. Frame damaged.{/} The stallholder has it down as a duplicate. \"The original is still up there in a hole,\" she says. \"This is what came off it when it landed. A day is a big thing. It sheds.\"" },
+        { name = "a twist marked 'Thursday, loose'", description = "The paper is warm. You do not open it. Through the twist you can smell cut grass and hear, very small, as you hear the sea in a shell, a number of people cheering." },
+        { name = "the price list", description = "{i}An hour: a favour. A birthday: an apology. A whole day: cannot be bought, only claimed, by the party who lost it.{/} Nobody has claimed the big one. The party who lost it was a kingdom, and it has never sent anybody down." },
+      },
+      actions = {
+        { "Ask who lost the Thursday", say "\"Everybody,\" says the stallholder. \"That is the trouble with it. Four thousand people have a share and the rest have a grievance, and not one of them has a ticket.\" She pats the crate. \"There was a gentleman came once. Barefoot, very civil. Looked at it for an hour. I said, is it yours, sir? He said, {i}no. I gave it away.{/} And he bought a ribbon off the next stall and went.\"" },
+      } },
+    { name = "a tray of brass letters",
+      description = "On the stall of single things, loose capitals from the base of a monument, a handful, unsorted. The Keeper says that they came down a different hole from the rest of the set, on purpose, so that nobody could ever have all of a certain name in one place. He keeps them in a tray with a lid. He has not tried them. He says that it is not his to spell." },
   },
 
   exits = {
@@ -215,6 +227,17 @@ space {
       } },
     { name = "the quiet back there",
       description = "Past the last lamp you can see, the aisle goes on. The air from that direction is still and smells faintly of paper. There is a great deal of filing down here, and you have begun to wonder who it is all for." },
+    { name = "a shelf of withdrawn names",
+      description = "Past the lost names, lower, behind a strip of black ribbon: names that were not lost but taken. Each is in a small stone jar with a waxed lid. There are not many. A country has to be very determined.",
+      things = {
+        { name = "the newest jar", description = "Ninety years on the shelf, which is new for here. The lid has nine small seals round the rim and a space in the middle. The label is in the Keeper's hand: {i}One king. Complete: stones, coins, rolls, books, speech. Deposited by a Council. Not to be released to the depositors.{/}" },
+        { name = "the weight of it", description = "You lift it, with permission. It is heavy for its size, like a full inkwell, and something inside goes from one side to the other, slowly, as a short word would. It is warm on one side only. The Keeper says that it has always been warm on the side that faces east." },
+      },
+      actions = {
+        { "Ask who may claim it", say "\"The owner,\" says the voice from the back of the shelves. \"In person. He has not been.\" A pause. \"We sent a card. It came back from the middle of a maze, unopened, with a walnut. We took that to mean that he is not in want of it at present.\" The jar is taken gently out of your hands and put back, facing east." },
+      } },
+    { name = "a row of granted wishes, unused",
+      description = "On a low shelf, in bags like the wishing bags, each with a tag reading {i}Granted{/} and a number. A carter's mile of road. A widow's apology. They were given, on a day that was taken back, and so they came loose from their owners and fell here. The Keeper dusts them. He says that a granted thing does not spoil, and that some of these have quietly happened anyway while nobody was looking." },
   },
 
   exits = {

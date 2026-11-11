@@ -98,6 +98,15 @@ space {
       actions = {
         { "Put it back", say "You set the box in its gap and slide the board over. Whoever it was is grown now. You find that you hope they left, and you also hope that they are the one who keeps bees." },
       } },
+    { name = "a swift's nest under the eaves",
+      description = "A shallow cup of straw and spit, glued to the top of the wall plate where the louvres let in a crack of sky. The bird on it has legs so short it cannot stand. It has not touched the ground since it left the nest it was hatched in. It sleeps up there, somewhere, on the air.",
+      actions = { { "Watch one come in", say "A black sickle comes across the sky at a speed that hurts to follow, does not slow, folds, and is inside the tower through a gap you would not get a hand in. No thump. It is simply on the nest. Then it looks at you sideways, as if the stairs had been your idea and it wondered why." } } },
+    { name = "the far view, west",
+      description = "Through the western louvre, past the mill and the dark line of the Mumblewood, the land goes on. On a clear day there is a paleness beyond the wood, low and wide, that is neither field nor cloud. It shines in patches. The ringers call it the Wet and say it is not anywhere.",
+      things = {
+        { name = "a spark", description = "At dusk, they say, you can see lights out there: small, blue, low down, going about. Father Dunstable holds that they are marsh gas. The ringers hold that marsh gas does not walk in a line at closing time." },
+        { name = "a scratch on the sill", description = "An arrow, pointing west, and the words {i}Auntie Dorcas, 2 days{/}. Some ringer had family out there, and stood at this louvre, and thought of going." },
+      } },
   },
 
   exits = {

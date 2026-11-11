@@ -93,6 +93,24 @@ space {
       } },
     { name = "the boot scrapers",
       description = "One by every door, iron, each in the family crest: a lion, a boar, a swan, and at number six a plain hedgehog, which is the oldest family of the lot and has never needed to say so." },
+    { name = "a private chapel",
+      description = "Between two great houses, behind a gate with a coronet on it: a chapel the size of a coach house, in pink marble. It was built by a duke for a god of his own, whom he invented, and who was required to agree with him.",
+      things = {
+        { name = "the god", description = "Through the gate you can see him: gilt, seated, with the duke's nose. He has had no worshipper since the duke died. He looks as if he would like to get down." },
+        { name = "the brass plate", description = "{i}No Admittance Except On Business.{/} It is the only temple in Aldmoor with a tradesmen's entrance." },
+      },
+      actions = {
+        { "Nod to him", say "You nod, through the bars, as you would to anybody stuck somewhere. Nothing happens. But a thin old gentleman going by with a cane stops and looks at the chapel as if he had not seen it in years, and takes off his hat, and seems surprised at himself." },
+      } },
+    { name = "a window cleaner",
+      description = "On a ladder against the fourth house, with a leather and a bucket. He has cleaned the windows of the Row for thirty years and knows every family in it from the outside. He says they are much the same from the outside. Larger rooms.",
+      things = {
+        { name = "the bucket", description = "Soft water, from the fountain. It goes up the rope a little more easily than it ought." },
+        { name = "what he has seen", description = "He will not say. He says a man who talked would not keep a round. He says there is a room in the Vaux-Pimbleton house with no window, and he has always wondered what he is not being paid to clean." },
+      },
+      actions = {
+        { "Hold the ladder", say "\"Much obliged.\" He goes up. A sash opens above and a hand passes him a cup of tea without a word. He drinks it on the top rung, looking at the Castle. \"Thirty years,\" he says. \"She's never once asked my name. Always two sugars, though.\"" },
+      } },
   },
 
   exits = {

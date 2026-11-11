@@ -107,6 +107,19 @@ space {
 
     { name = "a vault door",
       description = "A plug of oak the size of a dinner plate, set in the floor, gnawed to fit so closely that you cannot get a fingernail round it. It has no handle. The Bank's position is that anyone who needs a handle has no business with the reserves." },
+    { name = "the foreign exchange",
+      description = "A side shelf with a separate, shorter queue. Here the bank deals in what is not acorns. A vole has a hazelnut and wants to know the rate. A mouse from the fen has come in with a wet bulrush seed and is being looked at over the top of somebody's whiskers.",
+      things = {
+        { name = "the rate board", description = "A strip of bark with scratches. {i}Hazel: two to the acorn. Beech mast: nine. Conker: not accepted, see manager. Fen seed: by weight when dry. We do not dry.{/}" },
+        { name = "the fen mouse", description = "Small, dark, with damp feet and a strip of eelskin for a belt. It has walked in from west of the reed beds with its whole fortune on its back. It is being very patient. It has the air of having dealt with squirrels before." },
+        { name = "a pile of refused conkers", description = "In the corner, glossy and brown, each brought in by a hopeful jay. They are worthless and they are much the handsomest thing in the bank. The junior clerk polishes them when no one is looking." },
+      },
+      actions = { { "Offer the onion", say "The exchange clerk looks at it. It calls the head teller. The head teller looks at it. There is a conference. At length the onion is weighed against one acorn, found heavier, and pushed back across the shelf with both paws. They do not deal in things that make the staff cry." } } },
+    { name = "a ledger of leaves",
+      description = "Stacked on a ledge, pressed flat under a stone: oak leaves, hundreds, each nibbled round the edge in a different pattern of notches. It is the accounts. Every depositor has a leaf and every notch is an acorn. In autumn the whole year's book turns brown and falls to dust, and the bank declares it audited.",
+      things = {
+        { name = "the fox's leaf", description = "One notch, very large. Under it a second leaf, pinned with a thorn: the interest. It has been accruing for six years. The fox has never asked for it. It simply likes to know it is there." },
+      } },
   },
 
   exits = {

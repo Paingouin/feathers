@@ -115,6 +115,16 @@ space {
       description = "An earthenware pot with a wide mouth, by the fire. The salt is from Saltwick, grey and damp, and the cook says you can hear the sea in it. You put your ear to the pot. You can hear the cook, waiting for you to take your ear out of her salt." },
     { name = "the flagstones",
       description = "Scrubbed white, and worn into a path from the fire to the table to the door. The path has a kink in it. There was a dog bed there once, for thirty years, and people still step round it." },
+    { name = "a crock of eels in jelly",
+      description = "On the cold shelf by the back door, under a plate: a brown crock with a cloth tied over. The cook did not make it. It comes from the west with the cabbage man, once a month, in exchange for a jug of the Stew, which he carries home at arm's length as if it might go off.",
+      things = {
+        { name = "the jelly", description = "Clear, pale green with parsley, set firm. It trembles when the kitchen door bangs. The boy at the sink has been forbidden it and has a spoon in his apron." },
+        { name = "the cloth", description = "Tied with a plait of rush. Stitched in the corner, small: {i}Mrs F., aboard.{/} The cook says she has never met her and that they understand each other perfectly." },
+      },
+      actions = { { "Take a spoonful", say "Cold, clean, and it melts. Then the eel, which is rich and soft and tastes of smoke. The cook is watching you. \"Well?\" You say it is very good. \"It is,\" she says, shortly. She looks at the Stew, which has been on the fire since the tavern opened, and gives it a stir it did not need." } } },
+    { name = "a cricket behind the oven",
+      description = "Somewhere in the warm brick, singing. It starts when the bread goes in and stops when it comes out. The cook times the loaves by it. She has had the oven rebuilt twice and each time the mason was told to leave one brick loose at the back, and not to ask.",
+      actions = { { "Listen for it", say "A dry, steady chirring, like a tiny saw. It is the most contented sound in the building. The boy at the sink says that if you count the chirps in a quarter minute and add forty you get how hot the kitchen is. He has tried it. The answer was a number he does not know yet." } } },
   },
 
   exits = {
@@ -219,6 +229,16 @@ space {
       description = "It lives on the landing. It comes from under the door at the end, goes along the skirting, and leaves by the keyhole of Room Two. The candle leans to let it by." },
     { name = "a mousehole in the skirting",
       description = "Neat, arched, at the foot of the linen cupboard. Somebody has painted a door on the wall beside it, the same size, with a knocker. The mice use the hole. The painted door has, however, been scratched round the handle." },
+    { name = "a swallow's nest over the window",
+      description = "A cup of mud pellets stuck under the lintel, inside, where the casement does not quite shut. Four gapes show over the rim, yellow and enormous. The barman leaves the window open from April to September and loses, he reckons, a blanket's worth of heat and gains the only guests who come back every year.",
+      actions = { { "Stand under it", say "A parent comes in over your shoulder like a thrown knife, brakes on nothing, and is hanging on the nest with a beak full of flies. All four gapes open. One gets it. The other three look at you, as if you might be the next course or might at least know when it is coming." } } },
+    { name = "the door of Room Four",
+      description = "There are four doors on this corridor and you have been told about three. The fourth is narrow, low, and painted the same brown as the wall, between Three and the end. It has no number. It has a ring of rush tied to the latch.",
+      things = {
+        { name = "the rush ring", description = "Plaited, green going yellow. It is renewed. When there is a ring on the latch, the room is taken, and the linen is not to be changed, and breakfast is to be left on the floor." },
+        { name = "the gap under the door", description = "A line of light, and a smell of peat smoke where there is no hearth. And very faintly, the sound of pages. Somebody in there is reading, and has been, the barman says, since Tuesday." },
+      },
+      actions = { { "Knock", say "The pages stop. A woman's voice, dry and precise, says: \"I am at the Squire's second proposal and I do not wish to be disturbed until the horse is out of danger.\" You say sorry. \"That,\" says the voice, \"is what the Squire said.\" The pages resume." } } },
   },
 
   exits = {
@@ -302,6 +322,16 @@ space {
       actions = {
         { "Set it rocking", say "It goes forward, and back, with a creak on each. Dust lifts. You watch it slow, and stop, with its one eye on the gap in the thatch." },
       } },
+    { name = "a long box under the eaves",
+      description = "Pushed right back where the roof meets the floor: a pine box, nine feet long and a hand deep, with rope handles. It has a carrier's label from the west, faded, and has never been opened. The barman's grandfather took it in payment for a winter's board from a fowler who went home quiet.",
+      things = {
+        { name = "the label", description = "{i}E. Mallow. To be called for.{/} And under it, in the grandfather's hand: {i}He said he would not need it where he was going back to. He said they are not to be shot at. He would not say what.{/}" },
+        { name = "through a split in the lid", description = "Brass, and blued iron, and a walnut stock. A punt gun. It would bring down forty duck at a discharge. It is loaded, the barman believes. Nobody has cared to find out, and the mice have built round it." },
+      },
+      actions = { { "Lift one end", say "You get it an inch off the floor and put it down again with great gentleness. Something inside shifted. It was probably only shot. You move to the other end of the attic, near the humming chest, which at least is honest about itself." } } },
+    { name = "bats in the ridge",
+      description = "A dozen, hanging in the dark at the very top of the thatch, like small leather purses. One yawns. It has a face like a kitten that has heard something it does not believe.",
+      actions = { { "Breathe quietly", say "You hold still. The cluster shifts and resettles, each one edging in toward the middle, the ones in the middle being pushed out, all day long, in their sleep. It is the politest fight you have ever seen." } } },
   },
 
   exits = {

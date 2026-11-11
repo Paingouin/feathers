@@ -237,6 +237,18 @@ space {
       } },
     { name = "the smell of bread",
       description = "It comes round the corner from the back of the tavern at this hour and crosses the square like a person. Jeb and Old Jeb turn their heads to watch it go by." },
+    { name = "a pair of very long stockings on the cross",
+      description = "Draped over one arm of the market cross to dry: grey wool, knitted in the round, long enough to reach a tall man's hip. They are not Greenhollow stockings. There is a tide mark at the knee and another at the thigh.",
+      things = {
+        { name = "their owner", description = "On the step of the cross, barefoot, with his feet in the sun and a look of great peace: a long thin man with a bucket-headed mallet beside him. He has come in from the west for stone. He says he comes every year, and sits here an hour first, to get used to ground that stays." },
+        { name = "a cut stone in his barrow", description = "Grey, squared, a foot across, with a small fish chiselled on the top. He gets nine a trip from the old quarry behind the mill. He does not say what he is building. He says it is a thing you would walk on, with luck." },
+      },
+      actions = {
+        { "Ask how the building goes", say "\"Finished Tuesday week,\" says the long man, and wriggles his toes. \"Then it was Wednesday.\" He looks round the square, the well, the mud, the goose, with deep admiration. \"You don't know what you've got here,\" he says. \"You could put a thing down and find it there in the morning.\"" },
+      } },
+    { name = "house martins at the big puddle",
+      description = "A dozen small blue-black birds with white rumps, down at the edge of the puddle, taking mud. Each gets a beakful and goes up under the eaves of the cottages, where there is a row of half-built cups. They need a thousand beakfuls a nest. The village would have filled in that puddle years ago, except that every May somebody says, wait till the martins have done.",
+      actions = { { "Watch the building", say "One comes in, lays its pellet on the rim, shivers it into place with its chin, and is gone. Another. The wall rises by the width of a grain. It is slow, exact, and wholly cheerful, and it is being done with the worst mud in the kingdom. You look at the puddle with more respect." } } },
   },
 
   exits = {

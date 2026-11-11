@@ -62,6 +62,20 @@ space {
       things = {
         { name = "one low on the back bench", description = "Where the servants stand. Small, and cut with something blunt: {i}I understood that. Tib.{/}" },
       } },
+    { name = "the divinity bench",
+      description = "The front row on the left is reserved for the Faculty of Divinity, which has one student. He is asleep, with a book open on his chest: {i}The Major Gods, with a Note on the Minor{/}.",
+      things = {
+        { name = "the book", description = "Six hundred pages on Thrum, whom nobody has worshipped in nine centuries. The note on the minor gods is at the back and is a single line: {i}There are also some small ones, locally.{/}" },
+        { name = "his servant's notebook", description = "Behind him, on the back wall, a footman is taking the lecture down. In the margin, in another hand entirely, he keeps a list of which small god has done what for whom this week. It runs to forty pages. It is the only serious theology being done in the Collegium." },
+      },
+      actions = {
+        { "Read over the footman's shoulder", say "{i}Tues. Socks: found Cook's. Soup: Tib had a bowl appear, says she didn't. Jamb: buttery door, the usual. Almost: Sir Aubrey nearly attended.{/} He sees you looking and closes the book, not unkindly. \"Field work,\" he says." },
+      } },
+    { name = "a draught from under the dais",
+      description = "It comes up through a knot hole in the boards by the lectern and stirs the professor's notes. He has complained of it for thirty years. The Bursar has it down as {i}character{/}.",
+      things = {
+        { name = "the knot hole", description = "You put your eye to it. Dark, and a long way down a line of light, as from a door left ajar in a cellar. There is a smell of old paper and of something that has been thinking." },
+      } },
   },
 
   exits = {
@@ -148,6 +162,24 @@ space {
       } },
     { name = "the ladder",
       description = "Oak, on a rail, running the length of the shelves. Gentlemen are not permitted on it. A servant goes up and reads out the spines, and the gentleman points." },
+    { name = "the theology alcove",
+      description = "A bay by the north window, labelled in gilt. Three walls of sermons, in calf, with the pages uncut. One shelf at the bottom is of smaller books in paper covers, much handled, with no label.",
+      things = {
+        { name = "the sermons", description = "Twelve hundred volumes on the nature of the gods by people who had not met any." },
+        { name = "the paper covered shelf", description = "Chapbooks. {i}The Lady and the Odd Sock. How Jamb Got His Shoulder. Forty Ways With a Bone, as shown to a Cook by One Who Knew.{/} They are stamped {i}Servants' Hall{/} and are not in the catalogue. They are the only books in the alcove with candle grease on them." },
+        { name = "a pamphlet tucked behind", description = "No cover. {i}What to say when they ask who made the world.{/} It has three pages. The first two are advice on changing the subject. The third has been cut out, with a knife, close to the stitching." },
+      },
+      actions = {
+        { "Read a chapbook", say "You take {i}How Jamb Got His Shoulder{/}. It is eight pages and has a woodcut of a very wide man holding up a lintel while a house is built under it. It ends: {i}and so, good people, when a door will not open, do not curse. Somebody is leaning on it, and he is on your side.{/}" },
+      } },
+    { name = "a reader asleep on his arms",
+      description = "A senior Fellow, at the end table, face down on a folio, with his spectacles pushed up. A slip on his elbow says {i}DO NOT DUST{/}. He has been researching the same footnote for nine years.",
+      things = {
+        { name = "the folio", description = "What can be seen of it round his sleeve is a list of temples that stood in Aldmoor before the Street: nine great ones, all to the same name. He has underlined the name each time and then, each time, has plainly gone to look something up and never come back to the line." },
+      },
+      actions = {
+        { "Read the footnote", say "You lean. {i}The Great Temple is said to have had a roof. No account says what became of it. One would expect rubble.{/} And under that, in pencil, very small: {i}One would expect a great deal of rubble.{/}" },
+      } },
   },
 
   exits = {
@@ -224,6 +256,22 @@ space {
       } },
     { name = "a drip",
       description = "From the vault, on to a book. Somebody has put a tin bowl on the book. The bowl is full, and the book under it is quite dry, and a little smug: it is a treatise on umbrellas." },
+    { name = "a shelf of confiscated prayers",
+      description = "Iron, low, behind a mesh door: devotional matter taken from servants over three centuries on the ground that it was {i}efficacious{/}, which is against the statutes below stairs.",
+      things = {
+        { name = "a knitted charm", description = "A sock, the size of a thumb, in grey wool, on a loop. Taken from a laundress in the second Chancellor's time. The report says she had not lost an item of washing in eleven years and that it was {i}giving the gentlemen unrealistic expectations{/}." },
+        { name = "a wooden spoon, charred", description = "Tagged. {i}Stirred with intent.{/} The cook was let off with a caution. The spoon was kept. The soup, the tag admits, was never as good again." },
+        { name = "a slate", description = "A child's, with one line on it in chalk, rubbed nearly out: a prayer to a god of people who are no good at this. No such god is known. The examiners noted that the prayer was {i}nevertheless felt to have gone somewhere{/} and locked it up for that." },
+      },
+      actions = {
+        { "Touch the mesh", say "Warm. Not hot: warm like a bed that somebody has just left. A great many small sincere things are shut in there together and they have, over three hundred years, taken the chill off the iron." },
+      } },
+    { name = "a kneeler",
+      description = "At the very end of the stacks, facing a blank wall: one hassock, worn in two hollows, and a candle stub on a saucer. The dust round it is trodden. The small footprints come here every night before they go anywhere else.",
+      things = {
+        candle { name = "the stub", description = "Kitchen tallow. It has been lit and pinched out many times over to make it last." },
+        { name = "the blank wall", description = "Brick, limewashed. At the height of a kneeling girl's eyes somebody has drawn a very small door in pencil, with a handle. It is not a spell. You would know by now. It is only a wish that there were a way out of here for people who can do things." },
+      } },
   },
 
   exits = {

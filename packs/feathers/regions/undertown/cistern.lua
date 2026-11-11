@@ -119,6 +119,17 @@ space {
         { name = "the tariff", description = "{i}Boots, each: one farthing. Boots, pair: a penny, for the rarity. Rings: tell nobody, see Mott.{/}" },
         { name = "a notice in a very small hand", description = "Pinned low down, with a fish bone. {i}PARDON. One of your nets is across our chimney. No hurry.{/} The dredgers take it for a joke by the mudlark. The mudlark cannot write." },
       } },
+    { name = "a conduit mouth, dry",
+      description = "High in the east wall, above the tide marks, a stone spout carved as a lion's mouth. It has not run in living memory. The dredgers hang their coats on its lower jaw.",
+      things = {
+        { name = "an inscription over it", description = "{i}FROM THE KING'S SPRING AT ERSTWHILE, BY HIS GIFT.{/} The cistern was once fed from the old capital, seven miles off, by a pipe. Somebody at the far end turned it into a fountain and a fishpond and forgot that there was a town on the other end." },
+        { name = "a green stain below", description = "Where the water used to fall. It is still damp. Once a year or so, the dredgers say, the lion coughs up a cupful, warm, with a walnut husk in it." },
+      },
+      actions = {
+        { "Put your ear to the lion", say "A long way off, down seven miles of stone pipe, something is going on. Water, and under the water a murmur that rises and stops, rises and stops. If you did not know better you would say it was a crowd a great way off, being pleased about something at regular intervals." },
+      } },
+    { name = "a drowned handcart",
+      description = "On its side under a yard of black water by the stair, with one wheel in the air. It is stencilled {i}REMOVAL 31{/}. It went through a street grating in the dark, ninety years ago, with part of a king's dinner service on it, and the dredgers are still finding forks." },
   },
 
   exits = {

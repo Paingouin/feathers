@@ -90,6 +90,17 @@ space {
       } },
     { name = "the sound ahead",
       description = "Water, but slow, and wide. The channel beside you is running to meet something much bigger than itself and has begun, a little, to mind its manners." },
+    { name = "a pale stone lining",
+      description = "For ten paces the rough old blocks give way to a stretch of pale dressed stone, close-jointed, a different mason's work altogether, as if somebody had patched a sack with silk. It is a junction. A second, smaller sewer comes in here from the east, dry.",
+      things = {
+        { name = "the keystone of the junction", description = "Cut with a crown and, under the crown, a round pit where a letter was picked out with a nail. Below the pit, the mason's own mark, a small rose, has been left alone. It always is." },
+        { name = "the dry sewer", description = "Knee high, perfectly round, and clean. Nothing has come down it for ninety years but air, shells, and now and then a fork. You put your face to it. The air is warmer than the drain's, and smells, down here, in the dark, of hawthorn and of beer." },
+      },
+      actions = {
+        { "Listen at the dry sewer", say "At first nothing. Then your ears get used to it. A long way up, a murmur, like a full room behind two doors. It swells and drops, swells and drops. Under the kingdom, at the back of the last grating, you stand and listen to four thousand people getting what they asked for. Then a rat with a bundle goes by and looks at you, and you move on." },
+      } },
+    { name = "a rat's milestone",
+      description = "A pebble set upright in the silt at the junction, scratched with small marks. The rat with the bundle touches it with its nose in passing. It is the first stone of a road that goes seven miles east and up, and the court maintains it, since the court has it in writing that the road is theirs." },
   },
 
   exits = {
@@ -208,6 +219,17 @@ space {
       } },
     { name = "a lifebelt",
       description = "Cork, painted red and white, on a hook. {i}ALDMOOR.{/} It has never been thrown. He practises on Fridays, after the bailing, at a post. He has never hit the post." },
+    { name = "the oldest complaint",
+      description = "Mr Tench keeps the fares he is paid in a tin trunk under the thwart, filed by date. He will show you the first one, if asked, as other men show a medal. It is on thick old paper with a royal watermark.",
+      things = {
+        { name = "what it says", description = "{i}Complaint: that there is no ferry on this river and no one to complain to about it.{/} And across the corner, in a broad loose hand: {i}Granted. Let there be both.{/} It is his warrant. He was Corporation Complaints for thirty years upstairs before he found out that his post down here had been created on a day that the Corporation says did not happen." },
+        { name = "the watermark", description = "A lion, standing, and a motto. You hold it to the lamp. {i}HERE WE STAY.{/} The paper is from the old place. It came down the river by itself, in a bottle, and he was on the jetty to meet it, having had a feeling all that week that he ought to be." },
+      },
+      actions = {
+        { "Ask who complained", say "\"Never signed,\" says Mr Tench. \"Complainants often do not. It is the one who granted it that I should like to meet.\" He poles a stroke. \"I have forty years of complaints in that trunk and nowhere to send them. I thought, if a man could say yes to that one, he could take a look at the rest.\" He considers the dark ahead. \"I am told that he took up gardening.\"" },
+      } },
+    { name = "a walnut shell, sailing",
+      description = "Half a shell, going by on the slow water with a matchstick mast and a scrap of red silk for a sail. It is the third today. Mr Tench says that they come down from the old town and that he gives them right of way, being under canvas." },
   },
 
   exits = {

@@ -104,6 +104,26 @@ space {
         { name = "the top shelf of all", description = "Under the vault, in the dark. Children's books. Fables, an alphabet with woodcuts, a battered {i}Tales for the Hearth{/}. They have been read more than anything else in the room. He cannot have been reading them to anyone." },
         { name = "a bat", icon = "ᵛ", description = "One, asleep, hanging from the gallery rail over Philosophy. It is a long way from the loft. Grist says it comes for the quiet." },
       } },
+    { name = "the card catalogue",
+      description = "A cabinet of small drawers by the door, in walnut. Every book in the castle has a card, and every card is in the same fine black hand, and the hand gets a little steadier as the centuries go on.",
+      things = {
+        { name = "the drawer for G", description = "{i}Gardening{/} takes up most of it. Then {i}Garlic, the cultivation of{/}: forty titles. He has read everything written against him, with attention, and made notes in the margin where the authors were unfair to the plant." },
+        { name = "the drawer for V", description = "One card. {i}Vampires: see under Neighbours, misunderstandings with.{/}" },
+        { name = "a drawer labelled LENT", description = "Slips for books out on loan. One to the Vigilant Society, a hundred and forty years ago. One to {i}the gentleman downstairs, B., pastry{/}. One with no borrower's name, only: {i}took it without asking; glad of it; do not pursue.{/}" },
+      },
+      actions = {
+        { "Look yourself up", say "You try under A, for adventurer. There is a card. It is new, and the ink is not quite dry. {i}Adventurers: one, recent. Came in by the front door. Wiped his feet. See Diary.{/}" },
+      } },
+    { name = "the window seat",
+      description = "In a bay at the end of the room, with a cushion worn into a hollow and a rug. The window looks west, over the village, towards the moor.",
+      things = {
+        { name = "the cushion", description = "Dark red velvet, rubbed grey in one place by an elbow. He reads here from dusk till the small hours, and looks up at the end of each chapter." },
+        { name = "a spyglass on the sill", description = "Brass. You put it to your eye. It is trained on the inn, on an upstairs window, where another spyglass is trained on you. Behind that one there is a girl of about twelve, who waves." },
+        { name = "a slate and a piece of chalk", description = "Large letters, written to be read from a distance. {i}GOOD EVENING POSY. YES, IT IS ME. HOMEWORK?{/}" },
+      },
+      actions = {
+        { "Hold up the slate", say "You hold it to the glass. Down in the village a much smaller slate goes up in the inn window. You fetch it into focus. {i}DONE IT. SUMS. WHO IS THAT WITH YOU.{/} You have nothing to write with. You wave. The slate comes down, and goes up again. {i}HE HAS A SWORD. IS HE STAYING FOR DINNER.{/}" },
+      } },
   },
 
   exits = {
@@ -207,6 +227,23 @@ space {
     { name = "a cat",
       icon = "c",
       description = "White, asleep in the one warm place, which is on top of the humming jar. Its fur stands straight out all over. It has never known any other way to be." },
+    { name = "the weather kitchen",
+      description = "A corner of the laboratory with a range, a row of copper pans, and a great many thermometers. It is where he tries to make a summer afternoon from first principles.",
+      things = {
+        { name = "a pan on the simmer", description = "Something clear, turning slowly gold. A label on the handle: {i}Four o'clock, July, attempt 2,114. Too much bee.{/}" },
+        { name = "a rack of stoppered tubes", description = "Each holds a different warmth. {i}Wall in sun. Cat. Bread. Back of the neck.{/} You hold the last one in your fist. That is exactly it. That is the back of the neck, in a hayfield, at the end of the day." },
+        { name = "a failed batch", description = "In a bucket under the bench, grey and sullen: a wet Sunday. He got it by accident and cannot find how to throw it away. It has been raining gently in the bucket for sixty years." },
+      },
+      actions = {
+        { "Smell the pan", say "Cut grass. Dust on a road. Something sweet from a hedge. Then, under it all, a little too strong, bees. You see the difficulty. It is very nearly an afternoon. It is the sort of thing that would fool anybody who had not once had the real one, and he has, and he remembers it exactly." },
+      } },
+    { name = "the correspondence shelf",
+      description = "Over the workbench: box files, labelled, of letters from learned bodies.",
+      things = {
+        { name = "the file from the Collegium", description = "{i}The Faculty regrets that it cannot admit to membership a person who is, by its own statutes, deceased.{/} There are forty of these. In the latest the word {i}regrets{/} has been underlined by the sender, twice, in apology." },
+        { name = "the file from Tickover", description = "Thick, and friendlier. Drawings of a lamp that gives sunlight without the sun, going to and fro with a Miss Fusee and her eight predecessors. Their side is all springs. His side is all mirrors. They have nearly met in the middle nine times." },
+        { name = "a file tied in black", description = "From {i}the Firm, Below{/}. One letter, very civil. {i}We note your enquiry as to whether daylight may be had by arrangement. It may. We do not recommend our terms to a gentleman who has already paid them once.{/}" },
+      } },
   },
 
   exits = {
@@ -294,6 +331,22 @@ space {
 
     { name = "the far door",
       description = "At the end of the gallery, iron-bound, with a notice: {i}East Tower. Unsafe.{/} Then, smaller: {i}It is not unsafe. It is where I keep my father. R.{/}" },
+    { name = "the cleaning ladder",
+      description = "A tall pair of steps on wheels, parked between two ancestors, with a box of soft brushes on the top tread.",
+      things = {
+        { name = "the brushes", description = "Sable, in six sizes. He dusts them himself, every face, once a month, by candle. He has got to know all of them better dead than he ever did living." },
+        { name = "a tin of varnish", description = "Unopened. He will not varnish them. He says they would all go the same colour, and they never agreed about anything in life." },
+        { name = "a pencil list tucked in the box", description = "{i}Great-uncle Vasil: left eye flaking. Aunt Ottoline: spider again, leave it, she kept them. Father: do not go up. Father is as he wished.{/}" },
+      },
+      actions = {
+        { "Climb the ladder", say "From the top you are level with the eyes of a hundred Regrets. Seen straight on, they are not sneering. It was the angle. Every one of them looks tired, and a little as though they were about to ask you whether you had eaten." },
+      } },
+    { name = "a row of small silhouettes",
+      description = "Under the big portraits, at child height, a line of black paper profiles in oval frames, each cut by the same clever scissors.",
+      things = {
+        { name = "the silhouettes", description = "Forty of them. An innkeeper with a pipe. Another. A woman with a jaw. Each is labelled {i}Dobble{/}, with a date. He has cut every landlord of the Last Chance, from the library window, with a spyglass, and not one of them ever knew they had sat for him." },
+        { name = "the newest one", description = "Smaller, with plaits, and a little spyglass of her own held up to her eye. {i}Posy Dobble, aged twelve. The first one to look back.{/}" },
+      } },
   },
 
   exits = {
@@ -378,6 +431,23 @@ space {
 
     { name = "the shadows",
       description = "He painted them falling west from the elms and east from the hedge. He knows it is wrong. A note on the skirting says so: {i}One of these is mistaken. I cannot recall which, and I had rather keep both than lose the right one.{/}" },
+    { name = "a deck chair, folded",
+      description = "Against the wall, striped canvas, with the wood gone silver. It has been set up and taken down a great many times. The canvas has no sag in it at all.",
+      things = {
+        { name = "the canvas", description = "Green and white. Faded, but only by lamps: a slower sort of fading, which goes brown and not pale." },
+        { name = "a straw hat on the chair", description = "A wide one, such as a man wears to cut hay. The band is new. The straw is three hundred years old and has never had sun on it." },
+      },
+      actions = {
+        { "Set up the chair", say "It goes up in one movement, well oiled. You sit in it, under the painted sky, in the warmth off the lamps, with the hat on your knee. You shut your eyes and it is nearly true. You see why he comes. You see why he does not stay long." },
+      } },
+    { name = "a jar of real hay",
+      description = "On the paint table, among the brushes: a preserving jar with a clamped lid, full of dry grass and flower heads.",
+      things = {
+        { name = "the label", description = "{i}Top meadow, Lower Wince. Cut by Enoch Gall's grandfather. Left on the gate. I do not know if it was for me.{/}" },
+      },
+      actions = {
+        { "Open the jar", say "You ease the clamp. Summer comes out of it, the real one, a whole field's worth in a breath, and the painted hay on the walls looks for a moment like what it is. You shut it quickly. He must only open that on a very bad night." },
+      } },
   },
 
   exits = {

@@ -156,6 +156,16 @@ space {
       actions = {
         { "Stand in it", say "It is cooler by a coat. There is a smell of woodsmoke, and of evening, and somewhere a door being shut for the night. You step out, into four o'clock, and it is gone. The afternoon here has a leak in it, about one man wide, and through the leak it is getting on for supper." },
       } },
+    { name = "a bee that is late",
+      description = "One bee, on the clover at the edge of the lawn, working. Everything else in the glade is at leisure and has been since the hour was kept. The bee goes from head to head with a pollen load the size of its own legs. It is four o'clock for the elves. For the bee, it has been four o'clock, with the day's work not done, for longer than hives have had queens.",
+      actions = { { "Watch it work", say "It visits forty flowers while the poet considers one word. It does not hurry and it does not stop. You think it must be weary. Then it lifts off, heavy, and goes over the birches toward wherever its hive is, and a moment later it is back on the first clover, empty, starting again. The gardener at the edge sees you watching. \"We did ask it,\" he says. \"It said it had things to do.\"" } } },
+    { name = "a game of bowls, in progress",
+      description = "On the smoothest part of the lawn: four elves, eight woods of pale box, and a small white jack. One elf is in the act of delivering. Her hand is open. The wood is a yard out, rolling. It has been rolling for some time.",
+      things = {
+        { name = "the rolling wood", description = "You watch it. It turns, slowly, showing a little inlaid leaf on its side, and again. It is nearer the jack than when you came. Perhaps by a hand. They began this end before the last King's grandfather was born and they expect a result." },
+        { name = "the score", description = "Kept in acorns on the edge of the lawn. Three to one side, two to the other. Several of the acorns have sprouted. One is a sapling. They have agreed that it still counts." },
+      },
+      actions = { { "Ask who is winning", say "All four turn their heads, which takes a while. \"It is very close,\" says the one who has bowled. \"It would be a pity,\" says another, \"to find out.\" The wood turns over once more. They go back to watching it, with the faces of people listening to a piece of music they hope has no end." } } },
   },
 
   exits = {

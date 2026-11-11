@@ -106,6 +106,17 @@ space {
       description = "From out here the big island is a low dark line with one bump on it, the kirk, and a thread of smoke. Along the back strand there are figures. The whole island has come down to look at Sometimes. They do, each time, the way you would go and look in on someone who had been ill." },
     { name = "a child's shoe",
       description = "Leather, hard as wood, with a strap, lying on the hearth stone as if it had been put to dry. It is a hundred years old at the least. Somebody takes it off the stone each time the island shows, and turns it over, and puts it back the other side up. It is not Tam. He says it is not." },
+    { name = "a stranded block of ice",
+      description = "On the wet sand, a long way from any water cold enough to make it: a lump of blue ice the size of a sea chest, set down by the ebb and left. It is melting from underneath into a pool with an edge like a lip.",
+      things = {
+        { name = "what is in it", description = "A red rag, the size of a handkerchief, with a hem. Flannel. It hangs in the middle of the block, quite flat, like a flag in a still room. Somebody up north tied that to something, and the something let it go." },
+        { name = "the meltwater", description = "You taste it, on a finger. It is fresh. It fell as snow, on a sea, in a year before the kingdom had a navy." },
+      },
+      actions = {
+        { "Wait by it", say "A drop gathers on the underside and falls. Another. At this rate the rag will come out about when the tide comes in, and float, and go wherever a red rag goes. You think of pulling it free. You leave it. It has come this far by itself." },
+      } },
+    { name = "a row of cut marks on the tide pole",
+      description = "Below the pencil ticks, low down where the weed is, the pole has older marks: knife cuts, in fours, with a slanting stroke across each four. They are not a clerk's. They are how a man counts who cannot spare the paper. Whoever kept the tide here before there were ledgers kept it the way the north keeps its accounts." },
   },
 
   exits = {
@@ -194,6 +205,16 @@ space {
       } },
     { name = "the sand",
       description = "White, fine, rippled, covering the flagstones a hand deep. Your footprints go from the steps to where you stand. There are others. They are bare, and narrow, and they go from the bell toward the north wall, and into it." },
+    { name = "a cold seam in the water",
+      description = "Along the north wall of the nave, at the height of your knee, the water is suddenly colder: a ribbon of it, a yard wide, clear as gin, sliding through the kirk from one broken window to the other without mixing. You can see its edges. Fish that swim into it turn round.",
+      things = {
+        { name = "the frost flowers", description = "Where the cold seam touches the stone there are white rosettes on the wall, under water, where no frost has any business. They are salt, the minister would say. They are shaped exactly like the ferns on a winter window." },
+      },
+      actions = {
+        { "Put your hand in it", say "It closes on your fingers like a bracelet. Your hand looks blue in it, and very far away. When you take it out the rest of the water feels as warm as milk, and you stand rubbing your knuckles, looking north along the wall to the window where the cold comes in." },
+      } },
+    { name = "a hymn board under the weed",
+      description = "Still on its nail, with the numbers in their slots, green and soft. Three hymns. The last number has slipped sideways in its groove and reads as no number at all. Below the slots, cut in the wood with a knife in letters a child might make: {i}AS USUAL{/}." },
   },
 
   exits = {
