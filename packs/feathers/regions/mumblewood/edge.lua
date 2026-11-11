@@ -117,6 +117,33 @@ space {
         { name = "a sentry rabbit", description = "Upright at the highest hole. It thumps once when you look at it. Somewhere below, a hundred and forty rabbits stop what they are doing." },
         { name = "the hawthorn", description = "Bent double by the wind off the fields, with a thrush's nest in the crook, and one white blossom out of season that nobody has told." },
       } },
+
+    { name = "a charcoal burner's clamp",
+      description = "A dome of turf the size of a haystack, just inside the trees, smoking from a dozen small holes. It has to be watched for five days and nights without sleep. The man watching it is asleep.",
+      things = {
+        { name = "the charcoal burner", description = "On a one-legged stool, so that if he nods off he falls over and wakes. He has learned to sleep balanced. His dog watches the clamp for him and nudges the stool at need." },
+        { name = "the smoke holes", description = "Blue smoke means well. White means too fast. One of them is giving out a thin green, and the dog is looking at it with its head on one side." },
+        { name = "a sack of charcoal", description = "Last week's. Black, light, ringing like glass when the pieces touch. Each stick still has the grain of the branch it was, and the knots, and where a bird sat." },
+      },
+      actions = {
+        { "Nudge the stool", say "He goes over like a felled tree, rolls, and is on his feet with a spade before his eyes are open. He looks at the clamp. He looks at you. \"Green,\" he says, and plugs the hole with a turf. \"Wood's talking again. It gets in the smoke.\" He sits back down and is asleep before the stool has stopped rocking." },
+      } },
+
+    { name = "a gate with no fence",
+      description = "A five-barred gate standing alone at the wood's edge, shut and latched, with open grass on either side of it. A path leads to it and goes on beyond.",
+      things = {
+        { name = "the latch", description = "Iron, oiled, and worn bright. Everybody opens the gate and goes through and closes it after them. Nobody walks round. You ask a passing farmer why. He looks at you as if you had asked why he wears his hat on his head." },
+        { name = "the top bar", description = "Carved with initials, in pairs, with hearts. It is where Greenhollow does its courting, there being nowhere else that feels like going through something." },
+      },
+      actions = {
+        { "Walk round it", say "You step off the path and go round the post. Nothing happens. The wood mumbles. But for the next hundred paces you have the distinct sense of having come in without knocking." },
+      } },
+
+    { name = "a tree with a face",
+      description = "An ash, a little way in, with two knots and a split that make a face if you want one. The village children call it Old Disapproval and dare each other to touch its nose.",
+      actions = {
+        { "Touch its nose", say "Rough bark, a little damp. You have done it. Somewhere behind you a small voice says \"He did it,\" with awe, and there is a noise of several people running away through bracken." },
+      } },
   },
 
   exits = {

@@ -24,8 +24,17 @@ function space(entry) local s = declare(pack.spaces, entry, "space"); return s e
 function flag(name) return { __cond = "flag", name = name } end
 function visited(id) return { __cond = "visited", id = id } end
 function no(condition) return { __cond = "not", condition } end
-function all(conditions) return { __cond = "all", list = conditions } end
-function any(conditions) return { __cond = "any", list = conditions } end
+
+-- `all { a, b }` and `all(a, b)` mean the same thing; so do the two forms of `any`.
+local function conditions(...)
+  local first = ...
+  if select("#", ...) == 1 and type(first) == "table" and first.__cond == nil then
+    return first
+  end
+  return { ... }
+end
+function all(...) return { __cond = "all", list = conditions(...) } end
+function any(...) return { __cond = "any", list = conditions(...) } end
 
 -- `item { id = ... }` declares an item; `item "id"` is the condition "the player carries it".
 function item(arg)

@@ -91,6 +91,25 @@ space {
       actions = {
         { "Look down the hole", say "Dark, and a long way off the sound of moving water. It is, you realise, a way out of the castle that nobody guards. You consider why nobody guards it." },
       } },
+
+    { name = "a brass telescope",
+      description = "On a swivel, bolted to the parapet, with a slot: {i}ONE FARTHING. VIEWS OF THE KINGDOM.{/} It was put up for visitors in the reign before last. The slot is stuffed with a rag.",
+      things = {
+        { name = "the eyepiece", description = "Worn bright. The sentries use it for the queue. They have a book on who will reach the gate first, and the book is on its third volume." },
+      },
+      actions = {
+        { "Look through it", say "Aldmoor, with its smoke. The Mumblewood, a dark fleece. The Grumbles, white on top. And a long way off on the moor, a line of pale shapes leaning out of the heather, like the frame of a ship nobody finished. Then the shutter drops. It wants its farthing." },
+      } },
+    { name = "a hopscotch",
+      description = "Chalked on the flags of the walk between two merlons, with a pebble on square seven. The night watch is long, and nothing has attacked the castle in three hundred years.",
+      actions = {
+        { "Have a go", say "One, two, three. On five you wobble. On seven you stoop for the pebble, in full view of the kingdom, and a voice from the sentry box says \"line,\" not unkindly." },
+      } },
+    { name = "the wallflowers",
+      description = "Growing out of the mortar between the stones, yellow and rust, all along the south face. Nobody planted them. Dame Ysolde has them on the map.",
+      things = {
+        { name = "a bee", description = "It has come up from the kitchen garden, sixty feet, for these. It goes back down loaded and very slowly, like a carter on a hill." },
+      } },
   },
 
   exits = {
@@ -220,6 +239,25 @@ space {
       description = "It looks to the Grumbles, small and white on the edge of things. One of the survey stakes up there has a tent beside it. The tent has been there since spring. Dame Ysolde says the report is late." },
     { name = "the plumb line",
       description = "A brass bob on a silk thread, hanging from the centre of the roof to a hand's breadth above the map. It is how they know that the tower is true. It hangs dead still over the castle, and it has never once agreed with the door frame." },
+
+    { name = "the bottom margin of the Map",
+      description = "The Great Map stops at the floor. Along its lowest edge, where a skirting board would be, a strip has been painted plain grey and lettered in small capitals: {i}BELOW. NOT SURVEYED.{/}",
+      things = {
+        { name = "a pencil note on the grey",
+          description = "In Dame Ysolde's hand, very small, as if she would rather it were not read: {i}There is a below. The plumb line says so. I have not the overshoes for it.{/}" },
+        { name = "a pinhole",
+          description = "In the grey strip, directly under Aldmoor's market, a hole made with a pin, and a second under the castle hill. No flag is in either. She took the pins out again. She did not fill the holes." },
+      },
+      actions = {
+        { "Ask her about it", say "\"We map what is,\" says the Surveyor-General. \"Not what is under what is.\" She taps the grey with the pen on the stick. \"If I once start on down, I shall want another floor to paint it on, and then I shall wonder what is under that.\" She looks at you, estimating. \"You have been. I can tell by your knees.\"" },
+      } },
+    { name = "the surveyor's chain",
+      description = "Sixty-six feet of iron links in a heap by the door, with a brass tag at each ten. The kingdom is exactly as big as this chain says it is, laid end over end by clerks, for forty years.",
+      things = {
+        { name = "a link of different metal", description = "One link near the middle was replaced, long ago, with one a hair too long. Every distance in the kingdom is out by that hair. The Survey knows. It has been ruled a tradition." },
+      } },
+    { name = "a drawer of returned maps",
+      description = "Maps sent back by the public, with comments. {i}My house is not on this. My house is on this and I would rather it were not. This river is going the wrong way and so, I may say, is the country.{/}" },
   },
 
   exits = {

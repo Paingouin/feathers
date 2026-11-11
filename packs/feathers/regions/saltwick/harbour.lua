@@ -24,16 +24,27 @@ space {
       things = {
         { name = "the Hopeful", description = "Painted blue. Named in a good year." },
         { name = "the Realistic", description = "Painted grey. Named the year after." },
+        { name = "the Told You So", description = "Painted black, by the first owner's widow, who had told him." },
+        { name = "a boat with no name",
+          description = "The board on her bow has been planed smooth. She was the {i}Lucky{/}. After the third time, the crew took a vote.",
+          things = {
+            { name = "a horseshoe on the mast", description = "Nailed points up, to hold the luck in. Then a second, under it. Then a third. They are still trying." },
+          } },
+        { name = "a punt full of water", description = "Sunk at her mooring to the gunwales, on purpose, to swell the planks tight. A crab is sitting on the thwart, under water, like a passenger who has not been told." },
       } },
     { name = "Hesper Coddle, fishwife",
       icon = "☻",
       description = "She guts a herring in one motion without looking at it. She is looking at you, and you find you are standing up straighter.",
       things = {
         { name = "her knife", description = "Worn to a sliver by forty years of sharpening. It has opened more fish than there are people in Aldmoor." },
+        { name = "her creel", description = "A basket of herring on her left, a basket of what herring have inside them on her right, and a gull standing between the two, doing sums." },
+        { name = "her apron", description = "Oilcloth, silvered all over with scales. In a low sun she is the brightest thing on the quay, and looks like a small cross knight." },
+        { name = "her stool", description = "A fish box, upended. Her mother sat on it, and hers. The brand on the side is of a curer who went out of business under the old king." },
       },
       actions = {
         { "Talk", say "\"Herring,\" she says. \"Or mackerel, if you want to pay for the stripes.\"" },
         { "Ask about the lighthouse", say "\"Old Wim? Lets nobody up, and hasn't left the place in years. Waiting on a letter. By sea, he says.\" She flicks a fish head to a gull. \"The sea doesn't write. It'd have told me.\"" },
+        { "Ask about the isles", say "\"The Afterthoughts? Forty folk and a cow, an hour out. They send us kippers, and something else in the same barrels that we don't discuss.\" She points the knife at the mole. \"Dod Larkin'll take you. He'll want you to agree with him. Agree with him. It's quicker.\"" },
         { "Ask about the tide", when = no(flag "tide_out"),
           say "\"Goes out when the Office signs it out. Hasn't been signed since the clerk lost his stamp.\" The knife stops for a moment. \"You don't leave things lying near gulls.\"" },
         { "Ask about the tide", when = flag "tide_out",
@@ -44,14 +55,20 @@ space {
       description = "It stands on a bollard and looks at your pockets.",
       things = {
         { name = "its eye", description = "Yellow, round, and working out what you would fetch." },
+        { name = "its feet", description = "Pink, flat, and planted. It has stood on this bollard through two harbourmasters and regards the present one as temporary." },
+        { name = "a ring on its leg", description = "Brass, stamped very small. You get close enough to read it, which is closer than is wise. {i}PROPERTY OF THE TIDE OFFICE. IF FOUND, DO NOT ENCOURAGE.{/}" },
       },
       actions = {
         { "Stare it down", say "You stare. It stares. You remember something you had to do elsewhere." },
+        { "Offer it nothing", say "You show it your empty hands. It looks at them. It looks at your pockets. It has met empty hands before and they were lying." },
       } },
     { name = "the nets",
       description = "Hung on poles, rails, a handcart, and one old man who sat down too long.",
       things = {
         { name = "the old man under the net", description = "Asleep. The net has been mended around him twice." },
+        { name = "a net needle", description = "Bone, flat, loaded with tarred twine, left stuck in the mesh where somebody stopped for dinner. The best ones come over from the isles, they say, and are made from a whale that is now a gate." },
+        { name = "a row of corks", description = "Along the head rope, each burned with the boat's mark. One has a face drawn on it. It has been to sea four hundred times and still looks pleased." },
+        { name = "a hole", description = "The size of a seal. The mender is leaving it till last. She says it puts her in a temper, and she does her best knots in a temper." },
       } },
     barrel { name = "a barrel of herring",
              description = "In stories there is always something in the barrel. Here it is herring. It is always herring." },
@@ -131,6 +148,11 @@ space {
             { when = flag "tide_out",
               description = "A flight cut into the quay face, slick and green, going all the way down to the mud. There are forty of them. The harbour had only ever admitted to nineteen." },
           } },
+        { name = "the tide gauge", description = "A board bolted to the quay face, marked in feet. A paper tag hangs from the top on a string: {i}Readings taken from this gauge are advisory. For the height of the tide, apply to the Office.{/}",
+          variants = {
+            { when = flag "tide_out", description = "A board bolted to the quay face, marked in feet. The mud is a yard below the bottom of it. Somebody from the Office has been down and chalked more feet on the stone underneath, with minus signs." },
+          } },
+        { name = "a mooring ring with a rope and no boat", description = "The rope goes over the edge, taut. You look. It goes down into the water and on down, straight, out of sight. Hesper says not to pull it. Something is tied up there, she says, and has been good so far." },
         { name = "a bollard", description = "Granite, waist high, with a groove round it worn by nine hundred years of rope. A gull has the top. It is always the same gull." },
         { name = "the names on the wall",
           wonder = true,
@@ -144,6 +166,9 @@ space {
       things = {
         { name = "a window with a ship in a bottle", description = "A full-rigged ship in a green bottle, sails set. It is the {i}Unsinkable{/}. The label says {i}made by her carpenter, from memory, afterwards{/}. She is on an even keel in there, which is more than she managed outside it." },
         { name = "a doorstep", description = "Scrubbed white every morning and chalked with a pattern of loops to keep bad luck from crossing it. The cat steps over. The postman steps over. You would step over." },
+        { name = "a glass float in a window", description = "Green, the size of a head, in a net of its own. It came in on the tide from the Afterthoughts with a rag tied to it, and the rag had a word on it. She keeps the float in the window and the word to herself." },
+        { name = "a cat on a wall", description = "Ginger, and fat as a bolster. Every cottage on the row feeds it and each believes it is the only one. The cat has kept eleven households apart for years by never once being seen crossing the road." },
+        { name = "a door painted two colours", description = "Blue to the latch and red above. Two tins ran out on the same afternoon. It is the handsomest door on the quay and the owner has had offers." },
         { name = "a row of drying fish", description = "Split, salted and pegged on a line under the eaves, stiff as boards. A gull walks along the roof above them with the look of somebody checking a door handle." },
       } },
     { name = "the lobster pots",
@@ -154,12 +179,20 @@ space {
           actions = {
             { "Apologise to it", say "It lowers the claws a little. It is the most reasonable response you have had from anything in a shell." },
           } },
+        { name = "a pot with a boy in it", description = "The biggest pot, on the bottom row, has a small boy folded up inside it with his chin on his knees. He is hiding. He has been found twice and has not come out, on the ground that he has not been found properly." },
+        { name = "the bait box", description = "Salt mackerel, a week gone, in a tub with a slate on top and a stone on the slate. The gulls have the slate off by noon most days. They cannot yet manage the stone, and they are working on it in shifts." },
+        { name = "a withy half woven", description = "A new pot, begun, with the ribs standing up like a crown. The maker weaves one round each evening, on the wall, in the last of the light, and by the smell of his pipe he is thinking of nothing at all." },
       } },
     { name = "the smokehouse",
       description = "A tall black shed with no windows and a roof that leaks blue smoke at every seam. Herring go in silver and come out the colour of a violin.",
       things = {
         { name = "the kippers", description = "Hundreds, split and hung by the tail on rods, row above row into the dark, turning brown and gold. The smell alone would keep you alive for a week." },
         { name = "the oak chips", description = "Smouldering in a trench in the floor, never allowed to flame. The smoker damps them with seawater from a can and watches them like a man with a sleeping child." },
+        { name = "the smoker", description = "Eck Isbister, a brown silent man from the islands, who came over forty years ago after a difference with two cousins about a boat. One of the cousins smokes kippers on Muckle Afterthought. Each says the other's are not fit for a cat. Each buys a pair of the other's every month, through a third party, to be sure.",
+          actions = {
+            { "Ask about his cousin", say "\"Haven't one.\" He turns a rod. \"He uses too much salt,\" he says, a while later, to the kippers." },
+          } },
+        { name = "a rod of bloaters", description = "Whole herring, lightly smoked, fat and silver gold. The kipper is for breakfast. The bloater, he says, is for people who have something to celebrate, and is therefore mostly sent to Aldmoor." },
       },
       actions = {
         { "Breathe in", say "You will smell of this for a month. Dogs will follow you. You regret nothing." },
@@ -171,7 +204,13 @@ space {
         { when = flag "tide_out",
           description = "Captain Ivo Brack, retired, in a coat with brass buttons, standing at the head of the quay with a slate. He has drawn a line across the middle of it and written, under the line, {i}NO WATER{/}. He seems almost relieved. It is at least an entry." },
       },
+      things = {
+        { name = "his slate", description = "In a wooden frame, with a sponge on a string. Columns ruled in paint: {i}IN, OUT, REMARKS{/}. The paint is worn through under {i}REMARKS{/}." },
+        { name = "his brass buttons", description = "Eight, with anchors, polished every morning. One has a different anchor. It is off the coat of the harbourmaster before him, who lost one in the same place, and left this in his will." },
+        { name = "his telescope", description = "Under his arm, shut. He opens it for ships. In nineteen years there have been four ships, and one of those was a cloud." },
+      },
       actions = {
+        { "Ask about the ferry", say "\"The {i}Presently{/}? Not a harbour vessel. Does not use the harbour. Ties up to the outside of the mole, where I cannot see it from here, and sails when Larkin has finished his sentence.\" He taps the slate. \"I do not enter it. I have asked him for a timetable. He gave me his opinion.\"" },
         { "Ask about the boats", when = no(flag "tide_out"), say "\"None out. Tide's not signed. I have written to the Office.\" He shows you the letter. He has written it on the slate. \"They have not replied.\"" },
         { "Ask about the boats", when = flag "tide_out", say "\"None out, none in, none afloat.\" He looks at the mud with a professional eye. \"I have been master of this harbour for nineteen years and this is the first time I have seen the bottom of it. It wants sweeping.\"" },
       } },
@@ -182,10 +221,47 @@ space {
           description = "Three of them, down on the mud, with a bucket, picking crabs up by hand. They have decided that this is cheating and are doing it anyway." },
       },
       things = {
+        { name = "the bacon rind", description = "Tied on with a hair. It has caught every crab in the harbour several times and is down to the string. The crabs come for the company now." },
+        { name = "the smallest child", description = "She is not allowed a line. She has been given the job of telling the crabs, as they go back in, that it was nothing personal. She takes it seriously and does each one separately." },
         { name = "the bucket", description = "Eleven small green crabs, climbing over each other. At the end of the day they will be counted, named and tipped back in. Some of these crabs have been caught every summer for years and know the bucket." },
       },
       actions = {
         { "Ask how many", say "\"Eleven,\" says the smallest. \"That one's Gerald. He always comes.\"" },
+      } },
+    { name = "the ferry board",
+      description = "At the root of the mole, a plank on a post, lettered in tar: {b}AFTERTHOUGHTS FERRY. LEAVES PRESENTLY.{/} An arrow points along the mole to its seaward end, where a brown sail is showing over the stones.",
+      variants = {
+        { when = flag "tide_out",
+          description = "At the root of the mole, a plank on a post, lettered in tar: {b}AFTERTHOUGHTS FERRY. LEAVES PRESENTLY.{/} Somebody has chalked under it: {i}further out than usual. Bring boots.{/} Beyond the mole end, past the mud, a brown sail is standing where the water went." },
+      },
+      things = {
+        { name = "the fare", description = "Painted smaller, at the bottom: {i}FARE: ONE AGREEMENT. CHILDREN AND LIVESTOCK, HALF.{/} You cannot think what half an agreement would be. You suppose a nod." },
+        { name = "a tin for complaints", description = "Nailed to the post, with a slot. The bottom has been cut out. Complaints go in at the top and continue to the ground, where a hen is waiting." },
+      },
+      actions = {
+        { "Ring the ferry bell", say "There is a cow bell on a nail. You ring it. From the end of the mole a voice says, without hurry, \"I heard you coming along the quay. I don't need telling twice.\" The sail stays exactly where it is." },
+      } },
+    { name = "an old sailor on a fish box",
+      icon = "☺",
+      description = "Pegleg Marl, who has both his legs and always has had. The name is from a boat. He sits at the head of the steps with a pipe and tells visitors about the sea, in return for anything.",
+      things = {
+        { name = "his tattoo", description = "An anchor on the forearm, gone blue and soft. Under it a name, crossed through, and another name, crossed through, and then, with the wisdom of age, {i}MOTHER{/}." },
+        { name = "his pipe", description = "Carved from a whale's tooth in the shape of a mermaid. The mermaid has been smoked a deep brown and worn down by his thumb to the point where she could be anyone." },
+        { name = "his cap, for coins", description = "On the ground, upside down, with a herring in it. People here pay in what they have." },
+      },
+      actions = {
+        { "Ask for a story", say "\"The {danger}Great Worm of the Outer Ground{/},\" he says at once. \"Three mile long. Eyes like cartwheels. Came up under the {i}Hopeful{/} in my father's time and looked at every man aboard, one by one, and went down again. Never touched 'em.\" He draws on the pipe. \"They were that offended, half of 'em gave up the sea.\"" },
+        { "Ask where the charts stop", say "\"West of the Afterthoughts. There's the isles, then there's the Stack with the birds, then there's water, and then the chartmaker's put a wee drawing of a wave and gone for his dinner.\" He looks out past the Light. \"I've been as far as the drawing. It's just sea. But it's the kind that looks back.\"" },
+      } },
+    { name = "the weather glass",
+      description = "A barometer in a wooden case, screwed to the wall of the fish market for the public good. The needle stands at {i}CHANGE{/}. It has stood at {i}CHANGE{/} for thirty years, and has never yet been wrong.",
+      actions = {
+        { "Tap the glass", say "The needle shivers and settles on {i}CHANGE{/}. A fisherman going by taps it too, without stopping, as you would touch a child's head." },
+      } },
+    { name = "the tar boiler",
+      description = "An iron pot on three legs over a driftwood fire, at the top of the slip, with a man stirring it with a paddle. Every boat in Saltwick gets a coat each spring. So does the man, and his dog, which was white.",
+      things = {
+        { name = "the dog", description = "Black to the elbows and across one eye, from sitting too near. It is called Patch. It was called Snowy. They changed it for the sake of accuracy." },
       } },
     { name = "the inn sign",
       description = "A board swinging over a door at the landward end of the quay: a painted sea, perfectly flat, with a boat sitting on it doing nothing. {b}THE SLACK WATER{/}. There is light in the windows and a noise of mugs." },
@@ -202,6 +278,8 @@ space {
       requires = flag "tide_out",
       locked = "the steps go down into the harbour, and at present so does the harbour" },
     { to = "tide_office" },
+    { to = "is_ferry", label = "The Afterthoughts ferry",
+      description = "Out along the mole to its seaward end, where an open boat with a brown sail is waiting for somebody to agree with." },
     { to = "saltwick_light", description = "Along the mole to the white tower at the end of it." },
     { to = "long_strand", description = "Past the last cottage and round the point, where the quay gives up and the sand begins." },
   },

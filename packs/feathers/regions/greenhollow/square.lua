@@ -203,6 +203,40 @@ space {
         { name = "a newt",
           description = "In the trough, under the weed, hanging in the water with its legs out. It has the whole thing to itself and knows it." },
       } },
+
+    { name = "the crier's post",
+      description = "An oak post with a hand bell on a hook. Greenhollow has a town crier, by an old charter, and has never had the news to go with him.",
+      things = {
+        { name = "Ned Peal, crier",
+          description = "In a coat that was red, with a bell he has been told not to ring before nine. He cries the news each noon. Yesterday's was that the news would be cried today.",
+          things = {
+            { name = "his scroll", description = "Blank, and held at arm's length, for the dignity. He knows the news by heart. It is the weather, the price of onions, and the goose." },
+            { name = "his hat", description = "Three corners. One has been bitten. He does not go near the pond." },
+          },
+          actions = {
+            { "Ask for the news", say "He rings the bell, though you are a yard away. \"OYEZ. An adventurer has arrived.\" He looks at you. \"That is you. It is fine today. Onions are a smile each.\" He lowers the scroll. \"There is nothing about the goose,\" he says, more quietly. \"There is nothing I am {i}allowed{/} to say about the goose.\"" },
+            { "Ask him to cry your name", say "He takes a breath that lifts him onto his toes, and lets it go. \"Not without a deed,\" he says kindly. \"Come back when you have done a deed. Even a small one. I did a man last year for finding a sheep.\"" },
+          } },
+        { name = "the hand bell", description = "Brass, with a crack. It says {i}clank{/}. In a village where the chapel bell rings yesterday, a bell that only rings badly is thought rather a good one." },
+        { name = "the charter, in a frame", description = "Nailed to the post under a square of horn. A king, long ago, granted Greenhollow the right to a crier, a market and a gallows. They took the crier. They are still thinking about the market." },
+      } },
+    { name = "a hopscotch",
+      description = "Scratched in the dry patch by the cross with a stick. The squares go up to nine, and the tenth is labelled {i}HOME{/}.",
+      things = {
+        { name = "the pebble", description = "Flat, grey, kept in the crook of the chestnut between games. It is the same pebble their mothers used. It knows the way." },
+        { name = "a square with a puddle in it", description = "Number six. You have to hop it. Everyone's left sock in Greenhollow is a slightly different colour from the right." },
+      },
+      actions = {
+        { "Have a go", say "One, two, three, four, five. You clear the puddle. Seven, eight, nine, {i}HOME{/}. It is the first quest you have completed. A small girl tells you that you trod on a line at four, and that it does not count." },
+      } },
+    { name = "the lamp post",
+      description = "Greenhollow has one street lamp, bought by subscription, and nobody to light it. It is lit all the same, every dusk, by whoever is passing with a taper and a conscience.",
+      things = {
+        { name = "the glass", description = "Four panes, one cracked, one replaced with the bottom of a jam jar. At night the lamp throws a ring of jam-coloured light on the mud, and moths queue for it." },
+        { name = "a moth, early", description = "Brown, furry, asleep on the iron, with its wings shut like hands. It has come hours before time to be sure of a place." },
+      } },
+    { name = "the smell of bread",
+      description = "It comes round the corner from the back of the tavern at this hour and crosses the square like a person. Jeb and Old Jeb turn their heads to watch it go by." },
   },
 
   exits = {

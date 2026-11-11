@@ -137,6 +137,30 @@ space {
       description = "On the south wall, carved slate with an iron pointer. The house keeps time by it. Clocks tick. There was a clock once. It is in the history, next to the buckets." },
     { name = "the snow on the gate tower",
       description = "A round cap of it on the tower roof, tilted a little to one side. It looks exactly like a hat. You find you want to tell somebody. There is nobody to tell. You begin to understand the place." },
+    { name = "the wind harp",
+      description = "In an arch of the gate tower, a wooden frame strung with gut. It is the only instrument in the house. The Rule forbids a brother to make music. It says nothing of the wind, and the wind has been choirmaster for four hundred years.",
+      things = {
+        { name = "the strings", description = "Twelve. One is new and paler. A brother restrings it once a year, at night, and tunes it by touch, which is permitted since he does not listen." },
+        { name = "a row of monks, not listening", description = "Three brothers have found work to do under the arch. One is sweeping a clean flagstone. One is mending a sound sandal. The third has given up the pretence and is leaning on the wall with his eyes shut." },
+      },
+      actions = {
+        { "Wait for a gust", say "It comes up the valley and through the arch, and the harp opens like a door: one long chord, twelve notes, swelling and dying. In the courtyard every broom stops. Then the wind drops, and every broom starts, and nobody has heard anything at all." },
+      } },
+    { name = "a complaint, returned",
+      description = "Pinned to the gate from the inside: a folded sheet with the Weather Office's stamp. It is the monastery's own letter, sent back. The sheet is blank, as it was when they sent it. Across it the Office has written {i}Noted{/}.",
+      things = {
+        { name = "the reply, on the back", description = "{i}Your communication regarding snow has been received and is understood. The Schedule cannot be amended. We enclose, as a courtesy, one (1) fine afternoon, to be taken at the Abbot's discretion.{/} There is a small cork glued to the corner, drawn." },
+      },
+      actions = {
+        { "Ask Brother Porter about the afternoon", say "He writes on his slate: {b}USED IT.{/} He wipes it. {b}ST BRUNO'S DAY. 11 YRS AGO.{/} He wipes it and stands a moment, looking at the snow. {b}WE SAT ON THE WALL.{/} He does not wipe that one for some time." },
+      } },
+    { name = "the snow brother's shed",
+      description = "A lean-to by the gate where the brooms are kept. There are forty-one. The monk who sweeps the courtyard wears one out every nine days.",
+      things = {
+        { name = "the brooms", description = "Birch twigs bound on hazel. They hang in a row, new at one end, and at the other a stump with six twigs left on it that he cannot bring himself to burn." },
+        { name = "a tally on the door", description = "Brooms, in fives. It covers the door, and the wall, and has started on the ceiling. Under it somebody has chalked a sum, working out how much snow that is. The answer has been rubbed out by a thumb, kindly." },
+        { name = "a snowman", description = "Behind the shed, where it cannot be seen from the Abbot's window. Small, well made, with a rope girdle and a finger of twig laid across its mouth. It is rebuilt every winter. It has taken its vows more seriously than most." },
+      } },
   },
 
   exits = {
@@ -218,6 +242,25 @@ space {
       } },
     { name = "the ceiling",
       description = "Mattresses overhead too, held up by a net. One of them sags. There is a shape in the sag, small and square. Somebody threw the lozenge tin lid in a moment of feeling and it has been up there ever since, being looked at." },
+    { name = "the crack's birthday",
+      description = "Scratched in the rock beside the crack, at shoulder height: a date, forty years gone, and a mark like a mouth, open. For three hundred and sixty years the Thursdays stayed in this room and soaked into the mattresses. Then one night, during item one, somebody outdid himself, and the mountain gave.",
+      things = {
+        { name = "a name under the date", description = "{i}Br. Anselm. Sorry.{/} He was a small man, the brothers indicate, with a chest like a cask. He is the Abbot now." },
+        { name = "a row of older marks", description = "Lower down, in older hands, pencilled measurements across a hairline that was not yet a crack. {i}No wider. No wider. A little wider. Brother, please.{/}" },
+      },
+      actions = {
+        { "Feel the draught", say "Cold, going down. You say {i}ah{/} into it, not loud. The crack takes it, as a letter box takes a letter. Some time in the next forty years a stranger in the gorge will hear a small, careful {i}ah{/} and wonder who was being so polite." },
+      } },
+    { name = "the old mattresses",
+      description = "Stacked in the far corner, retired. They have taken four centuries of Thursdays and are not what they were. Nobody will sit on them. A brother who did, as a novice, heard a hundred years of grievance come out of the straw at once, like dust.",
+      actions = {
+        { "Prod one", say "You press a thumb into the ticking. It breathes out. For a second the room is full of a faint roaring, a crowd heard from three streets off: every man who ever let go in here, at once, and very tired. You take your thumb away and it stops, mid word." },
+      } },
+    { name = "a tuning fork",
+      description = "On a nail by the door, steel, well handled. Before business the precentor strikes it, and the whole house shouts on the same note, so as to do the least harm to the rock. The note is the mountain's own, as near as they can get it. They found long ago that Old Grumble does not mind being joined.",
+      actions = {
+        { "Strike it", say "A low hum, lower than a fork that size should give. The lamp flame leans. Under your boots the mountain's note is going on as ever, and for the life of the fork the two are one sound, and you cannot tell which of them began." },
+      } },
   },
 
   exits = {

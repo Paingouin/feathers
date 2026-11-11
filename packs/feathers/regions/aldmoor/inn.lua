@@ -103,6 +103,22 @@ space {
       actions = {
         { "Listen in", say "The Baroness has a study she does not have. The King is in the kitchen garden. The wall grew again. They know everything. They stop when they see you listening, and then, kindly, start again a little louder." },
       } },
+    { name = "the commercial room",
+      description = "A back parlour with a round table, where travellers in a line of goods do their sums of an evening. Tonight there is one: a small man with a case of buttons and a tired face.",
+      things = {
+        { name = "the traveller in buttons", description = "So he exists. He has the second room by the year and is seldom in it. He buys buttons by the gross in the north and sells them to a man on the coast at a price that puzzles him.",
+          actions = {
+            { "Ask who buys them", say "\"A hatter,\" he says. \"Abroad. He takes all I can find. Any size, any sort, odd ones for choice.\" He turns one over in his fingers. \"I asked him once what they do with them down there. He wrote back: {i}spend them.{/}\"" },
+          } },
+        { name = "the sample case", description = "Trays of them, on velvet: horn, brass, pearl, glass. On the top tray, by itself, is a button of plain bone, cracked. It was his first. It is not for sale and he could not tell you why he carries it." },
+      } },
+    { name = "the yard at the back",
+      description = "Through the passage: cobbles, a pump, a mounting block, and stabling for six.",
+      things = {
+        { name = "the ostler", description = "A bow-legged man with a straw in his mouth who can tell a horse's age, temper and owner's bank balance from the teeth. He looks at your boots in the same way." },
+        { name = "a carter's horse", description = "Enormous, grey, shaggy at the heel, eating. It has done the road to Saltwick four hundred times and could do it without the carters, who are arguing inside. It has its own view about which way is longer." },
+        { name = "the pump", description = "The handle shrieks. It is not oiled, on purpose. It is how Mistress Tolly knows who is watering the beer." },
+      } },
   },
 
   exits = {

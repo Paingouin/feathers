@@ -96,6 +96,29 @@ space {
       actions = {
         { "Count the drips", say "You get to forty and find that you have slowed your breathing to match. So this is what calm is. You had wondered." },
       } },
+
+    { name = "a stair into the water",
+      description = "At the end of the quay, steps go down under the surface: broad, shallow, of the old dark stone. You can see seven before the black takes them. They were not built to be under water. The water came later and they have not been told.",
+      things = {
+        { name = "the seventh step",
+          description = "A coin's depth under. Something stands on it: a lantern, of horn, unlit, upright, as if put down by someone who meant to be a minute." },
+        { name = "a mooring ring, drowned",
+          description = "Iron, as wide as a cartwheel, a yard under. You have never seen a boat that would need it. The fish swim through it in turn, like children with a hoop." },
+      },
+      actions = {
+        { "Go down as far as your knees", say "Three steps. The water is cold and perfectly still and holds your legs like a hand. You feel with one boot for the fourth step, and the fifth. They go on. They are worn in the middle. People used to come up this way with dry feet." },
+      } },
+    { name = "the cistern's echo",
+      description = "Clap, and the clap goes round the columns nine times before it tires. The dredgers say that if you listen to the end you can hear which arch it leaves by.",
+      actions = {
+        { "Clap, and listen to the end", say "Nine times round, each fainter. And then it does not die. It goes: out through a low arch on the far side, downward, quite briskly, as if it were expected somewhere." },
+      } },
+    { name = "a dredgers' notice board",
+      description = "A plank nailed to a column, with papers under a slate to keep them from the damp.",
+      things = {
+        { name = "the tariff", description = "{i}Boots, each: one farthing. Boots, pair: a penny, for the rarity. Rings: tell nobody, see Mott.{/}" },
+        { name = "a notice in a very small hand", description = "Pinned low down, with a fish bone. {i}PARDON. One of your nets is across our chimney. No hurry.{/} The dredgers take it for a joke by the mudlark. The mudlark cannot write." },
+      } },
   },
 
   exits = {

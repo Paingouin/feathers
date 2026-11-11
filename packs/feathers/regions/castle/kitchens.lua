@@ -147,6 +147,31 @@ space {
       description = "A stone step at a small door in the back wall, worn in the middle. It is wet. Something was set down on it this morning, washed, and taken in.",
     },
     barrel { name = "a flour barrel", description = "One of a dozen against the back wall. The floor in front of them is swept. The floor behind them is worn, in a line, by one pair of boots." },
+
+    { name = "a row of jellies",
+      description = "On a marble slab by the window, setting: six of them, turned out of copper moulds in the shape of the castle, each with all three towers.",
+      things = {
+        { name = "the sixth jelly", description = "This one came out with only two towers. It has been set aside, labelled {i}STAFF{/}, and has a spoon in it already." },
+      },
+      actions = {
+        { "Poke one", say "It shudders for a long time, towers and all. Across the kitchen Mistress Dobbin, with her back to you, says \"I felt that.\"" },
+      } },
+    { name = "the sink drain",
+      description = "In the scullery floor, a lead pipe as wide as your arm, going down. More royal silver has left the castle by this pipe than by any thief.",
+      things = {
+        { name = "a chalk tally on the wall above it",
+          description = "{i}SPOONS LOST THIS REIGN: 214. FORKS: 61. RINGS (SCULLERY MAID'S, GOT ENGAGED, TOOK IT OFF TO WASH): 1.{/} The last is underlined, and somebody has drawn a small sad face." },
+        { name = "a string going down the pipe",
+          description = "Tied to the tap, taut, with a bent pin on the end, somewhere below. The scullery maid fishes for her ring on her afternoon off. She has caught, so far, a fork and a very small polite note.",
+          actions = {
+            { "Ask about the note", say "She has it in her apron. Grey card, the size of a stamp. {i}Pardon. Your ring is safe and is looking at the door. Kindly come when convenient. Bring the ticket.{/} \"What ticket?\" she says. \"Nobody gave me a ticket.\" You tell her to ask at an inn. She gives you a look." },
+          } },
+      } },
+    { name = "the egg boy",
+      description = "A child of about eight on a stool, whose whole office is to hold eggs up to a candle and say whether they are good. He has held up forty thousand. He is beginning to have views on them as individuals.",
+      actions = {
+        { "Ask how he tells", say "\"The good ones look sure of themselves,\" he says, and holds one up. You look. It does, rather. He puts it in the good basket and it settles in among the others like a man taking his seat at a club." },
+      } },
   },
 
   exits = {
@@ -267,6 +292,26 @@ space {
       description = "On the handle of the spade. It follows the King up and down the rows for worms. It is the only courtier he has not tried to get away from." },
     { name = "the garden door",
       description = "Low, green, set deep in the kitchen wall. On this side it has a bolt, a boot scraper, and a hook with a second old hat on it, a woman's, straw, that nobody has moved." },
+
+    { name = "the potting shed",
+      description = "Tarred boards, a cobwebbed window, a door that sticks. It is the real seat of government. The despatch boxes come here to be used as seed trays.",
+      things = {
+        { name = "the seed drawers", description = "Forty small drawers, labelled in the royal hand. {i}Peas, early. Peas, late. Peas, in disgrace.{/}" },
+        { name = "a ball of twine", description = "On a nail, with the Great Seal hanging beside it on the same nail. He uses the Seal for firming in seedlings. It leaves a small lion on the soil." },
+        { name = "the royal notebook",
+          description = "Oilcloth, muddy. One page is headed {i}Things to raise at the meeting{/}, and is blank. The page opposite is headed {i}Slugs{/}, and is full on both sides, with diagrams." },
+      },
+      actions = {
+        { "Look in at the window", say "A deckchair. A kettle on a brazier. A pair of spectacles on an upturned flowerpot, and a crown hung on the handle of a spade to keep it out of the wet. You have seen throne rooms. This is the first room in the castle that looked ruled from." },
+      } },
+    { name = "a molehill",
+      description = "In the middle of the lawn, fresh. The King has put a little flag in it and left it alone.",
+      things = {
+        { name = "something on top of it",
+          description = "A cobble of river pearl, no bigger than a pea, set on the very crown of the heap, as you might leave a card. The King says they turn up every spring. He leaves a radish in return, and the radish is always gone." },
+      } },
+    { name = "a hedgehog",
+      description = "Under the bean rows, going about its business with a snuffle. It has a name, and a pension, and is the only member of the household the King consults about slugs." },
   },
 
   exits = {

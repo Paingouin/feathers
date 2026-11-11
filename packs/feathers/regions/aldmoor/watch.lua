@@ -87,6 +87,20 @@ space {
       description = "Over the door, so that citizens can find the Watch at night. At night the Watch is not here. The lamp does its best." },
     { name = "the step",
       description = "The top step of the stair down to the cells. It is an inch higher than the others. Everyone is warned about it. It has still tripped every prisoner the Watch has ever had, and two captains." },
+    { name = "a parcel on the Captain's desk",
+      description = "Brown paper, string, and a label: {i}For Master Edwin, on his birthday, from his Uncle Brisket.{/} One corner is torn. A long black face with shell eyes is looking out of it at the charge book.",
+      things = {
+        { name = "the card that came with it", description = "{i}Mask, cursed. Grade: mild (suitable for children).{/} The Captain has read it several times. He would have preferred it to say what a mild curse does." },
+      },
+      actions = {
+        { "Ask about the mask", say "\"It's for the nephew,\" says Captain Brisket. \"He wanted something fierce.\" He pulls the paper up over the eyes. It slips down again. \"I've had two confessions since it came. I never asked for either. I may keep it.\"" },
+      } },
+    { name = "the tea corner",
+      description = "A shelf, a kettle, six mugs and a caddy with a small tree stamped on the lid. The Watch runs on it. The caddy is marked {i}EVIDENCE{/}, which is how it came in, and nobody has had the heart to put it in the store.",
+      things = {
+        { name = "the mugs", description = "Each with a number. Number four has no handle and is for prisoners. It is said to make the best cup, and two constables have been caught using it." },
+        { name = "the caddy", description = "Seized off a handcart with sacking on the wheels. The man with the cart was let go with a caution, a sandwich, and an order to come back when the caddy was empty." },
+      } },
   },
 
   exits = {
@@ -168,6 +182,17 @@ space {
       description = "For the drip. The drip comes from the Watch House stove pan, through the floor, so it is stew. There is a mouse in the corner who has built a life round it." },
     { name = "the rules of the gaol",
       description = "Painted on the wall: {b}1. No escaping during meals. 2. No singing after ten. 3. Mind the step.{/}" },
+    { name = "the exercise yard",
+      description = "Through a barred door: ten paces by six, between high walls, with a square of sky. Prisoners walk round it for an hour a day. There is a path worn in the flags, and in the middle, where nobody treads, a dandelion.",
+      things = {
+        { name = "the dandelion", description = "It has a stick, a string, and a ring of pebbles. The prisoners water it by turns. A man was given an extra week last year, at his own request, to see it flower." },
+        { name = "marks on the wall", description = "Scratched tallies, and one long careful drawing of a ship, in full sail, done over many sentences by many hands. Each man adds a rope. It is nearly rigged." },
+      },
+      actions = {
+        { "Add a rope to the ship", say "The gaoler lends you his nail. You find a yard that wants a brace and put it in, as straight as you can. \"That's a fortnight, by rights,\" he says. \"But I'll let it go. It needed doing.\"" },
+      } },
+    { name = "the gaol cat",
+      description = "Grey, thin, and able to pass between the bars of any cell in the building. It sleeps with whoever has the longest sentence. It is a sound judge, the gaoler says, and has never yet been wrong about who is staying." },
   },
 
   exits = {
@@ -231,6 +256,20 @@ space {
       description = "For twenty paces the stones are bigger and darker and fit without mortar. The town wall was built on to the end of something. The masons never said what, and the guide book calls it {i}the early work{/}." },
     { name = "a sentry box",
       description = "A wooden box with a pointed roof, for the rain. Inside: a stool, a nail, and nineteen years of the same initials carved under one another, with the date, and each year the word {i}still{/}." },
+    { name = "a mason on a cradle",
+      description = "Slung over the outer face on two ropes, with a trowel and a bucket, repointing. The Council pays him by the yard. The wall is three miles round. By the time he gets back to where he started, it wants doing again.",
+      things = {
+        { name = "his plumb line", description = "Hanging down the wall beside him. It does not hang quite straight. He has stopped mentioning it. He holds that a plumb line that leans is the wall's business." },
+        { name = "his bucket", description = "Lime, sand and hair. And, on top, a paper of bread and cheese, since it is a long way up to come for lunch." },
+      },
+      actions = {
+        { "Call down to him", say "\"How's the wall?\" you shout. He looks up, a small foreshortened man on a plank. \"Bigger,\" he calls back. \"Don't ask me. I only fill the cracks. Something keeps making room for more.\"" },
+      } },
+    { name = "a cannon",
+      description = "One, iron, on a wooden carriage, pointing out over the Barley Road. It was last fired at a coronation. There is a nest in the muzzle and a notice: {i}NOT TO BE DISCHARGED WHILE OCCUPIED{/}.",
+      things = {
+        { name = "the nest", description = "Sparrows. This is the ninth brood raised in ordnance. The watchman says they come out deaf to thunder and afraid of nothing." },
+      } },
   },
 
   exits = {
@@ -302,6 +341,20 @@ space {
         { name = "a mason's level", wonder = true,
           description = "A wooden level with a bubble in a glass tube, left by the men who built the room. {magic}The bubble is not in the middle.{/} It sits a little to one side, towards the Grumbles, and stays there whichever way the level is turned. Widow Hask says it is the only honest tool in Aldmoor, and that it is the town that is out." },
         { name = "a captain's whistle", description = "Silver. Blown once, in the snug, as a joke. The whole night shift fell in on the wall for the first time in a century, and found it draughty." },
+      } },
+    { name = "the dartboard",
+      description = "Elm, on the end wall, lit by its own candle. The night shift has played the same game for eleven years. Nobody can remember the score, so it cannot be finished, and that suits everybody.",
+      things = {
+        { name = "the darts", description = "Three, flighted with paper cut from old regulations. The best one is regulation 212." },
+        { name = "holes in the wall", description = "All round the board, a wide scatter, going back generations. And one, alone, a yard and a half to the left, very deep. That was a king. Nobody says which." },
+      },
+      actions = {
+        { "Throw a dart", say "You are handed one. The snug goes politely quiet. You throw. It goes into the wall a yard and a half to the left, beside the deep hole. There is a pause, and then Widow Hask says, \"Well. That's the royal mark,\" and somebody buys you a half." },
+      } },
+    { name = "a jar on the bar",
+      description = "Pickled onions, Marta's, from Greenhollow. They are the size of a fist and they make grown watchmen weep. There is a slate beside the jar with the record: {i}three, without water{/}.",
+      actions = {
+        { "Try one", say "You bite. For a moment, nothing. Then the whole of Greenhollow comes up the back of your nose. Through the tears you see the night shift nodding. \"One,\" says Widow Hask, and chalks it. \"With water. Sit down, love.\"" },
       } },
   },
 

@@ -92,6 +92,24 @@ space {
 
     { name = "the chapel roof, from behind",
       description = "It sags in the middle and rises at both ends. From here you can see that it has never been repaired. From here you cannot see why it is still up." },
+
+    { name = "the bone house",
+      description = "A stone shed against the north wall, with a slate roof and a grating in the door. When the yard fills, the oldest graves are dug again, and what is found is put in here, tidily. Greenhollow wastes nothing, including room.",
+      things = {
+        { name = "through the grating", description = "{danger}Skulls, in rows, on shelves, looking out.{/} There are perhaps two hundred. Each has a sprig of rosemary on top, renewed at Easter by the sexton, who knows a good many of them by the teeth." },
+        { name = "a skull with a dent", description = "Front row. The dent matches a certain mug in the Tipsy Griffon. It was an accident. It was a long time ago. The mug outlived them both." },
+        { name = "the sexton's lunch", description = "On the sill of the grating: bread, an onion, a twist of salt. He eats here. He says it is the one place in the village where nobody interrupts, and the company is past gossip." },
+      },
+      actions = {
+        { "Say good day through the grating", say "Nobody answers. You feel, all the same, that it was the right thing, and that it has been noted in your favour by a great many people with time to remember." },
+      } },
+    { name = "a sundial on a post",
+      description = "Slate, set level, with a motto round the rim: {i}IT IS LATER THAN YOU THINK{/}. Below, added by the sexton with a nail: {i}but there's no rush{/}." },
+    { name = "bees in the wall",
+      description = "A colony in the gap behind a loose stone of the chapel, coming and going through a crack. They have been there since before the yew was hollow. When someone in the village dies, the sexton comes and tells them, quietly, first.",
+      actions = {
+        { "Listen at the crack", say "A hum, deep and even, like a word being held. They go quiet for a moment when your shadow falls on the stone. Then, having decided that you have not come to tell them anything, they go on." },
+      } },
   },
 
   exits = {
@@ -166,6 +184,11 @@ space {
 
     { name = "a row of small clay cups",
       description = "On a ledge, each with a stub of candle in it, each scratched with a name. One for every child born in Greenhollow. They are lit once, and brought down here, and kept. There are a hundred and twelve that match the brass plates upstairs. They are at the front." },
+
+    { name = "a spider's web across the niche",
+      description = "Spun from the saint's raised elbow to the wall, and hung with drops from the roots. It has been made new every night for as long as there has been a spider, and broken by nobody, which is more than can be said for most things put up in her honour." },
+    { name = "the worn place on the floor",
+      description = "In front of the saint, two hollows in the flagstone, side by side, a knee's width apart. And, a little to the left of them, a third, smaller, by itself: the mark of everyone who knelt here on one knee, to see what it was like." },
   },
 
   exits = {

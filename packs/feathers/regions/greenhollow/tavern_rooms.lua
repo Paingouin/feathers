@@ -103,6 +103,18 @@ space {
 
     { name = "a row of copper pans",
       description = "Hung by size, polished, never used. Everything is cooked in the pot. The pans are for morale." },
+
+    { name = "the dresser",
+      description = "Elm, black with age, with the tavern's good plates on it. There are four. The party of adventurers in the corner have been given the other ones.",
+      things = {
+        { name = "the good plates", description = "Blue and white, with a picture of a bridge and two birds. On one of them the birds have been worn off by gravy. On another, it is the bridge. Between the four of them there is one whole picture." },
+        { name = "a drawer of string", description = "Every piece too short to use and too good to throw away. It is the oldest collection in Greenhollow and is added to daily." },
+        { name = "a jug of spoons", description = "Wooden. One is halfway to being a different spoon and is kept at the back, with the handle outward, and never used for the stew. The cook says the stew is trouble enough." },
+      } },
+    { name = "a salt pig",
+      description = "An earthenware pot with a wide mouth, by the fire. The salt is from Saltwick, grey and damp, and the cook says you can hear the sea in it. You put your ear to the pot. You can hear the cook, waiting for you to take your ear out of her salt." },
+    { name = "the flagstones",
+      description = "Scrubbed white, and worn into a path from the fire to the table to the door. The path has a kink in it. There was a dog bed there once, for thirty years, and people still step round it." },
   },
 
   exits = {
@@ -197,6 +209,16 @@ space {
       description = "Outside the doors, to be cleaned. Nobody cleans them. They are put out from habit and taken in from habit, and the boy in the kitchen has never been told." },
 
     candle { name = "the landing candle", description = "On a bracket, in a glass. It lights the way to the stairs and makes the door at the end darker." },
+
+    { name = "a warming pan",
+      description = "Copper, on a long handle, hung on the wall. It is filled with embers and run over the sheets for guests who pay the extra. The lid is pierced in a pattern of stars. Nobody has paid the extra since the founder, and he owned the place.",
+      actions = {
+        { "Swing it like a sword", say "It has good balance. You try a cut and a parry. The lid comes open and nine years of cold ash go down the stairs ahead of the sound. Below, a mug stops being polished." },
+      } },
+    { name = "a draught",
+      description = "It lives on the landing. It comes from under the door at the end, goes along the skirting, and leaves by the keyhole of Room Two. The candle leans to let it by." },
+    { name = "a mousehole in the skirting",
+      description = "Neat, arched, at the foot of the linen cupboard. Somebody has painted a door on the wall beside it, the same size, with a knocker. The mice use the hole. The painted door has, however, been scratched round the handle." },
   },
 
   exits = {
@@ -266,6 +288,20 @@ space {
 
     { name = "a crate of tavern signs",
       description = "The old ones, retired as they faded. In the oldest the griffon is not holding a tankard and is not falling over. It is very large, and it is coming this way, and the painter's hand was not steady." },
+
+    { name = "a hat box",
+      description = "Round, striped, tied with a ribbon gone the colour of tea.",
+      things = {
+        { name = "the founder's hat", description = "A broad felt with a griffon's claw pinned to the band. On inspection the claw is a hen's, gilded. Everything about the founder was a hen, gilded, and the village loved him for it." },
+      },
+      actions = {
+        { "Try the hat on", say "It comes down over your ears and rests on your nose. He had a big head. You stand for a while in the dark of another man's hat, which smells of tobacco and confidence, and feel briefly that you could found a tavern." },
+      } },
+    { name = "a rocking horse",
+      description = "Dapple grey, with one glass eye and a mane of real horsehair, pushed under the eaves. The paint is worn off its back in the shape of a small rider. It was the founder's daughter's. She called it Griffon. That, the cook says, is where the name really came from, and the two chickens came after.",
+      actions = {
+        { "Set it rocking", say "It goes forward, and back, with a creak on each. Dust lifts. You watch it slow, and stop, with its one eye on the gap in the thatch." },
+      } },
   },
 
   exits = {

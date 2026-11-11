@@ -103,11 +103,33 @@ space {
       actions = {
         { "Look over", say "You get down on your front and put your chin over the rim. Rock, then air, then cloud, then somewhere under the cloud a kingdom. A pebble goes from under your elbow. You count. You are still counting when you decide to wriggle backwards." },
       } },
+    { name = "a stone that is not on the mountain",
+      key = "le_first_step",
+      description = "A stride out from the east edge, level with your boots, hangs a flat grey slab the size of a hearthstone. Beyond it there is another, a little higher. Beyond that, another. You took them for a trick of the light on the cloud. They have moss on.",
+      variants = {
+        { when = flag "le_path_found",
+          description = "A stride out from the east edge hangs a flat grey slab, and beyond it another, and another, climbing into the blue: a path that was not told the mountain had stopped. You have stood on the first one. It took your weight without comment." },
+      },
+      things = {
+        { name = "a boot print", description = "Worn into the first slab, a left one, deep. You are not the first to stand at this edge with one foot out. Somebody has been the first to put it down." },
+        { name = "a line in the visitors' book", description = "You go back and check. The fourth entry, in a round hand: {i}Came up with the washing. Stopped for the view. Going on. A. Pegg.{/} You had read it as a joke." },
+      },
+      actions = {
+        { "Take one more step", when = no(flag "le_path_found"), set "le_path_found", fx "wash",
+          say "You hold the cairn with one hand and put a boot out over three thousand feet of air. It comes down on stone. You shift your weight. Nothing happens, in the best sense of the words. You are standing a yard off the top of the highest mountain in the kingdom, on a slab with moss on it, and ahead of you the path goes on up." },
+      } },
     { name = "the first star",
       description = "Out already, low in the east, though the sun is still up. At this height the sky is a darker blue than you are used to, and things show in it early." },
+    { name = "a kite string",
+      description = "Snagged round the Survey's bolt: a few yards of fine twine, with the end going straight up into the blue. It is taut. You follow it with your eye until it is too thin to see, and it is still going.",
+      actions = {
+        { "Give it a tug", say "You tug, twice. After a moment something tugs back, twice, from a long way up, in the manner of somebody who was not expecting a customer on this line. Then a small parcel comes sliding down the string in a paper cone, and stops at your hand. It is a bread roll. It is warm." },
+      } },
   },
 
   exits = {
     { to = "high_col", label = "The rope down", description = "Hand over hand, not looking at the view, which has done enough for one day." },
+    { to = "le_further_path", label = "The stones that go on up", description = "Sixty flat slabs with nothing under them, a stride apart, climbing east into a sky that turns out to have hedges.",
+      requires = flag "le_path_found", hidden = true },
   },
 }

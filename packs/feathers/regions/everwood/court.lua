@@ -118,6 +118,26 @@ space {
 
     { name = "a white moth",
       description = "On the Lady's shoulder, where a brooch would be. It is not a brooch. It opens and shuts its wings in time with her breathing, and she has not noticed, or has." },
+    { name = "the herald's scroll",
+      description = "Propped on a stand at the entrance to the ring: the roll from which arrivals are announced. It reaches the moss and goes on. Every guest of the court for four thousand years is on it, with titles, and there is a ribbon at today.",
+      things = {
+        { name = "the last entry but one", description = "A king of men, with eleven lines of honours, from a house you have never heard of and a kingdom that is now, you work out, mostly Mumblewood." },
+        { name = "the last entry", description = "Yours. He has written your name, all five syllables, in a beautiful hand. After it, where the titles go, he has started three times and scraped it out, and settled on {i}with a hat{/}." },
+      },
+      actions = {
+        { "Read back a few yards", say "Lords, envoys, a dragon ({i}by letter{/}), a delegation of dwarves ({i}brief{/}). And a long way up the roll, among the oldest names, a single entry with no name at all: only a date, and the words {i}came in out of the rain. Stayed to supper. Did not say.{/}" },
+      } },
+    { name = "the order of precedence",
+      description = "A slab of slate set in the moss at the herald's feet, with every member of the court cut into it in rank. It has not been altered in four thousand years. It did not need to be; nobody has left.",
+      things = {
+        { name = "the top line", description = "The Lady. Above her name there is a space, the height of one line, polished smooth, as if something had been there and was removed by much rubbing with a thumb." },
+        { name = "the bottom line", description = "In fresh chalk, not cut, in the herald's hand: a place for you, below the squirrels. He has left room after it in case you turn out to be anyone." },
+      } },
+    { name = "a courtier asleep",
+      description = "Third from the left in the back rank, standing, eyes open, attending perfectly. He is asleep. He has been asleep for sixty years. His neighbours know, and lean in very slightly at either shoulder, and have never said a word to him or to each other.",
+      actions = {
+        { "Wave a hand in front of him", say "Nothing. A small, even breath. The lady on his right looks at you, once, and you put your hand down. It was the look of someone guarding a child's nap, and you would not care to see it twice." },
+      } },
   },
 
   exits = {
@@ -215,6 +235,21 @@ space {
     { name = "a ring of pale toadstools",
       description = "Round the far side, glowing a very little. You have seen their blue cousins in the Mumblewood. These are white, and when a star in the pool flickers, they flicker after it, a moment late, like someone learning a dance.",
     },
+    { name = "a second rim",
+      description = "The pool has a kerb of worn stone. Under the water, a hand's breadth down, there is another kerb, older, of a different stone, and under that a third. The pool was not dug. It was found, and edged, and edged again by people who came after, and it is older than all of its edges.",
+      actions = {
+        { "Feel for the lowest", say "You put your arm in to the shoulder. The water is as cold as iron. Your fingers find a third rim, and under it a fourth, rough, not shaped by any tool. Stars drift round your elbow. You take the arm out, and it is dry." },
+      } },
+    { name = "a moving light in the pool",
+      description = "Among the fixed stars in the water one small light is crossing, slowly, from rim to rim. It is yellow, and warm, and it winks. No star does that. It is a lamp, in a window, a very long way up, and somebody has just walked in front of it.",
+      actions = {
+        { "Follow it across", say "It takes a hundred breaths to cross the pool. At the far rim it goes out behind the stone. You look up. Leaves. Whatever is carrying a lit window across the first night's sky, the elves have not mentioned it, and you wonder whether they have ever looked this low in their own pool." },
+      } },
+    { name = "a folded cloak",
+      description = "On the top step, grey, laid down neatly. The Lady's. She leaves it here when she comes, so as to go down to the water as nobody in particular. It is still a little warm.",
+      things = {
+        { name = "something in the fold", description = "A crust of Greenhollow bread, wrapped in a leaf. Half eaten. She brings her supper. She eats it down here, in the dark, sitting on a root, where forty courtiers cannot attend." },
+      } },
   },
 
   exits = {

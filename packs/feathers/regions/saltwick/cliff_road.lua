@@ -115,6 +115,31 @@ space {
       actions = {
         { "Walk it", say "It takes longer than it looks. Round, back, round the other way, nearly to the middle and then all the way out to the rim again. Then the stone. You stand on it and look up, and you are facing the sea, and far out there is one sail that you would swear was not there before." },
       } },
+    { name = "a fourth arm on the signpost",
+      description = "Newer than the other three, iron where they are wood, and bolted on dead level with a spirit gauge still attached. {place}TICKOVER{/}, 3 miles. Under it, on an enamel plate: {i}Allow four minutes.{/}",
+      things = {
+        { name = "the spirit gauge", description = "A little glass tube with a bubble. The arm was true when they fitted it. The post has since leaned with the wind, and the bubble has gone to one end and stayed there, like a man who has stopped arguing." },
+        { name = "a smudge of smoke inland", description = "Follow the arm and there it is, over the fields: a low brown cloud that goes up in puffs, evenly, as if somebody were signalling and had only the one thing to say." },
+      } },
+    { name = "a pair of rails in the grass",
+      description = "Two lines of rusty iron, a yard apart, beginning at a wooden buffer in the middle of the sheep and going off inland as straight as a rule. The sheep step over them without looking. One lamb is walking along a rail with great care, and has clearly done it before.",
+      things = {
+        { name = "the buffer", description = "Tarred timber, facing the sea. A brass plate: {i}PHASE ONE. TICKOVER MUNICIPAL TRAMWAYS REGRET THAT THE SEA IS NOT YET SERVED.{/}" },
+        { name = "a daisy between the sleepers", description = "One, in the cinders, with a neat hole cut in the turf beside it. Somebody comes out from the city each day and takes one, and each day leaves the next." },
+      },
+      actions = {
+        { "Balance on a rail", say "You get nine paces. The lamb, on the other rail, gets fourteen and looks back at you." },
+      } },
+    { name = "a shepherd's hut on wheels",
+      description = "A tarred box with a tin chimney and a half door, hauled up here for the lambing and never hauled back. It has a stove, a bunk, and a window on the sea side that somebody put in afterward, crooked, with a knife.",
+      things = {
+        { name = "the shepherd", description = "A long silent woman called Hesper, knitting a sock from wool she pulled off the gorse. She counts the sheep at dusk by letting them count themselves: they go through a gap one at a time and she listens for the wrong sort of quiet.",
+          actions = {
+            { "Ask about the sheep on the ledge", say "\"Nettle. She goes down in spring and comes up at shearing. I've never seen her do either.\" She turns the heel. \"I asked her once how. She looked at me as if I'd asked how to chew.\"" },
+          } },
+        { name = "a crook by the door", description = "Hazel, with a ram's horn handle, polished by one hand. Notched down the shaft: lambs, by year. One year has a notch on the wrong side. That was the puffin she raised by mistake." },
+        { name = "the stove pipe", description = "The wind has bent the smoke over at a right angle an inch above the tin. It goes inland with the hats." },
+      } },
   },
 
   exits = {
@@ -122,5 +147,7 @@ space {
     { to = "saltwick_harbour", description = "Down the switchbacks to roofs, masts, and a smell of fish that has come up to meet you." },
     { to = "long_strand", label = "The cliff steps",
       description = "Steps cut in the cliff, down to a long grey beach. A rope handrail has been provided for most of them." },
+    { to = "tk_gate", label = "The branch road",
+      description = "A side road going inland past an iron buffer, with rails in it, toward a smudge of smoke that goes up in puffs." },
   },
 }

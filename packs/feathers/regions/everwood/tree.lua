@@ -123,6 +123,23 @@ space {
       actions = {
         { "Sit", say "You sit. After a minute the lord who was verifying a date comes back, sees you, hesitates, and sits at the far end. Neither of you says anything. It is, by the standards of the Everwood, a riot." },
       } },
+    { name = "a leaf that is not a day",
+      description = "Low on the south side, in easy reach, there is one leaf of a different shape. It is not a beech leaf. It is long, and toothed, and grey underneath. No such tree grows in the Everwood. It has been on the bough as long as the keeper has, and she was not the first.",
+      actions = {
+        { "Ask the keeper whose it is", say "\"Nobody's,\" she says. \"It was on the tree before there was any of us to remember. I held it once, when I was new.\" She folds her hands. \"It is an afternoon. A hill, and grass, and nobody on it. It is a pleasant day and not one thing happens. I do not know who thought it worth keeping. I have thought about that more than about all the others.\"" },
+      } },
+    { name = "the keeper's basket",
+      description = "Hung on a low branch by a loop of green wool. An elf has no need of a basket. This one was left for the keeper by somebody from downstairs, who did not ask, and it is refilled.",
+      things = {
+        { name = "a pair of spectacles", description = "Horn rimmed, strong. She is older than her eyes. She puts them on only when no lord is in the clearing, and reads the leaves with her nose an inch away." },
+        { name = "a flask", description = "Of something that is not dew. Remembering, at her age, is long work, and cold." },
+        { name = "a boiled egg", description = "Still warm, in a napkin. She has never mentioned the basket to anyone upstairs. She eats the egg every day, behind the trunk, and puts the shell in her pocket." },
+      } },
+    { name = "new buds",
+      description = "At the tip of every twig, a brown bud, tight, pointed, already made. Next year's days. They are all the same and there is nothing in them yet. You find them harder to look at than the leaves.",
+      actions = {
+        { "Touch one", say "Smooth, cool, shut. It could be anybody's. It could, you think, be one of yours, if you did something on the day that an elf thought worth keeping. You take your finger away and resolve, for the tenth time this year, to be somebody. The bud does not commit itself." },
+      } },
   },
 
   exits = {

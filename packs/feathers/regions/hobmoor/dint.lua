@@ -135,6 +135,31 @@ space {
 
     { name = "the smoke",
       description = "One thin thread going straight up from somewhere under the star, where the peat is still smouldering, eleven days on. You can see it from the Aldmoor wall. It is how most people find the way." },
+
+    { name = "a pie stall",
+      description = "A plank on two barrels at the top of the path, kept by Jem Holloway's sister. A star has fallen and people have come to see it, and people who have come to see a thing can be sold a pie.",
+      things = {
+        { name = "the pies", description = "Turnip. Jem lost the crop but not, it turns out, the clamp from last year. Each has a star cut in the lid, five points, wonky. She calls them Heaven's Own. They are tuppence and taste of turnip." },
+        { name = "Dorcas Holloway", description = "Arms like a wrestler, flour to the elbow. She thinks the star is the best thing that ever happened to the family and the worst that ever happened to her brother, who has started wearing a hat indoors." },
+        { name = "the money tin", description = "Half full already. She shakes it at intervals, for the sound, in the direction of Jem." },
+      },
+      actions = {
+        { "Buy a pie", say "You show her your copper. \"That's your gate copper.\" How does everybody know? \"It's bent.\" She gives you a broken one for nothing. It is hot and peppery and the star on the lid has only four points." },
+      } },
+
+    { name = "the thrown turf",
+      description = "The ring of sods flung back from the hole when the star struck: a bank as high as your chest, grass side down, already rooting.",
+      things = {
+        { name = "a whole turnip row", description = "Lifted in one piece, forty turnips in a line with their soil, and set down upside down thirty paces off. The roots point at the sky. They have begun, cautiously, to put out leaves in the wrong direction." },
+        { name = "a scarecrow, flat", description = "On its back under the bank, arms out, hat gone. It was the only one looking the right way when the star came and has had a shock." },
+        { name = "a mole", description = "Sitting on top of the bank in broad daylight, which moles do not do. It was three feet under the turnips, and then it was not. It has been up here eleven days, thinking." },
+      } },
+
+    { name = "the hum in the ground",
+      description = "You feel it before you hear it: a note in the soles of your feet, all round the rim. The glass carries it. So do the pie tins, which is how Dorcas knows when somebody has touched the star without paying.",
+      actions = {
+        { "Lie down and listen", say "You put your ear to the scorched turf. One note, very low, with no breath taken in it. Under the note, slower, something else: a tick, a long gap, a tick. You count forty between them. When you get up there is a ewe beside you with her ear down too." },
+      } },
   },
 
   exits = {
@@ -248,6 +273,22 @@ space {
       actions = {
         { "Listen", say "You listen until the wind is only a pressure. There is nothing behind it at all. And you understand, without anyone saying so, that the star is not afraid of landing. It has been somewhere much quieter than a field." },
       } },
+
+    { name = "your coat tails",
+      description = "Standing straight up behind your ears. Everything loose on you is: your hair, your bootlaces, the gate copper on its string. None of them know which way down has gone.",
+      actions = {
+        { "Let go of the copper", say "It floats up to eye level, turning, and you see both sides of it for the first time at once. Bent on the one. A crowned head on the other, very worn, facing the way you are falling. You catch it and put it deep in a pocket and button the pocket." },
+      } },
+
+    { name = "frost on the iron",
+      description = "A white fur of it on the walls, growing in ferns the wrong way: against the wind, toward where you are going. It melts on your thumb and is cold in a way that makes you think of heights.",
+      things = {
+        { name = "a thumbprint", description = "Yours, a black oval in the white. As you watch, it frosts over again from the edges in, in about the time it takes to say your own name." },
+        { name = "letters in the frost", description = "Lower down, somebody has written with a finger: {i}J. HOLLOWAY 1d{/}. He has been in. He has charged himself." },
+      } },
+
+    { name = "the sound of the moor, behind you",
+      description = "Very faint, through the crack: a curlew, a pie tin, somebody saying \"mind your head\". It is going on without you at exactly the pace it always did. You had not known that this was a comfort." },
   },
 
   exits = {

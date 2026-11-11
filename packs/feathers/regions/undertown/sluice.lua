@@ -112,6 +112,28 @@ space {
 
     { name = "a lantern on a pole",
       description = "For looking up the tunnels. The glass is green, so that he can tell his own light from anything else's. He does not say what else's." },
+
+    { name = "the pending tray",
+      description = "A wire basket on a nail in the hut wall, holding one docket, brown with damp.",
+      things = {
+        { name = "the docket",
+          description = "{i}COMPLAINT, River (alleged), under Town. Referred to Mr Tench, Complaints, for a visit to site.{/} The date is thirty years old. A second line, in the Inspector's hand: {i}Mr Tench has not returned his lamp.{/}" },
+      },
+      actions = {
+        { "Ask about Mr Tench", say "\"Tench. Very sound man. Went down past the last grating with a pencil and a packed lunch.\" The Inspector polishes his spectacles. \"We send his sandwiches down the channel every week, in case. They do not come back, and I have chosen to regard that as a report.\"" },
+      } },
+    { name = "the flood bell",
+      description = "Bronze, green, hung from the roof with its rope looped up out of reach. It is to be rung when the water comes over the walkway. It has been rung once.",
+      things = {
+        { name = "a mark on the wall",
+          description = "A line, well above your head, and a date four hundred years ago. Beside it, in the same paint: {i}it went down again by itself. We do not know where to.{/}" },
+      } },
+    { name = "the Corporation's map of the drains",
+      description = "Framed, on the hut door, coloured by hand. Every tunnel under Aldmoor, with its name. At the bottom edge the tunnels simply run off the paper.",
+      things = {
+        { name = "the bottom margin",
+          description = "Where the lines go off the sheet, somebody has drawn a neat row of arrows pointing down and written {i}&c.{/}" },
+      } },
   },
 
   exits = {

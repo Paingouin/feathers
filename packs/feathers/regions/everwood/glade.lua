@@ -136,6 +136,26 @@ space {
 
     { name = "a butterfly", icon = "ж",
       description = "Pale yellow, open on a birch root in the sun. It lives one afternoon. It has done very well out of the arrangement." },
+    { name = "a cup being poured",
+      description = "By the harpist, an elf is pouring from a silver ewer into a cup. The stream of it stands between the two, clear and twisted, like a rod of glass. It was begun at four o'clock. The cup is not full, and will not be.",
+      things = {
+        { name = "the stream", description = "You look closely. It is moving. One bright bead is travelling down it, at about the pace of a snail on a wall. The pourer's wrist has been at that angle for longer than Aldmoor has had a wall to put a snail on, and has not shaken." },
+        { name = "the cup", description = "Half full. The surface has a dimple in it where the stream goes in, and one ring, spreading. It has got about a third of the way to the rim." },
+        { name = "the one who is waiting for it", description = "A lady, with her hand a little out. She is thirsty. She has been thirsty with great composure for four thousand years, and intends to remark, when the cup comes, that there was no hurry." },
+      },
+      actions = {
+        { "Offer her your water bottle", say "You hold it out. A dozen elves do not look at you so pointedly that you feel it on the back of your neck. But the lady's eyes move, to the bottle, and to your face. She does not take it. For one instant, though, she looks at it as you would look at a pie." },
+      } },
+    { name = "a gardener at the edge",
+      description = "Just inside the birches, where the light begins to be ordinary, an elf in an apron is on his knees with a pair of scissors. He is from downstairs. He trims the lawn at night, a blade at a time, and by day he comes to look at it, from here, where he is not in the picture.",
+      actions = {
+        { "Ask if he ever steps into the light", say "\"Once,\" he says. \"To fetch a rake I'd left. I was in there an hour and came out with my supper cold from last week.\" He snips a blade that has got above itself. \"It's very fine. I'd not live in it. A person wants an evening to look forward to.\"" },
+      } },
+    { name = "the long shadow",
+      description = "The birches throw their shadows across the lawn in bars, as they would at four on an autumn day. One shadow among them is not a birch's. It is longer, and it lies at a different slant, as if its sun were a little later than everyone else's. You look for what is casting it. Nothing is.",
+      actions = {
+        { "Stand in it", say "It is cooler by a coat. There is a smell of woodsmoke, and of evening, and somewhere a door being shut for the night. You step out, into four o'clock, and it is gone. The afternoon here has a leak in it, about one man wide, and through the leak it is getting on for supper." },
+      } },
   },
 
   exits = {

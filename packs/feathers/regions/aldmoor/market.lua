@@ -130,6 +130,26 @@ space {
       actions = {
         { "Peer down", say "Dark. Then, a long way off, something like a ripple of light on a ceiling. A big ceiling." },
       } },
+    { name = "a tea stall",
+      description = "A copper urn, six cups on hooks and a chest stamped with a small tree. The stallholder swears that it is nettle, grown locally. It is a penny a cup, and nobody in Aldmoor has ever seen a nettle that smelled of somewhere warm.",
+      things = {
+        { name = "the chest", description = "Lead-lined. The stamp has been scratched at, and a label pasted over: {i}PRODUCE OF GREENHOLLOW{/}. A corner of the label has lifted in the steam." },
+        { name = "the urn", description = "It has a tap, a dent, and a small fire under it that the market wardens pretend not to see, there being a regulation." },
+      },
+      actions = {
+        { "Ask where it comes from", say "\"Nettles,\" says the stallholder. You wait. \"From a man,\" she says. You wait. \"Who has it from a man with a barrow, who has it from the sea.\" She pours you a cup for nothing, the way people do when they would like the questions to stop. It is extremely good." },
+      } },
+    { name = "a hat stall with no hats",
+      description = "A bare trestle, a mirror and a sign: {i}POMFRET & SON, HATTERS. Est. long since.{/} The son is behind it, aged seventy, with nothing to sell. His father took the stock abroad thirty years ago to find a market and writes that he has found one.",
+      things = {
+        { name = "a letter pinned to the trestle", description = "{i}Dear boy. Trade is brisk. Send every nightcap in the county. Do not ask why. Yr loving father, O. Pomfret. P.S. I have a veranda.{/}" },
+        { name = "the mirror", description = "For trying on. You look into it bare-headed. It does what it can." },
+      } },
+    { name = "a knife grinder",
+      description = "A man with a wheel on a barrow, and a treadle, sending up sparks. He will put an edge on anything. He has a waiting list for the Watch's halberds, which have not had one since they were issued.",
+      actions = {
+        { "Ask him to sharpen your sword", say "You have no sword. You offer him your pocket knife. He looks at it with pity, does it in four strokes, and tests it on a hair from his own arm. \"There,\" he says. \"Now it's dangerous. Mostly to you.\"" },
+      } },
   },
 
   exits = {

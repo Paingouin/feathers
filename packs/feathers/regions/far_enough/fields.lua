@@ -112,6 +112,17 @@ space {
       } },
     { name = "the smell",
       description = "Earth, rain and cellar. It is the smell of the Mumblewood after a wet night, a mile underground, with no rain and no wood. You had not known you missed it." },
+    { name = "the scarecrow",
+      description = "In the middle of the mushroom rows: two crossed staves, an old helmet and a miner's coat stuffed with moss. There are no crows. It is there for the bats, who are not afraid of it and hang from its arms.",
+      things = {
+        { name = "its helmet", description = "A proper one, with a candle bracket. Farmer Marl's grandfather's. He says the old fellow would have liked to be still on the land, in a manner of speaking." },
+        { name = "the bats on its arms", description = "Eleven, in a row, asleep. They keep the gnats down. Marl takes his cap off to them at dusk, when they leave, and counts them back in." },
+      },
+      actions = {
+        { "Straighten its helmet", say "It has slipped over one eye. You set it right. Farmer Marl, three rows off, stops hoeing. \"He always wore it like that,\" he says. You put it back over the eye. It does look more like somebody." },
+      } },
+    { name = "the weather slate",
+      description = "By the barrow: a slate with the day's forecast, as the surface has it, sent down from the shutter at the top. {i}Up there: rain.{/} And beneath, as every day, in Marl's hand: {i}Down here: none. Same as ever. Good growing.{/}" },
   },
 
   exits = {
@@ -222,6 +233,17 @@ space {
       description = "Hung with points, the longest directly over the cup. Between them the rock is dark blue and sparkles, and you are back under the mountain's own idea of a night sky, which it has been working on by itself, in private, since before anybody dug." },
     { name = "the silence",
       description = "Not quite. If you hold still there is a sound at the edge of hearing, very high and very small, as of a great many glass threads being drawn out. The farmer says that is them. Her gran says that is only what people hear who want to." },
+    { name = "the seed tray",
+      description = "A slate tray of fine sand, with a row of specks in it, each under its own glass thimble. Next century's crystals. Gran Marl started them when she was a girl. They are, she says, coming on.",
+      things = {
+        { name = "the largest speck", description = "The size of a grain of salt, with one face you can see if you hold your breath. It is forty years old. She is very pleased with it, and tells it so, and says that the others are listening." },
+        { name = "the labels", description = "A sliver of slate beside each thimble, with a name and a date to plant out. The dates are all some hundreds of years off. She has written them without a tremor, as you would write next Tuesday." },
+      },
+      actions = {
+        { "Ask who will plant them out", say "\"Somebody,\" says Gran Marl. \"I shan't know them. That's all right. Whoever started these beds didn't know me, and look how well we've got on.\"" },
+      } },
+    { name = "a snail",
+      description = "On the path, with a shell like smoky glass. It eats the lichen off the crystals and leaves them bright. It crosses the garden once a year. Gran Marl sets her calendar by it and says it has never been late." },
   },
 
   exits = {
@@ -311,6 +333,16 @@ space {
       } },
     { name = "the rule over the door",
       description = "{b}BEARDS TO BE WRUNG BEFORE LEAVING{/}. Under it, in chalk, new today: {i}hair also{/}." },
+    { name = "the towel dwarf",
+      description = "At a hatch by the pools, with towels in a stack squared like bricks. One each. He folds them himself. He can tell from across the hall when one has been used and hung up wrong, and it is the nearest he comes to pain.",
+      things = {
+        { name = "the stack", description = "Every corner is in line. You could strike a plumb down it. He tells you that this is not vanity: a towel folded true dries true." },
+      },
+      actions = {
+        { "Ask for a towel", say "He looks at the length of you and then at the towels, and something in him gives way. He takes two. He joins them, with a row of stitches as small as rune work, there and then, at the hatch, and hands you the result folded true. \"There's no call for a person to dry in halves,\" he says." },
+      } },
+    { name = "the beard rack",
+      description = "By the hot pool: a row of pegs at chest height. A beard may not go in the water loose. It is plaited, coiled and hung on a peg, with its owner standing by it, up to the neck. From the side, the pool is a row of heads, each tied to the wall." },
   },
 
   exits = {

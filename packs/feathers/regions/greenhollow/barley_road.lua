@@ -81,6 +81,35 @@ space {
       } },
     { name = "a skylark",
       description = "A dot, very high, pouring out song. You cannot find it until it stops, and then it drops into the barley and is nowhere." },
+
+    { name = "a carter with a wheel off",
+      description = "A wagon of turnips, down on one corner, and a man sitting on the shaft looking at the wheel in the ditch. He is Holloway's carter, bound for Aldmoor market with the first load since the star.",
+      things = {
+        { name = "the turnips", description = "Ordinary, purple topped. Each one has been chalked with a small star, to put the price up. The carter says they came from the next field but one, and that the public is not to know that." },
+        { name = "the wheel", description = "Lying flat in the ditch with a grass snake coiled in the hub. Neither the carter nor the snake is in any hurry about this." },
+        { name = "the carthorse's nosebag", description = "Oats, and the horse's whole face. It has been told they will be here a while and has made itself comfortable." },
+      },
+      actions = {
+        { "Offer to help lift", say "You get your shoulder under the axle and heave. The wagon does not move. The carter gets his shoulder under, beside yours, and it goes up like a lid. \"There,\" he says kindly. \"Couldn't have done it without you.\" The horse looks round at this, and then at you, and goes back in the bag." },
+      } },
+    { name = "a wayside shrine",
+      description = "A niche of stones at the field corner, knee high, with a slate roof. Inside is a figure so worn that it might be anyone. Travellers leave something, going out.",
+      things = {
+        { name = "the offerings", description = "A bootlace. A crust. A bent nail. Eleven identical blue beads on strings, left by people who had just bought a charm against geese and thought better of relying on it alone." },
+        { name = "the figure", description = "A lump of grey stone with a suggestion of shoulders. The farmers say it is Saint Wobble, before she was famous. One side of the base is worn, as if she had been leaning even then." },
+      },
+      actions = {
+        { "Leave something", say "You have a coin and an onion and you need both. You leave a promise, said aloud, which costs nothing now. The figure has heard a great many of those, and has an air of keeping accounts." },
+      } },
+    { name = "a shepherd and his flock",
+      description = "Coming the other way, filling the road hedge to hedge: forty ewes, a dog, and an old man walking behind with a crook, in no hurry at all.",
+      things = {
+        { name = "the sheepdog", description = "Black and white, low to the ground, working the flock with its eyes. It looks at you once. You step onto the verge. You had not decided to." },
+        { name = "a black lamb", description = "One, in the middle, going sideways for the fun of it. Every flock has to have one, the shepherd says, or the others would not know they were white." },
+      },
+      actions = {
+        { "Wait for them to pass", say "It takes a quarter of an hour. Each ewe looks at you as she goes by, and each says the same thing. At the end the shepherd nods. \"Adventurer?\" Yes. \"Ah.\" He looks at his sheep, and at you, and you understand that you have been counted in with something." },
+      } },
   },
 
   exits = {

@@ -96,6 +96,17 @@ space {
       actions = {
         { "Watch it work", say "It goes along one stroke of one rune, end to end, and leaves it clean. Then it stops, and seems to read it, and goes on to the next. You wonder what it makes of them." },
       } },
+    { name = "the apologies desk",
+      description = "A small counter at the far end, under the stair, with a clerk asleep behind it and a slate that says {i}OPEN{/}. A grudge may be withdrawn here, by the offender, in person, with a form. The inkwell is dry.",
+      things = {
+        { name = "the form", description = "One page. {i}I, ______, was in the wrong.{/} The stack of blanks is the height of a dwarf and yellow at the edges. The top one has a ring from a mug." },
+        { name = "the clerk", description = "He has held the desk for a hundred and ten years. It is the best post in the Hall, he says: a stool, a lamp and no interruptions. He took it for the quiet. He had one caller, once, who wanted the privy." },
+      },
+      actions = {
+        { "Fill in a form", say "You take one and think. There was the bed at the Griffon. You write it down. The clerk wakes, reads it, reads it again, and has to sit on his stool. He stamps it. It is the first withdrawal in the history of the Hall and it concerns a bed on the surface. It is filed, in a new drawer, made for the purpose, under your name." },
+      } },
+    { name = "the index lamp",
+      description = "One lamp, on a chain, that travels along a rail above the shelves and is pulled by a cord to wherever it is wanted. There is one lamp for nine miles of grievance. The Keeper says that nobody has ever needed to look at two at once. A grudge wants your whole attention." },
   },
 
   exits = {
@@ -176,6 +187,16 @@ space {
       description = "Pale, long in the leg, with a web across the upper corner that has been mended so many times it is thicker than cloth. The clerks who come to trim the lamp leave it be. It was here before the room was.",
       actions = {
         { "Blow gently on the web", say "It shivers, and the spider comes out to the middle and waits, and finds it was nothing, and goes back. You have been filed, here too." },
+      } },
+    { name = "a slab with a drawing",
+      description = "No runes. A picture, scratched with a nail, of a dwarf and a much taller figure, hand in hand, and over both a round thing with lines coming off it. Whoever made it had heard of the sun and not seen it.",
+      things = {
+        { name = "the round thing", description = "It has a face. It is smiling. The Hall could not find a category. It is not a grudge. The Keeper says there was talk of starting a second hall for the other thing, and that the idea was let lie, since nobody could agree what the other thing was called." },
+      } },
+    { name = "the visitors' stool",
+      description = "Three legs, one short, with a wedge under it cut to the thousandth. It is the only wobbling thing in Far Enough that has been corrected and not replaced. The Keeper says that it was hers.",
+      actions = {
+        { "Sit on it", say "It takes you, on its wedge, dead level. You sit in a bare room with one lamp, among the things a whole people could not find the words for, and for once you do not look for any either." },
       } },
   },
 

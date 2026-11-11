@@ -108,6 +108,25 @@ space {
         { "Ring it", say "One pull, one stroke. Out in the yard thirty clerks stop, turn towards the chapel, decide that it is nothing new, and go on." },
       } },
     candle { name = "the altar candles", description = "Six, of beeswax, in silver sticks. One for each god on the rota. The sixth is shorter than the rest. Its god gets the early service." },
+
+    { name = "the misericords",
+      description = "Under the choir seats, where they tip up, the carpenter was let alone to carve what he liked. Nobody has looked since. He liked a good deal.",
+      things = {
+        { name = "a fox preaching to geese", description = "The fox has the chaplain's spectacles. This chaplain's. The carving is three hundred years old. Spectacles, it seems, run in the office." },
+        { name = "a man asleep in a queue", description = "Leaning on a staff, with a cushion. Behind him the carver has done another, and another, getting smaller, round the edge of the seat and out of sight underneath." },
+        { name = "a blank one", description = "Smooth wood, never carved, with the chisel marks of the first roughing out. Beside it the carver has cut one word: {i}later.{/}" },
+      },
+      actions = {
+        { "Tip up a seat", say "It goes up with a bang that fills the chapel. The choir stops. Father Pocket loses his place, finds it, and prays, with some emphasis, for strangers." },
+      } },
+    { name = "the vestry",
+      description = "Through a low door by the organ: a cupboard of surplices, a cracked mirror, and a smell of mice and starch.",
+      things = {
+        { name = "the wine ledger", description = "{i}Communion wine: received, 12 bottles. Used in the service of God, 3. Evaporated, 9.{/} The entry for evaporation has been initialled by the organist." },
+        { name = "a surplice with a darn", description = "The King's, from when he was a choirboy. He was put out of the choir at eleven for bringing a frog. The frog's descendants are in the font." },
+      } },
+    { name = "a tablet in the wall",
+      description = "Small, grey, low down by the door, where a memorial costs least. {i}TO ONE WHO WAITED. HE WAS NEXT.{/} No name. No date. There are always fresh flowers on the floor beneath it, and the queue takes it in turns." },
   },
 
   exits = {
@@ -202,6 +221,26 @@ space {
       } },
     { name = "the sexton's corner",
       description = "A broom, a bucket, a box of candle ends, and a stool. The office of Royal Sexton has been vacant for eleven years. The floor is swept all the same, in long careful strokes, by somebody who is used to a rake." },
+
+    { name = "a jar of sweet peas",
+      description = "On the floor before the queens' side, in a jam jar, fresh this morning. Pink and violet, with the dew on. In the whole stone weight of the vault they are the only things alive, and they smell of a garden.",
+      actions = {
+        { "Smell them", say "June, in a walled garden, with bees. You know of only one man in the castle who grows these. He comes down, then, before breakfast, by himself, with a jam jar. You straighten the jar an inch on its step and feel you know him rather better." },
+      } },
+    { name = "the masons' corner",
+      description = "At the back, where the vault was last extended: a heap of offcuts, a wedge, and a line of marks on the wall where the masons signed the job.",
+      things = {
+        { name = "the marks", description = "A fish, a pair of compasses, a hand, a star. One for each reign's mason, going back along the wall. At the far end, where the oldest stone begins, the marks stop being different. It is the same one, over and over: a small square, with a dot." },
+        { name = "the wedge", description = "Oak, driven under the last block and never taken out. The vault has stood on it for sixty years, and the sexton says a quiet word to it each time he comes down." },
+      } },
+    { name = "the visitors' slate",
+      description = "Hung by the door with a pencil on a string, for those who come down to pay respects. It is wiped at each coronation.",
+      things = {
+        { name = "this reign's names", description = "{i}H.{/}, forty or fifty times, each with a date. {i}The Sexton.{/} And in a round careful hand, once, at the bottom: {i}P. (I asked Grist. He said it would be all right.){/}" },
+      },
+      actions = {
+        { "Add your name", say "You write it, small, under the old prisoner's. You put {i}adventurer{/} after it. Then you look round at four hundred years of kings, lying quite still, and add {i}(visiting){/}." },
+      } },
   },
 
   exits = {
@@ -289,6 +328,20 @@ space {
     },
     { name = "the ceiling",
       description = "Bare rock, close overhead, with the marks of picks. Somewhere above it is the vault, and above that the chapel, and the choir singing the fourth psalm over forty tons of money without the least idea." },
+
+    { name = "Godric's account book",
+      description = "On a ledge by the stool, bound in boards, with a clasp. He kept it daily for forty years.",
+      things = {
+        { name = "a page, any page", description = "{i}Received: 40 marks. Spent: nothing. Remains: all.{/} The next day the same, and the next. He has ruled a column for {i}Pleasure{/} down every page, and in forty years made one entry in it." },
+        { name = "the one entry", description = "{i}Gave a penny to a child at the gate. Unaccountable. Felt very well all day. Must not become a habit.{/}" },
+      },
+      actions = {
+        { "Turn to the last page", say "The hand is shaky. {i}Counted it again. All present. I had thought there would be more to it than this.{/} And then nothing. The clasp has been closed since, and you close it again." },
+      } },
+    { name = "a penny, set apart",
+      description = "On the lip of the iron chest, by itself, on a square of cloth: one copper penny, worn smooth. It has not been put with the rest, and it is the only coin in the room that has been handled lately." },
+    { name = "a blocked air shaft",
+      description = "A square hole in the wall, bricked at the far end. Godric had it closed in case the gold could be smelled. A thread of cold comes through it all the same, from below rather than above, and the dust on that side of the room has been combed all one way." },
   },
 
   exits = {

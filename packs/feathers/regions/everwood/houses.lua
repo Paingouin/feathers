@@ -137,6 +137,25 @@ space {
       things = {
         { name = "a red kite", icon = "v", description = "Hanging over the canopy on forked tail and long wings, steering with a twist of its tail. It does not belong to the elves, and of everything in sight it alone does not seem to be trying." },
       } },
+    { name = "a kite in the top boughs",
+      description = "Caught in the crown of the great beech, where no elf has had cause to climb: a small diamond of yellow paper on two canes, with a tail of rag. It is not elf work. It is cheerful, and crooked, and a child made the tail.",
+      things = {
+        { name = "the spine of the kite", description = "An elf child has been up to look, without leave, and reports that there is a name written inside the cane and a year, and that the name is not an elf's. The Namer has been told. The Namer has said that the kite has a name already and that she will not be giving it another." },
+      },
+      actions = {
+        { "Ask where it came from", say "\"Up,\" says the elf with the tray, without stopping, and then does stop, on the rope, on one foot, as it occurs to her what she has said. She looks at the sky through the leaves for the first time in a long age. Then she goes on with the cup." },
+      } },
+    { name = "the rain room",
+      description = "One platform has no roof of leaf. It was left open on purpose. When it rains on the forest, the elves who wish to be rained on come here, and stand, in their good robes, with their faces up. There is a list. It is very long.",
+      things = {
+        { name = "the list", description = "On a tablet at the stair. You are number four thousand and something. They have got to nine hundred. There has been a certain amount of rain in four thousand years, and each elf takes it so slowly." },
+        { name = "a puddle in the boards", description = "Old rain, in a dip worn by feet. There is a leaf in it. Nobody has removed the leaf. Up here, it seems, a leaf may lie where it falls, and you see an elf go past and look at it with open envy." },
+      } },
+    { name = "a house being grown",
+      description = "At the end of a branch a new platform is under way. That is to say, a bough has been asked to flatten and four twigs have been asked to rise at the corners, and they are thinking about it. The couple it is for stand looking at it, hand in hand. They were betrothed in their youth. They expect to move in as a retirement.",
+      actions = {
+        { "Wish them joy", say "They turn to you together, slowly, and incline their heads. \"It has put out a bud for the door,\" says one, and the other says, \"We do not like to hurry it.\" They go back to watching. You have seen people look at a cradle that way." },
+      } },
   },
 
   exits = {
@@ -288,6 +307,26 @@ space {
 
     { name = "a cricket", icon = "ι",
       description = "By the chest hinge, singing. It has outlived every other cricket in the kingdom by about four thousand years, a fact that it is too busy to notice." },
+    { name = "the lost property shelf",
+      description = "Over the mops, a plank of things found on the lawns at night and never claimed, since claiming them would mean admitting to having dropped something.",
+      things = {
+        { name = "a comb with hair in it", description = "Silver hair, a yard long. An elf's hair does not fall out. It says so in the songs. There are nineteen combs on this shelf." },
+        { name = "a handkerchief", description = "Fine as mist, with a monogram, and used. Somebody upstairs has had a cold. The laundress knows who. She has known for six hundred years and will take it to the West Wood with her." },
+        { name = "a wooden duck on wheels", description = "With a string. Worn at the beak by being loved. It was found in the Court of Leaves, under the living seat. Nobody down here has said a word about it and it is dusted every day." },
+      } },
+    { name = "the bell board",
+      description = "A row of small silver bells on springs, each with a leaf painted under it: {i}Court. Glade. Namer. Tree.{/} When upstairs wants something, it does not ring. A bell here simply trembles, without sounding, and somebody gets up.",
+      things = {
+        { name = "the bell for the Pool", description = "The last in the row, tarnished. It has not trembled in any living cook's time. Under it somebody has written {i}she fetches her own{/}." },
+      },
+      actions = {
+        { "Flick one", say "It rings. A real ring, bright and vulgar. The whole kitchen stops, and then roars with laughter, and Berrin wipes his eyes on his apron. \"Four thousand years,\" he says, \"and not one of us ever thought to.\"" },
+      } },
+    { name = "a dartboard",
+      description = "On the back of the larder door. The darts are silver arrowheads on short shafts, lost property from an archery contest. The board is a round of beech with, pinned to the middle of it, a very fine drawing of the white hart looking symbolic.",
+      actions = {
+        { "Throw one", say "You hit the door. A scullery elf takes the dart out, turns, and puts it between the hart's eyes from across the room without looking. \"We like him really,\" she says. \"It's the attitude.\"" },
+      } },
   },
 
   exits = {

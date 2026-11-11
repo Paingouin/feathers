@@ -121,6 +121,24 @@ space {
         { name = "a great crested grebe", description = "A slim bird with a ruff and two black horns, shaking its head at another exactly like it. They rise up breast to breast with weed in their beaks and paddle on the spot. It is a dance. It is going on, at the same time, upside down beneath them, and that pair is slightly out of step." },
         { name = "the ripples", description = "Something large turned over out there a moment ago. The rings are still spreading. They reach the reeds, and the reeds stop whispering until the last one has gone through." },
       } },
+
+    { name = "a bittern",
+      icon = "v",
+      description = "Somewhere in the reeds, ten feet from you, there is a bird the size of a goose. You will not see it. It stands with its beak up, striped like reed and swaying with the reed, and it has not been spotted since the old king's time. You know it is there because it booms.",
+      actions = {
+        { "Wait for the boom", say "It comes at dusk: a low hollow note, like a man blowing across a jug in an empty hall. You feel it more than hear it. It is the lowest sound any bird makes, and for a second it is in step with the mumbling of the wood behind you, and the two agree." },
+        { "Look for it", say "You stare into the reeds until they swim. One of them blinks. You look straight at where it was. Reeds." },
+      } },
+
+    { name = "a duck decoy",
+      description = "A tunnel of hoops and netting leading off a pool, narrowing to a bag. It was built to catch duck for the Baron's table and has not caught one in thirty years.",
+      things = {
+        { name = "the netting", description = "Rotten, full of holes the size of a duck. The decoy man patches it every spring in a way that leaves the holes." },
+        { name = "the decoy dog's kennel", description = "A barrel on its side. The dog was meant to lure the birds up the pipe. It lies in the barrel with its chin on its paws and watches them paddle past the entrance, and they nod to it." },
+      } },
+
+    { name = "a dragonfly", icon = "ʚ",
+      description = "As long as your hand, blue-green, on a reed. It has eyes like two helmets and sees every direction at once. It takes off, hangs, darts, hangs: a creature that goes about the air in straight lines and makes all its turnings square." },
   },
 
   exits = {

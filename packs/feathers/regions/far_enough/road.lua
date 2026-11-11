@@ -81,6 +81,20 @@ space {
       } },
     { name = "the draught",
       description = "It moves toward the city at walking pace, carrying the smell of the mine one way and, when it turns at shift change, hot iron and frying mushrooms the other." },
+    { name = "a lost-glove post",
+      description = "An iron post in the middle of the road with a hook on it, and on the hook one mitten, leather, left hand. Anything dropped on the Low Road is hung here until claimed. The tag on the mitten gives the date it was found. It is older than the kingdom.",
+      things = {
+        { name = "the tag", description = "Slate, with the runes recut each century so that they stay sharp. A lamp-trimmer reads it for you: {i}Found at the ninth milestone. Owner to apply.{/} Nobody has. Nobody has taken it down, either. It is not theirs." },
+      },
+      actions = {
+        { "Try it on", say "You reach for it. The lamp-trimmer clears his throat, once, from a long way up the road. You take your hand back. You were only looking." },
+      } },
+    { name = "a slow cart",
+      description = "On the rails, coming up from the city at the pace of a tired walk: an ore truck with no ore in it, pushed by nobody. It is the post. It has gone up and down this road once a day since the mine shut, on a slope so exact that it needs no one.",
+      things = {
+        { name = "the mail sack", description = "Empty, and sent anyway. There is a rule that the post goes. There has never been a rule that there must be something in it." },
+        { name = "a stone on the buffer", description = "A plain pebble, riding along. Somebody at the far end puts it on each day, and somebody at this end takes it off, looks at it, and sends it back. It is how two old dwarves who are not speaking say good morning." },
+      } },
   },
 
   exits = {
@@ -186,6 +200,20 @@ space {
       description = "Hanging from the lintel of the great doors, sixty feet up, the only creature ever to use them at their full height. It has been entered in the book of residents under {i}doorkeeper, upper{/}.",
       actions = {
         { "Wave at it", say "It unfolds one wing, looks at you with the side of its face, and folds the wing again. You have been admitted." },
+      } },
+    { name = "the boot bench",
+      description = "A long stone bench outside the small door, with a scraper, a brush on a chain and a trough of sand. Nobody enters Far Enough with the mountain on their boots. It has enough mountain.",
+      things = {
+        { name = "the brush on a chain", description = "Boar bristle, worn to a curve. The chain is three links long and each link has a maker's mark. The brush is on its nine hundredth head and is held to be the same brush." },
+        { name = "the trough of sand", description = "For the soles. It is raked level each shift, in lines, by a dwarf whose whole duty it is. He looks at your footprints in it as a gardener looks at a dog on a lawn." },
+      },
+      actions = {
+        { "Brush your boots", say "You do the left, and the right, and hold them up. The gatewarden bends, examines both, and points with one finger at a grain of grit in a seam. You do the right again. It takes four goes. At the end, your boots are cleaner than they were when the cobbler made them, and you have a queue." },
+      } },
+    { name = "the echo",
+      description = "The cavern before the gates gives every sound back once, a beat late, and deeper. The dwarves call it the Second Opinion. Proclamations are read here twice a year, and it is held that if the echo sounds doubtful the law wants more work.",
+      actions = {
+        { "Shout your name", say "It comes back from the dark, lower, slower, and with a different stress, as if somebody very large were reading it off a list and did not think much of the spelling." },
       } },
   },
 

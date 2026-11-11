@@ -56,7 +56,7 @@ are, where they lie and what they do is undecided.
 
 ## What exists
 
-145 spaces (42 secret), 32 artifacts. `(s)` secret, `(w)` wonder.
+239 spaces (69 secret), 56 artifacts. `(s)` secret, `(w)` wonder.
 
 | Region | Spaces |
 |---|---|
@@ -71,6 +71,12 @@ are, where they lie and what they do is undecided.
 | Far Enough, the dwarf city | the Low Road, the Gates, Plumb Square, the Watch-Post, the wall under the mountain, the Great Forge, the Cold Forge (s), the Hall of Grievances, the Unlodged Room (s), The Second Shift, Pebble's Room (s, w), the Under-Fields, Gran Marl's Garden (s, w), the Hot Level, Chisel Street, Coldchisel's rune shop, a dwarf house, the schoolroom, the Counting House, the Strongroom (s) |
 | Castle Stillstanding, seat of the Crown | Petitioners' Hill, the Bailey, the Armoury, the Jewel House, the Chapel Royal, the Royal Vault (s), Godric's Hoard (s, w), the Great Hall, the Royal Treasury (s), the Muniment Room, the Royal Apartments, the Kings' Closet (s), the Kitchens, the Walled Garden (s), the Dungeons, Pelham's Tunnel (s), the Oubliette (w), the Wall Walk, the Survey Tower |
 | Hobmoor, a moor | the Drovers' Way, the Dint (w), inside the star (s, w), the Ribs (w), Underrib, inside the head (s, w) |
+| Tickover, the steam city | the Punctual Gate, Escapement Street, No. 4 Ratchet Terrace, Regulator Square, inside the Great Clock (s), the Boiler Hall, the Fire Under (s, w), Winders' Row, Fusee the clockmaker, the Patent Office, the Vault of Refused Devices (s), The Safety Valve (inn), the Constabulary, the Airship Quay, the Weather Permitting (airship), inside the envelope (s) |
+| The Afterthoughts, isles off Saltwick | the Ferry, the Landing on Muckle Afterthought, The And Another Thing (inn), Herself (the still) (s), the Net Loft, the Smokehouse, the Kirk of the Ninth Wave, the Customs station, the Bonded Store (s), the Stack, the Other Light, the Pipes (sea caves), the Sea's Own Customs House (s, w), Sometimes (w, low tide only), the Drowned Kirk (s) |
+| The Glowers, the evil country | the Unadvised Road, Lower Wince, the Wince Acre, The Last Chance (inn), the Vigilant Society (s), the Gate of Castle Regret (w), its Great Hall, the Dining Room, the Library, the Laboratory (s), the Long Gallery, the Morning Room (s, w), the Bat Loft, the Crypt, the Waiting Room, the Lower Office (s), Lost Property (s, w) |
+| The Loose Ends, sky islands | the Path That Kept Going (w), Landfall, Tether, Lightly & Daughter, the Keel (s), Spar's kites, Where Things Go (s, w), The Slow Spill (inn), the Cloud Pasture, Wrong Way Up (w), the Weather Office, the Returns (s, w), the Fall That Never Lands (w), the Other Observatory, the Chart Room (s) |
+| The Further Down, under everything | Past the Last Grating, the Slow River, the Pale Wood, inside the Great Cap (s), Pardon (w), The Closed Eye (inn), the Lost Property Market, the Unclaimed Shelf (s, w), the Dungeon of Dire Peril, the Final Chamber (s), the Lake With No Far Side (w), the Island in the Middle (s), the Stair Nobody Counted, the Wall Underneath, Where the Echoes Go (s, w) |
+| The Sweltering, a jungle | Mango Landing, Pomfret's Northern Curiosities, the Antiquities Department (s), aboard the Perhaps, the Falls of Standing Rain (w), Stilts, the Hammock House, Camp Brandish, the High Walk, the Hostess's Dell (s), the Ring of Giants, the Tower of Magister Null (s, w), the Red Temple, the Waiting Room under it (s), Mount Maybe, Where It Considers (s, w) |
 
 **Artifacts** (collected, never used): Griffonsbane, the Unfalling Staff, the rat crown, the muster
 horn; the Right Hand of Saint Wobble, the Staff of Orrin Skybreaker, the Left Hand of Maud
@@ -79,7 +85,13 @@ the Upstream Cup; the pending acorn, the Horn of Evening, the parting comb; the 
 Opinions, the Horn of the Sea-King; the Crown of the Long Winter, the Hammer Called Enough, the
 Last Word; Ever-True, the Hinge, the Mountain's Reply, the Pawned Crown, the Patient Lens; Wilful,
 the Key of the Kingdom, the Cup of Plenty, the Carp of King Osbert, the Standing Crown; the glass
-turnip, the unlanded pebble, the poker sword Mournbright.
+turnip, the unlanded pebble, the poker sword Mournbright; the Winding Key of Tickover, the Fourth
+Minute, the Perpetual Engine of Ignatius Brass, the Governor of Storms; the First Drop, the Fair
+Wind in Bond, the Selkie Chart, the Tongue of the Drowned Bell; the Stake of Saint Orrin, the
+Patient Mirror, the Cape of Entrances, the Fair Contract; the Kite That Flies the Wind, the Day
+Kept Back, the Plumb Line That Points Up, the Pin of the Fixed Star; the Lamp of the Kept Noon,
+the Finding Needle, the Aegis Provisional, the Oar of the First Crossing; the North Wind bottled,
+Pathmaker, the Cloak of Unseeing, the Idol of Considerable Patience.
 
 **People who recur:** Mag Pargeter, hedge-witch of Greenhollow, forged her own patent of nobility
 to found the Collegium, wrote the real lessons on a wall for servants, and signed the dwarves'
@@ -87,6 +99,17 @@ visitors' book; H. Pargeter of the Tide Office (Inward, on leave) shares the nam
 Tib the scullery maid is the only working magician in the Collegium. Madam Spindle was sent down
 from its kitchens. Wilf Tuttle, at sea, carves "Wilf woz ere" on things everywhere. King Humbert
 drinks cider in the Snug. Old Pebble is the apprentice who broke through under the mine.
+Since 0.7.0: Captain Hester Ballast flies the Weather Permitting out of Tickover (founder Honoria
+Tick; Obadiah Pinion, Chief Winder, has never wound the Clock; Miss Lettice Fusee, clockmaker).
+Dod Larkin ferries the Afterthoughts; Ansel Crake keeps the Other Light against Old Wim. The Count
+of Regret signs "R.", mends the road at night and drinks beetroot; Clemence, who bit him, writes
+from the hot south; Mr Brimley is Sub-Assistant Tempter (Acting). In the Loose Ends: Mrs Halyard
+at the mast, Nan Wether the cloud shepherd, Mr Mild of the Weather Office, Ignatius Cope the
+astronomer, who writes to Dr Vane. Under everything: Mr Tench the ferryman (formerly Complaints),
+the Murmurs of Pardon, Nigel Clatter the skeleton on strike. In the Sweltering: Kev (Dob's
+partner, not poorly), Mr Pomfret the hatter, Yessa the pilot, Professor Vole-Brandish and Dr
+Mimms, the Hostess (a plant), Magister Ignatius Null, the last Reader who could do magic. An
+"M. Pargeter" left a library slip at the Wall Underneath three hundred years ago.
 
 Threads through it: a coin from the well pays the gate tax; breaking the tavern bed moves the
 barman off the trapdoor; the cellar crowbar opens the market grate; a pickpocketed invitation
@@ -146,6 +169,39 @@ Remembering Tree is a first morning in which the forest is already old; Pebble's
 has weather, below is always "evening"; the slab in the Unlodged Room reflects a ceiling very far
 up and blue; the Saltwick Light has a root of gold thread going into the bedrock.
 
+Added in 0.7.0. A branch off the Cliff Road leads to Tickover; a platform ticket from the Gate
+boards the airship, whose moorings appear as the places are found (the town wall, the Light, the
+summit, the castle wall walk, the Ribs, Landfall, the Tall Tree), all one-way drops. Asking why
+the Clock is four minutes late opens its works; a turn at the shovel opens the Fire Under; a
+rejection slip from the Patent Office opens the Vault. The ferry from Saltwick harbour costs
+agreeing with the ferryman; Sometimes stands dry only once the tide is signed out. A fingerpost
+on the Drovers' Way points to the Glowers: the tomb's foot and a countersign open the hunters'
+room, knocking opens the castle, the Count's old ticket is served at once in the Waiting Room,
+form nine opens Lost Property. One more step off the summit of Old Grumble finds the Path That
+Kept Going; a borrowed peg opens Where Things Go. A red thread through the last grating of the
+Great Drain, or the dust in the Oubliette, leads to the Further Down, which joins the two. Kev's
+boat runs from the Cove of Second Thoughts to the Sweltering; the glow-worm lamp from the Hammock
+House lights the stair under the Red Temple.
+
+Hints added in 0.7.0, to keep or veto. Tickover: the Great Clock was never wound and "started
+with" its four minutes; the Boiler sits on a warm stone nobody lit, and warm air goes slowly in
+and out under the city; the Clock skipped once, at 3.19. The Glowers: the Count has not slept in
+six hundred years and misses dreaming ("I think everything I ever cared for began in that way"),
+the strongest of the batch; the devils' oldest claim on the world came back stamped "NOT YOURS.
+PRIOR." The Afterthoughts: the seals' chart ends in one closed eye; the drowned bell is cast with
+RING SOFTLY. The Loose Ends: the plumb line points a little east of up; the Gap has a straight
+edge, has grown, and is missing from the oldest tablet; the First Chart is one hide too big for
+any calf. The Further Down: the lake shows stars and the Gap; the oldest echo is an answer whose
+call has not been made; the Wall Underneath is thought to be the root of Aldmoor's growing wall;
+carvings show people climbing up out of the ground to a bare hill. The Sweltering: the Red Temple
+was built already ruined; its crystal dome leaves the Gap unset.
+
+Left open in 0.7.0: what the warm stone under Tickover is and what the Winding Key fits; where Mr
+Pargeter is and whose thumbprints mark the tide pole; the Count's soul on shelf 212 and Head
+Office below; what holds the Loose Ends up and the word scraped off the First Chart; who built
+the Wall Underneath, the seventh rower on the island, the gaol key for the end cell; the second
+door under the Red Temple.
+
 Left open on purpose: what the Ribs were, and the passage going further into the head; what the
 Gap is; who is fed in the bricked-up cell of the gaol; who signs the tide back in.
 
@@ -153,13 +209,12 @@ Gap is; who is fed in the bricked-up cell of the gaol; who signs the tide back i
 
 In no particular order.
 
-- Deeper undergrounds below the Oubliette. Sewers beyond the Great Drain. The king whose name was chiselled off. What happened on the repealed Thursday.
-- More mountains, more forest, a jungle, more lakes. What Old Grumble is saying.
+- The king whose name was chiselled off. What happened on the repealed Thursday.
+- More mountains, more forest, more lakes. What Old Grumble is saying.
 - Fauna and plants, as things to look into everywhere.
-- More coast. Isles. Sky islands. Who signs the tide back in (Mr Pargeter, Inward, is on leave). Where the charts stop.
-- A steampunk city, and a flying steam airship whose destinations are the docks already found.
-- An invisible mage tower.
-- A vampire castle. Evil places and devils: bureaucratic, dreadful hosts.
+- Where the charts stop, north of the Stack. Where Mr Pargeter went.
+- The high mooring "where the stars leave off". Head Office, below the Lower Office.
+- Return moorings for the airship (it only drops, for now).
 - Gods and their divine planes.
 - Wonders, by the thousand.
 - The seven feathers, once their role is decided.

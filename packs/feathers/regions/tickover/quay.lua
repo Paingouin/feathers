@@ -1,0 +1,348 @@
+-- The Airship Quay on the Guildhall roof, the Weather Permitting, and the inside of her envelope.
+
+space {
+  id = "tk_quay",
+  region = "tickover",
+  name = "The Airship Quay",
+  description = "Iron stairs bring you out on the Guildhall roof: an acre of lead and duckboards among the chimney pots, with a lattice mast at the far end as tall again as the building. Moored to the top of the mast by her nose, swinging slowly with the wind like a weathercock, is an airship. She is grey, patched, two hundred feet long, and from below she looks like the underside of a very large thought.",
+  palette = { bg = "#0d1114", text = "#d0d4d2", dim = "#68727a", accent = "#d9a441", border = "#3a4a54" },
+  ambience = { dust { glyphs = "·˙", color = "#5a6870", rate = 0.5, speed = 1.0 }, steam { glyphs = "˙·", color = "#56606a", rate = 0.2 } },
+  backdrop = {
+    "     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄        ",
+    "  ▄█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▄─────╫ ",
+    "   ▀█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█▀      ╫ ",
+    "        ╘══════════╛               ╫ ",
+    "                                   ╫ ",
+  },
+
+  things = {
+    { name = "the airship, from below",
+      wonder = true,
+      icon = "≈",
+      description = "The {i}Weather Permitting{/}. A long grey envelope of doped cloth, more patch than cloth by now, with a gondola slung under it like a boat under a cloud, and a propeller at the stern the size of a windmill. She has no business being up there. {magic}She weighs as much as a row of houses and she is resting on the air as lightly as a hand rests on a table.{/} When the wind shifts, she turns to face it, all two hundred feet of her, without a sound.",
+      things = {
+        { name = "the patches", description = "Every colour that canvas comes in, and some that it does not: sailcloth, a tent, what was certainly once a bedspread with roses. Each has a date inked on it. She has been up three hundred years. There cannot be a thread of the first ship left, and she is the same ship." },
+        { name = "the gondola", description = "Clinker built, like a fishing boat, with brass portholes and a rail. It was a fishing boat. It still has a Saltwick number on the bow and a place for the nets." },
+        { name = "the propeller", description = "Four blades of laminated ash, turning over idly in the wind. A man is asleep in a bosun's chair hung from the hub, going round with it, once every half minute, like the weight on a slow clock." },
+        { name = "her shadow", description = "It lies across the roofs of Winders' Row, and moves when she moves. Under it the tin geraniums look, for a moment, almost as if they needed the light." },
+      },
+      actions = {
+        { "Wave to her", say "You wave. High up at the gondola rail a very small figure in goggles looks down, and after due consideration lifts one hand as far as the elbow. You have been acknowledged by aviation." },
+      } },
+    { name = "the mooring mast",
+      description = "A tower of iron lattice with a spiral stair inside it and a cone at the top where the ship's nose locks in.",
+      things = {
+        { name = "the spiral stair", description = "Two hundred and twelve steps, open on all sides, with a handrail that has been gripped smooth. At the hundredth there is a small brass plate: {i}DON'T.{/} It means don't look down. Everybody reads it and looks down to see what it says." },
+        { name = "the mooring cone", description = "A brass cup on a swivel, with the ship's nose in it like an egg in an egg cup. It creaks as she swings. A mast hand oils it every hour and says it talks in its sleep." },
+        { name = "a wind sock", description = "Striped, on a pole. Next to it, on a second pole, there is another, smaller wind sock. It is the first one's spare. It is fuller than the first one, and the mast hands have opinions about that." },
+      } },
+    { name = "the booking office",
+      description = "A hut of corrugated iron with a window, a bell, and a board of sailings.",
+      things = {
+        { name = "the booking clerk",
+          icon = "☺",
+          description = "A youth with a pencil behind each ear and a book of moorings. His badge says {i}MR SPROCKET, PASSAGES{/}. He is seventeen and has never been further up than this roof, and will tell you so before you ask.",
+          actions = {
+            { "Ask for passage", say "\"Platform ticket?\" You show it. \"That gets you up the mast and aboard. Where to is between you and the Captain.\" He opens the book. \"She only goes where she's got a mooring, and she only takes you where you've stood. Don't ask me why. I asked. I got pigeons.\"" },
+            { "Ask if he has been up", say "\"No.\" He looks at her, swinging on the mast. \"I'm waiting till I've been somewhere. I've never been anywhere, see, so there's nowhere she could take me.\" He seems to think this is a difficulty with the rules, and not with him." },
+          } },
+        { name = "the board of sailings",
+          description = "Enamel plates on hooks. {i}DEPARTS: when she departs. ARRIVES: in due course. CALLS AT: see book.{/}",
+          things = {
+            { name = "the book of moorings", description = "A ledger of everywhere she can tie up: a town wall, a lighthouse, a mountain top, a castle battlement, a rib. Beside each, the Captain's remarks. {i}Windy. Smells of fish. Monks, friendly. King, in a meeting. Do not ask what it is a rib of.{/}" },
+            { name = "a page of crossings out", description = "Moorings that are no more. {i}The Fair Enough's old mast (fallen). The Unsinkable's topmast (see name).{/} And one, not crossed out, only ringed: {i}The high place. Not yet. She is not ready and nor am I.{/}" },
+          } },
+        { name = "the bell", description = "For calling the mast hands. You ring it. One comes up through a hatch in the roof, sees that you are only a passenger, and goes down again." },
+      } },
+    { name = "Constable 11",
+      icon = "♜",
+      description = "A brass constable in a blue tin coat, pacing the quay: four steps, turn, four steps. He has been fitted with a small weather vane on the helmet. It is the only modification ever made to one of the twelve, and he carries his head very straight.",
+      things = {
+        { name = "the weather vane", description = "A gilt arrow. It points into the wind. So, when she swings, does the ship. So, you notice after a time, does he, on the turns." },
+      },
+      actions = {
+        { "Ask him the way up", say "His arm rises in three movements and points at the mast. \"Up,\" he says, like a drawer closing. Then, after a tick, with what in a man would be longing: \"Mind how you go.\"" },
+      } },
+    { name = "the freight",
+      description = "Stacked by the foot of the mast, under nets, waiting to be winched.",
+      things = {
+        { name = "crates of springs", description = "{i}COIL & DAUGHTER. FOR FAR ENOUGH.{/} The dwarves buy a gross a year. They have never said what for. The crates come back empty and very clean." },
+        { name = "a longcase clock in a harness", description = "Going to the Castle, for the King. It is ticking in its straps. It will arrive four minutes behind, and the King, they say, has asked for that specially: he finds it gives him time to think." },
+        { name = "a sack of post", description = "Marked for the Light at Saltwick. A second sack, coming the other way, is marked {i}TIDE OFFICE: FORMS (USED){/}." },
+        { name = "a goat",
+          description = "In a sling, ready to go up, chewing. It has a label on its collar: {i}RETURN TO MONASTERY. IT KNOWS WHAT IT DID.{/}",
+          actions = { { "Ask the goat what it did", say "It looks at you with a yellow eye that has a slot in it, like a money box. It did it. It would do it again. The winch takes up the slack and it rises past you, still chewing, without the least loss of dignity." } } },
+      } },
+    { name = "the winch",
+      description = "A steam donkey engine bolted to the leads, with a drum of cable going up to the gondola.",
+      things = {
+        { name = "the winchman", description = "A man with one eye shut against the smoke of his pipe and the other on the load. He can set a crate of eggs on the gondola deck from two hundred feet below. He was asked once to do it with a bishop and declined, on the ground that eggs keep still." },
+      } },
+    { name = "the chimney pots",
+      description = "The Guildhall has sixty, in terracotta, and the quay is laid out between them like a garden between trees.",
+      things = {
+        { name = "a chimney sweep's boy", description = "Sitting on a pot that is not in use, eating an apple, with his legs down the flue. He comes up here to watch her. He is going to be a mast hand. He has told nobody but you, and the Captain, and the goat." },
+        { name = "a row of starlings", description = "On a warm cowl. They do the propeller: a slow {i}whup, whup, whup{/}, quite perfect, and then one of them does the winchman swearing." },
+      } },
+    { name = "the view over Tickover",
+      wonder = true,
+      description = "From up here you see the whole of it at once: the grid of streets, the trams going along them like beads on wires, the smoke going up from a thousand chimneys in one beat. And you see what you cannot see from inside. {magic}The streets are not a grid. They bend, every one, a very little, and they all bend the same way, round the Boiler Hall, the way the grain of a board goes round a knot.{/} Nobody laid it out so. The city was planned square. It has settled.",
+      things = {
+        { name = "the Great Clock, from behind", description = "The east face, level with your eyes across the square. The hand jumps. You hear it, a moment after, like a door shut in another house." },
+        { name = "the edge of the city", description = "It stops, quite suddenly, in a straight line, and there are fields. The rails go on to the buffer and a little white thread of road goes on to the cliff. Beyond that, a brightness: the sea, behaving exactly as it likes." },
+        { name = "a street that is not on the board", description = "On the east side, between two terraces: a narrow lane with one lamp lit, in daylight. You look away to find its name on the map by the booking office. When you look back there are only the two terraces, and a small moving speck of blue, turning a corner." },
+      },
+      actions = {
+        { "Look for the cliff road", say "There: a line of white stones, a bench, a speck that might be a man on a shooting stick. You came from there this morning. From here it looks like nothing at all, a place where a kingdom runs out. You feel fond of it." },
+      } },
+    { name = "the weather office",
+      description = "A glass cupola on the roof ridge with instruments on poles: cups that spin, a vane, a rain gauge, and a brass ear trumpet pointed at the sky.",
+      things = {
+        { name = "the weather clerk", description = "An elderly woman in mittens with a slate. She writes tomorrow's weather on it each evening and hangs it out, and the brass arms on the mast are set from it. She has been right every day for forty years. She says she does not predict. She asks." },
+        { name = "the ear trumpet", description = "As long as a man, on gimbals, with a rubber tube to an ear piece. She lets nobody use it.",
+          actions = { { "Ask what she hears", say "\"Wind. Mostly wind.\" She adjusts a mitten. \"And higher than the wind there's a stillness, and you can hear that too, if you've the ear. On a clear night it's as near as the ceiling.\" She writes {i}FAIR{/} on the slate, with decision, and will not be drawn." } } },
+        { name = "the fourth slate", description = "On a nail inside, out of the rain. Sun, rain and fog have a slate each, much rubbed. The fourth is clean. It has a word painted at the top, to be ready: {i}STILL{/}." },
+      } },
+    { name = "the foot of the mast stair",
+      description = "An iron gate with a turnstile and a brass slot the size of a platform ticket.",
+      variants = {
+        { when = item "tk_ticket", description = "An iron gate with a turnstile. The brass slot beside it has a small green flag up. It has seen your ticket through your pocket, or the clerk has pulled a lever. In Tickover it is hard to say." },
+      } },
+    { name = "a coil of mooring rope",
+      description = "Hemp as thick as your leg, in a flat coil eight feet across. A cat has had kittens in the middle of it. The mast hands have chalked a line round the coil and written {i}DO NOT CAST OFF{/}, and have been making do with the other rope for a fortnight." },
+  },
+
+  exits = {
+    { to = "tk_regulator_square", description = "Down the iron stairs to the square." },
+    { to = "tk_airship", label = "Up the mast",
+      description = "Through the turnstile and up two hundred and twelve steps to where her nose rides in the cone.",
+      requires = item "tk_ticket", locked = "The turnstile wants a platform ticket. They punch them at the Punctual Gate, and they are particular." },
+  },
+}
+
+space {
+  id = "tk_airship",
+  region = "tickover",
+  name = "The Weather Permitting",
+  description = "You step from the mast head on to a gangplank no wider than a book, and then you are aboard: a wooden deck forty feet long, with a rail, a wheel, a small steam engine aft, and over your head the vast grey belly of the envelope, creaking. The deck moves. It does not pitch like a boat. It breathes, up a hand and down a hand, and the city breathes below it, a little out of step.",
+  palette = { bg = "#0c1218", text = "#d2d8da", dim = "#667680", accent = "#e0b04c", border = "#34505e" },
+  ambience = { dust { glyphs = "·˙∙", color = "#607480", rate = 0.6, speed = 1.2 }, stars { color = "#566878", rate = 0.15 } },
+
+  things = {
+    { name = "Captain Ballast",
+      icon = "☺",
+      description = "Hester Ballast at the wheel, in a leather coat and smoked goggles, with one boot on the rail. She has flown the {i}Weather Permitting{/} for thirty years and her mother flew her before that. She looks at the sky as a farmer looks at a field.",
+      things = {
+        { name = "her goggles", description = "Smoked glass in brass. She puts them down over her eyes above the cloud, where it is too bright, and also, the crew say, when she does not want you to see where she is looking." },
+        { name = "her coat", description = "Horsehide, cracked white at the elbows, with a row of pencil marks on the left cuff. One for every mooring she has added to the book. There is room for a few more." },
+        { name = "a rope round her waist", description = "Made fast to the binnacle. She has never fallen. \"That's the rope's doing,\" she says, \"not mine.\"" },
+      },
+      actions = {
+        { "Ask what holds her up", when = no(flag "tk_envelope_open"), set "tk_envelope_open",
+          say "\"Honest answer? I fill her off the Boiler's blow pipe once a month. Warm air. Ought to be cold by nightfall and us in somebody's cabbages.\" She looks up at the grey belly. \"She stays warm. She's stayed warm three hundred years. Go up and see, if you've the stomach. There's a ladder in the keel. Mind the wren, and don't touch the thing on the spindle. It's all that's left of her sister.\" She kicks a hatch in the deckhead open with the end of a boathook." },
+        { "Ask to take the wheel", say "\"No.\" She considers you. \"You can hold a spoke. One.\" You hold a spoke. Through it comes the whole ship: the pull of the mast, the lean of the wind, two hundred feet of cloth wanting to turn. It is like holding the lead of an enormous patient dog. \"That's enough,\" she says, and you find you were smiling like a fool." },
+        { "Ask about the high place", say "Her goggles come down. \"Read that in the book, did you. There's a place above the Grumbles where the stars leave off. I've been near enough to see the edge of it.\" She turns the wheel a spoke, for something to do. \"There's a mooring there. I don't know what it's made to. I'm not ready, and nor's she.\"" },
+      } },
+    { name = "the wheel",
+      description = "A ship's wheel of teak and brass, eight spokes, salvaged from something that floated. In front of it, a binnacle with a compass and three clocks.",
+      things = {
+        { name = "the three clocks", description = "One is four minutes behind: Tickover's. One is right: the world's. The third has no numbers, only a single hand that goes round once in something like a day and a bit. \"Hers,\" says the Captain. \"She keeps her own. I go by that one, above the cloud.\"" },
+        { name = "the compass", description = "An ordinary sea compass. It points north with a faint air of having been asked to do so by someone it respects. Scratched in the brass: {i}NOT the one with opinions. That one went down with the Unsinkable.{/}" },
+        { name = "a brass speaking tube", description = "To the engine. She whistles down it and a voice comes back saying \"What now.\" It is the engineer. It has been the same engineer for thirty years, and the same answer." },
+      } },
+    { name = "the engine",
+      description = "Aft, behind a brass rail: a two cylinder steam engine the size of a pony, driving the long shaft to the propeller. It is spotless, and has a name plate: {i}DOROTHY{/}.",
+      things = {
+        { name = "the engineer", description = "Mr Flange, a round oily man in a singlet, sitting on a coal bunker reading a newspaper four days old. He looks up at the envelope every so often with deep suspicion. \"I burn a bucket a day,\" he says. \"A bucket. To shift this. She's carrying me and she lets me think I'm helping.\"" },
+        { name = "Dorothy's governor", description = "Two small brass balls on arms, spinning steadily. It is a perfectly ordinary one. Mr Flange says the ship used to carry another, and jerks his thumb upward, and says no more." },
+        { name = "the coal bunker", description = "Half a hundredweight of dwarf coal and, on top of it, a cheese, a jar of pickles, and a pack of cards with the four of clubs missing." },
+      },
+      actions = {
+        { "Ask Mr Flange what now", say "\"What now,\" he says, automatically, and then sees it is you, and laughs until he has to wipe his eyes with the cotton waste. \"Thirty years,\" he says. \"Nobody's ever asked {i}me{/}.\"" },
+      } },
+    { name = "the rail",
+      description = "Oak, waist high, with rope netting below it to catch hats, lunches and the occasional passenger.",
+      things = {
+        { name = "the drop", description = "Two hundred feet of nothing and then a roof. You look. Your knees make a suggestion. You take it, and hold the rail with both hands, and look again from a sitting position." },
+        { name = "carving on the rail", description = "Initials, a heart, a gull. {i}Wilf woz ere. Been up. Seen it. Not saying.{/} And below that, in a different, neater hand: {i}Quite right, Wilf. H.B.{/}" },
+        { name = "something in the netting", description = "A bowler hat, a sandwich, and a gentleman's false teeth, grinning up at the sky." },
+      },
+      actions = {
+        { "Spit over the side", say "You wait for the Captain to look away. It goes down, and down, and you lose it. A long moment later a very small voice far below says a very rude word. You study the horizon." },
+      } },
+    { name = "the crew",
+      description = "Four, besides the Captain and Mr Flange, all in jerseys, all tied to something.",
+      things = {
+        { name = "the rigger", description = "A girl of sixteen who lives in the shrouds and comes down for meals. She goes up the outside of the envelope barefoot with a pot of dope and a brush, to patch. She says the cloth is warm under your feet up top, all over, even in frost, like the flank of a cow." },
+        { name = "the cook", description = "He has a stove the size of a hat box, gimballed. Everything aboard is fried. He has been asked for soup. He says soup is a thing for people with floors." },
+        { name = "the lookout", description = "An old man in the bows with a telescope and a list of things to shout: {i}Bird. Cloud. Mountain. Other.{/} He has shouted Other twice in his life and will not discuss either." },
+        { name = "the ship's cat", description = "Ginger, three legged, asleep in the compass housing. She was born aboard and has never touched ground. When the ship lands she sits at the rail and looks at it the way you look at the sea." },
+      } },
+    { name = "the ballast",
+      description = "Sandbags along the keel, each with a ring and a number, to be dropped if she needs to rise in a hurry.",
+      things = {
+        { name = "bag number one", description = "Never dropped. Tradition. It was filled by the first Captain from the beach at Saltwick and it goes down last, with the ship, if she goes." },
+        { name = "a bag marked GOLD", description = "It is sand. It was labelled by a previous captain to see who in the crew would drop it last in a storm. They all dropped it first, to be rid of the responsibility, and she was very proud of them." },
+      } },
+    { name = "the passenger bench",
+      description = "A plank along the port side with six leather straps to hold on by and a paper bag on a hook at each place.",
+      things = {
+        { name = "the straps", description = "Worn black and thin as ribbon, by three centuries of people who had been told it was perfectly safe." },
+        { name = "a fellow passenger", description = "A dwarf in a hard hat, strapped in with all six straps and his own belt, eyes tight shut. He is travelling with the springs. \"Tell me when we are underground,\" he says. You tell him the ship has not left yet. \"Tell me anyway.\"" },
+      },
+      actions = {
+        { "Sit and hold a strap", say "You sit. The deck lifts a hand and sinks a hand. Above you two hundred feet of cloth sigh like somebody turning over. The dwarf beside you, without opening his eyes, finds your sleeve and holds on to that as well." },
+      } },
+    { name = "the envelope, from underneath",
+      description = "It fills the sky: grey, ribbed, patched, breathing against its nets. The seams run fore and aft in long curves. Where the gondola hangs, there is a wooden keel let into the cloth, and in the keel a hatch.",
+      things = {
+        { name = "the keel hatch",
+          description = "A square of oak with a rope handle, shut.",
+          variants = {
+            { when = flag "tk_envelope_open", description = "Open. A rope ladder hangs out of it, swaying, and up inside there is a dim brown light, like daylight through a tent, and a smell of warm linen." },
+          } },
+        { name = "the nets", description = "Tarred cord, in a diamond mesh, holding the gondola to the bag. A spider has added to it, between two diamonds, in the same pattern. The rigger has been told to leave it. It is, the Captain says, the only member of the crew who has never asked for shore leave." },
+      } },
+    { name = "the book of moorings, ship's copy",
+      description = "Chained to the binnacle, in an oilskin cover. The Captain's own, with the true remarks.",
+      things = {
+        { name = "the rule, on the flyleaf", description = "{i}Carry no one to a place they have not first stood in. Laid down by the first Captain. Reason given: \"It is not fair on the place.\"{/}" },
+        { name = "the moorings", description = "Aldmoor: {i}tie to the wall, mind the sentry's tea{/}. Saltwick: {i}the Light, gallery rail, keeper will wave, wave back{/}. The Grumbles: {i}summit cairn, the monks hold the rope and sing{/}. Castle: {i}wall walk, do not wake the King's meeting{/}. Hobmoor: {i}top rib. It is only a rib. It is only a rib.{/}" },
+        { name = "the last page", description = "One line, in the first Captain's hand, the ink gone brown. {i}We do not fly. We are let.{/}" },
+      } },
+    { name = "the gangplank",
+      description = "Eighteen inches of ash plank between the deck and the mast head, with a rope each side at the height of your hopes.",
+      actions = {
+        { "Cross it again, for practice", say "You go out to the middle and stand there. The ship breathes and the plank breathes with it. Below you, pigeons. Below them, a tram. You come back with your arms out. The lookout, without lowering his telescope, says, \"Other,\" and then, \"No. Passenger.\"" },
+      } },
+  },
+
+  exits = {
+    { to = "tk_quay", label = "The mast head", description = "Over the gangplank and down two hundred and twelve steps to the roof." },
+    { to = "tk_envelope", label = "The keel hatch",
+      description = "Up a rope ladder through the oak hatch, into the inside of the envelope.",
+      requires = flag "tk_envelope_open", hidden = true },
+    { to = "town_wall", label = "Mooring: Aldmoor, the Town Wall",
+      description = "She noses down over the market smoke and the rigger drops you a rope ladder on to the wall walk. She does not wait.",
+      requires = visited "town_wall", hidden = true },
+    { to = "saltwick_light", label = "Mooring: Saltwick, the Light",
+      description = "Out over the cliff and the grey water, to hang off the lighthouse gallery like a kite on a post. The keeper waves. She does not wait.",
+      requires = visited "saltwick_light", hidden = true },
+    { to = "summit", label = "Mooring: the Grumbles, the Summit",
+      description = "Up through the cloud to the cairn, where the air is thin and the monks take the rope. It is a long ladder. She does not wait.",
+      requires = visited "summit", hidden = true },
+    { to = "wall_walk", label = "Mooring: Castle Stillstanding, the Wall Walk",
+      description = "Down the wind to the battlements, very quietly, on account of the meeting. She does not wait.",
+      requires = visited "wall_walk", hidden = true },
+    { to = "the_ribs", label = "Mooring: Hobmoor, the Top Rib",
+      description = "Low over the moor to the great white arches, and a ladder down on to something that is only a rib. She does not wait.",
+      requires = visited "the_ribs", hidden = true },
+    { to = "le_mooring", label = "Mooring: the Loose Ends, Landfall",
+      description = "Up, and then up past where up usually stops, to a mast on a rock with nothing under it. Mrs Halyard takes the rope herself. She does not wait.",
+      requires = visited "le_mooring", hidden = true },
+    { to = "jg_clearing", label = "Mooring: the Sweltering, the Tall Tree",
+      description = "South until the air goes thick and green, to a bare bough above the canopy with an old rope end on it. It is a long way down the ladder, and warm all the way. She does not wait.",
+      requires = visited "jg_clearing", hidden = true },
+  },
+}
+
+space {
+  id = "tk_envelope",
+  region = "tickover",
+  secret = true,
+  name = "Inside the Envelope",
+  description = "You come up through the keel into a place like the inside of a whale, if the whale were made of light. A catwalk of one plank runs away fore and aft along the keel. On every side the cloth goes up in a great curve, brown and gold where the day comes through it, and darker at each patch, so that the whole vault is dappled like the floor of a wood. It is warm. It is perfectly quiet. There is nothing in here at all, and it is holding up a ship.",
+  palette = { bg = "#14100a", text = "#e0d4b8", dim = "#807050", accent = "#f0c060", border = "#5a4826" },
+  ambience = { shimmer { color = "#f0c060", strength = 0.18, speed = 0.1 }, dust { glyphs = "·˙", color = "#a08850", rate = 0.4, speed = 0.05 } },
+
+  things = {
+    { name = "the warm air",
+      wonder = true,
+      icon = "○",
+      description = "It was let in from the Boiler's blow pipe at the last new moon. It ought to have been cold by supper. It is as warm as it was, the warmth of a bed just left, and it smells faintly of linen. {magic}The ship is not lighter than the air. The ship is full of something that would rather be higher up, and is in no hurry about it.{/} Dust hangs in the gold light and does not fall.",
+      things = {
+        { name = "the hanging dust", description = "Each mote stands where it is. You blow, gently. They move off, and stop, and wait there. In three hundred years none of it has settled, and the keel under your feet is as clean as a plate." },
+        { name = "the quiet", description = "The wind is going past outside at twenty knots and in here you could hear a pin. You have no pin. You hear your own pulse, and it has slowed down." },
+      },
+      actions = {
+        { "Let go of the ladder", say "You take your hands off. You do not float: you are still yourself, with boots. But you are lighter. Your arms come up a little on their own, and your hair, and for the space of a breath the only heavy thing about you is the copper in your pocket." },
+      } },
+    { name = "the catwalk",
+      description = "A single plank on the keel, bow to stern, with a hand line. It bends under you. The rigger runs along it.",
+      things = {
+        { name = "the hand line", description = "Tarred cord, on stanchions. At every tenth stanchion somebody has tied a knot of red wool, so that you can count your way back in the dark." },
+        { name = "boot prints", description = "None. There is no dust on the plank to take one. You look behind you to make sure that you are really here." },
+      } },
+    { name = "the ribs",
+      description = "Hoops of bent ash, thirty of them, holding the cloth to its shape. They are bound at the joints with rawhide and they creak in turn, bow to stern, as the ship breathes.",
+      things = {
+        { name = "the oldest rib", description = "Number one, in the nose. Black with age, and not ash: some pale close wood that the shipwrights could not name. It is the only piece of her that has never been replaced. The first Captain is said to have found it, already bent, on a beach." },
+        { name = "the rawhide bindings", description = "Shrunk on wet and gone as hard as horn. A sailmaker's palm print is pressed into one, small, a woman's or a boy's." },
+      } },
+    { name = "the patches, from inside",
+      description = "From out there they are a muddle. From in here, with the light coming through, each is a window of a different colour: tan, rust, a square of faded roses, one of deep blue.",
+      things = {
+        { name = "the patch of roses", description = "A bedspread. The light through it throws roses on the far wall of the envelope, forty feet across, very pale, moving as the ship moves. The Captain's mother put that patch on, the night the Captain was born, with what was to hand." },
+        { name = "the blue patch", description = "A Tide Office flag, stitched on upside down. Its light falls on the catwalk in one small blue square. The ship's cat is said to come up here, by a way no one has found, to sleep in it." },
+        { name = "a patch on a patch on a patch", description = "Near the stern, seven layers deep, where something has been trying to get in for a very long time, in the one place. The outermost layer is dented inward. It is the shape of a blunt end of something, pressed in gently, like a nose against a window." },
+      } },
+    { name = "the wren",
+      description = "A nest of moss and thread on the third rib, and a brown bird the size of a walnut sitting in it. She came aboard at a mooring nobody remembers. She has raised eleven broods in here, two hundred feet up, in still warm air, and none of them has ever needed to be taught to fly. They step off.",
+      actions = {
+        { "Mind the wren", say "You go by on the far side of the plank, slowly. She watches you with one eye. When you are past she sings, once, a great deal of noise for a walnut, and the whole envelope rings like the inside of a bell." },
+      } },
+    { name = "the spindle",
+      key = "tk_governor_mount",
+      description = "Amidships, where the keel is broadest, an iron bracket is bolted to the wood. On it stands a spinning governor: a spindle, a collar, two brass balls on arms, as big as apples and dented all over. It is not connected to anything. It is turning, very slowly, by itself.",
+      variants = {
+        { when = item "tk_storm_governor", name = "the empty bracket",
+          description = "An iron bracket on the keel with four bright rings where a base plate sat. The air above it is turning still, very slowly, a small patient eddy with dust in it. It did not need the brass. It had only got used to it." },
+      },
+      things = {
+        { name = "a brass plate on the bracket", description = "{i}From the FAIR ENOUGH, lost with all hands save one above the Grumbles. Her governor. It kept the weather off her for forty years. Then she went higher than the weather, and it was not weather that she met.{/}" },
+        { name = "the one who was saved", description = "A line scratched below, by a knife. {i}I was the one. I was the boy in the bosun's chair. I will not say what I saw. I will say it was not angry. It only did not know we were there. H. Ballast the First.{/}" },
+      },
+      actions = {
+        { "Take the governor", when = flag "tk_asked_spindle", once = true, give "tk_storm_governor",
+          say "You have the Captain's leave. You lift it from the bracket. The arms sink, the spindle stops, and the ship gives one long shiver from nose to tail, like a horse when the saddle comes off. Then she steadies. She rides, if anything, a little easier. You have {gold}the Governor of Storms{/}, all that is left of the first ship to go over the weather." },
+        { "Touch it", when = no(flag "tk_asked_spindle"), set "tk_asked_spindle",
+          say "You were told not to. You put one finger on a brass ball. Down through the hatch comes the Captain's voice, quite calm: \"I felt that. So did she.\" A pause. \"Thirty years I've carried that and never once had the nerve to shift it. It's dead weight and a bad memory. If you want it, take it, and I'll thank you. If you drop it through the cloth, I'll thank you less.\"" },
+      } },
+    { name = "the top hatch",
+      wonder = true,
+      description = "A ladder of rope goes up the inside curve of the envelope to a little lid of cane and canvas, right at the top. You climb. You put your head out. {magic}You are on the back of the ship, in the open sky, with the grey cloth curving away on every side like a hill, and it is warm under your hands.{/} Above you there is nothing but the blue, going up and darkening. It seems closer than it does from the ground. It seems, on a clear day, like something you could put your palm flat against.",
+      things = {
+        { name = "the back of the envelope", description = "A long grey down, seamed and patched, with a rope walk along the spine. The rigger's bare footprints go along it in dope, some of them years old." },
+        { name = "the sky straight up", description = "You look until your neck hurts. Blue, and deeper blue, and at the very top, in broad day, a few stars, where the air gives out. They are in no pattern that you know. In one place there are none." },
+        { name = "the wind", description = "It parts at the ship's nose and goes by on both sides and closes behind her. Up here on her back there is none. You could light a candle." },
+      },
+      actions = {
+        { "Reach up", say "You are an adventurer. You stand on the top rung, hold the hatch rim with one hand and stretch the other as high as it will go. Nothing. Air. Of course. You come down a rung. It is only on the ladder, going back into the gold dusk of the envelope, that you notice the palm of that hand is warm, and stays warm for some time." },
+      } },
+    { name = "the gas valve",
+      description = "A brass disc in the crown of the envelope with a red cord hanging from it, all the way down to the catwalk. Pull it and she lets go her air and comes down.",
+      things = {
+        { name = "the red cord", description = "It ends in a wooden toggle, worn smooth. A tag on it: {i}Pulled twice in three hundred years. Both times she closed it again herself before we had lost fifty feet.{/}" },
+      },
+      actions = {
+        { "Do not pull it", say "You do not pull it. It is the hardest thing you have done all day, and there is nobody to see." },
+      } },
+    { name = "the sailmaker's bench",
+      description = "A board lashed across two ribs near the stern, with a palm, needles, a ball of waxed thread and a tin of dope.",
+      things = {
+        { name = "the needles", description = "Curved, three inches long, stuck in a cork. One is bone, yellow, older than the others. It goes through the cloth easier than steel, the rigger says, as if the cloth knew it." },
+        { name = "a list on the rib", description = "Every patch, with its date and its cause. {i}Hail. Hail. Goose. Church spire (Aldmoor, apologised). Hail. Unknown, from above. Unknown, from above. Hail.{/}" },
+      } },
+    { name = "the sound of the hull",
+      description = "Stand still on the catwalk, hold the line, and listen. The ribs creak in order. The cloth sighs out, and after a time sighs in. Thirty years with this over her head and the Captain still says {i}she{/} in a lowered voice.",
+      actions = {
+        { "Breathe with her", say "In while the ribs creak aft. Out while they creak forward. It is very slow. It is slower than the chimneys, and you think it might be the same as the warm grating in the square, if you had ever timed that. You have no watch. You are the only person in Tickover who could find out, and you cannot." },
+      } },
+    { name = "a lantern, unlit",
+      description = "A safety lamp on a hook at the foot of the ladder, with the wick trimmed and never used. Nobody brings a flame up here. Not because of the air: because of the light. It would be rude." },
+  },
+
+  exits = {
+    { to = "tk_airship", label = "The keel hatch", description = "Down the rope ladder to the deck, the wind, and Mr Flange." },
+  },
+}

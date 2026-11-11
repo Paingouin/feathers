@@ -48,6 +48,20 @@ space {
       description = "For visitors. Three mothers with opera glasses, looking for their sons. Each has found a different sleeping boy and is satisfied." },
     { name = "a mouse",
       description = "On the lowest step, sitting up. It attends every lecture. It is believed to have enough for a degree." },
+    { name = "the lantern",
+      description = "A magic lantern on a stand at the back: brass, with a lamp inside and a slot for glass slides. It is the only thing in the Collegium with the word in its name that works, and it was made by an optician in Aldmoor.",
+      things = {
+        { name = "the box of slides", description = "Painted glass. {i}A Jungle Idol (front). A Jungle Idol (side). The Sacred Script, enlarged.{/} The last shows three toes and a spur, eleven times, in a line." },
+        { name = "a slide out of order", description = "Slipped in among the idols: a pencil drawing of a tiny gold frog on a leaf, done so well that you look for the wet. On the edge, {i}Podge{/}. Somebody sent it home in the wrong box, and nobody here has known what to make of a thing that is merely true." },
+      },
+      actions = {
+        { "Light the lantern", say "A servant does it for you, with a taper, without being asked. A frog the size of a door appears on the wall, gold and shining. The room goes quiet. Even Lord Quillon stops. Then he says, \"Next slide,\" and it is a coconut." },
+      } },
+    { name = "names carved on the desks",
+      description = "Three hundred years of young gentlemen with penknives. Coats of arms, mottoes, a very good caricature of a professor.",
+      things = {
+        { name = "one low on the back bench", description = "Where the servants stand. Small, and cut with something blunt: {i}I understood that. Tib.{/}" },
+      } },
   },
 
   exits = {
@@ -122,6 +136,18 @@ space {
       } },
     { name = "the returns box",
       description = "A brass slot in the desk, for books brought back. There is a cobweb across it." },
+    { name = "the new accessions",
+      description = "A trolley by the Librarian's desk, with the term's arrivals waiting to be stamped.",
+      things = {
+        { name = "Invisibility for the Busy Man", description = "By I. Null. The Librarian insists that the Collegium has no copy. This is one. The pages are blank, the catalogue card is blank, and it has been on the trolley, waiting to be stamped, for forty years, since nobody can prove that it arrived." },
+        { name = "a crate from the Sweltering", description = "{i}Vole-Brandish, The Natural History, MS., part 1 of 60.{/} The Librarian has not opened it. She has read the index, which came separately, and has shelved the crate under B, entire." },
+        { name = "a bark notebook", description = "It came in the same crate, by mistake, wrapped in a shirt. Drawings, names, uses, in a careful round hand that keeps apologising in the margins. It has no author on it. The Librarian has read it twice, and has it on her own desk, and looks up sharply if anybody goes near." },
+      },
+      actions = {
+        { "Ask about the bark notebook", say "The Librarian lays one hand flat on it. \"It is not catalogued,\" she whispers, \"because I do not know whose it is. When I know, he will be told that it is the only useful thing that expedition has sent.\" She thinks. \"In writing. So that he can keep it.\"" },
+      } },
+    { name = "the ladder",
+      description = "Oak, on a rail, running the length of the shelves. Gentlemen are not permitted on it. A servant goes up and reads out the spines, and the gentleman points." },
   },
 
   exits = {
@@ -187,6 +213,17 @@ space {
       description = "Iron, with nine locks, and a brass plate: {i}The Nine Families: Proofs of Aptitude{/}. You look through the grating. It is empty. It has always been empty. It is the best-guarded thing in the Collegium." },
     { name = "a map of the Collegium",
       description = "Framed, from the founding. Lecture rooms, library, hall. Under the middle of the lawn there is a room drawn in and then scraped out with a knife, and a statue put on top of the place in a later ink." },
+    { name = "the withdrawn theses",
+      description = "Bound in grey, unread: every dissertation the Collegium ever passed and then thought better of.",
+      things = {
+        { name = "On Not Being Seen: A Reply", description = "By I. Null, then a student. The examiners' note is gummed inside the cover. {i}The candidate demonstrated his thesis during the oral. We were unable to find him to tell him he had passed.{/}" },
+        { name = "Mimms: On the Age of Certain Stones", description = "Sent from abroad, last year. Stamped {b}RESTRICTED{/} the day it came. A slip is pinned to it in the Chancellor's hand: {i}Not to be read until we have decided what it says.{/}",
+          actions = {
+            { "Read the first page", say "{i}I bored a root and counted its rings. I examined the wall it grows through. The wall was built after the root. The root grew after the wall. I have checked this four times and it is so.{/} Then, lower down, in the same hand, less steady: {i}I do not put forward an explanation. I put forward the measurements, and I should be very glad to be told that I am wrong.{/} You close it. The caged lamp has gone very steady." },
+          } },
+      } },
+    { name = "a drip",
+      description = "From the vault, on to a book. Somebody has put a tin bowl on the book. The bowl is full, and the book under it is quite dry, and a little smug: it is a treatise on umbrellas." },
   },
 
   exits = {

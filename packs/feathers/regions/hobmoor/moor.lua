@@ -135,11 +135,42 @@ space {
       actions = {
         { "Add a stone", say "You find one and set it on top. It stays. You have driven no flock, but you did get yourself up here, and you were no easier to herd." },
       } },
+
+    { name = "a fingerpost at the fork",
+      description = "Where a paved road leaves the drovers' track and goes east through a notch in the hills. Three arms. Two of them say where they go. The third has been painted out, painted in, and painted out again, and at present says {i}NO{/}.",
+      things = {
+        { name = "the third arm", description = "Under the paint you can make out older letters: {i}THE GLOWERS{/}, and a small skull. Somebody has given the skull a hat. It points east, at a row of hills with their brows down." },
+        { name = "a strand of garlic", description = "Tied round the post at head height, dry and papery. Nan Tegg says the carter from over there hangs one every trip. \"He says it's to keep it in. I never liked to ask what.\"" },
+        { name = "the paved road", description = "Cobbled, cambered and swept, which no other road on Hobmoor is. It begins exactly at the parish boundary, as if whoever mends it has been told how far he may come." },
+      },
+      actions = {
+        { "Ask the shepherd about it", say "\"The Glowers. There's a village, and a castle, and a Count in the castle that drinks blood.\" She counts a row of stitches. \"So they say. He bought forty fleeces off me through a carter in the hard winter, when nobody else was buying, and paid over the odds. I've known worse that drank water.\"" },
+      } },
+
+    { name = "a dew pond",
+      description = "A round pool on the very top of the moor, clay-lined, with no stream in or out. It has never gone dry. The drovers made it, or their grandfathers' grandfathers did, and nobody remembers how.",
+      things = {
+        { name = "the water", description = "Brown as tea and perfectly still. It holds the whole sky and one upside-down sheep, drinking." },
+        { name = "hoof prints in the clay", description = "Thousands, sheep on sheep, baked hard round the rim. Among them, pressed deep, one print as long as your forearm with three toes. Nan says it was there when she was a girl and that it is best not looked at on an empty stomach." },
+        { name = "a water beetle", description = "Black, glossy, rowing itself across the sky with two oars. It has the pond to itself and behaves like it." },
+      },
+      actions = {
+        { "Drink from it", say "Peat, wool and cold. You have had worse at inns. The sheep beside you lifts its head, water running off its chin, and gives you the look of a regular at a stranger in the snug." },
+      } },
+
+    { name = "a sheepfold",
+      description = "A ring of dry stone, shoulder high, with a hurdle for a gate. One of its stones is better dressed than the rest and has half a carved arm on it.",
+      things = {
+        { name = "the carved stone", description = "The arm of the boundary cross, built in sideways. The carving is a hand, raised. The lambs rub against it. It is the most blessed sheepfold in the kingdom, and it shows in the lambing figures." },
+        { name = "a lambing lantern", description = "Tin, hung on a peg inside, with a stub of tallow. In April it burns all night and the whole fold breathes." },
+        { name = "a crook left against the wall", description = "Not Nan's. Shorter, older, grey with weather. It was her mother's. She leaves it where her mother leant it and walks round." },
+      } },
   },
 
   exits = {
     { to = "barley_road", description = "South and down, to where the ground is ploughed and the wind has less to say." },
     { to = "the_dint", description = "North-east along the scorch, towards the smoke." },
     { to = "the_ribs", description = "North, where something white stands up out of the moor in a row." },
+    { to = "gl_low_road", description = "East by the paved road, through a notch in a row of hills that are all looking at you. The fingerpost advises against it." },
   },
 }

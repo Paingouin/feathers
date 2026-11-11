@@ -53,6 +53,15 @@ space {
         { name = "a cart rut", description = "Two grooves, fresh, across the shingle from the weed curtain toward the Strand. A handcart, loaded going one way and light going the other. Somebody has found the walk worth making.",
           },
       } },
+    { name = "a lugger, far out",
+      description = "Where the sea has got to, half a mile off across the flats, a black boat with tan sails lies at anchor in what water there is. A line of footprints goes out to it from the weed curtain, and none come back. So this is where Kev went to be poorly.",
+      things = {
+        { name = "the footprints", description = "One man, long stride, carrying a sea chest on his shoulder by the depth of the left heel. They set off as a walk. After twenty yards, they are a run." },
+        { name = "a board stuck in the shingle", description = "Tarred, with white paint, facing the sea so that Dob will not see it from the cave: {i}SOUTH RUN. Tea up, sundries down. Passengers by arrangement. Do not tell Dob I am well.{/}" },
+      },
+      actions = {
+        { "Wave to the boat", say "You wave. Out on the flats a small figure in a hat like a leaf stands up on the boom, waves back, and holds up three fingers. Three days. Then it points south, and lies down again." },
+      } },
     { name = "iron rungs in the cliff",
       description = "A ladder of them, set in the rock, going up the back wall of the cove from above the tide mark. They pass the mooring ring and keep going. At forty feet they stop, at a blank face, under nothing.",
       things = {
@@ -110,6 +119,8 @@ space {
 
   exits = {
     { to = "long_strand", description = "Back over the rocks, with an eye on the horizon." },
+    { to = "jg_landing", label = "Out to Kev's boat",
+      description = "Half a mile over the wet sand to where the water starts, and then three days south with a man who liked the old way better." },
     { to = "sea_cave", label = "Behind the weed",
       description = "Through the gap, into the dark and the smell of tar.",
       requires = flag "weed_parted", hidden = true },

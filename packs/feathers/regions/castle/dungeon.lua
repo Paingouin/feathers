@@ -157,6 +157,25 @@ space {
       actions = {
         { "Call down", say "Your voice goes in and is not sent back. It has not been lost. It has been kept." },
       } },
+
+    { name = "the key board",
+      description = "A plank by the guardroom door with a row of hooks, each labelled in poker work.",
+      things = {
+        { name = "the cell keys", description = "Five, on their hooks, bright with disuse. The sixth hook, for the end cell, is empty. Pelham has that one. It seemed simpler." },
+        { name = "a hook marked 'Oubliette'", description = "No key. A tag instead: {i}It is a hole. It does not lock. Nobody has ever wanted in.{/}" },
+        { name = "a hook marked 'Dire Peril'",
+          description = "A big iron key with a skull for a bow, furred with dust, and a Corporation label. Grist says a man from Aldmoor left it thirty years ago, for safe keeping, and said he would be back Monday.",
+          actions = {
+            { "Ask what it opens", say "\"Couldn't tell you. He said it was the front door of the finest dungeon in the kingdom.\" Grist looks round his own, at the shirts drying and the geranium. \"I didn't take offence. I've never held with front doors on dungeons. It gives the wrong idea.\"" },
+          } },
+      } },
+    { name = "a suggestions slot",
+      description = "Cut in the guardroom door, with a board: {i}PRISONERS' SUGGESTIONS. ALL WILL BE READ.{/} There is one prisoner. The box is emptied weekly.",
+      things = {
+        { name = "this week's suggestion", description = "A slip, in Pelham's hand: {i}The toast was a shade pale on Tuesday. Otherwise no complaints. P.{/} Grist has written beneath it: {i}Noted. Sorry.{/}" },
+      } },
+    { name = "a row of shirts, drying",
+      description = "On a line across the torture chamber, between the rack and the maiden. Grist takes in washing for the garrison. The rack, he points out, is the best mangle in the castle." },
   },
 
   exits = {
@@ -210,6 +229,20 @@ space {
       description = "A fork, driven into the wall by its handle, with a candle end between the prongs. There is one every ten yards. He has a spoon for the digging, and it would not have been right to use it for anything else." },
     { name = "the far end",
       description = "The tunnel comes up under a flagstone. Pelham dug towards freedom for twenty years, and missed, and came up at two in the morning in the castle pantry, under a shelf of pies. He sat there until it began to get light. Then he took one pie, the smallest, and went home." },
+
+    { name = "a niche of spoons",
+      description = "Cut into the wall at the halfway mark, a shelf with eleven spoons laid in a row. These are the ones that wore out. He could not throw them away.",
+      things = {
+        { name = "the first spoon", description = "Tin. It lasted a week and got him four inches. He keeps it at the head of the row, as a general keeps his first sword." },
+        { name = "the eleventh spoon", description = "Silver, with the royal cipher. Somebody sent it down on his tray in the fourteenth year, without a word, and the tunnel went a good deal faster after that." },
+      } },
+    { name = "a side scrape",
+      description = "A yard of passage going off to the left, and then stopping.",
+      actions = {
+        { "Ask yourself why he stopped", say "You crawl in. At the end, in the lantern, the earth gives way to stone: dark, dressed, laid without mortar, with a small square cut in it and a dot. He hit somebody else's wall, twenty feet under the castle, and very sensibly went round." },
+      } },
+    { name = "a worm",
+      description = "It comes out of the roof, considers the tunnel, and goes back in. It was here first, and regards the whole undertaking as an amateur piece of work." },
   },
 
   exits = {
@@ -322,10 +355,41 @@ space {
     { name = "what fell from above",
       description = "Directly under the hole, a small cone of things that nobody meant to forget: crumbs, a draught piece, earth from a geranium, and on top a slice of toast, quite fresh, butter side down." },
     { name = "the dust",
-      description = "Ankle deep and soft as flour. It holds every footprint that was ever made in it. There are yours. And there are a pair, in good boots, that stood for a long time in front of the statue." },
+      description = "Ankle deep and soft as flour. It holds every footprint that was ever made in it. There are yours. And there are a pair, in good boots, that stood for a long time in front of the statue.",
+      things = {
+        { name = "a place where the dust is moving",
+          description = "By the far wall, beside the first stone, the dust is not lying still. It is creeping, a grain at a time, toward the foot of the wall, and going under it. Four hundred years of dust have fallen in here. The floor ought to be knee deep. It is draining.",
+          variants = {
+            { when = flag "fd_dust_followed",
+              description = "A crack at the foot of the wall, wide enough for a thin adventurer going sideways, with the dust sifting steadily in. Cold air comes up out of it and stirs the hat bells in their crate." },
+          },
+          actions = {
+            { "Follow the dust", when = no(flag "fd_dust_followed"), set "fd_dust_followed", fx "shake",
+              say "You kneel and sweep with your hands. The dust runs away from them like water finding a plughole. Under it: the edge of a flagstone, and beside the flagstone a crack, and in the crack, going down, the corner of a step. You sit back on your heels. The kingdom has been dropping things into this room for four centuries to forget them, and the room has a cellar." },
+          } },
+      } },
+
+    { name = "a ballot box",
+      description = "Black tin, padlocked, with a slot. There was to have been an election, once, in the reign of a king who had been reading. It was held. The box came down the hole the same evening, unopened.",
+      things = {
+        { name = "the slot",
+          description = "You tilt the box to the lantern. One paper inside. So one person voted. It is not known who for, or who, though the King of the day was seen near the box with ink on his thumb." },
+      },
+      actions = {
+        { "Shake it", say "The single ballot slides from end to end with a small dry whisper. It has been the entire will of the people for two hundred years, and it sounds as if it knows." },
+      } },
+    { name = "a heap of signposts",
+      description = "Finger posts, pulled up and thrown down, pointing every way at once. Each is to a place the kingdom decided not to have.",
+      things = {
+        { name = "one to a village", description = "{i}NETHER WALLOP 2.{/} It was abolished for tax reasons. The people still live there. They have been asked to keep it to themselves." },
+        { name = "one pointing down", description = "Somebody has propped one of the posts upright in the dust with its finger to the floor. The board has been planed blank and nothing painted on it. It leans, a very little, toward the far wall." },
+      } },
   },
 
   exits = {
     { to = "castle_dungeon", label = "The ladder", description = "Up, to torches, shirts and a man with a mug. You are surprised how glad you will be of them." },
+    { to = "fd_stair", label = "The crack in the floor",
+      description = "Sideways, breathing in, and then down, on steps nobody up here has ever counted.",
+      requires = flag "fd_dust_followed", hidden = true },
   },
 }

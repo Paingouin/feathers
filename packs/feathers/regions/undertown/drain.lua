@@ -95,9 +95,30 @@ space {
       actions = {
         { "Say something heroic", say "\"FEAR NOT!\" you tell the Drain. \"Fear not,\" it says, without the capitals. A rat looks round, as you might at someone talking in a library." },
       } },
+    { name = "the last grating",
+      description = "Downstream of the ladder, in a side arch nobody uses, the Corporation's brick ends at a set of iron bars from floor to crown. A plate: {i}LIMIT OF INSPECTION.{/} The grey water goes through without slowing. It has no latch on this side.",
+      variants = {
+        { when = flag "fd_grating_open",
+          description = "The bars stand open on a hinge that did not squeak. Beyond them the tunnel goes down, on older stone, and a cool draught comes up it that does not smell of Aldmoor at all." },
+      },
+      things = {
+        { name = "the plate",
+          description = "{i}LIMIT OF INSPECTION. BEYOND THIS POINT THE CORPORATION HAS NO KNOWLEDGE AND WISHES TO KEEP IT THAT WAY.{/}" },
+        { name = "the far side of the bars",
+          description = "A latch, on the other face, where no one from the town could work it. It is oiled. And hanging beside it, at about the height of your shin, a bell pull of red thread." },
+      },
+      actions = {
+        { "Rattle the bars", when = no(flag "fd_grating_open"),
+          say "They do not give. The noise goes off down the tunnel beyond, and a long way down somebody says \"pardon?\" in a very small voice, and waits." },
+        { "Reach through and pull the red thread", when = no(flag "fd_grating_open"), set "fd_grating_open",
+          say "You get two fingers through and tug. A bell the size of a pea rings on the far side. There is a pattering. Something you do not quite see, no higher than your knee, lifts the latch with both hands, says \"pardon, mind the draught,\" and is gone down the slope before the bars have finished swinging." },
+      } },
   },
 
   exits = {
+    { to = "fd_last_grating", label = "Past the last grating",
+      description = "Through the bars, off the Corporation's map, down the slope on the old stone.",
+      requires = flag "fd_grating_open", locked = "the bars are latched, on the far side" },
     { to = "silt_gallery", description = "Along the slates, into the low branch where the town's lost things settle." },
     { to = "old_sluice", description = "Upstream, towards the smell of toast." },
     { to = "market", description = "Up the rungs. From underneath, the grate lifts on a hinge the rust has not found, and drops shut behind you." },

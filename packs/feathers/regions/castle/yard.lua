@@ -96,6 +96,23 @@ space {
         { "Stop trying", when = all { flag "ca_sword_tried", no(item "sword_wilful") }, once = true, give "sword_wilful",
           say "You give up. You do it properly: you decide that it is not yours, and never was, and that this is fine. You put out a hand to steady yourself on the hilt as you turn to go, and the sword comes with you. No light. No music. It is simply in your hand, as a thing is that was only waiting to stop being pulled. {gold}Wilful{/} is lighter than it looks. The armourer is doing the pikes and has his back to you." },
       } },
+
+    { name = "a rack of wooden swords",
+      description = "By the door, low down: practice swords for the royal children, ash, with the grips bound in cord. Twelve pegs.",
+      things = {
+        { name = "the smallest sword", description = "The length of your forearm. The point has been chewed. Every heir has started on this one, and every heir, it seems, has had teeth coming." },
+        { name = "an empty peg", description = "The twelfth. Master Rivet says one was left out on the wall walk in his grandfather's day and carried off by the jackdaws, for a perch. He has kept the peg clear. \"It's on the books,\" he says. \"It'll turn up.\"" },
+      },
+      actions = {
+        { "Heft one", say "You take a wooden sword off its peg and try a cut. It is exactly the weight of the one you had at five. Master Rivet watches the cut, sucks his teeth, and for the first time puts down a rag. \"Elbow,\" he says, and shows you. Nobody ever had." },
+      } },
+    { name = "the armoury cat",
+      description = "Asleep in an upturned helmet on the bench, exactly filling it, like a pudding in a basin. It is a tabby. The helmet is the Black Prince's.",
+      actions = {
+        { "Stroke it", say "It purrs, and the helmet takes up the note and rings with it, faintly, like a struck bowl. Master Rivet says it is the only war cry that has been raised in here in his time." },
+      } },
+    { name = "a siege ladder",
+      description = "Hung along the wall on brackets: forty feet, oak, with iron hooks. It was made for storming the walls of an enemy. The kingdom has never found an enemy with walls shorter than forty-five." },
   },
 
   exits = {
@@ -179,6 +196,17 @@ space {
       actions = {
         { "Lean over it", say "The yeoman clears his throat. You lean back. There was nothing to lean towards, but the forms were observed, and you both feel better." },
       } },
+
+    { name = "the cleaning cupboard",
+      description = "A narrow door behind the Yeoman, ajar. It is the only part of the Jewel House not behind glass, and he would rather you had not noticed it.",
+      things = {
+        { name = "a pot of jeweller's rouge", description = "And a chamois, and a toothbrush with the royal cipher. The regalia is cleaned on the first Monday of the month, by the Yeoman, with his coat off, humming." },
+        { name = "a crown made of tin",
+          description = "On a hat peg. Paste stones, a little dented. It stands in the case on cleaning days so that visitors are not disappointed. In forty years nobody has remarked on the difference, and the Yeoman has begun to wonder about the other one." },
+        { name = "a pair of carpet slippers", description = "His. Scarlet, to match the coat. After the doors are shut he guards the crown jewels of the kingdom in these, with a mug, and is a happier man." },
+      } },
+    { name = "a mousehole with a rope across it",
+      description = "In the skirting under the sixth case. Somebody has put up a length of red thread on two pins in front of it, to match the visitors' rope. The Yeoman denies everything, with the look of one who has also made a tiny sign." },
   },
 
   exits = {

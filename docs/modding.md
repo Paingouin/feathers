@@ -138,7 +138,7 @@ Effects: `say "text"`, `set "flag"`, `clear "flag"`, `give "item"`, `take "item"
 `fx("flash", "#ffcc66")`).
 
 Conditions: `flag "name"`, `item "id"` (the player carries it), `visited "space"`,
-`no(c)`, `all { c1, c2 }`, `any { c1, c2 }`.
+`no(c)`, `all { c1, c2 }`, `any { c1, c2 }` (`all(c1, c2)` and `any(c1, c2)` work too).
 
 ### Variants
 

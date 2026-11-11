@@ -104,6 +104,26 @@ space {
       description = "The top of the meadow, where the grass stops under a grey crust of old drift. It is going back by an inch a day. At the very rim the turf is yellow and flat, and already has buds on it." },
     { name = "a golden eagle",
       description = "A long way up, turning. The marmots know exactly where it is. So, you notice, do you: you have been keeping near the boulder without deciding to." },
+    { name = "a shadow crossing",
+      description = "A patch of shade moves over the grass, the size of a barn, though there is not a cloud above the meadow. It has a hard edge. It has what looks very like the shadow of a hedge along one side, and of a gate.",
+      actions = {
+        { "Look up into the sun", say "You shade your eyes and squint. Something small and dark is passing in front of the sun, a long way up. It has a flat bottom. Then the glare beats you and you look away, with a green shape of it swimming in your eye that is, if anything, a field." },
+      } },
+    { name = "the beehives",
+      description = "A row of five straw skeps on a plank, facing south, carried up from the valley on somebody's back for the six good weeks. The bees are frantic. They have a year's work to do before the snow.",
+      things = {
+        { name = "the bees", description = "Small, dark, mountain bred. They go from flower to flower without stopping, like a clerk at quarter day. One lands on your sleeve, looks you over for pollen, and leaves with open contempt." },
+        { name = "a comb, left out", description = "On a flat stone, a square of comb the size of your palm, dripping, with a leaf under it. Left for whoever passes. The honey is nearly white and tastes of flowers you have just walked through.",
+          actions = {
+            { "Eat a corner", say "Wax and all. It tastes of gentian, and thyme, and six weeks. You lick your fingers and then, there being nobody about but marmots, the leaf." },
+          } },
+        { name = "the sixth place on the plank", description = "Empty, with a ring where a skep stood. That hive swarmed, last summer, straight up. They watched it out of sight. The beekeeper says they went to find where the flowers were higher, and he does not seem to think they were wrong." },
+      } },
+    { name = "a hollow full of gentians",
+      description = "Where the snow lay longest, a dip in the turf filled to the brim with flowers of a blue so hard that it looks wet. The sky above the Grumbles is that colour and no other thing is. You stand at the edge of it as you would at the edge of water.",
+      actions = {
+        { "Lie down in it", say "You lie on your back in the blue with the blue over you. A marmot whistles, once, to report you, and then, seeing that you are doing nothing, stands down. It is the stillest you have been since you left home. You get up with the print of flowers on your cheek." },
+      } },
   },
 
   exits = {
@@ -200,6 +220,25 @@ space {
       },
       actions = {
         { "Add a line", once = true, say "You write: {i}Skimmed seven.{/} You look at it. You add: {i}Witnessed by a trout.{/} That should hold up." },
+      } },
+    { name = "something in the reflection",
+      description = "The tarn shows the cliffs, the sky, a hawk. And high in the sky of the water, where the real sky is too bright to look at, a small dark shape with a flat underside, hanging. In the water you can look straight at it. It has roots.",
+      actions = {
+        { "Compare with the sky", say "You look up. Glare, and nothing. You look down. There it is in the black water, plain as a coin: a clod of earth, upside down from here, with threads hanging from it. The monk with the rod has seen you looking. He points at the water, then at the sky, then shrugs, with the air of a man who has had a long while to get used to it." },
+      } },
+    { name = "a boat",
+      description = "A flat bottomed punt, tarred, drawn up on the scree with the pole laid in it. It belongs to the monastery. It is used once a year, on the Founder's day, when the Abbot is rowed to the middle, sits for an hour, and is rowed back.",
+      things = {
+        { name = "the pole", description = "Twenty feet of ash. It has never touched the bottom. There is a mark cut on it where the brother who tried gave up, at nineteen." },
+        { name = "the thwart", description = "Worn in one place, by four hundred years of abbots. Under it somebody has scratched, small, where a kneeling man would see it: {i}I only come out here to hum.{/}" },
+      },
+      actions = {
+        { "Push it out a yard", say "It slides onto the water and sits there on its own reflection without a ripple, as a thing sits on a table. You pull it back by the painter. The tarn closes over where it was and shows no mark." },
+      } },
+    { name = "a char",
+      description = "In the shallows by the outflow, a long pale fish with a red belly, quite still, nose to the current. They were left in this tarn when the ice went back and have been here since, on their own, getting paler. It regards you with one eye as a thing that has happened lately.",
+      actions = {
+        { "Watch it", say "It does not move. You do not move. After some minutes you are both being very patient at each other. The fish wins. It has had more practice, by about nine thousand years." },
       } },
   },
 

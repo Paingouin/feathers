@@ -105,6 +105,24 @@ space {
       } },
     { name = "the incense",
       description = "Forty kinds, from forty doors, meeting in the middle of the street. The result is the smell of Aldmoor's religion: sandalwood, beeswax, fish, and something from the Goose Chapel that is mostly fear." },
+    { name = "the Mission to the Heathen",
+      description = "A narrow door with a brass plate and a collecting box. The Society for Bringing Hats to Warm Countries meets here on alternate Thursdays. It has sent out one missionary in forty years, with a crate, and he writes that the work goes well.",
+      things = {
+        { name = "the collecting box", description = "{i}For Flannel.{/} It rattles. A second slot beside it reads {i}For Nightcaps Specifically{/}, and that side is full." },
+        { name = "the annual report", description = "Pinned in the window. {i}Souls saved: nil. Nightcaps placed: 2,300. Our brother Pomfret reports that the natives now wear them to bed, as we do, and asks the Society not to enquire further.{/}" },
+      },
+      actions = {
+        { "Put in a button", say "You have no coin to spare, so you put in a button. It goes down the slot with a clink. You have no means of knowing that it will travel further than you have, and be accepted as money at the end of it." },
+      } },
+    { name = "a bell founder's yard",
+      description = "Behind the oratory: a pit, a furnace, and a new bell lying on its side in the sand like a beached thing. Every temple in the Quarter wants one a little louder than the temple next door.",
+      things = {
+        { name = "the new bell", description = "Cast for Saint Ledger. The inscription runs round the lip: {i}I CALL THE FAITHFUL AND REMIND THE REST{/}. There is a crack in it the length of your hand. The founder has not told them yet." },
+        { name = "the founder", description = "A sad broad man with burned eyebrows. He says a bell is the only honest thing a temple owns, since you cannot make it say what it does not mean.",
+          actions = {
+            { "Tap the cracked bell", say "It gives a flat sour note, like a pan. The founder shuts his eyes. \"They'll take it,\" he says. \"They'll say it has character. The Almost lot have offered me double.\"" },
+          } },
+      } },
   },
 
   exits = {

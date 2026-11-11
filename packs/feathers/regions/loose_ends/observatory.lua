@@ -1,0 +1,196 @@
+-- The Top Rock: the other observatory, and the room under it.
+
+space {
+  id = "le_observatory",
+  region = "loose_ends",
+  name = "The Other Observatory",
+  description = "The highest of the Loose Ends: a bare rock the size of a threshing floor, with a copper dome on it and a hut built against the dome. There is no weather up here, and very little air. The stars are out at noon. A man is shouting at one of them.",
+  palette = { bg = "#07080f", text = "#ccd2e4", dim = "#585e80", accent = "#f0a070", border = "#2a3058" },
+  ambience = { stars { color = "#b8c4f0", rate = 0.6 }, flicker { color = "#f0a070", strength = 0.06 } },
+
+  things = {
+    { name = "Ignatius Cope",
+      key = "le_cope",
+      icon = "☺",
+      description = "The Astronomer of the Top Rock: tall, unshaven, in a dressing gown over a greatcoat over another dressing gown, with a letter crushed in one fist. He was at the Collegium once. He left over a decimal. He has been proving it up here for twenty-two years.",
+      variants = {
+        { when = flag "le_chart_open",
+          description = "The Astronomer of the Top Rock, in two dressing gowns and a greatcoat, sitting on an upturned bucket with the old chart across his knees. He is not shouting. He is writing a letter, slowly, and crossing out the rude parts as he goes, which is new." },
+      },
+      things = {
+        { name = "the letter in his fist", description = "Collegium paper, weighted in one corner for dropping, though this one came up, by kite. The hand is small and inky. You can read one line between his fingers: {i}forty-one is gone, Ignatius, and I had a piece of it in my lap, so do not tell me about your decimal.{/}" },
+        { name = "his slippers", description = "Carpet, with lead soles from Lightly's. He paces in them. There is a track worn in the rock, round and round the dome, a foot wide and an inch deep." },
+        { name = "his beard", description = "Three days old in most places and twenty-two years old in one, where he forgets." },
+      },
+      actions = {
+        { "Ask who he is shouting at", say "\"Forty-two!\" He points, with the letter, at a patch of sky. \"It's next. She says there's no order to it. There is an order to it. I have had the order for nine years and she will not look at my figures because I once called her method a knitting pattern.\" He breathes. \"It was a very good knitting pattern. I never said it wasn't.\"" },
+        { "Ask about Dr Vane", say "\"We were students together. She does the sums and I do the looking. We have not agreed on anything since the winter of the comet, and we write every week.\" He smooths the letter on his knee without noticing that he is doing it. \"She thinks the Gap is far off, behind the stars. I say it is near. In front. You can see the stars at its edge go behind it, if you have the height. I have the height.\"" },
+        { "Ask what the Gap is", say "\"I don't know.\" He says it at once, flatly, like a man paying a bill. \"Neither does she. It is the one thing we have ever both signed.\" He looks up. \"But I can tell you it has an edge, and the edge is straight in one place. Nothing in the sky is straight. I have not put that in a letter. I don't want it to be true by post.\"" },
+        { "Hold the lamp for him", when = no(flag "le_chart_open"), set "le_chart_open",
+          say "\"You. You have hands. Hold this.\" He gives you a dark lantern and hauls up a trap in the hut floor that you had taken for a rug. \"I need the old chart, and I can't carry it and a light, and the last time I tried I lost a year's work down the stair and very nearly the year.\" He goes down. After a moment his voice comes up. \"Well, bring the lamp. It's a lamp. It's no use up there.\"" },
+        { "Offer to carry his reply", when = flag "le_chart_open",
+          say "He looks at the letter he has written, and at you, and at your boots. \"You'd go by the stones? And the mountain? And walk it to Aldmoor?\" He folds it, and then does not hand it over. \"No. I'll drop it at noon as usual. She times them. If one came by hand she would think something had happened to me.\" He clears his throat. \"She would be right, but she need not know.\"" },
+      } },
+    { name = "the dome",
+      description = "Copper, eight feet across, hammered out of old kettles; you can see the spouts. It turns on a ring of cannonballs. Painted round it, large: {i}GO AWAY{/}. Under that, smaller, in the village's hand: {i}he doesn't mean it{/}. Under that, smaller still, in his: {i}I do on Tuesdays{/}.",
+      things = {
+        { name = "the slot", description = "Open, and aimed. He never closes it. There is no rain to keep out, at this height, and he says a shut dome is an opinion." },
+        { name = "the ring of cannonballs", description = "Twenty-four, in a greased groove. He got them from the Castle, as surplus. They had never been fired. Nothing at the Castle has." },
+        { name = "a boot", description = "Lying under the dome, on its side, with a dent in the copper above it at about the height a boot would reach if thrown by a tall man who had just had a letter." },
+      } },
+    { name = "the Short Glass",
+      key = "le_short_glass",
+      description = "His telescope. Where the Collegium's is forty feet of brass, this is four feet of tin stovepipe with a lens at each end, lashed to a kitchen chair. He ground the lenses himself. He says it is the better instrument, and from up here, with no air in the way, he may be right.",
+      things = {
+        { name = "the Gap, nearer",
+          wonder = true,
+          key = "le_gap_near",
+          description = "You put your eye to the stovepipe. There are no words for how many stars; the Collegium showed you a frost, and this is a blizzard. In the middle of them is the place with none. It is larger here. It is closer. {magic}You watch its rim, as he tells you to, and after a long while a star at the edge goes out. It does not fade. It is covered, as a lamp is when someone walks in front of it. A little later it comes back, on the same side.{/} You take your eye away. Ignatius Cope is watching you, with his arms wrapped round himself. \"Yes,\" he says. \"I thought I would feel better when somebody else saw it. I don't. Thank you all the same.\"" },
+        { name = "the kitchen chair", description = "With arms. The telescope is tied to the back of it with washing line, a present from Mrs Pegg. He sits in it backwards. There is a cushion." },
+        { name = "the lenses", description = "Ground from the bottoms of two bottles of Ballast, on a slate, with sand, over four winters. There is a faint brown tint to the whole sky through them, and he has corrected for it in the sums." },
+      },
+      actions = {
+        { "Look through it", fx("wash", "#b8c4f0"),
+          say "The tin is so cold it sticks to your eyebrow. Then you are falling upward into more stars than there is room for. You find the dark place by where they stop. You watch its edge until your eye waters and something there is covered, and uncovered. When you sit back you are holding the arms of a kitchen chair very hard." },
+      } },
+    { name = "the hut",
+      description = "Planks, tarred, built against the dome's north side. One room. It contains a camp bed, eleven thousand sheets of figures, and a stove he forgets to light.",
+      things = {
+        { name = "the figures", description = "In stacks, tied with string, each stack labelled with a year. They have reached the roof on three sides. He sleeps in the fourth." },
+        { name = "the stove", description = "Cold. There is a kettle on it with ice in. Pinned to the flue is a note from the village: {i}LIGHT IT, you daft man.{/} Under it are eleven earlier notes, the same." },
+        { name = "a rug", key = "le_rug", description = "Rag, in the middle of the floor. It has a ring handle sewn into it, which a rug does not need.",
+          variants = {
+            { when = flag "le_chart_open", description = "Thrown back. Under it a trap door stands open on a stair cut in the rock, with a smell of cold vellum coming up." },
+          } },
+        { name = "a basket of food", description = "By the door, sent up from the Slow Spill on the pulley: a pie, a lidded bowl, a jug. The pie has been there since Tuesday. The village sends another every day regardless, and the sky mice have never been so fat." },
+        { name = "a shelf of letters", description = "Twenty-two years of them, in order, tied in bundles by year with red tape. Every one is from her. Every one begins {i}Ignatius, you are wrong{/}. He has kept the envelopes too." },
+      } },
+    { name = "the letter drop",
+      description = "At the rock's southern lip, a tin chute with a hinged lid, aimed with care. A plumb line and a set of tables hang beside it. He drops her letter at noon, weighted, and it lands in the Collegium's quadrangle, give or take a dean.",
+      things = {
+        { name = "the tables", description = "Wind, height, weight of paper, time of year. A column at the end is headed {i}Vane, likely position of{/}. He aims to miss her by a yard. In twenty-two years he has hit her once, and still brings it up." },
+        { name = "a returned letter", description = "One, pinned to the post. It came back on a kite with a line added: {i}This landed in the soup. I read it anyway. You are still wrong. H.{/}" },
+      },
+      actions = {
+        { "Look down the chute", say "A square of country at the bottom of a tin tube. There is a town in it, with a wall. There is a tower in the town with a green dome. The chute is aimed at the tower as you would aim a look across a room." },
+      } },
+    { name = "the sky",
+      description = "Black, at midday, straight overhead. Blue only round the rim, like the glaze in the bottom of a bowl. You can count the stars without a glass and there is no end to the counting.",
+      things = {
+        { name = "the sun", description = "Small, white and hard, with the stars going on all round it as if it were merely the nearest." },
+        { name = "the fixed star", description = "North, high up. Every other star you watch for a minute has crept. That one has not. He says it is the only honest object in the sky, and that he does not trust it." },
+        { name = "a falling star", description = "One, as you look, short and green, going down into the north. He has it written down before it has gone out. \"Forty-two is still there,\" he says, not looking. \"That was nobody. That was just a stone.\"" },
+      } },
+    { name = "the rock itself",
+      description = "Bare, black, polished by his slippers. There is no soil and nothing grows. It is the oldest looking stone you have seen in the Loose Ends, and the only one with no lichen. Nothing has lived on it but him.",
+      things = {
+        { name = "the worn track", description = "Round the dome, an inch deep. Twenty-two years of pacing, at about four miles a night. He has walked to the moon and some of the way back, by his own figures, without leaving the rock." },
+        { name = "chalk sums", description = "All over the floor of the rock, in his hand, rained on by nothing, never fading. He has had to start writing smaller. One sum near the edge runs off the rock, and he stood there, evidently, for some time, wanting another foot." },
+      } },
+    { name = "the pulley to the Spill",
+      description = "A line running down to the inn roof, with a basket. Food comes up. Empty dishes are supposed to go down. There is a stack of forty empty dishes by the post, and a card from Mrs Plummet in the top one, which he has not read, and which you do not need to." },
+    { name = "a brass plate",
+      description = "Screwed to the hut door, green. {i}THE COPE OBSERVATORY. Est. in protest.{/}" },
+    { name = "the cold",
+      description = "It is a clean, still, starry cold with no damp in it. Your breath falls as snow. He does not seem to feel it. He has, you see, got used to being at the temperature of what he is looking at." },
+    { name = "the quiet",
+      description = "No wind at all. The village is a murmur a long way below. Up here the only sounds are his slippers, a pen, and now and then a single word addressed to the sky, of the kind that a clergyman would have to pretend not to know." },
+    { name = "a second chair",
+      description = "By the telescope, facing it, with a folded blanket on the seat. It is new. The blanket has never been unfolded. He made the chair himself the winter he got the height, in case anybody ever came up to check his figures in person. He does not say who.",
+      actions = {
+        { "Sit in it", say "You sit. He opens his mouth to stop you, and shuts it. \"It'll do it good to be sat in,\" he says, gruffly. \"Chairs go off.\" You sit very carefully, as you would in a seat that is being kept." },
+      } },
+  },
+
+  exits = {
+    { to = "le_pasture", label = "The steps down", description = "Back into the air and the weather, where things have the decency to twinkle." },
+    { to = "le_chart_room", label = "The trap under the rug", description = "Down a stair cut in the Top Rock, with a lantern, behind a man in two dressing gowns.",
+      requires = flag "le_chart_open", hidden = true },
+  },
+}
+
+space {
+  id = "le_chart_room",
+  region = "loose_ends",
+  secret = true,
+  name = "The Chart Room",
+  description = "A round chamber hollowed in the Top Rock, dry as a drum. Somebody was watching the sky from this island long before there was a Collegium to quarrel with. Their charts are here: in racks, in rolls, pinned flat under glass. The newest of them was old when the first king was a rumour.",
+  palette = { bg = "#0a0908", text = "#d8d0c0", dim = "#74685a", accent = "#e8d8a0", border = "#44382a" },
+  ambience = { dust { glyphs = "˙·", color = "#8a7c60", rate = 0.2, speed = 0.1 }, flicker { color = "#e8d8a0", strength = 0.1 } },
+
+  things = {
+    { name = "the First Chart",
+      wonder = true,
+      key = "le_first_chart",
+      description = "Under a slab of glass on the middle table: a single skin, as wide as a door, black with age, pricked all over with holes. It is a chart of the whole northern sky, and it was not drawn. Each star is a pinhole. Hold the lantern beneath the table, as he shows you, and the room goes dark and the chart lights up. {magic}Every star is in its place, every one, to the faintest, and they are in their places as of tonight. Whoever pricked this skin did it with nothing but an eye and a pin, and has not been out by the width of the pin in more years than anyone has a number for.{/} And in the middle, where the Gap is, the skin has not been pricked. It has been left whole. It was left whole when the chart was made.",
+      things = {
+        { name = "the unpricked place", description = "You lean close. Round the Gap somebody has ruled a border in red, very fine. Inside the border one word was written, and then scraped out with a knife, so thoroughly that the skin there is as thin as the skin of an onion. With the lantern under it, the place where the word was is the brightest thing on the chart." },
+        { name = "the pole", description = "At the top of the chart, where the fixed star belongs, there is a hole bigger than the rest, and ragged. Something was pushed through there and left in, for a long time, and then drawn out." },
+        { name = "the edge of the skin", description = "It is one hide, and you cannot think what of. No calf was ever that size. He says vellum, and changes the subject." },
+      },
+      actions = {
+        { "Hold the lantern under it", fx("wash", "#e8d8a0"),
+          say "You crouch and slide the lantern under the glass. The ceiling of the room fills with points of light, thrown up through the holes: the whole sky, on a curve of rock, turning slightly as your hand shakes. Cope stands in the middle of it with stars on his dressing gown. \"Twenty-two years,\" he says, \"and I come down here once a week to be put in my place by a person with a pin.\"" },
+      } },
+    { name = "the middle table",
+      key = "le_chart_table",
+      description = "A drum of black oak on one thick leg, with the First Chart glassed onto the top of it. It is older than the racks. The leg has been gnawed by something, long ago, and then left alone.",
+      variants = {
+        { when = flag "le_pin_taken",
+          description = "A drum of black oak on one thick leg, with the First Chart glassed onto the top. Under the rim, where your fingers found it, there is a small clean hole in the wood, and a cork on the floor." },
+      },
+      things = {
+        { name = "the underside", description = "You have been holding a lantern under this table for some time, and you are the first person in four hundred years to have looked up while doing it. There is a cork stuck to the underside of the rim. There is something through the cork.",
+          visible_if = no(flag "le_pin_taken") },
+      },
+      actions = {
+        { "Feel under the rim", when = no(flag "le_pin_taken"), set "le_pin_taken", give "le_star_pin", fx "sparkle",
+          say "A cork, pressed into a knot hole. You work it loose. Through it, point down, is a silver pin as long as your finger, with a head of glass, and in the glass a light. Cope makes a sound like a kettle. \"That's the Pin. That's the pole pin. It's been lost since before the hut.\" He reaches for it, and stops, and puts both hands in his pockets. \"No. Take it away. Off the rock. If it stays here I shall put it back in the chart, some night, to see what happens. I know myself. I would do it at about three in the morning.\"" },
+      } },
+    { name = "the racks",
+      description = "Round the wall, floor to roof: rolled charts in pigeon holes cut into the rock. Each hole has a mark over it. They are not letters.",
+      things = {
+        { name = "a chart on birch bark", description = "The same sky. The Gap is there, smaller. Somebody has counted the stars round its edge with little strokes. There are sixty." },
+        { name = "a chart on slate", description = "Scratched, heavy, older. The Gap is there, smaller again, no bigger than a thumbnail. The strokes round it are too worn to count. He has tried, with a rubbing, and got a number he will not say." },
+        { name = "a chart on a clay tablet", description = "In the lowest hole. The sky, in dots made with the end of a reed. You look for the Gap and cannot find it. He watches you look. \"No,\" he says. \"Nor could I. It is either not there, or that is the one bit of sky they did not think needed drawing.\"" },
+        { name = "an empty pigeon hole", description = "Below the clay tablet there is one more hole, with one more mark over it. It is swept clean. You put your hand in to the shoulder and touch the back. He says he did the same, his first night, and felt a fool, and that it is a comfort to see it done by another." },
+      } },
+    { name = "Cope, down here",
+      icon = "☺",
+      description = "He is different below ground. He takes his slippers off at the foot of the stair. He does not shout. He goes from rack to rack with his hands behind him, like a man in a church of somebody else's religion.",
+      actions = {
+        { "Ask who made the charts", say "\"I don't know. The first families found the room when they tidied the rock. The dome is mine. The hut is mine. This was here.\" He touches a rack. \"Whoever they were, they had better eyes than I have, and more patience, and they knew something about the Gap that they wrote down and then thought better of.\"" },
+        { "Ask if Dr Vane knows of this room", say "A long pause. \"No.\" Another. \"It would settle things. She would see at once that it has grown. That it is nearer. That I was right.\" He looks at the First Chart. \"And then we should have nothing to write to each other about. I have thought about that a good deal.\" He picks up the lantern. \"I shall tell her in the spring. I have said so for nine springs.\"" },
+      } },
+    { name = "the ceiling",
+      description = "A smooth dome of rock, plastered white a very long time ago, to take the light from the chart. The plaster has hand prints in it, pressed in wet, at the height a tall person could reach. They are spread, as you would spread a hand to feel for rain." },
+    { name = "the stair",
+      description = "Thirty steps, cut in the rock, each dished in the middle. His slippers did not do that in twenty-two years. Other feet, bare by the shape, did it before him over a very great while." },
+    { name = "a stone seat",
+      description = "Cut into the wall facing the table, with arms. One person sat here and looked at the chart lit from below. The stone is worn to them. They were not large.",
+      actions = {
+        { "Sit in it", say "It fits you no better than someone else's shoe. But from here, with the lantern under the glass, the sky on the ceiling is right way round, and you find you are looking straight at the unpricked place. The seat was put where it could not be avoided." },
+      } },
+    { name = "the pricking tools",
+      description = "In a wooden tray: bone needles, a little mallet of horn, a pad of felt gone to dust. And a row of sockets for pins, graded by size, all empty but the smallest.",
+      things = {
+        { name = "the smallest pin", description = "Bronze, green, as fine as a hair. For the faint ones. You do not touch it. Your hands suddenly seem like a pair of shovels." },
+        { name = "the largest socket", description = "As wide as a pencil. Empty. It is the only socket lined with silver, and the silver is rubbed bright at the rim." },
+      } },
+    { name = "a lamp niche",
+      description = "In the floor under the table: a square pit, soot black, where a lamp sat to light the chart from beneath. There is a puddle of old wax in it a foot deep, in rings like a tree's. He counted the rings once, as far as he could, and went upstairs and lit his stove for the only time anyone remembers." },
+    { name = "his own chart",
+      description = "Pinned to a board by the stair, on Collegium paper: his twenty-two years, the Gap ruled round, forty-two stars numbered along its rim. Beside the First Chart it looks like a child's copy of a painting. He knows. It is pinned up down here on purpose.",
+      things = {
+        { name = "a pencilled line", description = "From star forty-two, a thin arrow toward the dark, and a date. The date is some years off. He has rubbed it out and moved it nearer, twice." },
+      } },
+    { name = "the draught",
+      description = "There should be none, in a sealed room in solid rock. A thread of cold air comes steadily from the empty pigeon hole and crosses the floor to the stair. The dust on the floor lies in a combed line along it." },
+    { name = "the silence of the place",
+      description = "The rock shuts out the village, the wind, the whole sky. You can hear the lantern burning. You can hear Cope not saying anything, which you would not have thought possible an hour ago." },
+  },
+
+  exits = {
+    { to = "le_observatory", label = "Up the stair", description = "Thirty dished steps, to a hut full of figures and a sky that looks smaller than its picture." },
+  },
+}

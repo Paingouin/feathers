@@ -121,6 +121,17 @@ space {
       } },
     { name = "the heat",
       description = "It is not the heat of a fire that somebody made. It comes off the trench steadily, evenly, the same at the far end as the near, as warmth comes off an animal that is asleep." },
+    { name = "the scrap bin",
+      description = "An iron tub by the door, as big as a room, for work that failed inspection. It is nearly empty. What is in it has been thrown hard.",
+      things = {
+        { name = "a hinge with a thumbprint", description = "Perfect, apart from the print of a thumb in the metal where it was touched too soon. The apprentice who made it has been given the day off to think. He is sitting beside the bin, thinking, and will not go home." },
+        { name = "a horseshoe", description = "A good one. There has never been a horse in Far Enough. Somebody made it to see whether he could, from a drawing in a book, and was so ashamed of having made a thing with no use that he binned it himself. The Hinge Master fishes it out every evening and puts it on his desk, and the smith bins it again in the morning." },
+      },
+      actions = {
+        { "Speak to the apprentice", say "You say that it looks a fine hinge to you. He looks up, a boy of forty with a singed beard. \"It's got {i}me{/} on it,\" he says. \"A hinge shouldn't have anybody on it. You should open a door and not think about anybody.\" He turns it over. \"But it's kind of you. Tall folk don't mind a thumb.\"" },
+      } },
+    { name = "the water boy",
+      description = "A small dwarf with a yoke and two buckets, going up and down the line of anvils. Every smith drinks without looking, and puts the dipper back in the same motion as the hammer. He has not spilled a drop in four years. It will be on his apprenticeship papers." },
   },
 
   exits = {
@@ -209,6 +220,15 @@ space {
       actions = {
         { "Look through it", say "You go down on one knee. The whole length of the fire, gone silver through the mica, and along it two hundred small figures rising and falling together. From in here it looks like one creature breathing." },
       } },
+    { name = "a shelf of first tries",
+      description = "Along the back wall, low down, where the lamp does not quite reach: a row of small iron things, each a little better than the last.",
+      things = {
+        { name = "the first", description = "A lump. It was meant to be a nail. It is here because she would not throw it away, and that is the whole of what is known about her that is not in the Grudges." },
+        { name = "the ninth", description = "A hinge, child sized, for a box. It opens. It shuts. There is a small sound when it does. She kept it after she had learned better, and wore the shine off one corner with her thumb." },
+        { name = "the last", description = "A space on the shelf, with a ring in the dust the size of a hinge, and nothing in it." },
+      } },
+    { name = "the bucket",
+      description = "Leather, by the cold hearth, with a skin of dust on water that nobody has drawn from. A cave cricket has drowned in it at some time and a second is sitting on the rim, looking down, as crickets do not." },
   },
 
   exits = {

@@ -183,6 +183,34 @@ space {
         { "Knock", when = item "warrant",
           say "The slot opens. You hold up the paper. The eyes read it, and widen, and the bolts go back one after another, all nine." },
       } },
+
+    { name = "the kennels",
+      description = "A lean-to against the curtain wall, with a half door and a great deal of tail.",
+      things = {
+        { name = "the royal hounds",
+          description = "Eleven of them, long eared and sorrowful. They were bred to hunt the stag. The King does not hunt, so they are walked twice a day round the kitchen garden wall, at the heel of a small boy, and have become expert in compost." },
+        { name = "the twelfth hook",
+          description = "A collar hangs on it, empty, red leather, very old, with a gold tag. The kennel boy says there was a spaniel once who outranked the Chancellor. He has been told not to say where it is now." },
+        { name = "the kennel boy",
+          description = "About nine, with a whistle he cannot yet blow. The hounds obey him entirely. They have not been told he is nine.",
+          actions = {
+            { "Ask to pat one", say "\"That's Clarion. She'll lean.\" She leans. You are pinned to the kennel door by forty pounds of hound with its eyes shut. \"She does that to the Chamberlain,\" says the boy. \"He's had to be fetched.\"" },
+          } },
+      } },
+    { name = "a cart of marrows",
+      description = "By the kitchen door, heaped, with a clerk counting them into a ledger. They are, you gather, a payment. The clerk has ruled a column for them between {i}Gold{/} and {i}Silver{/}.",
+      things = {
+        { name = "the ledger column", description = "{i}Marrows (royal). Received of His Majesty in settlement: 14.{/} And a note: {i}rate of exchange to be fixed. Ask kitchen.{/}" },
+      } },
+    { name = "the bailey drain",
+      description = "An iron grid in the cobbles, where the yard's rain goes. It is the one tidy thing in a tidy castle that nobody is responsible for.",
+      things = {
+        { name = "something on the grid",
+          description = "A spur, a rowel off it, and a wax seal, lying on the bars as if set out for collection. As you look, the seal tips, and is gone." },
+      },
+      actions = {
+        { "Listen at the grid", say "Water, going down. A long way down, a bell the size of a pea. You straighten up. A groom is watching you. \"Lost something?\" he says. \"You never get it back. But I'll tell you a queer thing. You never feel it was wasted.\"" },
+      } },
   },
 
   exits = {

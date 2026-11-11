@@ -176,6 +176,28 @@ space {
     { name = "the door to the muniment room",
       description = "A small door under the gallery with {i}RECORDS{/} on it in white paint, and under that, in pencil, {i}knock and wait{/}, and under that, in another pencil, {i}he won't hear, go in{/}." },
     candle { name = "a state candle", description = "As thick as your arm, in an iron stand. It is lit for the King. It has burned down four inches since he was last seen, and a clerk measures it weekly." },
+
+    { name = "the sideboard of state",
+      description = "Oak, black with age, the length of a barge. On it the plate that is brought out for great occasions, and has therefore been out, waiting, since the meeting began.",
+      things = {
+        { name = "the great salt", description = "A silver castle, a foot high, with the salt in the keep. To sit below it is to be nobody. The court has spent four hundred years edging it down the table, an inch a reign." },
+        { name = "a nef", description = "A gilt ship on wheels, for passing the wine. It has not sailed this reign. A spider has rigged it, correctly." },
+        { name = "the royal toothpick", description = "Gold, in a case, with a page assigned to it. The page is forty. He was assigned at nine." },
+      } },
+    { name = "the dogs under the tables",
+      description = "Four or five, of no breed, belonging to the Hall itself. They know the hour of every meal that used to be served here and still turn up for each.",
+      actions = {
+        { "Drop them something", say "You have a crust. It does not reach the floor. There is a brief, silent rearrangement of dogs, and then five faces looking up at you with the settled conviction that you are the King." },
+      } },
+    { name = "the echo of the Hall",
+      description = "Speak under the middle of the roof and your voice comes back late: not at once, but a good while after, when you have stopped expecting it.",
+      things = {
+        { name = "a late return",
+          description = "As you stand there the rafters give back, quite clearly, a cough and the words {i}my lords, I shall be brief{/}. The Chamberlain does not look up. That one is from the last reign. It was not brief." },
+      },
+      actions = {
+        { "Say something for later", say "\"The adventurer was here,\" you tell the roof. Nothing. You wait. Nothing. It will come back to somebody, some evening years on, in an empty hall, and they will wonder who." },
+      } },
   },
 
   exits = {
@@ -275,6 +297,24 @@ space {
       } },
     { name = "the reinforced floor",
       description = "Flagstones a foot thick on oak baulks, built to carry forty tons of bullion. Your footsteps do not sound on it at all. It has been waiting to bear something, and you are not it." },
+
+    { name = "the audit",
+      description = "A trestle at the back with an abacus, a ledger and an auditor, who is asleep sitting up with the pen still in his hand.",
+      things = {
+        { name = "the abacus", description = "Ten wires. All the beads but one have been taken off and put in a drawer, to save confusion." },
+        { name = "the auditor",
+          description = "Sent by the Council eleven years ago to count the wealth of the kingdom. He counted it the first morning. He has been checking the figure since, in case he missed some.",
+          actions = {
+            { "Wake him", say "He comes to with a start. \"One!\" he says. Then he sees you, and the shelves, and sags. \"I keep thinking there is a second,\" he says. \"A florin, behind something. I get up and look.\" He looks behind something. \"No.\"" },
+          } },
+      } },
+    { name = "a row of money bags",
+      description = "Canvas, each stencilled with a sum. {i}1,000. 5,000. 10,000.{/} They are hanging on pegs, flat, like coats.",
+      things = {
+        { name = "the largest bag", description = "{i}100,000.{/} There is something in the bottom of it. You feel through the canvas. It is a dried pea, and it has been there long enough to be entered in the ledger." },
+      } },
+    { name = "a mousehole",
+      description = "In the skirting, with a tiny heap beside it: three crumbs, a bead and a bent pin, put outside the door. Even the mouse, it seems, has looked round the Treasury and decided to make a contribution." },
   },
 
   exits = {

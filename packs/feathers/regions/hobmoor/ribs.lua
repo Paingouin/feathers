@@ -131,6 +131,34 @@ space {
       actions = {
         { "Suggest she paint from inside", say "\"I tried. No wind, no weather, no distance. I sat there a whole day with the brush in my hand.\" She shrugs. \"I just felt looked after. You can't paint that. I've tried to paint my mother.\"" },
       } },
+
+    { name = "a lecture in progress",
+      description = "A third scholar, younger, has brought six students up from the Collegium and stood them in a row under the tallest arch. They are noble, cold and holding notebooks the wrong way up.",
+      things = {
+        { name = "the lecturer", description = "A thin man in a gown tied round with string against the wind. He is explaining that the Ribs are a natural formation of chalk. Behind him, twenty arches curve up in pairs. He has not turned round." },
+        { name = "a student at the back", description = "She has stopped taking notes and is simply looking up, with her mouth a little open. She is the only one who will remember today, and she will fail the paper." },
+        { name = "the notebooks", description = "{i}Ribs: chalk (natural). Qu: why in pairs. Qu: why a spine. Qu: lunch?{/}" },
+      },
+      actions = {
+        { "Ask a question", say "You put your hand up. He points. You ask what made them. \"Wind,\" he says. In pairs? \"Prevailing wind.\" The student at the back catches your eye, and for a moment neither of you has to say it." },
+      } },
+
+    { name = "the tallest rib",
+      description = "The ninth on the left. It goes up the height of a church tower and at the top, where it leans in to meet its partner, there is a gap of an arm's length that never closed.",
+      things = {
+        { name = "handholds", description = "Cut into the bone, a ladder of them, worn glassy. The children of Underrib climb to the top on their tenth birthdays and are allowed to say what they saw. Most say sheep." },
+        { name = "the gap at the top", description = "Sky, in a slot. On one day of the year the noon sun stands in it exactly and a bar of light falls down the middle of the track. Underrib holds its fair that day. Nobody arranged it. The fair was simply always then." },
+        { name = "a kestrel", icon = "v", description = "Hanging on the wind just off the tip, quite still, wings shivering. It is level with the gap and looking down through the whole ribcage at something very small in the turf." },
+      },
+      actions = {
+        { "Climb a little way", say "You get up eleven holds. The bone is smooth and faintly warm and under your palm it has a grain, like wood, that all runs one way. You look down. You come down, and are congratulated by a boy of nine who was not asked." },
+      } },
+
+    { name = "a bone that rings",
+      description = "The fourth rib on the right has a crack in it, and when the wind is in the north it sounds: one soft hollow note, like breath across the mouth of a jar.",
+      actions = {
+        { "Blow across the crack", say "It takes all the breath you have. The note that comes is far too deep for the size of the crack, and it goes on after you have stopped. Along the row, very quietly, two other ribs answer." },
+      } },
   },
 
   exits = {
@@ -338,6 +366,36 @@ space {
 
     { name = "a notice on the pump",
       description = "{i}PARISH MEETING. To settle: (1) the hens. (2) Mr Holloway's prices. (3) Whether to tell the scholars. Carried over from last year: (3).{/}" },
+
+    { name = "the bakehouse",
+      description = "The one oven in the hamlet, built into the hollow at the foot of a rib where the bone holds the heat. Everybody bakes on Fridays and marks their loaves.",
+      things = {
+        { name = "the oven mouth", description = "An arch of white bone gone golden with four hundred years of bread. The baker says no brick oven draws as sweet. She has never tried a brick one. There are no bricks." },
+        { name = "loaves cooling", description = "On a slate, each pricked with its owner's mark: a cross, a wheel, a fish, a rib. The one marked with a rib is the inn's and is twice the size." },
+        { name = "the baker", description = "Mother Yarrow, eighty, floury, deaf as the oven. She judges the heat by putting her hand flat on the rib outside and counting. She says it tells her. She does not say what." },
+      },
+      actions = {
+        { "Put your hand on the rib", say "Warm, where the oven backs on to it. You count as she does. At nine the warmth seems to move a little under your palm, up and away along the curve, and you take your hand back and look at it." },
+      } },
+
+    { name = "the schoolroom",
+      description = "The end house, with a slate over the door. Seven children and a dame.",
+      things = {
+        { name = "the slate over the door", description = "{i}Sums. Letters. Not asking what it was.{/}" },
+        { name = "a row of pegs", description = "Seven small coats, and seven slings. Children in Underrib learn the sling before the alphabet, for keeping ravens off the washing." },
+        { name = "the lesson on the board", description = "{i}How many ribs has a sheep? 26. How many have we? 40. Where is the rest of it?{/} And in a child's chalk beneath: {i}under us{/}. The dame has not rubbed it out, and has not marked it wrong." },
+      } },
+
+    { name = "an old man on a doorstep",
+      icon = "☺",
+      description = "Whittling something small out of something white, with a blanket on his knees. He is the oldest person under the Ribs and has been asked the question by every scholar for sixty years.",
+      things = {
+        { name = "what he is whittling", description = "A whistle. He makes them for the children out of the chips the bone-carver sweeps up. They all play the same note, whatever he does to them. He has stopped fighting it." },
+      },
+      actions = {
+        { "Ask him what it was", say "He blows the dust off the whistle. \"Big,\" he says. You wait. \"Lay down here, anyhow. Whatever it was. Lay down careful, on its side, with its head on the hill, like you would if you was tired and meant to get up.\" He tries the whistle. One note. \"I don't say it was. I say that's how it's lying.\"" },
+        { "Take a whistle", say "He gives you one. You blow it. It is the note the cracked rib makes, and the star, an octave or so up. You put it in your pocket, where it will turn out, later, to have gone the way of all whistles." },
+      } },
   },
 
   exits = {
@@ -440,6 +498,26 @@ space {
 
     { name = "a child's drawing",
       description = "In chalk, low on the wall by the door, where a grown-up would have to kneel to see it: a round head with two eyes, and a row of little arches behind it, and over all of it a great many short strokes coming down. It has been there long enough to fade, and nobody has rubbed it out. Rain. She got it too." },
+
+    { name = "the echo",
+      description = "The dome gives everything back, a moment late and a little lower. A cough comes back as a remark.",
+      actions = {
+        { "Say your name", say "You say it. The dome holds it for a breath and then returns it, slower, in a voice with more room in it than yours. It sounds like a name that somebody else has just remembered." },
+        { "Hum", say "You try a note. The whole dome takes it up and for a moment you are standing inside your own hum, the size of a chapel. A swallow leaves. You stop, and it goes on a little without you." },
+      } },
+
+    { name = "the seam",
+      description = "A line across the dome from front to back, fine as a pencil stroke, zigzagging, where two great plates of bone met and knitted. It closed late. In the middle there is still a place, the size of your palm, that is thin enough to let the light through pink.",
+      things = {
+        { name = "the thin place", description = "You hold your hand under it. A warm coin of rose-coloured light. Whatever this was, it was not finished growing." },
+        { name = "a spider on the seam", description = "It has run one thread along the whole length, following every tooth of the zigzag. It is the only creature that has ever read the line from end to end." },
+      } },
+
+    { name = "offerings on the sill",
+      description = "On the rim of the left eye, in a row: a ribbon, a milk tooth, a sprig of white heather, a sling stone. The children of Underrib bring them up. Nobody told them to and nobody knows what they ask for.",
+      things = {
+        { name = "the newest one", description = "A bone whistle. It has been set so that the wind through the eye crosses its mouth. It is sounding now, very faintly, the one note." },
+      } },
   },
 
   exits = {

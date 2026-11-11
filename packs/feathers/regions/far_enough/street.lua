@@ -91,6 +91,17 @@ space {
       actions = {
         { "Give it a crumb", say "It takes the crumb in both hands, like a small clerk with a document, and turns its back on you to eat." },
       } },
+    { name = "a shop that sells one thing",
+      description = "A narrow front, a clean window, and in the window on a block of slate: one nail. The sign says {i}NAIL{/}. It has been in the same family for twenty generations. They make one a year.",
+      things = {
+        { name = "the nail", description = "Four sided, tapered, with a head like a small flat flower. You cannot see what makes it better than a nail. A dwarf beside you is looking at it with his cap in his hands." },
+        { name = "the waiting list", description = "On a slate inside the door. It is closed. The last name on it will have their nail in three hundred and six years, and has left it in a will." },
+      },
+      actions = {
+        { "Ask the price", say "The nailsmith comes to the door, wiping his hands. He names it. It is a house. \"It'll be in the wall after the wall is gone,\" he says. \"You won't be the one to find that out. But somebody will pull it, one day, and look at it, and know there was a person here who was not in a hurry.\"" },
+      } },
+    { name = "the street sweeper",
+      description = "With a broom the width of the street and a dustpan on wheels. There is no dust. He sweeps anyway, each shift, from one end to the other, and empties the pan, which has nothing in it, into a bin, which is kept for it." },
   },
 
   exits = {
@@ -204,6 +215,18 @@ space {
       } },
     { name = "a notice by the till",
       description = "{i}No credit. No refunds, bar the one. No runes for luck: there is no such rune and you would not like it if there were.{/}" },
+    { name = "the mending tray",
+      description = "On the end of the counter: runes brought back to be put right. Each has a ticket with the complaint.",
+      things = {
+        { name = "a warm rune gone cold", description = "From a kettle. {i}Works, but sulks.{/} Odda says they do that if they are spoken to sharply, and that she will have a word with it, and another with the owner." },
+        { name = "a finding rune that finds too much", description = "A slate chip on a cord. {i}Was asked for a lost glove. Has found nine, none of them mine, and a grandfather.{/} It twitches on the tray like a dog on a lead." },
+        { name = "a staying rune from a door", description = "{i}Door will not open. Have been in the pantry since Thursday. Please come.{/} The ticket was pushed out under the door. Odda says that it is next on her list and that he has, after all, the pantry." },
+      },
+      actions = {
+        { "Pick up the finding rune", say "It swings at once on its cord, hard, and points at your pack. Then at your pocket. Then at your other pocket. Then straight up, through nine hundred feet of rock, at something that you left in a village a long time ago and had not known was lost. You put it back on the tray. Odda does not ask." },
+      } },
+    { name = "the practice slab",
+      description = "By the bench, for apprentices: a stone as big as a table, cut all over with the same rune, ten thousand times, in rows. The first row is dreadful. By the last you cannot see how it could be done better. It is the same hand all through, and it is hers." },
   },
 
   exits = {
@@ -290,6 +313,16 @@ space {
       } },
     { name = "the ceiling",
       description = "Five feet up, smooth, and whitewashed. You have not hit it, since you have not stood. There is a mark on it all the same, old and faint, at about the height of a tall head. \"The king,\" says Dame Tallow. \"Brun's people had him to tea. He {i}would{/} get up to make a speech.\"" },
+    { name = "the boot rack",
+      description = "By the door, in order of size: his, hers, and at the end a pair no longer than your hand, with the toes scuffed through. Nobody of that size lives here now. They are polished with the rest every rest-day.",
+      things = {
+        { name = "the small pair", description = "\"Our Durl,\" says Dame Brenna. \"He's a foreman at the Great Forge now. Beard to his belt.\" She turns one of the little boots in her hand. \"He doesn't know we kept them. He'd say it was not efficient.\"" },
+      } },
+    { name = "the clock",
+      description = "On the wall: a small brother of the one in the square, with one hand and a pendulum. It does not chime. At shift change it gives one click, and every clock in every house in the street gives the same click, and for that moment Chisel Street is one thing.",
+      actions = {
+        { "Wait for the click", say "Brun pours you something dark and you wait together. It comes: one small clean sound, here, and through the wall, and through the wall beyond, away down the street like a dropped chain. Brun nods. \"That's us,\" he says. \"All of us. Every shift.\" He looks at you, a little shy. \"I don't suppose you have that, up top.\" You think of the chapel bell at Greenhollow, always late. You say that you have something like it." },
+      } },
   },
 
   exits = {
@@ -366,6 +399,18 @@ space {
       actions = {
         { "Ask what the blue square is for", say "The schoolmistress looks at it, and for the first time since you came in she is not quite straight. \"It is the rune for {i}stop{/},\" she says. \"That is all they need at this age.\" The girl in the front row is looking at the blue square, and at you, and doing a sum." },
       } },
+    { name = "the nature table",
+      description = "At the back, under a lamp: things from the surface, for the class to look at and not touch. A pine cone. A tuft of sheep's wool. A jar of rain. And, new this term, a jungle idol with its tongue out, confiscated by the Watch from a crate and lent for instruction.",
+      things = {
+        { name = "the jar of rain", description = "Labelled, in the schoolmistress's hand: {i}Water that fell. From above. Nobody dropped it.{/} The class has been allowed to doubt this, as an exercise." },
+        { name = "the idol", description = "The card reads: {i}Made on the surface. Of TREE. Note the workmanship: fast, and enjoying itself.{/} The children are less afraid of the scowl than of the second remark." },
+        { name = "the pine cone", description = "It opens when the room is dry and shuts when it is damp. The class keeps a chart. It is the nearest thing in Far Enough to weather, and a child is appointed each week to be in charge of it." },
+      },
+      actions = {
+        { "Tell the class about trees", say "You are stood at the front. You say that a tree is a thing as tall as their square is high, alive, which makes itself out of rain and light and stands in one place for a thousand years. Forty small dwarves write this down. One puts up a hand. \"Who checks it for true?\" Nobody, you say. It grows how it likes. There is a silence. It is the most frightening thing they have ever been told." },
+      } },
+    { name = "the lost property box",
+      description = "Under the mistress's desk: nine left mittens, a slate pencil, a tooth, and a beard ring, very small, engraved {i}my first{/}." },
   },
 
   exits = {
@@ -453,6 +498,18 @@ space {
       actions = {
         { "Tap back", say "You tap the stone, once, off the beat. The beetle stops. Forty clerks stop. The beetle starts again. So do they. The Chief Teller makes a small mark on a slate that you suspect has your name at the top." },
       } },
+    { name = "the foreign exchange",
+      description = "A grille at the end of the counter, seldom opened, with a clerk who handles the money of other peoples. He has a tray of it, sorted.",
+      things = {
+        { name = "the King's coin", description = "Gold on the outside. He has cut one in half, as the rule requires. It is brown within, and smells sweet. He has entered it as {i}surface currency: edible{/} and it has shaken his faith in the surface." },
+        { name = "a tray of buttons", description = "Horn, brass, pearl, bone. {i}Tender of the southern river peoples,{/} says the label, {i}via the hatter Pomfret. Rate: 1 button to 1 dried fish. Fluctuates with the fish.{/} He holds that it is a sound currency. A button, he points out, is at least useful." },
+        { name = "a copper, bent", description = "Bitten. He has one like yours already, on a card, with a note: {i}Surface. Small. Each one has been bitten. A custom?{/}" },
+      },
+      actions = {
+        { "Offer your copper", say "He weighs it, rings it on the slate, and looks at the bite through a lens. \"Yes,\" he says. \"They all have that.\" He gives it back. \"We cannot change it. We have nothing so small. You would be owed a shaving of a shaving, and the Chief Teller will not have dust in the till.\"" },
+      } },
+    { name = "the abacus",
+      description = "As long as the room, on the back wall: a frame of iron rods with beads of polished stone the size of apples. It takes two clerks with poles to work it. It holds the whole wealth of Far Enough to the last grain, and when a bead is moved the forty clerks all look up, like deer." },
   },
 
   exits = {
@@ -569,6 +626,15 @@ space {
       } },
     { name = "the quiet",
       description = "Thick. The gold takes sound in and keeps it. You say {i}hello{/}, to see, and it goes a yard and is deposited." },
+    { name = "the unclaimed shelf",
+      description = "At the back, behind the gold: deposits whose owners did not come back for them. The clerk dusts it last. Each thing has a ticket, and the rent on each is paid up, from a fund, since no dwarf will see a pledge sold while there is a chance.",
+      things = {
+        { name = "an umbrella", description = "Black, furled, on a ticket forty-one years old. {i}Left by a tall person who could not be seen, on his way south. Said that where he was going he would not want it. Was heard to walk into the door on leaving.{/}" },
+        { name = "a toy cart", description = "Tin, with one wheel gone. {i}Pledged against one honey cake, by a child, in the year of the long frost above.{/} The child would be two hundred now. The cake was eaten. The cart has been dusted twenty thousand times." },
+        { name = "a sealed letter", description = "No name on it. The ticket reads only: {i}To be given to whoever asks for it.{/} In six centuries nobody has thought to. You very nearly do, and then you think that it may be meant for a person who knows why they are asking." },
+      } },
+    { name = "the strongroom cat",
+      description = "There is one. Nobody will say how it got down here. Grey, immense, asleep on a bar of gold, which it has warmed. It is entered in the ledger of the hoard, under assets, at no value, with the note {i}not to be moved{/}." },
   },
 
   exits = {

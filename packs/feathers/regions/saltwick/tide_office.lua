@@ -145,6 +145,21 @@ space {
         { name = "by-law 4", description = "{i}The Outward clerk shall not sign Inward. The Inward clerk shall not sign Outward. This is to prevent the sea from playing one off against the other.{/}" },
         { name = "by-law 11", description = "{i}In the event that the sea declines to comply, the Office shall write to it.{/} Somebody has added, in pencil: {i}It has never replied. It has always complied. We do not ask.{/}" },
       } },
+    { name = "a parcel for collection",
+      description = "On the end of the counter, in brown paper and a great deal of string, with a label: {i}TIDE CLOCK, ONE. RETURNED UNMENDED FROM FUSEE, TICKOVER.{/}",
+      things = {
+        { name = "the clockmaker's letter", description = "Tucked under the string. {i}Sir, I have had your instrument open for two years. It is not faulty. It runs fast before a storm because it is frightened. I can do nothing for that and should not wish to. L.F.{/}" },
+        { name = "the clerk's reply, in draft", description = "Under the letter, on a form. {i}Madam, the Office does not recognise fright as a condition of brass.{/} That is crossed out. Under it: {i}Madam, how does it know?{/} That is crossed out too. He has not yet thought of a third thing." },
+      },
+      actions = {
+        { "Hold the parcel to your ear", say "A slow, even tick, through the paper. Fair weather. You find you are relieved, and that you have taken a parcel's word for it." },
+      } },
+    { name = "the umbrella stand",
+      description = "A length of drainpipe by the door with four umbrellas in it, all black, all the property of the Office, each stamped on the handle with the weather it is for.",
+      things = {
+        { name = "the umbrella marked SQUALL", description = "Ribbed with whalebone and reinforced at the tip. It has been turned inside out so often that it now opens that way first, to save time." },
+        { name = "the umbrella marked FINE", description = "Never opened. Still in its sleeve. The clerk carries it on fine days, furled, as the regulations require, and gets wet on the others, when he has forgotten to change it." },
+      } },
   },
 
   exits = {
@@ -232,6 +247,20 @@ space {
     { name = "the floor drain",
       description = "A brass grating in the middle of the flags, for spills. Water goes down it and, after a moment, comes back up, having thought better of leaving without a form.",
     },
+    { name = "a pigeonhole of small waves",
+      description = "Low down, at the height of a child, a row of holes no bigger than letter slots, each with a wave in it the size of a hand. They are the ones that come in last, at the very edge, and wet the toes of your boots.",
+      things = {
+        { name = "the labels", description = "{i}Ripple, evening. Ripple, with foam. Ripple (child's first).{/} The last has a ribbon on it and is not to be issued. Somebody in the Office was a father once." },
+      },
+      actions = {
+        { "Put a finger in one", say "Cold, and it laps your knuckle and draws back, and laps again, with a little hiss, exactly as it would on a beach. You stand there with your finger in a filing system, being paddled at." },
+      } },
+    { name = "an hourglass on a nail",
+      description = "A big one, in an oak frame, the glass gone green. It is how the Office knows when to send the tide out again. The sand in it is from the Long Strand, and whiter than it should be.",
+      things = {
+        { name = "the sand", description = "It runs through with a faint steady note, like a wet finger on a glass. A different note from the one it would make under your heel. This is the note it makes for the sea." },
+        { name = "a brass plate on the frame", description = "{i}NOT to be sent to Tickover for regulating. It is right. It is the only thing in the kingdom that is.{/}" },
+      } },
   },
 
   exits = {

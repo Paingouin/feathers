@@ -107,6 +107,29 @@ space {
         { name = "a cushion of moss", description = "Deep as your hand and full of water. Press it and the water does not run out. It runs in." },
         { name = "a grass snake", description = "Olive green with a yellow collar, coiled on the warmest boulder. {danger}It hisses.{/} Then it rolls on its back with its mouth open and plays dead, badly, with one eye on how you are taking it." },
       } },
+
+    { name = "a water wheel that turns backwards",
+      description = "Below the pool some hopeful miller built a wheel, long ago, to take the power of the falls. The falls go up. The wheel goes round the wrong way, slowly, groaning, and has never ground anything but its own axle.",
+      things = {
+        { name = "the axle", description = "Oak, worn to half its width. It is greased. Somebody still greases it. In the Mumblewood a thing that tries is looked after." },
+        { name = "the miller's stone", description = "Set in the bank: {i}Here I built a mill. T. Hobb.{/} And lower: {i}It was the water's fault.{/}" },
+        { name = "a wagtail on the wheel", icon = "v", description = "It rides each paddle up to the top, hops to the next as it comes, and so stays in one place while the wheel goes round under it. It has been doing this all morning with every sign of industry." },
+      },
+      actions = {
+        { "Give it a push the right way", say "You lean on a paddle. The wheel stops, shudders, and for one turn goes round as its builder meant. Water falls from it in the ordinary direction. It looks all wrong. You let go, and it settles back into being mistaken, with what sounds like relief." },
+      } },
+
+    { name = "the pilgrims' rope",
+      description = "A rope of plaited bark, as thick as your wrist, pegged up the cliff beside the wet steps. Eight hundred years of hands have gone up it and it has been replaced one strand at a time, so that it is the same rope and none of it is.",
+      things = {
+        { name = "knots in the rope", description = "One every arm's length. Each has a rag tied into it, for a prayer. Most of the rags ask for dry feet." },
+      },
+      actions = {
+        { "Tie in a rag", say "You have no rag. You pull a thread from your cuff and work it into a knot. You do not ask for anything in particular. The spray soaks it at once and it darkens to the colour of all the others." },
+      } },
+
+    { name = "a dipper", icon = "v",
+      description = "A round brown bird with a white bib, on a rock in the pool, bobbing. It walks into the water and along the bottom, then up the falls with the current, under the surface, and out at the top. It is the only creature here that finds the arrangement convenient." },
   },
 
   exits = {
@@ -183,6 +206,26 @@ space {
       things = {
         { name = "the last figure", description = "It has put its cup down and turned round to look back the way it came. The carver gave it a face, alone of all of them. It is smiling." },
       } },
+
+    { name = "names on the wall by the door",
+      description = "Where you come in, low down, scratched with knife points: the names of pilgrims, hundreds, each with a small drawing of what they came to ask about.",
+      things = {
+        { name = "a name with a cow", description = "{i}Edda. For the red cow.{/} And beside it, in the same hand, a year later by the weathering: {i}She calved. Thank you.{/}" },
+        { name = "a name with nothing", description = "{i}Osric.{/} No drawing. Only a line under the name, cut deep, and then cut again, as a man does who cannot say it and wants it known he came." },
+        { name = "the last name", description = "Fresh by the others, though moss is in it. {i}Brother Anselm. I am the last one who knows the way. I have told the kingfisher.{/}" },
+      },
+      actions = {
+        { "Add yours", say "You find a clear place. You cut your name, badly, with the point of your belt buckle. For the drawing you think for some time and then do a door, open. It is the best you can manage and it is not far off." },
+      } },
+
+    { name = "a pool in the floor",
+      description = "A basin the size of a shield, worn in the rock under a drip. The water in it is perfectly ordinary. It lies flat. It goes nowhere. In this cave, with a wall of river climbing past, it looks like the eccentric one.",
+      things = {
+        { name = "a blind white shrimp", description = "One, the length of a fingernail, rowing round the basin. Its whole world is level. It has never been told." },
+      } },
+
+    { name = "the green light",
+      description = "It comes through the falls and moves on the roof like a hand passing over a page. When a cloud crosses the sun outside, the whole cave dims and brightens, slow as a breath." },
   },
 
   exits = {

@@ -121,6 +121,29 @@ space {
       } },
     { name = "a drip",
       description = "Somewhere in the dark, water is falling a drop at a time into a tin pan. Somebody set the pan under it. The pan is not overflowing. You stop thinking about this, in the end, because you have to sleep at night." },
+    { name = "the tally board",
+      description = "By the cage, a board of pegs with a brass disc on each. Every dwarf took a disc going down and hung it up coming out, so that the bank always knew who was under. All the discs are on their pegs but one.",
+      things = {
+        { name = "the discs", description = "Stamped with a number and a rune. They are hung in order and every one has been turned face out. On the last day they came up in good order and hung their tallies up straight, like people leaving a house they liked." },
+        { name = "the empty peg", description = "Number one. There is no disc. There is a small paper label tied on in its place: {i}Still down. Gone to listen.{/} The string is dwarf made and has not rotted." },
+      },
+      actions = {
+        { "Take a disc", say "You lift one off its peg. Somewhere down the shaft the cage chain rattles, once, as if the mine had looked up. You hang the disc back, face out, on the right peg. The rattle does not come again. They ran a tidy pit and it still expects it." },
+      } },
+    { name = "the dry",
+      description = "A side room with a bench round three walls and a row of hooks. This is where they changed, coming off shift. It still smells of wet wool and lamp oil and soap.",
+      things = {
+        { name = "the hooks", description = "Forty, at the height of your chest. Each has a number. Under each, on the bench, a square of the wood is worn pale by one particular seat." },
+        { name = "a cake of soap", description = "Yellow, hard as a brick, stamped with a pick. It is worn into a saddle. You wet a finger and try it. It lathers at once. Dwarf soap does not go off; it has nothing in it that could." },
+        { name = "a bootjack", description = "Iron, bolted to the floor, shaped like a beetle. It has pulled off a thousand years of boots, and the horns are bright." },
+        { name = "a slate by the door", description = "{i}CONCERT, Saturday. Number Two Shift Choir. Bring own stool.{/} The date is the week after they left. There is a list of nine names for the bass part and one for the treble, who must have been very young, or very brave." },
+      } },
+    { name = "the first aid box",
+      description = "A red tin on the wall. Inside: a roll of bandage, a bottle of something brown, a pair of tweezers, and a printed card.",
+      things = {
+        { name = "the card", description = "{i}FOR SPLINTERS: tweezers. FOR CRUSHING: lift rock, then tweezers. FOR HOMESICKNESS: there is tea in the lamp room.{/}" },
+        { name = "the brown bottle", description = "It says {i}External{/}. You sniff it. It is the same stuff as in the foreman's kettle, and you suspect the label of being a formality." },
+      } },
   },
 
   exits = {
@@ -209,6 +232,22 @@ space {
       description = "On the last prop, in runes, with a translation scratched under it by some later visitor: {i}NO MORE DOWN. DOWN HAS RUN OUT.{/}" },
     { name = "a barrier",
       description = "A plank across the gallery at dwarf chest height, which is your knee. One rune is painted on it. You do not read runes. You can read that one." },
+    { name = "a plumb bob, hung wrong",
+      description = "On a nail in the last prop hangs a mason's line with a lead on it. A lead hangs straight down. This one hangs a finger's width out toward the breach, steadily, as if something on the far side were asking for it, politely.",
+      actions = {
+        { "Steady it", say "You hold the lead still and let go. It swings back to where it was, a finger's width off true, and stays. The dwarves saw that. A dwarf will put up with a great deal, but a plumb line that hangs crooked is not among the things." },
+      } },
+    { name = "the last cart",
+      description = "An ore tub on the rails, half full, the shovel still standing in it. It was being loaded when they broke through. The stone in it is ordinary grey rock, except for the top shovelful.",
+      things = {
+        { name = "the top shovelful", description = "Rock from the very edge of the breach. It is grey on one face. On the other face, where it was broken away from the sky, it is dark blue and has a point of light in it. You turn it. The light stays on the same side, facing out." },
+        { name = "the shovel", description = "Square mouthed, the handle polished. It stands upright in the load by itself. Nobody has leaned on it since, and it has not felt free to fall over." },
+      } },
+    { name = "a draught",
+      description = "It comes through the breach, steady and cool, and it does not smell of stone. It smells of high places: cold grass, a long way off, and washing. There is no grass under the Grumbles. You are a mile down, and the air is coming in from above.",
+      actions = {
+        { "Hold up a wet finger", say "It dries on the side toward the breach. The wind is blowing out of the bottom of the mine. You think about the summit, and the stillness there, and wonder for the first time whether the wind stops at the top of Old Grumble because that is where it goes in." },
+      } },
   },
 
   exits = {

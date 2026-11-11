@@ -122,6 +122,26 @@ space {
       description = "It has dug its burrow at the foot of the {b}BRIDGE{/} post and sits in the doorway, fat and at ease. It goes under the pole forty times a day. The troll looked it up. Marmots are not in the tariff, so he lets it through on the goat rate, and writes it down as a small goat." },
     { name = "the wind through the notch",
       description = "It comes down the road from the Col, reaches the pole, and goes under. You would swear it ducks." },
+    { name = "the boundary stone",
+      description = "A squared pillar at the top of the notch, with a crown cut on the south face and nothing on the north. The kingdom stops here, officially. Nobody has told the road, which carries on.",
+      things = {
+        { name = "the north face", description = "Blank. There was something cut here once, and it has been dressed off with a chisel. Whoever owned the other side of the pass gave up their claim, or had it given up for them, and was thorough." },
+        { name = "a rubbing post", description = "The east corner of the stone is polished to a shine at the height of a troll's shoulder blades. He says he does not know how that happened. There is moss in his fur of exactly that colour." },
+      },
+      actions = {
+        { "Stand with a foot each side", say "You straddle the line. One boot is in the kingdom and one is not. You feel no different in either. The troll watches with professional interest. \"That's two crossings,\" he says, \"technically,\" and then, seeing your face, \"I'm not counting.\"" },
+      } },
+    { name = "the snow poles",
+      description = "A row of tall posts beside the road, striped black and yellow, to mark the way in a drift. They go on up the pass in a line. The seventh is striped pink and green.",
+      things = {
+        { name = "the seventh pole", description = "He ran out of yellow. Then he ran out of black. He had some paint left over from the model, and he says a pole is a pole. He has had three letters from the Survey about it and is keeping them for the winter, to light the stove." },
+        { name = "a scarf on the third pole", description = "Knitted, striped, eleven feet long, wound round the top where only one person on this road could reach. It is put there in the first snow and taken off in spring. The pole is known to feel the cold." },
+      } },
+    { name = "the weighbridge",
+      description = "An iron plate let into the road in front of the pole, with a dial in a box. Carts are charged by weight. The dial was made for carts. He stood on it once, out of curiosity, and it now reads from where the needle stuck.",
+      actions = {
+        { "Stand on it", say "The needle does not move. It is pinned at the top of the scale, where he left it. The troll coughs. \"It says you owe for nine ton of mixed goods,\" he says. \"I'll put you down as a parcel.\"" },
+      } },
   },
 
   exits = {
@@ -242,6 +262,32 @@ space {
         { name = "a jar: the millstream", description = "Clear, with a thread of green weed. From under the bridge in the book. He walked nine days each way for it, on his one holiday, by night, so as not to alarm anyone." },
         { name = "a jar: the sea, at Saltwick", description = "Cloudy, with sand at the bottom. He could not get near the river mouth for the people, so he took it off the beach. He is not sure it counts. He has kept it in case." },
         { name = "a jar with no label", description = "Empty, clean, with its lid beside it. It is for the river they will have to give him, when the bridge is passed. He has had it ready since the first refusal." },
+      } },
+    { name = "the window",
+      description = "A round hole knocked through the cave wall and glazed with the bottoms of bottles, set in clay, forty of them. The light comes in green and brown and stands on the floor in coins.",
+      things = {
+        { name = "the windowsill", description = "A slab of slate with three pots of herbs on it, each the size of a bucket. Mint, chives, and one labelled in careful capitals {i}NOT SURE{/}. It is doing best of the three." },
+        { name = "a bottle end with a ship in", description = "One of the forty still has its bottle attached, sticking out into the weather. There is a ship in it. He did not make the ship. He found the bottle like that, on the road, and has been trying ever since to work out how the pedlar got it in." },
+      },
+      actions = {
+        { "Look out", say "Through a green bottle end the pass is under water. Through a brown one it is evening. You try them all. The best is a clear one, low down, where a small troll would have had it at eye height." },
+      } },
+    { name = "a height chart",
+      description = "Scratched on the cave wall beside the door, with dates. It starts at about your waist and goes up, a notch a year, past your head, past the reach of your arm, and stops at the roof. The last notch is on the ceiling.",
+      things = {
+        { name = "the lowest notch", description = "Beside it, in a different, heavier scratch: {i}OUR GRUB. 1 YR.{/} And a hand print, pressed into the rock itself as into dough, the size of a dinner plate. That was his mother's. The little print next to it is his." },
+      },
+      actions = {
+        { "Measure yourself", say "You stand against it. You are level with the notch for his third year. He looks at the mark, and at you, and is kind enough to say that he was big for three." },
+      } },
+    { name = "an embroidery hoop",
+      description = "Propped against the armchair: a hoop of bent ash the size of a cartwheel, with a bed sheet stretched in it. Round the edge of the sheet runs a border of small blue flowers, half done. The work is fine. You look at his hands. You look at the hoop. You decide that a person contains more than can be seen from the road.",
+      things = {
+        { name = "the needle", description = "A sailmaker's, the largest made, stuck in the cloth. Beside it lies a pair of blacksmith's tongs with the jaws wrapped in felt. That is how he holds it." },
+        { name = "the pattern", description = "Pinned to the frame, a page torn from a lady's magazine a pedlar left: {i}A Pretty Border for the Parlour.{/} He has followed it exactly, at nine times the size." },
+      },
+      actions = {
+        { "Admire the stitching", say "He goes the colour of a wet slate. \"It's only daisy stitch,\" he says. \"You have to hold the needle with tongs.\" He turns the hoop so that you can see the back. The back is as neat as the front. He knew somebody would look, one day." },
       } },
   },
 

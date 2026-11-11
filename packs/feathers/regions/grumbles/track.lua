@@ -92,6 +92,32 @@ space {
       description = "Below you the pines close over the path, and through a gap in them lies the lake, grey and quite still, no bigger than a coin. The fisherman's boat is a crumb on it. You came up all that way on your own legs, and you allow yourself a moment about it." },
     { name = "the sound of bells",
       description = "Tin, a dozen of them, all at different heights on the mountain, none in time. Each is a goat. Ma Scree can tell from the hut door which is which, who is missing, and who is somewhere she was told not to go." },
+    { name = "a fine rain out of a clear sky",
+      description = "A few drops on the back of your hand, from a sky without a cloud in it. They are amber. You taste one before you can stop yourself. It is beer, very thin, and it has come a long way.",
+      actions = {
+        { "Look up", say "Blue. A hawk. And very high, where you would not look unless you had been rained on by ale, a speck that is too square to be a cloud. You watch it until your neck aches. It does not move, and neither, you notice, does it fall." },
+      } },
+    { name = "a drystone sheepfold",
+      description = "Round, roofless, half fallen, on a shelf beside the track. No sheep have been kept on this mountain in living memory. The goats use it as a parliament.",
+      things = {
+        { name = "the lintel stone", description = "Over the gap, a long slab with a date cut in it so worn that you can read it only with your fingers. The fold is older than the pass road. Somebody was up here with a flock before anybody was up here with a tariff." },
+        { name = "a horn spoon", description = "In a chink of the wall, where a shepherd pushed it for safe keeping, a great many winters ago. It is still safe. You leave it so." },
+        { name = "goat droppings, arranged", description = "In a neat ring in the middle of the fold. You do not believe that goats hold meetings. You do not know how else to account for the minutes." },
+      },
+      actions = {
+        { "Sit out of the wind", say "You get down behind the wall. The wind goes over the top with a noise like tearing cloth and cannot reach you. For the length of a crust of bread you are a shepherd, with nothing to do but be here. It is a better trade than it looks." },
+      } },
+    { name = "juniper scrub",
+      description = "Knee high, dusty blue, growing flat to the rock as if it had been stepped on. The berries are ripe.",
+      things = {
+        { name = "a berry", description = "You crush one. It smells of every bottle on the top shelf of the Tipsy Griffon, the ones the barman dusts and does not sell." },
+        { name = "a hare's form", description = "A pressed hollow in the lee of a bush, still warm. The hare is twenty yards up the slope, white already for the winter, sitting very still against the brown and looking extremely obvious. It has changed its coat early. It is embarrassed, but committed." },
+      } },
+    { name = "a waymark",
+      description = "A daub of red paint on a boulder, with an arrow. A little further on, another, pointing a different way. The goats have added a third opinion by standing on it.",
+      actions = {
+        { "Follow the arrows", say "You follow them faithfully, one to the next, for a quarter of an hour, and arrive at the first again from behind. Whoever painted them was lost at the time and saw no reason to keep that to himself." },
+      } },
   },
 
   exits = {
@@ -234,6 +260,33 @@ space {
       things = {
         { name = "the crooks", description = "Hazel, one for each year, the hook carved as a goat's head. She retires a crook when the goat it was carved after dies. The oldest ones are worn so smooth that they have no faces." },
         { name = "her boots", description = "Nailed, tarred, and standing to attention. The left is a full size larger than the right. After the first winter, nobody up here has two feet the same." },
+      } },
+    { name = "the almanac",
+      description = "Hung by the door on a nail: last year's, from the Weather Office, with a hole through the corner. Every forecast has been corrected in charcoal by Ma Scree, who goes by her knee.",
+      things = {
+        { name = "the page for this week", description = "The Office says {i}Fair{/}. The charcoal says {i}Knee{/}. It has a small drawing of a knee, in case of doubt." },
+        { name = "the back cover", description = "An advertisement. {i}LIGHTLY and Daughter, Notions and Ballast. String for every purpose. By airship or by enquiry.{/} There is no address. She has never wondered where a shop would be that needed none." },
+      },
+      actions = {
+        { "Ask which is right", say "\"The knee,\" says Ma Scree. \"Them in the Office have got instruments. An instrument's never had to get forty goats in before dark.\" Outside, on cue, the first drops fall on the summer door." },
+      } },
+    { name = "a row of bells",
+      description = "On pegs along the beam over the door, a bell for every goat, each with a strap and a different note. In winter they hang here. In the dark she can tell who is coming up the track by the tune.",
+      things = {
+        { name = "the lead goat's bell", description = "Bronze, cracked, deep. It has led four generations up to the snow and back. She has been offered a new one and said that she would as soon have a new father." },
+        { name = "an empty peg", description = "One strap hangs with no bell on. \"The white one with the black ear,\" she says. \"Lost it on the top. I've not been up to look. I've not been up since my hip, and she goes where she likes.\"",
+          variants = {
+            { when = visited "summit", description = "One strap hangs with no bell on. You tell her where the bell is: on the cairn, on the very top. She thinks about that for some time. \"Then she's been further than Sir Odric,\" she says, \"and never made a song of it. Leave it there. She'll have had her reasons.\"" },
+          } },
+        { name = "the smallest bell", description = "Tin, no bigger than a thimble, with a red ribbon. For this year's kid. It has been put on three times, and has been eaten twice." },
+      },
+      actions = {
+        { "Ring them along the row", say "You run a finger down the pegs. It is a tune, of a kind, uneven, with one note missing. Out in the fold forty heads come up together, and for a moment you have the full attention of the mountain's most critical audience." },
+      } },
+    { name = "the salt lick",
+      description = "A grey block on a stump by the summer door, worn by tongues into a shape like a saddle. Goats queue for it in order of seniority. There are disputes, settled with the head.",
+      actions = {
+        { "Try it", say "You are curious, and nobody is looking but a goat. Salt, and a strong suggestion of goat. The goat watches you do it. You have gone down in its estimation, and you had not thought there was room." },
       } },
   },
 

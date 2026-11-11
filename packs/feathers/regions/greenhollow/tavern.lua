@@ -182,6 +182,39 @@ space {
         { name = "a horse brass",
           description = "Nailed up for luck, a sun with a face. The face has seen the stew." },
       } },
+
+    { name = "the snug",
+      description = "A cupboard with a bench and a hatch through to the bar, for those who do not wish to be seen drinking. Everyone can see into it. That is not the point.",
+      things = {
+        { name = "two old women at dominoes",
+          description = "Mrs Furrow and the other Mrs Furrow, sisters-in-law, with a half of stout each and a game that neither is watching. They are watching the room, through the hatch, and missing nothing.",
+          actions = {
+            { "Ask who is winning", say "\"I am,\" they say, together, and look at each other with a dislike so old and comfortable that it is very nearly love." },
+          } },
+        { name = "the dominoes", description = "Bone, yellow, in a box with a sliding lid. The double six has been missing since a wedding. They use a button, and both know which button, and it has never once been played by accident." },
+        { name = "the hatch", description = "A sliding panel, a foot square. A hand comes through it with a glass. Another hand takes the glass. In forty years the barman has never seen who is in the snug, officially." },
+      } },
+    { name = "the coat pegs",
+      description = "A row of them by the door, crowded. You can tell the village by its coats.",
+      things = {
+        { name = "the wizard's cloak", description = "Midnight blue, with stars. One of the stars has come unstitched and is hanging by a thread. As you look, it goes slowly round, on its own, to face the hearth.",
+          actions = {
+            { "Check the pockets", say "You should not. You do. A pocket watch with no hands, half a sandwich, and a pocket inside the pocket, which has a smaller cloak in it. You put it all back as you found it and step away." },
+          } },
+        { name = "a smock with flour in it", description = "The miller's. It has left a white outline of itself on the wall behind, like a very clean ghost." },
+        { name = "an empty peg, polished", description = "Old Tom's. Like his stool, nobody uses it. A hat was hung on it by a stranger once. It was found on the floor in the morning. The cat has been blamed." },
+      } },
+    { name = "a stuffed pike",
+      description = "In a glass case over the snug: three feet long, varnished, with an expression of deep surprise. The plate says {i}TAKEN IN THE MILL POND BY J. GRIST, AFTER A STRUGGLE{/}. A second plate, added below by another hand, says {i}the struggle was getting it away from the heron{/}." },
+    { name = "the skittle alley",
+      description = "Out through a side door, under a lean-to: nine pins, three cheeses, and a plank worn into a trough.",
+      things = {
+        { name = "the pins", description = "Applewood, turned by eye, no two the same height. The short one in the middle is called the Bailiff, after the cat. It does not fall over either." },
+        { name = "the scoreboard", description = "Greenhollow against Aldmoor, yearly, chalked back to the founder. Aldmoor has won every match. In the Greenhollow column, each year, someone has written {i}moral{/}." },
+      },
+      actions = {
+        { "Bowl a cheese", say "It leaves your hand well. It goes down the trough, up the side, over the edge and through the hedge. There is a pause. A hen comes back through the hedge, at speed. Eight pins fall over from sympathy. The Bailiff stands." },
+      } },
   },
 
   exits = {

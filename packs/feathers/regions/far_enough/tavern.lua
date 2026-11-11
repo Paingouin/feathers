@@ -157,6 +157,20 @@ space {
       things = {
         { name = "the beam with the marks", description = "A row of tallies under the heading {i}THE KING{/}, and a new, shorter row beside it under {i}THIS ONE{/}. You are eleven behind. They are rooting for you." },
       } },
+    { name = "the skittle alley",
+      description = "Down one side of the hall: a lane of polished slate, nine pins of bog oak and a ball of granite. The dwarves play in silence, measure the result with callipers, and enter it in a book.",
+      things = {
+        { name = "the score book", description = "Every game for eight hundred years. Every one is a draw. The lane is true, the pins are true and the players are dwarves. They play for the love of it, and in the hope." },
+        { name = "the granite ball", description = "Worn to a perfect round by eight centuries of hands. It is checked for roundness on feast days. It has passed every time and each time there is a small cheer." },
+      },
+      actions = {
+        { "Bowl a ball", say "It is heavier than it looks. Your ball goes down the lane on a curve that nobody in the hall has ever seen, takes the corner pin, the far pin and a mug off a table, and comes to rest in the hearth. There is a long silence. Then the landlord reaches for the book, turns to a clean page, and with enormous care rules a new column." },
+      } },
+    { name = "the pie hatch",
+      description = "A slot in the wall with a shelf, from which pies come. Mushroom, mushroom and onion, and on feast days mushroom. Each is square. Each is stamped with its weight, which is the same.",
+      actions = {
+        { "Order a pie", say "A square pie comes through on a square plate. The crust rings when you tap it. Inside it is dark, rich and very good, and you say so. A voice from the hatch says, \"It's to specification,\" which you understand is how a dwarf blushes." },
+      } },
   },
 
   exits = {
@@ -289,6 +303,17 @@ space {
       } },
     { name = "the cold",
       description = "It is the only cold room in Far Enough. The warmth of the Forge does not come this high, and what comes round the shutter is mountain air. He likes it. He says it reminds him which way is out." },
+    { name = "a jar of sky things",
+      description = "On the sill, with a cloth over it. He lifts the cloth to show you, and puts it back at once. A leaf. A snail shell. A dead bee. A bit of blue eggshell. Things that came in at the shutter, or that he went out and got.",
+      things = {
+        { name = "the leaf", description = "Brown, curled, from some tree far down the mountain. A wind brought it. He has drawn it eleven times in the notebook and measured the stalk." },
+        { name = "the bee", description = "On a pin. He does not know what it is for. He has a theory, which is nearly right, and involves the yellow dust on its legs." },
+      },
+      actions = {
+        { "Tell him what a bee does", say "You explain: flowers, honey, the hive. He writes all of it down. He stops at the hive. \"A city,\" he says. \"With cells. All to a measure. And a queen. And every one of them goes {i}out{/}, every day, into that,\" he nods at the shutter, \"and comes home.\" He looks at the bee for a long time. \"Then it can be done,\" he says." },
+      } },
+    { name = "a coat on a peg",
+      description = "Sheepskin, far too big, with the wool inside. He bought it from a monk at the top of the stair for nine hinges. He wears it to open the shutter. It is the only garment in Far Enough that was made for weather." },
   },
 
   exits = {

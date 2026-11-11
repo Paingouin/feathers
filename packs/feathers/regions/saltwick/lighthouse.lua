@@ -108,6 +108,26 @@ space {
         { name = "a square left empty", description = "One, in the middle of a crowded row, thirty years back. Under it, very small: {i}fog{/}. He has never forgiven the fog." },
         { name = "the last row", description = "Forty-one squares, each with a neat dash. No ships. Under the last: {i}tide not signed{/}." },
       } },
+    { name = "a barometer",
+      description = "Brass, in gimbals, on the wall by the stair. Wim taps it at dawn and at dusk. It has two needles: a black one that moves, and a brass one that he sets by hand to show where the black one was.",
+      things = {
+        { name = "the brass needle", description = "It is always exactly on top of the black one. Wim says that is because the weather here does not change so much as get round to things." },
+        { name = "a label gummed to the case", description = "{i}Serviced at Tickover. Returned four minutes slow. Wrote to complain. They wrote back to say thank you.{/}" },
+      },
+      actions = {
+        { "Tap it", say "The black needle shivers and settles a hair lower. Wim, without turning from the stove, says \"Aye,\" as if you had told him something, and takes his oilskin off the hook to have it ready." },
+      } },
+    { name = "the visitors' book",
+      description = "A ledger on a shelf by the door, with a pencil on a string. The Light gets a visitor about once a year and Wim rules a fresh page for each, in hope.",
+      things = {
+        { name = "the last entry", description = "{i}H. Ballast, master, airship W.P. Tied to your rail in a blow. Thank you for the tea. Sorry about the weathercock.{/}" },
+        { name = "an older entry", description = "A child's hand, large. {i}I am going to be a keeper.{/} Under it, in Wim's writing, forty years newer: {i}He was.{/}" },
+      },
+      actions = {
+        { "Sign it", say "You write your name, and after it, {i}adventurer{/}. Under {i}Remarks{/} you put {i}very clean{/}. Wim reads it upside down from across the room and goes pink to the ears." },
+      } },
+    { name = "a string of dried fish",
+      description = "Across the chimney breast, thirty herring split and hung by the tail, gone the colour of old leather. The cat sits under the end one. It has sat under it for six years. One of them is going to give way first, and Wim has a small bet on, with himself, in the back of the log." },
   },
 
   exits = {
@@ -212,6 +232,17 @@ space {
     { name = "a polishing cloth",
       description = "Folded on the rail, soft and black with forty years of brass. He will not have a new one. He says this one knows the work.",
     },
+    { name = "a brass rail, bent",
+      description = "On the seaward side of the gallery the rail has been pulled out of true, a slow bow outward, as if something had leaned on it. A length of good rope is still knotted round it, cut short.",
+      things = {
+        { name = "the knot", description = "Not a sea knot. Wim does not know it and has left it on, to study. It is the hitch that mast hands use, in a city inland, for tying a ship to the air." },
+        { name = "the missing weathercock", description = "There was a copper cock on the lantern roof. There is now a stump. Wim says a thing as long as the mole came over in a north-easter with a boat hung under it, and took it clean off, and a woman's voice called down {i}sorry{/} from the cloud." },
+      } },
+    { name = "the spare mantle",
+      description = "A drawer under the lamp, lined in felt, made to hold whatever one replaces when a lamp like this fails. It has never been opened in service. It opens for you easily enough.",
+      things = {
+        { name = "what is in the drawer", description = "Nothing. A felt hollow, the shape of nothing in particular, and a card in the first keeper's hand: {i}There is no spare. See that it does not go out.{/}" },
+      } },
   },
 
   exits = {

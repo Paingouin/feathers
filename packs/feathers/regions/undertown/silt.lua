@@ -85,6 +85,27 @@ space {
 
     { name = "the roof",
       description = "Aldmoor brick, black with damp, and hung with pale threads that turn out, close to, to be the roots of the market's one tree." },
+
+    { name = "the outfall net",
+      description = "The mudlark's, strung across the place where the pool spills over and goes on down. It catches what the silt does not. There is a square hole in one corner, cut with care and hemmed.",
+      things = {
+        { name = "the hemmed hole",
+          description = "Too neat for a rat and too small for a thief. A tag is tied beside it with a hair: {i}Pardon. For articles in transit. We will mend it when the Market closes. The Market does not close.{/}" },
+        { name = "what is in the net today",
+          description = "A candle end, a draughts piece, and one cuff link with a crest. The mudlark is waiting a week for the other. In her experience they come down in pairs, and the second is thrown." },
+      },
+      actions = {
+        { "Watch the hole", say "A thimble comes down the spill, turning. It reaches the net, hesitates, and goes through the hole of its own accord, like a dog through a gap in a hedge. It knew where it was going." },
+      } },
+    { name = "the shelf of unsellables",
+      description = "A plank on two bricks, behind her stool, for what she will not part with.",
+      things = {
+        { name = "a tin soldier", description = "One leg. She has stood him at the end, facing the pool, on watch." },
+        { name = "a spectacle lens, smoked", description = "Round, dark, and no bigger than a lentil. She thinks it is a bead. You hold it up to the lantern and the lantern becomes bearable." },
+        { name = "a tooth on a ribbon", description = "A child's first, lost down a washhouse drain with the ribbon still on it. \"Somebody cried over that,\" she says. \"I'll not sell crying.\"" },
+      } },
+    { name = "the sound of the spill",
+      description = "Where the settling pool goes over its lip the water drops out of the lantern light into a shaft, and you never hear it land. The mudlark dropped a plumb line down once. She will tell you how much line, and that it came up with a knot tied in the end which she had not put there." },
   },
 
   exits = {
@@ -182,6 +203,29 @@ space {
 
     { name = "the roof of the culvert",
       description = "Soot from four hundred years of small candles, in a stripe down the middle. Either side of the stripe, brick as clean as the day it was laid." },
+
+    { name = "the recorder",
+      icon = "r",
+      description = "An old grey rat at a brick, with a nail for a pen. Every judgment of the Court is scratched into the mortar. The mortar of this culvert is, by now, mostly law.",
+      things = {
+        { name = "the precedents",
+          description = "You can read three marks: {i}share{/}, {i}wait{/}, and one that is a rat lying on its back. The recorder taps the third and looks at you until you understand that it means costs." },
+      },
+      actions = {
+        { "Ask to see your own entry", say "It finds the place: one mark, low down, set apart, with a second smaller mark beside it. The census rat's hand. The recorder looks from it to you, adds a third mark, very small, and blows away the dust. You are fairly sure it is an improvement." },
+      } },
+    { name = "the envoy's stool",
+      description = "A cotton reel, set at the King's right hand, with a cushion on it the size of a postage stamp. No rat sits there. There is a card on the cushion.",
+      things = {
+        { name = "the card",
+          description = "Grey, tiny, in a perfect hand. {i}Pardon. The Envoy from Below regrets. Detained by a draught. Will attend next century as usual.{/} The rats have not moved the stool in living memory. One does not, for neighbours." },
+      } },
+    { name = "the treasury of the Court",
+      description = "A hole in the wall with a guard on it. Inside, by the shine: rinds.",
+      things = {
+        { name = "the great rind", description = "A whole heel of red cheese, wax on, dated by tooth marks to the reign before last. It is never eaten. It is brought out on feast days and looked at." },
+        { name = "a silver thimble", description = "The King's cup, when he is being formal. It went missing from Nobles' Row forty years ago and a maid was dismissed for it." },
+      } },
   },
 
   exits = {

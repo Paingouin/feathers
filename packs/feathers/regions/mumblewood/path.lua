@@ -139,6 +139,34 @@ space {
       actions = {
         { "Step onto it", say "Your boots leave two muddy prints on it. You look at them. From somewhere ahead among the tall trees comes a very small, very distant sigh." },
       } },
+
+    { name = "a milestone that has been moved",
+      description = "A stone by the path, moss to the shoulder. It says {i}LAKE 2{/}. A furlong back you passed one that said {i}LAKE 1{/}.",
+      things = {
+        { name = "the moss", description = "It has grown round the base in a perfect collar. The stone has been here for a century. So has the other one. The path, between them, has been thinking." },
+        { name = "a snail on the numeral", description = "Crossing the 2, slowly, leaving a silver line. By tomorrow it will read something else and be no less accurate." },
+      },
+      actions = {
+        { "Pace it out", say "You count your steps to the next bend and back. A hundred and ten going. Ninety-four returning. You do it again, to be sure, and get a different pair. The path is not lying to you. It is only doing its best with a wood that keeps shifting its feet." },
+      } },
+
+    { name = "a woodpecker's tree",
+      description = "A dead birch, drilled from top to bottom in neat rows, like a flute for a giant.",
+      things = {
+        { name = "the woodpecker", icon = "v", description = "Green, with a red cap, hammering. Between bursts it leans back and listens to the wood, as a tuner listens to a string. Then it corrects the tree." },
+        { name = "the lowest hole", description = "At eye level. Something has put a hazelnut in it, exactly fitted. The Acorn Bank has a branch." },
+      },
+      actions = {
+        { "Knock back", say "You rap twice on the trunk. Silence. Then, from far up, two knocks, crisp, and a pause in which you are plainly expected to say something worth the bird's time." },
+      } },
+
+    { name = "a clearing the size of a room",
+      description = "Where a tree came down and let the sky in. Grass, foxgloves, and a column of midges turning in the one shaft of sun.",
+      things = {
+        { name = "the fallen tree's stump", description = "Torn, not cut. Already a rowan seedling is growing out of the middle of it, a hand high, with seven leaves and the look of something that has inherited." },
+        { name = "a deer's bed", description = "An oval of flattened grass, still warm. You missed her by a minute. There is a single slot in the mud beside it, cleft, pointing away." },
+        { name = "a butterfly", icon = "ʚ", description = "A wood white, going from foxglove to foxglove with no plan. It lands on your sleeve and opens and closes twice, as if fanning you, and goes on." },
+      } },
   },
 
   exits = {

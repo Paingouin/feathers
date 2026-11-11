@@ -119,6 +119,31 @@ space {
       actions = {
         { "Lie down on it", say "It takes your weight like a mattress and begins, very slowly, to take an interest. You get up while you still can." },
       } },
+
+    { name = "a tree that fell and did not die",
+      wonder = true,
+      description = "A lime, enormous, lying full length on the forest floor where some storm put it before the kingdom had a name. It did not stop. Every branch on its upper side turned and grew straight up, and each is now a full-sized tree: thirty limes in a row, as straight as a street, rising from one horizontal trunk as long as a barn. The roots at one end are still in the ground. The leaves on the thirtieth tree are fed by the same sap as the first. You walk the length of it with your hand on the old trunk. It is not thirty trees. It is one, which was knocked down and reconsidered.",
+      things = {
+        { name = "the old trunk", description = "Moss a hand deep, and ferns growing on it, and a path worn along the top by foxes who use it as a road. Under the moss the bark is whole." },
+        { name = "the thirtieth tree", description = "The youngest and tallest, at what was the crown. Up there it has got its head through the canopy into light. The whole fallen giant, flat on its back for a thousand years, has one hand out of the water." },
+        { name = "the root plate", description = "A wall of earth and stone, tipped up on edge, twice your height. Half the roots are in the air and dead. The other half went back down. It only needed half." },
+      },
+      actions = {
+        { "Walk along the trunk", say "You climb up by the roots and walk it like a bridge, thirty trees going past on your left like columns. The mumbling of the wood is different here. Lower. All thirty are saying the same thing, a moment apart, like a round." },
+      } },
+
+    { name = "a wild bees' nest",
+      description = "In a split beech, twenty feet up: a dark slot with a coming and going. The comb hangs down inside in sheets, and the split has wept honey down the bark in a line that the ants have made a road of.",
+      things = {
+        { name = "the honey line", description = "Amber, sticky, a finger wide. You could. You look up at the slot, and at how many are using it, and you do not." },
+        { name = "a claw mark", description = "Four grooves in the bark at the height of your chest, old. Something bigger than you thought the same as you, and tried. The grooves stop suddenly." },
+      } },
+
+    { name = "the dark between the trunks",
+      description = "It is noon, and thirty paces off in any direction it is dusk. The dark here is not dangerous. It is only very old, and has not been disturbed, and looks at you as a full church looks at a latecomer.",
+      actions = {
+        { "Stand still until your eyes adjust", say "It takes a long while. Then the dusk comes apart into things: a fern, a stone, the white scut of something sitting quite still that has been watching you the entire time. It was never dark. It was only private." },
+      } },
   },
 
   exits = {
@@ -200,6 +225,22 @@ space {
     { name = "the bar of daylight",
       description = "It comes down the steps green from the wood and falls across the bier at the height of his folded hands. A century ago, when the Old King stood, it was pitch dark in here. The tree fell so that it would land like this. You are sure of it, and you could not say why.",
     },
+
+    { name = "the sand floor",
+      description = "Dry, pale, raked once and never walked on since. The rake lines are still there, five hundred years old, running in rings out from the bier.",
+      things = {
+        { name = "your footprints", description = "The only ones. They go from the steps to where you are standing and they look very loud." },
+        { name = "a single leaf", description = "An oak leaf, on the sand, brown and perfect. It came down the steps with you. It is the first thing the Old King has sent in after him in all that time." },
+      },
+      actions = {
+        { "Smooth your prints away", say "You back toward the steps, brushing with your sleeve. It is not the same. The rings are broken where you were. You leave the leaf where it fell, which seems to be what it came for." },
+      } },
+
+    { name = "a nest of dormice",
+      description = "In a niche in the dry-stone wall, a ball of shredded bark the size of a fist. Three dormice are in it, asleep, each with its tail over its nose. They sleep seven months of the year, and have picked the one place in the Mumblewood that understands." },
+
+    { name = "roots through the roof",
+      description = "Between the slabs the Old King's roots come down, fine as hair, hundreds of them. None touches the bier. They have grown round it on every side and stopped an inch short, and hang there in a ring, like people standing back." },
   },
 
   exits = {

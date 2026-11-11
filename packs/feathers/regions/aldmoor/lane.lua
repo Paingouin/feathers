@@ -74,6 +74,21 @@ space {
       } },
     { name = "the far end of the lane",
       description = "The lane ends at a high wall of pale stone with ivy trained across it in the shape of a coat of arms. Above the wall there is a copper dome and a tower with a light in it, and the light is the wrong colour." },
+    { name = "a rag and bone man",
+      description = "With a barrow and a bell, working the lane from door to door. He gives a penny for anything chipped, cracked, odd or unsold, and asks no questions. The barrow goes down to the coast full every month and comes back empty.",
+      things = {
+        { name = "the barrow", description = "A toast rack, a warming pan, one skate, eleven nightcaps and a sledge. He will not say who buys it. \"A gentleman abroad,\" he says. \"Who has an eye.\"" },
+        { name = "his bell", description = "Cracked. He was offered a new one and said that it would give the wrong idea of the business." },
+      },
+      actions = {
+        { "Offer him something", say "You turn out your pack. He looks it all over with a dealer's care, piece by piece, and you with it. \"No,\" he says at last, gently. \"Hang on to it. None of it's rubbish yet.\" You are not sure which of the two things he means, and thank him anyway." },
+      } },
+    { name = "washing across the lane",
+      description = "Lines from window to window, three floors of them, so that the whole lane walks under other people's linen. By long custom nobody remarks on what they see.",
+      things = {
+        { name = "a very long pair of combinations", description = "Red flannel, with a patch. They belong to the town crier. Everybody knows it, and it lends his announcements something." },
+        { name = "a sheet with a scorch on it", description = "The shape of a flat iron, exactly. It has hung out every Monday for nine years. She will not throw it away, and he has never been allowed to forget it." },
+      } },
   },
 
   exits = {
@@ -161,6 +176,21 @@ space {
       actions = {
         { "Offer to take it back", once = true, give "overdue_book",
           say "He goes very still. \"I can't go in there,\" he says. \"The fine. Thirty-one years at a ha'penny a day. I worked it out once, and had to sit down.\" He lifts the dome in both hands and passes you the book as though it were asleep. \"Don't say my name.\"" },
+      } },
+    { name = "the penny box",
+      description = "Outside the door, on a chair: the books that Mr Pell has given up on. A penny each. He takes the box in at night all the same, in case of rain, and has been seen to straighten them.",
+      things = {
+        { name = "Invisibility for the Busy Man", description = "By a Magister I. Null, of the Collegium. The pages are blank. You hold it to the light: quite blank. Mr Pell says that it came in like that, and that he has never been sure whether it is a misprint or the whole edition showing off." },
+        { name = "Eleven Thousand Miles Through the Sweltering", description = "By Sir Lionel Thrubwell. Volume one, of a promised six. It covers the first week. The frontispiece shows the author pointing firmly at some trees." },
+        { name = "A Natural History of the Sweltering: Prospectus", description = "By H. Vole-Brandish. Subscribers are invited. There is a sample page of the index. Every entry on it begins with B." },
+      },
+      actions = {
+        { "Buy the blank one", say "You have a copper, and you need it for the gate. You put the book back. Mr Pell, through the window, gives the smallest nod. He would not have liked to see it go, and he would not have liked to refuse." },
+      } },
+    { name = "a customer who is only looking",
+      description = "A thin clerk in the history corner, reading a book from the shelf, standing up, very fast. He is on page two hundred. He comes in each lunch hour and reads forty pages, and in this way has had most of the shop.",
+      actions = {
+        { "Ask if it is any good", say "He jumps, and shuts it on his thumb. \"I'm deciding,\" he whispers. Mr Pell, at the till, does not look up. \"He has been deciding on that one since March,\" says Mr Pell. \"I move the marker for him.\"" },
       } },
   },
 
@@ -258,6 +288,21 @@ space {
       actions = {
         { "Watch it", fx "sparkle", say "It rains on a patch of moss at the bottom of the jar. The moss is doing well. A thread of lightning comes down, no thicker than a hair, and for an instant the whole shop is lit from the inside of a jam jar." },
       } },
+    { name = "a shelf of travel goods",
+      description = "For the adventurer. Madam Spindle says the line does not move, there being so few of you, and those few so short of money.",
+      things = {
+        { name = "a compass that points to lunch", description = "The needle swings past north without interest and settles on the market inn. It is said to be infallible. It is no use for anything else." },
+        { name = "seven-league socks", description = "Grey wool, darned. The boots were sold long ago to a giant. In the socks alone you go one league, in great discomfort, and arrive with no skin on your heels." },
+        { name = "a bottle labelled KINGDOM AIR", description = "Empty, corked. {i}As sold abroad.{/} She had a case of them back from a man on the coast. \"He says they love it down there. He says there was one in the batch that he should like returned, if I see it, and to wear gloves.\"" },
+      },
+      actions = {
+        { "Try the compass", say "You turn right round with it, twice. It points at the inn each time, steady as a judge. Your stomach, consulted, agrees. Madam Spindle says that this is why she cannot sell it: nobody needs to be told." },
+      } },
+    { name = "the shop bell",
+      description = "Over the door, on a spring. It does not ring when the door opens. It rings a moment before, which gives Madam Spindle time to put her feet down.",
+      actions = {
+        { "Open the door from inside", say "You reach for the handle. The bell rings. You have not touched it yet. You take your hand away. The bell looks, if a bell can, a little foolish, and so do you." },
+      } },
   },
 
   exits = {
@@ -337,6 +382,22 @@ space {
           visible_if = flag "al_attic_open",
           description = "A square of boards in the ceiling with a loop of rope. There is daylight round the edge of it, and, very faintly, the sound of one cat speaking and a great many listening." },
       } },
+    { name = "the window sill",
+      description = "Geraniums in a row, a jam jar with a wasp in it, and a spyglass, small, brass, worn. Gran Tuttle knows the whole of Elbow Lane from this sill and can tell you who has had a letter.",
+      things = {
+        { name = "the spyglass", description = "It was Wilf's. He left it when he went to sea. She uses it to read the chandler's prices from her chair, and for nothing else, she says, and the lane says otherwise." },
+        { name = "the geraniums", description = "Red, in chipped pots. One pot is a chamber pot. It is the best of them and she is not ashamed of it." },
+      },
+      actions = {
+        { "Look through the spyglass", say "The lane leaps up: the cobbler's bench, a cat's ear, the baker's wife counting money twice. You swing it up to the roofs and catch, for a moment, a row of cats along a ridge, all looking down the glass at you. You put it back on the sill rather quickly." },
+      } },
+    { name = "the rag rug",
+      description = "In front of the fire, made of every coat the family has worn out. She can name each strip. That blue was Tuttle's. That grey was her father's. That small bit of red was a boy's first jacket, and she steps over that one." },
+    { name = "a tin on the high shelf",
+      description = "A tea tin with a ship on it. In it: every letter that Wilf has sent, which is four, and the string from each.",
+      things = {
+        { name = "the last letter", description = "{i}Dear Gran. I am well. I have seen a fish that flies. Nobody here believes in snow. I told them and they laughed. I carved my name on something, I will not say what. Love, Wilf.{/}" },
+      } },
   },
 
   exits = {
@@ -397,6 +458,22 @@ space {
       description = "The market is a square of awnings. The castle sits on its hill with three of its towers upright. Round the edge of everything runs the wall, and here the wall is close: four feet from the last roof, with a walkway on top. A person could step across, if they were that sort of person." },
     { name = "a skylight",
       description = "Over the bookkeeper's landing. You can see down onto his bed, which is standing on books, and a book open on the pillow, where another person would keep a wife." },
+    { name = "a pigeon loft",
+      description = "A shed on stilts on the flat of a roof, with a landing board and a man in it. He races them. He says he races them. Not one has yet been sent anywhere, as he cannot bear to see them go.",
+      things = {
+        { name = "the fancier", description = "In a flat cap, with corn in every pocket. He knows forty birds by name and the Council by none.",
+          actions = {
+            { "Ask which is the fastest", say "He points to a plump grey one asleep on a perch. \"Her. Lightning.\" You ask how he knows. \"Stands to reason,\" he says. \"Look at her. She's saving it.\"" },
+          } },
+        { name = "the landing board", description = "Scrubbed. There is a small bell on it that a returning bird would ring. It has a cobweb in it." },
+      } },
+    { name = "a kite in a chimney",
+      description = "Red paper, caught by the tail on a pot, flapping. It has been there since the spring. The owner comes up most evenings to look at it, a boy of eight, and has not yet thought of a way that does not involve the cats.",
+      actions = {
+        { "Free the kite", say "You go out along the ridge on your seat. The parliament of cats watches in silence, as people watch a man on a wire. You get two fingers to the tail, and it comes away, and you are left astride a roof with a kite. There is a small cheer from a skylight. It is the only cheer you have had in Aldmoor and you keep it." },
+      } },
+    { name = "the gutters",
+      description = "Lead, wide enough to walk in, running the length of the row. Things collect: a ball, a shoe, a wig, and a small grove of sycamores an inch high, which have a view and mean to keep it." },
   },
 
   exits = {

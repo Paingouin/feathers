@@ -110,6 +110,20 @@ space {
       } },
     { name = "a signpost",
       description = "Iron, eight arms, runes on each. Under every rune, in new chalk, a picture for you: a mug, a hammer, a scroll with a frown on it, a mushroom, a bath, a coin, a helmet, a chisel." },
+    { name = "the public level",
+      description = "A brass bar the length of a cart, set in the paving at the exact middle of the square, with a bubble in a glass. Any citizen may check the city against it at any hour. There is always one doing so, on hands and knees.",
+      things = {
+        { name = "the bubble", description = "Dead centre, between two lines a hair apart. An old dwarf is watching it with a lens. He has watched it for sixty years and it has never moved, and he says that is exactly when you want to be watching." },
+        { name = "a worn patch", description = "Two smooth hollows in the paving beside the bar. Knees. Sixty years of the same pair." },
+      },
+      actions = {
+        { "Kneel and look", say "You get down beside him. The bubble sits between its lines like a held breath. \"Well?\" says the old dwarf. You say that it looks level. He nods slowly, for some time. \"That's two of us,\" he says. \"I'll put it in the book.\"" },
+      } },
+    { name = "a queue for nothing",
+      description = "Eleven dwarves in a line by the east wall, in order of height. There is nothing at the front. You ask. The first says that he is waiting for the pasty seller to come round. The rest say that there was a queue.",
+      things = {
+        { name = "the last in the queue", description = "A very young dwarf with a slate under his arm. He has been in it since breakfast and is doing his sums. He says that it is a good queue. It moves a little, and you always know where you stand." },
+      } },
   },
 
   exits = {
@@ -206,6 +220,21 @@ space {
       } },
     { name = "the stair to the wall",
       description = "Cut in the back of the guardroom, spiralling up. Every watchman climbs it once a shift, to look out at nothing from a height." },
+    { name = "the measuring wall",
+      description = "By the door: a strip of white stone with heights marked on it in black, from a boot up to a tall dwarf's helmet spike. Every prisoner is stood against it and written down. Above the top mark, the stone has had to be extended, in a different stone, in a hurry.",
+      things = {
+        { name = "the extension", description = "New, and paler. One mark on it, with a date and a rune that is not a name. The watchman translates, with some embarrassment: {i}a tall person, with a rope.{/} You are not the first. You are, by a thumb, the second." },
+      },
+      actions = {
+        { "Stand against it", say "You back up to the wall. A watchman climbs on a stool with a slate and a square. There is a murmur. Then he steps down, and with a new chisel, very carefully, cuts a second mark, a thumb below the other. You have a line of your own in Far Enough. It is in the Watch's book, but it is a line." },
+      } },
+    { name = "the evidence shelf",
+      description = "Behind the charge desk: labelled, sealed, and squared to the edge.",
+      things = {
+        { name = "a hinge that squeaked", description = "Tagged {i}Exhibit 1{/}, in a case of a disturbance of the peace. It was tried and found guilty. The maker was let off with a caution, having wept in court." },
+        { name = "a crooked picture nail", description = "Bent a quarter turn. {i}Found in a public corridor.{/} The case is open. They have a list of forty names, and a reward." },
+        { name = "a jar of sawdust", description = "{i}Imported. Purpose unknown. Smells of somewhere hot.{/} It was shaken out of the packing of a crate of jungle curios bound for the surface, and the Watch has kept it, since nothing down here is made of wood and it is the strangest thing they have ever seized." },
+      } },
   },
 
   exits = {
@@ -284,6 +313,19 @@ space {
       } },
     { name = "the wall stair down",
       description = "A broad stair on the city side, down to the back of the gates. The guard goes down it at shift change in step. The stair has a dip worn in each tread, left side and right, the width of one boot." },
+    { name = "a loophole with a view",
+      description = "A slit in the battlement, splayed for a crossbow, looking straight out into solid rock six inches away. The wall was built inside the mountain. Every loophole has the same view. They are kept clean.",
+      things = {
+        { name = "the rock outside", description = "Grey, with a seam of quartz. A sentry has stared at this particular six inches for thirty years and has drawn it, from memory, on his shield. He says that if it changes he will be the first to know." },
+      },
+      actions = {
+        { "Keep watch", say "You put your eye to the slit. Rock. You watch it for a full minute. It does nothing, steadily. The sentry beside you grunts approval. \"You've the knack,\" he says. \"Most tall folk look away. They want it to be {i}doing{/} something.\"" },
+      } },
+    { name = "the wall gong",
+      description = "Bronze, as wide as a cart wheel, hung in a frame at the midpoint of the walk, with a padded beam to strike it. It is the alarm. It has been struck once, on the day of the breakthrough, and the note is still talked of. A mason comes each year to see whether it has finished ringing.",
+      things = {
+        { name = "the mason's ear trumpet", description = "Hung on the frame, for the yearly listening. Last year's report is chalked beside it: {i}Still going. Fainter.{/}" },
+      } },
   },
 
   exits = {

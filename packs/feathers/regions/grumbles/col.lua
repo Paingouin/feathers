@@ -110,6 +110,28 @@ space {
       description = "A floor of them on the south side, white and level, with the tops of lesser hills coming through like stepping stones. Their shadows are on the valley. Yours is on them." },
     { name = "the ice river",
       description = "Northward, between Old Grumble and its neighbour, the gap is filled with something grey and cracked that you take at first for a road. It is ice, a mile across. It is coming this way. You watch it for a full minute to be sure, and it does not appear to have moved, and that settles nothing." },
+    { name = "a bell, from above",
+      description = "You hear it between gusts: a slow iron clank, high up, with a long time between strokes. There is no bell tower at the Col. There is no tower above the Col. It comes, as far as you can tell, from the sky over Old Grumble.",
+      actions = {
+        { "Listen for it", say "You wait out three gusts. There: one clank, like a chain swung against itself, very far up. The refuge logbook calls it the Anchor, in several hands, and says it means wind. Nobody has written down what an anchor would be doing up there, or what it would be an anchor of." },
+      } },
+    { name = "the weather wall",
+      description = "A chest high wall of piled slate, built in a curve across the windward side of the saddle. Every traveller who shelters behind it is expected to add a stone. It has been growing for three hundred years and has got round to having a corner.",
+      things = {
+        { name = "the newest stones", description = "At the east end, still sharp edged. One has initials on. One has a face drawn on it in charcoal, tongue out, pointed at the wind." },
+        { name = "a bottle in the wall", description = "Pushed into a gap, corked, with a paper inside. {i}Whoever reads this, I got over. Tell Greenhollow. Tell them it was Wilf.{/} It is not dated. You put it back for the next person, who may be going that way." },
+        { name = "the lee side", description = "Worn smooth at the height of a crouched back. There is a place that fits you. There is a place that fits anyone. It is the most sat against wall in the kingdom." },
+      },
+      actions = {
+        { "Add a stone", say "You find one the size of a loaf, carry it over, and fit it in at the end. It rocks, and then it sits. The wall is now your wall, in the proportion of one stone to three hundred years, and the wind seems very slightly put out." },
+      } },
+    { name = "a frozen puddle",
+      description = "In a dip of the bare rock, black ice, with white bubbles trapped in it in stacks like coins. Under the ice a single brown leaf lies flat, a birch leaf, from a great deal lower down.",
+      actions = {
+        { "Look at the leaf", say "It is whole, veins and all, pressed under glass. There is not a birch within two days' walk. The wind brought it up here in the autumn, put it in a puddle, and has kept it for you. You are obscurely grateful and do not know to whom." },
+      } },
+    { name = "the cornice",
+      description = "On the north peak, a lip of snow curling out over nothing, like a wave that has thought better of breaking. It has hung there all summer. Everything at the Col keeps its voice down a little because of it, including the wind." },
   },
 
   exits = {
@@ -223,6 +245,22 @@ space {
       description = "A blue line overhead, the width of your finger at arm's length. A chough crosses it, there and gone. Its call arrives a little later than it should." },
     { name = "a dripping seep",
       description = "Water comes out of the rock a drop at a time and falls into a hollow it has made. Each drop is heard twice: once now, and once, more quietly, a breath afterwards. The second is from yesterday." },
+    { name = "a sneeze",
+      description = "It arrives while you are standing there: one large, wet, startled sneeze, from nobody, at head height. The woman on the stool does not look up. \"That's a duke's,\" she says. \"Sixty years. He was very taken aback by it at the time, and so was the horse.\"",
+      actions = {
+        { "Say bless you", say "You say it. It seems only right. The gorge takes it in. Some day a traveller will stand here and be blessed, out of the rock, for nothing, and will go home thoughtful." },
+      } },
+    { name = "a tally in chalk",
+      description = "On the smooth wall by her stool, strokes in fives, going back along the gorge further than you can see. She marks every reply that comes out, and beside some of them she puts a letter.",
+      things = {
+        { name = "the letters", description = "{i}S{/} for a shout, {i}L{/} for laughing, {i}C{/} for crying. There is a great deal of {i}S{/}, in batches, a week apart. And here and there a small {i}k{/}. You ask. \"Kind,\" she says. \"Somebody said a kind thing. I like to keep count. They're rare, and they come back just as loud as the rest.\"" },
+        { name = "this morning's strokes", description = "Four. Beside the fourth she has drawn a question mark, and then rubbed half of it out." },
+      },
+      actions = {
+        { "Ask about the question mark", say "\"It weren't a voice,\" she says. \"It were a note. One long one, low, like the mountain makes, only it had come round the gorge and out again, so it was from before.\" She looks at the tally. \"I'd know it again. It ended on the way up, like a question. I never knew he asked any.\"" },
+      } },
+    { name = "a pebble that clicks",
+      description = "On the sand, a round white stone. Every so often it gives a small sharp click, like a knuckle. Somebody dropped a pebble here, long ago, onto that one, and the gorge is still giving it back in instalments." },
   },
 
   exits = {

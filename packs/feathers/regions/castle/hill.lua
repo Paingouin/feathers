@@ -206,6 +206,30 @@ space {
           say "\"Eight!\" he shouts, in a voice that has been kept in a box for eleven years. The queue cheers. Somebody's grandmother faints. \"In you go. Mind your head.\"" },
         { "Ask to go in", say "\"Number?\" he says. It is the whole of his side of every conversation he has had at this gate." },
       } },
+
+    { name = "a goat on a tether",
+      description = "Belonging to nobody in the queue, and fed by all of it. It eats petitions. It will not touch any other paper, and people who have lost heart bring theirs to it on purpose.",
+      things = {
+        { name = "a half-eaten petition",
+          description = "{i}...humbly beg that Your Majesty will look into the matter of my neighbour's...{/} The rest is goat. The neighbour, you gather, has got away with it." },
+      },
+      actions = {
+        { "Offer it your copper", say "It sniffs the coin, looks at you with one long sideways pupil, and declines. It has its standards. It is a civil servant, in its way." },
+      } },
+    { name = "a seller of maps of the queue",
+      description = "A boy with a tray. For a farthing: a printed plan of the hill showing the queue, with landmarks. {i}The Bend. The Slow Patch. Where Old Harrow Got To.{/}",
+      things = {
+        { name = "this year's edition", description = "The queue has not moved since the last edition. He has reprinted it anyway, with the date changed, and a new border of marrows." },
+        { name = "a pencil cross", description = "On his own copy, halfway down: {i}me, born here.{/}" },
+      },
+      actions = {
+        { "Ask where you are on it", say "He finds the spot with a finger: off the bottom of the page, past the border, on the back. \"You're in the appendix,\" he says. \"That's still on the map. Some aren't.\"" },
+      } },
+    { name = "a shrine by the road",
+      description = "A niche in a boundary stone with a candle stub, kept up by the queue. It is to the Patron of Those Who Wait. Nobody knows the saint's name. They were told it would be announced.",
+      actions = {
+        { "Light the stub", say "It takes. Three places back, somebody says \"ah, that's nice,\" and it is passed down the hill by word of mouth, a little altered at each telling, until at the bottom you have performed a miracle." },
+      } },
   },
 
   exits = {

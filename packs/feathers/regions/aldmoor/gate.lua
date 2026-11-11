@@ -90,6 +90,28 @@ space {
       } },
     { name = "swallows",
       description = "Nesting in the gate arch, a dozen mud cups in a row. They go in and out over the heads of the queue all day and have never once paid the tax." },
+    { name = "a crate held at the gate",
+      description = "Stencilled {i}CURIOS. This Side Up. Do Not Anger.{/} It has been impounded pending a ruling on whether a god is livestock. Through the slats, forty small faces are scowling at the tax table.",
+      things = {
+        { name = "the customs docket", description = "{i}Idols, jungle, 40. Declared value: priceless. Assessed value: firewood. Duty: disputed.{/} The sergeant has added, in pencil: {i}one of them looked at me.{/}" },
+        { name = "a thumbprint on one forehead", description = "Green paint, dry. A thumb about the size of your own. A clerk has circled it and written {i}ritual marking?{/}" },
+      },
+      actions = {
+        { "Scowl back", say "You give it your best. Forty carved faces hold their own without effort. The sergeant, who has been at it all morning, says quietly: \"You can't win. I've tried. They don't blink.\"" },
+      } },
+    { name = "the gate cat",
+      description = "Black and white, on the tax table, on the paperwork, on the exact form that is wanted. It is on the strength. It draws a ration, and has a number.",
+      things = {
+        { name = "its collar", description = "A brass tag: {i}GATE, No. 3.{/} Numbers 1 and 2 are the sergeant and the portcullis." },
+      },
+      actions = {
+        { "Try to move it", say "You slide a hand under. It becomes heavier. It is a known property of the cat. The queue behind you sighs as one, having each tried." },
+      } },
+    { name = "the boot scraper",
+      description = "Cast iron, by the wicket, in the form of a hedgehog. Regulation 9 requires its use. There is a gap beside it where a second one stood until somebody sold it abroad.",
+      actions = {
+        { "Scrape your boots", say "Half of the Barley Road comes off. The hedgehog bears it. A guard nods, and makes a tick on a slate that has not had one since Tuesday." },
+      } },
   },
 
   exits = {

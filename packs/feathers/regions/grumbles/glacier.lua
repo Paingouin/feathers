@@ -93,6 +93,25 @@ space {
       description = "A plump bird in a coat halfway between seasons, white with brown coming through. It is sitting on the ice, sure that you cannot see it. On snow you could not. On this particular patch of grey it shows up like a bun on a slate." },
     { name = "the high snow",
       description = "Up the valley the ice goes back and back, getting whiter, into a basin under the peaks where it is always snowing a little. That is where it is made. It takes four hundred years for a flake that lands up there to walk down to where you are standing." },
+    { name = "a sledge",
+      description = "On its side at the edge of the ice, runners up: ash, lashed with hide, with a dwarf rune burnt into the crossbar. It was a good sledge. One runner is split. It was left where it broke, by people who were not coming back for anything they could do without.",
+      things = {
+        { name = "the load", description = "Still lashed on. Lamp oil, in stone bottles, a dozen. And a crate of something packed in straw: you lift a corner. Glass chimneys, for lamps, each wrapped separately. They have ridden the ice for longer than you have been alive and not one is cracked." },
+        { name = "the trace", description = "A leather harness for hauling, made for a short, wide chest. It has been bitten through and mended with wire, and bitten through again." },
+      } },
+    { name = "ice worms",
+      description = "In a patch of old snow at the glacier's edge, black threads no longer than an eyelash, thousands of them, moving. They live in the ice and nowhere else. Warm one in your hand and it melts, entirely, like a snowflake.",
+      actions = {
+        { "Leave them be", say "You keep your hands in your pockets. They go on with whatever it is. It is a hard living, and they have a whole glacier to do it in, and you were never going to be any help." },
+      } },
+    { name = "a blue pool",
+      description = "On the surface of the ice, a basin of meltwater a yard deep and so blue that it seems to be lit from below. The bottom is white. There is a single pebble in it, black, which has melted itself a neat round socket and is sitting in it.",
+      things = {
+        { name = "the pebble", description = "It takes the sun and warms, and sinks a little further every day. By your reckoning it will be through the glacier in four hundred years and out at the snout in four hundred more. It is the only thing on the ice that is going faster than the ice." },
+      },
+      actions = {
+        { "Drink from it", say "You cup your hands. It is so cold that it has no taste at all for the first swallow and then tastes of the colour. Your teeth ring. You have drunk snow that fell on somebody's great grandfather." },
+      } },
   },
 
   exits = {
@@ -178,6 +197,26 @@ space {
       description = "At the far end, an arch filled in with a single clear sheet. Behind it a passage goes on north, under the glacier, uphill. The sheet has no handle and no hinge. It froze shut behind whoever went out that way, and they did not come back for the crown." },
     { name = "a snowflake, falling",
       description = "One, in the middle of the hall, coming down from nowhere through air that has no weather in it. It takes about a minute to reach the floor. When it lands another starts, from the same place. You watch three. It may be a clock." },
+    { name = "a frozen wave",
+      description = "Along one wall the ice has been pushed up into a curl, twice your height, with a smooth blue hollow under the lip. It is a wave, caught at the top of its rise. It has been about to break for as long as there has been a cave.",
+      actions = {
+        { "Stand under it", say "You step into the hollow. The light comes through the curl green and blue and falls on you in bars. You hold your breath, which is foolish. It did not break for the winter that sat here nine years, and it is not going to break for you." },
+      } },
+    { name = "things in the ice",
+      description = "Set in the walls like flies in amber, at different depths. The deeper, the older.",
+      things = {
+        { name = "a leaf", description = "A hand's breadth in: an oak leaf, green. It fell in a summer before the Long Winter and has not been told that summer ended." },
+        { name = "a mitten", description = "An arm's length in. Red wool, child's size, the thumb sticking up. You have seen a red mitten, or will. They do seem to get about." },
+        { name = "a shape, deep", description = "Far back, where the blue goes to black, something long and pale lies along the grain of the ice. It may be a fallen tree. It is the length of a tree. It has what might be a branch, bent, with smaller branches at the end of it, five." },
+      },
+      actions = {
+        { "Breathe on the wall", say "Your breath freezes on the ice in a white flower and hides what is behind. By the time it clears you have decided that it was a tree." },
+      } },
+    { name = "an ice organ",
+      description = "Where meltwater has dripped for centuries from the roof, a rank of icicles hangs, graded from the thickness of your wrist to that of a straw. The air moving through the cave draws a note from each. It is playing now, very quietly, a chord with no tune.",
+      actions = {
+        { "Tap the smallest", say "One clear high note, like a glass rung with a spoon. It goes off down the hall and does not come back. Somewhere under the ice it is still travelling. You have added a note to the winter's music and you tiptoe away from it." },
+      } },
   },
 
   exits = {

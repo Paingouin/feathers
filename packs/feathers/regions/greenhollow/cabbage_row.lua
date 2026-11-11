@@ -116,6 +116,43 @@ space {
       actions = {
         { "Work the handle", say "Six strokes of nothing. You stop, sure it is dry. A woman passing with a pail gives it the seventh without breaking step, and gets the water." },
       } },
+
+    { name = "the cobbler's window",
+      description = "A low shop with a bench in the window and a man at the bench. {b}S. LAST. BOOTS MENDED.{/} In a village that adventurers leave from, and that their boots come back to, it is the one trade that never goes short.",
+      things = {
+        { name = "Sim Last, cobbler",
+          description = "Bent, quick, with a mouth full of tacks. He talks round them. He can tell where a boot has been by the wear, and whether it enjoyed it.",
+          actions = {
+            { "Show him your boots", say "He turns one over without asking you to take it off, which involves a certain amount of hopping. \"New,\" he says, round the tacks. \"Never been further than the square. Soft in the heel. You walk like a man expecting applause.\" He lets go of your foot. \"Come back when there's a hole. I'll know all about you then.\"" },
+            { "Ask about the boots that come back", say "\"One a month goes out. Boots come home, a while after, by carrier or by river. Sometimes the pair. Sometimes not.\" He taps in a tack. \"I mend them. Somebody might want them. Never the same somebody, but they fit, more often than you'd think. Feet are much of a muchness. It's what's above them that varies.\"" },
+          } },
+        { name = "the shelf of returned boots",
+          description = "Thirty pairs and eleven odd ones, mended, polished, each with a paper ticket on a string.",
+          things = {
+            { name = "a ticket", description = "{i}Left Greenhollow in spring. Returned by a pedlar, from the Mumblewood, autumn. Left boot only. Resoled. Owner not yet called.{/}" },
+            { name = "a very small pair", description = "A child's, red, with a buckle. The ticket says only {i}got as far as the mill{/}. Their owner is forty now, and keeps bees, and has never lived it down." },
+            { name = "a boot with a bite out of it", description = "A crescent taken clean out of the toe. The ticket says {i}goose{/}. He has not mended that one. He keeps it as it is, by the door, as a public service." },
+          } },
+        { name = "the last", description = "An iron foot on a post, upside down, worn silver. Every boot in the village for sixty years has been hammered on it. It is, by now, the average foot of Greenhollow, and is a little flat." },
+        candle { name = "a candle in a glass globe", description = "Set behind a round flask of water, which throws the light onto the bench in one bright coin. He moves the boot, never the light." },
+      } },
+    { name = "a goat on a roof",
+      icon = "y",
+      description = "On the ridge of the last cottage, chewing, with thatch in its beard. It is the blacksmith's bellows goat, off duty. Nobody knows how it gets up. It has been seen coming down, which it does by simply walking off the end.",
+      actions = {
+        { "Call it down", say "It looks at you along its nose. It takes a mouthful of roof. The thatcher, three cottages along, says without looking up that he has given that goat more of his work than he has given the parish." },
+      } },
+    { name = "the bread oven",
+      description = "A stone dome in a lean-to at the end of the row, shared by all the cottages. It is fired on Tuesdays and Fridays. Each household marks its loaves before they go in.",
+      things = {
+        { name = "the loaf marks", description = "Cut in the dough with a knife: a cross, a ring, three dots, a fish. The Pottles use a P. The Furrows use a furrow. Granny Tansy's has a mark that nobody else can quite draw afterwards, and rises higher than the rest." },
+        { name = "the peel rack", description = "Long wooden shovels, one to a family, the blades burned black. They are handed down. A girl gets her mother's peel on her wedding day, and her opinion with it." },
+      },
+      actions = {
+        { "Warm your back against it", say "The stones hold Tuesday's heat until Thursday. You lean. A cat is already leaning, lower down. You stay as long as is polite, and then a little longer, in the cat's company." },
+      } },
+    { name = "a hole in the hedge",
+      description = "Child high, worn smooth, between the row and the lane to the mill. It is the real road of Greenhollow. Everything under four feet tall goes by it, including, at dusk, a line of ducks." },
   },
 
   exits = {

@@ -113,6 +113,28 @@ space {
       actions = {
         { "Wait for it to clear", say "It does not clear. It does, after a while, come a little closer, and you decide you have waited enough." },
       } },
+
+    { name = "a bathing place",
+      description = "A shelf of flat rock going into the water, with a rope ring let into it and a row of wooden pegs on a pine. Greenhollow comes up to swim on the hottest day of the year. Only the hottest. The lake is that cold.",
+      things = {
+        { name = "the pegs", description = "Each carved with a family mark. One peg is higher than the rest, out of a child's reach, and has a towel on it that has plainly been there since last August." },
+        { name = "a mark on the rock", description = "A line cut at the water's edge and a date. Then another line, at the same level, another date. Forty lines. The lake has not risen or fallen by a hair in forty summers, in drought or flood. Somebody stopped measuring. There was nothing to put." },
+      },
+      actions = {
+        { "Put a foot in", say "The cold goes up your leg and takes hold of your knee like a bailiff. You stand it for a count of four. In the water your foot looks a long way off and not altogether yours, and the sky round it is one you do not recognise." },
+      } },
+
+    { name = "a family of ducks",
+      description = "A mallard and nine ducklings, in a line, crossing the reflected sky. The ducklings keep looking down. They are young enough not to have decided yet which is the real one.",
+      actions = {
+        { "Throw them a crust", say "You have a heel of bread. It lands with a plop. In the lake, a second crust falls upward to meet it out of the wrong sky, and the two touch, and nine ducklings arrive at the spot at once from both directions." },
+      } },
+
+    { name = "a fallen pine in the shallows",
+      description = "It went in years ago and lies with its crown under water. Every branch has a perch stationed along it, finning, facing the shore, in order of size.",
+      things = {
+        { name = "the biggest perch", description = "At the trunk end, striped, as long as your forearm. The angler has a name for it. He will not tell you the name. He says it would be taking a liberty." },
+      } },
   },
 
   exits = {
@@ -211,6 +233,24 @@ space {
       actions = {
         { "Wave to the angler", say "He raises one hand, slowly, without turning his head. In the water, somebody on a stool raises the other." },
       } },
+
+    { name = "a moorhen's nest",
+      description = "A raft of reeds moored to a willow root, with seven buff eggs. The moorhen is on it, flat, pretending to be part of the island.",
+      things = {
+        { name = "the moorhen", icon = "v", description = "Black, with a red shield on her forehead and green legs that look borrowed. Her eye is on the heron. It has been on the heron for nineteen days." },
+      } },
+
+    { name = "a bottle on a string",
+      description = "Tied to the lowest branch, hanging in the water to keep cool: a stone bottle, corked. The angler leaves it. There is a notch in the cork for each time he has rowed out, drunk a mouthful, and rowed back, having thought something over.",
+      actions = {
+        { "Count the notches", say "The cork is more notch than cork. Whatever he comes out here to think over, he has not finished. You lower it back into the lake, which takes it, in the reflection, upward." },
+      } },
+
+    { name = "the island's own sky",
+      description = "Lie on the turf with your head over the edge and look down. The willow hangs into it. The heron stands on its own feet, twice. Between them is a sky with a different set of clouds, moving the other way, and for as long as you look you are on an island in the middle of the air.",
+      actions = {
+        { "Drop a leaf", say "A willow leaf, from your finger. It turns as it goes down and something small and green turns as it comes up, and when they meet on the surface there is only one leaf, and you cannot have said which." },
+      } },
   },
 
   exits = {
@@ -290,6 +330,21 @@ space {
       actions = {
         { "Watch it", say "It goes half the width of your hand while you watch. In that time a fish crosses the ceiling from one side to the other. You could not say which of them had the better use of the afternoon." },
       } },
+
+    { name = "a fish looking in",
+      description = "A trout, overhead, nose to the underside of the water, quite still. It is looking down at you as you would look into a pond. After a while it is joined by another. You have become a thing that is shown to visitors.",
+      actions = {
+        { "Wave up at them", say "The trout scatter in a flash of silver, and the ceiling rings and wobbles like a struck tray. A single drop comes loose and falls on your nose. Then the lake remembers its manners and holds." },
+      } },
+
+    { name = "a row of pegs with nothing on",
+      description = "Seven, of bronze, by the stair. Over each a name was cut and has been rubbed away with a thumb, patiently, until only the first letter of each is left. They are all the same letter.",
+      things = {
+        { name = "the seventh peg", description = "Lower than the others, at the height a child could reach. It is the only one that is not green. Something has hung on it lately, or has been hung on it always." },
+      } },
+
+    { name = "the sound",
+      description = "The lake is heavy and it moves. Down here that comes through as a long slow creak, the sound of a great door thinking about opening, with a minute between one creak and the next." },
   },
 
   exits = {

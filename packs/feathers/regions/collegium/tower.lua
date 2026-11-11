@@ -74,6 +74,17 @@ space {
       description = "The path of the star, worked backwards. The last line is underlined three times and has no number at the end of it, only a small drawing of an edge." },
     { name = "the window",
       description = "A slit, facing north. On a clear day you can see the moor from here, and on it a mark like a thumbprint." },
+    { name = "a letter from the south",
+      description = "On the desk under a star-weight: thin paper, salt stained, come by a smuggler and two porters. It is from a Dr Mimms, of Natural Philosophy, who has never before written to an astronomer.",
+      things = {
+        { name = "the letter", description = "{i}Dear Dr Vane. Forgive a stranger. I have found a room under a hill here with the northern sky set into its roof in crystal: every star, in place, as seen from our own county. I enclose a rubbing. There is one patch where no stones are set. It is north, and high. I thought of you.{/}" },
+        { name = "the rubbing", description = "Charcoal on bark paper. Dots, large and small. Dr Vane has laid her own chart of the Gap over it. The blank on the rubbing and the blank on the chart are the same shape, to the width of a hair." },
+      },
+      actions = {
+        { "Ask what she makes of it", say "Dr Vane does not answer at once. \"That room is older than the Collegium,\" she says. \"Older than the kingdom, the letter says. And whoever made it knew about the Gap.\" She squares the two papers, edge to edge. \"I had thought something was lost from the sky. They left it out as if nothing had ever been put there.\"" },
+      } },
+    { name = "the night porter's chair",
+      description = "By the stair head: a wooden chair with a blanket, where old Joss sits up with her in case she falls off the ladder. He has learned forty constellations without meaning to, and has his own names for them. The Plough he calls the Barrow." },
   },
 
   exits = {
@@ -138,6 +149,20 @@ space {
       description = "A book on the lecturer's desk for the names of those attending. Three hundred years of blank pages. On the newest one somebody has written a T, in pencil, and rubbed it out, and written it again." },
     { name = "a scorch on the ceiling",
       description = "Round, black, and recent. Tib does not want to talk about it. It was a Tuesday. She had an idea." },
+    { name = "the lost door",
+      description = "At the end of the corridor outside, between the Practical Room and a broom cupboard, there is nine feet of blank wall with a doormat in front of it. The mat is swept. The wall has a letter box.",
+      things = {
+        { name = "the letter box", description = "Brass, in the plaster, at the usual height. The flap lifts. Beyond it is a dark room and a smell of old paper, and no door anywhere that leads to it. The plate reads {i}NULL{/}." },
+        { name = "the doormat", description = "Tib shakes it on Fridays. Nobody told her to. She says a person could come back, and it would be a poor thing to come back to dust." },
+      },
+      actions = {
+        { "Knock on the wall", say "You knock where a door would be. It sounds like a door. Tib, in the Practical Room, looks up from her teaspoon. \"He's not in,\" she says. \"He took the outside with him. I can feel where it was. It's like a tooth that's gone.\"" },
+      } },
+    { name = "a row of pot plants",
+      description = "On the window sill, in jam jars: cuttings sent back by the Expedition, for the gentlemen to practise growth charms on. The gentlemen have not attended. The cuttings have grown anyway, a foot a week, and one has got out through the casement and is halfway to the roof.",
+      actions = {
+        { "Measure the creeper", say "You put your thumb at the tip, against the frame, and look away to count to twenty. When you look back the tip is at your knuckle. Tib says that she talks to it. She says that it does not need encouraging and she is trying the opposite." },
+      } },
   },
 
   exits = {
@@ -206,6 +231,17 @@ space {
       } },
     { name = "a calendar",
       description = "Pinned by the door, three hundred years out of date. One day is ringed: {i}Practical, first class. Bring cake.{/}" },
+    { name = "a work basket",
+      description = "By the settle: wool, needles, and a piece of knitting left on the pins in the middle of a row.",
+      things = {
+        { name = "the knitting", description = "A nightcap, in grey flannel wool, with the tassel done first. She knitted them for the scullery maids, who had cold attics. The pattern is on a slip in the basket in her hand: {i}cast on 80. Keep going. A person thinks better with warm ears.{/}" },
+        { name = "a darning egg", description = "Turned from a hard green stone with no grain to it. It is cool, and never quite still in the hand. She had it from a sailor in exchange for curing a wart, and held that it was the best thing in the house for heels." },
+      },
+      actions = {
+        { "Finish the row", say "You cannot knit. You take up the pins anyway and look at them. They are warm. Your hands do eleven stitches, neatly, to the end of the row, and stop, and you put the work down very carefully in the basket, exactly as it was, one row further on than it has been for three hundred years." },
+      } },
+    { name = "a row of jam jars",
+      description = "On the sill, with cuttings in water: mint, a geranium, something from a hedge. They have roots. The water is clear. Nobody comes here, and nothing in this room has been let go dry." },
   },
 
   exits = {

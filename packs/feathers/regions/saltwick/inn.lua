@@ -127,6 +127,32 @@ space {
       things = {
         { name = "the pencil tally", description = "{i}3 shillings 4d, one wedding ring, a glass eye (Tam's, returned by tide), marbles: many.{/}" },
       } },
+    { name = "the row of mugs",
+      description = "Stoneware, grey, on a rail over the bar, each with a boat's name fired into the glaze in place of a man's. You drink from your boat's mug. If the boat is lost, the mug is not taken down.",
+      things = {
+        { name = "the Kittiwake's mug", description = "Chipped at the lip, in use, with a herring scale stuck in the glaze of the handle." },
+        { name = "the Constance's mug", description = "Upside down. She has been overdue since before the landlord was born. It is turned up every evening at lighting time, in case, and turned down at closing." },
+        { name = "a mug marked UNSINKABLE", description = "Twice the size of the others, with a gilt rim, ordered by the owner for his crew. It arrived the week after. Nobody has ever drunk from it. It is used for the darts money." },
+        { name = "the stranger's mug", description = "Plain, with a crack. It is filled a finger short. That is not meanness: a full mug on this floor slides." },
+      } },
+    { name = "a traveller in springs",
+      description = "A neat man from Tickover with a sample case on his knees, drinking small beer and looking at the wall clock with open distress. He is four minutes behind everyone in the room and cannot get into a conversation. Each time he laughs, the joke is over.",
+      things = {
+        { name = "his sample case", description = "Velvet, with springs clipped in rows by size. He has sold none. A fishing village wants things to stay where they are put, and a spring, he admits, is not that." },
+        { name = "his watch", description = "He keeps taking it out. It is right by his city and wrong by the sea. He has been advised to set it on. He looks at you as if you had suggested he change his name." },
+      },
+      actions = {
+        { "Tell him a joke slowly", say "You leave a gap of four minutes before the end. The room goes on round you. Then you say the last line, and he laughs, on the dot, with his whole face, for the first time since he left home. He buys you a small beer. It arrives late." },
+      } },
+    { name = "the dartboard",
+      description = "Elm, soaked nightly in a bucket, hung on the uphill wall. On this floor you throw from a chalk line that is a foot lower than the board's foot, and visiting teams have been known to cry.",
+      things = {
+        { name = "the darts", description = "Three, flighted with gull. They are kept in the Unsinkable's mug with the money." },
+        { name = "the scoreboard", description = "A slate. {i}SALTWICK 400, ALDMOOR WATCH 12{/}. It has not been wiped since the match. The match was nine years ago." },
+      },
+      actions = {
+        { "Throw one", say "You allow for the slope. You allow too much. The dart goes into a beam, a hand's breadth from a very old dart with a tag on it that says {i}the baron, 2 pints{/}. You are in good company." },
+      } },
   },
 
   exits = {
@@ -231,6 +257,22 @@ space {
       description = "Green glass balls in nets, hung in the window, each holding a bubble of somebody's breath from the glassworks. The light goes through them and lays green coins all over the floor.",
       things = {
         { name = "a float with something in it", description = "One has a little water inside, sealed in when it was blown. It slops when you turn it. There is the smallest possible shrimp in the water, and it has been in there, Nell says, since before she was born." },
+      } },
+    { name = "a shelf of Tickover goods",
+      description = "Kept apart from the honest stock, behind a rope: brass things that came by cart from inland. A self winding log line. A patent fog horn with a boiler. A compass that ticks.",
+      things = {
+        { name = "the patent fog horn", description = "You stoke it with a teaspoon of coal and in a quarter of an hour it gives one blast. Mistress Brine sold one to a herring boat. The fog had lifted by the time it went off, and the blast put the whole fleet about." },
+        { name = "the compass that ticks", description = "It points north, in jerks, one a second. Sailors will not have it aboard. \"A compass should know,\" says Mistress Brine. \"That one's working it out.\"" },
+        { name = "a price ticket", description = "On all of them, in her hand: {i}CHEAP. Runs four minutes behind. Not my doing.{/}" },
+      } },
+    { name = "the sailmaker's corner",
+      description = "A bench under the back window with a palm, a fid, and a bolt of canvas the colour of porridge.",
+      things = {
+        { name = "an order on the spike", description = "{i}One patch, 6 ft by 6. Any colour. Must be a thing that was loved. For the airship. H.B.{/} Pinned to it, folded, is a child's blanket with ducks on, and a note from a fisherman's wife: {i}He's grown. Take it up.{/}" },
+        { name = "the sail needle", description = "Three cornered, as long as your finger, stuck in a lump of tallow. She can put eleven stitches to the inch through four thicknesses, in the dark, and has, on a foredeck, in weather she does not talk about." },
+      },
+      actions = {
+        { "Thread the needle", say "You try for some time. Mistress Brine takes it from you, threads it behind her back while looking at the ceiling, and hands it over. \"There,\" she says. \"Now you've threaded a needle.\"" },
       } },
   },
 
@@ -341,6 +383,20 @@ space {
             { "Offer it a cockle", say "The arm takes the cockle, turns it over, and draws it inside. A moment later the empty shell is put out again, both halves, and set on the mud with the others. There is a row. It keeps its doorstep tidy." },
           } },
       } },
+    { name = "a wheel in the mud",
+      description = "Iron, spoked, a yard across, lying flat with the mud ribbed round it. It is not off a cart. It has a flange. Something that ran on rails came down here once and went no further.",
+      things = {
+        { name = "the rail it ran on", description = "One length, bent, going from the foot of the quay toward the harbour mouth and under the mud. On the web of it, cast in: {i}TICKOVER MUNICIPAL. PHASE THREE.{/} They built the end first, to be sure of it." },
+        { name = "an eel in the hub", description = "It lives there, with its head out of the axle hole, and regards the middle and both ends of the tramway with equal contempt." },
+      } },
+    { name = "a row of mooring rings",
+      description = "Set in the foot of the quay wall, far below the ones in use: great iron hoops gone to red lace. They are too low for any tide the Office has on file. Whatever was moored to them, the harbour was a different shape.",
+      things = {
+        { name = "the lowest ring", description = "Bronze, not iron, and not rusted at all. There is a turn of rope still on it, turned to stone. It leads out along the mud a little way toward the open sea, and stops, at an end that was not cut but bitten." },
+      },
+      actions = {
+        { "Pull on the stone rope", say "It does not give. You did not think it would. But far out past the mole, where the water has gone to, something knocks once against the floor of the sea, the way a boat knocks on a quay when you take hold of her painter." },
+      } },
   },
 
   exits = {
@@ -419,6 +475,21 @@ space {
       description = "Twelve iron rungs to a trapdoor in the roof. From below you can read the underside of the trap: it is the back of Wim's hearth rug, nailed on.",
       actions = {
         { "Listen at the trap", say "A stove ticking. A page turned. A big slow voice, reading aloud to nobody: \"...and the weather is fine.\" Then the page again. He is on his own up there with one letter, and making it last." },
+      } },
+    { name = "a crate from Tickover",
+      description = "Slatted deal, stencilled {i}THE LIGHT, SALTWICK. CLOCKWORK, REPLACEMENT.{/} It was sent down forty years ago when the turning gear in the lamp room was last looked at. It has never been opened. Wim says the old gear was not broken, and that he was not going to put a thing up there that was four minutes behind the sea.",
+      things = {
+        { name = "through the slats", description = "Brass, in straw, bright as the day it was packed. It is ticking. It has been ticking in the dark for forty years, wound by nobody, and when you put your hand on the crate the tick does not get any louder, only a little quicker, like a dog that has heard the door." },
+        { name = "the consignment note", description = "Nailed to the lid. {i}With the compliments of L. Fusee. If it will not stop, do not be alarmed. Some of them will not.{/}" },
+      },
+      actions = {
+        { "Knock on the crate", say "The ticking stops. You wait. It starts again, very softly, and you would swear it was now in time with the drip from the wall." },
+      } },
+    { name = "a tally of nights",
+      description = "Cut in the old stone by the ladder foot: strokes in fives, row under row, going down the wall and along the floor and up the other side. One for every night the Light has been lit.",
+      things = {
+        { name = "the newest strokes", description = "Wim's, with a cold chisel, neat. He comes down each morning and cuts last night." },
+        { name = "the oldest strokes", description = "Under the damp line, worn nearly smooth, and not cut with a chisel. Something scored them with a single point, deep, each one as long as your arm. There are a great many. They were counting nights here before there was a Light to count them for." },
       } },
   },
 

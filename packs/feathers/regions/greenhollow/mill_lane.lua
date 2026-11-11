@@ -108,6 +108,31 @@ space {
       things = {
         { name = "an eel trap", description = "Wicker, long, empty. The eels here swim upstream to the hills and are not seen again. The miller has stopped taking it personally." },
       } },
+
+    { name = "the miller's boy",
+      description = "Tod, fourteen, white to the eyebrows, sitting on the mill steps with a sack needle. He has worked here two years and has been inside the mill once.",
+      things = {
+        { name = "his sack needle", description = "Curved, as long as a hand, threaded with twine. He mends the sacks. He does not fill them. They come out of the mill door full, in the morning, and he has learned not to be early." },
+      },
+      actions = {
+        { "Ask what he saw inside", say "He stops sewing. \"Stones going round. Nothing in the hopper. Flour coming out.\" He looks at the door. \"And it was bigger. In there. I walked to the far wall and it took me longer than walking round the outside.\" He goes back to the sack. \"Master says I miscounted my steps. I never. I count everything, now.\"" },
+      } },
+    { name = "stepping stones",
+      description = "Six, across the stream below the bridge, for those who do not trust the rail. The fourth is loose.",
+      things = {
+        { name = "the fourth stone", description = "It tips. It has tipped for a hundred years. Everybody in Greenhollow knows to skip it, and nobody has ever thought to mend it, because then how would you know who was a stranger." },
+        { name = "a wagtail", description = "Grey and yellow, on the fifth stone, bobbing. It goes from stone to stone ahead of you, always one off, like a guide who does not want to be thanked." },
+      },
+      actions = {
+        { "Cross by the stones", say "One, two, three. Four tips. You were warned by nobody. You stand in the stream to the shin, facing slightly uphill, with the water coming at you from behind. The miller's boy counts it." },
+      } },
+    { name = "the dust",
+      description = "Flour, as fine as smoke, on every leaf in the lane, on the cat, on the kingfisher's twig. It never blows away, there being no wind. When someone walks down the lane they leave a clear track through the air, and it takes a quarter of an hour to close." },
+    { name = "a row of ducks",
+      description = "Five, white, in single file, crossing the lane from the pond to the hole in the hedge. They do this at the same time each day. The miller's cart has been known to wait.",
+      things = {
+        { name = "the last duck", description = "It stops, looks at the windmill, and puts its head on one side. Then it runs to catch up. It does this every day. It is the only creature in the lane that still finds the mill odd." },
+      } },
   },
 
   exits = {

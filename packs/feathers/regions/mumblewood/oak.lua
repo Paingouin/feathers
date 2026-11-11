@@ -90,6 +90,23 @@ space {
       } },
     { name = "a notch on the lowest shelf",
       description = "If you have made a deposit, it is here: in a notch of its own on the lowest shelf, between two acorns, entered and carried forward. If you have not, the notch is empty and waiting. They cut it when you came in." },
+
+    { name = "a notice of interest rates",
+      description = "A slip of birch bark pinned to the heartwood by a thorn. Scratched on it, in very small marks, a row of acorns, and under each a number of smaller acorns.",
+      things = {
+        { name = "the terms", description = "As far as you can make out: one acorn deposited in autumn returns one acorn in spring, less one acorn for storage. The Bank regards this as generous. Nobody has ever got the better of it but the jays, who do not deposit." },
+        { name = "a small print", description = "A paw print, in mud, at the bottom. It is the head teller's seal. It has a claw missing, to prevent forgery." },
+      } },
+
+    { name = "a junior clerk",
+      icon = "s",
+      description = "A very young red squirrel, on the lowest shelf, counting beech mast into rows of five. It loses count each time you breathe and starts again with a small despairing flick of the tail.",
+      actions = {
+        { "Hold your breath for it", say "You stand like a post. Five, ten, fifteen. It gets to forty, the furthest it has ever been, and looks up at you with shining eyes. Then the fox yawns, and it is back at one." },
+      } },
+
+    { name = "a vault door",
+      description = "A plug of oak the size of a dinner plate, set in the floor, gnawed to fit so closely that you cannot get a fingernail round it. It has no handle. The Bank's position is that anyone who needs a handle has no business with the reserves." },
   },
 
   exits = {

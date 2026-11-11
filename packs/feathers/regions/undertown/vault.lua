@@ -92,6 +92,26 @@ space {
       actions = {
         { "Stroke her", say "She rolls over. It is a trap, and you know it is a trap, and you have four scratches before you have finished knowing it." },
       } },
+
+    { name = "a very small crate",
+      description = "On the floor by the ladder, apart from the rest: a box you could hold in one hand, nailed with pins, and lined with moss.",
+      things = {
+        { name = "the label",
+          description = "{i}TO: PARDON, BELOW. BY THE DRAIN. ONE STRAWBERRY (FRAGILE). KEEP UPRIGHT.{/} And in the ledger hand: {i}paid in advance, in full, in something Sal says are pearls. Do not ask. Do not be late.{/}" },
+        { name = "the strawberry",
+          description = "You lift the lid. One strawberry, the best of some garden, on a bed of moss, with a drop of water on it. The smugglers will run brandy past the Watch for a laugh. They carry this one like a baby." },
+      },
+      actions = {
+        { "Ask the sleeping smuggler who buys it", say "He does not wake. He says, quite clearly, \"small feller, very civil, never seen his face,\" and turns over." },
+      } },
+    { name = "a wanted poster, framed",
+      description = "The Watch's own, for the whole gang, hung over the ledger with pride. The reward is four shillings. The likenesses are so poor that two of the gang have applied for it." },
+    { name = "a dumb waiter",
+      description = "A box on a rope in a brick shaft, going up. It comes out, by the smell of polish, somewhere on Nobles' Row.",
+      things = {
+        { name = "an order, sent down",
+          description = "A card in the box, in a lady's hand. {i}The usual. And the Baroness says the last lot was NOT turnips and could she have more of it.{/}" },
+      } },
   },
 
   exits = {

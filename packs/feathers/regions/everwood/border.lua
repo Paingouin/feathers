@@ -116,6 +116,22 @@ space {
 
     { name = "the path onward",
       description = "Beyond the stones it is raked gravel, pale, without a footprint on it. The gravel goes round a bend, in a curve somebody took a season to get right." },
+    { name = "a milestone, combed",
+      description = "On the far side of the stones, a white pillar. It gives no distance. It has a single line of the Old Tongue on it, and somebody has lately polished it. On your side lies its twin, fallen, green, with a snail on it and a number you can read.",
+      things = {
+        { name = "the fallen twin", description = "{i}MUMBLEWOOD 0.{/} You are standing in it. The stone thought you should know." },
+        { name = "the line of the Old Tongue", description = "The sentinel translates, with her eyes on the middle distance. \"It says: {i}From here, it is all the same distance.{/}\" She waits. \"It is a great deal better in the original.\"" },
+      } },
+    { name = "the sentinel's lunch",
+      description = "On the bough beside her, in a folded leaf: something small, pale and geometric, which she has not touched in your presence and will not. Under the bough, on your side of the line, where it has been dropped with great accuracy, is the heel of a Greenhollow loaf and a rind of cheese.",
+      actions = {
+        { "Look at the crust, then at her", say "She looks at a point above your head. The tips of her ears go faintly pink. \"A squirrel,\" she says, \"brings them.\" The squirrel, on the stones, stops chewing. It has been called a number of things but never before a baker." },
+      } },
+    { name = "a spider's web across the line",
+      description = "Slung from a bramble on your side to a combed hazel on hers, with dew on it. It is the only thing at the border that belongs to both countries. Each morning an elf comes and looks at it, and cannot find a rule, and goes away.",
+      actions = {
+        { "Duck under it", say "You go under with care. A single thread touches your hat, stretches, and holds. You have not broken the one treaty in the place. From the bough comes the smallest sound of breath let out." },
+      } },
   },
 
   exits = {

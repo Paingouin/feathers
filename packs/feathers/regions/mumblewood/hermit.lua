@@ -123,6 +123,29 @@ space {
       things = {
         { name = "the egg under the bench", description = "Warm, brown, and guarded, from a distance, by one sideways eye." },
       } },
+
+    { name = "a second, smaller sign",
+      description = "Nailed under the first, on a shingle, in the same angry capitals: {i}THIS MEANS YOU.{/} And under that, a third, smaller still: {i}unless you have brought salt.{/}",
+      things = {
+        { name = "a fourth sign", description = "So small you have to crouch. {i}or news.{/}" },
+        { name = "a fifth", description = "Hardly more than a splinter, lettered with a pin. {i}or are just passing. Kettle is on.{/}" },
+      },
+      actions = {
+        { "Read them all aloud", say "You do, from the top. By the fifth you are on your knees in the leaf mould. The hut door opens a crack. \"That's private correspondence,\" says the hermit, and shuts it. The kettle begins to sing." },
+      } },
+
+    { name = "a sundial",
+      description = "A slate on a stump, with a nail for a gnomon. He made it the first year. The clearing gets the sun for two hours a day, so the dial is marked with two hours, and the rest of the rim is carved with what he does instead.",
+      things = {
+        { name = "the rim", description = "{i}Soup. Wood. Bees. Thinking. Not thinking. Soup.{/} Thinking has been scratched out and cut in again several times. Soup has never been in doubt." },
+        { name = "the shadow", description = "On {i}Bees{/}, at present. From the hive comes the sound of the bees agreeing." },
+      } },
+
+    { name = "a path worn in a circle",
+      description = "Round the edge of the clearing, a rut a hand deep, trodden by one pair of feet over forty years. He walks it at dusk, with his hands behind him, forty times. He calls it going to town.",
+      actions = {
+        { "Walk a lap", say "It takes two minutes. You pass the woodpile, the hive, the goat, the washing, the signs. By the time you are round you have seen everything he owns and everyone he knows, and you are surprised to find that it felt like quite far." },
+      } },
   },
 
   exits = {
@@ -227,6 +250,27 @@ space {
         { name = "a sword", description = "A good one, by the look of it, leaning in the corner with a crust of bread on the point. There is butter on the blade." },
         { name = "eleven walking sticks", description = "And one crutch. That visitor, he says, left faster than any of them." },
         { name = "a pedlar's pack", description = "Ribbons, pins and a mousetrap. The mice have taken the cheese and filed the trap under {i}curiosities{/}." },
+      } },
+
+    { name = "a shelf of books",
+      description = "Four. A man who goes into a wood for forty years takes four books, and has had a long time to regret which.",
+      things = {
+        { name = "the first book", description = "{i}Solitude, Its Uses.{/} Read to pieces in the first year. The back half is now the lining of his boots." },
+        { name = "the second book", description = "A herbal, with his own drawings added in the margins. He has corrected it. It said nettle soup wanted cream. He has written: {i}it wants a cow, then, and I am not keeping a cow.{/}" },
+        { name = "the third book", description = "An almanac for a year forty years gone. He consults it daily. He says the saints' days have not changed and the weather was always wrong." },
+        { name = "the fourth book", description = "A romance, in three volumes, of which he brought volume two. He has never learned how it started or how it came out. He has written both, on birch bark, eleven different ways, and keeps them in a jar." },
+      },
+      actions = {
+        { "Tell him how it ends", say "You do not know the book. You make something up: a wedding, a lost brother found, the villain sent abroad. He listens with his spoon stopped in the air. \"No,\" he says at last. \"No, that's worse than any of mine.\" He is delighted. He writes it down as number twelve." },
+      } },
+
+    { name = "a stool for visitors",
+      description = "Three-legged, by the hearth, opposite his chair. It has been sat on perhaps a hundred times in forty years and has been dusted every morning of them." },
+
+    { name = "the roof",
+      description = "Bark, turf, a tarred sail, and half a cartwheel. It leaks in one place only, over a bucket, and he will not mend it.",
+      things = {
+        { name = "the bucket", description = "The drip falls a note at a time. He says it is the only clock he can stand, because it stops when the weather is good." },
       } },
   },
 

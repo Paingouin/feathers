@@ -99,6 +99,23 @@ space {
     { name = "a padded door",
       visible_if = flag "knows_shouting_room",
       description = "Behind the reading stand, a low door covered in buttoned leather, with a stair behind it going down. You know where it goes. Now that you look, there is a groove worn in the floor from the tables to this door, forty slippers wide." },
+    { name = "the salt",
+      description = "One cellar, of horn, at the top table. It is passed down the hall from hand to hand without a word, and there is a way of asking for it: you look at it, and then at your neighbour, and then at your soup, sadly.",
+      actions = {
+        { "Ask for it properly", say "You look at the salt. You look at the brother beside you. You look at your soup, with grief. He passes it at once, and gives you a small nod, as to a foreigner who has managed {i}good morning{/} in the language." },
+      } },
+    { name = "the hatch to the bakehouse",
+      description = "A low arch beside the kitchen, warm. Through it come the smell of bread and a steady soft thumping: forty loaves a day, kneaded by a brother who was a prizefighter and has found that dough does not hit back.",
+      things = {
+        { name = "the baker", description = "Enormous, floured to the eyebrows, with a broken nose. He works the dough with slow, heavy, loving blows. Now and then he steps back from it, as from a man who has had enough, and lets it rise." },
+        { name = "the loaves", description = "Round, dark, each slashed on top with a sign. The sign is a finger laid across lips. In a lean year, the brothers say, it looks more like a mouth turned down." },
+        { name = "a rack of rejected loaves", description = "Three, on the windowsill, for the choughs. Each has risen crooked. He cannot give a crooked loaf to the house. He cannot throw it away either. The choughs wait on the sill at the same hour every day and have never been disappointed." },
+      } },
+    { name = "the seating plan",
+      description = "Carved into the table edge at each place: a small sign for each brother. A fish. A key. A broom. You walk down the hall reading the house. There is a place near the bottom whose sign is a mouth, open, and it has been filled in with wax.",
+      things = {
+        { name = "the waxed place", description = "Nobody sits there. The bowl is laid, and filled, and taken away cold. It has been the custom for longer than anyone living has been here. The Founder's place, you gather. He never did sit at the top." },
+      } },
   },
 
   exits = {
@@ -217,6 +234,23 @@ space {
       actions = {
         { "Stroke her", say "She begins to purr. Brother Librarian's head comes up. The copyist stops. It is very loud, in here, a purr. Nobody tells her to stop. Three more monks drift in from the corridor and stand about, pretending to look for books." },
       } },
+    { name = "the book of the brother who sweeps",
+      description = "On a low shelf by the door, where he can reach it with a broom in the other hand. It is thicker than most. You open it. It has one sentence on every page, the same one, dated. {i}Snowed. Swept.{/}",
+      things = {
+        { name = "the page for St Bruno's day, eleven years ago", description = "{i}Did not snow. Did not sweep. Sat on the wall. There is a valley down there. I had forgotten the colour.{/} It is the only page in the book with more than two words, and the corner is soft from being turned to." },
+      } },
+    { name = "the listening horn",
+      description = "A brass trumpet as long as a man, set into the outer wall with its bell to the weather and its small end at a stool. It was put in by a brother who missed birdsong. It gathers whatever is said out of doors within a mile.",
+      actions = {
+        { "Sit and listen", say "Wind. A goat bell. The glacier, creaking, like a ship. And then, very faint, from above, where nothing should be: a woman's voice, calling a name, in the tone of somebody whose child is late for tea. You look up at the vault. There is only the mountain over you. The mountain, and whatever is over that." },
+      } },
+    { name = "a shelf of answers",
+      description = "A short shelf, set apart. When a brother dies, his book of unspoken things is read by the rest of the house, once, and anyone who was spoken of in it may write a reply. The replies are kept here. Most are a line.",
+      things = {
+        { name = "a reply", description = "{i}I knew. I always knew. I should have liked to be told.{/}" },
+        { name = "another", description = "{i}It was not your soup. It was Brother Cellarer's onions. I am sorry you carried it thirty years.{/}" },
+        { name = "a long one", description = "Eleven pages, close written, in answer to four words. You do not read it. You see how it ends, because it is ruled off, and the ink is blotted there, twice." },
+      } },
   },
 
   exits = {
@@ -300,6 +334,21 @@ space {
       description = "The sand ran through long ago and lies in the bottom bulb. He turned it at the start of every sermon. The scratches on the frame show how many times he turned it again without stopping." },
     { name = "the silence in here",
       description = "It is a different kind from the silence outside. Out in the courtyard forty men are not saying something. In here one man finally is not, and meant it." },
+    { name = "the worn floor",
+      description = "From the bed to the window, four paces, a track in the boards a finger deep. He talked for forty years and he did it walking. After the jar, the track gets no deeper, and a second one begins: from the bed to the desk, short, and worn by a chair.",
+      actions = {
+        { "Walk his four paces", say "Bed to window. Window to bed. On the third turn you find that you have started to explain something to nobody, with gestures. It is the room. It was shaped by a man who could not stop, and it has kept the knack." },
+      } },
+    { name = "a shelf of throat sweets",
+      description = "Forty tins, one a year, of the monastery's own lozenges, every one empty. The forty-first is full, and has never been opened. The seal is his.",
+      things = {
+        { name = "the forty-first tin", description = "You shake it. They are all there. From the day of the jar he never needed one. He kept the tin on the shelf where he could see it, the way a man who has given up drink will keep one bottle." },
+      } },
+    { name = "what he could see",
+      description = "From the window: the drop, the valley, and across the valley the next mountain along. From the desk, sitting, you see only sky. There is a pencil line on the window frame, at the height of a seated man's eye, and an arrow pointing up and a little east.",
+      things = {
+        { name = "a note by the arrow", description = "In his hand, from the silent years, very small. {i}There is something up there on clear days. It does not move with the clouds. I have not mentioned it to anyone. Naturally.{/}" },
+      } },
   },
 
   exits = {

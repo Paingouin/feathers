@@ -97,6 +97,24 @@ space {
       actions = {
         { "Mention the crumb", say "His eyes close briefly. \"I have a wife and four children,\" he says, without moving his lips. You brush it off for him. You are friends for life." },
       } },
+
+    { name = "the bedside shelf",
+      description = "Within reach of the pillow. A king may read what he likes, and these are what he likes.",
+      things = {
+        { name = "a seed catalogue", description = "This year's, with turned corners. Whole pages have been marked in pencil. One marrow has a ring round it and the word {i}!!{/}" },
+        { name = "the Mirror of Princes", description = "A treatise on kingship, given at his coronation. The spine is uncracked. It is the right thickness for the leg of the bed, and has been tried there." },
+        { name = "a history of drains", description = "A second copy. The first, by the bookplate, was lent to someone below." },
+      } },
+    { name = "the royal slippers",
+      description = "Under the edge of the bed, side by side: velvet, embroidered with lions. There is earth on the soles. The Groom of the Bedchamber brushes it off every morning and has never once asked.",
+      actions = {
+        { "Look at the soles", say "Good dark loam, and a pea stick. The Groom takes the slippers out of your hands without a word, and puts them back exactly as they were, and stands between you and them." },
+      } },
+    { name = "the royal bath",
+      description = "Copper, on lion's feet, behind a screen. It is filled every evening by six footmen with forty cans, and emptied every morning by the same six, unused.",
+      things = {
+        { name = "a toy boat", description = "Wooden, with a paper sail, in the soap dish. So it is not always unused." },
+      } },
   },
 
   exits = {
@@ -197,6 +215,23 @@ space {
         { "Look through the spyhole", say "Lord Peverell, folding a shirt. He looks straight at the knot, and inclines his head half an inch. He has always known where the hole was. One hands the shirt." },
       } },
     candle { name = "the lamp", description = "A single oil lamp on a bracket, trimmed and full. Somebody keeps it so, and it is not the household." },
+
+    { name = "a pair of gardening boots",
+      description = "Behind the chair, where a visitor would not see them. Hobnailed, cracked across the toes, older than the reign. They were his father's, who never gardened, and who kept them here, you now think, because he would have liked to.",
+      actions = {
+        { "Look inside one", say "A paper, folded small, pushed down into the toe. {i}When you are King, plant something. I never dared. H. III.{/} It has been read, by the creases, about once a year." },
+      } },
+    { name = "a jar of humbugs",
+      description = "On the shelf, half full, with the lid off. Striped. Each king has refilled it and none has ever finished it: there is a layer at the bottom that has fused into a single ancestral humbug, which is by now part of the regalia.",
+      actions = {
+        { "Take one from the top", say "Peppermint, and fresh. You feel like a thief for as long as it takes to notice the card propped against the jar: {i}Help yourself. That is what they are for. H.{/}" },
+      } },
+    { name = "a drawer of letters not sent",
+      description = "In the little table. Four reigns of them, tied in ribbon by reign.",
+      things = {
+        { name = "the top letter", description = "{i}To the Council. Gentlemen, I have been thinking, and I wonder whether we might simply{/} and there it stops. All of them stop about there." },
+        { name = "the oldest bundle", description = "The ribbon has rotted. The top sheet has one line, in a hand you cannot date: {i}To whoever was here before us. Thank you for the hill.{/} It was never sent. Nobody knew where to." },
+      } },
   },
 
   exits = {
@@ -311,6 +346,26 @@ space {
       description = "Grey, thin, serious. She is employed against mice, who eat charters. She sits on the Great Charter itself, on the glass, where the lamp is warmest. Liberty has to be kept by somebody." },
     { name = "a bookworm",
       description = "In the binding of a volume of tax returns, working steadily through the reign of the king with the fish. It has eaten a hole through every page in the same place. Nobody will ever know now what he paid for it." },
+
+    { name = "a drawer marked 'Dire Peril'",
+      description = "Low down in the wall of drawers, swollen with damp, and fuller than its neighbours.",
+      things = {
+        { name = "the licence",
+          description = "{i}Licence to the Corporation of Aldmoor to construct and operate one Dungeon, for the encouragement of Adventurers, beneath the said town. Granted.{/} A second stamp across it: {i}LAPSED FOR WANT OF OPENING.{/}" },
+        { name = "a bundle of small letters",
+          description = "A hundred and twenty of them, one for each quarter day for thirty years, all in the same bony capitals, all headed {i}RE: WAGES (GUARD, SKELETAL).{/} They smell of drain. Each has been docketed, entered and filed, with every courtesy, unread.",
+          actions = {
+            { "Read the top one", say "{i}DEAR SIRS. FURTHER TO MINE OF LAST QUARTER. I REMAIN ON STRIKE. I REMAIN, ALSO, YOURS FAITHFULLY, N. CLATTER. P.S. THE MIMIC SENDS ITS REGARDS AND THE ACCOUNTS, WHICH BALANCE.{/} You put it back on the pile. Master Fenn, without turning round, dockets the fact that it has been consulted." },
+          } },
+      } },
+    { name = "an inkwell the size of a bucket",
+      description = "Stoneware, on the floor by the Keeper's desk, with a ladle. He gets through it in a year. The ink is made in the castle from oak galls and soot, to a recipe that is itself filed, somewhere, in ink that has faded." },
+    { name = "a shelf of seals",
+      description = "Wax impressions on a board, one for each sovereign, going back.",
+      things = {
+        { name = "the present King's", description = "A lion. If you look closely the lion is holding something. It was meant to be a sceptre. The engraver had met the King, and it is a carrot." },
+        { name = "the first one on the board", description = "Not wax. A disc of baked clay, with no lion at all: a single curved line, pressed in with something that was not a tool. The Keeper has it labelled {i}prior{/}." },
+      } },
   },
 
   exits = {

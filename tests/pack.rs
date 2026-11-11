@@ -509,3 +509,31 @@ fn an_exit_runs_its_effects_on_the_way_through() {
     assert_eq!(said(&events), ["The wall swings out."]);
     thing(&game.view(), "the wall");
 }
+
+#[test]
+fn all_and_any_take_a_list_or_separate_conditions() {
+    let content = space(
+        "a",
+        r#"things = {
+            { name = "both listed", description = "d", visible_if = all { flag "x", flag "y" } },
+            { name = "both given", description = "d", visible_if = all(flag "x", flag "y") },
+            { name = "either listed", description = "d", visible_if = any { flag "x", flag "y" } },
+            { name = "either given", description = "d", visible_if = any(flag "x", flag "y") },
+            { name = "the lever", description = "d", actions = { { "Pull", set "x" } } },
+        }"#,
+    );
+    let fixture = pack_with(&content);
+    let (mut game, _) = play(&fixture);
+    let names = |game: &Game<LuaScripts>| -> Vec<String> {
+        let view = game.view();
+        view.space
+            .children
+            .iter()
+            .map(|node| plain_text(&node.name))
+            .collect()
+    };
+    assert_eq!(names(&game), ["the lever"]);
+    let lever = thing(&game.view(), "the lever").clone();
+    act(&mut game, &lever, "Pull");
+    assert_eq!(names(&game), ["either listed", "either given", "the lever"]);
+}

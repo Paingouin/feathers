@@ -86,6 +86,21 @@ space {
       } },
     { name = "the round wall",
       description = "The room has no corners. If you put a hand on the plaster it is cold and slightly damp, and you understand that you are standing in a well shaft with a floor put in. The house was built round it, to hide it, by the first Pimbleton who went down." },
+    { name = "a specimen cabinet",
+      description = "Twelve shallow drawers, each labelled in a neat upright hand. It is the one piece of furniture in the room that has been dusted.",
+      things = {
+        { name = "the top drawer", description = "River mud, in corked tubes, each with a date and a depth. Somebody has been taking the Undertown's pulse for years." },
+        { name = "a drawer of keys", description = "Forty, tagged. {i}Sluice. Vault (theirs). Vault (ours). Grate, market.{/} One tag is blank, and that key is the brightest." },
+        { name = "the bottom drawer", description = "It sticks. Inside, wrapped in a silk handkerchief: a child's wooden boat, with a paper sail. Not a specimen. It has been kept a long time by somebody who would not like you to have seen it." },
+      },
+      actions = {
+        { "Try the sticking drawer", say "It gives all at once, as they do. You put the little boat back exactly as it was, and smooth the handkerchief, and shut the drawer with more care than you have shown anything in this house." },
+      } },
+    { name = "a clock that is wrong",
+      description = "A bracket clock on the shelf, ticking, and four hours out. Then you see the second dial under the first, with one hand, marked {i}high{/} and {i}low{/}. It does not tell the time. It tells the water.",
+      things = {
+        { name = "the second dial", description = "The hand points nearer {i}low{/} than the scale was made for. A pencil mark on the brass shows where low used to be." },
+      } },
   },
 
   exits = {

@@ -79,6 +79,17 @@ space {
       things = {
         { name = "a dropped glove", description = "Lady's, kid leather, embroidered with a small coronet. Whoever comes through that wall on Fridays does not always send servants." },
       } },
+
+    { name = "a row of hooks in the ceiling",
+      description = "Iron, in the main beam, for hams. There is one ham, and three hooks polished by something else: rope. The barrels did not come down the trapdoor stairs. They are too wide. They came in some other way, lowered, and nobody has ever asked the barman how." },
+    { name = "the cellar steps",
+      description = "Eight, of stone, from the trapdoor to the floor. Each has a dip in it.",
+      things = {
+        { name = "the third step", description = "The dip is deeper on this one, and there is a groove beside it in the wall, at hand height. Somebody, coming down in the dark with a full jug, has steadied himself here every night for forty years. The groove fits four fingers." },
+        { name = "a candle stub in a niche", description = "A finger of tallow in a hollow of the wall, with the soot of a thousand others above it in a black tongue. This is the one that does not relight itself. It is kept for emergencies, and is very proud." },
+      } },
+    { name = "a damp patch shaped like a map",
+      description = "On the old stone of the east wall: a stain with a coastline, two rivers and something like mountains. The smugglers used to plan by it, for a joke. Then one of them said that it was a fair likeness of the road to Saltwick, and after that they stopped joking and started using it." },
   },
 
   exits = {

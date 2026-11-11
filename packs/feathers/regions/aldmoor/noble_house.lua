@@ -100,6 +100,26 @@ space {
       description = "In a brass tub, by the harpsichord. You are not the first to hide behind it. There is a glass down there, and a half-eaten vol-au-vent, and a dance card with every dance crossed out." },
     { name = "the carpet",
       description = "Woven with the family tree, root to branch. Guests walk on the early generations to get to the drinks. Near the fireplace one name has been cut out and a rug put over the hole." },
+    { name = "the curio cabinet",
+      description = "Glass fronted, new, and lit by its own candles. The Baroness has gone in for the exotic. Each piece has a card in her own hand, and each card is longer than the last.",
+      things = {
+        { name = "a jungle idol", description = "Squat, scowling, with its tongue out. {i}Ancient. A God of Wrath, taken from a Lost Temple at fearful Cost.{/} It smells very faintly of tea. In certain lights it smiles, and she has sent one back for that already." },
+        { name = "a shrunken head", description = "With stitched lips and a great deal of hair. {i}A Cannibal Chief.{/} The guests are thrilled, and stand well back. It is a coconut. The hair is goat. Somebody far away has painted on a small frown, and enjoyed doing it." },
+        { name = "a cursed mask", description = "Long, black, with shell eyes. {i}Curse: Unspeakable (the best grade).{/} The butler dusts it with his eyes shut, to be on the safe side, and has broken two vases doing so." },
+      },
+      actions = {
+        { "Admire the collection", say "You say that it is remarkable. \"Every piece has a history,\" says the Baroness. That is true. You have met the history. He comes on Wednesdays, and laughs while he works." },
+      } },
+    { name = "a pianoforte tuner",
+      description = "Under the lid of the instrument in the corner with only his legs showing. He has been there since luncheon. Every so often one note sounds, eleven times, each time a very little different.",
+      actions = {
+        { "Ask how it is going", say "A voice from inside the case: \"She wants it to sound like the Duchess's.\" A note. \"The Duchess's is out of tune.\" A note. \"I am putting it out of tune, sir, to order, by ear. It is the hardest work I have ever done.\"" },
+      } },
+    { name = "the card table",
+      description = "Green baize, four chairs, and a game of whist left standing at the second trick when the vol-au-vents came in.",
+      things = {
+        { name = "the Baron's hand", description = "Face down, with a wine glass on it so that it cannot be looked at. You look at the glass instead. The cards are reflected in the base. So that is how the Baroness does it." },
+      } },
   },
 
   exits = {

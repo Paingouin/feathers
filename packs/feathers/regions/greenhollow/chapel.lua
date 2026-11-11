@@ -107,6 +107,28 @@ space {
       } },
     { name = "the south door",
       description = "Low, studded, and open onto green light and leaning stones." },
+
+    { name = "the poor box",
+      description = "Oak, iron bound, with three locks and a slot. One key is with the priest, one with the sexton, one with the oldest widow. It is opened at midwinter, with all three present, and found to contain what the three of them put in.",
+      actions = {
+        { "Shake it", say "Something slides. One coin, and a button. The button has been in there longer than the priest, and is counted each year as an asset." },
+      } },
+    { name = "the parish banner",
+      description = "Leaning in the corner on its pole: Saint Wobble, in wool, on one leg, on a field of green. It is carried round the fields each spring to bless the barley.",
+      things = {
+        { name = "the stitching", description = "Forty women, over sixty years, each doing the part she was best at. Her face is very fine. Her standing foot was done by a girl of nine and is the size of a loaf. It is thought to steady her." },
+        { name = "the fringe", description = "Gold thread, once. The goose had the lower left corner in the procession of the wet year. It was not mended. It is carried that side to the hedge." },
+      } },
+    { name = "the bier",
+      description = "A hand cart with two wheels and a black cloth, kept at the back by the font, since there is nowhere else. Babies go past it to be christened. Father Dunstable says that this is theology, and that he could not have arranged it better.",
+      things = {
+        { name = "the black cloth", description = "Velvet, worn brown at the corners where the bearers take hold. Moths have been at it. The holes let the light through in small stars, and nobody has had the heart to darn the only cheerful thing about it." },
+      } },
+    { name = "a brass in the floor",
+      description = "Set in the aisle, worn nearly flat by feet: a knight, lying down, with his hands together and a dog at his heels. The name is gone. The dog has been polished bright, by children, who are let stroke it in the sermon if they are good.",
+      actions = {
+        { "Stroke the dog", say "Cold, and smooth as a coin. Its ears are nearly rubbed away. Four hundred years of good children, and it has not once got up." },
+      } },
   },
 
   exits = {

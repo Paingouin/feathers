@@ -76,6 +76,23 @@ space {
       description = "Tied in a bow, in the Mere colours. It marks a duel that was to be fought here at dawn. Both parties sent their apologies and a servant." },
     { name = "the view up the hill",
       description = "At the top of the Row the houses stop, and there is the castle: three towers upright, one not, and a thin dark line coming down from the gate that you take for a wall until part of it sits down." },
+    { name = "a delivery at the area steps",
+      description = "A handcart with sacking on the wheels, and a large mild man in a jersey carrying a crate down to a kitchen door. He touches his cap to you. It is Dob, or somebody very like him, and it is not vinegar.",
+      things = {
+        { name = "the crate", description = "{i}CURIOS{/}, by the stencil. A footman signs for it without reading, as footmen do for anything that comes to the right door." },
+        { name = "the handcart", description = "It smells of tar and weed. One word is carved into the handle, and has been half planed off." },
+      },
+      actions = {
+        { "Ask what he is delivering", say "\"Antiquities,\" says the large man, comfortably. \"From the jungle. Very old. Mind your fingers, some of them are still tacky.\"" },
+      } },
+    { name = "a governess with two children",
+      description = "In grey, at a brisk walk, with a boy and a girl in tow, both of whom are being improved. She names each house as they pass and the virtue for which it is known. Several of the virtues give her trouble.",
+      things = {
+        { name = "the boy", description = "He has a frog in his pocket. You can tell by the pocket." },
+        { name = "the girl", description = "She has seen the frog. She is weighing her options, and the price is going up with every house." },
+      } },
+    { name = "the boot scrapers",
+      description = "One by every door, iron, each in the family crest: a lion, a boar, a swan, and at number six a plain hedgehog, which is the oldest family of the lot and has never needed to say so." },
   },
 
   exits = {

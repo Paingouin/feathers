@@ -108,6 +108,30 @@ space {
     { name = "the iron-bound door",
       visible_if = flag "gr_office_open",
       description = "Set flush in the gallery wall, with one rune on it and the key in the lock. It opens inward. There is lamplight behind it, which is not possible, and which you put down to your own lantern until you have checked." },
+    { name = "the snap room",
+      description = "A chamber off the gallery with a stone table and benches, where the shift ate. Each place at the table has a shallow dish worn in the stone by a thousand years of one elbow.",
+      things = {
+        { name = "the table", description = "One slab, ten paces long. Down the middle runs a groove with a slight fall, for passing the salt. The salt is still at the low end, in a stone pig, where the last man let it run." },
+        { name = "a set of dominoes", description = "Slate, laid out mid game. The dwarf game has nine suits and is played in silence. One player was a move from winning. He has put a pebble on his last tile, to hold his place." },
+        { name = "a kettle hook", description = "Over a fire pit no bigger than a hat. The ash is in a neat cone. Somebody raked it before they went, and banked it, in case." },
+        { name = "graffiti, small", description = "Under the bench, where a bored apprentice would sit: {i}Foreman has a face like a wet shift.{/} Beside it, in the same hand, much later and more carefully: {i}He was right about the props though.{/}" },
+      },
+      actions = {
+        { "Sit at a place", say "You sit, and put your elbow where the dish is. It is too low for you and too wide. Even so you are, for a moment, number seven on the afternoon shift, with your snap tin open and nine hours behind you. The stone is not cold. It remembers being sat at." },
+      } },
+    { name = "a test bore",
+      description = "In the gallery wall, a round hole the width of a fist, driven in level for the length of a drill rod. They did it every fifty paces to see what was behind. This one has a wooden plug in it and a chalked rune.",
+      things = {
+        { name = "the rune", description = "The dwarf for {i}hollow{/}. Under it, smaller, a second rune you have seen on the hammer in the office: {i}enough{/}. They knew a long time before the bottom level that there was something in this mountain that was not mountain." },
+      },
+      actions = {
+        { "Put your ear to the plug", say "Stone, mostly. And behind the stone, faint, the note the mountain makes, but cleaner here, as a voice is cleaner through a door than through a wall. It is going up. You had not noticed that from outside. Very slowly, over years, the note is going up." },
+      } },
+    { name = "the pit pony's bell",
+      description = "Hung on a nail by the stable: a small brass bell on a leather strap, polished. The ponies were led out first, on the last day, before the dwarves. There is a ribbon on the strap from some fair. She won something.",
+      actions = {
+        { "Ring it", say "A bright, short sound. From the stable comes nothing at all, and you had half expected hooves. The dwarves took the ponies with them down the deep road, every one, and they say in Far Enough that the bell's owner lived to thirty and was buried with honours and a carrot." },
+      } },
   },
 
   exits = {
@@ -205,6 +229,26 @@ space {
       description = "There is a window. It is a square frame with four panes, set in the rock wall, with a sill. Behind the glass is rock. He had it put in so that there would be somewhere to look when he was thinking.",
       things = {
         { name = "the sill", description = "A pot, with earth in it, and a stick, and a label. Whatever he was trying to grow by lamplight a thousand feet down, the label says, in the common tongue, with what you can only call hope: {i}daisy{/}." },
+      } },
+    { name = "the speaking tubes",
+      description = "A row of brass mouthpieces on the wall beside the desk, each with a whistle plug and a label: {i}CAGE. NO. 1. NO. 2. NO. 3. BOTTOM.{/} He could talk to the whole mine without leaving his stool.",
+      things = {
+        { name = "the tube marked BOTTOM", description = "The plug is out, and hangs on its chain. The others are all stopped. He was listening to this one when he went. He left it open." },
+      },
+      actions = {
+        { "Listen at BOTTOM", say "You put your ear to the brass. A hush, like a shell. Then, a long way down the pipe, wind over grass, and something small and regular that you take a while to place. It is washing, flapping on a line. You take your ear away and look at the tube for some time." },
+        { "Blow the whistle for the cage", say "You put the plug in and blow. Far off in the dark a whistle answers, by itself, on a breath of air nobody sent. The mine has passed the message on. There is nobody to receive it, and it has been done properly all the same." },
+      } },
+    { name = "a row of hats",
+      description = "On a shelf over the door: six hard hats of boiled leather, each with a brass plate. The foremen of the Longshift, in order. The first is the size of a cauldron. They have been getting smaller.",
+      things = {
+        { name = "the first hat", description = "The plate says only {i}FIRST{/}. There is a dent in the crown the shape of a hammer's face, from the inside. He tested everything on himself before he let it near his crew." },
+        { name = "the last hat", description = "The plate has a name, and under it, scratched with a nail on the last day: {i}Brought them all up. Every one.{/} It is the only boast in the room." },
+      } },
+    { name = "the clock",
+      description = "A dwarf clock, iron, weight driven, on the wall behind the stool. It has one hand. It does not tell the hour. It is marked in shifts, three to the day, and it has stopped a little way into the second.",
+      actions = {
+        { "Wind it", say "You pull the chain. The weight comes up, the escapement takes hold, and the single hand goes forward one tick. In the gallery outside a lamp you had not lit burns up, as it would for a shift coming on. You stand very still until the clock, finding nobody at the face, stops again." },
       } },
   },
 

@@ -55,6 +55,18 @@ space {
       description = "Framed, by the hatch. {i}Tuition. Robes. Wand. Valet's board. Breakages (magical): nil, to date.{/}" },
     { name = "the ivy",
       description = "Trained over three hundred years into the arms of the nine founding families. In one corner it has got away and is growing as plain ivy, and looks the better for it." },
+    { name = "the pigeonholes",
+      description = "Behind the porter's counter: a rack of two hundred, one for each Fellow, for letters. Most are stuffed. One, low down on the left, has forty years of post in it, packed as tight as a brick.",
+      things = {
+        { name = "the full one", description = "The label reads {i}Mag. I. NULL, Occlusion.{/} Bills, journals, a wedding invitation gone brown. On top, in the porter's hand: {i}Not seen since the Michaelmas of the old Chancellor. Rooms kept. Nobody can find the door.{/}" },
+        { name = "a parcel from abroad", description = "For the Faculty of Antiquity: six heads, assorted. The packing has come open at one corner. There is hair. The porter has put it on the highest shelf with a bucket over it." },
+        { name = "a crate of printed labels", description = "Ten thousand, by the invoice, for a Professor Vole-Brandish, to be sent on by sea. Each reads {i}Brandish's{/} and then a blank. The porter has weighed the crate on the luggage scale and calls it the heaviest piece of modesty to pass the gate." },
+      },
+      actions = {
+        { "Ask about Magister Null", say "\"Went invisible,\" says the porter. \"Forty years back. To get on with something. He was the last of them who could do any of it, mind. Porter's son. My uncle's lad.\" He taps the full pigeonhole. \"I keep his post. He'll want it. He was always waiting on a letter, that one, for all he said.\"" },
+      } },
+    { name = "the porter's cat",
+      description = "A tortoiseshell, in the key cupboard, on the keys. Any key that is wanted is under her. The Collegium has two hundred doors and she has slept on the means to all of them." },
   },
 
   exits = {
@@ -134,6 +146,21 @@ space {
       } },
     { name = "the tower",
       description = "At the north corner, with a copper dome. The light in the top window is red. It is the only window in the Collegium that is lit after ten." },
+    { name = "the Faculty boards",
+      description = "A row of black boards under the cloister, one for each Faculty, with gilt lettering and the term's business chalked up.",
+      things = {
+        { name = "Natural Philosophy", description = "{i}The Brandish Expedition to the Sweltering enters its third year. 4,000 species named. Professor Vole-Brandish regrets that he cannot return until the last has been. Dr Mimms dissents (see minority report, 80 pp.).{/}" },
+        { name = "Antiquity", description = "{i}A lecture: On the Sacred Script of the Jungle Idols. With lantern slides.{/} A sketch of the script is pinned beneath. It looks a good deal like the track of a hen across wet clay." },
+        { name = "Occlusion", description = "The board is blank, and has been wiped so often that the black is grey. A chalk hangs on a string. Under the board, somebody has pencilled on the stone: {i}Reader absent. Or present. Nobody can tell.{/}" },
+      },
+      actions = {
+        { "Read the minority report", say "It is nailed up, all eighty pages, by one corner. You lift a few. {i}He has not left the camp. Every specimen was taken by the student, Podge. The river people have names for all of it already.{/} Further on, in darker ink: {i}The temple is the wrong age. I do not mean that it is old.{/} Then a page that has been torn out, neatly, along a ruler." },
+      } },
+    { name = "a croquet game",
+      description = "Four young gentlemen on the forbidden lawn, in gowns, with mallets. They are enchanting the balls to go through the hoops. The balls are going where they were hit. The young gentlemen put this down to interference.",
+      actions = {
+        { "Watch a stroke", say "One of them points his mallet, says a long word, and strikes. The ball rolls four feet and stops against a daisy. \"Wind,\" he says. There is none. The gardener, on his knees at the border, moves the daisy an inch with his trowel, and the ball rolls on through." },
+      } },
   },
 
   exits = {
@@ -202,6 +229,21 @@ space {
       } },
     { name = "the minstrels' gallery",
       description = "Over the door. A string quartet plays through dinner. If you watch, the cellist has gone for a smoke. The cello has not noticed." },
+    { name = "the buttery hatch",
+      description = "A serving hatch in the panelling with a shelf, a slate and a butler. Ale is drawn here for the gentlemen and put down against their names. The slate goes back four generations in some families and has never been wiped.",
+      things = {
+        { name = "the buttery slate", description = "{i}Ld. Quillon: 1 pt. His father: 4,000 pts, unpaid. His grandfather: see cellar wall.{/}" },
+        { name = "the small beer", description = "For servants, in a plain jug. It is, by some oversight of the brewer's, a great deal the better of the two. The servants have not drawn attention to it." },
+      },
+      actions = {
+        { "Ask for a pint", say "\"Name?\" says the butler. You give it. He runs a finger down the slate, for four generations, and does not find you. \"Then it's a penny,\" he says, shocked. Nobody has paid at this hatch since the Founder. He has to send out for change." },
+      } },
+    { name = "the trophy case",
+      description = "Glass, by the door, holding what the Collegium is proudest of.",
+      things = {
+        { name = "the Chancellor's Cup for Applied Magic", description = "Silver, enormous, and engraved with the names of the winners. There are none. It has been awarded to nobody, annually, with a dinner." },
+        { name = "a jar with a label", description = "{i}Brandish's Invisible Lizard. Presented by the Expedition.{/} An empty jar. A scullery maid dusts it each morning and gives it a fly, she says, which is always gone by evening." },
+      } },
   },
 
   exits = {

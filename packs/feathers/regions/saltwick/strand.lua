@@ -159,6 +159,33 @@ space {
         { name = "the sea holly", description = "Blue-grey, spiked, with flowers like small thistles. It has come up exactly along the line of the keel, as if the boat had been planted." },
         { name = "a rowlock", description = "Bronze, still in its socket, bright where your thumb rubs it. The last thing on her that would still do its work." },
       } },
+    { name = "the singing sand",
+      wonder = true,
+      description = "A patch below the dunes, no bigger than a threshing floor, where the sand is whiter and very dry. Walk on it and it sings: one note, under your heel, like a wet finger on a glass. {magic}Each person gets a different note, and it is always the same one for that person, from a child to a grandmother.{/} Saltwick mothers bring a baby down in its first week, stand it on the sand, and listen, and nod, and never say what they heard.",
+      things = {
+        { name = "small bare footprints", description = "A row of them, each a thumb long, and beside them a woman's, deep, where she stood holding the weight. The wind has not filled them. On this patch it never does until the next child is brought." },
+      },
+      actions = {
+        { "Walk on it", say "You step out. It sings under you: a middling sort of note, a little flat, quite steady. You try stamping, to get a better one. Same note. You walk the whole patch. It is yours, apparently, and it is not grand, but it does not waver, and you could pick it out of a choir." },
+      } },
+    { name = "a bathing machine",
+      description = "A hut on four cart wheels, striped blue and white, standing in six inches of water with its door facing the sea. It was brought from Aldmoor by a baroness who had read that sea bathing was the thing. She went in. The horse was taken off. That was some time ago.",
+      things = {
+        { name = "the door", description = "Bolted on the inside. A smell of lavender comes through the keyhole, and the sound of a page being turned." },
+        { name = "a tray on the step", description = "Tea, a boiled egg, a folded newspaper. The beachcomber brings it at eight and takes away yesterday's. The egg is always eaten. The newspaper comes back with the crossword done, in ink." },
+      },
+      actions = {
+        { "Knock", say "A pause. \"Is it warm yet?\" says a voice of great refinement. You look at the sea. You say that it is not. \"Then I shall wait,\" says the voice. The page turns." },
+      } },
+    { name = "a message in a bottle",
+      description = "Green glass, corked, rolling at the edge of the foam. There is paper in it.",
+      things = {
+        { name = "the paper", description = "You work it out with a twig. Good paper, ruled, in a clerk's hand. {i}To whom it may concern. This bottle is the property of the Royal Office of Tides and has been released for the purpose of measuring a current. Kindly return it to the sea, having first entered below the place and the date.{/}" },
+        { name = "the entries below", description = "Forty, in forty hands. Saltwick. Saltwick. Saltwick. {i}An island, I think.{/} Saltwick. {i}I do not know where this is but it is very beautiful and I am not coming back.{/} Saltwick." },
+      },
+      actions = {
+        { "Enter the place and date, and throw it back", say "You write {i}Saltwick{/}, and the day, as near as you know it. You cork it and throw it as far as you can, which is as far as the second wave. It bobs there, thinking it over. The current that the Tide Office is measuring appears to be a small one." },
+      } },
   },
 
   exits = {
@@ -271,6 +298,26 @@ space {
         { "Jump on it", when = no(flag "sw_stateroom"), set "sw_stateroom", fx "shake",
           say "You stand on the owner's door and jump. Nothing. You jump again. The captain, at his table on the wall, seems to be watching, and you feel he would not have sanctioned it. On the third jump the frame lets go and the whole door drops away under you. You catch the sill by your elbows, which is not in the ballads either." },
       } },
+    { name = "the ship's clock",
+      description = "A brass bulkhead clock, screwed to what is now the ceiling, green with a hundred years of sea. The glass is whole. Behind it the hands stand at nineteen minutes past three.",
+      things = {
+        { name = "the maker's name", description = "On the dial, under the weed: {i}FUSEE, TICKOVER{/}. And below, very small: {i}set four minutes behind at owner's request. He said he wished to arrive before he was expected.{/}" },
+        { name = "a limpet on the winding hole", description = "It has sat there so long that the brass has taken its shape. If you prised it off, the clock would have a keyhole the shape of a limpet, and you would need a limpet to wind it." },
+      },
+      actions = {
+        { "Tap the glass", say "The second hand moves. One second. Then it stops again, exactly where it was, as if it had only wanted to show you that it could." },
+      } },
+    { name = "the passenger list",
+      description = "A board screwed to the bulkhead with brass slots for name cards. The cards are pulp. One slot was engraved, not carded, and can still be read.",
+      things = {
+        { name = "the engraved slot", description = "{i}STATEROOM: THE OWNER.{/} No name. He did not think that anybody aboard would need telling." },
+        { name = "the last slot", description = "{i}STEERAGE, BERTH 40.{/} Scratched into the brass with a nail, where the card would go: {i}Wilf{/}. And then, scratched out again, by the same nail, and under it: {i}got off at the harbour mouth, did not like the look of it.{/}" },
+      } },
+    { name = "a crate of sea boots",
+      description = "Burst open in the low corner: forty pairs of new boots, tallowed, laced together by the pair, never worn. Hermit crabs have taken every left one.",
+      actions = {
+        { "Try a right one", say "It fits. It fits better than your own. You stand in the hold of a wreck with one good boot on, working out what a single boot is worth to a man who came with two bad ones. A hermit crab watches from the matching left with its claws folded. You put the boot back." },
+      } },
   },
 
   exits = {
@@ -372,6 +419,19 @@ space {
       description = "Turkey red, wall to wall, nailed down, and therefore now a wall. Things have slid down it over the years and left tracks in the pile: a chair, a footstool, a spittoon.",
       things = {
         { name = "the spittoon", description = "Brass, at the bottom of its track, on its side. Clean. Nobody ever used this room for anything. It is a hundred years old and it is still new." },
+      } },
+    { name = "the speaking tube",
+      description = "A silver mouthpiece on a hose beside the bed, labelled {i}BRIDGE{/}. It runs up through the wall, which is the ceiling now, to a wheelhouse that came off on the rocks a century ago.",
+      actions = {
+        { "Blow down it", say "A whistle sounds at the far end, which is in the open air somewhere, or in the sea. You put your ear to it. Gulls. Water. Then, close, the puzzled breathing of a seal who has had a whistle go off beside him." },
+      } },
+    { name = "the bell pull",
+      description = "A tasselled rope of crimson silk, for summoning the steward. It hangs sideways across the room, since down is somewhere else now, and the tassel points at the door.",
+      things = {
+        { name = "the tassel", description = "Gold thread, and inside it, when you squeeze, something hard. The owner kept a spare key to everything he had. This one is for a clock." },
+      },
+      actions = {
+        { "Pull it", say "Far off in the wreck a bell goes, small and wet. Nothing comes. You wait a little, out of manners, and because in that portrait he has the look of a man who expects to be waited for." },
       } },
   },
 

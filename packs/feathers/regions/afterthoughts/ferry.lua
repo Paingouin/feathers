@@ -1,0 +1,322 @@
+-- The ferry out, and the landing on Muckle Afterthought.
+
+space {
+  id = "is_ferry",
+  region = "afterthoughts",
+  name = "The Ferry",
+  description = "An open boat, twenty feet of tarred larch with a brown sail and a name board reading {b}PRESENTLY{/}. This is the Afterthoughts ferry. It leaves when it is full, or when the ferryman has finished his sentence, and it has never yet been full.",
+  variants = {
+    { when = flag "tide_out",
+      description = "An open boat, twenty feet of tarred larch with a brown sail and a name board reading {b}PRESENTLY{/}. With the harbour dry, the ferryman has walked her down the mud on rollers to where the water went, and is cross about it in a contented way. Out past the mole the sea is as deep as ever. Nobody signed for that part." },
+  },
+  palette = { bg = "#07121a", text = "#c8d4d8", dim = "#587080", accent = "#8fd0d8", border = "#274656" },
+  ambience = {
+    fog { color = "#12242e", speed = 0.5, strength = 0.4 },
+    rain { glyphs = "·˙", color = "#4a6c7c", rate = 0.2, speed = 0.6 },
+  },
+  backdrop = {
+    "            │╲                 ",
+    "            │ ╲                ",
+    "            │  ╲               ",
+    "      ▄▄▄▄▄▄█▄▄▄▄▄▄▄           ",
+    "≈≈≈≈≈≈≈▀▀▀▀▀▀▀▀▀▀▀▀≈≈≈≈≈≈≈≈≈≈≈≈",
+  },
+
+  things = {
+    { name = "the ferryman",
+      icon = "☻",
+      description = "Dod Larkin, sixty years on this crossing, man and boy and boat. He sits in the stern with the tiller under his arm and talks to the sea, the sail and you in the same voice. The whole ferry service is this one man and his opinion.",
+      variants = {
+        { when = flag "is_fare_paid",
+          description = "Dod Larkin, sixty years on this crossing. He sits in the stern with the tiller under his arm. Now that you have agreed with him he regards you as a person of sense, and tells you things." },
+      },
+      things = {
+        { name = "his opinion",
+          description = "That Saltwick is an island like any other, only larger and without the honesty to admit it. He has held this for sixty years. It is, he says, the mainland that is cut off.",
+          actions = {
+            { "Agree with him", when = no(flag "is_fare_paid"), set "is_fare_paid",
+              say "\"There,\" he says, to the sail. \"Told you.\" He does not ask for money. The fare on this boat has always been one agreement, single, and you have paid it. A return is the same again, he says, coming back, when you will have seen for yourself." },
+            { "Agree with him", say "\"You said. I heard. It was well said.\" He looks at Saltwick over his shoulder, small and grey. \"Cut off,\" he says, with pity." },
+            { "Disagree with him", say "He puts the tiller over a point. The boat begins to go, quite slowly, in a circle. He says nothing. After the second circle you find that there is a good deal in what he says." },
+          } },
+        { name = "his cap", description = "Wool, once blue, with a herring scale stuck to the peak. The scale has been there since his wedding. He is not a man who disturbs things." },
+        { name = "his pipe", description = "Clay, short, and upside down, so the rain stays out. It has gone out. He draws on it anyway, for the company." },
+        { name = "his hands", description = "Like two crabs that have been in a fight. He steers with one finger." },
+      },
+      actions = {
+        { "Ask about the isles", say "\"Muckle's the big one. Has the kirk and the inn and all the folk. Little has the Other Light and one man who'll not thank you for calling. The Stack has the birds. Then there's rocks.\" He thinks. \"And Sometimes. When there is one.\"" },
+        { "Ask who he has carried", when = flag "is_fare_paid",
+          say "\"Everybody. Twice each, mostly.\" He taps the tally board with his heel. \"Bar one. A clerk off the quay, some years back. Grey man, tidy. Brought his own stool. Paid his agreement, went over, and I've not had him back.\" He draws on the dead pipe. \"I've kept the place for him. A boat's no good with odd numbers.\"" },
+        { "Ask when you will arrive", say "\"Presently.\" He nods at the name board, to show that it is not him saying so. It is policy." },
+      } },
+    { name = "the tally board",
+      description = "A plank by the tiller, cut with a notch for everyone carried: on the left edge, going out; on the right edge, coming home. Sixty years of notches. He runs his thumb down both sides at the end of each day to see that they match.",
+      things = {
+        { name = "the left edge", description = "Outward. Notch after notch, small and even, like the teeth of a comb." },
+        { name = "the right edge", description = "Homeward. The same, tooth for tooth, all the way down. Except in one place, where the left edge has a notch and the right edge has smooth wood, gone dark with thumbing." },
+        { name = "a new notch", description = "Fresh and pale, on the left. That is you. The right-hand side across from it is waiting." },
+      } },
+    { name = "the sail",
+      description = "A dipping lug, tanned brown with oak bark and patched with whatever was to hand.",
+      things = {
+        { name = "a patch of red flannel", description = "From a petticoat. Whose is known, and is not discussed in front of her." },
+        { name = "a patch of sacking", description = "Stencilled {i}OATS{/}. In a fresh breeze it fills out and the boat appears to be advertising." },
+        { name = "the yard", description = "A spar that comes across at head height whenever he changes his mind about the wind. There is a dent in it. It fits a forehead exactly. You keep low." },
+      } },
+    { name = "the other passengers",
+      description = "Three, with a hen, a goat, and a grandfather clock lying down.",
+      things = {
+        { name = "a woman with a hen",
+          description = "Mistress Skeat, going home from market with one hen in a basket. She took four over to sell. The other three sold. This one has been to Saltwick market eleven times and nobody will have it.",
+          things = {
+            { name = "the hen", description = "Black, with a white eye, and the calm of a creature that knows it is not for sale. It regards the sea as a bad smell." },
+          },
+          actions = {
+            { "Admire the hen", say "\"You want her?\" says Mistress Skeat, very fast. The hen looks at you. You find that you do not. \"No,\" she says. \"Nobody does. She does that.\"" },
+          } },
+        { name = "a goat",
+          description = "Tethered to a thwart, eating the tether. It is going to the islands to improve the breed. It has the look of someone who has read the letter of appointment.",
+          actions = {
+            { "Keep your coat away from it", say "Too late by a button." },
+          } },
+        { name = "a grandfather clock",
+          description = "Laid flat along the bottom boards and lashed down, with its face turned up to the sky. It is still going. Each tick comes a little late, because the pendulum has to make up its mind about which way is down.",
+          things = {
+            { name = "the clock's face", description = "Painted with a ship that rocks on painted waves as the seconds pass. Out here the ship holds still and the rest of the world does the rocking." },
+          } },
+        { name = "a boy with a parcel", description = "He is delivering it to the minister and has been told not to shake it. He holds it as if it were asleep. It is, you learn, a cake." },
+      } },
+    { name = "the mail sack",
+      description = "Canvas, with a brass lock that has never been locked, since the key is on Muckle and the sack is usually not.",
+      things = {
+        { name = "a bundle of letters", description = "Tied with net twine. Half are addressed only by first name. On the Afterthoughts that is plenty, and on some of the isles it is too much information." },
+        { name = "a seed catalogue", description = "For the schoolmistress. She orders one packet of sweet peas each year. The wind has them by June, every year, and she orders them again." },
+        { name = "a returned letter", description = "It went to the mainland and came back marked {i}NOT KNOWN{/}. It was to the King. The islanders write to him each spring about the harbour dues, and each spring he is not known." },
+      },
+      actions = {
+        { "Weigh it in your hand", say "Light. An island does not write much. Whoever you would write to is over the wall." },
+      } },
+    { name = "the wake",
+      wonder = true,
+      icon = "≈",
+      description = "Astern, a lane of smooth water runs straight back to the mole end at Saltwick. It is not this crossing's wake. It is there before the boat comes and stays after it has gone: {magic}sixty years of the same keel on the same line have worn a path in the sea.{/} The waves on either side come up to it and stop, the way grass stops at the edge of a road. Gulls sit along it. Fish use it. Dod Larkin steers by it with his eyes shut.",
+      actions = {
+        { "Trail your hand in it", say "Colder than the rest, and flat as a table, and going home. Your fingers leave four small lines. They last for longer than they should, and Dod looks at them the way a man looks at footprints on his step." },
+      } },
+    { name = "the oars",
+      description = "Two, ash, for when the wind fails. The wind does not dare.",
+      things = {
+        { name = "the leathers", description = "Where the oars sit in the pins, wrapped in sealskin and worn bald. They are oiled every Sunday and used about twice a year." },
+      } },
+    { name = "the bailer",
+      description = "Half a wooden bowl on a string. The other half was lost overboard in his father's time, and they made do.",
+      actions = {
+        { "Bail", say "You throw out six bowls of the sea. The boat lets in seven. Dod watches with approval. \"Keeps the passengers warm,\" he says." },
+      } },
+    { name = "the bilge",
+      description = "Three inches of water going from side to side under the boards, with a starfish in it who has made the crossing more often than anyone but Dod.",
+      things = {
+        { name = "the starfish", description = "Orange, five arms, one shorter. It gets on at Saltwick and off at Muckle, or the other way about, nobody can tell which. It is on the tally board. He would not say which edge." },
+      } },
+    { name = "the sea",
+      description = "Green, and close, and coming in long hills that lift the boat and set it down again with care.",
+      things = {
+        { name = "a seal", icon = "∩", description = "A round grey head, twenty yards off, keeping pace. It has enormous dark eyes and is giving you the sort of look you would get from a customs officer. It goes under without a sound. It comes up on the other side." },
+        { name = "a porpoise", description = "A black back, rolling over, and a puff of breath. Then another. They are racing the ferry and letting it win." },
+        { name = "a floating bottle", description = "Green glass, corked, bobbing just out of reach. There is paper in it. Dod does not alter course. \"That one's been going round since I was a lad,\" he says. \"It's not for us.\"" },
+      } },
+    { name = "the view ahead",
+      description = "Low grey humps lying along the horizon, with surf at their feet and cloud sitting on the biggest. As you watch, two of them come apart and turn out to be three.",
+      things = {
+        { name = "a white tower", description = "On the smallest island, a stubby lighthouse, limewashed. Its lamp is lit in the middle of the day, and it is green." },
+        { name = "a column of smoke", description = "Blue, thin, rising from the big island and leaning this way. It smells of oak and herring, and after a while of something else, sweet and sharp, that nobody on the boat will name." },
+      } },
+    { name = "the view astern",
+      description = "Saltwick, already the size of your hand: the quay, the roofs, the Light at the end of its mole. From out here the kingdom is a low line with weather on top of it.",
+      variants = {
+        { when = flag "is_fare_paid",
+          description = "Saltwick, already the size of your hand. From out here the kingdom is a low line with weather on top of it, and sea at both ends. You see what he means." },
+      } },
+    { name = "a compass in a box",
+      description = "Screwed to the stern post, in a box with a glass lid. The glass is painted over, black, on the inside. \"Put me off,\" says Dod." },
+    { name = "the anchor",
+      description = "A stone with a hole in it, on a rope of heather. His grandfather found the stone. It has held this boat in every blow for a hundred years, and before that it was part of a wall." },
+  },
+
+  exits = {
+    { to = "is_landing", label = "Muckle Afterthought",
+      description = "On, to the big island: a stone slip, a row of low houses, and somebody already walking down to see who is aboard." },
+    { to = "saltwick_harbour", label = "Back to Saltwick",
+      description = "Home along the smooth lane in the sea, to the mole end, and the kingdom, such as it is." },
+  },
+}
+
+space {
+  id = "is_landing",
+  region = "afterthoughts",
+  name = "The Landing, Muckle Afterthought",
+  description = "A slip of black stone running down into green water, a crescent of low houses with their backs to the wind, and peat smoke lying flat over all of it. This is Muckle Afterthought, the big island. It is a mile and a half long. Forty people live here, and by the time you have stepped ashore they all know what you had for breakfast.",
+  backdrop = {
+    "                  ▲                 ",
+    "   ⌂  ⌂▄  ⌂    ▄▄███▄    ⌂ ▄⌂   ⌂   ",
+    "▄▄███▄██▄██▄▄▄███████▄▄▄██▄███▄▄██▄▄",
+    "≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈",
+  },
+
+  things = {
+    { name = "the slip",
+      description = "Black stone, laid in a slope, green and treacherous below the weed line. Boats are hauled up it by everyone who is standing about, which is why nobody stands about.",
+      things = {
+        { name = "the winch", description = "A wooden drum with four bars, turned by hand. Carved round the top: {i}MANY HANDS{/}. Under it, scratched later: {i}where{/}." },
+        { name = "a ring in the rock", description = "Iron, eaten thin. The ferry ties up to it. So did the ferry before, and the one before that, which was a hide boat with a man in it who is said to have had the same opinion." },
+        { name = "limpets", description = "Each on its own worn spot. A limpet goes out at high water, grazes, and comes home to the exact place. People here think well of limpets." },
+      } },
+    { name = "the island boats",
+      description = "Six of them drawn up above the tide, double-ended, tarred black, light enough for two men to lift. Each has an eye painted on the bow, so it can see where it is going.",
+      things = {
+        { name = "the Maybe", description = "The oldest. Her eye has been repainted so often that it bulges." },
+        { name = "the Wife's Idea", description = "Green gunwale. He named her as a joke. She has drowned nobody, caught more than any, and the joke has gone quiet." },
+        { name = "an upturned boat", description = "Keel to the sky, with a door cut in the side and a stovepipe coming out of the bottom. It is somebody's house. A boat here gets forty years at sea and then eighty as a roof." },
+        { name = "a boat with no eye", description = "New, still pale. They will not launch her until the eye is on, and the man who paints the eyes is waiting for the right morning." },
+      } },
+    { name = "the houses",
+      description = "A dozen, built of beach stone with walls a yard thick and roofs of turf tied down with rope against the wind. Each rope has a stone on the end. In a gale the whole village hangs on.",
+      things = {
+        { name = "the widow Tolmie's house",
+          description = "The neatest. Shells set in the wall round the door, and a geranium in the window that has never been outside in its life.",
+          things = {
+            { name = "the geranium", description = "Red. It is forty years old and has a name, which is Robert, and was her husband's. She says it is less trouble and about as talkative." },
+            { name = "the shells round the door", description = "Scallops, mortared in a row. One for each year she has been here. She came from the mainland as a bride and counts as a visitor still, though people have begun to nod." },
+          } },
+        { name = "the schoolhouse",
+          description = "One room with a bell on the gable. Nine children, one slate each, and Miss Arbuthnot, who came for a year in her youth and was kept by the weather.",
+          things = {
+            { name = "the map on the wall", description = "The world, as issued by the mainland. The Afterthoughts are not on it. The children have added them, in the right place, in red crayon, at four times the size of the kingdom." },
+            { name = "a row of sweet peas", description = "Canes, string, and nine bare stalks, each with one flower left. The wind has had the rest. She plants them every year. It is, she says, a lesson, though she has not decided what in." },
+          },
+          actions = {
+            { "Look in at the window", say "Nine heads turn. A lesson on the principal rivers of the kingdom is abandoned at once in favour of you. Miss Arbuthnot sighs and writes {i}A VISITOR{/} on the board, and under it, {i}describe{/}." },
+          } },
+        { name = "a house with a whale's jaw for a gate", description = "Two bones, twelve feet high, meeting at the top. The whale came ashore in his great-grandfather's day. They ate it for a year, lit the lamps with it for two, and have walked through it since." },
+        { name = "a peat stack", description = "Built like a small house, with a sloped top to shed the rain. Every family has one. You can tell who is careful and who is in love by how they are stacked." },
+      } },
+    { name = "the shop",
+      description = "The front room of Mistress Skeat's house, with a plank across two barrels. It stocks one of everything. When the one is sold she sends for another, and the island waits.",
+      things = {
+        { name = "the shelf",
+          description = "One tin of treacle. One ball of string. One lamp glass. One almanac for last year, reduced.",
+          things = {
+            { name = "the one sweet", description = "A barley sugar, in a jar by itself. It has been the one sweet since autumn. The children come in and look at it. Nobody will buy it, because then there would be none." },
+          } },
+        { name = "the account book", description = "Everything is on tick until the herring money comes. Every page is a family. Some of the debts are older than the debtors, and are paid off gently, a little each year, out of respect." },
+        barrel { name = "a barrel of salt", description = "The one barrel. It is real salt, from the pans on the south shore, grey and damp and tasting of the place." },
+      },
+      actions = {
+        { "Ask for a hat", say "\"We've the one,\" she says, and nods at the hook. There is nothing on the hook. \"Davie has it on. He'll be in Thursday.\"" },
+      } },
+    { name = "the Lee Wall",
+      description = "A waist-high wall along the top of the slip, out of the wind, polished along the top by elbows. This is where the men of the island stand to govern it.",
+      things = {
+        { name = "the men at the wall",
+          description = "Five of them, leaning, looking at the sea. A decision is reached here when everybody has said nothing about it for long enough.",
+          actions = {
+            { "Lean on the wall", say "Room is made. You lean. You look at the sea. Twenty minutes pass. \"Aye,\" says the man on your left, summing up. You find that you agree, and that something has been settled, and that you will never know what." },
+            { "Ask about Sometimes", say "\"It's there when it's there.\" A pause, for the wind. \"When the Saltwick water is out, it stands dry, and a body can walk over. Otherwise it's a rumour.\" They look at you. \"Don't build on it. A man did.\"" },
+          } },
+        { name = "the worn place", description = "A dip in the coping the width of two forearms. It belongs to old Hector. He is ninety-one and at his dinner. Nobody else's elbows have ever been in it." },
+        { name = "a spyglass on a string", description = "Brass, shared, tied to the wall so that it stays shared. Through it you can see the mainland. It is kept mostly so that they can be sure it is still over there and not coming any closer." },
+      } },
+    { name = "the cow",
+      icon = "μ",
+      description = "The island has one, black, small and shaggy, called the Cow. She is owned in forty shares and milked by rota. She stands in the middle of the path with the confidence of public property.",
+      actions = {
+        { "Ask her to move", say "She looks at you through her fringe. You are not on the rota. You go round." },
+      },
+      things = {
+        { name = "the rota", description = "Chalked on a slate hung round her neck. Today is the minister, who has never got the knack, and the Cow knows it and is looking forward to the evening." },
+      } },
+    { name = "the island children",
+      description = "Nine, all cousins, in jerseys of the same grey wool. They have formed up on the wall to look at you. Visitors are scarce and have to be shared.",
+      things = {
+        { name = "the smallest one", description = "About four, in a jersey that reaches her boots. She is holding a crab by the back, as you would hold a cup, and is showing it to you in case you have not got one." },
+        { name = "a kite", description = "Made of a flour bag and two herring bones. It is the only toy on the islands that the wind helps with." },
+      },
+      actions = {
+        { "Say hello", say "Nobody answers. Then the smallest holds up the crab. You say it is a very good crab. The whole wall breathes out. You have passed." },
+      } },
+    { name = "the signpost",
+      description = "A ship's oar set upright in a cairn, with boards nailed to it. They do not point along roads, there being no roads. They point across water.",
+      things = {
+        { name = "a board pointing north", description = "{b}THE STACK{/}, and a puffin, drawn by a child, with too many feet." },
+        { name = "a board pointing west", description = "{b}LITTLE AFTERTHOUGHT. THE OTHER LIGHT.{/} Added in a different paint: {i}he is not in{/}. Added under that, in the first paint: {i}he is always in{/}." },
+        { name = "a board pointing at the sea", description = "{b}SOMETIMES{/}. The board is on a hinge. At present it hangs straight down.",
+          variants = {
+            { when = flag "tide_out", description = "{b}SOMETIMES{/}. The board is on a hinge. Somebody has propped it up level with a stick, and the stick has a look of having been kept handy." },
+          } },
+        { name = "a board pointing east", description = "{b}THE MAINLAND (SO CALLED){/}." },
+      } },
+    { name = "the pump",
+      description = "Iron, with a long handle and a stone trough. The water is sweet, cold and faintly brown from the peat, and comes up with a noise like an old man being asked a favour.",
+      actions = {
+        { "Drink", say "It tastes of smoke and iron and rain from a long time ago. You have paid for worse in towns." },
+      } },
+    { name = "a washing line",
+      description = "Strung between two houses, sagging with jerseys. Every family knits its own pattern, so that a man can be told by his jersey when the sea gives him back.",
+      things = {
+        { name = "a jersey with a mistake in it", description = "One cable twisted the wrong way, at the hem. It is done on purpose, in every one. Only what belongs to the sea is perfect, they say, and they would rather not be mistaken for that." },
+      } },
+    { name = "the notice board",
+      description = "The back of the shop door, which opens outward, so that the news comes out to meet you.",
+      things = {
+        { name = "a notice about the ferry", description = "{b}THE FERRY WILL RUN.{/} That is the whole notice. It has been up for thirty years and has always been true." },
+        { name = "a notice about the Cow", description = "{b}ROTA.{/} Forty names. Beside one of them: {i}excused, has the hands for it but not the heart{/}." },
+        { name = "a notice from the Customs", description = "{b}ALL GOODS MUST BE DECLARED.{/} Printed, official, with a crown. It is the cleanest thing on the island. Nobody has stood near enough to dirty it." },
+        { name = "a notice about a concert", description = "{b}A CONCERT{/} in the schoolroom. {i}Songs, a recitation, and tea. Mr Flett will not play the pipes. He has promised.{/}" },
+      } },
+    { name = "the post box",
+      description = "A biscuit tin nailed to the gable of the shop, with a slot cut in the lid. It is emptied when the ferry feels like it.",
+      things = {
+        { name = "a postcard, stuck in the slot",
+          description = "A view of Saltwick quay, tinted. On the back, in a small exact hand: {i}Weather fair. Matters proceeding. Tea here is taken with milk regardless. H.P.{/} It is addressed to the Royal Office of Tides, Outward Desk. It has no stamp. It has been stuck in the slot for some time, and nobody likes to push it either way." },
+      } },
+    { name = "the back strand",
+      description = "Behind the houses the island dips to a beach of white shell sand facing the open sea. Half a mile out, the water goes pale over something.",
+      variants = {
+        { when = flag "tide_out",
+          description = "Behind the houses the island dips to a beach of white shell sand. The sea has drawn right back from it. Half a mile out across wet rippled sand there is a low green hump with a post on it, where yesterday there was only a pale patch of water." },
+      },
+      things = {
+        { name = "the pale patch", description = "A shoal, the size of a field, a fathom down. A post sticks up out of the middle of it, with a letter box on top, three feet clear of the waves.",
+          variants = {
+            { when = flag "tide_out", description = "It is an island. It is a small, wet, surprised island, with a post, a bench, and weed lying all over it like a tablecloth pulled off in a hurry." },
+          } },
+        { name = "oystercatchers", description = "Black and white, with red bills, running along the edge of the water and shouting. They have one word and it means {i}mine{/}." },
+        { name = "shell sand", description = "Not sand. Shells, ground small: every grain was somebody's house." },
+      } },
+    { name = "a collie",
+      icon = "d",
+      description = "Black and white, lying at the top of the slip with its chin on its paws. There are no sheep on Muckle. It herds the children, the hens and, at closing time, the men.",
+      actions = {
+        { "Walk past it", say "It gets up, goes round behind you, and brings you back to the middle of the path. You had been straying." },
+      } },
+  },
+
+  exits = {
+    { to = "is_ferry", label = "The ferry",
+      description = "Down the slip to the {i}Presently{/}, which will go when Dod has finished telling the winch something." },
+    { to = "is_inn", description = "The longest house on the landing, with a lamp over the door and a board that takes a moment to read." },
+    { to = "is_net_loft", description = "Up an outside stair to the long room over the boat shed, where the nets are." },
+    { to = "is_smokehouse", description = "Along the shore to the black shed that the smoke comes from." },
+    { to = "is_chapel", description = "Up the one path to the top of the island, where a small grey building keeps its head down." },
+    { to = "is_customs", description = "Out along the point to a white hut with a flagstaff, standing well apart from everybody." },
+    { to = "is_puffin_rock", label = "The Stack",
+      description = "North along the cliff and over a plank and two ropes to a rock that is mostly birds." },
+    { to = "is_rival_light", label = "Little Afterthought",
+      description = "Across the sound in a borrowed boat, towards the white tower with the green lamp." },
+    { to = "is_sea_caves", description = "Round under the north cliff, where the sea goes in at the foot of the island and makes a noise." },
+    { to = "is_sometimes", label = "Sometimes",
+      description = "Out over the wet sand to the island that was not there yesterday.",
+      requires = flag "tide_out",
+      locked = "at present it is a pale patch of sea with a letter box sticking out of it" },
+  },
+}

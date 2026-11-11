@@ -78,6 +78,26 @@ space {
       } },
     { name = "the rope ladder, from the top",
       description = "Hooked over a beam by two iron claws. It was rolled up here for years, waiting for somebody to disobey a sign." },
+
+    { name = "the ringing board",
+      description = "A painted board on the wall, recording a peal: {i}5,040 CHANGES, IN 3 HOURS 9 MINUTES, BY THE GREENHOLLOW RINGERS{/}, and six names. It was rung the year after the great bell went silent. Six men pulled for three hours and nobody in the village heard a note.",
+      things = {
+        { name = "the last line", description = "{i}It was a good peal. You will have to take our word.{/}" },
+        { name = "a pencilled note", description = "Under the board, small: {i}Heard it. Tuesday before. Thought it was the wind. Very fine. M.{/} The handwriting is Old Marta's." },
+      } },
+    { name = "bats",
+      description = "A dozen, hung in the angle of two rafters like small folded umbrellas. They go out at dusk through the louvres, one at a time, each waiting for the one before to get clear.",
+      actions = {
+        { "Watch one sleep", say "It is the size of your thumb, with a face like a very old, very small dog. It yawns. It has more teeth than you were ready for. It wraps itself up again and you are dismissed." },
+      } },
+    { name = "a child's hoard",
+      description = "Behind the cracked treble, in a gap in the boards: a tin box. Somebody came up here before you, and was shorter.",
+      things = {
+        { name = "the tin box", description = "A conker, hard as a stone. A blue bead. A drawing of the goose, with too many teeth. And a list, in careful pencil: {i}Things I will do when I am an adventurer. 1. Leave.{/} There is no number two." },
+      },
+      actions = {
+        { "Put it back", say "You set the box in its gap and slide the board over. Whoever it was is grown now. You find that you hope they left, and you also hope that they are the one who keeps bees." },
+      } },
   },
 
   exits = {

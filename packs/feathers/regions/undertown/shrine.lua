@@ -47,6 +47,23 @@ space {
       description = "Unpainted and smooth. Sound goes up into it and does not come down. Your breathing and your boots are taken, and kept." },
     { name = "a moth",
       description = "Pale, on the lamp shelf, with its wings open. It does not go to the light. It sits beside it, as you would sit beside a friend." },
+
+    { name = "the niches",
+      description = "A ring of small recesses in the wall, at every height from the ankle to above the head. Each holds something that was left. Nobody has ever taken anything from one, in all the time there has been.",
+      things = {
+        { name = "a child's shoe", description = "Leather, gone hard, at the height a child could reach. It was left full of flowers. The flowers are a brown dust, and the dust has kept the shape." },
+        { name = "a chisel", description = "Short, square, of dark metal, at the height of a dwarf's hand. It has been sharpened and then given up, which for a dwarf is a great deal to give." },
+        { name = "a cobble of river pearl", description = "In the lowest niche of all, a hand above the floor. It is the size of a pea and has been polished by walking. Somebody very small brought a piece of their own street." },
+        { name = "an empty niche",
+          description = "At about the height of your chest. It is clean, like the rest, and it is the only one with nothing in it.",
+          actions = {
+            { "Leave something", say "You go through your pockets. The coin you will need. The lace you have only just got back. In the end you leave a button, the good one, off your cuff. It looks very small in there. It looks, all the same, as if it had been allowed for." },
+          } },
+      } },
+    { name = "the doorway, from inside",
+      description = "No latch, no hinge that you can find, no keyhole. The stone of the jamb is worn at shoulder height on both sides, at a great many different heights of shoulder." },
+    { name = "the warmth",
+      description = "It is not cold in here. It ought to be: you are under a cistern, under a drain, under a town. The stone gives back a little heat to the hand, the way a wall does in the evening after a fine day." },
   },
 
   exits = {
